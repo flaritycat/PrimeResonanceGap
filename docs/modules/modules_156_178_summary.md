@@ -1,4 +1,4 @@
-# Modules 156-247 summary
+# Modules 156-248 summary
 
 ## 156
 
@@ -511,7 +511,15 @@ Modules 248-249, with Module 248 required to compare actual available tools
 against `OPMeanErr_244` and the side rows before any further abstraction is
 added.
 
+## 248
+
+One-point available-tools comparison; defines `ToolCompare_248` and records
+that exact model normalization closes only the model branch, ordinary
+first-moment HL, full-interval W-tricked PNT, and ordinary pair-BDH are blocked
+as shortcuts, while short-interval W-PNT, boundary-length majorants, Holder
+kernel routes, and side-row controls remain conditional only when stated in
+the fixed `|W_M|`-weighted row.
+
 ## Next
 
-Module 248: compare the one-point prototype against available first-moment,
-W-tricked PNT, short-interval, side-row, and ordinary pair-BDH tools.
+Module 249: give the proof-or-blocked verdict for the one-point prototype.

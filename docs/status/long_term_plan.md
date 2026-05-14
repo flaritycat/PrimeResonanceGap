@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 247
-Post-Reflective_1 solving count: 66
-Long-term-plan count: 60
+Latest completed module: 248
+Post-Reflective_1 solving count: 67
+Long-term-plan count: 61
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -553,6 +553,12 @@ Expected work:
 - Module 248: compare the one-point prototype against available
   first-moment tools, W-tricked prime number theorem input, short-interval
   limitations, and ordinary pair-BDH shortcuts;
+  completed as `ToolCompare_248(s0,D0,rho0)`, with ordinary first-moment HL,
+  full-interval W-tricked PNT, and ordinary pair-BDH blocked as shortcuts,
+  exact model normalization limited to the model branch, and short-interval
+  W-PNT, boundary-length, Holder, prime-power, W-residue, cutoff, range,
+  normalization, and zero-mode routes kept conditional only in the fixed
+  `|W_M|`-weighted row;
 - Module 249: give a proof-or-blocked verdict for the one-point prototype:
   conditional local, mixed, endpoint-strength, or false/blocked as a
   shortcut;
@@ -604,22 +610,24 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 248: compare the one-point prototype against available first-moment,
-W-tricked PNT, short-interval, side-row, and ordinary pair-BDH tools.
+Module 249: give the proof-or-blocked verdict for the one-point prototype.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION`, `CONDITIONAL`, or
-`FALSE / BLOCKED`, depending on the tool comparison.
+Expected status: `CONDITIONAL`, `STRUCTURAL / EXTRACTION`, or
+`FALSE / BLOCKED`, depending on whether the verdict is framed as a conditional
+route or a shortcut rejection.
 
-Module 247 completed the fourth 15-iteration challenge:
+Module 248 completed the available-tools comparison:
 
 ```text
-PlanChallenge_4_247:
-  Continue Phase F2 through Modules 248-249 only, in narrowed
-  proof-or-blocked mode.
+ToolCompare_248:
+  ordinary first-moment HL, full-interval W-tricked PNT, and ordinary pair-BDH
+  are blocked as shortcuts;
+  short-interval W-PNT, boundary-length majorants, Holder routes, and side-row
+  controls remain conditional only in the fixed |W_M|-weighted row.
 ```
 
-Module 248 should test whether the active reduction:
+Module 249 should now decide how to label:
 
 ```text
 KernelAvgStrength_245(s0,D0,rho0)
@@ -627,25 +635,24 @@ KernelAvgStrength_245(s0,D0,rho0)
     => OnePointBIHL_242(s0,D0,rho0)
 ```
 
-can be supported by tools that are genuinely smaller than the residual
-endpoint.
-
-It should compare:
+The verdict options are:
 
 ```text
-ordinary first-moment Hardy-Littlewood,
-full-interval W-tricked PNT,
-short-interval W-tricked PNT ranges,
-boundary-length majorants,
-Holder routes with kernel integrability,
-prime-power sparsity,
-W-residue exactness,
-normalization / zero-mode control,
-ordinary pair-BDH.
-```
+conditional local:
+  only if exact fixed-row boundary mean and side-row hypotheses are named;
 
-It must state which tools fail, which are conditional, and which would be
-local if their exact hypotheses were available.
+mixed:
+  if the route needs selector, projection, cutoff, W-residue, or range
+  transfer;
+
+endpoint-strength:
+  if closure uses projected residual fourth-moment control or endpoint
+  packages;
+
+false / blocked as a shortcut:
+  if someone tries to close it using ordinary first-moment HL, full-interval
+  PNT, or ordinary pair-BDH alone.
+```
 
 The prototype remains inside the fixed-row discipline:
 
