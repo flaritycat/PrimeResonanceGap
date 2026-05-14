@@ -1,4 +1,4 @@
-# Modules 156-250 summary
+# Modules 156-251 summary
 
 ## 156
 
@@ -537,6 +537,16 @@ for `FixedRowOnePointPkg_249`, beginning with deterministic boundary-length
 control for `BLength_245` before testing kernel, short-interval, side-row, and
 branch reentry gates.
 
+## 251
+
+Deterministic boundary-length feasibility gate; defines
+`BoundaryLengthGate_251` and derives the conditional bound
+`BLength_245 <= A_W(M)GeomModel_251`, so the Module 245 boundary-length
+majorant route is local only if
+`(C_mean_245+1)A_W(M)GeomModel_251 + MassErr_245=o_W(1)`, and is blocked as a
+deterministic closure route when this product is not small.
+
 ## Next
 
-Module 251: deterministic boundary-length feasibility for `BLength_245`.
+Module 252: kernel absolute-mass and Holder feasibility for `A_W(M)`,
+`K_q(M)`, and `P_M`.

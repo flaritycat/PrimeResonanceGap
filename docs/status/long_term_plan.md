@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 250
-Post-Reflective_1 solving count: 69
-Long-term-plan count: 63
+Latest completed module: 251
+Post-Reflective_1 solving count: 70
+Long-term-plan count: 64
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -603,6 +603,10 @@ First test FixedRowOnePointPkg_249 itself.
 Expected work:
 
 - Module 251: deterministic boundary-length feasibility for `BLength_245`;
+  completed as `BoundaryLengthGate_251`, deriving the conditional deterministic
+  bound `BLength_245 <= A_W(M)GeomModel_251` and showing that the
+  boundary-length majorant route is local only when
+  `(C_mean_245+1)A_W(M)GeomModel_251 + MassErr_245=o_W(1)`;
 - Module 252: kernel absolute-mass and Holder feasibility for `A_W(M)`,
   `K_q(M)`, and `P_M`;
 - Module 253: short-interval W-PNT range audit for `WOneBoundaryPNT_244`;
@@ -663,35 +667,38 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 251: deterministic boundary-length feasibility for BLength_245.
+Module 252: kernel absolute-mass and Holder feasibility for A_W(M), K_q(M),
+and P_M.
 ```
 
-Expected status: `CONDITIONAL` or `FALSE / BLOCKED`, depending on whether the
-boundary-length route survives the fixed-row kernel mass.
+Expected status: `CONDITIONAL` or `FALSE / BLOCKED`, depending on whether
+the active projection has a fixed-row kernel route that beats boundary and
+error terms.
 
-Module 250 completed the seventh plan update:
+Module 251 completed the deterministic boundary-length gate:
 
 ```text
-PlanUpdate_7_250:
-  pause two-point fixed-support escalation;
-  test FixedRowOnePointPkg_249 first.
+BoundaryLengthGate_251:
+  BLength_245 <= A_W(M)GeomModel_251.
 ```
 
-Module 251 should test the Module 245 boundary-length route:
+The boundary-length route survives only if:
 
 ```text
-OPMeanErr_244
-  <= (C_mean+1)BLength_245 + MassErr_245.
+(C_mean_245+1)A_W(M)GeomModel_251 + MassErr_245=o_W(1).
 ```
 
-It should decide whether deterministic boundary geometry and absolute kernel
-mass can make:
+Module 252 should now test the kernel quantities behind this gate and the
+Holder route:
 
 ```text
-BLength_245=o_W(1)
+A_W(M),
+K_q(M),
+P_M,
+K_q(M)E_p(s0)=o_W(1).
 ```
 
-in the fixed row:
+It must keep the same fixed row:
 
 ```text
 BdPrefRow_224^P(s0,D0;N,w,rho0),
