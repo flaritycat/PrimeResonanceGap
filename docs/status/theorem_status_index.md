@@ -31,6 +31,9 @@ FALSE / BLOCKED
 | `AU^3` | OPEN | Endpoint class plus side packages | `module_227_endpoint_arrow_inventory.md` | No |
 | `WProjectedLocalMatch_3^major` | CONDITIONAL | Residual subset-HL, boundary, W-residue, prime-power, projection, denominator, selector rows | `module_209_w_admissible_projected_local_model.md` | Only as a conditional schema |
 | `ProjectedMajorTarget_3^B` | OPEN | `WProjectedLocalMatch_3^major` plus projected model neutrality | `module_206_exact_projected_major_arc_target.md` | No |
+| `NarrowMinorArc_3^B` | CONDITIONAL | Low-level leakage, bad-shift energy, persistent-frequency energy, transverse incidence energy, transfer rows | `module_203_refined_minor_arc_criterion.md`, `module_269_transverse_incidence_object.md` | Only if every input row is supplied |
+| `TransIncCore_269` | STRUCTURAL / EXTRACTION | Definition of the transverse weighted shift-frequency graph; no decay estimate | `module_269_transverse_incidence_object.md` | Only as an object definition |
+| `TransIncBound_269` | OPEN | Non-tautological `Gamma_trans`, threshold compatibility, same selector/model class, dyadic/W-limit discipline | `module_269_transverse_incidence_object.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

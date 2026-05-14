@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 268
+Latest module frontier: Module 269
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -80,6 +80,10 @@ Latest project-wide review:
 - A ninth plan update pausing Phase H as a conditional dependency map and
   selecting the minor-arc transverse-incidence obstruction as the next
   feasibility window.
+- An exact extraction of the Phase I transverse-incidence core
+  `TransIncCore_269`, identifying the weighted shift-frequency graph inside
+  `NarrowMinorArc_3^B` and the future non-tautological target
+  `TransIncBound_269`.
 
 ## What the project has not proved
 
@@ -100,6 +104,8 @@ Latest project-wide review:
 - `UniformityLedger_266(P_adm)` or any of its W-order, denominator,
   projection, cutoff, W-residue, dyadic, selector, or supremum-closure rows.
 - `AbsPMNGate_267(P_adm)` or `SignedExactNeutralGate_267(P_adm)`.
+- `TransIncBound_269`, transverse energy smallness,
+  `NarrowMinorArc_3^B`, or `MinorArcTransfer_3^B`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -178,8 +184,14 @@ Active Phase I target:
   NarrowMinorArc_3^B transverse term
     sum_lambda lambda^2 Eng(I_trans(lambda))=o(1)
 
+Completed Phase I extraction:
+  TransIncCore_269
+    identifies I_trans(lambda) as the weighted shift-frequency graph left
+    after bad-shift and persistent-frequency removals
+
 Next scheduled check:
-  Module 269 transverse-incidence extraction inside NarrowMinorArc_3^B
+  Module 270 audit bad-shift and persistent-frequency removals against
+  possible transverse row/column ceilings
 ```
 
 Status: **CONDITIONAL**.

@@ -1,4 +1,4 @@
-# Modules 156-268 summary
+# Modules 156-269 summary
 
 ## 156
 
@@ -690,7 +690,16 @@ pauses projected model neutrality as a conditional dependency map, and starts
 Phase I as a minor-arc transverse-incidence feasibility window targeting the
 unresolved `I_trans(lambda)` term inside `NarrowMinorArc_3^B`.
 
+## 269
+
+Exact transverse-incidence extraction inside `NarrowMinorArc_3^B`; defines
+`TransIncCore_269`, identifies `I_trans_s(lambda)` as a weighted
+shift-frequency graph after bad-shift and persistent-frequency removals, and
+records `TransIncBound_269` as a future non-tautological target rather than a
+proved estimate.
+
 ## Next
 
-Module 269: extract the exact transverse-incidence object inside
-`NarrowMinorArc_3^B`.
+Module 270: audit bad-shift and persistent-frequency removals against the
+row-energy and column-multiplicity ceilings before formulating any transverse
+incidence theorem.

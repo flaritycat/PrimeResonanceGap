@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 268
-Post-Reflective_1 solving count: 87
-Long-term-plan count: 81
+Latest completed module: 269
+Post-Reflective_1 solving count: 88
+Long-term-plan count: 82
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -808,9 +808,9 @@ Begin Phase I with the transverse set I_trans(lambda).
 
 Expected work:
 
-- Module 269: extract the exact transverse-incidence object in
-  `NarrowMinorArc_3^B`, including `I_trans(lambda)`,
-  `Eng(I_trans)`, thresholds, selector class, dyadic shell, and model domain;
+- Module 269: completed as `TransIncCore_269`, the exact weighted
+  shift-frequency graph left after bad-shift and persistent-frequency
+  removals; no transverse bound was proved;
 - Module 270: audit bad-shift and persistent-frequency removals, deciding
   what remains after `E_d(lambda)<=mu(lambda)` and
   `N_xi(lambda)<=K(lambda)`;
@@ -1014,52 +1014,52 @@ PlanUpdate_9_268
     minor-arc transverse-incidence feasibility.
 ```
 
-Continue with:
+Module 268 selected:
 
 ```text
 Module 269: extract the exact transverse-incidence object inside
 NarrowMinorArc_3^B.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, not `PROVEN`.
-Module 269 should define:
+Module 269 completed:
 
 ```text
-TransIncCore_269(lambda;D,R,eta),
-I_trans(lambda),
-Eng(I_trans(lambda)),
-the active thresholds mu(lambda), K(lambda),
-the selector/model class,
-and the dyadic and W-limit scope.
+TransIncCore_269
+  = the weighted shift-frequency graph I_trans_s(lambda)
+    after bad-shift and persistent-frequency removals.
 ```
 
-Module 269 should preserve Module 267's corrected fork map:
+Its future analytic target is:
 
 ```text
-absolute fork:
-  conditional route to the literal Module 260 gate only under
-  AbsPMNGate_267;
+TransIncBound_269(Gamma_trans;P_minor):
+  Eng_trans_269(lambda;s,D,R,eta,w)
+    <= Gamma_trans(lambda;D,R,eta,w;s)
 
-signed fork:
-  conditional exact-model route under SignedExactNeutralGate_267,
-  not a proof of CollNeutral_260.
+  and
+
+  sum_lambda lambda^2 Gamma_trans(lambda;D,R,eta,w;s)=o(1).
 ```
 
-Module 269 should preserve these statuses:
+The status remains `STRUCTURAL / EXTRACTION`; no transverse bound,
+`NarrowMinorArc_3^B`, or selector transfer was proved.
+
+Continue with:
 
 ```text
-NarrowMinorArc_3^B: not proved,
-MinorArcTransfer_3^B: not proved,
-ProjectedModelNeutrality_3^major: not proved,
-WProjectedLocalMatch_3^major: not proved,
-ProjectedMajorTarget_3^B: not proved,
-ResCube_3^sharp: OPEN.
+Module 270:
+  audit bad-shift and persistent-frequency removals against the row-energy
+  ceiling E_{d,s}(lambda)<=mu(lambda), the column-multiplicity ceiling
+  N_{xi,s}(lambda)<=K(lambda), and the lambda-summed target.
 ```
 
-Do not use Module 269 to prove or claim, or to assume as input:
+Module 270 should decide whether any plausible threshold regime leaves a
+smaller transverse problem, before asking for a new incidence theorem. It
+should preserve these statuses:
 
 ```text
 NarrowMinorArc_3^B,
+TransIncBound_269,
 MinorArcTransfer_3^B,
 ProjectedMajorTarget_3^B,
 WProjectedLocalMatch_3^major,
@@ -1068,5 +1068,6 @@ ResCube_3^sharp,
 selector transfer,
 CPC_3^sharp,
 RBDH_pair_short,
-AU^3.
+AU^3
+remain unproved.
 ```

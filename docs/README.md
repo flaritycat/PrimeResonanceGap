@@ -7,7 +7,7 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 268
+Latest module frontier: Module 269
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -39,6 +39,7 @@ modules/
   module_266_uniformity_admissible_family.md
   module_267_projected_model_neutrality_verdict.md
   module_268_ninth_plan_update.md
+  module_269_transverse_incidence_object.md
   modules_156_178_summary.md
 
 reviews/
