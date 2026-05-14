@@ -1,4 +1,4 @@
-# Modules 156-235 summary
+# Modules 156-236 summary
 
 ## 156
 
@@ -413,6 +413,15 @@ Kernel absolute-tail budget; defines
 tail residual-product envelopes, while warning that `Tail_W(T0)=o_W(1)` alone
 does not imply `TailCube_225(T0)=o_W(1)`.
 
+## 236
+
+W-residue and prime-power boundary audit; defines
+`WPPBoundaryAudit_236(s0,D0,rho0)` and conditionally reduces
+`WPPBoundary_225` to `WResBoundary_236`, `PPBoundary_236`, and either
+disjoint accounting or `WPPOverlap_236`, with positive tuple routes recorded
+and all W/prime-power terms kept separate from local factors, kernel tails,
+tuple-HL, model mass, and normalization.
+
 ## Next
 
-Module 236: W-residue and prime-power boundary audit for the fixed row.
+Module 237: Normalization and zero-mode audit for the fixed row.

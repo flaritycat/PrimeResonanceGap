@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 235
-Post-Reflective_1 solving count: 54
-Long-term-plan count: 48
+Latest completed module: 236
+Post-Reflective_1 solving count: 55
+Long-term-plan count: 49
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -453,6 +453,10 @@ Expected work:
   needs tail residual-product envelopes or tail tuple rows;
 - Module 236: audit `WPPBoundary_225`, separating W-residue boundary failures
   from prime-power boundary artifacts;
+  completed as `WPPBoundaryAudit_236(s0,D0,rho0)`, splitting the fixed-row
+  W/prime-power boundary package into `WResBoundary_236`,
+  `PPBoundary_236`, and either disjoint accounting or `WPPOverlap_236`, with
+  positive tuple routes recorded and endpoint-strength shortcuts blocked;
 - Module 237: audit `NormRow_224^P` and possible zero-mode leakage for the
   fixed cyclic-to-interval row;
 - Module 238: compose the fixed-row subpackages and identify the first true
@@ -506,35 +510,36 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 236: W-residue and prime-power boundary audit for the fixed row.
+Module 237: Normalization and zero-mode audit for the fixed row.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
 
-Module 235 completed the kernel absolute-tail audit:
+Module 236 completed the W-residue / prime-power boundary audit:
 
 ```text
-KernelTailBudget_235(P_M,T0;s0,D0,rho0)
-  => KernelAbsTail_225(P_M,T0).
+WPPBoundaryAudit_236(s0,D0,rho0)
+  => WPPBoundary_225=o_W(1).
 ```
 
 It separated:
 
 ```text
-A_W(M)=O_W(1),
-Tail_W(T0)=o_W(1),
-TailCube_225(T0)=o_W(1)
+WResBoundary_236,
+PPBoundary_236,
+WPPOverlap_236 or DisjointAccount_236
 ```
 
-and warned that `TailCube_225(T0)` is not a kernel fact alone; it also needs
-tail residual-product envelopes or tail tuple rows.
+and warned that W-residue failures and prime-power artifacts must not be
+hidden inside local factors, tuple-HL, model mass, kernel tails, or
+normalization.
 
-Module 236 should focus on:
+Module 237 should focus on:
 
 ```text
-WPPBoundary_225:
-  W-residue boundary failures,
-  prime-power boundary artifacts
+NormRow_224^P,
+ZeroBd_226,
+zero-mode leakage from centering/truncation
 ```
 
 inside:
@@ -547,9 +552,9 @@ same selector class s0,
 fixed dyadic shell D0<|d|<=2D0.
 ```
 
-The goal is to separate W-residue boundary failures from prime-power boundary
-artifacts and decide which parts are zero by convention, local boundary rows,
-mixed transfer rows, or endpoint-strength. Do not hide W/prime-power errors
-inside local factors, kernel tails, tuple HL, or model mass, and do not assume
-`ProjectedMajorTarget_3^B`, `ResCube_3^sharp`, selector transfer, or any
-endpoint object.
+The goal is to decide when the cyclic and interval normalizations agree, when
+the row is identically zero by convention, and when centering or truncated
+projection creates zero-mode leakage. Do not hide normalization or zero-mode
+terms inside boundary, W/prime-power, kernel-tail, tuple-HL, or model-mass
+notation, and do not assume `ProjectedMajorTarget_3^B`,
+`ResCube_3^sharp`, selector transfer, or any endpoint object.
