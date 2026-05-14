@@ -28,7 +28,7 @@
 | `docs\modules\dependency_graph.md` | 11444 |
 | `docs\modules\generated_250_page_index.md` | 16201 |
 | `docs\modules\generated_500_page_index.md` | 31915 |
-| `docs\modules\generated_file_index.md` | 11330 |
+| `docs\modules\generated_file_index.md` | 11461 |
 | `docs\modules\generated_index.md` | 32419 |
 | `docs\modules\module_178_residual_cube.md` | 2671 |
 | `docs\modules\module_179_fourier_major_minor.md` | 8654 |
@@ -171,6 +171,7 @@
 | `papers\paper_II_conditional_finite_type\theorem_inventory.md` | 751 |
 | `papers\paper_III_s2_endpoint_compression\outline.md` | 700 |
 | `papers\paper_III_s2_endpoint_compression\theorem_inventory.md` | 552 |
+| `project-effectiviness-improvement.md` | 16462 |
 | `README.md` | 35488 |
 | `Reflective_1.md` | 6382 |
 | `Reflective_2.md` | 9060 |
