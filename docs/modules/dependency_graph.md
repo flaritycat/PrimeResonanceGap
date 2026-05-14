@@ -64,7 +64,8 @@ flowchart TD
   PlanUpdate14["PlanUpdate_14_313<br/>completed; selects row split"]
   MinorKernel314["MinorKernelRowSplit_314<br/>split STRUCTURAL; controls OPEN"]
   ZeroAudit315["ZeroModeProductAudit_315<br/>audit STRUCTURAL; standalone control BLOCKED"]
-  CenteredFull316["CenteredFullAntiDiagonalAudit_316<br/>next target OPEN"]
+  CenteredFull316["CenteredFullAntiDiagonalAudit_316<br/>audit STRUCTURAL; current route BLOCKED"]
+  MajorCorr317["MajorKernelCorrectionAudit_317<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -164,7 +165,8 @@ flowchart TD
   MinorKernel314 --> AntiDiag312
   MinorKernel314 --> ZeroAudit315
   ZeroAudit315 --> CenteredFull316
-  CenteredFull316 --> AntiDiag312
+  CenteredFull316 --> MajorCorr317
+  MajorCorr317 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -312,3 +314,8 @@ flowchart TD
   minor convention and not controlled by current tools, but it can be removed
   as an explicit correction by using centered products. The next audit is the
   centered full anti-diagonal row.
+- `CenteredFullAntiDiagonalAudit_316` shows that centering removes only the
+  zero coefficient. The centered full row is the full nonzero-frequency column
+  second moment, and current Cauchy/Parseval/fourth-power routes still require
+  a missing same-family theorem. The next local audit is the major-kernel
+  correction row.

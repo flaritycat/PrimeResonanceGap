@@ -3022,3 +3022,66 @@ Module 316:
   perform CenteredFullAntiDiagonalAudit_316(P_minor^0), auditing the
   full-frequency anti-diagonal row with B_d^{0,circ} in place of B_d^0.
 ```
+
+Module 316 completed:
+
+```text
+CenteredFullAntiDiagonalAudit_316(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+CenteredFullAntiDiagonalIdentity_316,
+CenteredFullColumnSecondMomentIdentity_316:
+  STRUCTURAL / EXTRACTION.
+
+CurrentCenteredFullToolsClose_316:
+  FALSE / BLOCKED.
+
+CenteredFullAntiDiagonalControl_316(P_minor^0),
+CenteredFullColumnSecondMomentTarget_316(P_minor^0):
+  OPEN.
+
+MajorKernelCorrectionAudit_317(P_minor^0):
+  OPEN next target.
+```
+
+The audit records that:
+
+```text
+gamma_0(d,xi)=widehat{B_d^{0,circ}}(xi),
+gamma_0(d,0)=0,
+gamma_0(d,xi)=beta_0(d,xi) for xi != 0.
+```
+
+Hence the centered full anti-diagonal row is exactly:
+
+```text
+D^(-1) sum_{d_1 != d_2} sum_{xi != 0}
+  |beta_0(d_1,xi)|^2 |beta_0(d_2,xi)|^2.
+```
+
+Equivalently, it is the off-diagonal part of the full nonzero-frequency
+column second moment. Current Cauchy, Parseval, energy-square, and
+fourth-power routes return ceilings or require an unavailable same-family
+full-column theorem.
+
+The current cadence records:
+
+```text
+Latest completed module: 316
+Post-Reflective_1 solving count: 135
+Long-term-plan count: 129
+
+129 is not divisible by 9, so no plan update is due.
+129 is not divisible by 15, so no plan challenge is due.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 317:
+  perform MajorKernelCorrectionAudit_317(P_minor^0), auditing whether the
+  major-kernel correction row has a usable exact local model or whether the
+  centered full-minus-major formulation remains endpoint-strength under
+  current inputs.
+```

@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 315
-Active phase: Phase K, centered full anti-diagonal audit next
+Latest module frontier: Module 316
+Active phase: Phase K, major-kernel correction audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -734,10 +734,17 @@ Completed zero-mode product audit:
     current zero-mode product control is FALSE / BLOCKED, and that centered
     rewriting removes the explicit zero row only structurally
 
+Completed centered full anti-diagonal audit:
+  CenteredFullAntiDiagonalAudit_316(P_minor^0)
+    identifies the centered full row with the full nonzero-frequency column
+    second moment, blocks current Cauchy/Parseval/fourth-power tools as a
+    closure route, and leaves CenteredFullAntiDiagonalControl_316(P_minor^0)
+    open
+
 Next scheduled check:
-  Module 316 CenteredFullAntiDiagonalAudit_316(P_minor^0)
+  Module 317 MajorKernelCorrectionAudit_317(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Phase K zero-mode
-product audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed Phase K centered full
+anti-diagonal audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

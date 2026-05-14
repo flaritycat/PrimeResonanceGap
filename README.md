@@ -412,13 +412,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the zero-mode product audit**.
+the centered full anti-diagonal audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 315
-Active phase: Phase K, centered full anti-diagonal audit next
+Latest module frontier: Module 316
+Active phase: Phase K, major-kernel correction audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -641,19 +641,30 @@ Module 315:
   because minor arcs exclude zero frequency, an exact centered rewrite removes
   the explicit zero row and moves the next audit to the centered full
   anti-diagonal row.
+
+Module 316:
+  audited that centered full row. Centering removes only the zero Fourier
+  coefficient; the row is still the full nonzero-frequency column second
+  moment. Current Cauchy, Parseval, energy-square, and fourth-power routes do
+  not close it, so the next audit is the major-kernel correction row.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-315 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-316 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
-weighted-pair, and autocorrelation inputs do not prove the threshold window.
+weighted-pair, autocorrelation, and centered full-row inputs do not prove the
+threshold window.
 
 The next planned module is:
 
 ```text
 Module 316:
-  perform CenteredFullAntiDiagonalAudit_316(P_minor^0), auditing the
+  performed CenteredFullAntiDiagonalAudit_316(P_minor^0), auditing the
   full-frequency anti-diagonal row after replacing B_d^0 by B_d^{0,circ}.
+
+Module 317:
+  perform MajorKernelCorrectionAudit_317(P_minor^0), auditing the major row
+  in the centered full-minus-major formulation.
 ```
 
 ## What Is Proved?
@@ -699,7 +710,10 @@ Compact status table:
 | Zero mode killed by minor convention `ZeroModeKilledByMinorConvention_315` | **FALSE / BLOCKED** |
 | Current zero-mode product control `CurrentZeroModeProductControl_315` | **FALSE / BLOCKED** |
 | Centered rewrite removes explicit zero row `CenteredRewriteRemovesExplicitZeroRow_315` | **STRUCTURAL / EXTRACTION** |
-| Centered full anti-diagonal audit `CenteredFullAntiDiagonalAudit_316` | **OPEN next target** |
+| Centered full anti-diagonal audit `CenteredFullAntiDiagonalAudit_316` | **STRUCTURAL / EXTRACTION** |
+| Current centered full route `CurrentCenteredFullToolsClose_316` | **FALSE / BLOCKED** |
+| Centered full column second moment `CenteredFullColumnSecondMomentTarget_316` | **OPEN** |
+| Major-kernel correction audit `MajorKernelCorrectionAudit_317` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
