@@ -231,9 +231,11 @@ E_abs B_w^q
 ```
 
 This is the exact arithmetic target behind the overflow estimate. Module 189
-packages it as a joint union-divisibility criterion for exponential moments.
-Any claimed overflow proof must control these joint congruence probabilities
-with the actual projected kernel weights and with structural strata removed.
+packages it as a joint union-divisibility criterion for exponential moments,
+and Module 190 audits the kernel/range hypotheses needed to make that
+criterion available for a concrete major-arc projection. Any claimed overflow
+proof must control these joint congruence probabilities with the actual
+projected kernel weights and with structural strata removed.
 
 ## 6. Edge cases
 
@@ -276,7 +278,8 @@ integrability.
 
 This module does not prove:
 
-- verification of the Module 189 joint-divisibility criterion for `B_w`;
+- verification of the Module 190 kernel/range package behind the Module 189
+  joint-divisibility criterion for `B_w`;
 - the high-moment divisor estimates needed when `R_w(N)` grows;
 - kernel absolute-mass bounds for the actual major-arc projection;
 - negligibility of all structural and boundary regions;

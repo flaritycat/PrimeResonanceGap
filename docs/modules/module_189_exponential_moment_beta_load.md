@@ -155,6 +155,8 @@ in the project limit order.
 
 The constants `C_0,K_0` may depend on the finite cube complexity and on fixed
 kernel-shape parameters, but not on `N,D,h,k,w`, or the finite prime set `P`.
+Module 190 audits the kernel absolute-mass and finite-range hypotheses needed
+to verify this assumption for a concrete major-arc projection.
 
 ## 5. Proof / disproof / reduction
 
@@ -281,12 +283,16 @@ projected pair-difference forms
 
 This is still a major-arc collision-control package, not projected local-model
 matching and not a minor-arc estimate.
+Module 190 is the next infrastructure check: it asks whether the absolute
+kernel and CRT range errors are strong enough to support the displayed joint
+criterion.
 
 ## 8. What remains open
 
 This module does not prove:
 
-- the joint union-divisibility estimate for the actual projected kernel;
+- the Module 190 kernel/range package needed for the joint
+  union-divisibility estimate for the actual projected kernel;
 - summability of `Err_exp(lambda)` in the true parameter ranges;
 - kernel absolute-mass bounds for the major-arc projection;
 - structural and boundary negligibility in the sharp interval model;

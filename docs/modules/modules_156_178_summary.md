@@ -1,4 +1,4 @@
-# Modules 156-189 summary
+# Modules 156-190 summary
 
 ## 156
 
@@ -84,6 +84,10 @@ Overflow estimate for large collision load.
 
 Exponential-moment criterion for beta-load sums.
 
+## 190
+
+Kernel absolute-mass and range audit for major projection.
+
 ## Next
 
-Module 190: Kernel absolute-mass and range audit for major projection.
+Module 191: W-limit order and generic tail uniformity.

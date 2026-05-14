@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 189
-Post-Reflective_1 solving count: 8
-Long-term-plan count: 2
+Latest completed module: 190
+Post-Reflective_1 solving count: 9
+Long-term-plan count: 3
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -125,6 +125,7 @@ Expected modules:
 - Module 189: exponential-moment criterion for beta-load sums; completed as a
   conditional joint-divisibility criterion;
 - Module 190: kernel absolute-mass and range audit for major projection;
+  completed as a conditional kernel/range package;
 - Module 191: W-limit order and generic tail uniformity;
 - Module 192: averaged collision-defect bound under the qualified envelope;
 - Module 193: generic projected model neutrality after collision removal;
@@ -258,15 +259,16 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 190: Kernel absolute-mass and range audit for major projection.
+Module 191: W-limit order and generic tail uniformity.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`, unless a complete
 proof is actually supplied.
 
-The key question is whether the absolute projected kernel has enough mass and
-range control to support the Module 189 joint-divisibility criterion without
-burying large-modulus losses in the error term.
+The key question is whether the generic `sum_{p>w}1/p^2` tails and the
+Euler-product tails used in Modules 187-190 are uniform under the project
+limit order, especially after kernel truncation and finite-range envelopes are
+introduced.
 
 The overflow region remains:
 
