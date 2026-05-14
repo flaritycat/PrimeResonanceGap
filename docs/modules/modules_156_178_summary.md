@@ -1,4 +1,4 @@
-# Modules 156-232 summary
+# Modules 156-233 summary
 
 ## 156
 
@@ -387,6 +387,15 @@ now sufficient as a guardrail, and redirects the next window toward the fixed
 boundary/model-mass row `BoundaryModelMass_225(S,lambda)` inside
 `BdPrefRow_224^P`, without proving the row or the endpoint.
 
+## 233
+
+Boundary model-mass volume criterion; defines
+`BoundaryModelVolume_233(S,lambda)` and conditionally reduces
+`BoundaryModelMass_225(S,lambda)` to deterministic boundary-volume saving,
+absolute kernel mass, exact projected local-factor envelopes, and localized
+bad-factor mass, while keeping `BoundaryTupleHL_225(S,lambda)` and the fixed
+boundary row open.
+
 ## Next
 
-Module 233: Boundary model-mass volume criterion for the fixed row.
+Module 234: Boundary tuple-HL audit for the fixed row.

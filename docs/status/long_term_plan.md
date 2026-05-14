@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 232
-Post-Reflective_1 solving count: 51
-Long-term-plan count: 45
+Latest completed module: 233
+Post-Reflective_1 solving count: 52
+Long-term-plan count: 46
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -434,6 +434,10 @@ Expected work:
 
 - Module 233: formulate and test a boundary model-mass volume criterion for
   `BoundaryModelMass_225(S,lambda)`;
+  completed as `BoundaryModelVolume_233(S,lambda)`, a conditional model-side
+  criterion reducing `BoundaryModelMass_225(S,lambda)` to boundary-volume
+  saving, absolute kernel budget, exact local-factor envelopes, and localized
+  bad-factor mass, without proving the tuple row or the endpoint;
 - Module 234: audit `BoundaryTupleHL_225(S,lambda)` and decide whether it is
   a local weighted tuple input or endpoint-strength in disguise;
 - Module 235: isolate `KernelAbsTail_225(P_M,T0)` and the absolute kernel-mass
@@ -493,29 +497,35 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 233: Boundary model-mass volume criterion for the fixed row.
+Module 234: Boundary tuple-HL audit for the fixed row.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
 
-Module 232 completed the fifth plan update and third plan challenge:
+Module 233 completed the first Phase F1 model-side test:
 
 ```text
-PlanUpdate_5_Challenge_3_232.
+BoundaryModelVolume_233(S,lambda)
+  => BoundaryModelMass_225(S,lambda).
 ```
 
-It decided:
+It showed conditionally that the model mass is a smaller local row only when:
 
 ```text
-Stop expanding the endpoint-equivalence map for now.
-Attempt one smaller fixed boundary/model-mass row next.
+boundary volume,
+absolute kernel mass,
+exact projected local factors,
+and localized collision/bad-factor mass
 ```
 
-Module 233 should focus on:
+are all budgeted inside the fixed row. It did not prove the actual weighted
+tuple estimate.
+
+Module 234 should focus on:
 
 ```text
-BoundaryModelMass_225(S,lambda):
-  BdModel_225(S,lambda)=o_W(1)
+BoundaryTupleHL_225(S,lambda):
+  |BTuple_225(S,lambda)-BdModel_225(S,lambda)|=o_W(1)
 ```
 
 inside:
@@ -528,7 +538,9 @@ same selector class s0,
 fixed dyadic shell D0<|d|<=2D0.
 ```
 
-The goal is to test whether the model mass follows from boundary-volume
-saving plus controlled local factors and kernel mass, without assuming
+The goal is to decide whether the tuple-matching row is a local weighted
+boundary Hardy-Littlewood input, a mixed W/prime-power/range statement, or an
+endpoint-strength statement in disguise. Do not replace this row by
+first-moment boundary volume, ordinary pair-BDH, first-moment HL,
 `ProjectedMajorTarget_3^B`, `ResCube_3^sharp`, selector transfer, or any
 endpoint object.
