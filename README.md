@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: threshold-window compatibility after
-the data-dependent fiber gain audit**.
+The current active phase is **Phase K: residual eight-slot minor expansion
+after the combined plan update/challenge**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 321
-Active phase: Phase K, combined plan update/challenge next
+Latest module frontier: Module 322
+Active phase: Phase K, residual eight-slot minor expansion next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -677,6 +677,12 @@ Module 321:
   restrictions, energy tails, and selection rules do not force overlap gain or
   independence; complete same-frequency concentration is still compatible with
   the deterministic constraints.
+
+Module 322:
+  performed the fifteenth plan update and ninth plan challenge. It pauses the
+  direct cap-only/fiber-only continuation, blocks a direct attack on
+  FiberOverlapGainTarget_321 as the next move under current inputs, and selects
+  an extraction-only residual eight-slot minor expansion for Module 323.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
@@ -717,8 +723,13 @@ Module 321:
   rules imply any genuine overlap gain for the `Phi` criterion.
 
 Module 322:
-  perform PlanUpdate_15_Challenge_9_322, the scheduled combined plan update
-  and plan challenge.
+  performed PlanUpdate_15_Challenge_9_322, the scheduled combined plan update
+  and plan challenge after the fiber-gain blockage.
+
+Module 323:
+  perform ResidualEightSlotMinorExpansion_323(P_minor^0), expanding the
+  centered minor-kernel row into exact eight residual slots without claiming
+  cancellation.
 ```
 
 ## What Is Proved?
@@ -784,7 +795,11 @@ Compact status table:
 | Data-dependent fiber gain audit `DataDependentFiberGainAudit_321` | **STRUCTURAL / EXTRACTION** |
 | Current fiber caps force Phi gain `CurrentFiberCapsForcePhiGain_321` | **FALSE / BLOCKED** |
 | Fiber overlap gain target `FiberOverlapGainTarget_321` | **OPEN** |
-| Combined plan update/challenge `PlanUpdate_15_Challenge_9_322` | **OPEN next target** |
+| Combined plan update/challenge `PlanUpdate_15_Challenge_9_322` | **STRUCTURAL / EXTRACTION** |
+| Direct cap-only/fiber-only Phase K continuation `PhaseKColumnBranchContinue_322` | **FALSE / BLOCKED** |
+| Direct fiber-overlap attack as next move `FiberOverlapDirectAttack_322` | **FALSE / BLOCKED** |
+| Residual eight-slot minor pivot `ResidualEightSlotMinorPivot_322` | **STRUCTURAL / EXTRACTION** |
+| Residual eight-slot minor expansion `ResidualEightSlotMinorExpansion_323` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1075,7 +1090,28 @@ wins.
 | `ZeroModeKilledByMinorConvention_315` | FALSE / BLOCKED | Minor arcs exclude zero frequency but do not force `beta_0(d,0)=0` |
 | `ZeroModeProductIdentity_315 / CenteredRewriteRemovesExplicitZeroRow_315` | STRUCTURAL / EXTRACTION | Exact identities only; no zero-mode estimate follows |
 | `CurrentZeroModeProductControl_315` | FALSE / BLOCKED | No available same-family estimate controls the standalone zero row |
-| `CenteredFullAntiDiagonalAudit_316(P_minor^0)` | OPEN | Next target |
+| `CenteredFullAntiDiagonalAudit_316(P_minor^0)` | STRUCTURAL / EXTRACTION | Centered full row audited; full nonzero-frequency column second moment remains open |
+| `CurrentCenteredFullToolsClose_316` | FALSE / BLOCKED | Cauchy, Parseval, energy-square, and fourth-power routes need unavailable same-family full-column estimates |
+| `CenteredFullAntiDiagonalControl_316 / CenteredFullColumnSecondMomentTarget_316` | OPEN | Same-family full nonzero-frequency column control missing |
+| `MajorKernelCorrectionAudit_317(P_minor^0)` | STRUCTURAL / EXTRACTION | Major correction audited as a positive major-frequency pair-energy row |
+| `CurrentMajorCorrectionToolsClose_317` | FALSE / BLOCKED | Positivity, cardinality, pair-BDH, first-moment, and projected-major shortcuts do not close the row |
+| `MajorLocalModelTransfer_317(P_minor^0)` | OPEN | Exact residual eight-slot major model in the same local family missing |
+| `SignedMinorKernelCombinationVerdict_318(P_minor^0)` | STRUCTURAL / EXTRACTION | Centered full-minus-major is exactly `WOff_311`; split is diagnostic without a new signed theorem |
+| `SignedCombinationAsSmallerRoute_318` | FALSE / BLOCKED | The split alone is not a smaller proof route |
+| `SignedMinorKernelGain_318(P_minor^0)` | OPEN | Same-family signed minor-kernel theorem missing |
+| `AntiDiagonalNewInputInventory_319(P_minor^0)` | STRUCTURAL / EXTRACTION | Candidate inputs filtered; endpoint assumptions and current ceilings rejected |
+| `CurrentInventoryClosesAntiDiagonal_319` | FALSE / BLOCKED | No proved candidate input closes `WOff_311` |
+| `ResidualEightSlotMinorCancellation_319(P_minor^0)` | OPEN | Genuine but unproved candidate input |
+| `SizeSensitiveMinorKernelCriterion_320(P_minor^0)` | STRUCTURAL / EXTRACTION | Cross-shell Phi criterion formulated; deterministic closure blocked |
+| `PhiCriterion_320(Phi)` | CONDITIONAL | Usable only if an admissible same-family Phi is independently proved |
+| `AdmissiblePhiGain_320(P_minor^0)` | OPEN | Needed fiber-overlap or entropy gain missing |
+| `DataDependentFiberGainAudit_321(P_minor^0)` | STRUCTURAL / EXTRACTION | Current caps and selection rules audited for fiber-overlap gain |
+| `CurrentFiberCapsForcePhiGain_321 / SelectionRuleGivesIndependence_321` | FALSE / BLOCKED | Current data do not force overlap gain or independence |
+| `FiberOverlapGainTarget_321(P_minor^0)` | OPEN | Needs same-family overlap/entropy theorem beating complete-concentration ceilings |
+| `PlanUpdate_15_Challenge_9_322` | STRUCTURAL / EXTRACTION | Combined plan update/challenge completed after fiber-gain blockage |
+| `PhaseKColumnBranchContinue_322 / FiberOverlapDirectAttack_322` | FALSE / BLOCKED | Direct cap-only/fiber-only continuation is blocked as the next move under current inputs |
+| `ResidualEightSlotMinorPivot_322(P_minor^0)` | STRUCTURAL / EXTRACTION | Selects residual eight-slot minor expansion as the next extraction-only audit |
+| `ResidualEightSlotMinorExpansion_323(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

@@ -3381,3 +3381,87 @@ Module 322:
   FiberOverlapGainTarget_321, pivot to residual eight-slot minor cancellation,
   or pause the branch pending a genuinely new input.
 ```
+
+Module 322 completed:
+
+```text
+PlanUpdate_15_Challenge_9_322:
+  STRUCTURAL / EXTRACTION.
+
+ChallengeDecision_322:
+  STRUCTURAL / EXTRACTION.
+
+PhaseKColumnBranchContinue_322:
+  FALSE / BLOCKED as a direct cap-only or fiber-only continuation.
+
+FiberOverlapDirectAttack_322(P_minor^0):
+  FALSE / BLOCKED as the next move under current inputs.
+
+ResidualEightSlotMinorPivot_322(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+ResidualEightSlotMinorExpansion_323(P_minor^0):
+  OPEN next target.
+```
+
+The fifteenth plan update and ninth plan challenge record that the current
+cap-only/fiber-only continuation has exhausted the information in the active
+deterministic constraints. The next move is not another direct attack on
+`FiberOverlapGainTarget_321(P_minor^0)` and not an assumed admissible `Phi`.
+The selected next branch is an extraction-only residual eight-slot minor
+expansion inside the same `P_minor^0` family.
+
+The next nine-iteration window is:
+
+```text
+Module 323:
+  ResidualEightSlotMinorExpansion_323(P_minor^0).
+
+Module 324:
+  Collision and diagonal strata audit for the eight-slot minor row.
+
+Module 325:
+  Generic-versus-collision local model split for the minor row.
+
+Module 326:
+  Signed inclusion-exclusion audit for the residual minor expansion.
+
+Module 327:
+  Endpoint-strength comparison against ResCube_3^sharp and blocked inputs.
+
+Module 328:
+  Admissible local cancellation criterion, if a non-endpoint target survives.
+
+Module 329:
+  Current-tools audit against that criterion.
+
+Module 330:
+  Branch verdict: continue a non-endpoint subtarget or pause Phase K.
+
+Module 331:
+  Sixteenth plan update.
+```
+
+The current cadence records:
+
+```text
+Latest completed module: 322
+Post-Reflective_1 solving count: 141
+Long-term-plan count: 135
+
+135 is divisible by 9, so the fifteenth plan update is completed here.
+135 is divisible by 15, so the ninth plan challenge is completed here.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 323:
+  perform ResidualEightSlotMinorExpansion_323(P_minor^0), expanding the
+  centered minor-kernel row into exact eight residual slots while keeping the
+  minor cutoff, W-residue convention, dyadic shell weights, threshold losses,
+  and off-diagonal shift condition visible. The module must decide whether
+  the expansion exposes a smaller non-endpoint target or only restates the
+  signed minor-kernel obstruction.
+```

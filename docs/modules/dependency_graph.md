@@ -70,7 +70,8 @@ flowchart TD
   NewInput319["AntiDiagonalNewInputInventory_319<br/>inventory STRUCTURAL; current closures BLOCKED"]
   SizeSensitive320["SizeSensitiveMinorKernelCriterion_320<br/>criterion STRUCTURAL; deterministic closure BLOCKED"]
   FiberGain321["DataDependentFiberGainAudit_321<br/>audit STRUCTURAL; caps force gain BLOCKED"]
-  Plan322["PlanUpdate_15_Challenge_9_322<br/>next target OPEN"]
+  Plan322["PlanUpdate_15_Challenge_9_322<br/>STRUCTURAL; cap-only route BLOCKED"]
+  ResidualEight323["ResidualEightSlotMinorExpansion_323<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -176,7 +177,8 @@ flowchart TD
   NewInput319 --> SizeSensitive320
   SizeSensitive320 --> FiberGain321
   FiberGain321 --> Plan322
-  Plan322 --> AntiDiag312
+  Plan322 --> ResidualEight323
+  ResidualEight323 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -351,3 +353,7 @@ flowchart TD
   selection rules still allow complete same-frequency concentration. They do
   not force an admissible `Phi`; the next step is the scheduled combined plan
   update and challenge.
+- `PlanUpdate_15_Challenge_9_322` completes the scheduled combined checkpoint,
+  pauses the direct cap-only/fiber-only continuation, and selects
+  `ResidualEightSlotMinorExpansion_323(P_minor^0)` as the next extraction-only
+  audit. This pivot is not a residual cancellation theorem.

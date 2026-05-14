@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 321
-Active phase: Phase K, combined plan update/challenge next
+Latest module frontier: Module 322
+Active phase: Phase K, residual eight-slot minor expansion next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -772,10 +772,17 @@ Completed data-dependent fiber gain audit:
     tails, and selection rules allow complete same-frequency concentration
     and do not force an admissible Phi gain
 
-Next scheduled check:
-  Module 322 PlanUpdate_15_Challenge_9_322
+Completed fifteenth plan update and ninth plan challenge:
+  PlanUpdate_15_Challenge_9_322
+    pauses the direct cap-only/fiber-only continuation, blocks
+    FiberOverlapDirectAttack_322 as the next move under current inputs, and
+    selects ResidualEightSlotMinorExpansion_323(P_minor^0) as the next
+    extraction-only target
+
+Next scheduled module:
+  Module 323 ResidualEightSlotMinorExpansion_323(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Phase K
-data-dependent fiber gain audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed Phase K combined plan
+update and challenge;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

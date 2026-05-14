@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 321
-Active phase: Phase K, combined plan update/challenge next
+Latest module frontier: Module 322
+Active phase: Phase K, residual eight-slot minor expansion next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -91,6 +91,7 @@ modules/
   module_319_antidiagonal_new_input_inventory.md
   module_320_size_sensitive_minor_kernel_criterion.md
   module_321_data_dependent_fiber_gain_audit.md
+  module_322_fifteenth_plan_update_ninth_challenge.md
   modules_156_178_summary.md
 
 reviews/
