@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 307
-Active phase: Phase K, column-barrier moment audit
+Latest module frontier: Module 308
+Active phase: Phase K, column-multiplicity distribution audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -222,6 +222,11 @@ Latest project-wide review:
   as the next move, declining to assume `SizeSensitiveClosure_306`, and
   selecting `ColumnBarrierMomentAudit_308(P_minor^0)` as the next local
   threshold-window test.
+- A column-barrier moment audit `ColumnBarrierMomentAudit_308(P_minor^0)`,
+  deriving first-incidence column ceilings for `ColumnBarrierP0_284(r)` and
+  `SigmaColumnBarrierP0_284(r)`, recording that current tools still leave an
+  uncontrolled `(m_minor^0)^theta_r` factor, and leaving
+  `ColumnMultiplicityGainTarget_308(r)` open.
 
 ## What the project has not proved
 
@@ -336,6 +341,12 @@ Latest project-wide review:
   classifications only.
 - `ColumnBarrierMomentAudit_308(P_minor^0)`, `ColumnBarrierP0_284(r)`, or
   `SigmaColumnBarrierP0_284(r)` as proved column smallness.
+- `ColumnIncidenceFirstMoment_308`, `EnergyIncidenceColumnCeiling_308`, or
+  `SigmaEnergyIncidenceCeiling_308` as more than ceilings.
+- `CurrentColumnBarrierRoute_308(r)`, `LowLevelTailToColumnBarrier_308`, or
+  `VacuousRemovalToColumnBarrier_308` as column or threshold closure.
+- `ColumnMultiplicityGainTarget_308(r)` or
+  `ColumnMultiplicityDistributionAudit_309(P_minor^0)`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -609,9 +620,15 @@ Completed eighth plan challenge:
     FALSE / BLOCKED for the next move under current tools, and selects the
     column-barrier moment audit as the next target
 
+Completed column-barrier moment audit:
+  ColumnBarrierMomentAudit_308(P_minor^0)
+    extracts first-incidence ceilings for the Module 284 column barriers,
+    records CurrentColumnBarrierRoute_308(r) as FALSE / BLOCKED, and leaves
+    ColumnMultiplicityGainTarget_308(r) open
+
 Next scheduled check:
-  Module 308 ColumnBarrierMomentAudit_308(P_minor^0)
+  Module 309 ColumnMultiplicityDistributionAudit_309(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;
+Status: **STRUCTURAL / EXTRACTION** for the completed Phase K column audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

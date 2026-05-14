@@ -89,8 +89,10 @@ the threshold-window obstruction: the local low-level fourth-moment tail is
 proved inside `P_minor^0`, vacuous removal is only bookkeeping, and the row
 barrier remains blocked under the current first-energy, row-distribution,
 row-square, and fixed-fiber tests. The latest steering challenge pauses direct
-row-square continuation and sends the next audit to the column-multiplicity
-barriers. None of this proves the endpoint.
+row-square continuation, and the column audit now shows that first-incidence
+counting gives only column-barrier ceilings. The next local question is
+whether column multiplicity has a distributional gain beyond first incidence.
+None of this proves the endpoint.
 
 ## The Whole Project In One Narrative
 
@@ -406,13 +408,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the row-square blocked verdict**.
+the column-barrier current-tools audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 307
-Active phase: Phase K, column-barrier moment audit
+Latest module frontier: Module 308
+Active phase: Phase K, column-multiplicity distribution audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -585,6 +587,13 @@ Module 307:
   size-sensitive fixed-fiber criterion, keeps selection transfer blocked as
   the next move, and selects the column-multiplicity barrier audit as the next
   local test.
+
+Module 308:
+  audited the column barriers. Raw counting and the sharper first-moment
+  incidence/energy bound both give only ceilings, with an uncontrolled
+  `(m_minor^0)^theta_r` factor after the Module 284 weights are restored.
+  Low-level tail control and vacuous removal do not prove column-barrier
+  smallness. ColumnMultiplicityGainTarget_308 remains open.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
@@ -595,9 +604,10 @@ inputs do not prove the row side of the threshold window.
 The next planned module is:
 
 ```text
-Module 308:
-  perform ColumnBarrierMomentAudit_308(P_minor^0), testing the Module 284
-  column multiplicity barriers under current same-family local inputs.
+Module 309:
+  perform ColumnMultiplicityDistributionAudit_309(P_minor^0), deciding
+  whether layer-cake or distributional control of N_{xi,0}(lambda_j) gives a
+  genuinely smaller subtarget or only repeats the first-incidence ceiling.
 ```
 
 ## What Is Proved?
@@ -616,9 +626,13 @@ Compact status table:
 | Local low-level fourth-moment tail inside `P_minor^0` | **PROVEN inside `P_minor^0` only** |
 | Vacuous actual bad-set removal inside `P_minor^0` | **PROVEN inside `P_minor^0` only; not threshold closure** |
 | Row barrier `RowBarrierP0_284(q)=o_W(1)` | **OPEN** |
+| Column barriers `ColumnBarrierP0_284(r)`, `SigmaColumnBarrierP0_284(r)` | **OPEN** |
 | Fixed-fiber row-square gain `FixedFiberRowSquareGain_305` | **OPEN** |
 | Direct row-square continuation as next move `RowSquareContinue_307` | **FALSE / BLOCKED** |
-| Column-barrier moment audit `ColumnBarrierMomentAudit_308` | **OPEN next target** |
+| Column-barrier moment audit `ColumnBarrierMomentAudit_308` | **STRUCTURAL / EXTRACTION** |
+| Current column-barrier route `CurrentColumnBarrierRoute_308(r)` | **FALSE / BLOCKED** |
+| Column multiplicity gain `ColumnMultiplicityGainTarget_308(r)` | **OPEN** |
+| Column-multiplicity distribution audit `ColumnMultiplicityDistributionAudit_309` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -868,7 +882,16 @@ wins.
 | `SizeSensitiveSubcriterion_306(M_U,E2_U)` | STRUCTURAL / EXTRACTION | Criterion only, not verified |
 | `SizeSensitiveClosure_306` | OPEN | Needs actual prescribed-fiber size/energy package |
 | `PauseRowSquareBranch_306` | CONDITIONAL / STEERING | Pause unless challenge selects a new input |
-| `PlanChallenge_8_307` | OPEN | Next scheduled challenge |
+| `PlanChallenge_8_307` | STRUCTURAL / EXTRACTION | Eighth plan challenge completed; selects the column audit |
+| `ChallengeDecision_307` | STRUCTURAL / EXTRACTION | Column-barrier moment audit selected as next local test |
+| `RowSquareContinue_307` | FALSE / BLOCKED | Direct row-square continuation blocked as the next move under current tools |
+| `ColumnBarrierMomentAudit_308(P_minor^0)` | STRUCTURAL / EXTRACTION | Column barriers audited; first-incidence inputs give ceilings only |
+| `ColumnIncidenceFirstMoment_308(lambda_j)` | STRUCTURAL / EXTRACTION | Incidence bound for `MultMomentP0_284(r;lambda_j)` |
+| `EnergyIncidenceColumnCeiling_308 / SigmaEnergyIncidenceCeiling_308` | STRUCTURAL / EXTRACTION | Valid ceilings retain an uncontrolled `(m_minor^0)^theta_r` factor |
+| `CurrentColumnBarrierRoute_308(r)` | FALSE / BLOCKED | Current local tools do not prove either column barrier small |
+| `LowLevelTailToColumnBarrier_308 / VacuousRemovalToColumnBarrier_308` | FALSE / BLOCKED | Low-level tail and maximal removal do not control high-level multiplicities |
+| `ColumnMultiplicityGainTarget_308(r)` | OPEN | Needs a same-family high-multiplicity distribution gain |
+| `ColumnMultiplicityDistributionAudit_309(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

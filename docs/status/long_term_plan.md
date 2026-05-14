@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 307
-Post-Reflective_1 solving count: 126
-Long-term-plan count: 120
+Latest completed module: 308
+Post-Reflective_1 solving count: 127
+Long-term-plan count: 121
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -2590,4 +2590,47 @@ Module 308:
   perform ColumnBarrierMomentAudit_308(P_minor^0), testing
   MultMomentP0_284(r;lambda_j), ColumnBarrierP0_284(r), and
   SigmaColumnBarrierP0_284(r) against current same-family local inputs.
+```
+
+Module 308 completed:
+
+```text
+ColumnBarrierMomentAudit_308(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+ColumnIncidenceFirstMoment_308(lambda_j):
+  STRUCTURAL / EXTRACTION.
+
+EnergyIncidenceColumnCeiling_308(r),
+SigmaEnergyIncidenceCeiling_308(r):
+  STRUCTURAL / EXTRACTION.
+
+CurrentColumnBarrierRoute_308(r),
+LowLevelTailToColumnBarrier_308,
+VacuousRemovalToColumnBarrier_308:
+  FALSE / BLOCKED.
+
+ColumnMultiplicityGainTarget_308(r):
+  OPEN.
+```
+
+The audit shows that raw counting and first-incidence/energy estimates still
+leave an uncontrolled `(m_minor^0)^theta_r` factor in the Module 284 column
+barriers. The low-level tail and vacuous removal rows do not control
+high-level multiplicities.
+
+The next cadence checkpoints are unchanged:
+
+```text
+Fourteenth plan update:  Module 313
+Next reflective log:     Module 341
+```
+
+Continue with:
+
+```text
+Module 309:
+  perform ColumnMultiplicityDistributionAudit_309(P_minor^0), deciding
+  whether a layer-cake or distributional formulation of N_{xi,0}(lambda_j)
+  creates a genuinely smaller target than ColumnMultiplicityGainTarget_308(r).
 ```

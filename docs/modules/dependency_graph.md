@@ -55,7 +55,8 @@ flowchart TD
   FixedFiber305["FixedFiberRowSquareBenchmark_305<br/>benchmark STRUCTURAL; current tools BLOCKED"]
   FixedFiber306["FixedFiberBlockedVerdict_306<br/>verdict STRUCTURAL; selection next BLOCKED"]
   PlanChallenge8["PlanChallenge_8_307<br/>challenge STRUCTURAL; row-square next move BLOCKED"]
-  ColumnBarrier308["ColumnBarrierMomentAudit_308<br/>next target OPEN"]
+  ColumnBarrier308["ColumnBarrierMomentAudit_308<br/>audit STRUCTURAL; current route BLOCKED"]
+  ColumnDist309["ColumnMultiplicityDistributionAudit_309<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -144,6 +145,8 @@ flowchart TD
   FixedFiber305 --> FixedFiber306
   FixedFiber306 --> PlanChallenge8
   PlanChallenge8 --> ColumnBarrier308
+  ColumnBarrier308 --> ColumnDist309
+  ColumnDist309 --> ThresholdP0
   ColumnBarrier308 --> ThresholdP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
@@ -259,3 +262,6 @@ flowchart TD
 - `PlanChallenge_8_307` pauses direct row-square continuation under the
   current toolkit and selects `ColumnBarrierMomentAudit_308`; this is a
   steering decision, not a column estimate.
+- `ColumnBarrierMomentAudit_308` extracts first-incidence column ceilings and
+  blocks the current column-barrier route; it does not prove either Module
+  284 column barrier.
