@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 219
-Post-Reflective_1 solving count: 38
-Long-term-plan count: 32
+Latest completed module: 220
+Post-Reflective_1 solving count: 39
+Long-term-plan count: 33
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -310,6 +310,11 @@ Expected work:
   potentially endpoint-strength unless `MoveLayerCube_3^Pi` is proved;
 - Module 220: state the Bernoulli or finite-stage deterministic-extraction
   requirement for selector statements used in the endpoint branch;
+  completed as `DetExtract_3^Pi(s -> mv)`, a structural extraction package
+  separating parameter-grid compatibility, Bernoulli exceptional-set
+  summability, Bernoulli-to-actual coupling, finite-stage convergence,
+  diagonal stability, major/minor and frozen/moving compatibility, and
+  alpha-exception accounting in the residual fourth-moment norms;
 - Module 221: create `Reflective_2.md`, the required 40-iteration memory log
   after `Reflective_1.md`, and record corrections from Modules 179-220;
 - Module 222: consolidate the selector-transfer dependency graph after the
@@ -386,13 +391,21 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 220: Bernoulli and finite-stage deterministic extraction requirement.
+Module 221: Reflective_2.md memory log after Reflective_1.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 219 completed the frozen-to-moving dyadic threshold transfer
-obstruction. The verdict was:
+Module 220 completed the Bernoulli and finite-stage deterministic extraction
+audit. The verdict was:
+
+```text
+Bernoulli expectation, Bernoulli high-probability, or finite-stage density
+control does not become an actual fixed-alpha selector theorem without
+deterministic extraction in the same residual fourth-moment norms.
+```
+
+Module 219 had already shown:
 
 ```text
 The fr -> mv row is not harmless boundary bookkeeping unless the
@@ -400,25 +413,15 @@ moving-threshold residual layer cubes are small in the same fourth-moment
 normalization as the endpoint.
 ```
 
-Module 218 had already shown:
+The next iteration reaches the 40-iteration reflection cadence after
+`Reflective_1.md`. Create:
 
 ```text
-Major and minor selector-transfer packages are composable only after an
-explicit projection-boundary compatibility package.
+Reflective_2.md
 ```
 
-The next module should audit deterministic extraction for probabilistic or
-finite-stage selector statements. In particular it should compare:
-
-```text
-Bernoulli expectation versus fixed-alpha statement,
-finite-stage survivor/core-floor model versus actual selector,
-high-probability estimates versus all required dyadic D ranges,
-major/minor projected norms versus unprojected norms,
-exceptional-set summability over X,D,R,eta,w,
-compatibility with frozen-to-moving and major/minor transfer rows.
-```
-
-It must not convert Bernoulli or finite-stage estimates into fixed-alpha
-actual-selector estimates without an explicit extraction theorem in the
-residual fourth-moment norms used by the endpoint branch.
+The reflection should cover Modules 179-220, especially the corrections that
+kept the branch from upgrading decompositions, model estimates, selector
+transfer, frozen-to-moving transfer, or Bernoulli/finite-stage extraction into
+proofs of the open endpoint. It should also update the memory-log cadence for
+the next 40 solving iterations.

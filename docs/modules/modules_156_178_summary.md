@@ -1,4 +1,4 @@
-# Modules 156-219 summary
+# Modules 156-220 summary
 
 ## 156
 
@@ -275,6 +275,16 @@ centering control. The row is classified as mixed or potentially
 endpoint-strength unless `MoveLayerCube_3^Pi` is proved in the target
 fourth-moment norm.
 
+## 220
+
+Bernoulli and finite-stage deterministic extraction requirement; defines
+`DetExtract_3^Pi(s -> mv)` for `s in {bern, fs}` and separates parameter-grid
+compatibility, Bernoulli exceptional-set summability, Bernoulli-to-actual
+coupling, finite-stage convergence, diagonal stability, major/minor and
+frozen/moving compatibility, and alpha-exception accounting. It blocks using
+expectation, high-probability, or finite-stage density estimates as actual
+fixed-alpha selector theorems without residual fourth-moment extraction.
+
 ## Next
 
-Module 220: Bernoulli and finite-stage deterministic extraction requirement.
+Module 221: Reflective_2.md memory log after Reflective_1.
