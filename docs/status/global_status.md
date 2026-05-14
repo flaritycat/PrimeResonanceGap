@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 320
-Active phase: Phase K, data-dependent fiber gain audit next
+Latest module frontier: Module 321
+Active phase: Phase K, combined plan update/challenge next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -766,10 +766,16 @@ Completed size-sensitive minor-kernel criterion:
     310 threshold conversion and Module 284 column-barrier weights visible,
     and records that deterministic size bounds still recover current ceilings
 
+Completed data-dependent fiber gain audit:
+  DataDependentFiberGainAudit_321(P_minor^0)
+    records that the current row caps, column caps, shell heights, energy
+    tails, and selection rules allow complete same-frequency concentration
+    and do not force an admissible Phi gain
+
 Next scheduled check:
-  Module 321 DataDependentFiberGainAudit_321(P_minor^0)
+  Module 322 PlanUpdate_15_Challenge_9_322
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Phase K size-sensitive
-minor-kernel criterion;
+Status: **STRUCTURAL / EXTRACTION** for the completed Phase K
+data-dependent fiber gain audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

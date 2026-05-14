@@ -412,13 +412,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the size-sensitive minor-kernel criterion**.
+the data-dependent fiber gain audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 320
-Active phase: Phase K, data-dependent fiber gain audit next
+Latest module frontier: Module 321
+Active phase: Phase K, combined plan update/challenge next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -671,10 +671,16 @@ Module 320:
   admissible `Phi` could feed the r=2 column-pair route, but deterministic
   energy-product, column-cap, and incidence bounds still recover current
   ceilings.
+
+Module 321:
+  audited the data-dependent fibers. Current row caps, column caps, shell
+  restrictions, energy tails, and selection rules do not force overlap gain or
+  independence; complete same-frequency concentration is still compatible with
+  the deterministic constraints.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-320 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-321 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window or the signed minor-kernel row.
@@ -706,9 +712,13 @@ Module 320:
   the Module 310 threshold conversion and Module 284 column-barrier weights.
 
 Module 321:
-  perform DataDependentFiberGainAudit_321(P_minor^0), deciding whether the
+  performed DataDependentFiberGainAudit_321(P_minor^0), deciding whether the
   current row caps, column caps, shell restrictions, energy tails, or selection
   rules imply any genuine overlap gain for the `Phi` criterion.
+
+Module 322:
+  perform PlanUpdate_15_Challenge_9_322, the scheduled combined plan update
+  and plan challenge.
 ```
 
 ## What Is Proved?
@@ -771,7 +781,10 @@ Compact status table:
 | Conditional Phi criterion `PhiCriterion_320(Phi)` | **CONDITIONAL** |
 | Current size-sensitive closure `CurrentSizeSensitiveClosure_320` | **FALSE / BLOCKED** |
 | Admissible Phi gain `AdmissiblePhiGain_320` | **OPEN** |
-| Data-dependent fiber gain audit `DataDependentFiberGainAudit_321` | **OPEN next target** |
+| Data-dependent fiber gain audit `DataDependentFiberGainAudit_321` | **STRUCTURAL / EXTRACTION** |
+| Current fiber caps force Phi gain `CurrentFiberCapsForcePhiGain_321` | **FALSE / BLOCKED** |
+| Fiber overlap gain target `FiberOverlapGainTarget_321` | **OPEN** |
+| Combined plan update/challenge `PlanUpdate_15_Challenge_9_322` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 

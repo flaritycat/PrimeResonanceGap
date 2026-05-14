@@ -69,7 +69,8 @@ flowchart TD
   SignedVerdict318["SignedMinorKernelCombinationVerdict_318<br/>verdict STRUCTURAL; smaller route BLOCKED"]
   NewInput319["AntiDiagonalNewInputInventory_319<br/>inventory STRUCTURAL; current closures BLOCKED"]
   SizeSensitive320["SizeSensitiveMinorKernelCriterion_320<br/>criterion STRUCTURAL; deterministic closure BLOCKED"]
-  FiberGain321["DataDependentFiberGainAudit_321<br/>next target OPEN"]
+  FiberGain321["DataDependentFiberGainAudit_321<br/>audit STRUCTURAL; caps force gain BLOCKED"]
+  Plan322["PlanUpdate_15_Challenge_9_322<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -174,7 +175,8 @@ flowchart TD
   SignedVerdict318 --> NewInput319
   NewInput319 --> SizeSensitive320
   SizeSensitive320 --> FiberGain321
-  FiberGain321 --> AntiDiag312
+  FiberGain321 --> Plan322
+  Plan322 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -345,3 +347,7 @@ flowchart TD
   criterion with Module 310 threshold conversion and Module 284 column-barrier
   weights visible. Deterministic size bounds still recover current ceilings,
   so the next audit is data-dependent fiber overlap gain.
+- `DataDependentFiberGainAudit_321` records that the current caps and
+  selection rules still allow complete same-frequency concentration. They do
+  not force an admissible `Phi`; the next step is the scheduled combined plan
+  update and challenge.

@@ -3324,3 +3324,60 @@ Module 321:
   selection rules imply any nontrivial weighted or unweighted column-overlap
   gain that could produce an admissible Phi.
 ```
+
+Module 321 completed:
+
+```text
+DataDependentFiberGainAudit_321(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+FiberOverlapIdentities_321,
+CompleteFiberConcentrationModel_321:
+  STRUCTURAL / EXTRACTION.
+
+CurrentFiberCapsForcePhiGain_321,
+SelectionRuleGivesIndependence_321:
+  FALSE / BLOCKED.
+
+FiberOverlapGainTarget_321(P_minor^0):
+  OPEN.
+
+PlanUpdate_15_Challenge_9_322:
+  OPEN next target.
+```
+
+The audit records that the current deterministic constraints allow complete
+same-frequency concentration:
+
+```text
+Overlap_N(U,V)=sum_xi N_U(xi)N_V(xi)
+```
+
+can saturate the column-overlap ceilings under the present row caps, column
+caps, shell-height restrictions, energy tails, and selection rules. This is a
+diagnostic compatibility model, not a prime counterexample, but it blocks
+deriving an admissible `Phi` from the current caps alone.
+
+The current cadence records:
+
+```text
+Latest completed module: 321
+Post-Reflective_1 solving count: 140
+Long-term-plan count: 134
+
+134 is not divisible by 9, so no plan update is due in this module.
+134 is not divisible by 15, so no plan challenge is due in this module.
+The next module has count 135, divisible by both 9 and 15, so it must be a
+combined plan update and plan challenge.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 322:
+  perform PlanUpdate_15_Challenge_9_322, reviewing the Phase K column branch
+  after Modules 313-321 and deciding whether to continue toward
+  FiberOverlapGainTarget_321, pivot to residual eight-slot minor cancellation,
+  or pause the branch pending a genuinely new input.
+```
