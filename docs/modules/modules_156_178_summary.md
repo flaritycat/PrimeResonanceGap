@@ -1,4 +1,4 @@
-# Modules 156-279 summary
+# Modules 156-280 summary
 
 ## 156
 
@@ -778,7 +778,16 @@ dual correlation, a `TT*` four-form, and a fourth-power eight-slot residual
 phase kernel over the data-dependent shell `J_trans_0(lambda;sigma)`.
 No bound for `Xi_273^0` or fixed-set transfer is proved.
 
+## 280
+
+Fixed-set versus data-dependent shell audit; defines
+`FixedSetShellAudit_280(P_minor^0)`, blocks the automatic transfer from
+predetermined frequency-set estimates to the adaptive shell fibers
+`S_d(J)` and `D_xi(J)`, and leaves `UniformFiberBound_280`,
+`SelectionTransfer_280`, and `DirectShellBound_280` as the admissible open
+routes.
+
 ## Next
 
-Module 280: compare fixed frequency-set estimates with data-dependent shell
-sets inside `P_minor^0`.
+Module 281: benchmark the strongest non-endpoint large-sieve or Bessel-type
+estimate available for `Xi_273^0` in `P_minor^0`.

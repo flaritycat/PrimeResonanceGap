@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 279
-Post-Reflective_1 solving count: 98
-Long-term-plan count: 92
+Latest completed module: 280
+Post-Reflective_1 solving count: 99
+Long-term-plan count: 93
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -900,8 +900,12 @@ Expected work:
   data-dependent shell ledger;
 - Module 280: compare fixed frequency sets with data-dependent shell sets
   inside `P_minor^0`;
+  completed as `FixedSetShellAudit_280(P_minor^0)`, blocking automatic
+  transfer from predetermined frequency-set estimates to data-dependent
+  shell fibers unless `UniformFiberBound_280`, `SelectionTransfer_280`, or
+  `DirectShellBound_280` is supplied;
 - Module 281: benchmark the strongest non-endpoint large-sieve or
-  Bessel-type estimate available for `Xi_273` in `P_minor^0`;
+  Bessel-type estimate available for `Xi_273^0` in `P_minor^0`;
 - Module 282: audit routed degeneracy rows inside `P_minor^0`;
 - Module 283: audit the minimum W-limit, cutoff, boundary, threshold,
   residue, and selector side rows needed for `P_minor^0`;
@@ -1358,3 +1362,57 @@ Module 280 should decide whether a theorem for predetermined frequency sets
 can transfer to the actual fibers `S_d(J)` and `D_xi(J)`, or whether a new
 uniform selection theorem is required before `PhaseKernelBound_273^0` can be
 approached.
+
+Module 280 completed:
+
+```text
+FixedSetShellAudit_280(P_minor^0)
+  fixed-set estimates do not automatically imply PhaseKernelBound_273^0.
+```
+
+The admissible open routes are:
+
+```text
+UniformFiberBound_280,
+SelectionTransfer_280,
+DirectShellBound_280.
+```
+
+It preserves these statuses:
+
+```text
+FixedSetShellTransfer_280,
+UniformFiberBound_280,
+SelectionTransfer_280,
+DirectShellBound_280,
+PhaseKernelBound_273^0,
+PhaseKernelBound_273,
+TransverseGateProofPkg_276,
+TransIncBound_269,
+MinorArcTransfer_3^B,
+NarrowMinorArc_3^B,
+selector transfer,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3
+remain unproved.
+```
+
+Continue with:
+
+```text
+Module 281:
+  benchmark the strongest non-endpoint large-sieve or Bessel-type estimate
+  available for Xi_273^0 in P_minor^0.
+```
+
+Module 281 should explicitly classify each candidate as one of:
+
+```text
+UniformFiberBound_280 candidate,
+SelectionTransfer_280 candidate,
+DirectShellBound_280 candidate,
+fixed-set-only diagnostic,
+or endpoint-strength / blocked.
+```

@@ -25,7 +25,9 @@ flowchart TD
   TransVerdict["TransverseGateVerdict_276 / TransverseGateProofPkg_276<br/>verdict STRUCTURAL; proof package OPEN"]
   MinTransFamily["MinimalTransverseFamily_278(P_minor^0)<br/>definition STRUCTURAL"]
   XiExpansion["XiDualPhaseExpansion_279(P_minor^0)<br/>identity STRUCTURAL"]
-  FixedShellTransfer["FixedSetShellTransfer_280<br/>OPEN"]
+  FixedShellAudit["FixedSetShellAudit_280<br/>audit STRUCTURAL; automatic transfer BLOCKED"]
+  FixedShellTransfer["UniformFiber / SelectionTransfer / DirectShell<br/>OPEN routes"]
+  LSBesselBench["Large-sieve/Bessel benchmark_281<br/>next diagnostic"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -67,8 +69,10 @@ flowchart TD
   PhaseKernel0 --> TransGate
   MinTransFamily --> XiExpansion
   XiExpansion --> PhaseKernel0
+  XiExpansion --> FixedShellAudit
+  FixedShellAudit --> FixedShellTransfer
   FixedShellTransfer --> PhaseKernel0
-  XiExpansion --> FixedShellTransfer
+  LSBesselBench --> FixedShellTransfer
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -102,3 +106,5 @@ flowchart TD
   proof of `PhaseKernelBound_273^0`.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
+- `FixedSetShellAudit_280` blocks automatic transfer; the open routes still
+  require uniform adaptive-fiber, selection-transfer, or direct-shell input.

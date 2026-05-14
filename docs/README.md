@@ -7,7 +7,7 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 279
+Latest module frontier: Module 280
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -50,6 +50,7 @@ modules/
   module_277_tenth_plan_update_sixth_challenge.md
   module_278_minimal_transverse_family.md
   module_279_xi_dual_phase_expansion.md
+  module_280_fixed_set_shell_transfer.md
   modules_156_178_summary.md
 
 reviews/

@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 279
+Latest module frontier: Module 280
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -117,6 +117,9 @@ Latest project-wide review:
 - An exact dual and phase expansion `XiDualPhaseExpansion_279(P_minor^0)`,
   identifying the linear dual form, `TT*` square, fourth-power shell kernel,
   and data-dependent set ledger for `Xi_273^0`.
+- A fixed-set versus shell-set audit `FixedSetShellAudit_280(P_minor^0)`,
+  blocking automatic transfer from predetermined frequency-set estimates to
+  the data-dependent shell functional `Xi_273^0`.
 
 ## What the project has not proved
 
@@ -155,6 +158,8 @@ Latest project-wide review:
   for `PhaseKernelBound_273`.
 - Fixed-frequency-set transfer to the data-dependent shells
   `J_trans_0(lambda;sigma)`.
+- `UniformFiberBound_280`, `SelectionTransfer_280`, or
+  `DirectShellBound_280`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -287,13 +292,18 @@ Completed Phase J dual expansion:
   XiDualPhaseExpansion_279(P_minor^0)
     expands Xi_273^0 into exact data-dependent shell phase kernels
 
+Completed Phase J fixed-set transfer audit:
+  FixedSetShellAudit_280(P_minor^0)
+    blocks the automatic fixed-set to data-dependent shell shortcut
+
 Active Phase J target:
   PhaseKernelBound_273^0 over P_minor^0
-    next compare fixed frequency-set estimates with data-dependent shells
+    next benchmark large-sieve/Bessel-type estimates against the adaptive
+    shell routes
 
 Next scheduled check:
-  Module 280 compare fixed frequency sets with data-dependent shell sets
-  inside P_minor^0
+  Module 281 benchmark non-endpoint large-sieve or Bessel-type estimates for
+  Xi_273^0 inside P_minor^0
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the active Phase J steering step;
