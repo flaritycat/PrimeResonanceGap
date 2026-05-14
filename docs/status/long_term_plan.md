@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 229
-Post-Reflective_1 solving count: 48
-Long-term-plan count: 42
+Latest completed module: 230
+Post-Reflective_1 solving count: 49
+Long-term-plan count: 43
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -394,6 +394,10 @@ Expected work:
   one fixed boundary/prefix row and not as full boundary transfer;
 - Module 230: attach selector-transfer requirements to every endpoint arrow
   using `SelectorTransferGraph_3^consol`;
+  completed as `EndpointSelectorAttach_230`, attaching selector source/target
+  classes, transfer chains, required residual fourth-moment norms, active
+  graph rows, and local/mixed/endpoint-strength classifications to the
+  endpoint arrows;
 - Module 231: produce a consolidated endpoint dependency table with each arrow
   labeled by the allowed status labels;
 - Module 232: perform the fifth plan update and third plan challenge in the
@@ -452,62 +456,50 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 230: Attach selector-transfer requirements to every endpoint arrow.
+Module 231: Consolidate the endpoint dependency table with allowed status
+labels.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 229 completed the analytic side-package arrow audit:
+Module 230 completed the selector-transfer attachment ledger:
 
 ```text
-AnalyticArrowAudit_229.
+EndpointSelectorAttach_230.
 ```
 
-It classified the remaining non-structural arrows as conditional on named
-side packages:
+It attached distinct selector-transfer norms to the endpoint arrows:
 
 ```text
-ResCube_3^sharp <-> CPC_3^sharp:
-  PairResidualTransfer_229,
-
-CPC_3^sharp <-> SPAC_2^sharp:
-  CPCSPACAlign_229,
-
-CPC_3^sharp <-> RBDH_pair_short:
-  RBDHCPCBridge_229,
-
-ProjectedMajorTarget_3^B:
-  MajorAnalyticPkg_229,
-
-MinorTarget_3^B:
-  MinorAnalyticPkg_229.
+Sel_B^full,
+Sel_B^major,
+Sel_B^minor,
+Sel_R^pair,
+Sel_Rect.
 ```
 
-Module 230 should now attach selector-transfer requirements to every endpoint
-arrow using:
+Module 231 should now consolidate Modules 227-230 into a dependency table with
+one row per endpoint arrow or target. Each row should include:
 
 ```text
-SelectorTransferGraph_3^consol,
-SharpSelectorTransferMatrix_3,
-MajorSelectorTransfer_3^P,
-MinorArcTransfer_3^B,
-MajorMinorSelCompat_3(P_adm),
-FrozenMovingObstruction_3^Pi,
-DetExtract_3^Pi(s -> mv).
+arrow / target;
+fixed-object status;
+analytic side package;
+selector-transfer package;
+boundary / W / prime-power / range package;
+allowed status label;
+whether the row is structural, conditional, blocked-as-shortcut, or open.
 ```
 
-For each endpoint arrow, record:
+The table should keep the previous distinctions:
 
 ```text
-source selector class;
-target selector class;
-the adjacent selector edge or chain;
-the residual fourth-moment norm in which transfer is required;
-whether the row is local, mixed, endpoint-strength, or blocked;
-whether it changes major/minor projection, denominator, boundary, W-residue,
-prime-power, zero-mode, or dyadic range conventions.
+structural identities from Module 228,
+analytic side packages from Module 229,
+selector-transfer attachments from Module 230,
+LocalBdPkg_226 as only one fixed local boundary row.
 ```
 
-Do not upgrade selector transfer to `PROVEN`. The expected result is an
-attachment ledger, not a closure theorem. The fifth plan update and third plan
-challenge remain scheduled for Module 232, not Module 230.
+Do not mark any endpoint theorem `PROVEN`. The expected result is a
+consolidated dependency table, not a closure theorem. The fifth plan update and
+third plan challenge remain scheduled for Module 232, not Module 231.

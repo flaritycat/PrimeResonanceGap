@@ -1,4 +1,4 @@
-# Modules 156-229 summary
+# Modules 156-230 summary
 
 ## 156
 
@@ -363,6 +363,15 @@ absorption, covariance calibration, exact local models, boundary transfer,
 collision control, W-limit order, prime-power transfer, range coverage, and
 selector transfer.
 
+## 230
+
+Endpoint selector-transfer attachment ledger; defines
+`EndpointSelectorAttach_230` and attaches source/target selector classes,
+selector chains, required residual fourth-moment norms, active transfer rows,
+and local/mixed/endpoint-strength classifications to each endpoint arrow,
+separating `B_d`, `R_d`, projected major, minor, and rectangle transfer norms.
+
 ## Next
 
-Module 230: Attach selector-transfer requirements to every endpoint arrow.
+Module 231: Consolidate the endpoint dependency table with allowed status
+labels.
