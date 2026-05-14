@@ -85,8 +85,9 @@ testing whether any non-endpoint estimate can control the shell functional
 that fixed frequency-set estimates do not automatically control these
 data-dependent shells, and the remaining local side rows must still be proved
 before any Phase J kernel bound can be used. The latest audit isolates the
-threshold-budget barriers and then records that the current adaptive-shell
-tool package is blocked, without disproving the local target.
+threshold-budget barriers, records that the current adaptive-shell tool
+package is blocked, and now starts a narrower triage of possible new
+adaptive-shell inputs.
 
 ## Whole Project Map
 
@@ -281,14 +282,13 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase J: minimal transverse proof-package
-feasibility**.
+The current active phase is **Phase K: adaptive-shell gain triage**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 285
-Active phase: Phase J, minimal transverse proof-package feasibility
+Latest module frontier: Module 286
+Active phase: Phase K, adaptive-shell gain triage after the Phase J block
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -332,18 +332,22 @@ Module 285:
   estimates still need selection transfer, Bessel gives only row/column
   ceilings, threshold barriers remain open, and `PhaseKernelBound_273^0`
   remains open.
+
+Module 286:
+  performed the eleventh plan update. Phase J is paused as blocked by current
+  tools, and Phase K begins with adaptive-shell gain triage.
 ```
 
 The next planned module is:
 
 ```text
-Module 286:
-  eleventh plan update for Phase J.
+Module 287:
+  audit the direct-shell TT* cross terms for X_J(omega) inside P_minor^0.
 ```
 
-The next plan update should decide whether to attempt a genuinely new
-`AdaptiveShellGainP0` theorem, pause Phase J as blocked by current tools, or
-redirect to a smaller frontier.
+The next audit should decide whether the direct-shell route exposes a smaller
+same-family non-endpoint subtarget, or whether it is already endpoint-strength
+under the current toolkit.
 
 ## What Is Proved?
 
@@ -529,6 +533,9 @@ wins.
 | `AdaptiveShellVerdict_285(P_minor^0)` | STRUCTURAL / EXTRACTION | Current Phase J adaptive-shell package classified |
 | `CurrentToolsCloseP0_285` | FALSE / BLOCKED | Current fixed-set, Bessel, threshold, side-row, and degeneracy tools do not prove `PhaseKernelBound_273^0` |
 | `AdaptiveShellGainP0_285` | OPEN | Would require a new uniform-fiber, selection-transfer, or direct-shell theorem with compatible losses |
+| `PlanUpdate_11_286` | STRUCTURAL / EXTRACTION | Phase J paused as current-tool blocked; Phase K selected |
+| `PhaseK_AdaptiveShellTriage` | STRUCTURAL / EXTRACTION | New-input triage, not an analytic estimate |
+| `DirectShellCrossTermGain_287` | OPEN | Next target: TT* cross-term audit inside `P_minor^0` |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

@@ -32,7 +32,8 @@ flowchart TD
   SideRowsP0["SideRowsP0Audit_283(P_minor^0)<br/>audit STRUCTURAL; ready package OPEN"]
   ThresholdP0["ThresholdBudgetP0Audit_284<br/>audit STRUCTURAL; closure OPEN"]
   AdaptiveShellP0["AdaptiveShellVerdict_285<br/>current tools BLOCKED; gain OPEN"]
-  PlanUpdate11["PlanUpdate_11_286<br/>next steering update"]
+  PlanUpdate11["PlanUpdate_11_286<br/>Phase K selected"]
+  DirectTTStar["DirectShellTTStarAudit_287<br/>next diagnostic"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -85,6 +86,9 @@ flowchart TD
   AdaptiveShellP0 --> PhaseKernel0
   AdaptiveShellP0 --> FixedShellTransfer
   AdaptiveShellP0 --> PlanUpdate11
+  PlanUpdate11 --> DirectTTStar
+  DirectTTStar --> AdaptiveShellP0
+  DirectTTStar --> PhaseKernel0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -135,3 +139,6 @@ flowchart TD
 - `AdaptiveShellVerdict_285` marks the current Phase J tool package as
   blocked for `PhaseKernelBound_273^0`; it does not disprove the local target
   or any endpoint.
+- `PlanUpdate_11_286` pauses Phase J and starts Phase K as adaptive-shell
+  gain triage. The first Phase K test is the direct-shell `TT*` cross-term
+  audit, not a claimed gain.

@@ -69,6 +69,9 @@ FALSE / BLOCKED
 | `AdaptiveShellVerdict_285(P_minor^0)` | STRUCTURAL / EXTRACTION | Proof-or-blocked verdict for the current Phase J adaptive-shell package | `module_285_adaptive_shell_verdict.md` | Only as a verdict |
 | `CurrentToolsCloseP0_285` | FALSE / BLOCKED | Existing fixed-set, Bessel, threshold, side-row, and degeneracy tools do not prove `PhaseKernelBound_273^0` | `module_285_adaptive_shell_verdict.md` | No |
 | `AdaptiveShellGainP0_285` | OPEN | Would require a new same-family uniform-fiber, selection-transfer, or direct-shell theorem with compatible side and threshold losses | `module_285_adaptive_shell_verdict.md` | No |
+| `PlanUpdate_11_286` | STRUCTURAL / EXTRACTION | Eleventh plan update: Phase J paused as current-tool blocked; Phase K selected | `module_286_eleventh_plan_update.md` | Only as steering |
+| `PhaseK_AdaptiveShellTriage` | STRUCTURAL / EXTRACTION | Working phase for testing possible new adaptive-shell inputs after the Phase J block | `module_286_eleventh_plan_update.md` | Only as schedule/steering |
+| `DirectShellCrossTermGain_287` | OPEN | Future TT* cross-term gain inside `P_minor^0`; not yet audited or proved | `module_286_eleventh_plan_update.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

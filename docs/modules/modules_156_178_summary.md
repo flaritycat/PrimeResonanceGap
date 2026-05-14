@@ -1,4 +1,4 @@
-# Modules 156-285 summary
+# Modules 156-286 summary
 
 ## 156
 
@@ -826,7 +826,14 @@ Adaptive-shell proof-or-blocked verdict inside `P_minor^0`; defines
 `CurrentToolsCloseP0_285` as `FALSE / BLOCKED`, and leaves
 `AdaptiveShellGainP0_285` and `PhaseKernelBound_273^0` open.
 
+## 286
+
+Eleventh plan update after the Phase J current-tool block; defines
+`PlanUpdate_11_286`, pauses Phase J, starts
+`PhaseK_AdaptiveShellTriage`, and schedules the direct-shell `TT*`
+cross-term audit as Module 287.
+
 ## Next
 
-Module 286: eleventh plan update after the current Phase J tool package was
-marked blocked for `PhaseKernelBound_273^0`.
+Module 287: audit the direct-shell `TT*` cross terms of `X_J(omega)` inside
+`P_minor^0`.

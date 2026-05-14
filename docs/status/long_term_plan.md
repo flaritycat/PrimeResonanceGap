@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 285
-Post-Reflective_1 solving count: 104
-Long-term-plan count: 98
+Latest completed module: 286
+Post-Reflective_1 solving count: 105
+Long-term-plan count: 99
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -65,6 +65,7 @@ Ninth plan update:       Module 268 (completed)
 Tenth plan update:       Module 277 (completed)
 Sixth plan challenge:    Module 277 (completed)
 Eleventh plan update:    Module 286
+Twelfth plan update:     Module 295
 Seventh plan challenge:  Module 292
 ```
 
@@ -933,6 +934,8 @@ Expected work:
   `CurrentToolsCloseP0_285=FALSE / BLOCKED` while keeping
   `PhaseKernelBound_273^0` and `AdaptiveShellGainP0_285` open;
 - Module 286: perform the eleventh plan update.
+  completed as `PlanUpdate_11_286`, pausing Phase J as current-tool blocked
+  and selecting Phase K adaptive-shell gain triage.
 
 Success criterion: Phase J either produces a concrete non-endpoint candidate
 for `PhaseKernelBound_273^0` in `P_minor^0`, or classifies the candidate as
@@ -1682,4 +1685,58 @@ Module 286:
   perform the eleventh plan update, deciding whether to attempt a new
   AdaptiveShellGainP0 theorem, pause Phase J, or redirect to a smaller
   frontier.
+```
+
+Module 286 completed:
+
+```text
+PlanUpdate_11_286
+  pauses Phase J as current-tool blocked and starts Phase K.
+```
+
+The new active phase is:
+
+```text
+PhaseK_AdaptiveShellTriage:
+  test whether a genuinely new same-family adaptive-shell input can be
+  formulated without endpoint-strength assumptions.
+```
+
+The statuses remain:
+
+```text
+CurrentToolsCloseP0_285 = FALSE / BLOCKED.
+PhaseKernelBound_273^0 remains OPEN.
+AdaptiveShellGainP0_285 remains OPEN.
+```
+
+The Phase K provisional schedule is:
+
+```text
+Module 287:
+  audit the direct-shell TT* cross terms of X_J(omega) inside P_minor^0.
+
+Module 288:
+  audit selection complexity for the adaptive shell class S_d(J).
+
+Module 289:
+  stress-test the uniform-fiber route over the declared row/column class.
+
+Module 290:
+  give an AdaptiveShellGainP0 verdict.
+
+Module 291:
+  reserve for cleanup or status correction.
+
+Module 292:
+  perform the seventh plan challenge.
+```
+
+Continue with:
+
+```text
+Module 287:
+  DirectShellTTStarAudit_287(P_minor^0), deciding whether the direct-shell
+  TT* cross terms reduce to a smaller same-family non-endpoint target or are
+  already endpoint-strength under the current toolkit.
 ```

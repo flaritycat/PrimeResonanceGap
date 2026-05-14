@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 285
-Active phase: Phase J, minimal transverse proof-package feasibility
+Latest module frontier: Module 286
+Active phase: Phase K, adaptive-shell gain triage
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -139,6 +139,8 @@ Latest project-wide review:
   `CurrentToolsCloseP0_285` as `FALSE / BLOCKED` while keeping
   `PhaseKernelBound_273^0` and the possible new theorem
   `AdaptiveShellGainP0_285` open.
+- An eleventh plan update `PlanUpdate_11_286`, pausing Phase J as blocked by
+  current tools and starting Phase K as an adaptive-shell gain triage window.
 
 ## What the project has not proved
 
@@ -191,6 +193,8 @@ Latest project-wide review:
   `SigmaColumnBarrierP0_284`.
 - `AdaptiveShellGainP0_285`, any new uniform-fiber theorem, any selection
   theorem, or any direct-shell phase theorem closing `PhaseKernelBound_273^0`.
+- `DirectShellCrossTermGain_287` or any TT* cross-term estimate beyond the
+  already recorded row/column ceilings.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -352,13 +356,18 @@ Completed Phase J adaptive-shell verdict:
     records CurrentToolsCloseP0_285 as FALSE / BLOCKED while keeping
     PhaseKernelBound_273^0 and AdaptiveShellGainP0_285 open
 
-Active Phase J target:
-  PhaseKernelBound_273^0 over P_minor^0
-    next update the long-term plan after the current-tools block
+Completed eleventh plan update:
+  PlanUpdate_11_286
+    pauses Phase J as current-tool blocked and starts Phase K adaptive-shell
+    gain triage
+
+Active Phase K target:
+  AdaptiveShellGainP0_285 over P_minor^0
+    next audit the direct-shell TT* cross terms of X_J(omega)
 
 Next scheduled check:
-  Module 286 eleventh plan update for Phase J
+  Module 287 DirectShellTTStarAudit_287(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the active Phase J steering step;
+Status: **STRUCTURAL / EXTRACTION** for the active Phase K steering step;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.
