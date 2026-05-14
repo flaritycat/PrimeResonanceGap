@@ -5,7 +5,7 @@ This file is the first status document Codex should read.
 Current frontier:
 
 ```text
-Latest module frontier: Module 261
+Latest module frontier: Module 262
 Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -51,6 +51,9 @@ Latest project-wide review:
   uniformity, and model-domain conventions.
 - `Reflective_3.md`, a memory log reviewing Modules 221-260 and preserving
   the open endpoint statuses.
+- A fifth Phase H plan challenge that keeps model neutrality only in
+  proof-or-blocked mode through signed inclusion-exclusion, collision, kernel,
+  and uniformity tests.
 
 ## What the project has not proved
 
@@ -131,8 +134,12 @@ Phase H next target:
     conditionally reduces NeutralErr_major^P to generic-tail, kernel,
     collision, denominator, W-limit, and model-convention rows
 
-Next governance checkpoint:
-  Module 262 fifth plan challenge
+Phase H challenge:
+  PlanChallenge_5_262
+    continues Phase H only through narrowed proof-or-blocked subrow tests
+
+Next Phase H check:
+  Module 263 signed inclusion-exclusion expansion of NeutralErr_major^P
 ```
 
 Status: **CONDITIONAL**.

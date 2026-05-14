@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 261
-Post-Reflective_1 solving count: 80
-Long-term-plan count: 74
+Latest completed module: 262
+Post-Reflective_1 solving count: 81
+Long-term-plan count: 75
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -60,7 +60,7 @@ Sixth plan update:       Module 241 (completed)
 Fourth plan challenge:   Module 247 (completed)
 Seventh plan update:     Module 250 (completed)
 Eighth plan update:      Module 259 (completed)
-Fifth plan challenge:    Module 262
+Fifth plan challenge:    Module 262 (completed)
 Ninth plan update:       Module 268
 ```
 
@@ -709,6 +709,9 @@ Expected work:
 - Module 262: perform the fifth 15-iteration plan challenge, deciding whether
   the model-neutrality branch remains preferable to minor transverse
   incidence or a localized boundary-transfer slice;
+  completed as `PlanChallenge_5_262`, continuing Phase H only in narrowed
+  proof-or-blocked mode through the signed inclusion-exclusion, collision,
+  kernel, W/denominator/projection uniformity, and verdict tests;
 - Module 263: expand `NeutralErr_major^P` into the signed
   inclusion-exclusion subset average and identify which subset sizes and face
   factors can cancel structurally and which require averaged compatibility;
@@ -837,30 +840,36 @@ Reflective_3.md
   and records corrections without proving any endpoint.
 ```
 
+Module 262 completed the fifth plan challenge:
+
+```text
+PlanChallenge_5_262
+  keeps Phase H alive only in narrowed proof-or-blocked mode
+  through model-neutrality subrow tests.
+```
+
 Continue with:
 
 ```text
-Module 262: fifth plan challenge for Phase H and the projected
-model-neutrality branch.
+Module 263: signed inclusion-exclusion expansion of NeutralErr_major^P.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION`, not `PROVEN`.
-The challenge should decide whether Phase H should continue with projected
-model neutrality, redirect to minor transverse incidence, isolate a boundary
-transfer slice, or stop the current route.
-
-It should answer:
+Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, not `PROVEN`.
+Module 263 should expand the exact model-neutrality object without replacing
+the projected model:
 
 ```text
-whether ProjectedModelNeutralityGate_260 is genuinely smaller than the
-projected major endpoint,
-whether removing CollNeutral_260 collapses the route,
-whether removing signed kernel cancellation collapses the route,
-whether NarrowMinorArc_3^B / transverse incidence is now a better target,
-what would make Phase H stop early.
+NeutralErr_major^P
+  = |(1/D) sum_d E_{h,k,t} W_M(t)
+        sum_{S subset Lambda_8} (-1)^(8-|S|)
+          Theta_{w,S}^proj(d,h,k;t)|.
 ```
 
-Module 262 should preserve these statuses:
+It should identify generic binomial cancellations, subset-size layers, exact
+face identities, and the averaged compatibility needed to pass from local
+face cancellations to the projected model average.
+
+Module 263 should preserve these statuses:
 
 ```text
 ProjectedModelNeutrality_3^major: not proved,
@@ -869,7 +878,7 @@ ProjectedMajorTarget_3^B: not proved,
 ResCube_3^sharp: OPEN.
 ```
 
-Do not use the challenge to prove or claim:
+Do not use Module 263 to prove or claim, or to assume as input:
 
 ```text
 ProjectedMajorTarget_3^B,

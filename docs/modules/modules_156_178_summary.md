@@ -1,4 +1,4 @@
-# Modules 156-261 summary
+# Modules 156-262 summary
 
 ## 156
 
@@ -631,7 +631,14 @@ boundary rows, endpoint-arrow discipline, one-point and two-point fixed-row
 gates, minor/projected-major reentry, and the Phase H model-neutrality pivot,
 while preserving all open endpoint statuses.
 
+## 262
+
+Fifth plan challenge for Phase H; defines `PlanChallenge_5_262`, advances the
+long-term-plan count to 75, and keeps the projected model-neutrality branch
+alive only in narrowed proof-or-blocked mode through signed
+inclusion-exclusion, collision-defect, kernel, and W/denominator/projection
+uniformity tests.
+
 ## Next
 
-Module 262: fifth plan challenge for the Phase H projected model-neutrality
-branch.
+Module 263: signed inclusion-exclusion expansion of `NeutralErr_major^P`.
