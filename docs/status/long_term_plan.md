@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 210
-Post-Reflective_1 solving count: 29
-Long-term-plan count: 23
+Latest completed module: 211
+Post-Reflective_1 solving count: 30
+Long-term-plan count: 24
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -237,6 +237,10 @@ Expected work:
   compatibility;
 - Module 211: audit prime-power and small-prime removal for the projected
   major-arc model;
+  completed as `PPSPTransfer_3^major(P_adm)`, a conditional package separating
+  exact small-prime W-absorption, projected prime-power cube removal,
+  model-side prime-power exclusion, boundary/W-residue interaction, and
+  fixed-`w` uniformity;
 - Module 212: check compatibility between pair, rectangle, and projected cube
   local models, with no pointwise replacement of `Sigma_w(d,h)` by
   `kappa_w(d)^2`;
@@ -333,28 +337,30 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 211: Prime-power and small-prime removal for the projected major-arc
-model.
+Module 212: Pair, rectangle, and projected cube local-model compatibility.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 210 fixed the interval-transfer side package:
+Module 211 fixed the prime-power and small-prime transfer side package:
 
 ```text
-CycIntTransfer_3^major(P_adm).
+PPSPTransfer_3^major(P_adm).
 ```
 
-The next module should audit prime powers and small-prime artifacts for the
-projected major-arc model. In particular it should track:
+The next module should audit compatibility between the local factors already
+used in the project:
 
 ```text
-which parts are absorbed by the W-trick,
-which prime-power terms remain in the actual weight,
-whether removal is in projected fourth-moment norm or only first moment,
-interaction with Omega_w^proj and boundary transfer,
-uniformity over D,R,eta,P_M,H,K,T and the fixed-w limit order.
+kappa_w(d),
+Sigma_w(d,h),
+Theta_w(d,h,k),
+Theta_{w,S}^proj(d,h,k;t),
+Omega_w^proj(d,h,k;t).
 ```
 
-In particular, it must not treat prime-power negligibility in ordinary first
-moment as enough for projected residual fourth-moment matching.
+In particular, it must not replace `Sigma_w(d,h)` pointwise by
+`kappa_w(d)^2`, must not replace the projected residual inclusion-exclusion
+model by the full eight-form model, and must state exactly which averaged
+compatibility lemmas would be needed to pass between pair, rectangle, and
+projected cube marginals.

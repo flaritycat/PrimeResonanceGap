@@ -205,7 +205,13 @@ Cyclic-to-interval boundary transfer for the projected major-arc model; defines
 kernel-tail, cutoff, normalization, zero-mode leakage, and W-residue boundary
 errors separated.
 
+## 211
+
+Prime-power and small-prime transfer for the projected major-arc model; defines
+`PPSPTransfer_3^major(P_adm)` with exact small-prime W-absorption, projected
+prime-power cube removal, model-side prime-power exclusion, and boundary /
+W-residue interaction separated from first-moment sparsity.
+
 ## Next
 
-Module 211: Prime-power and small-prime removal for the projected major-arc
-model.
+Module 212: Pair, rectangle, and projected cube local-model compatibility.
