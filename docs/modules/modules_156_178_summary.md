@@ -1,4 +1,4 @@
-# Modules 156-266 summary
+# Modules 156-267 summary
 
 ## 156
 
@@ -674,7 +674,15 @@ denominator/CRT ranges, projection boundary, kernel truncation, cutoff,
 W-residue, dyadic ranges, selector class, and supremum closure before any
 row from the absolute or signed fork can be used over `P_adm`.
 
+## 267
+
+Proof-or-blocked verdict for projected model neutrality; defines
+`ProjectedModelNeutralityVerdict_267(P_adm)`, keeps the absolute fork as a
+conditional route to the literal `ProjectedModelNeutralityGate_260`, and
+corrects the signed fork into a same-family `SignedExactNeutralGate_267`
+route to `NeutralErr_major^P=o_W(1)` rather than a proof of the absolute
+collision row `CollNeutral_260`.
+
 ## Next
 
-Module 267: proof-or-blocked verdict for
-`ProjectedModelNeutralityGate_260(P_adm)`.
+Module 268: ninth plan update after the Phase H verdict.

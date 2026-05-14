@@ -7,16 +7,17 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 266
+Latest module frontier: Module 267
 Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 266 audits whether the Phase H rows are uniform over the same
-`P_adm` family: W-limit order, denominator/CRT ranges, projection boundary,
-kernel truncation, cutoff, W-residue, dyadic ranges, and selector class. The
-next step is a proof-or-blocked verdict for projected model neutrality.
+Module 267 gives the proof-or-blocked verdict for projected model neutrality:
+the absolute fork is a conditional route to the literal Module 260 gate,
+while the signed fork is only a same-family exact-model route to the same
+neutrality target, not a proof of the absolute collision row. The next step
+is the ninth plan update.
 
 ## Global status
 

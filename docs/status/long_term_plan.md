@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 266
-Post-Reflective_1 solving count: 85
-Long-term-plan count: 79
+Latest completed module: 267
+Post-Reflective_1 solving count: 86
+Long-term-plan count: 80
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -742,6 +742,10 @@ Expected work:
 - Module 267: give a proof-or-blocked verdict for projected model neutrality:
   conditional local/model-side, mixed, endpoint-strength, or false/blocked as
   a shortcut;
+  completed as `ProjectedModelNeutralityVerdict_267(P_adm)`, keeping the
+  absolute fork as the conditional route to the literal
+  `ProjectedModelNeutralityGate_260` and correcting the signed fork into a
+  same-family exact-model route rather than a proof of `CollNeutral_260`;
 - Module 268: perform the ninth plan update and choose whether to continue
   major matching, return to minor arcs, or isolate a boundary-transfer slice.
 
@@ -900,34 +904,51 @@ UniformityLedger_266(P_adm)
   in the same admissible family.
 ```
 
+Module 267 completed the proof-or-blocked verdict:
+
+```text
+ProjectedModelNeutralityVerdict_267(P_adm)
+  absolute route:
+    AbsPMNGate_267
+      => ProjectedModelNeutralityGate_260
+      => ProjectedModelNeutrality_3^major;
+
+  signed exact-model route:
+    SignedExactNeutralGate_267
+      => ExactModelNeutral_260
+      => ProjectedModelNeutrality_3^major,
+    but not CollNeutral_260.
+```
+
 Continue with:
 
 ```text
-Module 267: proof-or-blocked verdict for
-ProjectedModelNeutralityGate_260(P_adm).
+Module 268: ninth plan update after the Phase H verdict.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, not `PROVEN`.
-Module 267 should decide whether the Phase H model-neutrality branch is:
+Expected status: `STRUCTURAL / EXTRACTION`, not `PROVEN`.
+Module 268 should decide whether the next window should:
 
 ```text
-conditional local/model-side,
-mixed,
-endpoint-strength,
-or false / blocked as a shortcut.
+continue projected-major matching,
+return to minor-arc transverse incidence,
+isolate a smaller boundary/projection transfer slice,
+or pause Phase H because its remaining rows are too close to endpoint-strength.
 ```
 
-It should explicitly classify both forks:
+The plan update should use Module 267's corrected fork map:
 
 ```text
 absolute fork:
-  KernelAbsBudget_265 + AbsCollStrataGate_264 + UniformityLedger_266;
+  conditional route to the literal Module 260 gate only under
+  AbsPMNGate_267;
 
 signed fork:
-  KernelSignedBudget_265 + SignedCoverGate_264 + UniformityLedger_266.
+  conditional exact-model route under SignedExactNeutralGate_267,
+  not a proof of CollNeutral_260.
 ```
 
-Module 267 should preserve these statuses:
+Module 268 should preserve these statuses:
 
 ```text
 ProjectedModelNeutrality_3^major: not proved,
@@ -936,7 +957,7 @@ ProjectedMajorTarget_3^B: not proved,
 ResCube_3^sharp: OPEN.
 ```
 
-Do not use Module 267 to prove or claim, or to assume as input:
+Do not use Module 268 to prove or claim, or to assume as input:
 
 ```text
 ProjectedMajorTarget_3^B,

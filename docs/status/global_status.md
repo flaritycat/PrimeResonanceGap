@@ -5,7 +5,7 @@ This file is the first status document Codex should read.
 Current frontier:
 
 ```text
-Latest module frontier: Module 266
+Latest module frontier: Module 267
 Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -66,6 +66,10 @@ Latest project-wide review:
 - A uniformity ledger for Phase H requiring the same W-limit order,
   denominator/CRT ranges, projection boundary, kernel truncation, cutoff,
   W-residue, dyadic ranges, and selector class over `P_adm`.
+- A proof-or-blocked verdict for projected model neutrality, separating the
+  absolute route to the literal Module 260 gate from the signed exact-model
+  route and recording that signed cancellation does not prove
+  `CollNeutral_260`.
 
 ## What the project has not proved
 
@@ -85,6 +89,7 @@ Latest project-wide review:
   `KernelSignedNeutral_260`.
 - `UniformityLedger_266(P_adm)` or any of its W-order, denominator,
   projection, cutoff, W-residue, dyadic, selector, or supremum-closure rows.
+- `AbsPMNGate_267(P_adm)` or `SignedExactNeutralGate_267(P_adm)`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -158,8 +163,8 @@ Phase H challenge:
   PlanChallenge_5_262
     continues Phase H only through narrowed proof-or-blocked subrow tests
 
-Next Phase H check:
-  Module 267 proof-or-blocked verdict for ProjectedModelNeutralityGate_260
+Next scheduled check:
+  Module 268 ninth plan update after the Phase H verdict
 ```
 
 Status: **CONDITIONAL**.
