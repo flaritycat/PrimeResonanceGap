@@ -155,6 +155,14 @@ Refined conditional minor-arc criterion `NarrowMinorArc_3^B`, separating
 low-level leakage, bad-shift moments, persistent-frequency multiplicities, and
 the transverse incidence input.
 
+## 204
+
+Boundary, W-range, and selector compatibility audit for minor arcs; introduces
+`MinorArcTransfer_3^B` and shows that model minor-arc cancellation reaches the
+target selector only after fourth-moment transfer, arc-boundary stability,
+W-admissibility, threshold stability, prime-power control, and dyadic-range
+uniformity.
+
 ## Next
 
-Module 204: Boundary, W-range, and selector compatibility for minor arcs.
+Module 205: Second 9-iteration plan update.

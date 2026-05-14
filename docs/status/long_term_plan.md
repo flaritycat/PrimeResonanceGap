@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 203
-Post-Reflective_1 solving count: 22
-Long-term-plan count: 16
+Latest completed module: 204
+Post-Reflective_1 solving count: 23
+Long-term-plan count: 17
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -182,6 +182,9 @@ Expected modules:
   and transverse incidence risk;
 - Module 204: audit boundary, W-range, and selector compatibility for minor
   arcs;
+  completed as `MinorArcTransfer_3^B`, a conditional transfer-compatibility
+  package separating model minor-arc cancellation from boundary, W-limit,
+  prime-power, threshold, dyadic-range, and sharp-selector transfer;
 - Module 205: perform the second 9-iteration plan update.
 
 Success criterion: a named open estimate replaces the vague phrase
@@ -291,28 +294,28 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 204: Boundary, W-range, and selector compatibility for minor arcs.
+Module 205: Second 9-iteration plan update.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
+Expected status: `STRUCTURAL / EXTRACTION`.
 
-Module 203 created the conditional package:
+Module 204 created the conditional transfer package:
 
 ```text
-NarrowMinorArc_3^B(D;R,eta).
+MinorArcTransfer_3^B(D;R,eta;w).
 ```
 
-The next module must test whether that package can live in the actual project
-setting rather than only in the cyclic Fourier model. It should audit:
+The next module must update the long-term plan at count 18. It should decide
+whether Phase B has produced a useful checkable route or whether it is now
+mostly an endpoint-strength transfer problem. It should review:
 
 ```text
-boundary transfer,
-W-trick size and limit order,
-dyadic D-range uniformity,
-prime-power artifacts,
-selector transfer to the actual sharp moving selector.
+NarrowMinorArc_3^B,
+MinorArcTransfer_3^B,
+the status of Gamma_trans,
+the W-admissibility and threshold-stability burden,
+whether to continue minor arcs or pivot.
 ```
 
-In particular, it must not allow the transverse incidence input
-`Gamma_trans` or the Fourier envelope `A_N` to hide endpoint-strength or
-selector-transfer assumptions.
+In particular, it must not let the phrase "minor-arc route" hide the fact that
+both analytic cancellation and model-to-target transfer are still open.
