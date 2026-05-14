@@ -227,6 +227,12 @@ smoothed frozen, sharp frozen, and actual moving selector classes separated,
 and requires adjacent projected fourth-moment transfer after forming `B_d` and
 applying `P_M`.
 
+## 214
+
+Third 9-iteration plan update; records that Phase C clarified the projected
+major-arc dependency graph without proving the endpoint, then moves the next
+window to Phase D: global selector and boundary transfer audit.
+
 ## Next
 
-Module 214: Third 9-iteration plan update.
+Module 215: Selector inventory for Modules 156-213.

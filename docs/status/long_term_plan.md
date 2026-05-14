@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 213
-Post-Reflective_1 solving count: 32
-Long-term-plan count: 26
+Latest completed module: 214
+Post-Reflective_1 solving count: 33
+Long-term-plan count: 27
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -48,9 +48,12 @@ checkpoint modules are:
 First plan update:       Module 196 (completed)
 First plan challenge:    Module 202 (completed)
 Second plan update:      Module 205 (completed)
-Third plan update:       Module 214
+Third plan update:       Module 214 (completed)
 Second plan challenge:   Module 217
 Next reflective log:     Module 221
+Fourth plan update:      Module 223
+Fifth plan update:       Module 232
+Third plan challenge:    Module 232
 ```
 
 These module numbers are bookkeeping estimates. If an iteration is not a
@@ -256,6 +259,10 @@ Expected work:
   prefix, denominator, tail, projection, W-residue, prime-power, and centering
   errors separated;
 - Module 214: perform the third 9-iteration plan update.
+  completed with the verdict that Phase C clarified the projected major-arc
+  dependency graph but did not prove the endpoint, and that Phase D should
+  now audit selector and boundary transfer globally rather than add more
+  major-arc package names.
 
 Success criterion: the major-arc branch becomes a clean dependency diagram
 rather than a blended proof narrative.
@@ -269,12 +276,23 @@ estimates.
 
 Expected work:
 
-- list every selector appearing in Modules 156-187 and later;
-- route each estimate through frozen, smoothed, finite-band, and sharp moving
-  forms;
-- define denominator, prefix, transition, and tail transfer hypotheses;
-- perform the second plan challenge at iteration 30;
-- perform the fourth plan update at iteration 36.
+- Module 215: build a selector inventory for Modules 156-213, recording every
+  theorem's selector class and the norm in which transfer would be required;
+- Module 216: state a global boundary / prefix / transition / denominator /
+  tail transfer matrix for the actual sharp moving selector;
+- Module 217: perform the second 15-iteration plan challenge and decide
+  whether Phase D should continue, narrow, or stop;
+- Module 218: audit compatibility between major-arc and minor-arc
+  selector-transfer packages, especially projection and denominator changes;
+- Module 219: state the frozen-to-moving dyadic threshold transfer obstruction
+  in the residual derivative fourth-moment normalization;
+- Module 220: state the Bernoulli or finite-stage deterministic-extraction
+  requirement for selector statements used in the endpoint branch;
+- Module 221: create `Reflective_2.md`, the required 40-iteration memory log
+  after `Reflective_1.md`, and record corrections from Modules 179-220;
+- Module 222: consolidate the selector-transfer dependency graph after the
+  reflection;
+- Module 223: perform the fourth 9-iteration plan update.
 
 Success criterion: every future endpoint statement has an explicit selector
 line and cannot accidentally jump selector class.
@@ -346,28 +364,31 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 214: Third 9-iteration plan update.
+Module 215: Selector inventory for Modules 156-213.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION`.
 
-Module 213 fixed the projected major-arc selector-transfer line:
+Module 214 completed the third 9-iteration plan update and moved the project
+into Phase D:
 
 ```text
-MajorSelectorTransfer_3^P(P_adm;s_0 -> s_*).
+global selector and boundary transfer audit.
 ```
 
-The next iteration is the scheduled third plan update. It should:
+The next module should inventory every selector class appearing in the current
+endpoint branch. For each theorem, route, or package, it should record:
 
 ```text
-record what Phase C has clarified since Module 205,
-decide whether to continue into Phase D immediately,
-revise the next 9-iteration target window,
-keep the endpoint and original problem open,
-update the counters.
+declared selector class,
+whether the declaration is explicit or inferred,
+target selector if transfer is needed,
+required norm for transfer,
+whether the required transfer is already named,
+whether the transfer appears weaker than the endpoint.
 ```
 
-In particular, it should question whether the current work is becoming a clean
-dependency graph or only accumulating names for still-open estimates. The
-answer may continue the selector/boundary transfer phase, but it should say
-why that remains the right use of the next window.
+In particular, it must not let an estimate with a smoothed, frozen,
+finite-stage, Bernoulli, cyclic, or W-tricked selector be treated as an actual
+sharp moving-selector estimate. Ambiguous selector declarations should be
+marked as gaps, not repaired by interpretation.
