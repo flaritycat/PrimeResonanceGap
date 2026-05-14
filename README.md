@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: collision and diagonal strata after
-the residual eight-slot minor expansion**.
+The current active phase is **Phase K: generic-versus-collision local-model
+split after the eight-slot strata audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 323
-Active phase: Phase K, collision and diagonal strata audit next
+Latest module frontier: Module 324
+Active phase: Phase K, generic-versus-collision local-model split next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -690,6 +690,13 @@ Module 323:
   identity, and threshold-localized rows keep a data-dependent kernel through
   the large-spectrum masks. The expansion is structural and does not prove
   residual cancellation.
+
+Module 324:
+  classified internal autocorrelation diagonals, sixteen cross-block slot
+  collision equations, finite-prime collision load, and the full-frequency
+  anti-diagonal diagnostic. It blocks the shortcut from collision catalog to
+  collision smallness and selects a generic-versus-collision local-model
+  split for Module 325.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
@@ -739,8 +746,12 @@ Module 323:
   claiming cancellation.
 
 Module 324:
-  perform CollisionDiagonalStrataAudit_324(P_minor^0), classifying the
+  performed CollisionDiagonalStrataAudit_324(P_minor^0), classifying the
   collision and diagonal strata of the eight-slot minor row.
+
+Module 325:
+  perform GenericCollisionLocalModelSplit_325(P_minor^0), formulating the
+  exact generic-versus-collision split needed for the eight-slot minor row.
 ```
 
 ## What Is Proved?
@@ -815,7 +826,11 @@ Compact status table:
 | Zero-mean lower-face identity `ZeroMeanLowerFaceIdentity_323` | **STRUCTURAL / EXTRACTION** |
 | Fixed-kernel reading of localized rows `FixedKernelInterpretation_323(U,V)` | **FALSE / BLOCKED** |
 | Eight-slot expansion closes minor gain `EightSlotExpansionClosesMinorGain_323` | **FALSE / BLOCKED** |
-| Collision and diagonal strata audit `CollisionDiagonalStrataAudit_324` | **OPEN next target** |
+| Collision and diagonal strata audit `CollisionDiagonalStrataAudit_324` | **STRUCTURAL / EXTRACTION** |
+| Slot-difference and structural diagonal catalogs from Module 324 | **STRUCTURAL / EXTRACTION** |
+| Finite-prime collision load `FinitePrimeCollisionLoad_324` | **STRUCTURAL / EXTRACTION** |
+| Current collision-strata closure `CurrentCollisionStrataClosure_324` | **FALSE / BLOCKED** |
+| Generic-versus-collision local-model split `GenericCollisionLocalModelSplit_325` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1130,7 +1145,9 @@ wins.
 | `ResidualEightSlotMinorExpansion_323(P_minor^0)` | STRUCTURAL / EXTRACTION | Exact eight-slot residual top face extracted; no cancellation proved |
 | `ThresholdLocalizedKernelIdentity_323(U,V)` | STRUCTURAL / EXTRACTION | Cross-shell masks are kept inside a localized nonzero-frequency kernel |
 | `FixedKernelInterpretation_323(U,V)` | FALSE / BLOCKED | Data-dependent shell masks cannot be treated as a fixed external kernel |
-| `CollisionDiagonalStrataAudit_324(P_minor^0)` | OPEN | Next target |
+| `CollisionDiagonalStrataAudit_324(P_minor^0)` | STRUCTURAL / EXTRACTION | Internal/cross-block diagonals, collision load, and kernel anti-diagonal cataloged |
+| `CurrentCollisionStrataClosure_324` | FALSE / BLOCKED | Cataloging strata does not prove weighted collision smallness |
+| `GenericCollisionLocalModelSplit_325(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 323
-Active phase: Phase K, collision and diagonal strata audit next
+Latest module frontier: Module 324
+Active phase: Phase K, generic-versus-collision local-model split next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -93,6 +93,7 @@ modules/
   module_321_data_dependent_fiber_gain_audit.md
   module_322_fifteenth_plan_update_ninth_challenge.md
   module_323_residual_eight_slot_minor_expansion.md
+  module_324_collision_diagonal_strata_audit.md
   modules_156_178_summary.md
 
 reviews/

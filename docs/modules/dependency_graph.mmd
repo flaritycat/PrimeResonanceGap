@@ -65,7 +65,8 @@ flowchart TD
   FiberGain321["DataDependentFiberGainAudit_321<br/>audit STRUCTURAL; caps force gain BLOCKED"]
   Plan322["PlanUpdate_15_Challenge_9_322<br/>STRUCTURAL; cap-only route BLOCKED"]
   ResidualEight323["ResidualEightSlotMinorExpansion_323<br/>STRUCTURAL; fixed-kernel reading BLOCKED"]
-  Collision324["CollisionDiagonalStrataAudit_324<br/>OPEN next target"]
+  Collision324["CollisionDiagonalStrataAudit_324<br/>STRUCTURAL; closure BLOCKED"]
+  GenericSplit325["GenericCollisionLocalModelSplit_325<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -173,7 +174,8 @@ flowchart TD
   FiberGain321 --> Plan322
   Plan322 --> ResidualEight323
   ResidualEight323 --> Collision324
-  Collision324 --> AntiDiag312
+  Collision324 --> GenericSplit325
+  GenericSplit325 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0

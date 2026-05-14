@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 323
-Active phase: Phase K, collision and diagonal strata audit next
+Latest module frontier: Module 324
+Active phase: Phase K, generic-versus-collision local-model split next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -786,10 +786,16 @@ Completed residual eight-slot minor expansion:
     fixed-kernel interpretation for data-dependent threshold-localized rows,
     and leaves collision/diagonal strata open
 
+Completed collision and diagonal strata audit:
+  CollisionDiagonalStrataAudit_324(P_minor^0)
+    catalogs internal diagonals, cross-block slot equations, finite-prime
+    collision load, and the kernel anti-diagonal diagnostic; it blocks the
+    shortcut from cataloging strata to weighted collision smallness
+
 Next scheduled module:
-  Module 324 CollisionDiagonalStrataAudit_324(P_minor^0)
+  Module 325 GenericCollisionLocalModelSplit_325(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed residual eight-slot
-minor expansion;
+Status: **STRUCTURAL / EXTRACTION** for the completed collision and diagonal
+strata audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

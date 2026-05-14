@@ -3531,3 +3531,63 @@ Module 324:
   diagnostics, and genuinely oscillatory minor-kernel rows, while deciding
   whether a smaller non-endpoint collision/generic split survives.
 ```
+
+Module 324 completed:
+
+```text
+CollisionDiagonalStrataAudit_324(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+SlotDifferenceCatalog_324:
+  STRUCTURAL / EXTRACTION.
+
+StructuralDiagonalCatalog_324:
+  STRUCTURAL / EXTRACTION.
+
+FinitePrimeCollisionLoad_324:
+  STRUCTURAL / EXTRACTION.
+
+KernelAntiDiagonalStratum_324:
+  STRUCTURAL / EXTRACTION.
+
+CurrentCollisionStrataClosure_324:
+  FALSE / BLOCKED.
+
+GenericCollisionLocalModelSplit_325(P_minor^0):
+  OPEN next target.
+```
+
+The audit records that `d_1 != d_2` removes only the integer shift diagonal.
+It does not remove the internal autocorrelation diagonals
+
+```text
+h=0, h=d_1, h=-d_1,
+k=0, k=d_2, k=-d_2,
+```
+
+the sixteen cross-block equations for `x-y`, finite-prime collisions such as
+`p|d_i` or `d_1=d_2 mod p`, or the full-frequency anti-diagonal diagnostic
+`h+k=0`. Cataloging these strata is not weighted collision smallness.
+
+The current cadence records:
+
+```text
+Latest completed module: 324
+Post-Reflective_1 solving count: 143
+Long-term-plan count: 137
+
+137 is not divisible by 9, so no plan update is due in this module.
+137 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 325:
+  perform GenericCollisionLocalModelSplit_325(P_minor^0), formulating the
+  exact generic-versus-collision local-model split for the eight-slot minor
+  row. It should include structural diagonals, finite-prime collision load,
+  overflow, data-dependent kernel selection, and the W-limit order without
+  claiming those rows are already small.
+```
