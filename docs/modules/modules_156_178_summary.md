@@ -1,4 +1,4 @@
-# Modules 156-251 summary
+# Modules 156-252 summary
 
 ## 156
 
@@ -546,7 +546,15 @@ majorant route is local only if
 `(C_mean_245+1)A_W(M)GeomModel_251 + MassErr_245=o_W(1)`, and is blocked as a
 deterministic closure route when this product is not small.
 
+## 252
+
+Kernel absolute-mass and Holder feasibility gate; defines
+`KernelHolderGate_252`, separates the boundary-mass condition
+`(C_mean_245+1)A_W(M)GeomModel_251+MassErr_245=o_W(1)` from the Holder
+condition `K_q(M)E_p(s0)=o_W(1)`, and records that either route is local only
+for the same fixed projection `P_M`, becoming mixed if kernel smoothing or
+projection replacement is used.
+
 ## Next
 
-Module 252: kernel absolute-mass and Holder feasibility for `A_W(M)`,
-`K_q(M)`, and `P_M`.
+Module 253: short-interval W-PNT range audit for `WOneBoundaryPNT_244`.

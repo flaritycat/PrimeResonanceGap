@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 251
-Post-Reflective_1 solving count: 70
-Long-term-plan count: 64
+Latest completed module: 252
+Post-Reflective_1 solving count: 71
+Long-term-plan count: 65
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -609,6 +609,10 @@ Expected work:
   `(C_mean_245+1)A_W(M)GeomModel_251 + MassErr_245=o_W(1)`;
 - Module 252: kernel absolute-mass and Holder feasibility for `A_W(M)`,
   `K_q(M)`, and `P_M`;
+  completed as `KernelHolderGate_252`, separating the boundary-mass kernel
+  condition from the Holder condition and marking projection smoothing or
+  kernel replacement as mixed unless a transfer row returns to the fixed
+  `P_M`;
 - Module 253: short-interval W-PNT range audit for `WOneBoundaryPNT_244`;
 - Module 254: exact side-row convention audit for `CutOne_242`,
   `RangeOne_242`, `WResOne_242`, `PPOne_242`, and `NormZeroOne_242`;
@@ -667,35 +671,40 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 252: kernel absolute-mass and Holder feasibility for A_W(M), K_q(M),
-and P_M.
+Module 253: short-interval W-PNT range audit for WOneBoundaryPNT_244.
 ```
 
 Expected status: `CONDITIONAL` or `FALSE / BLOCKED`, depending on whether
-the active projection has a fixed-row kernel route that beats boundary and
-error terms.
+the active boundary intervals fit a W-uniform short-interval theorem in the
+same fixed row.
 
-Module 251 completed the deterministic boundary-length gate:
+Module 252 completed the kernel feasibility gate:
 
 ```text
-BoundaryLengthGate_251:
-  BLength_245 <= A_W(M)GeomModel_251.
+KernelHolderGate_252:
+  boundary mass route:
+    (C_mean_245+1)A_W(M)GeomModel_251+MassErr_245=o_W(1);
+  Holder route:
+    K_q(M)E_p(s0)=o_W(1).
 ```
 
-The boundary-length route survives only if:
+Module 253 should test whether the W branch has a fixed-row short-interval
+input matching:
 
 ```text
-(C_mean_245+1)A_W(M)GeomModel_251 + MassErr_245=o_W(1).
+WOneBoundaryPNT_244:
+  OPMeanErr_244(W,D0,rho0)=o_W(1).
 ```
 
-Module 252 should now test the kernel quantities behind this gate and the
-Holder route:
+It must check:
 
 ```text
-A_W(M),
-K_q(M),
-P_M,
-K_q(M)E_p(s0)=o_W(1).
+interval length of J_L,J_R,
+W-uniformity,
+residue class compatibility,
+absolute |W_M| averaging,
+selector class,
+fixed-w then N -> infinity then w -> infinity limit order.
 ```
 
 It must keep the same fixed row:

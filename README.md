@@ -4,6 +4,19 @@ This repository documents the **Prime Gap Resonance Project**.
 
 This is a research ledger, proof-map, conditional theorem architecture, endpoint-reduction record, and computational/documentation workspace. It is **not** a proof of the original positive existence problem and **not** a proof of the all-alpha no-positive-limit theorem.
 
+## Current frontier
+
+```text
+Latest module frontier: Module 252
+Active phase: Phase G, fixed-row package feasibility gates
+Latest project-wide review:
+  docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
+```
+
+Module 252 separates the fixed-row kernel absolute-mass gate from the Holder
+gate for the one-point prototype. The route remains conditional and does not
+prove the residual cube endpoint.
+
 ## Global status
 
 | Claim | Status |
@@ -56,6 +69,7 @@ docs/
   ledger/                         Copy of the 250-page project ledger
   status/                         Global status, endpoint status, forbidden upgrades
   modules/                        Current module handoff and generated indexes
+  reviews/                        Project-wide reviews and audits
   codex/                          Prompts, continuation protocol, review checklist
 
 papers/
@@ -74,8 +88,9 @@ A continuation agent should begin with:
 
 ```text
 Read AGENTS.md, docs/status/global_status.md, docs/status/forbidden_upgrades.md,
-docs/codex/continuation_protocol.md, and docs/modules/module_178_residual_cube.md.
-Then continue from the latest module.
+docs/codex/continuation_protocol.md, docs/status/long_term_plan.md, and
+docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md. Then continue from the
+latest module.
 ```
 
 The current mathematical target is the residual derivative cube:
