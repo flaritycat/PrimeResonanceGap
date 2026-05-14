@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 226
-Post-Reflective_1 solving count: 45
-Long-term-plan count: 39
+Latest completed module: 227
+Post-Reflective_1 solving count: 46
+Long-term-plan count: 40
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -369,10 +369,14 @@ Expected work:
   completed with verdict `LocalBdPkg_226 => BdPrefRow_224^P=o_W(1)`, so the
   row is conditional local only under genuine weighted boundary-support
   saving, mixed if additional transfer rows enter, and endpoint-strength if
-  proved by assuming unlocalized projected residual fourth-moment control;
+  approached by assuming unlocalized projected residual fourth-moment control;
 - Module 227: build the endpoint-equivalence arrow inventory from the residual
   cube branch back to `RBDH_pair_short`, `CPC_3^sharp`, `SPAC_2^sharp`,
   `SU2Pair_2^sharp`, `DyadicDerivativeU^2`, and `AU^3`;
+  completed as `EndpointArrowInventory_227`, a structural map separating
+  Fourier/derivative arrows, residual-to-CPC arrows, CPC/SPAC/SU2Pair arrows,
+  CPC/RBDH arrows, and major/minor recomposition arrows, with side-package,
+  selector, and `LocalBdPkg_226` boundary locations recorded;
 - Module 228: audit the arrows that are exact algebra or structural
   extraction, separating them from analytic estimates;
 - Module 229: audit the arrows that require analytic side packages: local
@@ -438,52 +442,48 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 227: Build the endpoint-equivalence arrow inventory.
+Module 228: Audit exact algebra and structural extraction arrows.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 226 completed the local-row verdict:
+Module 227 completed the endpoint-equivalence arrow inventory:
 
 ```text
-LocalBdPkg_226
-  => BdPrefRow_224^P(s0,D0;N,w,rho0)=o_W(1).
+EndpointArrowInventory_227.
 ```
 
-The row is now classified as:
+It separated the current endpoint map into:
 
 ```text
-conditional local under genuine weighted boundary-support saving;
-mixed if major/minor, denominator, W-residue, prime-power, zero-mode, or
-  selector-transfer rows enter;
-endpoint-strength if proved by assuming unlocalized projected residual
-  fourth-moment control.
+Fourier and derivative arrows,
+ResCube-to-CPC arrows,
+CPC/SPAC/SU2Pair arrows,
+CPC/RBDH arrows,
+major/minor decomposition and recomposition arrows.
 ```
 
-Module 227 should now begin the endpoint-equivalence audit. It should build
-only an inventory of arrows, not prove them. The inventory should include:
+Module 228 should audit only the arrows that are exact algebra or structural
+extraction, and should separate them from analytic estimates. In particular,
+check:
 
 ```text
-ResCube_3^sharp,
-RBDH_pair_short,
-CPC_3^sharp,
-SPAC_2^sharp,
-SU2Pair_2^sharp,
-DyadicDerivativeU^2,
-AU^3.
+ResCube_3^sharp <-> DyadicDerivativeU^2,
+DyadicDerivativeU^2 <-> AU^3,
+SPAC_2^sharp <-> SU2Pair_2^sharp,
+ResCube_3^sharp <-> major/minor Fourier split.
 ```
 
-For each arrow, record:
+For each structural arrow, record:
 
 ```text
-direction;
-source and target statement;
-whether the arrow is exact algebra, structural extraction, conditional
-  analytic implication, or open;
-which side packages are needed;
-which selector class is being used;
-where LocalBdPkg_226 or other boundary-transfer rows enter.
+the exact identity;
+the domain convention;
+the zero-mode / centering convention;
+whether it changes selector class;
+whether it changes cyclic/interval or projection convention;
+which side packages remain external.
 ```
 
-Do not label any endpoint arrow as `PROVEN` unless the ledger already proves
-it. The expected output is a map, not a closure theorem.
+Do not audit analytic arrows yet except to mark them outside Module 228's
+scope. CPC/RBDH and ResCube/CPC analytic side packages belong to Module 229.

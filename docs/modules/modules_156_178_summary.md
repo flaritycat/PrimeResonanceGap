@@ -1,4 +1,4 @@
-# Modules 156-226 summary
+# Modules 156-227 summary
 
 ## 156
 
@@ -333,9 +333,18 @@ first-moment boundary counting is insufficient.
 Boundary/prefix row verdict; defines `LocalBdPkg_226` and classifies
 `BdPrefRow_224^P` as conditional local only under genuine weighted
 boundary-support saving, mixed if extra transfer rows enter, and
-endpoint-strength if proved by assuming unlocalized projected residual
+endpoint-strength if approached by assuming unlocalized projected residual
 fourth-moment control.
+
+## 227
+
+Endpoint-equivalence arrow inventory; defines `EndpointArrowInventory_227`
+and maps the arrows among `ResCube_3^sharp`, `RBDH_pair_short`,
+`CPC_3^sharp`, `SPAC_2^sharp`, `SU2Pair_2^sharp`,
+`DyadicDerivativeU^2`, and `AU^3`, while recording side-package, selector,
+and `LocalBdPkg_226` boundary-transfer locations without proving any endpoint
+arrow.
 
 ## Next
 
-Module 227: Build the endpoint-equivalence arrow inventory.
+Module 228: Audit exact algebra and structural extraction arrows.
