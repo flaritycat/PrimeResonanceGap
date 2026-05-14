@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 272
+Latest module frontier: Module 273
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -94,6 +94,9 @@ Latest project-wide review:
 - A tool-compatibility audit `PhaseToolCompatAudit_272`, recording that the
   listed standard tools do not currently supply the exact restricted
   weighted phase-kernel estimate needed for the transverse gate.
+- A candidate transverse incidence gate `TransverseIncidenceGate_273`,
+  defining `Gamma_trans^273` from dyadic base-tail shell majorants and the open
+  graph-restriction input `X_273`.
 
 ## What the project has not proved
 
@@ -122,6 +125,8 @@ Latest project-wide review:
   by full-frequency diagonal equations.
 - `AvailableToolClosure_272` or an exact restricted weighted rectangle
   theorem for the active selector/model family.
+- `PhaseKernelBound_273`, `TransverseIncidenceGate_273`, or the
+  lambda-summed smallness of `Gamma_trans^273`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -221,8 +226,14 @@ Completed Phase I tool audit:
     compares large sieve, additive energy, pair-BDH, rectangle-BDH,
     first-moment HL, and finite-complexity HL against the exact phase kernels
 
+Completed Phase I candidate gate:
+  TransverseIncidenceGate_273
+    defines Gamma_trans^273 using dyadic base-tail shells and an open
+    graph-restriction bound X_273, without proving that bound
+
 Next scheduled check:
-  Module 273 formulate a non-tautological transverse incidence gate
+  Module 274 audit W-limit, threshold-buffer, prime-power, arc-boundary, and
+  selector-transfer compatibility for the candidate transverse gate
 ```
 
 Status: **CONDITIONAL**.

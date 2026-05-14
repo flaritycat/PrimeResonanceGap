@@ -1,4 +1,4 @@
-# Modules 156-272 summary
+# Modules 156-273 summary
 
 ## 156
 
@@ -722,7 +722,17 @@ ordinary pair-BDH, rectangle-BDH, first-moment HL, and generic
 finite-complexity HL against the exact Module 271 kernels. The audit records
 that no listed off-the-shelf tool currently proves `PhaseIncidenceGate_271`.
 
+## 273
+
+Non-tautological transverse incidence gate; defines
+`TransverseIncidenceGate_273`, the base-tail shell graph-restriction input
+`PhaseKernelBound_273(X_273)`, and the candidate majorant
+`Gamma_trans^273`. The module gives a sufficient conditional route to
+`TransIncBound_269` but does not prove the required `X_273` estimate or the
+lambda-summed smallness.
+
 ## Next
 
-Module 273: formulate a non-tautological transverse incidence gate with a
-candidate `Gamma_trans(lambda;D,R,eta,w)` and explicit non-endpoint criteria.
+Module 274: audit W-limit, threshold-buffer, prime-power, major/minor
+arc-boundary, and selector-transfer compatibility for the candidate
+transverse gate.

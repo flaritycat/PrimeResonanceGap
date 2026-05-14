@@ -19,6 +19,7 @@ flowchart TD
   ThresholdAudit["ThresholdRemovalAudit_270 / ThresholdOnlyClosure_270<br/>audit STRUCTURAL; closure OPEN"]
   PhaseExpansion["TransPhaseExpansion_271 / PhaseIncidenceGate_271<br/>identity STRUCTURAL; gate OPEN"]
   ToolCompat["PhaseToolCompatAudit_272 / AvailableToolClosure_272<br/>audit STRUCTURAL; closure OPEN"]
+  TransGate["TransverseIncidenceGate_273 / PhaseKernelBound_273<br/>gate STRUCTURAL; kernel bound OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
 
@@ -45,6 +46,9 @@ flowchart TD
   ThresholdAudit --> TransInc
   PhaseExpansion --> TransInc
   ToolCompat --> PhaseExpansion
+  TransGate --> TransInc
+  PhaseExpansion --> TransGate
+  ToolCompat --> TransGate
   SelectorTransfer --> ResCube
   BoundaryTransfer --> ResCube
   EndpointClass -. "structural/equivalence map, not proof" .-> ResCube

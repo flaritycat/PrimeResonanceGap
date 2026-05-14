@@ -7,16 +7,15 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 272
+Latest module frontier: Module 273
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 272 audits standard tools against the exact phase kernels from Module
-271. Large sieve, additive energy, ordinary pair-BDH, rectangle-BDH,
-first-moment HL, and generic finite-complexity HL are useful diagnostics or
-conditional subroutes, but none currently proves the transverse phase gate.
+Module 273 formulates the candidate gate `TransverseIncidenceGate_273`. It
+builds `Gamma_trans^273` from dyadic base-tail shell majorants and an open
+phase-kernel input `X_273`; it does not prove the transverse bound.
 
 ## Global status
 

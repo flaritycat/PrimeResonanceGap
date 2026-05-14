@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 272
-Post-Reflective_1 solving count: 91
-Long-term-plan count: 85
+Latest completed module: 273
+Post-Reflective_1 solving count: 92
+Long-term-plan count: 86
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -833,6 +833,9 @@ Expected work:
 - Module 273: formulate a non-tautological transverse incidence gate, with a
   candidate `Gamma_trans(lambda;D,R,eta,w)` and explicit non-endpoint
   criteria;
+  completed as `TransverseIncidenceGate_273`, defining
+  `Gamma_trans^273` through dyadic base-tail shells and the open
+  graph-restriction input `X_273`;
 - Module 274: audit W-limit, threshold-buffer, prime-power, major/minor
   arc-boundary, and selector-transfer compatibility for the transverse gate;
 - Module 275: test whether low-dimensional degeneracies in the transverse
@@ -1114,7 +1117,7 @@ PhaseToolCompatAudit_272
   PhaseIncidenceGate_271.
 ```
 
-Continue with:
+Module 272 selected:
 
 ```text
 Module 273:
@@ -1122,7 +1125,23 @@ Module 273:
   Gamma_trans(lambda;D,R,eta,w) and explicit non-endpoint criteria.
 ```
 
-Module 273 should preserve these statuses:
+Module 273 completed:
+
+```text
+TransverseIncidenceGate_273
+  defines Gamma_trans^273 from dyadic base-tail shell majorants and the open
+  graph-restriction input X_273.
+```
+
+Continue with:
+
+```text
+Module 274:
+  audit W-limit, threshold-buffer, prime-power, major/minor arc-boundary, and
+  selector-transfer compatibility for the candidate transverse gate.
+```
+
+Module 274 should preserve these statuses:
 
 ```text
 NarrowMinorArc_3^B,
@@ -1130,6 +1149,8 @@ TransIncBound_269,
 ThresholdOnlyClosure_270,
 PhaseIncidenceGate_271,
 AvailableToolClosure_272,
+PhaseKernelBound_273,
+TransverseIncidenceGate_273,
 MinorArcTransfer_3^B,
 ProjectedMajorTarget_3^B,
 WProjectedLocalMatch_3^major,
