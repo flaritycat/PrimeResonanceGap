@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 308
-Active phase: Phase K, column-multiplicity distribution audit
+Latest module frontier: Module 309
+Active phase: Phase K, column-pair multiplicity expansion
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -78,6 +78,7 @@ modules/
   module_306_fixed_fiber_blocked_verdict.md
   module_307_eighth_plan_challenge.md
   module_308_column_barrier_moment_audit.md
+  module_309_column_multiplicity_distribution_audit.md
   modules_156_178_summary.md
 
 reviews/

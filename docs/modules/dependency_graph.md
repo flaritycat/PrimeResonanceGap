@@ -56,7 +56,8 @@ flowchart TD
   FixedFiber306["FixedFiberBlockedVerdict_306<br/>verdict STRUCTURAL; selection next BLOCKED"]
   PlanChallenge8["PlanChallenge_8_307<br/>challenge STRUCTURAL; row-square next move BLOCKED"]
   ColumnBarrier308["ColumnBarrierMomentAudit_308<br/>audit STRUCTURAL; current route BLOCKED"]
-  ColumnDist309["ColumnMultiplicityDistributionAudit_309<br/>next target OPEN"]
+  ColumnDist309["ColumnMultiplicityDistributionAudit_309<br/>audit STRUCTURAL; first-moment route BLOCKED"]
+  ColumnPair310["ColumnPairMultiplicityExpansion_310<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -146,6 +147,8 @@ flowchart TD
   FixedFiber306 --> PlanChallenge8
   PlanChallenge8 --> ColumnBarrier308
   ColumnBarrier308 --> ColumnDist309
+  ColumnDist309 --> ColumnPair310
+  ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
   ColumnBarrier308 --> ThresholdP0
   MinTransFamily --> TransGateCompat
@@ -265,3 +268,6 @@ flowchart TD
 - `ColumnBarrierMomentAudit_308` extracts first-incidence column ceilings and
   blocks the current column-barrier route; it does not prove either Module
   284 column barrier.
+- `ColumnMultiplicityDistributionAudit_309` gives an exact layer-cake
+  formulation but blocks first-moment tails as a gain route; the next concrete
+  test is the `r=2` same-frequency shift-pair expansion.

@@ -90,9 +90,10 @@ proved inside `P_minor^0`, vacuous removal is only bookkeeping, and the row
 barrier remains blocked under the current first-energy, row-distribution,
 row-square, and fixed-fiber tests. The latest steering challenge pauses direct
 row-square continuation, and the column audit now shows that first-incidence
-counting gives only column-barrier ceilings. The next local question is
-whether column multiplicity has a distributional gain beyond first incidence.
-None of this proves the endpoint.
+counting gives only column-barrier ceilings. The distributional audit then
+shows that layer-cake with first-moment tails collapses back to the same
+ceiling. The next local question is the concrete `r=2` same-frequency
+shift-pair expansion. None of this proves the endpoint.
 
 ## The Whole Project In One Narrative
 
@@ -408,13 +409,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the column-barrier current-tools audit**.
+the column-multiplicity distribution audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 308
-Active phase: Phase K, column-multiplicity distribution audit
+Latest module frontier: Module 309
+Active phase: Phase K, column-pair multiplicity expansion
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -594,6 +595,12 @@ Module 308:
   `(m_minor^0)^theta_r` factor after the Module 284 weights are restored.
   Low-level tail control and vacuous removal do not prove column-barrier
   smallness. ColumnMultiplicityGainTarget_308 remains open.
+
+Module 309:
+  rewrote the column multiplicity moment through exact layer-cake tails.
+  First-moment Markov tails collapse back to the Module 308 first-incidence
+  ceiling, so layer-cake alone is not a gain. The next concrete target is the
+  `r=2` same-frequency shift-pair expansion.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
@@ -604,10 +611,9 @@ inputs do not prove the row side of the threshold window.
 The next planned module is:
 
 ```text
-Module 309:
-  perform ColumnMultiplicityDistributionAudit_309(P_minor^0), deciding
-  whether layer-cake or distributional control of N_{xi,0}(lambda_j) gives a
-  genuinely smaller subtarget or only repeats the first-incidence ceiling.
+Module 310:
+  perform ColumnPairMultiplicityExpansion_310(P_minor^0), expanding the
+  concrete r=2 column moment into same-frequency shift-pair incidence terms.
 ```
 
 ## What Is Proved?
@@ -632,7 +638,10 @@ Compact status table:
 | Column-barrier moment audit `ColumnBarrierMomentAudit_308` | **STRUCTURAL / EXTRACTION** |
 | Current column-barrier route `CurrentColumnBarrierRoute_308(r)` | **FALSE / BLOCKED** |
 | Column multiplicity gain `ColumnMultiplicityGainTarget_308(r)` | **OPEN** |
-| Column-multiplicity distribution audit `ColumnMultiplicityDistributionAudit_309` | **OPEN next target** |
+| Column-multiplicity distribution audit `ColumnMultiplicityDistributionAudit_309` | **STRUCTURAL / EXTRACTION** |
+| First-moment layer-cake route `FirstMomentLayerCakeCollapse_309(r)` | **FALSE / BLOCKED** |
+| Column tail gain `ColumnTailGainTarget_309(r)` | **OPEN** |
+| Column-pair expansion `ColumnPairMultiplicityExpansion_310` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -891,7 +900,13 @@ wins.
 | `CurrentColumnBarrierRoute_308(r)` | FALSE / BLOCKED | Current local tools do not prove either column barrier small |
 | `LowLevelTailToColumnBarrier_308 / VacuousRemovalToColumnBarrier_308` | FALSE / BLOCKED | Low-level tail and maximal removal do not control high-level multiplicities |
 | `ColumnMultiplicityGainTarget_308(r)` | OPEN | Needs a same-family high-multiplicity distribution gain |
-| `ColumnMultiplicityDistributionAudit_309(P_minor^0)` | OPEN | Next target |
+| `ColumnMultiplicityDistributionAudit_309(P_minor^0)` | STRUCTURAL / EXTRACTION | Layer-cake distribution audit completed |
+| `ColumnLayerCakeIdentity_309(lambda_j)` | STRUCTURAL / EXTRACTION | Exact identity for column multiplicity moments |
+| `FirstMomentColumnTailBound_309(lambda_j,T)` | STRUCTURAL / EXTRACTION | Markov tail from first incidence only |
+| `FirstMomentLayerCakeCollapse_309(r)` | FALSE / BLOCKED | First-moment layer-cake reproduces the Module 308 ceiling |
+| `ColumnTailGainCriterion_309(r;U)` | STRUCTURAL / EXTRACTION | Criterion only, not a proved tail theorem |
+| `ColumnTailGainTarget_309(r)` | OPEN | Needs high-multiplicity tail decay beyond first incidence |
+| `ColumnPairMultiplicityExpansion_310(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

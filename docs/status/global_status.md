@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 308
-Active phase: Phase K, column-multiplicity distribution audit
+Latest module frontier: Module 309
+Active phase: Phase K, column-pair multiplicity expansion
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -227,6 +227,12 @@ Latest project-wide review:
   `SigmaColumnBarrierP0_284(r)`, recording that current tools still leave an
   uncontrolled `(m_minor^0)^theta_r` factor, and leaving
   `ColumnMultiplicityGainTarget_308(r)` open.
+- A column-multiplicity distribution audit
+  `ColumnMultiplicityDistributionAudit_309(P_minor^0)`, extracting the exact
+  layer-cake identity for `MultMomentP0_284(r;lambda_j)`, blocking the
+  first-moment layer-cake route as a repeat of the Module 308 ceiling, and
+  selecting `ColumnPairMultiplicityExpansion_310(P_minor^0)` as the next
+  concrete column test.
 
 ## What the project has not proved
 
@@ -347,6 +353,11 @@ Latest project-wide review:
   `VacuousRemovalToColumnBarrier_308` as column or threshold closure.
 - `ColumnMultiplicityGainTarget_308(r)` or
   `ColumnMultiplicityDistributionAudit_309(P_minor^0)`.
+- `ColumnLayerCakeIdentity_309(lambda_j)` as a multiplicity gain.
+- `FirstMomentColumnTailBound_309(lambda_j,T)` or
+  `FirstMomentLayerCakeCollapse_309(r)` as column-barrier smallness.
+- `ColumnTailGainCriterion_309(r;U)`, `ColumnTailGainTarget_309(r)`, or
+  `ColumnPairMultiplicityExpansion_310(P_minor^0)`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -626,9 +637,15 @@ Completed column-barrier moment audit:
     records CurrentColumnBarrierRoute_308(r) as FALSE / BLOCKED, and leaves
     ColumnMultiplicityGainTarget_308(r) open
 
+Completed column-multiplicity distribution audit:
+  ColumnMultiplicityDistributionAudit_309(P_minor^0)
+    extracts exact layer-cake tails, blocks first-moment layer-cake as a gain
+    route, and leaves ColumnTailGainTarget_309(r) open
+
 Next scheduled check:
-  Module 309 ColumnMultiplicityDistributionAudit_309(P_minor^0)
+  Module 310 ColumnPairMultiplicityExpansion_310(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Phase K column audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed Phase K distribution
+audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

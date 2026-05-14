@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 308
-Post-Reflective_1 solving count: 127
-Long-term-plan count: 121
+Latest completed module: 309
+Post-Reflective_1 solving count: 128
+Long-term-plan count: 122
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -2633,4 +2633,49 @@ Module 309:
   perform ColumnMultiplicityDistributionAudit_309(P_minor^0), deciding
   whether a layer-cake or distributional formulation of N_{xi,0}(lambda_j)
   creates a genuinely smaller target than ColumnMultiplicityGainTarget_308(r).
+```
+
+Module 309 completed:
+
+```text
+ColumnMultiplicityDistributionAudit_309(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+ColumnLayerCakeIdentity_309(lambda_j):
+  STRUCTURAL / EXTRACTION.
+
+FirstMomentColumnTailBound_309(lambda_j,T):
+  STRUCTURAL / EXTRACTION.
+
+FirstMomentLayerCakeCollapse_309(r):
+  FALSE / BLOCKED as a gain route.
+
+ColumnTailGainCriterion_309(r;U):
+  STRUCTURAL / EXTRACTION.
+
+ColumnTailGainTarget_309(r):
+  OPEN.
+
+ColumnPairMultiplicityExpansion_310(P_minor^0):
+  OPEN next target.
+```
+
+Layer-cake is the right exact distributional language, but Markov from the
+first incidence count reproduces the Module 308 ceiling. A real gain would
+need high-multiplicity tail decay beyond first incidence.
+
+The next cadence checkpoints are unchanged:
+
+```text
+Fourteenth plan update:  Module 313
+Next reflective log:     Module 341
+```
+
+Continue with:
+
+```text
+Module 310:
+  perform ColumnPairMultiplicityExpansion_310(P_minor^0), expanding the r=2
+  same-frequency shift-pair object and classifying diagonal/off-diagonal
+  terms before any further column-gain claim.
 ```
