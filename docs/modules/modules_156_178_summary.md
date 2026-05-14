@@ -1,4 +1,4 @@
-# Modules 156-253 summary
+# Modules 156-254 summary
 
 ## 156
 
@@ -564,7 +564,14 @@ BadRangeMass_253`, showing that the W branch is local only when the active
 boundary intervals fit the fixed-row W-short-interval theorem and all
 below-range, residue, cutoff, and limit-order defects are separately handled.
 
+## 254
+
+Exact side-row convention audit; defines `SideConventionGate_254`, with
+pointwise exactness checks `CutExact_254`, `RangeExact_254`, `WResExact_254`,
+`PPExact_254`, and `NormZeroExact_254`, and records that failed exactness
+checks require fixed-row weighted defect estimates rather than being hidden in
+`KernelAvgStrength_245` or upgraded through endpoint assumptions.
+
 ## Next
 
-Module 254: exact side-row convention audit for `CutOne_242`,
-`RangeOne_242`, `WResOne_242`, `PPOne_242`, and `NormZeroOne_242`.
+Module 255: assemble the `FixedRowOnePointPkg_249` feasibility verdict.

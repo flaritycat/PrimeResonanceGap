@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 253
-Post-Reflective_1 solving count: 72
-Long-term-plan count: 66
+Latest completed module: 254
+Post-Reflective_1 solving count: 73
+Long-term-plan count: 67
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -622,6 +622,11 @@ Expected work:
   missing;
 - Module 254: exact side-row convention audit for `CutOne_242`,
   `RangeOne_242`, `WResOne_242`, `PPOne_242`, and `NormZeroOne_242`;
+  completed as `SideConventionGate_254`, separating pointwise exactness
+  checks `CutExact_254`, `RangeExact_254`, `WResExact_254`, `PPExact_254`,
+  and `NormZeroExact_254` from the corresponding fixed-row weighted defect
+  estimates, and blocking exactness claims obtained by changing row or using
+  endpoint-strength estimates;
 - Module 255: assemble a feasibility verdict for
   `FixedRowOnePointPkg_249`;
 - Module 256: two-point escalation gate after the one-point feasibility
@@ -677,42 +682,42 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 254: exact side-row convention audit for CutOne_242, RangeOne_242,
-WResOne_242, PPOne_242, and NormZeroOne_242.
+Module 255: assemble the FixedRowOnePointPkg_249 feasibility verdict.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, depending on
-whether the side rows are exact by convention or still require fixed-row
-weighted estimates.
+Expected status: `CONDITIONAL` or `FALSE / BLOCKED`, depending on whether
+the surviving Phase G gates are genuinely smaller than the residual endpoint
+or merely rename missing endpoint-strength estimates.
 
-Module 253 completed the short-interval W-PNT range audit:
+Module 254 completed the side-row convention audit:
 
 ```text
-WShortRangeGate_253:
-  eps_WPNT_253 BLength_245
-    + WPNTError_253
-    + BadRangeMass_253=o_W(1).
+SideConventionGate_254:
+  CutExact_254 / CutDefect_254,
+  RangeExact_254 / RangeDefect_254,
+  WResExact_254 / WResDefect_254,
+  PPExact_254 / PPDefect_254,
+  NormZeroExact_254 / NormZeroDefect_254.
 ```
 
-Module 254 should test whether the five one-point side rows are exact by
-definition in the current fixed row or still need separate weighted estimates:
+Module 255 should assemble the full one-point feasibility ledger:
 
 ```text
-CutOne_242,
-RangeOne_242,
-WResOne_242,
-PPOne_242,
-NormZeroOne_242.
+BoundaryLengthGate_251,
+KernelHolderGate_252,
+WShortRangeGate_253,
+SideConventionGate_254
+  -> FixedRowOnePointPkg_249?
 ```
 
 It must check:
 
 ```text
-whether the source boundary event is exactly J_L union J_R after cutoff0,
-whether m0(n,t)=n-t0 always stays in support,
-whether the W-residue convention is exact after translation,
-whether prime powers are absent or weighted-small,
-whether normalization and zero-mode leakage vanish after interval restriction.
+which gates are local,
+which gates are mixed,
+which gates are endpoint-strength,
+which gates are false / blocked as shortcuts,
+whether the boundary branch should continue to a two-point row or stop.
 ```
 
 It must keep the same fixed row:
