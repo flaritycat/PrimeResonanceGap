@@ -16,6 +16,7 @@ flowchart TD
   MajorTarget["ProjectedMajorTarget_3^B<br/>OPEN"]
   MinorTarget["MinorTarget_3^B / NarrowMinorArc_3^B<br/>OPEN / CONDITIONAL"]
   TransInc["TransIncCore_269 / TransIncBound_269<br/>definition STRUCTURAL; bound OPEN"]
+  ThresholdAudit["ThresholdRemovalAudit_270 / ThresholdOnlyClosure_270<br/>audit STRUCTURAL; closure OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
 
@@ -39,6 +40,7 @@ flowchart TD
   MajorTarget --> ResCube
   MinorTarget --> ResCube
   TransInc --> MinorTarget
+  ThresholdAudit --> TransInc
   SelectorTransfer --> ResCube
   BoundaryTransfer --> ResCube
   EndpointClass -. "structural/equivalence map, not proof" .-> ResCube

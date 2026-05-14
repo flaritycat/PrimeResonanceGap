@@ -7,16 +7,16 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 269
+Latest module frontier: Module 270
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 269 extracts the exact transverse-incidence object
-`TransIncCore_269` inside `NarrowMinorArc_3^B`. It identifies the weighted
-shift-frequency graph and the future non-tautological bound
-`TransIncBound_269`; it does not prove minor-arc fourth-moment decay.
+Module 270 audits the bad-shift and persistent-frequency removals after
+`TransIncCore_269`. It defines the threshold-only feasibility test
+`ThresholdOnlyClosure_270` and records that row/column ceilings alone do not
+prove the transverse estimate in the current ledger.
 
 ## Global status
 

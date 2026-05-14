@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 269
+Latest module frontier: Module 270
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -84,6 +84,10 @@ Latest project-wide review:
   `TransIncCore_269`, identifying the weighted shift-frequency graph inside
   `NarrowMinorArc_3^B` and the future non-tautological target
   `TransIncBound_269`.
+- A threshold-removal audit `ThresholdRemovalAudit_270`, isolating the
+  tension between large thresholds needed for bad-shift/persistent-frequency
+  removals and small thresholds needed for trivial transverse row/column
+  ceilings.
 
 ## What the project has not proved
 
@@ -106,6 +110,8 @@ Latest project-wide review:
 - `AbsPMNGate_267(P_adm)` or `SignedExactNeutralGate_267(P_adm)`.
 - `TransIncBound_269`, transverse energy smallness,
   `NarrowMinorArc_3^B`, or `MinorArcTransfer_3^B`.
+- `ThresholdOnlyClosure_270`, `ShiftMoment_{q,s}` estimates, or
+  `MultMoment_{r,s}` estimates.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -189,9 +195,14 @@ Completed Phase I extraction:
     identifies I_trans(lambda) as the weighted shift-frequency graph left
     after bad-shift and persistent-frequency removals
 
+Completed Phase I threshold audit:
+  ThresholdRemovalAudit_270
+    shows row/column ceilings close the transverse term only under the still
+    open ThresholdOnlyClosure_270 moment-and-threshold window
+
 Next scheduled check:
-  Module 270 audit bad-shift and persistent-frequency removals against
-  possible transverse row/column ceilings
+  Module 271 expand transverse Fourier coefficients into shifted
+  f-correlations and phase equations
 ```
 
 Status: **CONDITIONAL**.
