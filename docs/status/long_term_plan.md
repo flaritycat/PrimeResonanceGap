@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 217
-Post-Reflective_1 solving count: 36
-Long-term-plan count: 30
+Latest completed module: 218
+Post-Reflective_1 solving count: 37
+Long-term-plan count: 31
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -296,6 +296,11 @@ Expected work:
   frozen-to-moving threshold transfer, and deterministic extraction;
 - Module 218: audit compatibility between major-arc and minor-arc
   selector-transfer packages, especially projection and denominator changes;
+  completed as `MajorMinorSelCompat_3(P_adm)`, a conditional compatibility
+  package separating projection partition defect, arc-boundary stability,
+  denominator compatibility, zero-mode/centering compatibility,
+  selector-chain compatibility, boundary accounting, and prime-power /
+  W-residue compatibility;
 - Module 219: state the frozen-to-moving dyadic threshold transfer obstruction
   in the residual derivative fourth-moment normalization;
 - Module 220: state the Bernoulli or finite-stage deterministic-extraction
@@ -376,30 +381,32 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 218: Major/minor selector-transfer compatibility audit.
+Module 219: Frozen-to-moving dyadic threshold transfer obstruction.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 217 completed the second 15-iteration plan challenge. The verdict was:
+Module 218 completed the major/minor selector-transfer compatibility audit.
+The verdict was:
 
 ```text
-Continue Phase D, but narrow it sharply.
+Major and minor selector-transfer packages are composable only after an
+explicit projection-boundary compatibility package.
 ```
 
-The next module should audit whether the major-arc and minor-arc selector
-transfer packages use compatible objects. In particular it should compare:
+The next module should audit the frozen-to-moving row for the actual sharp
+moving selector:
 
 ```text
-P_M versus Pi_minor,
-major/minor denominator ranges,
-buffered arc conventions,
-zero-mode and centering conventions,
-W-limit order,
-selector-chain edges,
-boundary and projection-boundary accounting.
+1/log X versus 1/log p,
+transition band mass,
+B_d amplification after threshold changes,
+dyadic endpoint and prefix effects,
+denominator and W-residue interactions,
+major/minor projection compatibility.
 ```
 
-In particular, it must not combine major and minor selector-transfer packages
-into a full endpoint transfer unless the boundary between the projections is
-controlled in the same residual fourth-moment normalization.
+It should decide whether frozen-to-moving threshold transfer is boundary-local,
+mixed, or endpoint-strength. It must not treat threshold stability as a
+pointwise first-moment selector estimate unless it controls the residual
+fourth-moment norm after forming `B_d`.

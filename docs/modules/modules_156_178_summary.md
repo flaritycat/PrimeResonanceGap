@@ -1,4 +1,4 @@
-# Modules 156-217 summary
+# Modules 156-218 summary
 
 ## 156
 
@@ -255,6 +255,16 @@ rejecting unlocalized generic `CoreSel` transfer as a harmless side package
 and focusing the next modules on major/minor projection compatibility,
 frozen-to-moving threshold transfer, and deterministic extraction.
 
+## 218
+
+Major/minor selector-transfer compatibility audit; defines
+`MajorMinorSelCompat_3(P_adm)` and shows that major and minor transfer
+packages can be composed only after projection partition defect, arc-boundary
+stability, denominator compatibility, zero-mode/centering compatibility,
+selector-chain compatibility, boundary accounting, and prime-power /
+W-residue compatibility are controlled in the same residual fourth-moment
+normalization.
+
 ## Next
 
-Module 218: Major/minor selector-transfer compatibility audit.
+Module 219: Frozen-to-moving dyadic threshold transfer obstruction.
