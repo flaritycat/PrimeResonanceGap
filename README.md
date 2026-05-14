@@ -92,8 +92,9 @@ row-square, and fixed-fiber tests. The latest steering challenge pauses direct
 row-square continuation, and the column audit now shows that first-incidence
 counting gives only column-barrier ceilings. The distributional audit then
 shows that layer-cake with first-moment tails collapses back to the same
-ceiling. The next local question is the concrete `r=2` same-frequency
-shift-pair expansion. None of this proves the endpoint.
+ceiling. The concrete `r=2` expansion now isolates the off-diagonal
+same-frequency shift-pair row and points to a weighted coefficient-pair energy
+audit. None of this proves the endpoint.
 
 ## The Whole Project In One Narrative
 
@@ -409,13 +410,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the column-multiplicity distribution audit**.
+the column-pair multiplicity expansion**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 309
-Active phase: Phase K, column-pair multiplicity expansion
+Latest module frontier: Module 310
+Active phase: Phase K, weighted column-pair energy audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -601,6 +602,13 @@ Module 309:
   First-moment Markov tails collapse back to the Module 308 first-incidence
   ceiling, so layer-cake alone is not a gain. The next concrete target is the
   `r=2` same-frequency shift-pair expansion.
+
+Module 310:
+  expanded the concrete `r=2` column multiplicity moment into exact
+  same-frequency shift-pair incidences. The diagonal row is first-energy
+  controlled, the off-diagonal row remains open, and first incidence again
+  collapses to the Module 308 ceiling. The next test is a weighted
+  coefficient-pair energy audit.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
@@ -611,9 +619,10 @@ inputs do not prove the row side of the threshold window.
 The next planned module is:
 
 ```text
-Module 310:
-  perform ColumnPairMultiplicityExpansion_310(P_minor^0), expanding the
-  concrete r=2 column moment into same-frequency shift-pair incidence terms.
+Module 311:
+  perform WeightedColumnPairEnergyAudit_311(P_minor^0), testing whether the
+  weighted coefficient-pair criterion is smaller than column multiplicity or
+  only another ceiling under current Parseval/Cauchy inputs.
 ```
 
 ## What Is Proved?
@@ -641,7 +650,10 @@ Compact status table:
 | Column-multiplicity distribution audit `ColumnMultiplicityDistributionAudit_309` | **STRUCTURAL / EXTRACTION** |
 | First-moment layer-cake route `FirstMomentLayerCakeCollapse_309(r)` | **FALSE / BLOCKED** |
 | Column tail gain `ColumnTailGainTarget_309(r)` | **OPEN** |
-| Column-pair expansion `ColumnPairMultiplicityExpansion_310` | **OPEN next target** |
+| Column-pair expansion `ColumnPairMultiplicityExpansion_310` | **STRUCTURAL / EXTRACTION** |
+| Off-diagonal same-frequency pair row `OffDiagonalSameFrequencyPair_310` | **OPEN** |
+| Weighted column-pair energy target `WeightedColumnPairEnergyTarget_310` | **OPEN** |
+| Weighted column-pair energy audit `WeightedColumnPairEnergyAudit_311` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -906,7 +918,14 @@ wins.
 | `FirstMomentLayerCakeCollapse_309(r)` | FALSE / BLOCKED | First-moment layer-cake reproduces the Module 308 ceiling |
 | `ColumnTailGainCriterion_309(r;U)` | STRUCTURAL / EXTRACTION | Criterion only, not a proved tail theorem |
 | `ColumnTailGainTarget_309(r)` | OPEN | Needs high-multiplicity tail decay beyond first incidence |
-| `ColumnPairMultiplicityExpansion_310(P_minor^0)` | OPEN | Next target |
+| `ColumnPairMultiplicityExpansion_310(P_minor^0)` | STRUCTURAL / EXTRACTION | Concrete r=2 column moment expanded into same-frequency shift pairs |
+| `ColumnPairIdentity_310(lambda_j)` | STRUCTURAL / EXTRACTION | Exact pair identity for `MultMomentP0_284(2;lambda_j)` |
+| `ColumnDiagonalPair_310(lambda_j)` | STRUCTURAL / EXTRACTION | Diagonal shift-pair row isolated and first-energy controlled |
+| `OffDiagonalSameFrequencyPair_310(lambda_j)` | OPEN | Same-frequency large-spectrum shift-pair incidence missing |
+| `FirstIncidencePairCollapse_310(lambda_j)` | FALSE / BLOCKED | Pair route collapses to Module 308 ceiling under first incidence |
+| `WeightedPairEnergyCriterion_310(lambda_j)` | STRUCTURAL / EXTRACTION | Threshold-to-weighted-coefficient-pair criterion only |
+| `WeightedColumnPairEnergyTarget_310(P_minor^0)` | OPEN | Needs same-family weighted off-diagonal pair energy gain |
+| `WeightedColumnPairEnergyAudit_311(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

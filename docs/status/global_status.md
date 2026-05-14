@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 309
-Active phase: Phase K, column-pair multiplicity expansion
+Latest module frontier: Module 310
+Active phase: Phase K, weighted column-pair energy audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -233,6 +233,11 @@ Latest project-wide review:
   first-moment layer-cake route as a repeat of the Module 308 ceiling, and
   selecting `ColumnPairMultiplicityExpansion_310(P_minor^0)` as the next
   concrete column test.
+- A column-pair multiplicity expansion
+  `ColumnPairMultiplicityExpansion_310(P_minor^0)`, expanding the concrete
+  `r=2` column moment into diagonal and off-diagonal same-frequency shift-pair
+  incidences, blocking the first-incidence pair route as another ceiling, and
+  leaving `WeightedColumnPairEnergyTarget_310(P_minor^0)` open.
 
 ## What the project has not proved
 
@@ -358,6 +363,12 @@ Latest project-wide review:
   `FirstMomentLayerCakeCollapse_309(r)` as column-barrier smallness.
 - `ColumnTailGainCriterion_309(r;U)`, `ColumnTailGainTarget_309(r)`, or
   `ColumnPairMultiplicityExpansion_310(P_minor^0)`.
+- `ColumnPairIdentity_310(lambda_j)` or `ColumnDiagonalPair_310(lambda_j)` as
+  column-barrier smallness.
+- `OffDiagonalSameFrequencyPair_310(lambda_j)`,
+  `WeightedPairEnergyCriterion_310(lambda_j)`,
+  `WeightedColumnPairEnergyTarget_310(P_minor^0)`, or
+  `WeightedColumnPairEnergyAudit_311(P_minor^0)`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -642,10 +653,16 @@ Completed column-multiplicity distribution audit:
     extracts exact layer-cake tails, blocks first-moment layer-cake as a gain
     route, and leaves ColumnTailGainTarget_309(r) open
 
+Completed column-pair multiplicity expansion:
+  ColumnPairMultiplicityExpansion_310(P_minor^0)
+    expands the r=2 column moment into same-frequency shift-pair incidences,
+    isolates OffDiagonalSameFrequencyPair_310(lambda_j) as open, and leaves
+    WeightedColumnPairEnergyTarget_310(P_minor^0) open
+
 Next scheduled check:
-  Module 310 ColumnPairMultiplicityExpansion_310(P_minor^0)
+  Module 311 WeightedColumnPairEnergyAudit_311(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Phase K distribution
-audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed Phase K column-pair
+expansion;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

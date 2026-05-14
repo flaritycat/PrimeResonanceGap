@@ -162,7 +162,14 @@ FALSE / BLOCKED
 | `FirstMomentLayerCakeCollapse_309(r)` | FALSE / BLOCKED | First-moment layer-cake reproduces the Module 308 first-incidence ceiling | `module_309_column_multiplicity_distribution_audit.md` | No |
 | `ColumnTailGainCriterion_309(r;U)` | STRUCTURAL / EXTRACTION | Tail-majorant criterion for closing one column barrier; no tail theorem supplied | `module_309_column_multiplicity_distribution_audit.md` | Only as a criterion |
 | `ColumnTailGainTarget_309(r)` | OPEN | Needs high-multiplicity tail decay beyond first-incidence Markov | `module_309_column_multiplicity_distribution_audit.md` | No |
-| `ColumnPairMultiplicityExpansion_310(P_minor^0)` | OPEN | Next target: expand the concrete `r=2` same-frequency shift-pair object | `module_309_column_multiplicity_distribution_audit.md` | No |
+| `ColumnPairMultiplicityExpansion_310(P_minor^0)` | STRUCTURAL / EXTRACTION | Expands concrete `r=2` column moment into same-frequency shift-pair incidences | `module_310_column_pair_multiplicity_expansion.md` | Only as an identity/audit |
+| `ColumnPairIdentity_310(lambda_j)` | STRUCTURAL / EXTRACTION | Exact identity `MultMomentP0_284(2;lambda_j)=D^(-1)sum_{d1,d2}P_j(d1,d2)` | `module_310_column_pair_multiplicity_expansion.md` | Only as an identity |
+| `ColumnDiagonalPair_310(lambda_j)` | STRUCTURAL / EXTRACTION | Diagonal shift-pair row is `D^(-1)I_{j,0}` and first-energy controlled | `module_310_column_pair_multiplicity_expansion.md` | Only as a routed row |
+| `OffDiagonalSameFrequencyPair_310(lambda_j)` | OPEN | Needs control of distinct shifts sharing large minor frequencies | `module_310_column_pair_multiplicity_expansion.md` | No |
+| `FirstIncidencePairCollapse_310(lambda_j)` | FALSE / BLOCKED | First-incidence pair route reproduces the Module 308 `r=2` ceiling | `module_310_column_pair_multiplicity_expansion.md` | No |
+| `WeightedPairEnergyCriterion_310(lambda_j)` | STRUCTURAL / EXTRACTION | Converts threshold pair counts to weighted coefficient-pair energy with `lambda_j^(-4)` loss | `module_310_column_pair_multiplicity_expansion.md` | Only as a criterion |
+| `WeightedColumnPairEnergyTarget_310(P_minor^0)` | OPEN | Needs same-family off-diagonal weighted pair-energy gain beyond Parseval/Cauchy ceilings | `module_310_column_pair_multiplicity_expansion.md` | No |
+| `WeightedColumnPairEnergyAudit_311(P_minor^0)` | OPEN | Next target: audit whether the weighted criterion is genuinely smaller than column multiplicity | `module_310_column_pair_multiplicity_expansion.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

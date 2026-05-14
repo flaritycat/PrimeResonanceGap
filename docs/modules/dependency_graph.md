@@ -57,7 +57,8 @@ flowchart TD
   PlanChallenge8["PlanChallenge_8_307<br/>challenge STRUCTURAL; row-square next move BLOCKED"]
   ColumnBarrier308["ColumnBarrierMomentAudit_308<br/>audit STRUCTURAL; current route BLOCKED"]
   ColumnDist309["ColumnMultiplicityDistributionAudit_309<br/>audit STRUCTURAL; first-moment route BLOCKED"]
-  ColumnPair310["ColumnPairMultiplicityExpansion_310<br/>next target OPEN"]
+  ColumnPair310["ColumnPairMultiplicityExpansion_310<br/>expansion STRUCTURAL; off-diagonal OPEN"]
+  WPair311["WeightedColumnPairEnergyAudit_311<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -148,6 +149,8 @@ flowchart TD
   PlanChallenge8 --> ColumnBarrier308
   ColumnBarrier308 --> ColumnDist309
   ColumnDist309 --> ColumnPair310
+  ColumnPair310 --> WPair311
+  WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
   ColumnBarrier308 --> ThresholdP0
@@ -271,3 +274,6 @@ flowchart TD
 - `ColumnMultiplicityDistributionAudit_309` gives an exact layer-cake
   formulation but blocks first-moment tails as a gain route; the next concrete
   test is the `r=2` same-frequency shift-pair expansion.
+- `ColumnPairMultiplicityExpansion_310` expands the `r=2` column moment and
+  isolates the off-diagonal same-frequency pair row; the weighted
+  coefficient-pair route is still only a criterion.

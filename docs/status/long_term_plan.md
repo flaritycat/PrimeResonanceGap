@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 309
-Post-Reflective_1 solving count: 128
-Long-term-plan count: 122
+Latest completed module: 310
+Post-Reflective_1 solving count: 129
+Long-term-plan count: 123
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -2678,4 +2678,50 @@ Module 310:
   perform ColumnPairMultiplicityExpansion_310(P_minor^0), expanding the r=2
   same-frequency shift-pair object and classifying diagonal/off-diagonal
   terms before any further column-gain claim.
+```
+
+Module 310 completed:
+
+```text
+ColumnPairMultiplicityExpansion_310(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+ColumnPairIdentity_310(lambda_j):
+  STRUCTURAL / EXTRACTION.
+
+ColumnDiagonalPair_310(lambda_j):
+  STRUCTURAL / EXTRACTION.
+
+OffDiagonalSameFrequencyPair_310(lambda_j):
+  OPEN.
+
+FirstIncidencePairCollapse_310(lambda_j):
+  FALSE / BLOCKED as a gain route.
+
+WeightedPairEnergyCriterion_310(lambda_j):
+  STRUCTURAL / EXTRACTION.
+
+WeightedColumnPairEnergyTarget_310(P_minor^0):
+  OPEN.
+```
+
+The expansion identifies the concrete `r=2` column moment as a same-frequency
+shift-pair incidence problem. The diagonal is routed, first-incidence bounds
+recover the Module 308 ceiling, and the off-diagonal weighted pair-energy row
+remains open.
+
+The next cadence checkpoints are unchanged:
+
+```text
+Fourteenth plan update:  Module 313
+Next reflective log:     Module 341
+```
+
+Continue with:
+
+```text
+Module 311:
+  perform WeightedColumnPairEnergyAudit_311(P_minor^0), testing whether the
+  weighted coefficient-pair criterion gives a smaller route than column
+  multiplicity or only repeats current Parseval/Cauchy ceilings.
 ```
