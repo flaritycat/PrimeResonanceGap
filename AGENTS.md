@@ -151,3 +151,9 @@ python scripts/extract_modules.py docs/paper/Prime_Resonance_Gap_500_Page_Paper.
 ```
 
 These scripts are lightweight sanity checks, not mathematical proof. Yes, even the scripts know their place.
+
+## Reflection cadence
+
+Create a new `Reflective_N.md` memory log every 40 further solving iterations after `Reflective_1.md`.
+
+A solving iteration means a substantive project advance such as a new module, a committed analytic reduction, a proof attempt with a resolved outcome, or a correction that changes the proof map. Record what changed, what was corrected, what remains open, and which forbidden upgrades remain blocked.

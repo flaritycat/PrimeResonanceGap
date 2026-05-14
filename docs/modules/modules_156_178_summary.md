@@ -1,4 +1,4 @@
-# Modules 156-180 summary
+# Modules 156-181 summary
 
 ## 156
 
@@ -48,6 +48,10 @@ Fourier major/minor decomposition for the residual derivative cube endpoint.
 
 Minor-arc large-spectrum criterion for the residual derivative cube.
 
+## 181
+
+Major-arc projected residual local model.
+
 ## Next
 
-Module 181: Major-arc residual local-model matching for `Omega_w`.
+Module 182: Projected residual model neutrality and collision audit.

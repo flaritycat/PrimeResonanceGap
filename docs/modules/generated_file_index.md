@@ -16,7 +16,7 @@
 | `.github\ISSUE_TEMPLATE\09_paper_I_outline.md` | 356 |
 | `.github\ISSUE_TEMPLATE\10_paper_II_III_outlines.md` | 374 |
 | `.github\workflows\codex_review.yml` | 533 |
-| `AGENTS.md` | 4377 |
+| `AGENTS.md` | 4805 |
 | `CITATION.cff` | 581 |
 | `docs\codex\codex_takeover_prompt.md` | 1308 |
 | `docs\codex\continuation_protocol.md` | 1061 |
@@ -27,12 +27,13 @@
 | `docs\ledger\prime_gap_resonance_project_250_page_breakdown.txt` | 808464 |
 | `docs\modules\generated_250_page_index.md` | 16201 |
 | `docs\modules\generated_500_page_index.md` | 31915 |
-| `docs\modules\generated_file_index.md` | 2877 |
+| `docs\modules\generated_file_index.md` | 2974 |
 | `docs\modules\generated_index.md` | 32419 |
 | `docs\modules\module_178_residual_cube.md` | 2671 |
 | `docs\modules\module_179_fourier_major_minor.md` | 8654 |
 | `docs\modules\module_180_minor_arc_large_spectrum.md` | 6495 |
-| `docs\modules\modules_156_178_summary.md` | 1038 |
+| `docs\modules\module_181_major_arc_projected_model.md` | 7155 |
+| `docs\modules\modules_156_178_summary.md` | 1091 |
 | `docs\paper\Prime_Resonance_Gap_500_Page_Paper.txt` | 1285247 |
 | `docs\status\endpoint_status.md` | 849 |
 | `docs\status\forbidden_upgrades.md` | 1574 |
@@ -50,5 +51,6 @@
 | `papers\paper_III_s2_endpoint_compression\outline.md` | 700 |
 | `papers\paper_III_s2_endpoint_compression\theorem_inventory.md` | 552 |
 | `README.md` | 3066 |
+| `Reflective_1.md` | 6382 |
 | `source_texts\prime_gap_resonance_project_250_page_breakdown.txt` | 808464 |
 | `source_texts\Prime_Resonance_Gap_500_Page_Paper.txt` | 1285247 |
