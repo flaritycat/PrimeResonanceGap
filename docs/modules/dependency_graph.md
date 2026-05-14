@@ -29,7 +29,8 @@ flowchart TD
   FixedShellTransfer["UniformFiber / SelectionTransfer / DirectShell<br/>OPEN routes"]
   LSBesselBench["LSBesselBenchmark_281<br/>benchmark STRUCTURAL; adaptive gain OPEN"]
   DegRowsP0["DegRowsP0Audit_282(P_minor^0)<br/>audit STRUCTURAL; smallness OPEN"]
-  SideRowsP0["Side-row audit in P_minor^0_283<br/>next diagnostic"]
+  SideRowsP0["SideRowsP0Audit_283(P_minor^0)<br/>audit STRUCTURAL; ready package OPEN"]
+  ThresholdP0["ThresholdBudgetP0_283<br/>OPEN; next diagnostic"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -77,6 +78,8 @@ flowchart TD
   LSBesselBench --> FixedShellTransfer
   DegRowsP0 --> PhaseKernel0
   SideRowsP0 --> PhaseKernel0
+  ThresholdP0 --> SideRowsP0
+  ThresholdP0 --> PhaseKernel0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -117,3 +120,7 @@ flowchart TD
 - `DegRowsP0Audit_282` removes some degeneracies only inside the minimal
   model by convention; it does not prove row/column, major-difference,
   physical-diagonal, or deg-free smallness.
+- `SideRowsP0Audit_283` removes boundary, fixed-residue, prime-only, and
+  selector-change rows only inside the minimal model by convention; it does
+  not prove W-uniformity, threshold-budget, low-level cutoff, dyadic
+  uniformity, or adaptive shell-selection rows.

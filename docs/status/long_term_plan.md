@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 282
-Post-Reflective_1 solving count: 101
-Long-term-plan count: 95
+Latest completed module: 283
+Post-Reflective_1 solving count: 102
+Long-term-plan count: 96
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -917,14 +917,18 @@ Expected work:
   and deg-free rows remain open;
 - Module 283: audit the minimum W-limit, cutoff, boundary, threshold,
   residue, and selector side rows needed for `P_minor^0`;
-- Module 284: give a proof-or-blocked verdict for `PhaseKernelBound_273`
-  inside `P_minor^0`;
+  completed as `SideRowsP0Audit_283(P_minor^0)`, recording that boundary,
+  fixed-residue, prime-only, and selector-change rows are internal
+  conventions only, while W-uniformity, threshold budget, low-level cutoff,
+  dyadic uniformity, and adaptive shell selection remain open;
+- Module 284: test `ThresholdBudgetP0_283` against row/column ceilings,
+  base-tail shells, low-level leakage, and the lambda-summed target;
 - Module 285: give a micro-verdict for `TransverseGateProofPkg_276` over
   `P_minor^0`;
 - Module 286: perform the eleventh plan update.
 
 Success criterion: Phase J either produces a concrete non-endpoint candidate
-for `PhaseKernelBound_273` in `P_minor^0`, or classifies the candidate as
+for `PhaseKernelBound_273^0` in `P_minor^0`, or classifies the candidate as
 endpoint-strength/blocked in that minimal family.
 
 Failure criterion: Phase J merely renames `P_minor`, `X_273`, or
@@ -1509,4 +1513,61 @@ Module 283:
   audit the minimum side rows still needed for P_minor^0:
   W-limit, cutoff, boundary, threshold, residue, selector, and dyadic
   conventions.
+```
+
+Module 283 completed:
+
+```text
+SideRowsP0Audit_283(P_minor^0)
+  classifies the minimum side rows still present inside the fixed minimal
+  family.
+```
+
+Internal convention rows:
+
+```text
+BoundaryConventionP0_283,
+ResidueConventionP0_283,
+SelectorConventionP0_283,
+```
+
+and the exact fixed-arc convention are structural only inside `P_minor^0`.
+They are not export theorems.
+
+It preserves these statuses:
+
+```text
+SideRowsP0Ready_283,
+WUniformP0_283,
+ThresholdBudgetP0_283,
+LowLevelCutoffP0_283,
+DyadicUniformityP0_283,
+ShellSelectionP0_283,
+DegRowsP0Small_282,
+MajorDiffBound_282,
+PhysDiagLocal_282,
+DegFreePhaseGate_282,
+LargeSieveBesselClosure_281,
+AdaptiveBesselGain_281,
+PhaseKernelBound_273^0,
+PhaseKernelBound_273,
+TransverseGateProofPkg_276,
+TransIncBound_269,
+MinorArcTransfer_3^B,
+NarrowMinorArc_3^B,
+selector transfer,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3
+remain unproved.
+```
+
+Continue with:
+
+```text
+Module 284:
+  test ThresholdBudgetP0_283 against row/column ceilings, base-tail shells,
+  low-level leakage, and the lambda-summed target, without assuming
+  PhaseKernelBound_273^0.
 ```

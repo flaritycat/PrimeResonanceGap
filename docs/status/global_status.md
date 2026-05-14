@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 282
+Latest module frontier: Module 283
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -127,6 +127,10 @@ Latest project-wide review:
 - A degeneracy audit `DegRowsP0Audit_282(P_minor^0)`, separating internal
   model-zero degeneracies from the row, column, major-difference,
   physical-diagonal, and deg-free rows that remain open.
+- A side-row audit `SideRowsP0Audit_283(P_minor^0)`, separating internal
+  boundary, fixed-residue, prime-only, and selector conventions from the
+  W-uniformity, threshold, low-level cutoff, dyadic-uniformity, and adaptive
+  shell-selection rows that remain open.
 
 ## What the project has not proved
 
@@ -170,6 +174,9 @@ Latest project-wide review:
 - `LargeSieveBesselClosure_281` or `AdaptiveBesselGain_281`.
 - `DegRowsP0Small_282`, `MajorDiffBound_282`, `PhysDiagLocal_282`, or
   `DegFreePhaseGate_282`.
+- `SideRowsP0Ready_283`, `WUniformP0_283`, `ThresholdBudgetP0_283`,
+  `LowLevelCutoffP0_283`, `DyadicUniformityP0_283`, or
+  `ShellSelectionP0_283`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -315,13 +322,19 @@ Completed Phase J degeneracy audit:
     keeps row/column, major-difference, physical-diagonal, and deg-free rows
     open inside P_minor^0
 
+Completed Phase J side-row audit:
+  SideRowsP0Audit_283(P_minor^0)
+    records boundary, fixed-residue, prime-only, and selector-change rows as
+    internal conventions only, while keeping W-uniformity, threshold budget,
+    low-level cutoff, dyadic uniformity, and adaptive shell selection open
+
 Active Phase J target:
   PhaseKernelBound_273^0 over P_minor^0
-    next audit the minimum side rows still needed in P_minor^0
+    next test the threshold budget against row/column ceilings and the
+    lambda-summed target
 
 Next scheduled check:
-  Module 283 audit W-limit, cutoff, boundary, threshold, residue, selector,
-  and dyadic side rows inside P_minor^0
+  Module 284 audit ThresholdBudgetP0_283 inside P_minor^0
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the active Phase J steering step;

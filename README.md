@@ -83,7 +83,8 @@ large Fourier coefficients form adaptive shift-frequency shells. We are
 testing whether any non-endpoint estimate can control the shell functional
 `Xi_273^0` in a fixed minimal model family `P_minor^0`. The current verdict is
 that fixed frequency-set estimates do not automatically control these
-data-dependent shells.
+data-dependent shells, and the remaining local side rows must still be proved
+before any Phase J kernel bound can be used.
 
 ## Whole Project Map
 
@@ -284,7 +285,7 @@ feasibility**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 282
+Latest module frontier: Module 283
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -312,18 +313,26 @@ Module 282:
   audited degeneracy rows inside P_minor^0. Boundary/cutoff, WPP, and
   selector degeneracies vanish only by internal model convention; row,
   column, major-difference, physical-diagonal, and deg-free rows remain open.
+
+Module 283:
+  audited the minimum side rows still needed inside P_minor^0. Boundary,
+  fixed-residue, prime-only, and selector-change rows are conventions only
+  in the local model; W-uniformity, threshold budget, low-level cutoff,
+  dyadic uniformity, and adaptive shell selection remain open.
 ```
 
 The next planned module is:
 
 ```text
-Module 283:
-  audit the minimum side rows still needed for P_minor^0.
+Module 284:
+  test ThresholdBudgetP0_283 against row/column ceilings and the
+  lambda-summed target.
 ```
 
-The next audit should decide which W-limit, cutoff, boundary, threshold,
-residue, selector, and dyadic conventions are still genuine side rows even in
-the minimal family.
+The next audit should decide whether the declared threshold schedules can be
+made compatible with row/column ceilings, base-tail shells, low-level leakage,
+and the final lambda-summed target, without assuming the kernel bound they are
+meant to support.
 
 ## What Is Proved?
 
@@ -495,6 +504,14 @@ wins.
 | `MajorDiffBound_282` | OPEN | Major-like relations among minor frequencies not controlled |
 | `PhysDiagLocal_282` | OPEN | Same-family physical-diagonal shifted-correlation row missing |
 | `DegFreePhaseGate_282` | OPEN | Deg-free shell phase estimate missing |
+| `SideRowsP0Audit_283(P_minor^0)` | STRUCTURAL / EXTRACTION | Minimum side rows classified inside the fixed local family |
+| `BoundaryConventionP0_283 / ResidueConventionP0_283 / SelectorConventionP0_283` | STRUCTURAL / EXTRACTION | Zero only as internal `P_minor^0` conventions, not export rows |
+| `SideRowsP0Ready_283` | OPEN | Local W-uniformity, threshold, cutoff, dyadic, and adaptive-shell rows missing |
+| `WUniformP0_283` | OPEN | Same two-stage W-limit uniformity not proved for the shell estimate |
+| `ThresholdBudgetP0_283` | OPEN | Threshold schedules not shown compatible with final lambda-summed target |
+| `LowLevelCutoffP0_283` | OPEN | Contribution below `lambda_min` not controlled |
+| `DyadicUniformityP0_283` | OPEN | Uniformity over D, lambda, sigma, R, eta, W, and both signs of d missing |
+| `ShellSelectionP0_283` | OPEN | Adaptive data-dependent shell control not supplied by fixed-set estimates |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

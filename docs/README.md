@@ -7,7 +7,7 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 282
+Latest module frontier: Module 283
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -53,6 +53,7 @@ modules/
   module_280_fixed_set_shell_transfer.md
   module_281_large_sieve_bessel_benchmark.md
   module_282_pminor0_degeneracy_audit.md
+  module_283_pminor0_side_rows.md
   modules_156_178_summary.md
 
 reviews/

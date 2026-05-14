@@ -1,4 +1,4 @@
-# Modules 156-282 summary
+# Modules 156-283 summary
 
 ## 156
 
@@ -803,6 +803,16 @@ selector degeneracies vanish only by internal model convention, and leaves
 `DegRowsP0Small_282`, `MajorDiffBound_282`, `PhysDiagLocal_282`, and
 `DegFreePhaseGate_282` open.
 
+## 283
+
+Side-row audit inside `P_minor^0`; defines
+`SideRowsP0Audit_283(P_minor^0)`, records boundary, fixed-residue,
+prime-only, and selector-change rows as local conventions only, and leaves
+`SideRowsP0Ready_283`, `WUniformP0_283`, `ThresholdBudgetP0_283`,
+`LowLevelCutoffP0_283`, `DyadicUniformityP0_283`, and
+`ShellSelectionP0_283` open.
+
 ## Next
 
-Module 283: audit the minimum side rows still needed for `P_minor^0`.
+Module 284: test `ThresholdBudgetP0_283` against row/column ceilings and the
+lambda-summed target.
