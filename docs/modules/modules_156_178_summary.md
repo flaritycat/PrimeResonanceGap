@@ -1,4 +1,4 @@
-# Modules 156-228 summary
+# Modules 156-229 summary
 
 ## 156
 
@@ -354,6 +354,15 @@ only `ResCube_3^sharp <-> DyadicDerivativeU^2`,
 exact sharp major/minor Fourier split as structural, while deferring the
 ResCube/CPC, CPC/SPAC, and CPC/RBDH analytic side packages.
 
+## 229
+
+Analytic side-package arrow audit; defines `AnalyticArrowAudit_229` and
+classifies the ResCube/CPC, CPC/SPAC, CPC/RBDH, major-arc, and minor-arc
+arrows as conditional on named side packages including linear-margin
+absorption, covariance calibration, exact local models, boundary transfer,
+collision control, W-limit order, prime-power transfer, range coverage, and
+selector transfer.
+
 ## Next
 
-Module 229: Audit analytic side-package arrows.
+Module 230: Attach selector-transfer requirements to every endpoint arrow.

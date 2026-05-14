@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 228
-Post-Reflective_1 solving count: 47
-Long-term-plan count: 41
+Latest completed module: 229
+Post-Reflective_1 solving count: 48
+Long-term-plan count: 42
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -388,6 +388,10 @@ Expected work:
 - Module 229: audit the arrows that require analytic side packages: local
   models, covariance calibration, pair-margin absorption, boundary transfer,
   collision control, W-limit order, prime-power transfer, and range coverage;
+  completed as `AnalyticArrowAudit_229`, classifying the ResCube/CPC,
+  CPC/SPAC, CPC/RBDH, projected major-arc, and minor-arc arrows as
+  conditional on named side packages, with `LocalBdPkg_226` retained only as
+  one fixed boundary/prefix row and not as full boundary transfer;
 - Module 230: attach selector-transfer requirements to every endpoint arrow
   using `SelectorTransferGraph_3^consol`;
 - Module 231: produce a consolidated endpoint dependency table with each arrow
@@ -448,51 +452,62 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 229: Audit analytic side-package arrows.
+Module 230: Attach selector-transfer requirements to every endpoint arrow.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 228 completed the structural-arrow audit:
+Module 229 completed the analytic side-package arrow audit:
 
 ```text
-StructuralArrowAudit_228.
+AnalyticArrowAudit_229.
 ```
 
-It classified as structural only the fixed-object identities:
+It classified the remaining non-structural arrows as conditional on named
+side packages:
 
 ```text
-ResCube_3^sharp <-> DyadicDerivativeU^2,
-DyadicDerivativeU^2 <-> AU^3,
-SPAC_2^sharp <-> SU2Pair_2^sharp,
-ResCube_3^sharp <-> exact sharp major/minor Fourier split.
+ResCube_3^sharp <-> CPC_3^sharp:
+  PairResidualTransfer_229,
+
+CPC_3^sharp <-> SPAC_2^sharp:
+  CPCSPACAlign_229,
+
+CPC_3^sharp <-> RBDH_pair_short:
+  RBDHCPCBridge_229,
+
+ProjectedMajorTarget_3^B:
+  MajorAnalyticPkg_229,
+
+MinorTarget_3^B:
+  MinorAnalyticPkg_229.
 ```
 
-Module 228 also recorded that these are identities of quantities, not
-estimates. Module 229 should now audit the analytic side-package arrows:
+Module 230 should now attach selector-transfer requirements to every endpoint
+arrow using:
 
 ```text
-ResCube_3^sharp <-> CPC_3^sharp,
-CPC_3^sharp <-> SPAC_2^sharp,
-CPC_3^sharp <-> RBDH_pair_short,
-major-arc model matching,
-minor-arc large-spectrum control.
+SelectorTransferGraph_3^consol,
+SharpSelectorTransferMatrix_3,
+MajorSelectorTransfer_3^P,
+MinorArcTransfer_3^B,
+MajorMinorSelCompat_3(P_adm),
+FrozenMovingObstruction_3^Pi,
+DetExtract_3^Pi(s -> mv).
 ```
 
-For each analytic arrow, record which side packages are required:
+For each endpoint arrow, record:
 
 ```text
-exact local models kappa_w, Sigma_w, Omega_w;
-covariance calibration;
-pair-margin absorption;
-linear U^2 control;
-boundary transfer, including LocalBdPkg_226's limited role;
-collision control;
-W-limit order;
-prime-power transfer;
-range coverage;
-selector transfer.
+source selector class;
+target selector class;
+the adjacent selector edge or chain;
+the residual fourth-moment norm in which transfer is required;
+whether the row is local, mixed, endpoint-strength, or blocked;
+whether it changes major/minor projection, denominator, boundary, W-residue,
+prime-power, zero-mode, or dyadic range conventions.
 ```
 
-Do not upgrade these analytic arrows to `PROVEN`. The expected result is a
-side-package audit, not a closure theorem.
+Do not upgrade selector transfer to `PROVEN`. The expected result is an
+attachment ledger, not a closure theorem. The fifth plan update and third plan
+challenge remain scheduled for Module 232, not Module 230.
