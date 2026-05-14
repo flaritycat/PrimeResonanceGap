@@ -71,7 +71,9 @@ FALSE / BLOCKED
 | `AdaptiveShellGainP0_285` | OPEN | Would require a new same-family uniform-fiber, selection-transfer, or direct-shell theorem with compatible side and threshold losses | `module_285_adaptive_shell_verdict.md` | No |
 | `PlanUpdate_11_286` | STRUCTURAL / EXTRACTION | Eleventh plan update: Phase J paused as current-tool blocked; Phase K selected | `module_286_eleventh_plan_update.md` | Only as steering |
 | `PhaseK_AdaptiveShellTriage` | STRUCTURAL / EXTRACTION | Working phase for testing possible new adaptive-shell inputs after the Phase J block | `module_286_eleventh_plan_update.md` | Only as schedule/steering |
-| `DirectShellCrossTermGain_287` | OPEN | Future TT* cross-term gain inside `P_minor^0`; not yet audited or proved | `module_286_eleventh_plan_update.md` | No |
+| `DirectShellTTStarAudit_287(P_minor^0)` | STRUCTURAL / EXTRACTION | Audits direct-shell `TT*` cross terms and blocks Cauchy/Bessel, fixed-set, full-orthogonality, and endpoint-derived shortcuts | `module_287_direct_shell_ttstar_audit.md` | Only as an audit |
+| `DirectShellCrossTermGain_287` | OPEN | Uniform gain for fully transverse `TT*` cross terms with adversarial `omega` and data-dependent `J` missing | `module_287_direct_shell_ttstar_audit.md` | No |
+| `DirectShellTTStarClosure_287` | OPEN | Would require cross-term gain plus row/column phase, major-difference, physical-diagonal, side, and threshold rows | `module_287_direct_shell_ttstar_audit.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

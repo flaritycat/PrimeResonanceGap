@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 286
-Post-Reflective_1 solving count: 105
-Long-term-plan count: 99
+Latest completed module: 287
+Post-Reflective_1 solving count: 106
+Long-term-plan count: 100
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -1739,4 +1739,65 @@ Module 287:
   DirectShellTTStarAudit_287(P_minor^0), deciding whether the direct-shell
   TT* cross terms reduce to a smaller same-family non-endpoint target or are
   already endpoint-strength under the current toolkit.
+```
+
+Module 287 completed:
+
+```text
+DirectShellTTStarAudit_287(P_minor^0)
+  isolates the direct-shell TT* cross-term obstruction.
+```
+
+The audit records:
+
+```text
+coefficient diagonal energy:
+  row/column budgets only;
+
+Cauchy/Bessel:
+  known ceilings only;
+
+fixed-set estimates:
+  blocked without selection;
+
+full-frequency orthogonality:
+  blocked for restricted data-dependent shells;
+
+endpoint-derived closure:
+  circular;
+
+DirectShellCrossTermGain_287:
+  OPEN.
+```
+
+It preserves:
+
+```text
+DirectShellTTStarClosure_287,
+AdaptiveShellGainP0_285,
+DirectShellBound_280,
+UniformFiberBound_280,
+SelectionTransfer_280,
+PhaseKernelBound_273^0,
+ThresholdBudgetP0Closure_284(q,r),
+SideRowsP0Ready_283,
+DegRowsP0Small_282,
+TransIncBound_269,
+MinorArcTransfer_3^B,
+NarrowMinorArc_3^B,
+selector transfer,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3
+remain unproved.
+```
+
+Continue with:
+
+```text
+Module 288:
+  SelectionComplexityAudit_288(P_minor^0), testing whether the adaptive shell
+  class S_d(J) has concrete entropy, stopping-time, or sparse-domination
+  structure compatible with the lambda-summed target.
 ```

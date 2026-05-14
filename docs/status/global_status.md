@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 286
+Latest module frontier: Module 287
 Active phase: Phase K, adaptive-shell gain triage
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -141,6 +141,9 @@ Latest project-wide review:
   `AdaptiveShellGainP0_285` open.
 - An eleventh plan update `PlanUpdate_11_286`, pausing Phase J as blocked by
   current tools and starting Phase K as an adaptive-shell gain triage window.
+- A direct-shell `TT*` audit `DirectShellTTStarAudit_287(P_minor^0)`, routing
+  coefficient diagonal, same-shift, same-frequency, and fully transverse
+  cross terms and leaving `DirectShellCrossTermGain_287` open.
 
 ## What the project has not proved
 
@@ -195,6 +198,8 @@ Latest project-wide review:
   theorem, or any direct-shell phase theorem closing `PhaseKernelBound_273^0`.
 - `DirectShellCrossTermGain_287` or any TT* cross-term estimate beyond the
   already recorded row/column ceilings.
+- `DirectShellTTStarClosure_287`, which would also require side,
+  degeneracy, and threshold rows.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -361,12 +366,18 @@ Completed eleventh plan update:
     pauses Phase J as current-tool blocked and starts Phase K adaptive-shell
     gain triage
 
+Completed Phase K direct-shell TT* audit:
+  DirectShellTTStarAudit_287(P_minor^0)
+    blocks Cauchy/Bessel, fixed-set, full-orthogonality, and endpoint-derived
+    shortcuts as direct-shell closure while keeping DirectShellCrossTermGain_287
+    open
+
 Active Phase K target:
   AdaptiveShellGainP0_285 over P_minor^0
-    next audit the direct-shell TT* cross terms of X_J(omega)
+    next audit selection complexity for the adaptive shell class S_d(J)
 
 Next scheduled check:
-  Module 287 DirectShellTTStarAudit_287(P_minor^0)
+  Module 288 SelectionComplexityAudit_288(P_minor^0)
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the active Phase K steering step;

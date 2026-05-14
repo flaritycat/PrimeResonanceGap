@@ -33,7 +33,8 @@ flowchart TD
   ThresholdP0["ThresholdBudgetP0Audit_284<br/>audit STRUCTURAL; closure OPEN"]
   AdaptiveShellP0["AdaptiveShellVerdict_285<br/>current tools BLOCKED; gain OPEN"]
   PlanUpdate11["PlanUpdate_11_286<br/>Phase K selected"]
-  DirectTTStar["DirectShellTTStarAudit_287<br/>next diagnostic"]
+  DirectTTStar["DirectShellTTStarAudit_287<br/>audit STRUCTURAL; cross gain OPEN"]
+  SelectionComplexity["SelectionComplexityAudit_288<br/>next diagnostic"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -89,6 +90,8 @@ flowchart TD
   PlanUpdate11 --> DirectTTStar
   DirectTTStar --> AdaptiveShellP0
   DirectTTStar --> PhaseKernel0
+  DirectTTStar --> SelectionComplexity
+  SelectionComplexity --> AdaptiveShellP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -142,3 +145,6 @@ flowchart TD
 - `PlanUpdate_11_286` pauses Phase J and starts Phase K as adaptive-shell
   gain triage. The first Phase K test is the direct-shell `TT*` cross-term
   audit, not a claimed gain.
+- `DirectShellTTStarAudit_287` isolates `DirectShellCrossTermGain_287` as
+  open; Cauchy/Bessel, fixed-set, full-orthogonality, and endpoint-derived
+  closures remain blocked.

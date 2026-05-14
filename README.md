@@ -87,7 +87,8 @@ data-dependent shells, and the remaining local side rows must still be proved
 before any Phase J kernel bound can be used. The latest audit isolates the
 threshold-budget barriers, records that the current adaptive-shell tool
 package is blocked, and now starts a narrower triage of possible new
-adaptive-shell inputs.
+adaptive-shell inputs. The first Phase K audit isolates the direct-shell
+`TT*` cross-term gain as open.
 
 ## Whole Project Map
 
@@ -287,7 +288,7 @@ The current active phase is **Phase K: adaptive-shell gain triage**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 286
+Latest module frontier: Module 287
 Active phase: Phase K, adaptive-shell gain triage after the Phase J block
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -336,18 +337,24 @@ Module 285:
 Module 286:
   performed the eleventh plan update. Phase J is paused as blocked by current
   tools, and Phase K begins with adaptive-shell gain triage.
+
+Module 287:
+  audited the direct-shell TT* cross terms for X_J(omega). The coefficient
+  diagonal gives only energy, Cauchy/Bessel returns row/column ceilings,
+  fixed-set and full-orthogonality shortcuts are blocked, and
+  DirectShellCrossTermGain_287 remains open.
 ```
 
 The next planned module is:
 
 ```text
-Module 287:
-  audit the direct-shell TT* cross terms for X_J(omega) inside P_minor^0.
+Module 288:
+  audit selection complexity for the adaptive shell class S_d(J).
 ```
 
-The next audit should decide whether the direct-shell route exposes a smaller
-same-family non-endpoint subtarget, or whether it is already endpoint-strength
-under the current toolkit.
+The next audit should test whether the shell class has any concrete entropy,
+stopping-time, or sparse-domination structure compatible with the
+lambda-summed target.
 
 ## What Is Proved?
 
@@ -535,7 +542,9 @@ wins.
 | `AdaptiveShellGainP0_285` | OPEN | Would require a new uniform-fiber, selection-transfer, or direct-shell theorem with compatible losses |
 | `PlanUpdate_11_286` | STRUCTURAL / EXTRACTION | Phase J paused as current-tool blocked; Phase K selected |
 | `PhaseK_AdaptiveShellTriage` | STRUCTURAL / EXTRACTION | New-input triage, not an analytic estimate |
-| `DirectShellCrossTermGain_287` | OPEN | Next target: TT* cross-term audit inside `P_minor^0` |
+| `DirectShellTTStarAudit_287(P_minor^0)` | STRUCTURAL / EXTRACTION | Direct-shell `TT*` cross terms routed and shortcuts blocked |
+| `DirectShellCrossTermGain_287` | OPEN | Uniform cross-term gain for adversarial `omega` and data-dependent `J` missing |
+| `DirectShellTTStarClosure_287` | OPEN | Would require cross-term gain plus side, degeneracy, and threshold rows |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

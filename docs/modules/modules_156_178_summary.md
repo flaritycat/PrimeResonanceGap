@@ -1,4 +1,4 @@
-# Modules 156-286 summary
+# Modules 156-287 summary
 
 ## 156
 
@@ -833,7 +833,15 @@ Eleventh plan update after the Phase J current-tool block; defines
 `PhaseK_AdaptiveShellTriage`, and schedules the direct-shell `TT*`
 cross-term audit as Module 287.
 
+## 287
+
+Direct-shell `TT*` cross-term audit inside `P_minor^0`; defines
+`DirectShellTTStarAudit_287(P_minor^0)`, routes diagonal, same-shift,
+same-frequency, and fully transverse cross terms, blocks Cauchy/Bessel,
+fixed-set, full-orthogonality, and endpoint-derived shortcuts, and leaves
+`DirectShellCrossTermGain_287` open.
+
 ## Next
 
-Module 287: audit the direct-shell `TT*` cross terms of `X_J(omega)` inside
-`P_minor^0`.
+Module 288: audit selection complexity for the adaptive shell class
+`S_d(J)`.
