@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 252
-Post-Reflective_1 solving count: 71
-Long-term-plan count: 65
+Latest completed module: 253
+Post-Reflective_1 solving count: 72
+Long-term-plan count: 66
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -614,6 +614,12 @@ Expected work:
   kernel replacement as mixed unless a transfer row returns to the fixed
   `P_M`;
 - Module 253: short-interval W-PNT range audit for `WOneBoundaryPNT_244`;
+  completed as `WShortRangeGate_253`, reducing the W branch to the fixed-row
+  condition
+  `eps_WPNT_253 BLength_245 + WPNTError_253 + BadRangeMass_253=o_W(1)`,
+  and blocking full-interval W-PNT as a shortcut when active boundary
+  intervals fall below range or residue/cutoff/limit-order compatibility is
+  missing;
 - Module 254: exact side-row convention audit for `CutOne_242`,
   `RangeOne_242`, `WResOne_242`, `PPOne_242`, and `NormZeroOne_242`;
 - Module 255: assemble a feasibility verdict for
@@ -671,40 +677,42 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 253: short-interval W-PNT range audit for WOneBoundaryPNT_244.
+Module 254: exact side-row convention audit for CutOne_242, RangeOne_242,
+WResOne_242, PPOne_242, and NormZeroOne_242.
 ```
 
-Expected status: `CONDITIONAL` or `FALSE / BLOCKED`, depending on whether
-the active boundary intervals fit a W-uniform short-interval theorem in the
-same fixed row.
+Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, depending on
+whether the side rows are exact by convention or still require fixed-row
+weighted estimates.
 
-Module 252 completed the kernel feasibility gate:
+Module 253 completed the short-interval W-PNT range audit:
 
 ```text
-KernelHolderGate_252:
-  boundary mass route:
-    (C_mean_245+1)A_W(M)GeomModel_251+MassErr_245=o_W(1);
-  Holder route:
-    K_q(M)E_p(s0)=o_W(1).
+WShortRangeGate_253:
+  eps_WPNT_253 BLength_245
+    + WPNTError_253
+    + BadRangeMass_253=o_W(1).
 ```
 
-Module 253 should test whether the W branch has a fixed-row short-interval
-input matching:
+Module 254 should test whether the five one-point side rows are exact by
+definition in the current fixed row or still need separate weighted estimates:
 
 ```text
-WOneBoundaryPNT_244:
-  OPMeanErr_244(W,D0,rho0)=o_W(1).
+CutOne_242,
+RangeOne_242,
+WResOne_242,
+PPOne_242,
+NormZeroOne_242.
 ```
 
 It must check:
 
 ```text
-interval length of J_L,J_R,
-W-uniformity,
-residue class compatibility,
-absolute |W_M| averaging,
-selector class,
-fixed-w then N -> infinity then w -> infinity limit order.
+whether the source boundary event is exactly J_L union J_R after cutoff0,
+whether m0(n,t)=n-t0 always stays in support,
+whether the W-residue convention is exact after translation,
+whether prime powers are absent or weighted-small,
+whether normalization and zero-mode leakage vanish after interval restriction.
 ```
 
 It must keep the same fixed row:

@@ -5,7 +5,7 @@ This file is the first status document Codex should read.
 Current frontier:
 
 ```text
-Latest module frontier: Module 252
+Latest module frontier: Module 253
 Active phase: Phase G, fixed-row package feasibility gates
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -31,6 +31,7 @@ Latest project-wide review:
 - One-point fixed-support prototype reduced to fixed-row kernel, boundary,
   short-interval, and side-row feasibility gates.
 - A project-wide 1000-page-scope review through Module 252.
+- A fixed-row short-interval range gate for the W one-point boundary mean.
 
 ## What the project has not proved
 
@@ -40,8 +41,9 @@ Latest project-wide review:
 - `RBDH_pair_short(Hcal)`, `CPC_3^sharp(Hcal)`, or `AU^3(Hcal)`.
 - `ResCube_3^sharp`, `ProjectedMajorTarget_3^B`, or the actual sharp
   moving-selector endpoint.
-- `FixedRowOnePointPkg_249`, `KernelHolderGate_252`, or
-  `OnePointBIHL_242` outside exact model conventions.
+- `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
+  `WShortRangeGate_253`, or `OnePointBIHL_242` outside exact model
+  conventions.
 
 ## Current endpoint class
 
@@ -66,7 +68,7 @@ FixedRowOnePointPkg_249
     + OnePointSideRows_246^local.
 ```
 
-The current Module 252 kernel gates are:
+The current Phase G gates are:
 
 ```text
 Boundary mass:
@@ -74,6 +76,11 @@ Boundary mass:
 
 Holder:
   K_q(M)E_p(s0)=o_W(1)
+
+W short-interval range:
+  eps_WPNT_253 BLength_245
+    + WPNTError_253
+    + BadRangeMass_253=o_W(1)
 ```
 
 Status: **CONDITIONAL**.

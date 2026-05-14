@@ -1,4 +1,4 @@
-# Modules 156-252 summary
+# Modules 156-253 summary
 
 ## 156
 
@@ -555,6 +555,16 @@ condition `K_q(M)E_p(s0)=o_W(1)`, and records that either route is local only
 for the same fixed projection `P_M`, becoming mixed if kernel smoothing or
 projection replacement is used.
 
+## 253
+
+Short-interval W-PNT range audit; defines `WShortRangeGate_253` and derives
+the conditional bound
+`OPMeanErr_244(W) <= eps_WPNT_253 BLength_245 + WPNTError_253 +
+BadRangeMass_253`, showing that the W branch is local only when the active
+boundary intervals fit the fixed-row W-short-interval theorem and all
+below-range, residue, cutoff, and limit-order defects are separately handled.
+
 ## Next
 
-Module 253: short-interval W-PNT range audit for `WOneBoundaryPNT_244`.
+Module 254: exact side-row convention audit for `CutOne_242`,
+`RangeOne_242`, `WResOne_242`, `PPOne_242`, and `NormZeroOne_242`.
