@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 238
-Post-Reflective_1 solving count: 57
-Long-term-plan count: 51
+Latest completed module: 239
+Post-Reflective_1 solving count: 58
+Long-term-plan count: 52
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -470,6 +470,10 @@ Expected work:
   bottleneck;
 - Module 239: attempt a model-class proof or blocked verdict for the easiest
   boundary subrow under bounded local-factor hypotheses;
+  completed as `EasyModelSubrow_239(lambda)`, closing the `S=emptyset`
+  boundary/model/tail/convention subrow under explicit kernel-volume and
+  convention hypotheses, while blocking any extension to nonempty actual
+  weighted tuple rows without `FixedSupportTupleHL_238`;
 - Module 240: decide whether `LocalBdPkg_226` remains a plausible local route
   or should be marked mixed/endpoint-strength for practical purposes;
 - Module 241: perform the sixth plan update.
@@ -517,36 +521,34 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 239: Model-class proof or blocked verdict for the easiest boundary subrow.
+Module 240: LocalBdPkg_226 plausibility verdict after the fixed-row tests.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
 
-Module 238 completed the fixed-row composition:
+Module 239 completed the easiest subrow test:
 
 ```text
-FixedRowPkg_238(s0,D0,rho0)
-  => BdPrefRow_224^P(s0,D0;N,w,rho0)=o_W(1).
+EasyModelPkg_239(lambda)
+  => EasyModelSubrow_239(lambda).
 ```
 
-It identified the first true bottleneck as:
+It closed the `S=emptyset` model/convention subrow under explicit
+kernel-volume and convention hypotheses, but blocked the extension to:
 
 ```text
 FixedSupportTupleHL_238,
-headed by nonempty BoundaryIntervalHL_234(S,lambda).
+nonempty BoundaryIntervalHL_234(S,lambda).
 ```
 
-This remains smaller than the projected residual endpoint only while all
-supports stay fixed, boundary/tail/local, and selector/projection classes do
-not move.
+The first genuine analytic bottleneck remains nonempty fixed-support weighted
+tuple control.
 
-Module 239 should focus on the easiest subrow:
+Module 240 should decide:
 
 ```text
-S=emptyset or model-class boundary/model side,
-fixed selector class,
-bounded local factors,
-no actual prime-weight tuple matching.
+Does LocalBdPkg_226 remain a plausible local route,
+or should it be marked mixed / endpoint-strength for practical purposes?
 ```
 
 inside:
@@ -559,8 +561,8 @@ same selector class s0,
 fixed dyadic shell D0<|d|<=2D0.
 ```
 
-The goal is to obtain either a genuine proof in the easiest model/convention
-subrow or a precise blocked verdict. Do not treat the easiest model subrow as
-proof of nonempty actual `BoundaryIntervalHL_234`, do not merge distinct rows
-into a generic side package, and do not assume `ProjectedMajorTarget_3^B`,
-`ResCube_3^sharp`, selector transfer, or any endpoint object.
+The goal is to review Modules 233-239 and give a practical route verdict.
+Do not let the closed empty subrow hide the open nonempty tuple bottleneck,
+do not merge distinct rows into a generic side package, and do not assume
+`ProjectedMajorTarget_3^B`, `ResCube_3^sharp`, selector transfer, or any
+endpoint object.

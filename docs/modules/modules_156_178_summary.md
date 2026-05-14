@@ -1,4 +1,4 @@
-# Modules 156-238 summary
+# Modules 156-239 summary
 
 ## 156
 
@@ -438,6 +438,14 @@ conditional route to `BdPrefRow_224^P=o_W(1)`, and identifies
 `FixedSupportTupleHL_238`, led by nonempty `BoundaryIntervalHL_234(S,lambda)`,
 as the first genuine analytic bottleneck.
 
+## 239
+
+Easiest model subrow proof and blocked extension; defines
+`EasyModelSubrow_239(lambda)` and conditionally closes the `S=emptyset`
+boundary/model/tail/convention subrow under explicit kernel-volume and
+convention hypotheses, while blocking extension to nonempty actual weighted
+tuple rows without `FixedSupportTupleHL_238`.
+
 ## Next
 
-Module 239: Model-class proof or blocked verdict for the easiest boundary subrow.
+Module 240: LocalBdPkg_226 plausibility verdict after the fixed-row tests.
