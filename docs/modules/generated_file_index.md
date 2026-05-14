@@ -164,7 +164,7 @@
 | `papers\paper_II_conditional_finite_type\theorem_inventory.md` | 751 |
 | `papers\paper_III_s2_endpoint_compression\outline.md` | 700 |
 | `papers\paper_III_s2_endpoint_compression\theorem_inventory.md` | 552 |
-| `README.md` | 25998 |
+| `README.md` | 30066 |
 | `Reflective_1.md` | 6382 |
 | `Reflective_2.md` | 9060 |
 | `Reflective_3.md` | 12639 |

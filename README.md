@@ -97,6 +97,126 @@ same-tools Phase K pass and sets the exact question for the next plan
 challenge. The seventh plan challenge selects side-package triage as the next
 branch.
 
+## The Whole Project In One Narrative
+
+The project is about a very specific way of asking whether prime gaps can be
+biased by an irrational rotation.
+
+Start with all primes. For each prime `p`, the selector
+`chi_alpha(p)` asks whether `alpha p` lands very close to an integer. This
+creates a thin subsequence of primes depending on `alpha`. On that subsequence
+we average the normalized next-prime gap `g(p)`. The original problem asks
+whether some irrational `alpha` can make that selected average converge to a
+limit bigger than the ordinary value `1`.
+
+The project then separates the problem into layers:
+
+```text
+Layer 1: Selected averages
+  D_alpha(x), N_alpha(x), A_alpha(x), and the full gap g(p).
+
+Layer 2: Selector and gap transfer
+  Can statements in model, frozen, smoothed, cyclic, or W-tricked worlds be
+  returned to the actual sharp moving selector and the full gap?
+
+Layer 3: Prime-weight residuals
+  Replace prime irregularity by f=nu-1 and shifted products
+  B_d(n)=f(n+d)conj(f(n)).
+
+Layer 4: Fourier endpoint engines
+  Control major/minor arc fourth moments and residual derivative cubes.
+
+Layer 5: Exact local models and side rows
+  Euler factors, collision terms, W-limits, boundary errors, prime powers,
+  dyadic ranges, thresholds, and adaptive-shell selection.
+```
+
+Each layer can fail independently. A proof at Layer 4 is not a solution of
+Layer 1 unless Layers 2 and 5 also transfer correctly. A model estimate is
+not an actual-alpha theorem. A clipped-gap theorem is not a full-gap theorem.
+An endpoint equivalence is not an endpoint proof.
+
+At the project level, the ledger currently says:
+
+```text
+Original selected-average problem:
+  OPEN.
+
+Metric almost-everywhere branch:
+  PROVEN according to the project ledger, but only for a.e. alpha.
+
+Finite-type branch:
+  CONDITIONAL.
+
+s=2 / residual-cube endpoint branch:
+  OPEN.
+
+Current local work:
+  a minor-arc W-cyclic model laboratory, P_minor^0, used to test whether a
+  smaller non-endpoint input can control adaptive Fourier shells.
+```
+
+So the current modules are not "the project"; they are the active microscope.
+The whole project remains the selected-prime-gap problem above. The active
+microscope is examining one local obstruction because it is one of the places
+where a future proof would need real analytic strength.
+
+## How The Branches Fit Together
+
+There are five main project branches:
+
+```text
+1. Metric branch
+   What happens for almost every alpha?
+   Current ledger: A_alpha(x)->1 a.e. is PROVEN.
+
+2. Finite-type branch
+   What can be said for Diophantine alpha with controlled approximation?
+   Current ledger: CONDITIONAL.
+
+3. Major-arc branch
+   Can exact local Euler-factor models, collision control, and W-limits be
+   matched strongly enough?
+   Current ledger: projected major target remains OPEN / CONDITIONAL.
+
+4. Minor-arc branch
+   Can residual Fourier mass be controlled at endpoint strength?
+   Current ledger: residual cube and transverse shell targets remain OPEN.
+
+5. Transfer branch
+   Can model/cyclic/frozen/smoothed statements be moved back to the actual
+   sharp moving selector and full gap?
+   Current ledger: no automatic transfer.
+```
+
+The current Phase K side-package triage belongs to branch 4, with necessary
+help from branch 5. It does not settle branches 1, 2, 3, or the original
+problem.
+
+## What A Complete Solution Would Need
+
+A positive solution would need all of the following, in the actual target
+world:
+
+```text
+1. An irrational alpha or a construction mechanism.
+2. Control of the selector count D_alpha(x).
+3. Control of the selected gap numerator N_alpha(x).
+4. Full-gap control, not only clipped or model tail control.
+5. Exact transfer from any model estimates to chi_alpha(p).
+6. Boundary, W-limit, residue, prime-power, and dyadic uniformity.
+7. A final proof that A_alpha(x)->L0 with L0>1.
+```
+
+A negative all-alpha theorem would need a different full route:
+
+```text
+show that no irrational alpha can have a positive finite limit L0>1,
+with the actual selector and full gap still present.
+```
+
+That theorem is also open.
+
 ## Whole Project Map
 
 The project has three jobs at once:
