@@ -43,7 +43,8 @@ flowchart TD
   SidePkgTriage293["SidePkgTriage_293<br/>triage STRUCTURAL; ready package OPEN"]
   LowLevelTriage294["LowLevelBudgetTriage_294<br/>triage STRUCTURAL; budget OPEN"]
   PlanUpdate12["PlanUpdate_12_295<br/>plan update STRUCTURAL"]
-  LowLevelBarrier296["LowLevelCountingBarrierAudit_296<br/>next target OPEN"]
+  LowLevelBarrier296["LowLevelCountingBarrierAudit_296<br/>audit STRUCTURAL; pure counting BLOCKED"]
+  E2Tail297["E2MinorEnergyTailAudit_297<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -115,7 +116,9 @@ flowchart TD
   LowLevelTriage294 --> AdaptiveShellP0
   LowLevelTriage294 --> PlanUpdate12
   PlanUpdate12 --> LowLevelBarrier296
+  LowLevelBarrier296 --> E2Tail297
   LowLevelBarrier296 --> ThresholdP0
+  E2Tail297 --> ThresholdP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -195,3 +198,6 @@ flowchart TD
 - `PlanUpdate_12_295` keeps the side-package branch narrow and selects
   `LowLevelCountingBarrierAudit_296`; that next target is still open and must
   test the exact reconstruction formula and target weights.
+- `LowLevelCountingBarrierAudit_296` blocks pure counting under the current
+  declarations and extracts the open second-energy tail target
+  `LowLevelEnergyTailTarget_296`.

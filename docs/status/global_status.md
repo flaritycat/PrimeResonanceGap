@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 295
-Active phase: Phase K, side-package counting-barrier audit
+Latest module frontier: Module 296
+Active phase: Phase K, low-level second-energy tail audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -172,6 +172,10 @@ Latest project-wide review:
 - A twelfth plan update `PlanUpdate_12_295`, keeping the side-package branch
   narrow after the low-level verdict and selecting
   `LowLevelCountingBarrierAudit_296(P_minor^0)` as the next concrete test.
+- A low-level counting-barrier audit
+  `LowLevelCountingBarrierAudit_296(P_minor^0)`, blocking pure counting under
+  the current `P_minor^0` data and extracting the sharper open target
+  `LowLevelEnergyTailTarget_296(P_minor^0)`.
 
 ## What the project has not proved
 
@@ -240,8 +244,10 @@ Latest project-wide review:
   `SideRowsP0Ready_283`, or `DegRowsP0Small_282`.
 - `SidePkgReady_293`, `LowLevelBudgetP0_284`, `LowLevelCutoffP0_283`,
   or `LowLevelCountingBarrier_294`.
-- `LowLevelCountingBarrierAudit_296(P_minor^0)`; it is the next target, not a
-  completed estimate.
+- `LowLevelCountingBarrierAudit_296(P_minor^0)` as a low-level estimate; it
+  is structural only.
+- `LowLevelEnergyTailTarget_296(P_minor^0)` or
+  `E2MinorEnergyTailAudit_297(P_minor^0)`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -454,8 +460,12 @@ Completed twelfth plan update:
     selects LowLevelCountingBarrierAudit_296(P_minor^0) as the next narrow
     side-package target
 
+Completed low-level counting-barrier audit:
+  LowLevelCountingBarrierAudit_296(P_minor^0)
+    blocks pure counting and extracts LowLevelEnergyTailTarget_296 as open
+
 Next scheduled check:
-  Module 296 LowLevelCountingBarrierAudit_296(P_minor^0)
+  Module 297 E2MinorEnergyTailAudit_297(P_minor^0)
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;

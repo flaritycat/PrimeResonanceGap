@@ -95,8 +95,9 @@ The Phase K verdict now records that these tests do not close the adaptive
 shell target with current tools. The cleanup packet blocks another same-tools
 Phase K pass, the seventh plan challenge selects side-package triage, and the
 low-level audit classifies the below-`lambda_min` row as still open unless an
-explicit counting or same-family energy budget is proved. The latest plan
-update keeps the branch narrow by selecting a counting-barrier audit next.
+explicit counting or same-family energy budget is proved. The counting-barrier
+audit now blocks pure counting and redirects the low-level branch to the
+sharper second-energy tail criterion.
 
 ## The Whole Project In One Narrative
 
@@ -417,8 +418,8 @@ adaptive-shell gain block**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 295
-Active phase: Phase K, side-package counting-barrier audit
+Latest module frontier: Module 296
+Active phase: Phase K, low-level second-energy tail audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -519,20 +520,24 @@ Module 295:
   questions whether low-level triage is useful without an exact
   reconstruction formula, and selects LowLevelCountingBarrierAudit_296 as the
   next concrete test.
+
+Module 296:
+  audited the low-level counting barrier. Pure counting is blocked under the
+  current P_minor^0 data, while the exact fourth-moment tail reduces to the
+  open second-energy target lambda_min^2 E2_minor^0=o_W(1).
 ```
 
 The next planned module is:
 
 ```text
-Module 296:
-  audit the LowLevelCountingBarrier_294 criterion against the exact
-  low-level reconstruction, target power, target weights, and P_minor^0
-  parameter ranges.
+Module 297:
+  audit E2MinorEnergyTailAudit_297(P_minor^0), testing whether same-family
+  second-energy tools can prove the low-level energy-tail target.
 ```
 
-The next step should not claim low-level smallness. It should either make the
-counting barrier explicit enough to test, or mark the missing reconstruction
-formula as the blocker.
+The next step should not claim low-level smallness. It should test the
+second-energy tail directly, and if that blocks, leave the low-level branch
+for the shift/frequency removal budgets.
 
 ## What Is Proved?
 
@@ -746,7 +751,11 @@ wins.
 | `LowLevelCountingBarrier_294` | OPEN | Deterministic counting criterion not proved `o_W(1)` |
 | `LowLevelByDefinition_294` | FALSE / BLOCKED | Excluding low levels from the shell grid is not an estimate |
 | `PlanUpdate_12_295` | STRUCTURAL / EXTRACTION | Twelfth plan update; selects the next low-level counting audit |
-| `LowLevelCountingBarrierAudit_296(P_minor^0)` | OPEN | Next target; must test the exact reconstruction and target weights |
+| `LowLevelCountingBarrierAudit_296(P_minor^0)` | STRUCTURAL / EXTRACTION | Pure counting audited; energy-tail target extracted |
+| `PureCountingLowLevelClosure_296` | FALSE / BLOCKED | Counting barrier not small from current P_minor^0 data |
+| `LowLevelEnergyTailCriterion_296` | STRUCTURAL / EXTRACTION | `M_low,0 <= lambda_min^2 E2_minor^0` |
+| `LowLevelEnergyTailTarget_296(P_minor^0)` | OPEN | Need `(A_N^0)^2 N^{-2 kappa_lambda} E2_minor^0=o_W(1)` |
+| `E2MinorEnergyTailAudit_297(P_minor^0)` | OPEN | Next target for same-family second-energy tools |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

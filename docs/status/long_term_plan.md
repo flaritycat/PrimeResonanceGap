@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 295
-Post-Reflective_1 solving count: 114
-Long-term-plan count: 108
+Latest completed module: 296
+Post-Reflective_1 solving count: 115
+Long-term-plan count: 109
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -2154,4 +2154,55 @@ Module 296:
   perform LowLevelCountingBarrierAudit_296(P_minor^0), testing the Module 294
   counting criterion against the exact low-level reconstruction, target
   power, target weights, and declared P_minor^0 parameter ranges.
+```
+
+Module 296 completed:
+
+```text
+LowLevelCountingBarrierAudit_296(P_minor^0)
+  blocks pure counting as a closure route under the current P_minor^0 data
+  and extracts the sharper second-energy tail target.
+```
+
+The audit records:
+
+```text
+PureCountingLowLevelClosure_296:
+  FALSE / BLOCKED.
+
+LowLevelEnergyTailCriterion_296:
+  STRUCTURAL / EXTRACTION.
+
+LowLevelEnergyTailTarget_296(P_minor^0):
+  OPEN.
+
+LowLevelBudgetP0_284:
+  OPEN.
+```
+
+It preserves:
+
+```text
+ThresholdBudgetP0Closure_284(q,r),
+SideRowsP0Ready_283,
+SidePkg_291,
+SidePkgReady_293,
+AdaptiveShellGainP0_285,
+PhaseKernelBound_273^0,
+MinorArcTransfer_3^B,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3,
+the original selected-average problem
+remain unproved.
+```
+
+Continue with:
+
+```text
+Module 297:
+  perform E2MinorEnergyTailAudit_297(P_minor^0), testing whether known
+  same-family second-energy tools can prove
+  (A_N^0)^2 N^{-2 kappa_lambda} E2_minor^0(D;R,eta)=o_W(1).
 ```

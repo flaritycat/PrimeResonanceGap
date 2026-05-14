@@ -97,7 +97,11 @@ FALSE / BLOCKED
 | `LowLevelCountingBarrier_294` | OPEN | Need the target-weighted counting barrier to be `o_W(1)` uniformly over `P_minor^0` | `module_294_low_level_budget_triage.md` | No |
 | `LowLevelByDefinition_294` | FALSE / BLOCKED | Excluding coefficients below `lambda_min` from the shell grid is not an analytic estimate | `module_294_low_level_budget_triage.md` | No |
 | `PlanUpdate_12_295` | STRUCTURAL / EXTRACTION | Twelfth plan update after low-level triage; selects the next narrow audit | `module_295_twelfth_plan_update.md` | Only as steering |
-| `LowLevelCountingBarrierAudit_296(P_minor^0)` | OPEN | Next target: test the exact reconstruction, target power, weights, and parameter ranges for the Module 294 barrier | `module_295_twelfth_plan_update.md` | No |
+| `LowLevelCountingBarrierAudit_296(P_minor^0)` | STRUCTURAL / EXTRACTION | Audits pure counting, blocks it as a closure route under current `P_minor^0` data, and extracts the energy-tail target | `module_296_low_level_counting_barrier_audit.md` | Only as an audit |
+| `PureCountingLowLevelClosure_296` | FALSE / BLOCKED | The counting barrier `C_D m_minor^0 (A_N^0)^4 N^{-4 kappa_lambda}` is not forced to be `o_W(1)` by the declared family | `module_296_low_level_counting_barrier_audit.md` | No |
+| `LowLevelEnergyTailCriterion_296` | STRUCTURAL / EXTRACTION | Exact tail reduction `M_low,0 <= lambda_min^2 E2_minor^0` | `module_296_low_level_counting_barrier_audit.md` | Only as a criterion |
+| `LowLevelEnergyTailTarget_296(P_minor^0)` | OPEN | Requires `(A_N^0)^2 N^{-2 kappa_lambda} E2_minor^0(D;R,eta)=o_W(1)` in the same family | `module_296_low_level_counting_barrier_audit.md` | No |
+| `E2MinorEnergyTailAudit_297(P_minor^0)` | OPEN | Next target: test same-family second-energy tools for the low-level tail | `module_296_low_level_counting_barrier_audit.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |
