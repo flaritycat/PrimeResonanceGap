@@ -1,4 +1,4 @@
-# Modules 156-218 summary
+# Modules 156-219 summary
 
 ## 156
 
@@ -265,6 +265,16 @@ selector-chain compatibility, boundary accounting, and prime-power /
 W-residue compatibility are controlled in the same residual fourth-moment
 normalization.
 
+## 219
+
+Frozen-to-moving dyadic threshold transfer obstruction; defines
+`FrozenMovingObstruction_3^Pi` and extracts the exact `fr -> mv` difference
+into moving-threshold residual layer cubes, amplitude/normalization drift,
+dyadic endpoint and prefix errors, denominator/projection compatibility, and
+centering control. The row is classified as mixed or potentially
+endpoint-strength unless `MoveLayerCube_3^Pi` is proved in the target
+fourth-moment norm.
+
 ## Next
 
-Module 219: Frozen-to-moving dyadic threshold transfer obstruction.
+Module 220: Bernoulli and finite-stage deterministic extraction requirement.

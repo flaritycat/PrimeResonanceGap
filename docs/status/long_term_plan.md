@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 218
-Post-Reflective_1 solving count: 37
-Long-term-plan count: 31
+Latest completed module: 219
+Post-Reflective_1 solving count: 38
+Long-term-plan count: 32
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -303,6 +303,11 @@ Expected work:
   W-residue compatibility;
 - Module 219: state the frozen-to-moving dyadic threshold transfer obstruction
   in the residual derivative fourth-moment normalization;
+  completed as `FrozenMovingObstruction_3^Pi`, a structural extraction showing
+  that the `fr -> mv` row requires moving-threshold residual layer cubes,
+  amplitude/normalization drift, dyadic endpoint and prefix control,
+  denominator/projection compatibility, and centering control, and is mixed or
+  potentially endpoint-strength unless `MoveLayerCube_3^Pi` is proved;
 - Module 220: state the Bernoulli or finite-stage deterministic-extraction
   requirement for selector statements used in the endpoint branch;
 - Module 221: create `Reflective_2.md`, the required 40-iteration memory log
@@ -381,32 +386,39 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 219: Frozen-to-moving dyadic threshold transfer obstruction.
+Module 220: Bernoulli and finite-stage deterministic extraction requirement.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 218 completed the major/minor selector-transfer compatibility audit.
-The verdict was:
+Module 219 completed the frozen-to-moving dyadic threshold transfer
+obstruction. The verdict was:
+
+```text
+The fr -> mv row is not harmless boundary bookkeeping unless the
+moving-threshold residual layer cubes are small in the same fourth-moment
+normalization as the endpoint.
+```
+
+Module 218 had already shown:
 
 ```text
 Major and minor selector-transfer packages are composable only after an
 explicit projection-boundary compatibility package.
 ```
 
-The next module should audit the frozen-to-moving row for the actual sharp
-moving selector:
+The next module should audit deterministic extraction for probabilistic or
+finite-stage selector statements. In particular it should compare:
 
 ```text
-1/log X versus 1/log p,
-transition band mass,
-B_d amplification after threshold changes,
-dyadic endpoint and prefix effects,
-denominator and W-residue interactions,
-major/minor projection compatibility.
+Bernoulli expectation versus fixed-alpha statement,
+finite-stage survivor/core-floor model versus actual selector,
+high-probability estimates versus all required dyadic D ranges,
+major/minor projected norms versus unprojected norms,
+exceptional-set summability over X,D,R,eta,w,
+compatibility with frozen-to-moving and major/minor transfer rows.
 ```
 
-It should decide whether frozen-to-moving threshold transfer is boundary-local,
-mixed, or endpoint-strength. It must not treat threshold stability as a
-pointwise first-moment selector estimate unless it controls the residual
-fourth-moment norm after forming `B_d`.
+It must not convert Bernoulli or finite-stage estimates into fixed-alpha
+actual-selector estimates without an explicit extraction theorem in the
+residual fourth-moment norms used by the endpoint branch.
