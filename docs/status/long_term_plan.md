@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 195
-Post-Reflective_1 solving count: 14
-Long-term-plan count: 8
+Latest completed module: 196
+Post-Reflective_1 solving count: 15
+Long-term-plan count: 9
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -45,8 +45,9 @@ If future work proceeds one module per solving iteration, the expected
 checkpoint modules are:
 
 ```text
-First plan update:       Module 196
+First plan update:       Module 196 (completed)
 First plan challenge:    Module 202
+Second plan update:      Module 205
 Next reflective log:     Module 221
 ```
 
@@ -136,7 +137,9 @@ Expected modules:
   structural dependency list for `ProjectedLocalMatch_3^major`;
 - Module 195: audit of Modules 183-194 for hidden upgrades; completed as a
   structural safety audit;
-- Module 196: first 9-iteration plan update.
+- Module 196: first 9-iteration plan update; completed as a structural
+  transition from major-arc dependency mapping to minor-arc large-spectrum
+  work.
 
 Success criterion: either a credible conditional major-arc collision package is
 isolated, or the route is marked too expensive and the next plan redirects.
@@ -150,12 +153,18 @@ checkable large-spectrum estimates.
 
 Expected modules:
 
-- formulate a minor-arc density/energy criterion for `B_d`;
-- compare ordinary pair-BDH, rectangle-BDH, and residual-subtracted variants;
-- identify exactly where first-moment Hardy-Littlewood information fails;
-- test whether a dyadic derivative `U^2` package gives the needed decay;
-- at iteration 15, perform the first plan challenge;
-- at iteration 18, perform the second plan update.
+- Module 197: formulate a minor-arc density/energy criterion for `B_d`;
+- Module 198: compare ordinary pair-BDH with the residual fourth-moment target;
+- Module 199: audit rectangle-BDH and first-moment Hardy-Littlewood
+  insufficiency;
+- Module 200: test whether a dyadic derivative `U^2` package gives the needed
+  decay;
+- Module 201: build the minor-arc spectral large-spectrum obstruction map;
+- Module 202: perform the first 15-iteration plan challenge;
+- Module 203: refine the conditional minor-arc criterion after the challenge;
+- Module 204: audit boundary, W-range, and selector compatibility for minor
+  arcs;
+- Module 205: perform the second 9-iteration plan update.
 
 Success criterion: a named open estimate replaces the vague phrase
 "minor-arc cancellation", or a conditional route is rejected as insufficient.
@@ -264,21 +273,24 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 196: First 9-iteration plan update.
+Module 197: Minor-arc density/energy criterion for B_d.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION`.
+Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-This is the first plan-update cadence point after adoption of the long-term
-plan. It must record what Phase A has clarified, revise the next 9-iteration
-target window, and decide whether to continue the scheduled move into
-minor-arc large-spectrum control or stay longer with major-arc dependencies.
+Module 196 completed the first plan-update cadence point after adoption of the
+long-term plan. The decision is to move into the scheduled Phase B minor-arc
+large-spectrum work while preserving the major-arc dependency map as open.
 
-The overflow region remains:
+The next module should start from the residual object:
 
 ```text
-B_w(d,h,k;t) > 1
+B_d(n)=f(n+d)conj(f(n)),   f=nu-1,
 ```
 
-and it still needs averaged decay under the projected kernel weights to justify
-the linear collision-envelope replacement used by earlier modules.
+and isolate a checkable density/energy condition that would imply the
+minor-arc part of:
+
+```text
+(1/D) sum_{D<|d|<=2D} sum_{xi != 0} |widehat{B_d}(xi)|^4 = o(1).
+```

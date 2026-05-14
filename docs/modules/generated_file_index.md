@@ -27,7 +27,7 @@
 | `docs\ledger\prime_gap_resonance_project_250_page_breakdown.txt` | 808464 |
 | `docs\modules\generated_250_page_index.md` | 16201 |
 | `docs\modules\generated_500_page_index.md` | 31915 |
-| `docs\modules\generated_file_index.md` | 3956 |
+| `docs\modules\generated_file_index.md` | 4018 |
 | `docs\modules\generated_index.md` | 32419 |
 | `docs\modules\module_178_residual_cube.md` | 2671 |
 | `docs\modules\module_179_fourier_major_minor.md` | 8654 |
@@ -47,12 +47,13 @@
 | `docs\modules\module_193_generic_projected_model_neutrality.md` | 6484 |
 | `docs\modules\module_194_projected_model_matching_dependencies.md` | 7677 |
 | `docs\modules\module_195_hidden_upgrade_audit.md` | 9890 |
-| `docs\modules\modules_156_178_summary.md` | 1961 |
+| `docs\modules\module_196_first_plan_update.md` | 8436 |
+| `docs\modules\modules_156_178_summary.md` | 2100 |
 | `docs\paper\Prime_Resonance_Gap_500_Page_Paper.txt` | 1285247 |
 | `docs\status\endpoint_status.md` | 849 |
 | `docs\status\forbidden_upgrades.md` | 1574 |
 | `docs\status\global_status.md` | 1305 |
-| `docs\status\long_term_plan.md` | 10016 |
+| `docs\status\long_term_plan.md` | 10489 |
 | `docs\status\selector_taxonomy.md` | 1015 |
 | `docs\status\status_ledger.json` | 878 |
 | `experiments\pair_rectangle_statistics\README.md` | 69 |

@@ -1,4 +1,4 @@
-# Modules 156-195 summary
+# Modules 156-196 summary
 
 ## 156
 
@@ -108,6 +108,11 @@ Projected local-model matching dependency list.
 
 Audit of Modules 183-194 for hidden upgrades.
 
+## 196
+
+First 9-iteration plan update; Phase A is dependency-mapped and Phase B moves
+to minor-arc large-spectrum control.
+
 ## Next
 
-Module 196: First 9-iteration plan update.
+Module 197: Minor-arc density/energy criterion for `B_d`.
