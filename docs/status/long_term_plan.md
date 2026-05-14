@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 223
-Post-Reflective_1 solving count: 42
-Long-term-plan count: 36
+Latest completed module: 224
+Post-Reflective_1 solving count: 43
+Long-term-plan count: 37
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -352,6 +352,10 @@ Expected work:
   selector-fixed, with one projection, one edge, one dyadic `D` range, fixed
   W-limit order, no moving threshold, no Bernoulli extraction, and no
   major/minor partition change;
+  completed as `BdPrefRow_224^P(s0,D0;N,w,rho0)`, a conditional fixed
+  projected-major cyclic-to-interval row with `Pi=P_M`, selector class `s0`
+  held fixed, one dyadic shell `D0<|d|<=2D0`, and exact support defined after
+  the eight residual vertices are formed;
 - Module 225: expand that row into its residual fourth-moment cube and list
   the exact envelopes needed to make it `o(1)`;
 - Module 226: decide whether the fixed boundary/prefix row is plausibly local,
@@ -424,41 +428,39 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 224: Fixed boundary/prefix selector-transfer test row.
+Module 225: Expand the fixed boundary/prefix row into the residual fourth-moment cube.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 223 completed the fourth 9-iteration plan update. The verdict was:
+Module 224 fixed the exact test row:
 
 ```text
-Phase D clarified selector-transfer dependencies but did not prove transfer.
-The next window should first test one genuinely supported boundary/prefix
-residual fourth-moment row, then audit endpoint-equivalence arrows with
-selector dependencies attached.
+BdPrefRow_224^P(s0,D0;N,w,rho0)
 ```
 
-Module 222 had already warned:
+The row uses:
 
 ```text
-Do not add another selector-transfer package before proving one genuinely
-supported boundary/prefix residual fourth-moment row, or before deciding that
-the selector-transfer branch should be redirected.
+Pi=P_M,
+edge=cyc_s0 -> int_s0,
+selector class s0 held fixed,
+one dyadic shell D0<|d|<=2D0,
+fixed-w then N->infinity then w->infinity,
+boundary/prefix support defined after the eight B_d vertices are formed.
 ```
 
-The next module should fix the exact local test row before any estimate is
-claimed. In particular it should specify:
+Module 224 did not estimate the row. The next module should expand
+`BdPrefRow_224^P` into the residual fourth-moment cube and list the exact
+envelopes that would make it `o_W(1)`.
+
+In particular, Module 225 should specify:
 
 ```text
-Pi, preferably P_M;
-one selector/model edge, preferably cyclic-to-interval or cutoff-boundary
-  with selector class held fixed;
-one dyadic D range;
-the fixed-w then N->infinity then w->infinity limit order;
-the exact boundary or prefix support after forming B_d;
-the reason no moving threshold, Bernoulli extraction, or major/minor partition
-  change is present.
+which of the eight vertices lies in the boundary/prefix set;
+how the remaining seven vertices are bounded or modeled;
+what local-factor, kernel-mass, divisor, W-residue, prime-power, and
+  normalization envelopes are needed;
+whether first-moment boundary counting is insufficient and why;
+whether the row still appears genuinely local after expansion.
 ```
-
-It must not estimate the row unless the residual fourth-moment cube support
-and normalization have first been stated exactly.

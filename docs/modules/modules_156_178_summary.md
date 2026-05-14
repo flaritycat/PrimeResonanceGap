@@ -1,4 +1,4 @@
-# Modules 156-223 summary
+# Modules 156-224 summary
 
 ## 156
 
@@ -310,6 +310,16 @@ transfer but did not prove it, then revises the next window to first test one
 fixed boundary/prefix residual fourth-moment row before auditing the endpoint
 equivalence arrows with selector-transfer dependencies attached.
 
+## 224
+
+Fixed boundary/prefix selector-transfer test row; defines
+`BdPrefRow_224^P(s0,D0;N,w,rho0)` for the projected-major cyclic-to-interval
+edge `cyc_s0 -> int_s0` with `Pi=P_M`, selector class held fixed, one dyadic
+shell, fixed W-limit order, and exact boundary/prefix support after the eight
+residual `B_d` vertices are formed. The row is conditional and remains
+unestimated.
+
 ## Next
 
-Module 224: Fixed boundary/prefix selector-transfer test row.
+Module 225: Expand the fixed boundary/prefix row into the residual
+fourth-moment cube and list the required envelopes.
