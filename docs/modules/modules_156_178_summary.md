@@ -1,4 +1,4 @@
-# Modules 156-240 summary
+# Modules 156-241 summary
 
 ## 156
 
@@ -454,6 +454,14 @@ conditional package only, with `FixedSupportTupleHL_238` and the nonempty
 `BoundaryIntervalHL_234(S,lambda)` / tail / W-residue / prime-power tuple
 families as the active bottleneck rather than a solved side error.
 
+## 241
+
+Sixth plan update and fixed-support prototype window; defines
+`PlanUpdate_6_241`, closes Phase F1 as a narrow success with an honest
+nonempty tuple bottleneck, and selects Phase F2 as a one-row prototype attack
+on `BoundaryIntervalHL_234({sigma0},lambda0)` with explicit stop conditions
+against endpoint-strength shortcuts.
+
 ## Next
 
-Module 241: sixth plan update.
+Module 242: fix the one-point nonempty fixed-support prototype row.

@@ -91,12 +91,13 @@
 | `docs\modules\module_238_fixed_row_composition_bottleneck.md` | 11050 |
 | `docs\modules\module_239_easiest_model_subrow_verdict.md` | 10087 |
 | `docs\modules\module_240_localbdpkg_practical_verdict.md` | 12907 |
-| `docs\modules\modules_156_178_summary.md` | 16293 |
+| `docs\modules\module_241_sixth_plan_update.md` | 11607 |
+| `docs\modules\modules_156_178_summary.md` | 16663 |
 | `docs\paper\Prime_Resonance_Gap_500_Page_Paper.txt` | 1285247 |
 | `docs\status\endpoint_status.md` | 849 |
 | `docs\status\forbidden_upgrades.md` | 1574 |
 | `docs\status\global_status.md` | 1305 |
-| `docs\status\long_term_plan.md` | 27146 |
+| `docs\status\long_term_plan.md` | 29551 |
 | `docs\status\selector_taxonomy.md` | 1015 |
 | `docs\status\status_ledger.json` | 878 |
 | `experiments\pair_rectangle_statistics\README.md` | 69 |

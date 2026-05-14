@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 240
-Post-Reflective_1 solving count: 59
-Long-term-plan count: 53
+Latest completed module: 241
+Post-Reflective_1 solving count: 60
+Long-term-plan count: 54
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -55,8 +55,9 @@ Next reflective log:     Module 261
 Fourth plan update:      Module 223 (completed)
 Fifth plan update:       Module 232 (completed)
 Third plan challenge:    Module 232 (completed)
-Sixth plan update:       Module 241
+Sixth plan update:       Module 241 (completed)
 Fourth plan challenge:   Module 247
+Seventh plan update:     Module 250
 ```
 
 These module numbers are bookkeeping estimates. If an iteration is not a
@@ -480,7 +481,11 @@ Expected work:
   reading that `LocalBdPkg_226` remains usable only as an expanded
   conditional package, with the `S=emptyset` / model / convention subrow
   separated from the active nonempty `FixedSupportTupleHL_238` bottleneck;
-- Module 241: perform the sixth plan update.
+- Module 241: perform the sixth plan update;
+  completed as `PlanUpdate_6_241`, closing Phase F1 as a narrow success:
+  one empty/model/convention subrow was reduced to concrete local conditions,
+  while the nonempty `FixedSupportTupleHL_238` bottleneck remains open and
+  becomes the focus of a one-row prototype window.
 
 Success criterion: at least one subrow of `LocalBdPkg_226` is either reduced
 to checkable local conditions or marked blocked/endpoint-strength with a
@@ -488,6 +493,55 @@ precise reason.
 
 Failure criterion: the window only renames boundary rows without producing a
 smaller proof obligation than the projected residual endpoint.
+
+### Phase F2: One-row nonempty fixed-support prototype
+
+Target window: iterations 55-63 after this document.
+
+Purpose: test whether the first nonempty row inside `FixedSupportTupleHL_238`
+is genuinely smaller than the projected residual endpoint.
+
+Decision from Module 241:
+
+```text
+Continue the boundary branch only as a one-row prototype test.
+Do not continue expanding LocalBdPkg_226 as a generic package.
+```
+
+Expected work:
+
+- Module 242: fix the one-point prototype row
+  `BoundaryIntervalHL_234({sigma0},lambda0)`, including the choice of
+  `sigma0`, `lambda0`, same-vertex versus off-vertex cases, boundary interval
+  geometry, and exact `Theta_{w,{sigma0}}^proj` local factor;
+- Module 243: derive the exact one-point local model and boundary interval
+  main term, including W-residue, diagonal, and range synchronization;
+- Module 244: reduce the prototype to a W-admissible one-point boundary
+  prime-mean estimate, separating model, W-tricked, smoothed, and frozen
+  selector classes;
+- Module 245: audit the strength required after the `|W_M(t)|` average:
+  supremum versus averaged error, kernel absolute mass, and boundary interval
+  length;
+- Module 246: audit W-residue, prime-power, range, normalization, and
+  zero-mode side rows for the one-point prototype;
+- Module 247: perform the fourth 15-iteration plan challenge;
+- Module 248: compare the one-point prototype against available
+  first-moment tools, W-tricked prime number theorem input, short-interval
+  limitations, and ordinary pair-BDH shortcuts;
+- Module 249: give a proof-or-blocked verdict for the one-point prototype:
+  conditional local, mixed, endpoint-strength, or false/blocked as a
+  shortcut;
+- Module 250: perform the seventh plan update and decide whether to attempt
+  a two-point fixed-support row, redirect to minor arcs, or stop the boundary
+  branch.
+
+Success criterion: the project either obtains a precise conditional local
+criterion for `BoundaryIntervalHL_234({sigma0},lambda0)` that is smaller than
+the endpoint, or marks the prototype mixed/endpoint-strength with a precise
+reason.
+
+Failure criterion: the project again only renames tuple rows without testing
+one concrete nonempty row.
 
 ## 6. How each future iteration should start
 
@@ -525,35 +579,41 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 241: sixth plan update.
+Module 242: fix the one-point nonempty fixed-support prototype row.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION`.
 
-Module 240 completed the practical verdict for `LocalBdPkg_226`:
+Module 241 completed the sixth plan update:
 
 ```text
-LocalBdPkg_226 remains usable only as an expanded conditional package.
+PlanUpdate_6_241.
 ```
 
-It kept the `S=emptyset` model/convention subrow separate from the active
-nonempty bottleneck:
+It closed Phase F1 as a narrow success and selected Phase F2:
 
 ```text
-FixedSupportTupleHL_238,
-nonempty BoundaryIntervalHL_234(S,lambda).
+one-row nonempty fixed-support prototype.
 ```
 
-Module 241 should perform the sixth 9-iteration plan update and decide the
-next window after Phase F1:
+Module 242 should fix, but not prove, the prototype row:
 
 ```text
-Should the project attack a one-row nonempty FixedSupportTupleHL prototype,
-such as BoundaryIntervalHL_234({sigma},lambda),
-or should Phase F1 stop and redirect?
+BoundaryIntervalHL_234({sigma0},lambda0).
 ```
 
-The update should preserve the fixed-row discipline:
+It should specify:
+
+```text
+sigma0, lambda0,
+same-vertex versus off-vertex cases,
+boundary interval pieces J_{lambda0,r},
+the one-point local factor Theta_{w,{sigma0}}^proj,
+the exact W-admissible limit order,
+and all cutoff, range, W-residue, prime-power, and zero-mode error slots.
+```
+
+The prototype remains inside the fixed-row discipline:
 
 ```text
 BdPrefRow_224^P(s0,D0;N,w,rho0),
@@ -563,7 +623,5 @@ same selector class s0,
 fixed dyadic shell D0<|d|<=2D0.
 ```
 
-The plan update should not let the closed empty subrow hide the open
-nonempty tuple bottleneck, should not merge distinct rows into a generic side
-package, and should not assume `ProjectedMajorTarget_3^B`,
+Do not prove the prototype by assuming `ProjectedMajorTarget_3^B`,
 `ResCube_3^sharp`, selector transfer, or any endpoint object.
