@@ -4,7 +4,7 @@
     "all_alpha_no_positive_limit": "OPEN",
     "metric_theorem": "PROVEN according to project ledger",
     "finite_type_no_positive_limit": "CONDITIONAL",
-    "s2_rational_major_endpoint": "OPEN ANALYTIC ENGINE"
+    "s2_rational_major_endpoint": "OPEN"
   },
   "allowed_status_labels": [
     "PROVEN",
@@ -23,7 +23,8 @@
       "DyadicDerivativeU^2",
       "AU^3"
     ],
-    "status": "OPEN ANALYTIC ENGINE"
+    "status": "OPEN",
+    "descriptor": "analytic engine"
   },
   "forbidden_substitutions": {
     "Sigma_w(d,h)": "kappa_w(d)^2 pointwise",

@@ -8,7 +8,7 @@ This file is the first status document Codex should read.
 | All irrational `alpha` satisfy no positive finite limit `L0 > 1` | **OPEN** |
 | Metric theorem `A_alpha(x) -> 1` for Lebesgue-a.e. irrational `alpha` | **PROVEN according to project ledger** |
 | Finite-type no-positive-limit theorem | **CONDITIONAL** |
-| `s=2` rational-major endpoint | **OPEN ANALYTIC ENGINE** |
+| `s=2` rational-major endpoint | **OPEN** (analytic-engine descriptor) |
 
 ## What the project has achieved
 

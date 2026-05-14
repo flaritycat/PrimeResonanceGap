@@ -30,9 +30,10 @@ n, n+d, n+h, n+h+d, n+k, n+k+d, n+h+k, n+h+k+d.
 
 ## 2. Status label
 
-`STRUCTURAL / EXACT IDENTITY` for the identity.
+`STRUCTURAL / EXTRACTION`
 
-`OPEN` for the analytic estimate:
+The identity is exact deterministic algebra inside this structural extraction.
+The analytic estimate remains open:
 
 ```text
 (1/D) sum_{D<|d|<=2D} (Q_d - |c_d|^4) = o(1).

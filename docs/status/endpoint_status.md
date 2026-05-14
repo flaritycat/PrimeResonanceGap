@@ -11,7 +11,7 @@ RBDH_pair_short(Hcal)
   <=> AU^3
 ```
 
-Status: **OPEN ANALYTIC ENGINE**, modulo side packages.
+Status: **OPEN**, with analytic-engine work remaining, modulo side packages.
 
 ## RBDH representative
 

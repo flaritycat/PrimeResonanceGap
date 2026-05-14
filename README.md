@@ -12,7 +12,7 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 | All-alpha no-positive-limit theorem | **OPEN** |
 | Metric theorem `A_alpha(x) -> 1` for Lebesgue-a.e. irrational `alpha` | **PROVEN according to project ledger** |
 | Finite-type no-positive-limit theorem | **CONDITIONAL** |
-| `s=2` rational-major endpoint | **OPEN ANALYTIC ENGINE** |
+| `s=2` rational-major endpoint | **OPEN** (analytic-engine descriptor) |
 
 ## Core selected average
 
@@ -75,10 +75,10 @@ A continuation agent should begin with:
 ```text
 Read AGENTS.md, docs/status/global_status.md, docs/status/forbidden_upgrades.md,
 docs/codex/continuation_protocol.md, and docs/modules/module_178_residual_cube.md.
-Then continue with Module 179.
+Then continue from the latest module.
 ```
 
-The next mathematical target is a **structural Fourier major/minor decomposition** for the residual derivative cube:
+The current mathematical target is the residual derivative cube:
 
 ```text
 (1/D) sum_{D<|d|<=2D} sum_{xi != 0} |widehat{B_d}(xi)|^4 = o(1)
@@ -91,4 +91,4 @@ B_d(n) = f(n+d) conjugate(f(n))
 f      = nu - 1
 ```
 
-Do not call this solved. It is not. The endpoint has merely been cornered into a more explicit formula, which is progress in the same sense that finding the basement monster is progress.
+Do not call this solved. It is not. The endpoint has merely been reduced to a more explicit formula, with the analytic estimates still open.

@@ -8,7 +8,7 @@ This repository documents and continues the Prime Gap Resonance Project.
 - All-alpha no-positive-limit theorem: **OPEN**.
 - Metric theorem `A_alpha(x) -> 1` for Lebesgue-a.e. irrational alpha: **PROVEN according to the project ledger**.
 - Finite-type no-positive-limit theorem: **CONDITIONAL**.
-- `s=2` rational-major endpoint: **OPEN ANALYTIC ENGINE**.
+- `s=2` rational-major endpoint: **OPEN** (analytic-engine descriptor).
 
 ## Allowed status labels
 

@@ -1,4 +1,4 @@
-# Modules 156-178 summary
+# Modules 156-180 summary
 
 ## 156
 
@@ -40,6 +40,14 @@ Direct CPC attack via shifted derivative expansion.
 
 Centered derivative `U^2` becomes zero-frequency-removed eight-form residual cube.
 
+## 179
+
+Fourier major/minor decomposition for the residual derivative cube endpoint.
+
+## 180
+
+Minor-arc large-spectrum criterion for the residual derivative cube.
+
 ## Next
 
-Module 179: Fourier major/minor decomposition for the residual derivative cube endpoint.
+Module 181: Major-arc residual local-model matching for `Omega_w`.
