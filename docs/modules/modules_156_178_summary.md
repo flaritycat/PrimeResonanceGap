@@ -176,6 +176,14 @@ Exact projected major-arc target for the residual derivative product; defines
 nonzero-mode convention, the `Omega_w^proj` model object, and the required
 boundary-error slots without claiming matching or neutrality.
 
+## 207
+
+Exact projected major-arc local model factors; defines
+`Theta_{w,S}^proj`, `Omega_w^proj`, the generic collision-free model, the
+pair/rectangle/eight-form marginals, and records explicitly why
+`Sigma_w(d,h)` is not pointwise `kappa_w(d)^2`.
+
 ## Next
 
-Module 207: Exact projected major-arc local model and `Omega_w^proj` factors.
+Module 208: Collision hyperplane stratification for the projected residual
+cube.

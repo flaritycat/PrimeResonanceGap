@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 206
-Post-Reflective_1 solving count: 25
-Long-term-plan count: 19
+Latest completed module: 207
+Post-Reflective_1 solving count: 26
+Long-term-plan count: 20
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -213,6 +213,10 @@ Expected work:
 - Module 207: define the exact major-arc local model, including the required
   `Omega_w` factor and its relation to `kappa_w`, `Sigma_w`, and
   higher-shift local factors;
+  completed as the exact `Theta_{w,S}^proj` Euler-factor dictionary and
+  `Omega_w^proj` residual inclusion-exclusion model, with explicit
+  lower-dimensional marginals and the warning that `Sigma_w(d,h)` is not
+  pointwise `kappa_w(d)^2`;
 - Module 208: stratify major-arc collision hyperplanes for the projected
   residual cube and separate structural collisions from analytic error terms;
 - Module 209: formulate the W-admissible projected local-model theorem with
@@ -317,28 +321,29 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 207: Exact projected major-arc local model and `Omega_w^proj` factors.
+Module 208: Collision hyperplane stratification for the projected residual
+cube.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 206 fixed the projected major-arc target:
-
-```text
-ProjectedMajorTarget_3^B(D;R,eta;P_M).
-```
-
-The next module should define the exact local singular model used in
-`Omega_w^proj`. In particular it should specify:
+Module 207 fixed the projected local factor dictionary:
 
 ```text
 Theta_{w,S}^proj(d,h,k;t),
-the local prime factor for each p>w,
-the residual inclusion-exclusion formula for Omega_w^proj,
-the generic collision-free factor,
-how kappa_w and Sigma_w appear as lower-dimensional marginals,
-why Sigma_w(d,h) is not kappa_w(d)^2 pointwise.
+Omega_w^proj(d,h,k;t).
 ```
 
-In particular, it must not replace the projected residual model by the
-unprojected `Omega_w(d,h,k)` or by the full eight-form model alone.
+The next module should stratify the collision hyperplanes that make the local
+model non-generic. In particular it should list:
+
+```text
+pair differences among the eight projected vertices,
+structural zero strata,
+large-prime congruence collision strata,
+boundary and kernel-tail interactions,
+which strata belong to the exact model and which require estimates.
+```
+
+In particular, it must not discard collision strata from the actual side
+unless the same removal is mirrored in `Omega_w^proj`.
