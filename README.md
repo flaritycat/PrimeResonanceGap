@@ -96,8 +96,8 @@ shell target with current tools. The cleanup packet blocks another same-tools
 Phase K pass, the seventh plan challenge selects side-package triage, and the
 low-level audit classifies the below-`lambda_min` row as still open unless an
 explicit counting or same-family energy budget is proved. The counting-barrier
-audit now blocks pure counting and redirects the low-level branch to the
-sharper second-energy tail criterion.
+audit blocks pure counting, and the second-energy audit now closes the local
+fourth-moment low-level tail inside `P_minor^0`.
 
 ## The Whole Project In One Narrative
 
@@ -418,8 +418,8 @@ adaptive-shell gain block**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 296
-Active phase: Phase K, low-level second-energy tail audit
+Latest module frontier: Module 297
+Active phase: Phase K, shift/frequency removal audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -525,19 +525,24 @@ Module 296:
   audited the low-level counting barrier. Pure counting is blocked under the
   current P_minor^0 data, while the exact fourth-moment tail reduces to the
   open second-energy target lambda_min^2 E2_minor^0=o_W(1).
+
+Module 297:
+  proved the local second-energy tail inside P_minor^0 by combining the
+  trivial logarithmic pointwise envelope with normalized Parseval. This closes
+  only the local fourth-moment low-level tail.
 ```
 
 The next planned module is:
 
 ```text
-Module 297:
-  audit E2MinorEnergyTailAudit_297(P_minor^0), testing whether same-family
-  second-energy tools can prove the low-level energy-tail target.
+Module 298:
+  audit ShiftFreqRemovalAudit_298(P_minor^0), testing the bad-shift and
+  persistent-frequency removal budgets from Module 284.
 ```
 
-The next step should not claim low-level smallness. It should test the
-second-energy tail directly, and if that blocks, leave the low-level branch
-for the shift/frequency removal budgets.
+The next step should not claim threshold closure. The local low-level tail is
+now handled, but shift/frequency removals and row/column threshold budgets
+still need proof or hard blockage.
 
 ## What Is Proved?
 
@@ -711,14 +716,14 @@ wins.
 | `DegFreePhaseGate_282` | OPEN | Deg-free shell phase estimate missing |
 | `SideRowsP0Audit_283(P_minor^0)` | STRUCTURAL / EXTRACTION | Minimum side rows classified inside the fixed local family |
 | `BoundaryConventionP0_283 / ResidueConventionP0_283 / SelectorConventionP0_283` | STRUCTURAL / EXTRACTION | Zero only as internal `P_minor^0` conventions, not export rows |
-| `SideRowsP0Ready_283` | OPEN | Local W-uniformity, threshold, cutoff, dyadic, and adaptive-shell rows missing |
+| `SideRowsP0Ready_283` | OPEN | W-uniformity, threshold/removal, dyadic, and adaptive-shell rows still missing |
 | `WUniformP0_283` | OPEN | Same two-stage W-limit uniformity not proved for the shell estimate |
 | `ThresholdBudgetP0_283` | OPEN | Threshold schedules not shown compatible with final lambda-summed target |
-| `LowLevelCutoffP0_283` | OPEN | Contribution below `lambda_min` not controlled |
+| `LowLevelCutoffP0_283` | OPEN outside the local fourth-moment tail | Module 297 closes only the P_minor^0 fourth-moment low-level piece |
 | `DyadicUniformityP0_283` | OPEN | Uniformity over D, lambda, sigma, R, eta, W, and both signs of d missing |
 | `ShellSelectionP0_283` | OPEN | Adaptive data-dependent shell control not supplied by fixed-set estimates |
 | `ThresholdBudgetP0Audit_284(P_minor^0)` | STRUCTURAL / EXTRACTION | Exact threshold budget barriers named inside the local family |
-| `ThresholdBudgetP0Closure_284(q,r)` | OPEN | Requires low-level, removal, row/column, and shell-counting budgets to be `o_W(1)` |
+| `ThresholdBudgetP0Closure_284(q,r)` | OPEN | Still requires removal, row/column, shell-counting, and compatibility budgets to be `o_W(1)` |
 | `RowBarrierP0_284 / ColumnBarrierP0_284 / SigmaColumnBarrierP0_284` | OPEN | Optimized barriers are diagnostics, not estimates |
 | `AdaptiveShellVerdict_285(P_minor^0)` | STRUCTURAL / EXTRACTION | Current Phase J adaptive-shell package classified |
 | `CurrentToolsCloseP0_285` | FALSE / BLOCKED | Current fixed-set, Bessel, threshold, side-row, and degeneracy tools do not prove `PhaseKernelBound_273^0` |
@@ -747,15 +752,17 @@ wins.
 | `ShellSelectionAsSideRow_293` | FALSE / BLOCKED | Shell selection is adaptive-core, not harmless side bookkeeping |
 | `DegFreeAsSideRow_293` | FALSE / BLOCKED | Deg-free phase gate is core phase work, not side bookkeeping |
 | `LowLevelBudgetTriage_294(P_minor^0)` | STRUCTURAL / EXTRACTION | Below-`lambda_min` leakage classified; no smallness proved |
-| `LowLevelBudgetP0_284 / LowLevelCutoffP0_283` | OPEN | Low-level contribution still needs an actual budget |
+| `LowLevelBudgetP0_284 / LowLevelCutoffP0_283` | OPEN outside the local fourth-moment tail | The P_minor^0 fourth-moment low-level piece is closed, but export or alternate reconstructions are not |
 | `LowLevelCountingBarrier_294` | OPEN | Deterministic counting criterion not proved `o_W(1)` |
 | `LowLevelByDefinition_294` | FALSE / BLOCKED | Excluding low levels from the shell grid is not an estimate |
 | `PlanUpdate_12_295` | STRUCTURAL / EXTRACTION | Twelfth plan update; selects the next low-level counting audit |
 | `LowLevelCountingBarrierAudit_296(P_minor^0)` | STRUCTURAL / EXTRACTION | Pure counting audited; energy-tail target extracted |
 | `PureCountingLowLevelClosure_296` | FALSE / BLOCKED | Counting barrier not small from current P_minor^0 data |
 | `LowLevelEnergyTailCriterion_296` | STRUCTURAL / EXTRACTION | `M_low,0 <= lambda_min^2 E2_minor^0` |
-| `LowLevelEnergyTailTarget_296(P_minor^0)` | OPEN | Need `(A_N^0)^2 N^{-2 kappa_lambda} E2_minor^0=o_W(1)` |
-| `E2MinorEnergyTailAudit_297(P_minor^0)` | OPEN | Next target for same-family second-energy tools |
+| `LowLevelEnergyTailTarget_296(P_minor^0)` | PROVEN inside P_minor^0 | Trivial log envelope plus Parseval gives `(A_N^0)^2 N^{-2 kappa_lambda}E2_minor^0=o_W(1)` |
+| `E2MinorEnergyTailAudit_297(P_minor^0)` | STRUCTURAL / EXTRACTION | Local second-energy tail audit completed |
+| `LowLevelFourthMomentTailP0_297` | PROVEN inside P_minor^0 | `M_low,0=o_W(1)` for the local fourth-moment low-level piece |
+| `ShiftFreqRemovalAudit_298(P_minor^0)` | OPEN | Next target for bad-shift and persistent-frequency removal budgets |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

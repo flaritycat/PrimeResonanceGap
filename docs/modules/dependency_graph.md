@@ -44,7 +44,8 @@ flowchart TD
   LowLevelTriage294["LowLevelBudgetTriage_294<br/>triage STRUCTURAL; budget OPEN"]
   PlanUpdate12["PlanUpdate_12_295<br/>plan update STRUCTURAL"]
   LowLevelBarrier296["LowLevelCountingBarrierAudit_296<br/>audit STRUCTURAL; pure counting BLOCKED"]
-  E2Tail297["E2MinorEnergyTailAudit_297<br/>next target OPEN"]
+  E2Tail297["E2MinorEnergyTailAudit_297<br/>audit STRUCTURAL; local tail PROVEN"]
+  ShiftFreq298["ShiftFreqRemovalAudit_298<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -119,6 +120,8 @@ flowchart TD
   LowLevelBarrier296 --> E2Tail297
   LowLevelBarrier296 --> ThresholdP0
   E2Tail297 --> ThresholdP0
+  E2Tail297 --> ShiftFreq298
+  ShiftFreq298 --> ThresholdP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -201,3 +204,6 @@ flowchart TD
 - `LowLevelCountingBarrierAudit_296` blocks pure counting under the current
   declarations and extracts the open second-energy tail target
   `LowLevelEnergyTailTarget_296`.
+- `E2MinorEnergyTailAudit_297` proves the local fourth-moment low-level tail
+  inside `P_minor^0` only. It does not prove the shift/frequency removal
+  budgets or the threshold package.

@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 296
-Active phase: Phase K, low-level second-energy tail audit
+Latest module frontier: Module 297
+Active phase: Phase K, shift/frequency removal audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -176,6 +176,10 @@ Latest project-wide review:
   `LowLevelCountingBarrierAudit_296(P_minor^0)`, blocking pure counting under
   the current `P_minor^0` data and extracting the sharper open target
   `LowLevelEnergyTailTarget_296(P_minor^0)`.
+- A local second-energy tail audit
+  `E2MinorEnergyTailAudit_297(P_minor^0)`, proving the fourth-moment
+  low-level tail inside `P_minor^0` from a trivial logarithmic envelope and
+  normalized Parseval.
 
 ## What the project has not proved
 
@@ -220,10 +224,11 @@ Latest project-wide review:
 - `DegRowsP0Small_282`, `MajorDiffBound_282`, `PhysDiagLocal_282`, or
   `DegFreePhaseGate_282`.
 - `SideRowsP0Ready_283`, `WUniformP0_283`, `ThresholdBudgetP0_283`,
-  `LowLevelCutoffP0_283`, `DyadicUniformityP0_283`, or
-  `ShellSelectionP0_283`.
-- `ThresholdBudgetP0Closure_284(q,r)`, `LowLevelBudgetP0_284`,
-  `ShiftMomentP0_284(q)`, `MultMomentP0_284(r)`, or the optimized barriers
+  `LowLevelCutoffP0_283` outside the local fourth-moment tail,
+  `DyadicUniformityP0_283`, or `ShellSelectionP0_283`.
+- `ThresholdBudgetP0Closure_284(q,r)`, `LowLevelBudgetP0_284` outside the
+  local fourth-moment tail, `ShiftMomentP0_284(q)`,
+  `MultMomentP0_284(r)`, or the optimized barriers
   `RowBarrierP0_284`, `ColumnBarrierP0_284`,
   `SigmaColumnBarrierP0_284`.
 - `AdaptiveShellGainP0_285`, any new uniform-fiber theorem, any selection
@@ -242,12 +247,13 @@ Latest project-wide review:
   labels is blocked.
 - `SidePkg_291`, `ThresholdBudgetP0Closure_284(q,r)`,
   `SideRowsP0Ready_283`, or `DegRowsP0Small_282`.
-- `SidePkgReady_293`, `LowLevelBudgetP0_284`, `LowLevelCutoffP0_283`,
-  or `LowLevelCountingBarrier_294`.
+- `SidePkgReady_293`, `LowLevelBudgetP0_284` outside the local
+  fourth-moment tail, `LowLevelCutoffP0_283` outside the local
+  fourth-moment tail, or `LowLevelCountingBarrier_294`.
 - `LowLevelCountingBarrierAudit_296(P_minor^0)` as a low-level estimate; it
   is structural only.
-- `LowLevelEnergyTailTarget_296(P_minor^0)` or
-  `E2MinorEnergyTailAudit_297(P_minor^0)`.
+- `E2MinorEnergyTailAudit_297(P_minor^0)` as anything beyond a local
+  fourth-moment low-level tail proof.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -464,8 +470,12 @@ Completed low-level counting-barrier audit:
   LowLevelCountingBarrierAudit_296(P_minor^0)
     blocks pure counting and extracts LowLevelEnergyTailTarget_296 as open
 
+Completed local low-level energy-tail audit:
+  E2MinorEnergyTailAudit_297(P_minor^0)
+    proves the local fourth-moment low-level tail inside P_minor^0
+
 Next scheduled check:
-  Module 297 E2MinorEnergyTailAudit_297(P_minor^0)
+  Module 298 ShiftFreqRemovalAudit_298(P_minor^0)
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;

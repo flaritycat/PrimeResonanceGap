@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 296
-Post-Reflective_1 solving count: 115
-Long-term-plan count: 109
+Latest completed module: 297
+Post-Reflective_1 solving count: 116
+Long-term-plan count: 110
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -2205,4 +2205,57 @@ Module 297:
   perform E2MinorEnergyTailAudit_297(P_minor^0), testing whether known
   same-family second-energy tools can prove
   (A_N^0)^2 N^{-2 kappa_lambda} E2_minor^0(D;R,eta)=o_W(1).
+```
+
+Module 297 completed:
+
+```text
+E2MinorEnergyTailAudit_297(P_minor^0)
+  proves the local fourth-moment low-level tail inside P_minor^0 using the
+  trivial logarithmic pointwise envelope and normalized Parseval.
+```
+
+The audit records:
+
+```text
+LowLevelEnergyTailTarget_296(P_minor^0):
+  PROVEN inside P_minor^0.
+
+LowLevelFourthMomentTailP0_297:
+  PROVEN inside P_minor^0.
+
+LowLevelBudgetP0_284:
+  closed only for the local fourth-moment tail interpretation.
+```
+
+It preserves:
+
+```text
+ShiftRemovalBudget_284(q),
+FreqRemovalBudget_284(r),
+RowShellBudget_284,
+ColumnShellBudget_284,
+SigmaColumnShellBudget_284,
+ThresholdBudgetP0Closure_284(q,r),
+SideRowsP0Ready_283,
+SidePkg_291,
+SidePkgReady_293,
+AdaptiveShellGainP0_285,
+PhaseKernelBound_273^0,
+MinorArcTransfer_3^B,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3,
+the original selected-average problem
+remain unproved.
+```
+
+Continue with:
+
+```text
+Module 298:
+  perform ShiftFreqRemovalAudit_298(P_minor^0), classifying the bad-shift and
+  persistent-frequency removal budgets from Module 284 without claiming
+  threshold closure.
 ```

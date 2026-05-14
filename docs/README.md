@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 296
-Active phase: Phase K, low-level second-energy tail audit
+Latest module frontier: Module 297
+Active phase: Phase K, shift/frequency removal audit
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -67,6 +67,7 @@ modules/
   module_294_low_level_budget_triage.md
   module_295_twelfth_plan_update.md
   module_296_low_level_counting_barrier_audit.md
+  module_297_e2_minor_energy_tail_audit.md
   modules_156_178_summary.md
 
 reviews/
