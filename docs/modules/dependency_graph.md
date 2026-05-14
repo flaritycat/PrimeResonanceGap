@@ -65,7 +65,8 @@ flowchart TD
   MinorKernel314["MinorKernelRowSplit_314<br/>split STRUCTURAL; controls OPEN"]
   ZeroAudit315["ZeroModeProductAudit_315<br/>audit STRUCTURAL; standalone control BLOCKED"]
   CenteredFull316["CenteredFullAntiDiagonalAudit_316<br/>audit STRUCTURAL; current route BLOCKED"]
-  MajorCorr317["MajorKernelCorrectionAudit_317<br/>next target OPEN"]
+  MajorCorr317["MajorKernelCorrectionAudit_317<br/>audit STRUCTURAL; current route BLOCKED"]
+  SignedVerdict318["SignedMinorKernelCombinationVerdict_318<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -166,7 +167,8 @@ flowchart TD
   MinorKernel314 --> ZeroAudit315
   ZeroAudit315 --> CenteredFull316
   CenteredFull316 --> MajorCorr317
-  MajorCorr317 --> AntiDiag312
+  MajorCorr317 --> SignedVerdict318
+  SignedVerdict318 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -319,3 +321,8 @@ flowchart TD
   second moment, and current Cauchy/Parseval/fourth-power routes still require
   a missing same-family theorem. The next local audit is the major-kernel
   correction row.
+- `MajorKernelCorrectionAudit_317` shows that the major correction is a
+  positive major-frequency pair-energy row, not a harmless error. Current
+  positivity, cardinality-kernel, pair-BDH, first-moment, and conditional
+  projected-major shortcuts do not close it. The next audit is whether the
+  signed full-minus-major formulation is a genuine smaller route.

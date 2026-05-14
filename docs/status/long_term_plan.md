@@ -3085,3 +3085,59 @@ Module 317:
   centered full-minus-major formulation remains endpoint-strength under
   current inputs.
 ```
+
+Module 317 completed:
+
+```text
+MajorKernelCorrectionAudit_317(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+MajorKernelCorrectionIdentity_317,
+MajorArcEightSlotModelRequirement_317:
+  STRUCTURAL / EXTRACTION.
+
+CurrentMajorCorrectionToolsClose_317:
+  FALSE / BLOCKED.
+
+MajorKernelCorrectionControl_314(P_minor^0),
+MajorLocalModelTransfer_317(P_minor^0):
+  OPEN.
+
+SignedMinorKernelCombinationVerdict_318(P_minor^0):
+  OPEN next target.
+```
+
+The audit records that the centered major correction row is exactly:
+
+```text
+D^(-1) sum_{d_1 != d_2} sum_{xi in Major_0(R,eta)}
+  |beta_0(d_1,xi)|^2 |beta_0(d_2,xi)|^2.
+```
+
+It is a positive major-frequency pair-energy row, not a harmless correction.
+A genuine major route would need an exact residual eight-slot model in the
+same `P_minor^0` conventions, including rational-arc overlap, boundary,
+zero-frequency, W-residue, dyadic-shell, denominator-range, and limiting-order
+discipline.
+
+The current cadence records:
+
+```text
+Latest completed module: 317
+Post-Reflective_1 solving count: 136
+Long-term-plan count: 130
+
+130 is not divisible by 9, so no plan update is due.
+130 is not divisible by 15, so no plan challenge is due.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 318:
+  perform SignedMinorKernelCombinationVerdict_318(P_minor^0), deciding
+  whether the centered full-minus-major formulation is a genuine smaller
+  route with a named new estimate, or merely a restatement of the original
+  minor anti-diagonal target under current inputs.
+```

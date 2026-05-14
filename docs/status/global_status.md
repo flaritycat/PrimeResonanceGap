@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 316
-Active phase: Phase K, major-kernel correction audit next
+Latest module frontier: Module 317
+Active phase: Phase K, signed minor-kernel combination verdict next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -741,10 +741,17 @@ Completed centered full anti-diagonal audit:
     closure route, and leaves CenteredFullAntiDiagonalControl_316(P_minor^0)
     open
 
+Completed major-kernel correction audit:
+  MajorKernelCorrectionAudit_317(P_minor^0)
+    identifies the major correction as a positive major-frequency pair-energy
+    row, extracts the required residual eight-slot major model, blocks current
+    pair/first-moment/projected-major shortcuts, and leaves
+    MajorKernelCorrectionControl_314(P_minor^0) open
+
 Next scheduled check:
-  Module 317 MajorKernelCorrectionAudit_317(P_minor^0)
+  Module 318 SignedMinorKernelCombinationVerdict_318(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Phase K centered full
-anti-diagonal audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed Phase K major-kernel
+correction audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

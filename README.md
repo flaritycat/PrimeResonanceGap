@@ -412,13 +412,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the centered full anti-diagonal audit**.
+the major-kernel correction audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 316
-Active phase: Phase K, major-kernel correction audit next
+Latest module frontier: Module 317
+Active phase: Phase K, signed minor-kernel combination verdict next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -647,13 +647,20 @@ Module 316:
   coefficient; the row is still the full nonzero-frequency column second
   moment. Current Cauchy, Parseval, energy-square, and fourth-power routes do
   not close it, so the next audit is the major-kernel correction row.
+
+Module 317:
+  audited the major-kernel correction row. It is a positive major-frequency
+  pair-energy row, not a harmless error. Current positivity, cardinality,
+  pair-BDH, first-moment HL, and conditional projected-major shortcuts do not
+  close it; a genuine route would need the exact residual eight-slot major
+  model in the same `P_minor^0` conventions.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-316 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-317 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
-weighted-pair, autocorrelation, and centered full-row inputs do not prove the
-threshold window.
+weighted-pair, autocorrelation, centered full-row, and major-correction inputs
+do not prove the threshold window.
 
 The next planned module is:
 
@@ -663,8 +670,13 @@ Module 316:
   full-frequency anti-diagonal row after replacing B_d^0 by B_d^{0,circ}.
 
 Module 317:
-  perform MajorKernelCorrectionAudit_317(P_minor^0), auditing the major row
+  performed MajorKernelCorrectionAudit_317(P_minor^0), auditing the major row
   in the centered full-minus-major formulation.
+
+Module 318:
+  perform SignedMinorKernelCombinationVerdict_318(P_minor^0), deciding
+  whether the split has produced a genuinely smaller route or only restated
+  the original minor-kernel target.
 ```
 
 ## What Is Proved?
@@ -713,7 +725,10 @@ Compact status table:
 | Centered full anti-diagonal audit `CenteredFullAntiDiagonalAudit_316` | **STRUCTURAL / EXTRACTION** |
 | Current centered full route `CurrentCenteredFullToolsClose_316` | **FALSE / BLOCKED** |
 | Centered full column second moment `CenteredFullColumnSecondMomentTarget_316` | **OPEN** |
-| Major-kernel correction audit `MajorKernelCorrectionAudit_317` | **OPEN next target** |
+| Major-kernel correction audit `MajorKernelCorrectionAudit_317` | **STRUCTURAL / EXTRACTION** |
+| Current major-correction route `CurrentMajorCorrectionToolsClose_317` | **FALSE / BLOCKED** |
+| Major local-model transfer `MajorLocalModelTransfer_317` | **OPEN** |
+| Signed minor-kernel verdict `SignedMinorKernelCombinationVerdict_318` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
