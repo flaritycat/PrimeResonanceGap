@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 273
+Latest module frontier: Module 274
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -97,6 +97,10 @@ Latest project-wide review:
 - A candidate transverse incidence gate `TransverseIncidenceGate_273`,
   defining `Gamma_trans^273` from dyadic base-tail shell majorants and the open
   graph-restriction input `X_273`.
+- A compatibility audit `TransGateCompatAudit_274`, naming the W-limit,
+  threshold-buffer, arc-boundary, prime-power/W-residue, cutoff/truncation,
+  selector-transfer, and dyadic-uniformity rows needed before the candidate
+  transverse gate can be used.
 
 ## What the project has not proved
 
@@ -127,6 +131,7 @@ Latest project-wide review:
   theorem for the active selector/model family.
 - `PhaseKernelBound_273`, `TransverseIncidenceGate_273`, or the
   lambda-summed smallness of `Gamma_trans^273`.
+- `TransGateSideRows_274` or any of its compatibility rows.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -231,9 +236,15 @@ Completed Phase I candidate gate:
     defines Gamma_trans^273 using dyadic base-tail shells and an open
     graph-restriction bound X_273, without proving that bound
 
+Completed Phase I compatibility audit:
+  TransGateCompatAudit_274
+    names the side rows required before the candidate transverse gate can be
+    used in the active minor-arc environment
+
 Next scheduled check:
-  Module 274 audit W-limit, threshold-buffer, prime-power, arc-boundary, and
-  selector-transfer compatibility for the candidate transverse gate
+  Module 275 test whether low-dimensional transverse degeneracies reduce to
+  already named bad-shift, persistent-frequency, major-arc leakage, or
+  boundary rows
 ```
 
 Status: **CONDITIONAL**.

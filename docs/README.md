@@ -7,7 +7,7 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 273
+Latest module frontier: Module 274
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -44,6 +44,7 @@ modules/
   module_271_transverse_phase_equations.md
   module_272_phase_tool_compatibility.md
   module_273_transverse_incidence_gate.md
+  module_274_transverse_gate_compatibility.md
   modules_156_178_summary.md
 
 reviews/

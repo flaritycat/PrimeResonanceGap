@@ -20,6 +20,7 @@ flowchart TD
   PhaseExpansion["TransPhaseExpansion_271 / PhaseIncidenceGate_271<br/>identity STRUCTURAL; gate OPEN"]
   ToolCompat["PhaseToolCompatAudit_272 / AvailableToolClosure_272<br/>audit STRUCTURAL; closure OPEN"]
   TransGate["TransverseIncidenceGate_273 / PhaseKernelBound_273<br/>gate STRUCTURAL; kernel bound OPEN"]
+  TransGateCompat["TransGateCompatAudit_274 / TransGateSideRows_274<br/>audit STRUCTURAL; side rows OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
 
@@ -49,6 +50,9 @@ flowchart TD
   TransGate --> TransInc
   PhaseExpansion --> TransGate
   ToolCompat --> TransGate
+  TransGateCompat --> TransGate
+  SelectorTransfer --> TransGateCompat
+  BoundaryTransfer --> TransGateCompat
   SelectorTransfer --> ResCube
   BoundaryTransfer --> ResCube
   EndpointClass -. "structural/equivalence map, not proof" .-> ResCube

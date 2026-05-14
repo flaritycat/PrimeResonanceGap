@@ -7,15 +7,15 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 273
+Latest module frontier: Module 274
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 273 formulates the candidate gate `TransverseIncidenceGate_273`. It
-builds `Gamma_trans^273` from dyadic base-tail shell majorants and an open
-phase-kernel input `X_273`; it does not prove the transverse bound.
+Module 274 audits the side rows needed before `TransverseIncidenceGate_273`
+can be used: W-limit order, threshold buffers, arc boundaries, prime-power
+and W-residue artifacts, cutoffs, selector transfer, and dyadic uniformity.
 
 ## Global status
 

@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 273
-Post-Reflective_1 solving count: 92
-Long-term-plan count: 86
+Latest completed module: 274
+Post-Reflective_1 solving count: 93
+Long-term-plan count: 87
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -838,6 +838,8 @@ Expected work:
   graph-restriction input `X_273`;
 - Module 274: audit W-limit, threshold-buffer, prime-power, major/minor
   arc-boundary, and selector-transfer compatibility for the transverse gate;
+  completed as `TransGateCompatAudit_274`, naming `TransGateSideRows_274` as
+  a required but open compatibility package;
 - Module 275: test whether low-dimensional degeneracies in the transverse
   equations reduce to bad-shift, persistent-frequency, major-arc leakage, or
   boundary rows already named;
@@ -1133,7 +1135,7 @@ TransverseIncidenceGate_273
   graph-restriction input X_273.
 ```
 
-Continue with:
+Module 273 selected:
 
 ```text
 Module 274:
@@ -1141,7 +1143,23 @@ Module 274:
   selector-transfer compatibility for the candidate transverse gate.
 ```
 
-Module 274 should preserve these statuses:
+Module 274 completed:
+
+```text
+TransGateCompatAudit_274
+  names TransGateSideRows_274 as the compatibility package required before
+  TransverseIncidenceGate_273 can be used in the active minor-arc environment.
+```
+
+Continue with:
+
+```text
+Module 275:
+  test whether low-dimensional transverse degeneracies reduce to bad-shift,
+  persistent-frequency, major-arc leakage, or boundary rows already named.
+```
+
+Module 275 should preserve these statuses:
 
 ```text
 NarrowMinorArc_3^B,
@@ -1151,6 +1169,7 @@ PhaseIncidenceGate_271,
 AvailableToolClosure_272,
 PhaseKernelBound_273,
 TransverseIncidenceGate_273,
+TransGateSideRows_274,
 MinorArcTransfer_3^B,
 ProjectedMajorTarget_3^B,
 WProjectedLocalMatch_3^major,

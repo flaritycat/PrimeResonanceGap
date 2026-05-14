@@ -1,4 +1,4 @@
-# Modules 156-273 summary
+# Modules 156-274 summary
 
 ## 156
 
@@ -731,8 +731,16 @@ Non-tautological transverse incidence gate; defines
 `TransIncBound_269` but does not prove the required `X_273` estimate or the
 lambda-summed smallness.
 
+## 274
+
+Compatibility audit for the candidate transverse gate; defines
+`TransGateCompatAudit_274` and the open side package
+`TransGateSideRows_274`, covering W-limit order, threshold buffers, arc
+boundaries, prime-power/W-residue artifacts, cutoff/truncation, selector
+transfer, and dyadic uniformity.
+
 ## Next
 
-Module 274: audit W-limit, threshold-buffer, prime-power, major/minor
-arc-boundary, and selector-transfer compatibility for the candidate
-transverse gate.
+Module 275: test whether low-dimensional transverse degeneracies reduce to
+bad-shift, persistent-frequency, major-arc leakage, or boundary rows already
+named.
