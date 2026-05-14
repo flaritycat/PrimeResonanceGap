@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 194
-Post-Reflective_1 solving count: 13
-Long-term-plan count: 7
+Latest completed module: 195
+Post-Reflective_1 solving count: 14
+Long-term-plan count: 8
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -134,7 +134,8 @@ Expected modules:
   completed as a conditional projected model-neutrality package;
 - Module 194: projected local-model matching dependency list; completed as a
   structural dependency list for `ProjectedLocalMatch_3^major`;
-- Module 195: audit of Modules 183-194 for hidden upgrades;
+- Module 195: audit of Modules 183-194 for hidden upgrades; completed as a
+  structural safety audit;
 - Module 196: first 9-iteration plan update.
 
 Success criterion: either a credible conditional major-arc collision package is
@@ -263,16 +264,15 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 195: Audit of Modules 183-194 for hidden upgrades.
+Module 196: First 9-iteration plan update.
 ```
 
-Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`, unless a complete
-proof is actually supplied.
+Expected status: `STRUCTURAL / EXTRACTION`.
 
-The key question is whether Modules 183-194 introduced any hidden upgrade:
-linear envelope without overflow, model neutrality mistaken for model
-matching, first-moment HL mistaken for variance control, or smoothed/cyclic
-estimates transferred to the actual sharp selector.
+This is the first plan-update cadence point after adoption of the long-term
+plan. It must record what Phase A has clarified, revise the next 9-iteration
+target window, and decide whether to continue the scheduled move into
+minor-arc large-spectrum control or stay longer with major-arc dependencies.
 
 The overflow region remains:
 

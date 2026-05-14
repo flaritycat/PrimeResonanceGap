@@ -1,4 +1,4 @@
-# Modules 156-194 summary
+# Modules 156-195 summary
 
 ## 156
 
@@ -104,6 +104,10 @@ Generic projected model neutrality after collision removal.
 
 Projected local-model matching dependency list.
 
+## 195
+
+Audit of Modules 183-194 for hidden upgrades.
+
 ## Next
 
-Module 195: Audit of Modules 183-194 for hidden upgrades.
+Module 196: First 9-iteration plan update.
