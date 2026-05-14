@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 297
-Active phase: Phase K, shift/frequency removal audit
+Latest module frontier: Module 298
+Active phase: Phase K, threshold-window compatibility audit
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -68,6 +68,7 @@ modules/
   module_295_twelfth_plan_update.md
   module_296_low_level_counting_barrier_audit.md
   module_297_e2_minor_energy_tail_audit.md
+  module_298_shift_frequency_removal_audit.md
   modules_156_178_summary.md
 
 reviews/

@@ -412,14 +412,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: side-package triage after the
-adaptive-shell gain block**.
+The current active phase is **Phase K: threshold-window compatibility after
+the side-package low-level and removal audits**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 297
-Active phase: Phase K, shift/frequency removal audit
+Latest module frontier: Module 298
+Active phase: Phase K, threshold-window compatibility audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -530,19 +530,26 @@ Module 297:
   proved the local second-energy tail inside P_minor^0 by combining the
   trivial logarithmic pointwise envelope with normalized Parseval. This closes
   only the local fourth-moment low-level tail.
+
+Module 298:
+  separated vacuous actual bad-shift/frequency removal from useful threshold
+  closure. Empty bad sets can be forced by maximal thresholds inside the local
+  model, but the row/column shell and removal budgets remain open.
 ```
+
+The next step should not claim threshold closure. The local low-level tail is
+now handled, and vacuous removal is only bookkeeping. The next target is to
+test whether any non-vacuous threshold window can make the removal and
+row/column shell budgets small for the same schedule.
 
 The next planned module is:
 
 ```text
-Module 298:
-  audit ShiftFreqRemovalAudit_298(P_minor^0), testing the bad-shift and
-  persistent-frequency removal budgets from Module 284.
+Module 299:
+  audit ThresholdWindowCompatibilityAudit_299(P_minor^0), testing whether
+  the threshold schedule can be simultaneously useful for removals and
+  row/column/shell transverse budgets.
 ```
-
-The next step should not claim threshold closure. The local low-level tail is
-now handled, but shift/frequency removals and row/column threshold budgets
-still need proof or hard blockage.
 
 ## What Is Proved?
 
@@ -762,7 +769,12 @@ wins.
 | `LowLevelEnergyTailTarget_296(P_minor^0)` | PROVEN inside P_minor^0 | Trivial log envelope plus Parseval gives `(A_N^0)^2 N^{-2 kappa_lambda}E2_minor^0=o_W(1)` |
 | `E2MinorEnergyTailAudit_297(P_minor^0)` | STRUCTURAL / EXTRACTION | Local second-energy tail audit completed |
 | `LowLevelFourthMomentTailP0_297` | PROVEN inside P_minor^0 | `M_low,0=o_W(1)` for the local fourth-moment low-level piece |
-| `ShiftFreqRemovalAudit_298(P_minor^0)` | OPEN | Next target for bad-shift and persistent-frequency removal budgets |
+| `ShiftFreqRemovalAudit_298(P_minor^0)` | STRUCTURAL / EXTRACTION | Separates vacuous local removal from useful threshold closure |
+| `VacuousActualRemovalP0_298` | PROVEN inside P_minor^0 | Empty bad-shift/frequency sets for maximal local thresholds only |
+| `VacuousRemovalAsThresholdClosure_298` | FALSE / BLOCKED | Maximal thresholds do not make row/column shell budgets small |
+| `ShiftRemovalBudget_284(q) / FreqRemovalBudget_284(r)` | OPEN | Useful moment-budget rows still missing |
+| `ThresholdCompatibleRemovalSchedule_298` | OPEN | Need one non-vacuous schedule compatible with removals and shell budgets |
+| `ThresholdWindowCompatibilityAudit_299(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

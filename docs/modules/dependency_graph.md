@@ -45,7 +45,8 @@ flowchart TD
   PlanUpdate12["PlanUpdate_12_295<br/>plan update STRUCTURAL"]
   LowLevelBarrier296["LowLevelCountingBarrierAudit_296<br/>audit STRUCTURAL; pure counting BLOCKED"]
   E2Tail297["E2MinorEnergyTailAudit_297<br/>audit STRUCTURAL; local tail PROVEN"]
-  ShiftFreq298["ShiftFreqRemovalAudit_298<br/>next target OPEN"]
+  ShiftFreq298["ShiftFreqRemovalAudit_298<br/>audit STRUCTURAL; vacuous removal not closure"]
+  ThresholdWindow299["ThresholdWindowCompatibilityAudit_299<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -122,6 +123,8 @@ flowchart TD
   E2Tail297 --> ThresholdP0
   E2Tail297 --> ShiftFreq298
   ShiftFreq298 --> ThresholdP0
+  ShiftFreq298 --> ThresholdWindow299
+  ThresholdWindow299 --> ThresholdP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -207,3 +210,6 @@ flowchart TD
 - `E2MinorEnergyTailAudit_297` proves the local fourth-moment low-level tail
   inside `P_minor^0` only. It does not prove the shift/frequency removal
   budgets or the threshold package.
+- `ShiftFreqRemovalAudit_298` proves only vacuous actual bad-set removal
+  inside `P_minor^0`; maximal thresholds are not a usable threshold closure.
+  The next live question is threshold-window compatibility.

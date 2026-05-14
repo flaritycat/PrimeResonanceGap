@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 297
-Active phase: Phase K, shift/frequency removal audit
+Latest module frontier: Module 298
+Active phase: Phase K, threshold-window compatibility audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -180,6 +180,11 @@ Latest project-wide review:
   `E2MinorEnergyTailAudit_297(P_minor^0)`, proving the fourth-moment
   low-level tail inside `P_minor^0` from a trivial logarithmic envelope and
   normalized Parseval.
+- A shift/frequency removal audit
+  `ShiftFreqRemovalAudit_298(P_minor^0)`, proving only that maximal local
+  thresholds make the actual bad-shift and persistent-frequency sets empty,
+  while recording that this vacuous schedule is not threshold closure and
+  leaves the useful removal and row/column shell budgets open.
 
 ## What the project has not proved
 
@@ -254,6 +259,11 @@ Latest project-wide review:
   is structural only.
 - `E2MinorEnergyTailAudit_297(P_minor^0)` as anything beyond a local
   fourth-moment low-level tail proof.
+- `VacuousActualRemovalP0_298` as threshold closure; it only empties the
+  local bad sets by maximal thresholds.
+- `ShiftRemovalBudget_284(q)`, `FreqRemovalBudget_284(r)`,
+  `ThresholdCompatibleRemovalSchedule_298`, or
+  `ThresholdBudgetP0Closure_284(q,r)`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -474,8 +484,13 @@ Completed local low-level energy-tail audit:
   E2MinorEnergyTailAudit_297(P_minor^0)
     proves the local fourth-moment low-level tail inside P_minor^0
 
+Completed shift/frequency removal audit:
+  ShiftFreqRemovalAudit_298(P_minor^0)
+    proves only vacuous actual removal inside P_minor^0 and blocks treating
+    that maximal-threshold schedule as threshold closure
+
 Next scheduled check:
-  Module 298 ShiftFreqRemovalAudit_298(P_minor^0)
+  Module 299 ThresholdWindowCompatibilityAudit_299(P_minor^0)
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;

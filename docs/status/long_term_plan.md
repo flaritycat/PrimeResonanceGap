@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 297
-Post-Reflective_1 solving count: 116
-Long-term-plan count: 110
+Latest completed module: 298
+Post-Reflective_1 solving count: 117
+Long-term-plan count: 111
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -2258,4 +2258,34 @@ Module 298:
   perform ShiftFreqRemovalAudit_298(P_minor^0), classifying the bad-shift and
   persistent-frequency removal budgets from Module 284 without claiming
   threshold closure.
+```
+
+Module 298 completed:
+
+```text
+ShiftFreqRemovalAudit_298(P_minor^0)
+  separates vacuous actual bad-set removal from useful threshold closure.
+
+VacuousActualRemovalP0_298:
+  PROVEN inside P_minor^0 as an existence-of-schedule statement.
+
+VacuousRemovalAsThresholdClosure_298:
+  FALSE / BLOCKED.
+
+ShiftRemovalBudget_284(q),
+FreqRemovalBudget_284(r),
+ThresholdCompatibleRemovalSchedule_298:
+  remain OPEN.
+```
+
+The next step should not repeat the vacuous schedule. It should test whether
+any non-vacuous threshold window can control removals and row/column shell
+budgets simultaneously.
+
+Continue with:
+
+```text
+Module 299:
+  perform ThresholdWindowCompatibilityAudit_299(P_minor^0), testing threshold
+  schedules that could make removal and transverse shell budgets compatible.
 ```
