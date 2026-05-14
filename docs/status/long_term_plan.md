@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 298
-Post-Reflective_1 solving count: 117
-Long-term-plan count: 111
+Latest completed module: 299
+Post-Reflective_1 solving count: 118
+Long-term-plan count: 112
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -2288,4 +2288,35 @@ Continue with:
 Module 299:
   perform ThresholdWindowCompatibilityAudit_299(P_minor^0), testing threshold
   schedules that could make removal and transverse shell budgets compatible.
+```
+
+Module 299 completed:
+
+```text
+ThresholdWindowCompatibilityAudit_299(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+ContinuousRowWindowCriterion_299(q),
+ContinuousColumnWindowCriterion_299(r):
+  STRUCTURAL / EXTRACTION.
+
+CurrentTrivialWindowRoute_299:
+  FALSE / BLOCKED.
+
+ThresholdWindowClosure_299(q,r),
+BarrierSmallnessPackage_299(q,r):
+  remain OPEN.
+```
+
+The audit shows that useful threshold windows require optimized barrier
+smallness, not merely a different threshold choice. Integer/range rounding,
+declared-family threshold schedules, W-limit order, dyadic uniformity, and
+lambda-grid uniformity remain required.
+
+Continue with:
+
+```text
+Module 300:
+  perform RowBarrierMomentAudit_300(P_minor^0), testing whether the current
+  same-family inputs can prove RowBarrierP0_284(q)=o_W(1) for some fixed q>1.
 ```

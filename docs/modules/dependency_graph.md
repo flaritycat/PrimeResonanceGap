@@ -46,7 +46,8 @@ flowchart TD
   LowLevelBarrier296["LowLevelCountingBarrierAudit_296<br/>audit STRUCTURAL; pure counting BLOCKED"]
   E2Tail297["E2MinorEnergyTailAudit_297<br/>audit STRUCTURAL; local tail PROVEN"]
   ShiftFreq298["ShiftFreqRemovalAudit_298<br/>audit STRUCTURAL; vacuous removal not closure"]
-  ThresholdWindow299["ThresholdWindowCompatibilityAudit_299<br/>next target OPEN"]
+  ThresholdWindow299["ThresholdWindowCompatibilityAudit_299<br/>audit STRUCTURAL; barriers OPEN"]
+  RowBarrier300["RowBarrierMomentAudit_300<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -125,6 +126,8 @@ flowchart TD
   ShiftFreq298 --> ThresholdP0
   ShiftFreq298 --> ThresholdWindow299
   ThresholdWindow299 --> ThresholdP0
+  ThresholdWindow299 --> RowBarrier300
+  RowBarrier300 --> ThresholdP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -213,3 +216,6 @@ flowchart TD
 - `ShiftFreqRemovalAudit_298` proves only vacuous actual bad-set removal
   inside `P_minor^0`; maximal thresholds are not a usable threshold closure.
   The next live question is threshold-window compatibility.
+- `ThresholdWindowCompatibilityAudit_299` reduces useful threshold-window
+  closure to optimized barrier smallness plus admissible threshold scheduling.
+  The current trivial caps do not prove those barriers.

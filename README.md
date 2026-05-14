@@ -418,8 +418,8 @@ the side-package low-level and removal audits**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 298
-Active phase: Phase K, threshold-window compatibility audit
+Latest module frontier: Module 299
+Active phase: Phase K, row-barrier moment audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -535,20 +535,24 @@ Module 298:
   separated vacuous actual bad-shift/frequency removal from useful threshold
   closure. Empty bad sets can be forced by maximal thresholds inside the local
   model, but the row/column shell and removal budgets remain open.
+
+Module 299:
+  extracted the exact continuous threshold-window criteria. Useful windows
+  require the optimized row/column barriers from Module 284 to be small, plus
+  integer/range, declared-schedule, and W-uniformity rows. The trivial caps
+  and vacuous schedule do not close the window.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-now handled, and vacuous removal is only bookkeeping. The next target is to
-test whether any non-vacuous threshold window can make the removal and
-row/column shell budgets small for the same schedule.
+now handled, and vacuous removal is only bookkeeping. Module 299 reduces the
+next useful test to barrier smallness rather than threshold choice alone.
 
 The next planned module is:
 
 ```text
-Module 299:
-  audit ThresholdWindowCompatibilityAudit_299(P_minor^0), testing whether
-  the threshold schedule can be simultaneously useful for removals and
-  row/column/shell transverse budgets.
+Module 300:
+  audit RowBarrierMomentAudit_300(P_minor^0), testing whether current
+  same-family inputs can prove RowBarrierP0_284(q)=o_W(1) for some q>1.
 ```
 
 ## What Is Proved?
@@ -774,7 +778,12 @@ wins.
 | `VacuousRemovalAsThresholdClosure_298` | FALSE / BLOCKED | Maximal thresholds do not make row/column shell budgets small |
 | `ShiftRemovalBudget_284(q) / FreqRemovalBudget_284(r)` | OPEN | Useful moment-budget rows still missing |
 | `ThresholdCompatibleRemovalSchedule_298` | OPEN | Need one non-vacuous schedule compatible with removals and shell budgets |
-| `ThresholdWindowCompatibilityAudit_299(P_minor^0)` | OPEN | Next target |
+| `ThresholdWindowCompatibilityAudit_299(P_minor^0)` | STRUCTURAL / EXTRACTION | Continuous row/column window criteria extracted |
+| `ContinuousRowWindowCriterion_299(q) / ContinuousColumnWindowCriterion_299(r)` | STRUCTURAL / EXTRACTION | Optimization identities only, not analytic estimates |
+| `CurrentTrivialWindowRoute_299` | FALSE / BLOCKED | Trivial caps reproduce row/column ceiling scale and do not prove barrier smallness |
+| `ThresholdWindowClosure_299(q,r)` | OPEN | Needs barrier smallness plus integer/range and uniform schedule rows |
+| `BarrierSmallnessPackage_299(q,r)` | OPEN | Requires row barrier and at least one column barrier to be `o_W(1)` |
+| `RowBarrierMomentAudit_300(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 298
-Active phase: Phase K, threshold-window compatibility audit
+Latest module frontier: Module 299
+Active phase: Phase K, row-barrier moment audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -185,6 +185,10 @@ Latest project-wide review:
   thresholds make the actual bad-shift and persistent-frequency sets empty,
   while recording that this vacuous schedule is not threshold closure and
   leaves the useful removal and row/column shell budgets open.
+- A threshold-window compatibility audit
+  `ThresholdWindowCompatibilityAudit_299(P_minor^0)`, extracting the
+  continuous row/column minimization criteria and recording that current
+  trivial caps and vacuous thresholds do not prove barrier smallness.
 
 ## What the project has not proved
 
@@ -264,6 +268,11 @@ Latest project-wide review:
 - `ShiftRemovalBudget_284(q)`, `FreqRemovalBudget_284(r)`,
   `ThresholdCompatibleRemovalSchedule_298`, or
   `ThresholdBudgetP0Closure_284(q,r)`.
+- `ThresholdWindowClosure_299(q,r)`, `BarrierSmallnessPackage_299(q,r)`,
+  `RowBarrierP0_284(q)=o_W(1)`, `ColumnBarrierP0_284(r)=o_W(1)`, or
+  `SigmaColumnBarrierP0_284(r)=o_W(1)`.
+- `CurrentTrivialWindowRoute_299`; the trivial caps do not prove a useful
+  threshold window.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -489,8 +498,13 @@ Completed shift/frequency removal audit:
     proves only vacuous actual removal inside P_minor^0 and blocks treating
     that maximal-threshold schedule as threshold closure
 
+Completed threshold-window compatibility audit:
+  ThresholdWindowCompatibilityAudit_299(P_minor^0)
+    extracts continuous row/column barrier criteria and blocks the current
+    trivial-window route
+
 Next scheduled check:
-  Module 299 ThresholdWindowCompatibilityAudit_299(P_minor^0)
+  Module 300 RowBarrierMomentAudit_300(P_minor^0)
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;
