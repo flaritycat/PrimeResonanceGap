@@ -1,4 +1,4 @@
-# Modules 156-185 summary
+# Modules 156-186 summary
 
 ## 156
 
@@ -68,6 +68,10 @@ Structural collision strata for projected cubes.
 
 Kernel and range hypotheses for structural collision negligibility.
 
+## 186
+
+Nonstructural divisor averages for projected pair-difference forms.
+
 ## Next
 
-Module 186: Nonstructural divisor averages for projected pair-difference forms.
+Module 187: Local-factor collision envelope for projected singular models.
