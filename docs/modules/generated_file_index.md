@@ -27,7 +27,7 @@
 | `docs\ledger\prime_gap_resonance_project_250_page_breakdown.txt` | 808464 |
 | `docs\modules\generated_250_page_index.md` | 16201 |
 | `docs\modules\generated_500_page_index.md` | 31915 |
-| `docs\modules\generated_file_index.md` | 9067 |
+| `docs\modules\generated_file_index.md` | 9204 |
 | `docs\modules\generated_index.md` | 32419 |
 | `docs\modules\module_178_residual_cube.md` | 2671 |
 | `docs\modules\module_179_fourier_major_minor.md` | 8654 |
@@ -117,14 +117,15 @@
 | `docs\modules\module_265_kernel_absolute_vs_signed.md` | 13776 |
 | `docs\modules\module_266_uniformity_admissible_family.md` | 14012 |
 | `docs\modules\module_267_projected_model_neutrality_verdict.md` | 14007 |
-| `docs\modules\modules_156_178_summary.md` | 26391 |
+| `docs\modules\module_268_ninth_plan_update.md` | 13689 |
+| `docs\modules\modules_156_178_summary.md` | 26721 |
 | `docs\paper\Prime_Resonance_Gap_500_Page_Paper.txt` | 1285247 |
-| `docs\README.md` | 2166 |
+| `docs\README.md` | 2204 |
 | `docs\reviews\Prime_Resonance_Gap_1000_Page_Review.md` | 13987 |
 | `docs\status\endpoint_status.md` | 849 |
 | `docs\status\forbidden_upgrades.md` | 1574 |
-| `docs\status\global_status.md` | 6447 |
-| `docs\status\long_term_plan.md` | 44858 |
+| `docs\status\global_status.md` | 6804 |
+| `docs\status\long_term_plan.md` | 47963 |
 | `docs\status\selector_taxonomy.md` | 1015 |
 | `docs\status\status_ledger.json` | 878 |
 | `experiments\pair_rectangle_statistics\README.md` | 255 |
@@ -137,7 +138,7 @@
 | `papers\paper_II_conditional_finite_type\theorem_inventory.md` | 751 |
 | `papers\paper_III_s2_endpoint_compression\outline.md` | 700 |
 | `papers\paper_III_s2_endpoint_compression\theorem_inventory.md` | 552 |
-| `README.md` | 3724 |
+| `README.md` | 3648 |
 | `Reflective_1.md` | 6382 |
 | `Reflective_2.md` | 9060 |
 | `Reflective_3.md` | 12639 |

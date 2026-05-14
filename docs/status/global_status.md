@@ -5,8 +5,8 @@ This file is the first status document Codex should read.
 Current frontier:
 
 ```text
-Latest module frontier: Module 267
-Active phase: Phase H, projected model-neutrality feasibility window
+Latest module frontier: Module 268
+Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -70,6 +70,9 @@ Latest project-wide review:
   absolute route to the literal Module 260 gate from the signed exact-model
   route and recording that signed cancellation does not prove
   `CollNeutral_260`.
+- A ninth plan update pausing Phase H as a conditional dependency map and
+  selecting the minor-arc transverse-incidence obstruction as the next
+  feasibility window.
 
 ## What the project has not proved
 
@@ -154,17 +157,22 @@ Projected-major reentry:
   BoundaryMajorReentry_258
     classifies boundary/projected-major routing
 
-Phase H next target:
+Completed Phase H target:
   ProjectedModelNeutralityGate_260(P_adm)
     conditionally reduces NeutralErr_major^P to generic-tail, kernel,
     collision, denominator, W-limit, and model-convention rows
 
-Phase H challenge:
-  PlanChallenge_5_262
-    continues Phase H only through narrowed proof-or-blocked subrow tests
+Phase H verdict:
+  ProjectedModelNeutralityVerdict_267(P_adm)
+    keeps the absolute route conditional and separates the signed exact-model
+    route from CollNeutral_260
+
+Active Phase I target:
+  NarrowMinorArc_3^B transverse term
+    sum_lambda lambda^2 Eng(I_trans(lambda))=o(1)
 
 Next scheduled check:
-  Module 268 ninth plan update after the Phase H verdict
+  Module 269 transverse-incidence extraction inside NarrowMinorArc_3^B
 ```
 
 Status: **CONDITIONAL**.

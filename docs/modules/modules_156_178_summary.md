@@ -1,4 +1,4 @@
-# Modules 156-267 summary
+# Modules 156-268 summary
 
 ## 156
 
@@ -683,6 +683,14 @@ corrects the signed fork into a same-family `SignedExactNeutralGate_267`
 route to `NeutralErr_major^P=o_W(1)` rather than a proof of the absolute
 collision row `CollNeutral_260`.
 
+## 268
+
+Ninth plan update after the Phase H verdict; defines `PlanUpdate_9_268`,
+pauses projected model neutrality as a conditional dependency map, and starts
+Phase I as a minor-arc transverse-incidence feasibility window targeting the
+unresolved `I_trans(lambda)` term inside `NarrowMinorArc_3^B`.
+
 ## Next
 
-Module 268: ninth plan update after the Phase H verdict.
+Module 269: extract the exact transverse-incidence object inside
+`NarrowMinorArc_3^B`.
