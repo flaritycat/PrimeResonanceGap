@@ -125,7 +125,14 @@ FALSE / BLOCKED
 | `EndpointFourthMomentRowRoute_302` | FALSE / BLOCKED | The large-spectrum inequality is valid, but using `M_minor^0=o_W(1)` here assumes endpoint-strength fourth-moment control | `module_302_row_moment_distribution_audit.md` | No |
 | `RowTailGainTarget_302(q)` | OPEN | Needs same-family tail bounds beating Markov from first energy alone | `module_302_row_moment_distribution_audit.md` | No |
 | `RowSquareMomentTarget_302` | OPEN | Concrete q=2 row moment target for `D^(-1) sum_d E_{d,0}(lambda_j)^2` | `module_302_row_moment_distribution_audit.md` | No |
-| `RowSquareMomentExpansion_303(P_minor^0)` | OPEN | Next target: expand the q=2 row-square object into same-shift frequency-pair form | `module_302_row_moment_distribution_audit.md` | No |
+| `RowSquareMomentExpansion_303(P_minor^0)` | STRUCTURAL / EXTRACTION | Expands the q=2 row-square object into exact same-shift restricted-kernel form; no gain proved | `module_303_row_square_moment_expansion.md` | Only as an identity ledger |
+| `RowSquareKernelIdentity_303(lambda_j)` | STRUCTURAL / EXTRACTION | Exact coefficient and physical-space identity for `ShiftMomentP0_284(2;lambda_j)` | `module_303_row_square_moment_expansion.md` | Only as an exact identity |
+| `DiagonalFourthPowerRow_303(lambda_j)` | STRUCTURAL / EXTRACTION | Diagonal fourth-power row identified; endpoint and pointwise routes do not close the row target | `module_303_row_square_moment_expansion.md` | Only as a routed subrow |
+| `OffDiagonalSameShiftRow_303(lambda_j)` | OPEN | Needs same-family control of off-diagonal same-shift restricted kernels | `module_303_row_square_moment_expansion.md` | No |
+| `FullFrequencyShortcut_303` | FALSE / BLOCKED | `S_{d,j}` is restricted and data-dependent, not the full frequency group | `module_303_row_square_moment_expansion.md` | No |
+| `FixedFiberShortcut_303` | FALSE / BLOCKED | Fixed-fiber estimates require uniformity over data-dependent fibers or selection transfer | `module_303_row_square_moment_expansion.md` | No |
+| `EndpointFourthMomentShortcut_303` | FALSE / BLOCKED | Endpoint fourth moments are circular here and do not control the off-diagonal row alone | `module_303_row_square_moment_expansion.md` | No |
+| `SameShiftSquareKernelGain_303(P_minor^0)` | OPEN | New q=2 kernel-gain target strong enough to imply `RowSquareMomentTarget_302` | `module_303_row_square_moment_expansion.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

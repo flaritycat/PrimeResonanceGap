@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 302
-Post-Reflective_1 solving count: 121
-Long-term-plan count: 115
+Latest completed module: 303
+Post-Reflective_1 solving count: 122
+Long-term-plan count: 116
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -2406,4 +2406,41 @@ Continue with:
 Module 303:
   expand RowSquareMomentExpansion_303(P_minor^0), the q=2 same-shift
   frequency-pair form behind RowSquareMomentTarget_302.
+```
+
+Module 303 completed:
+
+```text
+RowSquareMomentExpansion_303(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+RowSquareKernelIdentity_303(lambda_j):
+  STRUCTURAL / EXTRACTION.
+
+DiagonalFourthPowerRow_303(lambda_j):
+  STRUCTURAL / EXTRACTION, with current proof routes blocked.
+
+OffDiagonalSameShiftRow_303(lambda_j):
+  OPEN.
+
+FullFrequencyShortcut_303,
+FixedFiberShortcut_303,
+EndpointFourthMomentShortcut_303:
+  FALSE / BLOCKED.
+
+SameShiftSquareKernelGain_303(P_minor^0):
+  OPEN.
+```
+
+The expansion identifies the q=2 row-square moment as an exact same-shift
+restricted-kernel problem over data-dependent large-spectrum fibers. It does
+not prove `RowSquareMomentTarget_302`.
+
+Continue with the cadence checkpoint:
+
+```text
+Module 304:
+  perform PlanUpdate_13_304, then decide whether to attempt
+  SameShiftSquareKernelGain_303 directly or first define a smaller
+  fixed-fiber/selection-transfer subproblem for K_{d,j}.
 ```

@@ -50,7 +50,8 @@ flowchart TD
   RowBarrier300["RowBarrierMomentAudit_300<br/>audit STRUCTURAL; current route BLOCKED"]
   Reflective4["Reflective_4<br/>memory log STRUCTURAL"]
   RowMoment302["RowMomentDistributionAudit_302<br/>audit STRUCTURAL; Markov/circular routes BLOCKED"]
-  RowSquare303["RowSquareMomentExpansion_303<br/>next target OPEN"]
+  RowSquare303["RowSquareMomentExpansion_303<br/>identity STRUCTURAL; shortcuts BLOCKED"]
+  PlanUpdate13["PlanUpdate_13_304<br/>next scheduled update"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -134,7 +135,8 @@ flowchart TD
   RowBarrier300 --> Reflective4
   Reflective4 --> RowMoment302
   RowMoment302 --> RowSquare303
-  RowSquare303 --> ThresholdP0
+  RowSquare303 --> PlanUpdate13
+  PlanUpdate13 --> ThresholdP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -234,3 +236,7 @@ flowchart TD
 - `RowMomentDistributionAudit_302` is a structural audit: layer-cake is a
   criterion, current Markov tails are blocked at the Module 300 ceiling, and
   the fourth-moment route is circular without an independent theorem.
+- `RowSquareMomentExpansion_303` is an identity ledger. It expands the q=2
+  row-square object into exact same-shift restricted kernels over
+  data-dependent fibers, blocks full-frequency/fixed-fiber/endpoint shortcuts,
+  and leaves `SameShiftSquareKernelGain_303` open.

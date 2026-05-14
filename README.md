@@ -418,8 +418,8 @@ the side-package low-level and removal audits**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 302
-Active phase: Phase K, row-square moment expansion
+Latest module frontier: Module 303
+Active phase: Phase K, thirteenth plan update after row-square expansion
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -559,19 +559,27 @@ Module 302:
   polylogarithmic ceiling, and the fourth-moment large-spectrum route is
   circular unless supplied by an independent non-endpoint theorem. Row-tail
   and q=2 row-square targets remain open.
+
+Module 303:
+  expanded the q=2 row-square moment into an exact same-shift restricted
+  kernel over the data-dependent large-spectrum fibers S_{d,j}. The identity
+  is structural only: full-frequency orthogonality, fixed-fiber transfer, and
+  endpoint fourth moments are blocked as automatic proof routes, while
+  SameShiftSquareKernelGain_303 remains open.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-now handled, vacuous removal is only bookkeeping, and Module 302 shows that
-the existing first-energy row-distribution inputs do not prove the row side of
-the threshold window.
+now handled, vacuous removal is only bookkeeping, and Modules 302-303 show
+that the existing first-energy and exact-expansion inputs do not prove the row
+side of the threshold window.
 
 The next planned module is:
 
 ```text
-Module 303:
-  expand RowSquareMomentExpansion_303(P_minor^0), the concrete q=2
-  same-shift frequency-pair object behind RowSquareMomentTarget_302.
+Module 304:
+  perform PlanUpdate_13_304, then decide whether to attack
+  SameShiftSquareKernelGain_303 directly or first define a smaller
+  fixed-fiber/selection-transfer subproblem for K_{d,j}.
 ```
 
 ## What Is Proved?
@@ -814,7 +822,14 @@ wins.
 | `EndpointFourthMomentRowRoute_302` | FALSE / BLOCKED | Circular unless an independent non-endpoint fourth-moment theorem is supplied |
 | `RowTailGainTarget_302(q)` | OPEN | Needs a same-family tail gain beating first-energy Markov |
 | `RowSquareMomentTarget_302` | OPEN | Concrete q=2 high-moment row target |
-| `RowSquareMomentExpansion_303(P_minor^0)` | OPEN | Next target: expand the q=2 row-square object |
+| `RowSquareMomentExpansion_303(P_minor^0)` | STRUCTURAL / EXTRACTION | q=2 row-square object expanded exactly; no gain proved |
+| `RowSquareKernelIdentity_303(lambda_j)` | STRUCTURAL / EXTRACTION | Exact same-shift restricted-kernel identity |
+| `DiagonalFourthPowerRow_303(lambda_j)` | STRUCTURAL / EXTRACTION | Diagonal row identified; current proof routes blocked |
+| `OffDiagonalSameShiftRow_303(lambda_j)` | OPEN | Needs same-shift restricted-kernel control |
+| `FullFrequencyShortcut_303` | FALSE / BLOCKED | Restricted data-dependent fibers are not full frequency sets |
+| `FixedFiberShortcut_303` | FALSE / BLOCKED | Fixed-set estimates need uniformity or selection transfer |
+| `EndpointFourthMomentShortcut_303` | FALSE / BLOCKED | Circular and does not control the off-diagonal row alone |
+| `SameShiftSquareKernelGain_303(P_minor^0)` | OPEN | New q=2 row-square kernel target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 302
-Active phase: Phase K, row-square moment expansion
+Latest module frontier: Module 303
+Active phase: Phase K, thirteenth plan update after row-square expansion
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -72,6 +72,7 @@ modules/
   module_299_threshold_window_compatibility_audit.md
   module_300_row_barrier_moment_audit.md
   module_302_row_moment_distribution_audit.md
+  module_303_row_square_moment_expansion.md
   modules_156_178_summary.md
 
 reviews/

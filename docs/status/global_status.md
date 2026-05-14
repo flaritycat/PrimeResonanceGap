@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 302
-Active phase: Phase K, row-square moment expansion
+Latest module frontier: Module 303
+Active phase: Phase K, thirteenth plan update after row-square expansion
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -201,6 +201,10 @@ Latest project-wide review:
   layer-cake criterion, blocking the current first-energy Markov distribution
   route as only the Module 300 ceiling, and blocking the fourth-moment
   large-spectrum route as circular unless supplied independently.
+- A row-square moment expansion
+  `RowSquareMomentExpansion_303(P_minor^0)`, identifying the exact q=2
+  same-shift restricted-kernel identity over data-dependent large-spectrum
+  fibers and leaving the needed same-shift kernel gain open.
 
 ## What the project has not proved
 
@@ -297,6 +301,12 @@ Latest project-wide review:
 - `EndpointFourthMomentRowRoute_302` as a proof route; it is circular without
   an independent non-endpoint fourth-moment theorem.
 - `RowTailGainTarget_302(q)` or `RowSquareMomentTarget_302`.
+- `RowSquareKernelIdentity_303(lambda_j)` as an estimate; it is an exact
+  same-shift restricted-kernel identity only.
+- `FullFrequencyShortcut_303`, `FixedFiberShortcut_303`, or
+  `EndpointFourthMomentShortcut_303` as proof routes.
+- `SameShiftSquareKernelGain_303(P_minor^0)` or
+  `OffDiagonalSameShiftRow_303(lambda_j)`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -543,8 +553,14 @@ Completed row-moment distribution audit:
     marks the fourth-moment large-spectrum route circular without an
     independent theorem
 
+Completed row-square moment expansion:
+  RowSquareMomentExpansion_303(P_minor^0)
+    expands the q=2 row-square moment into an exact same-shift restricted
+    kernel over the data-dependent fibers S_{d,j}; no row-square gain is
+    proved
+
 Next scheduled check:
-  Module 303 RowSquareMomentExpansion_303(P_minor^0)
+  Module 304 PlanUpdate_13_304
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;
