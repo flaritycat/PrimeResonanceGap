@@ -63,7 +63,8 @@ flowchart TD
   AntiDiag312["AntiDiagonalTwoShiftKernelGain_312<br/>OPEN"]
   PlanUpdate14["PlanUpdate_14_313<br/>completed; selects row split"]
   MinorKernel314["MinorKernelRowSplit_314<br/>split STRUCTURAL; controls OPEN"]
-  ZeroAudit315["ZeroModeProductAudit_315<br/>next target OPEN"]
+  ZeroAudit315["ZeroModeProductAudit_315<br/>audit STRUCTURAL; standalone control BLOCKED"]
+  CenteredFull316["CenteredFullAntiDiagonalAudit_316<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -162,7 +163,8 @@ flowchart TD
   PlanUpdate14 --> MinorKernel314
   MinorKernel314 --> AntiDiag312
   MinorKernel314 --> ZeroAudit315
-  ZeroAudit315 --> AntiDiag312
+  ZeroAudit315 --> CenteredFull316
+  CenteredFull316 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -306,3 +308,7 @@ flowchart TD
 - `MinorKernelRowSplit_314` gives the exact full/zero/major partition of
   `WOff_311`, but independent row smallness is blocked under current tools.
   The next local audit is the zero-mode product row.
+- `ZeroModeProductAudit_315` shows that the zero row is not killed by the
+  minor convention and not controlled by current tools, but it can be removed
+  as an explicit correction by using centered products. The next audit is the
+  centered full anti-diagonal row.

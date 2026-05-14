@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 314
-Active phase: Phase K, zero-mode product audit next
+Latest module frontier: Module 315
+Active phase: Phase K, centered full anti-diagonal audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -258,6 +258,11 @@ Latest project-wide review:
   the Module 312 weighted pair kernel into full-frequency anti-diagonal,
   zero-mode product, and major-kernel correction rows, while leaving each row
   control and the signed combination target open.
+- A zero-mode product audit `ZeroModeProductAudit_315(P_minor^0)`, recording
+  that the minor convention does not force `beta_0(d,0)=0`, that current
+  tools do not control the standalone zero row, and that an exact centered
+  rewrite removes the explicit zero row without proving a centered full-row
+  gain.
 
 ## What the project has not proved
 
@@ -405,6 +410,10 @@ Latest project-wide review:
   `MajorKernelCorrectionControl_314(P_minor^0)`,
   `SignedMinorKernelCombinationTarget_314(P_minor^0)`, or
   `ZeroModeProductAudit_315(P_minor^0)` as proved.
+- `ZeroModeKilledByMinorConvention_315`,
+  `CenteredRewriteRemovesExplicitZeroRow_315`, or
+  `CurrentZeroModeProductControl_315` as weighted pair smallness.
+- `CenteredFullAntiDiagonalAudit_316(P_minor^0)` as proved.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -719,10 +728,16 @@ Completed minor-kernel row split:
     major-kernel correction rows; records independent row smallness as
     FALSE / BLOCKED and leaves ZeroModeProductAudit_315(P_minor^0) as next
 
+Completed zero-mode product audit:
+  ZeroModeProductAudit_315(P_minor^0)
+    records that the zero row is not killed by the minor convention, that
+    current zero-mode product control is FALSE / BLOCKED, and that centered
+    rewriting removes the explicit zero row only structurally
+
 Next scheduled check:
-  Module 315 ZeroModeProductAudit_315(P_minor^0)
+  Module 316 CenteredFullAntiDiagonalAudit_316(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Phase K minor-kernel
-row split;
+Status: **STRUCTURAL / EXTRACTION** for the completed Phase K zero-mode
+product audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

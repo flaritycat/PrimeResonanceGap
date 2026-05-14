@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 314
-Post-Reflective_1 solving count: 133
-Long-term-plan count: 127
+Latest completed module: 315
+Post-Reflective_1 solving count: 134
+Long-term-plan count: 128
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -2952,4 +2952,73 @@ Module 315:
   perform ZeroModeProductAudit_315(P_minor^0), deciding whether the zero-mode
   product row is killed by convention, controlled by a local pair-covariance
   estimate, or remains open.
+```
+
+Module 315 completed:
+
+```text
+ZeroModeProductAudit_315(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+ZeroModeKilledByMinorConvention_315:
+  FALSE / BLOCKED.
+
+ZeroModeProductIdentity_315,
+CenteredRewriteRemovesExplicitZeroRow_315:
+  STRUCTURAL / EXTRACTION.
+
+CurrentZeroModeProductControl_315:
+  FALSE / BLOCKED.
+
+ZeroModeProductControl_314(P_minor^0):
+  OPEN as a standalone estimate.
+
+CenteredFullAntiDiagonalAudit_316(P_minor^0):
+  OPEN next target.
+```
+
+The audit records:
+
+```text
+Z_d=beta_0(d,0)=E_n f_0(n+d)conj(f_0(n)).
+```
+
+The minor convention excludes `xi=0`, but it does not force `Z_d=0`.
+However, because nonzero Fourier coefficients are unchanged by:
+
+```text
+B_d^{0,circ}=B_d^0-Z_d,
+```
+
+the explicit zero row can be removed by rewriting the minor row as:
+
+```text
+WPair(d_1,d_2)
+  =
+  FullPair_circ_315(d_1,d_2)
+  -
+  MajorPair_circ_315(d_1,d_2).
+```
+
+This is structural only. It does not prove the centered full row or the major
+row small.
+
+The current cadence records:
+
+```text
+Latest completed module: 315
+Post-Reflective_1 solving count: 134
+Long-term-plan count: 128
+
+128 is not divisible by 9, so no plan update is due.
+128 is not divisible by 15, so no plan challenge is due.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 316:
+  perform CenteredFullAntiDiagonalAudit_316(P_minor^0), auditing the
+  full-frequency anti-diagonal row with B_d^{0,circ} in place of B_d^0.
 ```

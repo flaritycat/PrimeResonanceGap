@@ -412,13 +412,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the minor-kernel row split**.
+the zero-mode product audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 314
-Active phase: Phase K, zero-mode product audit next
+Latest module frontier: Module 315
+Active phase: Phase K, centered full anti-diagonal audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -634,20 +634,26 @@ Module 314:
   anti-diagonal, zero-mode product, and major-kernel correction rows. The
   split is exact and structural; independent row smallness is blocked under
   current tools, and the zero-mode product row is the next audit target.
+
+Module 315:
+  audited the zero-mode product row. The minor convention does not make
+  beta_0(d,0) vanish, and no current estimate controls the zero row. However,
+  because minor arcs exclude zero frequency, an exact centered rewrite removes
+  the explicit zero row and moves the next audit to the centered full
+  anti-diagonal row.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-314 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-315 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, and autocorrelation inputs do not prove the threshold window.
 
 The next planned module is:
 
 ```text
-Module 315:
-  perform ZeroModeProductAudit_315(P_minor^0), deciding whether the
-  zero-mode product row is killed by convention, controlled by a local
-  pair-covariance estimate, or remains open.
+Module 316:
+  perform CenteredFullAntiDiagonalAudit_316(P_minor^0), auditing the
+  full-frequency anti-diagonal row after replacing B_d^0 by B_d^{0,circ}.
 ```
 
 ## What Is Proved?
@@ -689,7 +695,11 @@ Compact status table:
 | Minor-kernel row split `MinorKernelRowSplit_314` | **STRUCTURAL / EXTRACTION** |
 | Independent row smallness route `IndependentRowSmallnessRoute_314` | **FALSE / BLOCKED** |
 | Full/zero/major row controls from Module 314 | **OPEN** |
-| Zero-mode product audit `ZeroModeProductAudit_315` | **OPEN next target** |
+| Zero-mode product audit `ZeroModeProductAudit_315` | **STRUCTURAL / EXTRACTION** |
+| Zero mode killed by minor convention `ZeroModeKilledByMinorConvention_315` | **FALSE / BLOCKED** |
+| Current zero-mode product control `CurrentZeroModeProductControl_315` | **FALSE / BLOCKED** |
+| Centered rewrite removes explicit zero row `CenteredRewriteRemovesExplicitZeroRow_315` | **STRUCTURAL / EXTRACTION** |
+| Centered full anti-diagonal audit `CenteredFullAntiDiagonalAudit_316` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -976,7 +986,11 @@ wins.
 | `IndependentRowSmallnessRoute_314` | FALSE / BLOCKED | Current tools do not make the rows independently harmless |
 | `FullAntiDiagonalControl_314 / ZeroModeProductControl_314 / MajorKernelCorrectionControl_314` | OPEN | Row control remains missing |
 | `SignedMinorKernelCombinationTarget_314(P_minor^0)` | OPEN | Needs same-family control of the signed row combination |
-| `ZeroModeProductAudit_315(P_minor^0)` | OPEN | Next target |
+| `ZeroModeProductAudit_315(P_minor^0)` | STRUCTURAL / EXTRACTION | Audits zero-mode row; exact centered rewrite removes explicit zero row |
+| `ZeroModeKilledByMinorConvention_315` | FALSE / BLOCKED | Minor arcs exclude zero frequency but do not force `beta_0(d,0)=0` |
+| `ZeroModeProductIdentity_315 / CenteredRewriteRemovesExplicitZeroRow_315` | STRUCTURAL / EXTRACTION | Exact identities only; no zero-mode estimate follows |
+| `CurrentZeroModeProductControl_315` | FALSE / BLOCKED | No available same-family estimate controls the standalone zero row |
+| `CenteredFullAntiDiagonalAudit_316(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
