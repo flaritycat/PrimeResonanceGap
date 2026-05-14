@@ -1,4 +1,4 @@
-# Modules 156-242 summary
+# Modules 156-243 summary
 
 ## 156
 
@@ -470,7 +470,15 @@ One-point fixed-support prototype row; defines
 exact one-point model term, averaged error `BIHLErr_242`, and side-error
 slots, without proving any estimate or transferring to off-vertex cases.
 
+## 243
+
+Exact one-point local model and boundary main term; derives the singleton
+W-tail factor `Theta_{w,{(00,0)}}^proj=1` for the active primitive form
+`n-t0`, reducing the prototype model term to `ell_r` and isolating the open
+`|W_M|`-averaged boundary mean error `BIHLErr_243` plus W-residue, range,
+prime-power, cutoff, normalization, and zero-mode slots.
+
 ## Next
 
-Module 243: derive the exact one-point local model and boundary interval main
-term.
+Module 244: reduce the prototype to a W-admissible one-point boundary
+prime-mean estimate.

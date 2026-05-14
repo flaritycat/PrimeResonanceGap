@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 242
-Post-Reflective_1 solving count: 61
-Long-term-plan count: 55
+Latest completed module: 243
+Post-Reflective_1 solving count: 62
+Long-term-plan count: 56
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -521,6 +521,10 @@ Expected work:
   side-error slots without proving the row or any off-vertex case;
 - Module 243: derive the exact one-point local model and boundary interval
   main term, including W-residue, diagonal, and range synchronization;
+  completed as `OnePointLocalModel_243`, deriving the normalized W-tail
+  singleton factor `Theta_{w,{(00,0)}}^proj=1`, reducing the model main term
+  to `ell_r`, and isolating the open `|W_M|`-averaged boundary mean error
+  `BIHLErr_243` plus side-error slots;
 - Module 244: reduce the prototype to a W-admissible one-point boundary
   prime-mean estimate, separating model, W-tricked, smoothed, and frozen
   selector classes;
@@ -584,45 +588,48 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 243: derive the exact one-point local model and boundary interval main
-term.
+Module 244: reduce the prototype to a W-admissible one-point boundary
+prime-mean estimate.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION`.
+Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
 
-Module 242 fixed the active one-point prototype:
+Module 243 derived the singleton local model for the active prototype:
 
 ```text
-OnePointBIHL_242(s0,D0,rho0)
-  = BoundaryIntervalHL_234({(00,0)},(00,0)).
+Theta_{w,{(00,0)}}^proj=1,
+M_r^mod(d,h,k;t)=ell_r(d,h,k;t).
 ```
 
-It chose the same-vertex case:
+The open analytic target is now:
 
 ```text
-sigma0=lambda0=(00,0),
-v_sigma0=v_lambda0=n-t0.
+BIHLErr_243
+  = (1/D0) sum_{D0<|d|<=2D0}
+      E_{h,k,t} |W_M(t)|
+        sum_{r in {L,R}}
+          |E_n 1_{J_r}(n)(mu_s0(n-t0)-1)|
+  = o_W(1).
 ```
 
-Module 243 should derive the exact one-point local model and boundary
-interval main term:
+Module 244 should reduce this to the precise one-point boundary prime-mean
+input needed in each allowed selector class:
 
 ```text
-E_n 1_{J_r}(n) mu_s0(n-t0)
-  =
-ell_r(d,h,k;t)
-  |Theta_{w,{(00,0)}}^proj(d,h,k;t)|
-  + Err_r^242(d,h,k;t),
+model,
+W,
+sm,
+fr.
 ```
 
-including:
+It should separate:
 
 ```text
-whether Theta_{w,{(00,0)}}^proj is exact, normalized, or reducible in the
-chosen class;
-W-residue synchronization;
-range and cutoff effects;
-prime-power and zero-mode slots.
+pure model identity rows,
+W-tricked one-point boundary PNT rows,
+smoothed/frozen selector rows,
+range and short-interval limitations,
+and the side-error slots from Module 243.
 ```
 
 The prototype remains inside the fixed-row discipline:
