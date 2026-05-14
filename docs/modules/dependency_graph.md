@@ -30,7 +30,8 @@ flowchart TD
   LSBesselBench["LSBesselBenchmark_281<br/>benchmark STRUCTURAL; adaptive gain OPEN"]
   DegRowsP0["DegRowsP0Audit_282(P_minor^0)<br/>audit STRUCTURAL; smallness OPEN"]
   SideRowsP0["SideRowsP0Audit_283(P_minor^0)<br/>audit STRUCTURAL; ready package OPEN"]
-  ThresholdP0["ThresholdBudgetP0_283<br/>OPEN; next diagnostic"]
+  ThresholdP0["ThresholdBudgetP0Audit_284<br/>audit STRUCTURAL; closure OPEN"]
+  AdaptiveShellP0["Adaptive shell selection in P_minor^0_285<br/>next diagnostic"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -80,6 +81,8 @@ flowchart TD
   SideRowsP0 --> PhaseKernel0
   ThresholdP0 --> SideRowsP0
   ThresholdP0 --> PhaseKernel0
+  AdaptiveShellP0 --> PhaseKernel0
+  AdaptiveShellP0 --> FixedShellTransfer
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -124,3 +127,6 @@ flowchart TD
   selector-change rows only inside the minimal model by convention; it does
   not prove W-uniformity, threshold-budget, low-level cutoff, dyadic
   uniformity, or adaptive shell-selection rows.
+- `ThresholdBudgetP0Audit_284` names the threshold budgets and optimized
+  barriers required inside `P_minor^0`; these barriers are diagnostics, not
+  estimates.

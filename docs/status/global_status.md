@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 283
+Latest module frontier: Module 284
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -131,6 +131,10 @@ Latest project-wide review:
   boundary, fixed-residue, prime-only, and selector conventions from the
   W-uniformity, threshold, low-level cutoff, dyadic-uniformity, and adaptive
   shell-selection rows that remain open.
+- A threshold-budget audit `ThresholdBudgetP0Audit_284(P_minor^0)`, naming
+  the row, column, shell-counting, bad-shift, bad-frequency, optimized
+  barrier, and low-level leakage tests required before
+  `ThresholdBudgetP0_283` could be used.
 
 ## What the project has not proved
 
@@ -177,6 +181,10 @@ Latest project-wide review:
 - `SideRowsP0Ready_283`, `WUniformP0_283`, `ThresholdBudgetP0_283`,
   `LowLevelCutoffP0_283`, `DyadicUniformityP0_283`, or
   `ShellSelectionP0_283`.
+- `ThresholdBudgetP0Closure_284(q,r)`, `LowLevelBudgetP0_284`,
+  `ShiftMomentP0_284(q)`, `MultMomentP0_284(r)`, or the optimized barriers
+  `RowBarrierP0_284`, `ColumnBarrierP0_284`,
+  `SigmaColumnBarrierP0_284`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -328,13 +336,19 @@ Completed Phase J side-row audit:
     internal conventions only, while keeping W-uniformity, threshold budget,
     low-level cutoff, dyadic uniformity, and adaptive shell selection open
 
+Completed Phase J threshold-budget audit:
+  ThresholdBudgetP0Audit_284(P_minor^0)
+    names the row, column, shell-counting, removal, optimized-barrier, and
+    low-level budget tests without proving any are o_W(1)
+
 Active Phase J target:
   PhaseKernelBound_273^0 over P_minor^0
-    next test the threshold budget against row/column ceilings and the
-    lambda-summed target
+    next decide whether adaptive shell selection still offers a non-endpoint
+    route or whether the current Phase J package should be marked blocked
 
 Next scheduled check:
-  Module 284 audit ThresholdBudgetP0_283 inside P_minor^0
+  Module 285 audit adaptive shell selection versus proof-or-blocked verdict
+  for PhaseKernelBound_273^0
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the active Phase J steering step;

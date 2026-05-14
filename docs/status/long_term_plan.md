@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 283
-Post-Reflective_1 solving count: 102
-Long-term-plan count: 96
+Latest completed module: 284
+Post-Reflective_1 solving count: 103
+Long-term-plan count: 97
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -923,8 +923,12 @@ Expected work:
   dyadic uniformity, and adaptive shell selection remain open;
 - Module 284: test `ThresholdBudgetP0_283` against row/column ceilings,
   base-tail shells, low-level leakage, and the lambda-summed target;
-- Module 285: give a micro-verdict for `TransverseGateProofPkg_276` over
-  `P_minor^0`;
+  completed as `ThresholdBudgetP0Audit_284(P_minor^0)`, naming the row,
+  column, shell-counting, bad-shift, bad-frequency, low-level, and optimized
+  threshold barriers while leaving `ThresholdBudgetP0Closure_284(q,r)` open;
+- Module 285: decide whether adaptive shell selection still provides a
+  plausible non-endpoint route, or give a proof-or-blocked verdict for
+  `PhaseKernelBound_273^0` with the current Phase J tools;
 - Module 286: perform the eleventh plan update.
 
 Success criterion: Phase J either produces a concrete non-endpoint candidate
@@ -1570,4 +1574,55 @@ Module 284:
   test ThresholdBudgetP0_283 against row/column ceilings, base-tail shells,
   low-level leakage, and the lambda-summed target, without assuming
   PhaseKernelBound_273^0.
+```
+
+Module 284 completed:
+
+```text
+ThresholdBudgetP0Audit_284(P_minor^0)
+  names the row, column, shell-counting, bad-shift, bad-frequency, low-level,
+  and optimized-barrier threshold tests inside the fixed minimal family.
+```
+
+The audit preserves the status:
+
+```text
+ThresholdBudgetP0Closure_284(q,r)
+  remains OPEN.
+```
+
+It also preserves:
+
+```text
+ThresholdBudgetP0_283,
+LowLevelBudgetP0_284,
+ShiftMomentP0_284(q),
+MultMomentP0_284(r),
+RowBarrierP0_284(q),
+ColumnBarrierP0_284(r),
+SigmaColumnBarrierP0_284(r),
+SideRowsP0Ready_283,
+ShellSelectionP0_283,
+DegRowsP0Small_282,
+PhaseKernelBound_273^0,
+PhaseKernelBound_273,
+TransverseGateProofPkg_276,
+TransIncBound_269,
+MinorArcTransfer_3^B,
+NarrowMinorArc_3^B,
+selector transfer,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3
+remain unproved.
+```
+
+Continue with:
+
+```text
+Module 285:
+  decide whether adaptive shell selection still offers a non-endpoint route,
+  or whether the current Phase J package should receive a proof-or-blocked
+  verdict for PhaseKernelBound_273^0.
 ```

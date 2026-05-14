@@ -84,7 +84,8 @@ testing whether any non-endpoint estimate can control the shell functional
 `Xi_273^0` in a fixed minimal model family `P_minor^0`. The current verdict is
 that fixed frequency-set estimates do not automatically control these
 data-dependent shells, and the remaining local side rows must still be proved
-before any Phase J kernel bound can be used.
+before any Phase J kernel bound can be used. The latest audit isolates the
+threshold-budget barriers rather than declaring them small.
 
 ## Whole Project Map
 
@@ -285,7 +286,7 @@ feasibility**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 283
+Latest module frontier: Module 284
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -319,20 +320,24 @@ Module 283:
   fixed-residue, prime-only, and selector-change rows are conventions only
   in the local model; W-uniformity, threshold budget, low-level cutoff,
   dyadic uniformity, and adaptive shell selection remain open.
+
+Module 284:
+  tested the threshold budget against row/column ceilings and the
+  lambda-summed target. It named row, column, shell-counting, removal, and
+  low-level budget barriers, but left all smallness claims open.
 ```
 
 The next planned module is:
 
 ```text
-Module 284:
-  test ThresholdBudgetP0_283 against row/column ceilings and the
-  lambda-summed target.
+Module 285:
+  decide whether Phase J should next test adaptive shell selection or issue a
+  proof-or-blocked verdict for PhaseKernelBound_273^0 with the current tools.
 ```
 
-The next audit should decide whether the declared threshold schedules can be
-made compatible with row/column ceilings, base-tail shells, low-level leakage,
-and the final lambda-summed target, without assuming the kernel bound they are
-meant to support.
+The next audit should not treat the threshold barriers as estimates. It should
+decide whether there is a plausible non-endpoint adaptive shell route left, or
+whether Phase J should be marked blocked at the current tool level.
 
 ## What Is Proved?
 
@@ -512,6 +517,9 @@ wins.
 | `LowLevelCutoffP0_283` | OPEN | Contribution below `lambda_min` not controlled |
 | `DyadicUniformityP0_283` | OPEN | Uniformity over D, lambda, sigma, R, eta, W, and both signs of d missing |
 | `ShellSelectionP0_283` | OPEN | Adaptive data-dependent shell control not supplied by fixed-set estimates |
+| `ThresholdBudgetP0Audit_284(P_minor^0)` | STRUCTURAL / EXTRACTION | Exact threshold budget barriers named inside the local family |
+| `ThresholdBudgetP0Closure_284(q,r)` | OPEN | Requires low-level, removal, row/column, and shell-counting budgets to be `o_W(1)` |
+| `RowBarrierP0_284 / ColumnBarrierP0_284 / SigmaColumnBarrierP0_284` | OPEN | Optimized barriers are diagnostics, not estimates |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

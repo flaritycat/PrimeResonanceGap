@@ -1,4 +1,4 @@
-# Modules 156-283 summary
+# Modules 156-284 summary
 
 ## 156
 
@@ -812,7 +812,15 @@ prime-only, and selector-change rows as local conventions only, and leaves
 `LowLevelCutoffP0_283`, `DyadicUniformityP0_283`, and
 `ShellSelectionP0_283` open.
 
+## 284
+
+Threshold-budget feasibility audit inside `P_minor^0`; defines
+`ThresholdBudgetP0Audit_284(P_minor^0)`, names row, column,
+shell-counting, bad-shift, bad-frequency, low-level, and optimized-barrier
+budget tests, and leaves `ThresholdBudgetP0Closure_284(q,r)` open.
+
 ## Next
 
-Module 284: test `ThresholdBudgetP0_283` against row/column ceilings and the
-lambda-summed target.
+Module 285: decide whether adaptive shell selection still gives a
+non-endpoint route, or whether the current `PhaseKernelBound_273^0` package
+should receive a proof-or-blocked verdict.
