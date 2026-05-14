@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 187
-Post-Reflective_1 solving count: 6
-Long-term-plan count: 0
+Latest completed module: 188
+Post-Reflective_1 solving count: 7
+Long-term-plan count: 1
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -120,7 +120,8 @@ arc collision control can be reduced to manageable divisor-moment estimates.
 
 Expected modules:
 
-- Module 188: overflow estimate for large total collision load;
+- Module 188: overflow estimate for large total collision load; completed as a
+  conditional criterion;
 - Module 189: exponential-moment criterion for beta-load sums;
 - Module 190: kernel absolute-mass and range audit for major projection;
 - Module 191: W-limit order and generic tail uniformity;
@@ -256,17 +257,21 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 188: Overflow estimate for large collision load.
+Module 189: Exponential-moment criterion for beta-load sums.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`, unless a complete
 proof is actually supplied.
 
-The key question is whether the region
+The key question is whether the uniform exponential-integrability or
+high-moment hypotheses isolated in Module 188 can be reduced to feasible joint
+divisor estimates for the projected pair-difference forms.
+
+The overflow region remains:
 
 ```text
 B_w(d,h,k;t) > 1
 ```
 
-has enough averaged decay under the projected kernel weights to justify the
-linear collision-envelope replacement used by earlier modules.
+and it still needs averaged decay under the projected kernel weights to justify
+the linear collision-envelope replacement used by earlier modules.

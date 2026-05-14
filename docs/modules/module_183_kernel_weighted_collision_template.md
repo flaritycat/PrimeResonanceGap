@@ -38,7 +38,8 @@ averages of `beta_w(L_{ij})` and `Err_w` are `o(1)`.
 Module 187 records a correction: this linear envelope is not automatic
 pointwise from Euler products. It requires either a small collision-load
 restriction or an overflow estimate for the region where the total collision
-load is large.
+load is large. Module 188 gives a conditional overflow criterion and shows
+that first-moment divisor averages alone do not supply it.
 
 ## 2. Status label
 

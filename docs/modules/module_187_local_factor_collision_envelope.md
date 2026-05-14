@@ -202,15 +202,15 @@ local projected singular factors
   -> linear envelope only on B_w <= 1 or with overflow control.
 ```
 
-Thus the next required module is an overflow estimate for the region
-`B_w>1`, or a revision of the major-arc program to use the exponential
-envelope directly.
+Module 188 supplies a conditional overflow criterion for the region `B_w>1`.
+The remaining work is to verify its exponential-integrability or high-moment
+hypotheses for the actual projected kernel.
 
 ## 8. What remains open
 
 This module does not prove:
 
-- the overflow estimate for `B_w>1`;
+- verification of the Module 188 overflow hypotheses for `B_w>1`;
 - the averaged collision-defect bound under the exponential envelope;
 - projected local-model matching for the actual major-arc cube;
 - minor-arc large-spectrum decay;

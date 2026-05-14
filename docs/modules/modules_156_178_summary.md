@@ -1,4 +1,4 @@
-# Modules 156-187 summary
+# Modules 156-188 summary
 
 ## 156
 
@@ -76,6 +76,10 @@ Nonstructural divisor averages for projected pair-difference forms.
 
 Local-factor collision envelope for projected singular models.
 
+## 188
+
+Overflow estimate for large collision load.
+
 ## Next
 
-Module 188: Overflow estimate for large collision load.
+Module 189: Exponential-moment criterion for beta-load sums.

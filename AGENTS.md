@@ -129,11 +129,11 @@ Read these files first:
 6. `docs/codex/SHORT_CODEX_PROMPT.md`
 
 Then continue from the latest completed module and the current next action in
-`docs/status/long_term_plan.md`. As of the long-term plan created after Module
-187, the next module is:
+`docs/status/long_term_plan.md`. The long-term plan is the active source of
+truth for the next module:
 
 ```text
-Module 188: Overflow estimate for large collision load.
+docs/status/long_term_plan.md
 ```
 
 Do not prove `ResCube_3^sharp` unless an actual proof is supplied. A
