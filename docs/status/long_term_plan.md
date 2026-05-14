@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 197
-Post-Reflective_1 solving count: 16
-Long-term-plan count: 10
+Latest completed module: 198
+Post-Reflective_1 solving count: 17
+Long-term-plan count: 11
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -156,6 +156,9 @@ Expected modules:
 - Module 197: formulate a minor-arc density/energy criterion for `B_d`;
   completed as a conditional restriction-envelope criterion;
 - Module 198: compare ordinary pair-BDH with the residual fourth-moment target;
+  completed as a blocked-shortcut comparison: ordinary pair-BDH controls the
+  wrong object unless pair-margin absorption and adaptive residual minor-arc
+  restriction are added;
 - Module 199: audit rectangle-BDH and first-moment Hardy-Littlewood
   insufficiency;
 - Module 200: test whether a dyadic derivative `U^2` package gives the needed
@@ -274,25 +277,29 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 198: Ordinary pair-BDH versus residual fourth-moment comparison.
+Module 199: Rectangle/BDH and first-moment HL insufficiency audit.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
+Expected status: `STRUCTURAL / EXTRACTION` or `FALSE / BLOCKED`.
 
-Module 197 began Phase B by replacing a count-only large-spectrum target with
-an energy-tail and restriction-envelope criterion.
-
-The next module should test whether ordinary pair-BDH can supply the new
-minor-arc density/energy requirement for the residual object:
+Module 198 blocked the ordinary pair-BDH shortcut. Pair-centered control for
+`R_d=P_d-kappa_w(d)` does not by itself give the residual minor-arc criterion
+for:
 
 ```text
-B_d(n)=f(n+d)conj(f(n)),   f=nu-1,
+B_d(n)=f(n+d)conj(f(n)).
 ```
 
-The expected issue is that pair-BDH controls lower-order averaged pair
-variance, while the Module 197 criterion asks for adaptive minor-arc energy
-control over frequency sets selected from the large spectrum of `B_d`.
+The missing terms are the linear margin and adaptive restriction transfer:
 
 ```text
-R_2^minor(rho;D) <= Psi_*(rho;D).
+L_d(n)=f(n+d)+conj(f(n)),
+R_{2,B}^minor(rho;D) <= Psi_*(rho;D).
+```
+
+The next module should audit two nearby temptations:
+
+```text
+rectangle-BDH as a substitute for residual adaptive minor-arc control,
+first-moment Hardy-Littlewood as a substitute for variance-strength control.
 ```

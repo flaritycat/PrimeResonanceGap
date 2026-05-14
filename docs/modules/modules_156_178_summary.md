@@ -1,4 +1,4 @@
-# Modules 156-197 summary
+# Modules 156-198 summary
 
 ## 156
 
@@ -118,6 +118,12 @@ to minor-arc large-spectrum control.
 Minor-arc density/energy criterion for `B_d`, reducing the minor-arc fourth
 moment to low-level `L^2`, density, and adaptive restriction-energy envelopes.
 
+## 198
+
+Ordinary pair-BDH versus residual fourth-moment comparison; the shortcut is
+blocked unless pair-margin absorption and adaptive residual minor-arc
+restriction are added.
+
 ## Next
 
-Module 198: Ordinary pair-BDH versus residual fourth-moment comparison.
+Module 199: Rectangle/BDH and first-moment HL insufficiency audit.
