@@ -1,4 +1,4 @@
-# Modules 156-257 summary
+# Modules 156-258 summary
 
 ## 156
 
@@ -598,7 +598,16 @@ ledger comparing fixed-support boundary gates with `NarrowMinorArc_3^B` and
 prove boundary gates and boundary gates do not prove minor-arc cancellation
 unless a named localized transfer row is supplied.
 
+## 258
+
+Projected-major reentry gate; defines `BoundaryMajorReentry_258` as a routing
+ledger comparing fixed-support boundary gates with `ProjectedMajorTarget_3^B`,
+`WProjectedLocalMatch_3^major`, and `MajorAnalyticPkg_229`, recording that
+boundary gates can enter only as local or mixed slices of
+`CycIntTransfer_3^major` and cannot prove projected local-model matching,
+model neutrality, or the major target.
+
 ## Next
 
-Module 258: projected-major reentry gate, comparing the boundary obstruction
-with `ProjectedMajorTarget_3^B` and `WProjectedLocalMatch_3^major`.
+Module 259: eighth long-term plan update and branch decision after the
+minor-arc and projected-major reentry comparisons.

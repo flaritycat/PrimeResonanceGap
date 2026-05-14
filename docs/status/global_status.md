@@ -5,7 +5,7 @@ This file is the first status document Codex should read.
 Current frontier:
 
 ```text
-Latest module frontier: Module 257
+Latest module frontier: Module 258
 Active phase: Phase G, fixed-row package feasibility gates
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -41,6 +41,9 @@ Latest project-wide review:
 - A minor-arc reentry comparison showing that boundary gates and
   `NarrowMinorArc_3^B` control different objects unless a localized transfer
   row is supplied.
+- A projected-major reentry comparison showing that fixed boundary gates are
+  only local slices of `CycIntTransfer_3^major`, not proofs of
+  `WProjectedLocalMatch_3^major` or `ProjectedMajorTarget_3^B`.
 
 ## What the project has not proved
 
@@ -53,8 +56,8 @@ Latest project-wide review:
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
-  `BoundaryMinorReentry_257`, `OnePointBIHL_242`, or `TwoPointBIHL_256`
-  outside exact model conventions.
+  `BoundaryMinorReentry_257`, `BoundaryMajorReentry_258`,
+  `OnePointBIHL_242`, or `TwoPointBIHL_256` outside exact model conventions.
 
 ## Current endpoint class
 
@@ -109,6 +112,10 @@ Two-point diagnostic:
 Minor-arc reentry:
   BoundaryMinorReentry_257
     classifies boundary/minor-arc routing
+
+Projected-major reentry:
+  BoundaryMajorReentry_258
+    classifies boundary/projected-major routing
 ```
 
 Status: **CONDITIONAL**.

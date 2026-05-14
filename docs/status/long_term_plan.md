@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 257
-Post-Reflective_1 solving count: 76
-Long-term-plan count: 70
+Latest completed module: 258
+Post-Reflective_1 solving count: 77
+Long-term-plan count: 71
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -649,6 +649,10 @@ Expected work:
 - Module 258: projected-major reentry gate, comparing the boundary
   obstruction with `ProjectedMajorTarget_3^B` and
   `WProjectedLocalMatch_3^major`;
+  completed as `BoundaryMajorReentry_258`, classifying fixed boundary gates
+  as possible local or mixed slices of `CycIntTransfer_3^major` while blocking
+  their use as proofs of `WProjectedLocalMatch_3^major`,
+  `ProjectedModelNeutrality_3^major`, or `ProjectedMajorTarget_3^B`;
 - Module 259: perform the eighth plan update and choose the next branch.
 
 Success criterion: either a concrete fixed-row route to
@@ -720,17 +724,31 @@ Verdict:
   explicit localized trace/side-transfer row is supplied.
 ```
 
+Module 258 completed the projected-major reentry comparison:
+
+```text
+BoundaryMajorReentry_258
+  compares fixed boundary gates with
+  ProjectedMajorTarget_3^B, WProjectedLocalMatch_3^major, and
+  MajorAnalyticPkg_229.
+
+Verdict:
+  boundary gates can enter the projected-major branch only as local or mixed
+  slices of CycIntTransfer_3^major. They do not prove projected local-model
+  matching, model neutrality, or the major target.
+```
+
 Continue with:
 
 ```text
-Module 258: projected-major reentry gate, comparing the boundary obstruction
-with ProjectedMajorTarget_3^B and WProjectedLocalMatch_3^major.
+Module 259: eighth long-term plan update and branch decision after the
+minor-arc and projected-major reentry comparisons.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, not `PROVEN`.
-The module should decide whether the fixed-support boundary gates are local
-transfer rows inside the projected-major branch, endpoint-strength major-arc
-control in disguise, mixed transfer rows, or blocked shortcuts.
+Expected status: `STRUCTURAL / EXTRACTION`, not `PROVEN`.
+The module should update the plan at the 72nd long-term-plan iteration and
+choose whether the next branch attacks a localized projected-major boundary
+slice, a non-boundary major-arc row, a minor-arc row, or pauses Phase G.
 
 It must keep the same fixed row:
 
@@ -742,15 +760,16 @@ same selector class s0,
 fixed dyadic shell D0<|d|<=2D0.
 ```
 
-Module 258 should check:
+Module 259 should check:
 
 ```text
-whether boundary gates are local transfer rows inside projected-major routing,
-whether WProjectedLocalMatch_3^major would dominate them only at
-endpoint-strength,
-which gates belong to MajorAnalyticPkg_229 and which remain separate,
-whether Module 259 should redirect, continue boundary tests, or update the
-project map around major/minor reentry.
+whether the boundary branch has become too narrow or still supplies useful
+local transfer slices,
+whether the next analytic target should be a boundary-transfer slice,
+ResHLErr_major, ProjectedModelNeutrality_3^major, NarrowMinorArc_3^B, or a
+different fixed row,
+how the next 9-iteration window should avoid endpoint-strength assumptions,
+what would count as a stop condition for Phase G.
 ```
 
 Do not prove the prototype by assuming:
