@@ -50,12 +50,13 @@
 | `docs\modules\module_196_first_plan_update.md` | 8436 |
 | `docs\modules\module_197_minor_arc_density_energy.md` | 9170 |
 | `docs\modules\module_198_pair_bdh_residual_fourth_comparison.md` | 8914 |
-| `docs\modules\modules_156_178_summary.md` | 2451 |
+| `docs\modules\module_199_rectangle_hl_insufficiency_audit.md` | 10080 |
+| `docs\modules\modules_156_178_summary.md` | 2674 |
 | `docs\paper\Prime_Resonance_Gap_500_Page_Paper.txt` | 1285247 |
 | `docs\status\endpoint_status.md` | 849 |
 | `docs\status\forbidden_upgrades.md` | 1574 |
 | `docs\status\global_status.md` | 1305 |
-| `docs\status\long_term_plan.md` | 10808 |
+| `docs\status\long_term_plan.md` | 11100 |
 | `docs\status\selector_taxonomy.md` | 1015 |
 | `docs\status\status_ledger.json` | 878 |
 | `experiments\pair_rectangle_statistics\README.md` | 69 |

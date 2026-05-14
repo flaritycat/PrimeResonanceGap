@@ -1,4 +1,4 @@
-# Modules 156-198 summary
+# Modules 156-199 summary
 
 ## 156
 
@@ -124,6 +124,12 @@ Ordinary pair-BDH versus residual fourth-moment comparison; the shortcut is
 blocked unless pair-margin absorption and adaptive residual minor-arc
 restriction are added.
 
+## 199
+
+Rectangle/BDH and first-moment HL insufficiency audit; mean rectangle-HL and
+ordinary rectangle-BDH do not supply residual adaptive minor-arc control
+without named residual, margin, adaptive, and variance-strength packages.
+
 ## Next
 
-Module 199: Rectangle/BDH and first-moment HL insufficiency audit.
+Module 200: Dyadic derivative `U^2` route to minor arcs.

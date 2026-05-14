@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 198
-Post-Reflective_1 solving count: 17
-Long-term-plan count: 11
+Latest completed module: 199
+Post-Reflective_1 solving count: 18
+Long-term-plan count: 12
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -161,6 +161,9 @@ Expected modules:
   restriction are added;
 - Module 199: audit rectangle-BDH and first-moment Hardy-Littlewood
   insufficiency;
+  completed as a blocked-shortcut audit: mean rectangle-HL and ordinary
+  rectangle-BDH do not supply residual adaptive minor-arc control unless
+  upgraded by named residual, margin, adaptive, and variance-strength packages;
 - Module 200: test whether a dyadic derivative `U^2` package gives the needed
   decay;
 - Module 201: build the minor-arc spectral large-spectrum obstruction map;
@@ -277,29 +280,31 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 199: Rectangle/BDH and first-moment HL insufficiency audit.
+Module 200: Dyadic derivative U^2 route to minor arcs.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION` or `FALSE / BLOCKED`.
+Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 198 blocked the ordinary pair-BDH shortcut. Pair-centered control for
-`R_d=P_d-kappa_w(d)` does not by itself give the residual minor-arc criterion
-for:
+Module 199 blocked the ordinary rectangle/HL shortcuts. The next module should
+test whether the dyadic derivative `U^2` formulation gives a cleaner route to
+the minor-arc target:
 
 ```text
 B_d(n)=f(n+d)conj(f(n)).
 ```
 
-The missing terms are the linear margin and adaptive restriction transfer:
+The comparison should distinguish:
 
 ```text
-L_d(n)=f(n+d)+conj(f(n)),
-R_{2,B}^minor(rho;D) <= Psi_*(rho;D).
+DyadicDerivativeU^2 as an endpoint-equivalent formulation,
+minor-arc adaptive restriction for B_d,
+linear-margin and selector-transfer side packages.
 ```
 
-The next module should audit two nearby temptations:
+It should not treat endpoint equivalence as an analytic estimate. The key
+question is whether dyadic derivative `U^2` supplies new minor-arc information
+or merely renames:
 
 ```text
-rectangle-BDH as a substitute for residual adaptive minor-arc control,
-first-moment Hardy-Littlewood as a substitute for variance-strength control.
+sum_{xi in Minor(R,eta)} |widehat{B_d}(xi)|^4.
 ```
