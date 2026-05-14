@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 188
-Post-Reflective_1 solving count: 7
-Long-term-plan count: 1
+Latest completed module: 189
+Post-Reflective_1 solving count: 8
+Long-term-plan count: 2
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -122,7 +122,8 @@ Expected modules:
 
 - Module 188: overflow estimate for large total collision load; completed as a
   conditional criterion;
-- Module 189: exponential-moment criterion for beta-load sums;
+- Module 189: exponential-moment criterion for beta-load sums; completed as a
+  conditional joint-divisibility criterion;
 - Module 190: kernel absolute-mass and range audit for major projection;
 - Module 191: W-limit order and generic tail uniformity;
 - Module 192: averaged collision-defect bound under the qualified envelope;
@@ -257,15 +258,15 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 189: Exponential-moment criterion for beta-load sums.
+Module 190: Kernel absolute-mass and range audit for major projection.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`, unless a complete
 proof is actually supplied.
 
-The key question is whether the uniform exponential-integrability or
-high-moment hypotheses isolated in Module 188 can be reduced to feasible joint
-divisor estimates for the projected pair-difference forms.
+The key question is whether the absolute projected kernel has enough mass and
+range control to support the Module 189 joint-divisibility criterion without
+burying large-modulus losses in the error term.
 
 The overflow region remains:
 

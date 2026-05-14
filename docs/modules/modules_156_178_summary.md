@@ -1,4 +1,4 @@
-# Modules 156-188 summary
+# Modules 156-189 summary
 
 ## 156
 
@@ -80,6 +80,10 @@ Local-factor collision envelope for projected singular models.
 
 Overflow estimate for large collision load.
 
+## 189
+
+Exponential-moment criterion for beta-load sums.
+
 ## Next
 
-Module 189: Exponential-moment criterion for beta-load sums.
+Module 190: Kernel absolute-mass and range audit for major projection.

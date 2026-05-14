@@ -203,14 +203,16 @@ local projected singular factors
 ```
 
 Module 188 supplies a conditional overflow criterion for the region `B_w>1`.
-The remaining work is to verify its exponential-integrability or high-moment
-hypotheses for the actual projected kernel.
+Module 189 reduces one exponential-integrability route to a joint
+union-divisibility criterion. The remaining work is to verify that criterion
+for the actual projected kernel.
 
 ## 8. What remains open
 
 This module does not prove:
 
-- verification of the Module 188 overflow hypotheses for `B_w>1`;
+- verification of the Module 189 joint-divisibility criterion behind the
+  Module 188 overflow hypotheses for `B_w>1`;
 - the averaged collision-defect bound under the exponential envelope;
 - projected local-model matching for the actual major-arc cube;
 - minor-arc large-spectrum decay;

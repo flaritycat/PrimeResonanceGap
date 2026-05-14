@@ -230,9 +230,10 @@ E_abs B_w^q
       E_abs prod_{a=1}^q 1_{p_a | L_{j_a}}.
 ```
 
-This is the exact arithmetic target behind the overflow estimate. Any claimed
-overflow proof must control these joint congruence probabilities with the
-actual projected kernel weights and with structural strata removed.
+This is the exact arithmetic target behind the overflow estimate. Module 189
+packages it as a joint union-divisibility criterion for exponential moments.
+Any claimed overflow proof must control these joint congruence probabilities
+with the actual projected kernel weights and with structural strata removed.
 
 ## 6. Edge cases
 
@@ -267,16 +268,15 @@ first-moment divisor averages
   -> licensed return to the linear envelope.
 ```
 
-This keeps the major-arc branch conditional but better specified. The next
-natural task is to test whether the required exponential integrability follows
-from feasible joint divisor-moment estimates for the projected pair-difference
-forms.
+This keeps the major-arc branch conditional but better specified. Module 189
+gives a sufficient joint-divisibility criterion for the required exponential
+integrability.
 
 ## 8. What remains open
 
 This module does not prove:
 
-- uniform exponential integrability of `B_w`;
+- verification of the Module 189 joint-divisibility criterion for `B_w`;
 - the high-moment divisor estimates needed when `R_w(N)` grows;
 - kernel absolute-mass bounds for the actual major-arc projection;
 - negligibility of all structural and boundary regions;
