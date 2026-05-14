@@ -198,7 +198,14 @@ then `w -> infinity` limit order and explicit residual-HL, structural,
 collision, boundary, W-residue, prime-power, projection-boundary, and selector
 error slots.
 
+## 210
+
+Cyclic-to-interval boundary transfer for the projected major-arc model; defines
+`CycIntTransfer_3^major(P_adm)` with actual/model boundary, wraparound,
+kernel-tail, cutoff, normalization, zero-mode leakage, and W-residue boundary
+errors separated.
+
 ## Next
 
-Module 210: Cyclic-to-interval boundary transfer for the projected major-arc
+Module 211: Prime-power and small-prime removal for the projected major-arc
 model.

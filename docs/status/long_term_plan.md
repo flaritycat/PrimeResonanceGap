@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 209
-Post-Reflective_1 solving count: 28
-Long-term-plan count: 22
+Latest completed module: 210
+Post-Reflective_1 solving count: 29
+Long-term-plan count: 23
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -231,6 +231,10 @@ Expected work:
   prime-power, projection-boundary, and selector error slots;
 - Module 210: audit cyclic-to-interval boundary transfer for the projected
   major-arc model;
+  completed as `CycIntTransfer_3^major(P_adm)`, a conditional package tracking
+  actual and model boundary errors, wraparound, kernel tails, cutoff mismatch,
+  normalization transfer, zero-mode leakage, and W-residue boundary
+  compatibility;
 - Module 211: audit prime-power and small-prime removal for the projected
   major-arc model;
 - Module 212: check compatibility between pair, rectangle, and projected cube
@@ -329,30 +333,28 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 210: Cyclic-to-interval boundary transfer for the projected major-arc
+Module 211: Prime-power and small-prime removal for the projected major-arc
 model.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 209 fixed the W-admissible matching theorem schema:
+Module 210 fixed the interval-transfer side package:
 
 ```text
-WProjectedLocalMatch_3^major(P_adm).
+CycIntTransfer_3^major(P_adm).
 ```
 
-The next module should audit the cyclic-to-interval transfer for the projected
-major-arc model. In particular it should track:
+The next module should audit prime powers and small-prime artifacts for the
+projected major-arc model. In particular it should track:
 
 ```text
-wraparound pairs,
-vertices moved outside the interval by d,h,k,t,
-kernel truncation and long tails,
-sharp versus smoothed interval cutoffs,
-zero-mode preservation,
-uniformity over D,R,eta,P_M,H,K,T.
+which parts are absorbed by the W-trick,
+which prime-power terms remain in the actual weight,
+whether removal is in projected fourth-moment norm or only first moment,
+interaction with Omega_w^proj and boundary transfer,
+uniformity over D,R,eta,P_M,H,K,T and the fixed-w limit order.
 ```
 
-In particular, it must not treat a cyclic Fourier identity as an interval
-estimate without an explicit boundary error in the projected fourth-moment
-normalization.
+In particular, it must not treat prime-power negligibility in ordinary first
+moment as enough for projected residual fourth-moment matching.
