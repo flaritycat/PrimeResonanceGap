@@ -1,4 +1,4 @@
-# Modules 156-225 summary
+# Modules 156-226 summary
 
 ## 156
 
@@ -328,7 +328,14 @@ and reduces its smallness to `AbsMajorant_225`, `KernelAbsTail_225`,
 `WPPBoundary_225`, and the normalization row, while recording why
 first-moment boundary counting is insufficient.
 
+## 226
+
+Boundary/prefix row verdict; defines `LocalBdPkg_226` and classifies
+`BdPrefRow_224^P` as conditional local only under genuine weighted
+boundary-support saving, mixed if extra transfer rows enter, and
+endpoint-strength if proved by assuming unlocalized projected residual
+fourth-moment control.
+
 ## Next
 
-Module 226: Decide whether the fixed boundary/prefix row is plausibly local,
-conditional but mixed, or blocked as endpoint-strength.
+Module 227: Build the endpoint-equivalence arrow inventory.

@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 225
-Post-Reflective_1 solving count: 44
-Long-term-plan count: 38
+Latest completed module: 226
+Post-Reflective_1 solving count: 45
+Long-term-plan count: 39
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -366,6 +366,10 @@ Expected work:
   `NormRow_224^P=o_W(1)`;
 - Module 226: decide whether the fixed boundary/prefix row is plausibly local,
   conditional, or blocked as endpoint-strength under the available envelopes;
+  completed with verdict `LocalBdPkg_226 => BdPrefRow_224^P=o_W(1)`, so the
+  row is conditional local only under genuine weighted boundary-support
+  saving, mixed if additional transfer rows enter, and endpoint-strength if
+  proved by assuming unlocalized projected residual fourth-moment control;
 - Module 227: build the endpoint-equivalence arrow inventory from the residual
   cube branch back to `RBDH_pair_short`, `CPC_3^sharp`, `SPAC_2^sharp`,
   `SU2Pair_2^sharp`, `DyadicDerivativeU^2`, and `AU^3`;
@@ -434,49 +438,52 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 226: Classify the fixed boundary/prefix row verdict.
+Module 227: Build the endpoint-equivalence arrow inventory.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 225 expanded the fixed test row:
+Module 226 completed the local-row verdict:
 
 ```text
-BdPrefRow_224^P(s0,D0;N,w,rho0)
+LocalBdPkg_226
+  => BdPrefRow_224^P(s0,D0;N,w,rho0)=o_W(1).
 ```
 
-into boundary-marked residual fourth-moment envelopes:
+The row is now classified as:
 
 ```text
-AbsMajorant_225(s0),
-KernelAbsTail_225(P_M,T0),
-BoundaryTupleHL_225(S,lambda),
-BoundaryModelMass_225(S,lambda),
-WPPBoundary_225,
-NormRow_224^P.
+conditional local under genuine weighted boundary-support saving;
+mixed if major/minor, denominator, W-residue, prime-power, zero-mode, or
+  selector-transfer rows enter;
+endpoint-strength if proved by assuming unlocalized projected residual
+  fourth-moment control.
 ```
 
-Module 225 did not prove these envelopes. It also sharpened the warning that
-first-moment boundary counting is insufficient once the absolute row contains
-up to eight prime-type weights and `|W_M|`.
-
-Module 226 should now decide whether the fixed row is:
+Module 227 should now begin the endpoint-equivalence audit. It should build
+only an inventory of arrows, not prove them. The inventory should include:
 
 ```text
-plausibly local,
-conditional but mixed,
-or blocked as endpoint-strength.
+ResCube_3^sharp,
+RBDH_pair_short,
+CPC_3^sharp,
+SPAC_2^sharp,
+SU2Pair_2^sharp,
+DyadicDerivativeU^2,
+AU^3.
 ```
 
-The decision should be based on whether the needed boundary-marked tuple
-estimates are smaller than the residual endpoint or merely repackage it. In
-particular, check:
+For each arrow, record:
 
 ```text
-whether the boundary support gives a genuine o(1) volume saving after weights;
-whether kernel absolute mass is acceptable for the chosen P_M;
-whether structural collisions on the boundary are lower-dimensional or
-  endpoint-strength;
-whether W-residue, prime-power, zero-mode, and normalization rows remain local;
-whether a first useful theorem should state the row as a conditional package.
+direction;
+source and target statement;
+whether the arrow is exact algebra, structural extraction, conditional
+  analytic implication, or open;
+which side packages are needed;
+which selector class is being used;
+where LocalBdPkg_226 or other boundary-transfer rows enter.
 ```
+
+Do not label any endpoint arrow as `PROVEN` unless the ledger already proves
+it. The expected output is a map, not a closure theorem.
