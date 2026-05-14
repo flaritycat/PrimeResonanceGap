@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 208
-Post-Reflective_1 solving count: 27
-Long-term-plan count: 21
+Latest completed module: 209
+Post-Reflective_1 solving count: 28
+Long-term-plan count: 22
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -225,6 +225,10 @@ Expected work:
   prime-power strata;
 - Module 209: formulate the W-admissible projected local-model theorem with
   all limit orders, uniformity ranges, and denominator restrictions;
+  completed as `WProjectedLocalMatch_3^major(P_adm)`, a conditional theorem
+  schema with the fixed-`w`, `N -> infinity`, then `w -> infinity` limit
+  order and explicit residual-HL, structural, collision, boundary, W-residue,
+  prime-power, projection-boundary, and selector error slots;
 - Module 210: audit cyclic-to-interval boundary transfer for the projected
   major-arc model;
 - Module 211: audit prime-power and small-prime removal for the projected
@@ -325,31 +329,30 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 209: W-admissible projected local-model theorem.
+Module 210: Cyclic-to-interval boundary transfer for the projected major-arc
+model.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 208 fixed the projected collision stratification:
+Module 209 fixed the W-admissible matching theorem schema:
 
 ```text
-B_w^red(d,h,k;t),
-Z_struct,
-C_p(L),
-boundary/kernel-tail strata.
+WProjectedLocalMatch_3^major(P_adm).
 ```
 
-The next module should state the exact W-admissible theorem that would turn
-the projected local model into a usable major-arc input. In particular it
-should specify:
+The next module should audit the cyclic-to-interval transfer for the projected
+major-arc model. In particular it should track:
 
 ```text
-the fixed-w then N->infinity then w->infinity limit order,
-uniformity over D,R,eta,P_M,H,K,T,
-which model-matching errors are averaged absolutely,
-how structural, collision, boundary, W-residue, and prime-power errors enter,
-which assumptions are conditional rather than proved.
+wraparound pairs,
+vertices moved outside the interval by d,h,k,t,
+kernel truncation and long tails,
+sharp versus smoothed interval cutoffs,
+zero-mode preservation,
+uniformity over D,R,eta,P_M,H,K,T.
 ```
 
-In particular, it must not convert local Euler-factor definitions or collision
-stratification into actual projected local-model matching.
+In particular, it must not treat a cyclic Fourier identity as an interval
+estimate without an explicit boundary error in the projected fourth-moment
+normalization.

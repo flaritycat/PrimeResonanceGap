@@ -60,12 +60,13 @@
 | `docs\modules\module_206_exact_projected_major_arc_target.md` | 12245 |
 | `docs\modules\module_207_projected_local_model_factors.md` | 11219 |
 | `docs\modules\module_208_projected_collision_hyperplanes.md` | 10157 |
-| `docs\modules\modules_156_178_summary.md` | 4930 |
+| `docs\modules\module_209_w_admissible_projected_local_model.md` | 13021 |
+| `docs\modules\modules_156_178_summary.md` | 5264 |
 | `docs\paper\Prime_Resonance_Gap_500_Page_Paper.txt` | 1285247 |
 | `docs\status\endpoint_status.md` | 849 |
 | `docs\status\forbidden_upgrades.md` | 1574 |
 | `docs\status\global_status.md` | 1305 |
-| `docs\status\long_term_plan.md` | 14016 |
+| `docs\status\long_term_plan.md` | 14214 |
 | `docs\status\selector_taxonomy.md` | 1015 |
 | `docs\status\status_ledger.json` | 878 |
 | `experiments\pair_rectangle_statistics\README.md` | 69 |

@@ -190,6 +190,15 @@ the 28 labeled pair collisions to a 19-form projected affine list and separates
 structural zero strata, large-prime congruence strata, boundary/kernel-tail
 strata, W-residue strata, and prime-power strata.
 
+## 209
+
+W-admissible projected local-model theorem schema; defines
+`WProjectedLocalMatch_3^major(P_adm)` with the fixed-`w`, `N -> infinity`,
+then `w -> infinity` limit order and explicit residual-HL, structural,
+collision, boundary, W-residue, prime-power, projection-boundary, and selector
+error slots.
+
 ## Next
 
-Module 209: W-admissible projected local-model theorem.
+Module 210: Cyclic-to-interval boundary transfer for the projected major-arc
+model.
