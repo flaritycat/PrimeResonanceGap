@@ -7,7 +7,7 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 290
+Latest module frontier: Module 291
 Active phase: Phase K, adaptive-shell gain triage
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -61,6 +61,7 @@ modules/
   module_288_selection_complexity_audit.md
   module_289_uniform_fiber_stress.md
   module_290_phase_k_adaptive_shell_verdict.md
+  module_291_phase_k_status_cleanup.md
   modules_156_178_summary.md
 
 reviews/

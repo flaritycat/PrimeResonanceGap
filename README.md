@@ -92,7 +92,9 @@ adaptive-shell inputs. The first Phase K audit isolates the direct-shell
 by themselves supply a low-complexity selection theorem; the third blocks a
 row/column-only uniform-fiber gain and isolates a weighted subgraph target.
 The Phase K verdict now records that these tests do not close the adaptive
-shell target with current tools.
+shell target with current tools. The cleanup packet now blocks another
+same-tools Phase K pass and sets the exact question for the next plan
+challenge.
 
 ## Whole Project Map
 
@@ -292,7 +294,7 @@ The current active phase is **Phase K: adaptive-shell gain triage**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 290
+Latest module frontier: Module 291
 Active phase: Phase K, adaptive-shell gain triage after the Phase J block
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -364,19 +366,23 @@ Module 290:
   selection-transfer, and uniform-fiber routes all remain open at current
   strength, so PhaseKCurrentClosure_290 is FALSE / BLOCKED while
   AdaptiveShellGainP0_285 remains open.
+
+Module 291:
+  cleaned up the Phase K status map and prepared ChallengePacket_291 for the
+  seventh plan challenge. Continuing Phase K without a new input is now
+  explicitly blocked.
 ```
 
 The next planned module is:
 
 ```text
-Module 291:
-  clean up the Phase K status map and prepare the exact question for the
-  seventh plan challenge in Module 292.
+Module 292:
+  perform the seventh plan challenge using ChallengePacket_291.
 ```
 
-The next cleanup should avoid another relabeling of `Xi_273^0` and instead
-decide which smaller target, if any, is worth challenging in the next plan
-review.
+The challenge should decide whether to attempt direct-shell cross terms,
+selection complexity, weighted row/column subgraphs, side-package work, or to
+pause Phase K and redirect.
 
 ## What Is Proved?
 
@@ -575,6 +581,9 @@ wins.
 | `WeightedRCSubgraphGain_289(P_minor^0)` | OPEN | Would need structured residual Fourier control of weighted row/column subgraphs |
 | `PhaseKAdaptiveShellVerdict_290(P_minor^0)` | STRUCTURAL / EXTRACTION | Phase K current closure verdict recorded |
 | `PhaseKCurrentClosure_290` | FALSE / BLOCKED | Direct-shell, selection, and uniform-fiber Phase K tests do not prove `AdaptiveShellGainP0_285` |
+| `PhaseKStatusCleanup_291(P_minor^0)` | STRUCTURAL / EXTRACTION | Phase K status map cleaned and Module 292 challenge packet prepared |
+| `ContinuePhaseKWithoutNewInput_291` | FALSE / BLOCKED | Repeating the same Phase K tests cannot prove `AdaptiveShellGainP0_285` |
+| `ChallengePacket_291` | STRUCTURAL / EXTRACTION | Decision packet for the seventh plan challenge |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

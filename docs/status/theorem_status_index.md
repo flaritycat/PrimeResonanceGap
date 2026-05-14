@@ -82,6 +82,9 @@ FALSE / BLOCKED
 | `WeightedRCSubgraphGain_289(P_minor^0)` | OPEN | Requires structured residual Fourier control of weighted row/column subgraphs with compatible losses | `module_289_uniform_fiber_stress.md` | No |
 | `PhaseKAdaptiveShellVerdict_290(P_minor^0)` | STRUCTURAL / EXTRACTION | Gives the Phase K proof-or-blocked verdict for the adaptive-shell gain attempt | `module_290_phase_k_adaptive_shell_verdict.md` | Only as a verdict |
 | `PhaseKCurrentClosure_290` | FALSE / BLOCKED | Current Phase K direct-shell, selection, and uniform-fiber tests do not prove `AdaptiveShellGainP0_285` | `module_290_phase_k_adaptive_shell_verdict.md` | No |
+| `PhaseKStatusCleanup_291(P_minor^0)` | STRUCTURAL / EXTRACTION | Cleans Phase K status map and prepares the Module 292 challenge packet | `module_291_phase_k_status_cleanup.md` | Only as steering |
+| `ContinuePhaseKWithoutNewInput_291` | FALSE / BLOCKED | Repeating the same Phase K route tests without a new theorem cannot close `AdaptiveShellGainP0_285` | `module_291_phase_k_status_cleanup.md` | No |
+| `ChallengePacket_291` | STRUCTURAL / EXTRACTION | Decision packet for the seventh plan challenge | `module_291_phase_k_status_cleanup.md` | Only as steering |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

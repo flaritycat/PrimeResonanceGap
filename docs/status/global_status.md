@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 290
+Latest module frontier: Module 291
 Active phase: Phase K, adaptive-shell gain triage
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -154,6 +154,9 @@ Latest project-wide review:
   `PhaseKAdaptiveShellVerdict_290(P_minor^0)`, recording
   `PhaseKCurrentClosure_290=FALSE / BLOCKED` while leaving
   `AdaptiveShellGainP0_285` open.
+- A Phase K cleanup packet `PhaseKStatusCleanup_291(P_minor^0)`, blocking
+  continuation without a new input and preparing `ChallengePacket_291` for
+  the seventh plan challenge.
 
 ## What the project has not proved
 
@@ -216,6 +219,8 @@ Latest project-wide review:
   uniform-fiber theorem beyond deterministic row/column ceilings.
 - `PhaseKCurrentClosure_290`; the Phase K direct-shell, selection, and
   uniform-fiber tests do not close `AdaptiveShellGainP0_285`.
+- `ContinuePhaseKWithoutNewInput_291`; repeating Modules 287-290 with new
+  labels is blocked.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -403,12 +408,17 @@ Completed Phase K adaptive-shell gain verdict:
     records PhaseKCurrentClosure_290 as FALSE / BLOCKED while keeping
     AdaptiveShellGainP0_285 open
 
+Completed Phase K cleanup:
+  PhaseKStatusCleanup_291(P_minor^0)
+    records ContinuePhaseKWithoutNewInput_291 as FALSE / BLOCKED and prepares
+    ChallengePacket_291 for the seventh plan challenge
+
 Active Phase K target:
   AdaptiveShellGainP0_285 over P_minor^0
-    next clean up the Phase K status map before the plan challenge
+    next perform the seventh plan challenge
 
 Next scheduled check:
-  Module 291 Phase K cleanup / challenge preparation
+  Module 292 PlanChallenge_7 using ChallengePacket_291
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the active Phase K steering step;

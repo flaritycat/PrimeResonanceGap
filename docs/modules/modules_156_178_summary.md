@@ -1,4 +1,4 @@
-# Modules 156-290 summary
+# Modules 156-291 summary
 
 ## 156
 
@@ -866,7 +866,13 @@ Phase K adaptive-shell gain verdict; defines
 `AdaptiveShellGainP0_285`, `PhaseKernelBound_273^0`, and the three smaller
 Phase K targets open.
 
+## 291
+
+Phase K status cleanup and challenge packet; defines
+`PhaseKStatusCleanup_291(P_minor^0)`, records
+`ContinuePhaseKWithoutNewInput_291` as `FALSE / BLOCKED`, and prepares
+`ChallengePacket_291` for the seventh plan challenge.
+
 ## Next
 
-Module 291: clean up the Phase K status map and prepare the exact question
-for the seventh plan challenge in Module 292.
+Module 292: perform the seventh plan challenge using `ChallengePacket_291`.
