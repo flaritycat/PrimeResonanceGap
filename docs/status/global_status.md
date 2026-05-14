@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 289
+Latest module frontier: Module 290
 Active phase: Phase K, adaptive-shell gain triage
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -150,6 +150,10 @@ Latest project-wide review:
 - A uniform-fiber stress test `UniformFiberStress_289(P_minor^0)`, blocking
   row/column-only uniform-fiber gain and isolating
   `WeightedRCSubgraphGain_289` as the remaining structured target.
+- A Phase K adaptive-shell gain verdict
+  `PhaseKAdaptiveShellVerdict_290(P_minor^0)`, recording
+  `PhaseKCurrentClosure_290=FALSE / BLOCKED` while leaving
+  `AdaptiveShellGainP0_285` open.
 
 ## What the project has not proved
 
@@ -210,6 +214,8 @@ Latest project-wide review:
   entropy/stopping-time/sparse/VC theorem for the adaptive shell class.
 - `WeightedRCSubgraphGain_289`, `UniformFiberBound_280`, or any nontrivial
   uniform-fiber theorem beyond deterministic row/column ceilings.
+- `PhaseKCurrentClosure_290`; the Phase K direct-shell, selection, and
+  uniform-fiber tests do not close `AdaptiveShellGainP0_285`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -392,12 +398,17 @@ Completed Phase K uniform-fiber stress test:
     records row/column-only uniform-fiber gain as blocked while keeping
     WeightedRCSubgraphGain_289 open
 
+Completed Phase K adaptive-shell gain verdict:
+  PhaseKAdaptiveShellVerdict_290(P_minor^0)
+    records PhaseKCurrentClosure_290 as FALSE / BLOCKED while keeping
+    AdaptiveShellGainP0_285 open
+
 Active Phase K target:
   AdaptiveShellGainP0_285 over P_minor^0
-    next give the Phase K proof-or-blocked verdict
+    next clean up the Phase K status map before the plan challenge
 
 Next scheduled check:
-  Module 290 AdaptiveShellGainP0 verdict
+  Module 291 Phase K cleanup / challenge preparation
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the active Phase K steering step;

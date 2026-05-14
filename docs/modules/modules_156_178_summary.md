@@ -1,4 +1,4 @@
-# Modules 156-289 summary
+# Modules 156-290 summary
 
 ## 156
 
@@ -858,7 +858,15 @@ uniform-fiber gain route by showing it reproduces deterministic ceilings, and
 isolates `WeightedRCSubgraphGain_289(P_minor^0)` as the remaining open
 structured target.
 
+## 290
+
+Phase K adaptive-shell gain verdict; defines
+`PhaseKAdaptiveShellVerdict_290(P_minor^0)`, records
+`PhaseKCurrentClosure_290` as `FALSE / BLOCKED`, and keeps
+`AdaptiveShellGainP0_285`, `PhaseKernelBound_273^0`, and the three smaller
+Phase K targets open.
+
 ## Next
 
-Module 290: give the Phase K `AdaptiveShellGainP0_285` verdict after the
-direct-shell, selection-complexity, and uniform-fiber tests.
+Module 291: clean up the Phase K status map and prepare the exact question
+for the seventh plan challenge in Module 292.

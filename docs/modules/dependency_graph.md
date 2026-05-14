@@ -37,7 +37,8 @@ flowchart TD
   SelectionComplexity["SelectionComplexityAudit_288<br/>audit STRUCTURAL; complexity gain OPEN"]
   UniformFiberStress["UniformFiberStress_289<br/>audit STRUCTURAL; row/column-only gain BLOCKED"]
   WeightedRCSubgraph["WeightedRCSubgraphGain_289<br/>OPEN"]
-  AdaptiveVerdict290["AdaptiveShellGain verdict_290<br/>next diagnostic"]
+  AdaptiveVerdict290["PhaseKAdaptiveShellVerdict_290<br/>current closure BLOCKED"]
+  PhaseKCleanup291["PhaseKStatusCleanup_291<br/>next diagnostic"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -101,6 +102,7 @@ flowchart TD
   UniformFiberStress --> AdaptiveVerdict290
   UniformFiberStress --> AdaptiveShellP0
   AdaptiveVerdict290 --> AdaptiveShellP0
+  AdaptiveVerdict290 --> PhaseKCleanup291
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -164,3 +166,6 @@ flowchart TD
 - `UniformFiberStress_289` blocks row/column-only uniform-fiber gain; a
   useful uniform route would need `WeightedRCSubgraphGain_289` or another
   same-family residual-structure theorem.
+- `PhaseKAdaptiveShellVerdict_290` records that the current Phase K package
+  does not prove `AdaptiveShellGainP0_285`; the local target and all endpoint
+  objects remain open.

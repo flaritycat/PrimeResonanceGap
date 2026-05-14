@@ -91,6 +91,8 @@ adaptive-shell inputs. The first Phase K audit isolates the direct-shell
 `TT*` cross-term gain as open; the second shows that row/column caps do not
 by themselves supply a low-complexity selection theorem; the third blocks a
 row/column-only uniform-fiber gain and isolates a weighted subgraph target.
+The Phase K verdict now records that these tests do not close the adaptive
+shell target with current tools.
 
 ## Whole Project Map
 
@@ -290,7 +292,7 @@ The current active phase is **Phase K: adaptive-shell gain triage**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 289
+Latest module frontier: Module 290
 Active phase: Phase K, adaptive-shell gain triage after the Phase J block
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -356,19 +358,25 @@ Module 289:
   stress-tested the uniform-fiber route over row/column-admissible shells.
   Row/column-only data reproduce deterministic ceilings rather than a gain;
   WeightedRCSubgraphGain_289 is the remaining open structured target.
+
+Module 290:
+  gave the Phase K adaptive-shell gain verdict. Direct-shell,
+  selection-transfer, and uniform-fiber routes all remain open at current
+  strength, so PhaseKCurrentClosure_290 is FALSE / BLOCKED while
+  AdaptiveShellGainP0_285 remains open.
 ```
 
 The next planned module is:
 
 ```text
-Module 290:
-  give the Phase K AdaptiveShellGainP0 verdict after the direct-shell,
-  selection-complexity, and uniform-fiber stress tests.
+Module 291:
+  clean up the Phase K status map and prepare the exact question for the
+  seventh plan challenge in Module 292.
 ```
 
-The next audit should decide whether Phase K has found a viable new
-same-family input or whether `AdaptiveShellGainP0_285` remains open with all
-three tested routes blocked at current strength.
+The next cleanup should avoid another relabeling of `Xi_273^0` and instead
+decide which smaller target, if any, is worth challenging in the next plan
+review.
 
 ## What Is Proved?
 
@@ -565,6 +573,8 @@ wins.
 | `UniformFiberStress_289(P_minor^0)` | STRUCTURAL / EXTRACTION | Uniform-fiber route stress-tested over row/column shells |
 | `RowColumnOnlyUniformFiberGain_289` | FALSE / BLOCKED | Row/column data alone reproduce deterministic ceilings |
 | `WeightedRCSubgraphGain_289(P_minor^0)` | OPEN | Would need structured residual Fourier control of weighted row/column subgraphs |
+| `PhaseKAdaptiveShellVerdict_290(P_minor^0)` | STRUCTURAL / EXTRACTION | Phase K current closure verdict recorded |
+| `PhaseKCurrentClosure_290` | FALSE / BLOCKED | Direct-shell, selection, and uniform-fiber Phase K tests do not prove `AdaptiveShellGainP0_285` |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
