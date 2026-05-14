@@ -66,6 +66,9 @@ FALSE / BLOCKED
 | `ThresholdBudgetP0Audit_284(P_minor^0)` | STRUCTURAL / EXTRACTION | Names row, column, shell-counting, removal, optimized-barrier, and low-level threshold budget tests | `module_284_pminor0_threshold_budget.md` | Only as an audit |
 | `ThresholdBudgetP0Closure_284(q,r)` | OPEN | Requires `LowLevelBudgetP0_284`, removal budgets, and row/column/shell-counting budgets to be `o_W(1)` in the same threshold schedule | `module_284_pminor0_threshold_budget.md` | No |
 | `RowBarrierP0_284 / ColumnBarrierP0_284 / SigmaColumnBarrierP0_284` | OPEN | Optimized threshold barriers are diagnostics; moment estimates and W-uniformity missing | `module_284_pminor0_threshold_budget.md` | No |
+| `AdaptiveShellVerdict_285(P_minor^0)` | STRUCTURAL / EXTRACTION | Proof-or-blocked verdict for the current Phase J adaptive-shell package | `module_285_adaptive_shell_verdict.md` | Only as a verdict |
+| `CurrentToolsCloseP0_285` | FALSE / BLOCKED | Existing fixed-set, Bessel, threshold, side-row, and degeneracy tools do not prove `PhaseKernelBound_273^0` | `module_285_adaptive_shell_verdict.md` | No |
+| `AdaptiveShellGainP0_285` | OPEN | Would require a new same-family uniform-fiber, selection-transfer, or direct-shell theorem with compatible side and threshold losses | `module_285_adaptive_shell_verdict.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

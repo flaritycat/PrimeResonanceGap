@@ -31,7 +31,8 @@ flowchart TD
   DegRowsP0["DegRowsP0Audit_282(P_minor^0)<br/>audit STRUCTURAL; smallness OPEN"]
   SideRowsP0["SideRowsP0Audit_283(P_minor^0)<br/>audit STRUCTURAL; ready package OPEN"]
   ThresholdP0["ThresholdBudgetP0Audit_284<br/>audit STRUCTURAL; closure OPEN"]
-  AdaptiveShellP0["Adaptive shell selection in P_minor^0_285<br/>next diagnostic"]
+  AdaptiveShellP0["AdaptiveShellVerdict_285<br/>current tools BLOCKED; gain OPEN"]
+  PlanUpdate11["PlanUpdate_11_286<br/>next steering update"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -83,6 +84,7 @@ flowchart TD
   ThresholdP0 --> PhaseKernel0
   AdaptiveShellP0 --> PhaseKernel0
   AdaptiveShellP0 --> FixedShellTransfer
+  AdaptiveShellP0 --> PlanUpdate11
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -130,3 +132,6 @@ flowchart TD
 - `ThresholdBudgetP0Audit_284` names the threshold budgets and optimized
   barriers required inside `P_minor^0`; these barriers are diagnostics, not
   estimates.
+- `AdaptiveShellVerdict_285` marks the current Phase J tool package as
+  blocked for `PhaseKernelBound_273^0`; it does not disprove the local target
+  or any endpoint.

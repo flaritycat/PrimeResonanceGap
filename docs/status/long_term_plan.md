@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 284
-Post-Reflective_1 solving count: 103
-Long-term-plan count: 97
+Latest completed module: 285
+Post-Reflective_1 solving count: 104
+Long-term-plan count: 98
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -929,6 +929,9 @@ Expected work:
 - Module 285: decide whether adaptive shell selection still provides a
   plausible non-endpoint route, or give a proof-or-blocked verdict for
   `PhaseKernelBound_273^0` with the current Phase J tools;
+  completed as `AdaptiveShellVerdict_285(P_minor^0)`, recording
+  `CurrentToolsCloseP0_285=FALSE / BLOCKED` while keeping
+  `PhaseKernelBound_273^0` and `AdaptiveShellGainP0_285` open;
 - Module 286: perform the eleventh plan update.
 
 Success criterion: Phase J either produces a concrete non-endpoint candidate
@@ -1625,4 +1628,58 @@ Module 285:
   decide whether adaptive shell selection still offers a non-endpoint route,
   or whether the current Phase J package should receive a proof-or-blocked
   verdict for PhaseKernelBound_273^0.
+```
+
+Module 285 completed:
+
+```text
+AdaptiveShellVerdict_285(P_minor^0)
+  records the current Phase J adaptive-shell tool package as blocked.
+```
+
+The exact blocked claim is:
+
+```text
+CurrentToolsCloseP0_285 = FALSE / BLOCKED.
+```
+
+The mathematical target is not disproved:
+
+```text
+PhaseKernelBound_273^0 remains OPEN.
+AdaptiveShellGainP0_285 remains OPEN.
+```
+
+It preserves these statuses:
+
+```text
+UniformFiberBound_280,
+SelectionTransfer_280,
+DirectShellBound_280,
+FixedSetShellTransfer_280,
+ThresholdBudgetP0Closure_284(q,r),
+SideRowsP0Ready_283,
+ShellSelectionP0_283,
+DegRowsP0Small_282,
+PhaseKernelBound_273^0,
+PhaseKernelBound_273,
+TransverseGateProofPkg_276,
+TransIncBound_269,
+MinorArcTransfer_3^B,
+NarrowMinorArc_3^B,
+selector transfer,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3
+remain unproved.
+```
+
+Continue with:
+
+```text
+Module 286:
+  perform the eleventh plan update, deciding whether to attempt a new
+  AdaptiveShellGainP0 theorem, pause Phase J, or redirect to a smaller
+  frontier.
 ```

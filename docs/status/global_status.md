@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 284
+Latest module frontier: Module 285
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -135,6 +135,10 @@ Latest project-wide review:
   the row, column, shell-counting, bad-shift, bad-frequency, optimized
   barrier, and low-level leakage tests required before
   `ThresholdBudgetP0_283` could be used.
+- An adaptive-shell current-tools verdict `AdaptiveShellVerdict_285`, marking
+  `CurrentToolsCloseP0_285` as `FALSE / BLOCKED` while keeping
+  `PhaseKernelBound_273^0` and the possible new theorem
+  `AdaptiveShellGainP0_285` open.
 
 ## What the project has not proved
 
@@ -185,6 +189,8 @@ Latest project-wide review:
   `ShiftMomentP0_284(q)`, `MultMomentP0_284(r)`, or the optimized barriers
   `RowBarrierP0_284`, `ColumnBarrierP0_284`,
   `SigmaColumnBarrierP0_284`.
+- `AdaptiveShellGainP0_285`, any new uniform-fiber theorem, any selection
+  theorem, or any direct-shell phase theorem closing `PhaseKernelBound_273^0`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -341,14 +347,17 @@ Completed Phase J threshold-budget audit:
     names the row, column, shell-counting, removal, optimized-barrier, and
     low-level budget tests without proving any are o_W(1)
 
+Completed Phase J adaptive-shell verdict:
+  AdaptiveShellVerdict_285(P_minor^0)
+    records CurrentToolsCloseP0_285 as FALSE / BLOCKED while keeping
+    PhaseKernelBound_273^0 and AdaptiveShellGainP0_285 open
+
 Active Phase J target:
   PhaseKernelBound_273^0 over P_minor^0
-    next decide whether adaptive shell selection still offers a non-endpoint
-    route or whether the current Phase J package should be marked blocked
+    next update the long-term plan after the current-tools block
 
 Next scheduled check:
-  Module 285 audit adaptive shell selection versus proof-or-blocked verdict
-  for PhaseKernelBound_273^0
+  Module 286 eleventh plan update for Phase J
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the active Phase J steering step;

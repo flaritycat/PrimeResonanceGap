@@ -85,7 +85,8 @@ testing whether any non-endpoint estimate can control the shell functional
 that fixed frequency-set estimates do not automatically control these
 data-dependent shells, and the remaining local side rows must still be proved
 before any Phase J kernel bound can be used. The latest audit isolates the
-threshold-budget barriers rather than declaring them small.
+threshold-budget barriers and then records that the current adaptive-shell
+tool package is blocked, without disproving the local target.
 
 ## Whole Project Map
 
@@ -286,7 +287,7 @@ feasibility**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 284
+Latest module frontier: Module 285
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -325,19 +326,24 @@ Module 284:
   tested the threshold budget against row/column ceilings and the
   lambda-summed target. It named row, column, shell-counting, removal, and
   low-level budget barriers, but left all smallness claims open.
+
+Module 285:
+  gave a current-tools verdict for the adaptive shell route. Fixed-set
+  estimates still need selection transfer, Bessel gives only row/column
+  ceilings, threshold barriers remain open, and `PhaseKernelBound_273^0`
+  remains open.
 ```
 
 The next planned module is:
 
 ```text
-Module 285:
-  decide whether Phase J should next test adaptive shell selection or issue a
-  proof-or-blocked verdict for PhaseKernelBound_273^0 with the current tools.
+Module 286:
+  eleventh plan update for Phase J.
 ```
 
-The next audit should not treat the threshold barriers as estimates. It should
-decide whether there is a plausible non-endpoint adaptive shell route left, or
-whether Phase J should be marked blocked at the current tool level.
+The next plan update should decide whether to attempt a genuinely new
+`AdaptiveShellGainP0` theorem, pause Phase J as blocked by current tools, or
+redirect to a smaller frontier.
 
 ## What Is Proved?
 
@@ -520,6 +526,9 @@ wins.
 | `ThresholdBudgetP0Audit_284(P_minor^0)` | STRUCTURAL / EXTRACTION | Exact threshold budget barriers named inside the local family |
 | `ThresholdBudgetP0Closure_284(q,r)` | OPEN | Requires low-level, removal, row/column, and shell-counting budgets to be `o_W(1)` |
 | `RowBarrierP0_284 / ColumnBarrierP0_284 / SigmaColumnBarrierP0_284` | OPEN | Optimized barriers are diagnostics, not estimates |
+| `AdaptiveShellVerdict_285(P_minor^0)` | STRUCTURAL / EXTRACTION | Current Phase J adaptive-shell package classified |
+| `CurrentToolsCloseP0_285` | FALSE / BLOCKED | Current fixed-set, Bessel, threshold, side-row, and degeneracy tools do not prove `PhaseKernelBound_273^0` |
+| `AdaptiveShellGainP0_285` | OPEN | Would require a new uniform-fiber, selection-transfer, or direct-shell theorem with compatible losses |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

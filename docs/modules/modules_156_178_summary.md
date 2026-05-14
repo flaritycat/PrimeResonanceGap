@@ -1,4 +1,4 @@
-# Modules 156-284 summary
+# Modules 156-285 summary
 
 ## 156
 
@@ -819,8 +819,14 @@ Threshold-budget feasibility audit inside `P_minor^0`; defines
 shell-counting, bad-shift, bad-frequency, low-level, and optimized-barrier
 budget tests, and leaves `ThresholdBudgetP0Closure_284(q,r)` open.
 
+## 285
+
+Adaptive-shell proof-or-blocked verdict inside `P_minor^0`; defines
+`AdaptiveShellVerdict_285(P_minor^0)`, records
+`CurrentToolsCloseP0_285` as `FALSE / BLOCKED`, and leaves
+`AdaptiveShellGainP0_285` and `PhaseKernelBound_273^0` open.
+
 ## Next
 
-Module 285: decide whether adaptive shell selection still gives a
-non-endpoint route, or whether the current `PhaseKernelBound_273^0` package
-should receive a proof-or-blocked verdict.
+Module 286: eleventh plan update after the current Phase J tool package was
+marked blocked for `PhaseKernelBound_273^0`.
