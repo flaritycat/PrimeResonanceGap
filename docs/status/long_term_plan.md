@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 192
-Post-Reflective_1 solving count: 11
-Long-term-plan count: 5
+Latest completed module: 193
+Post-Reflective_1 solving count: 12
+Long-term-plan count: 6
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -131,6 +131,7 @@ Expected modules:
 - Module 192: averaged collision-defect bound under the qualified envelope;
   completed as a conditional composition lemma;
 - Module 193: generic projected model neutrality after collision removal;
+  completed as a conditional projected model-neutrality package;
 - Module 194: projected local-model matching dependency list;
 - Module 195: audit of Modules 183-194 for hidden upgrades;
 - Module 196: first 9-iteration plan update.
@@ -261,15 +262,15 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 193: Generic projected model neutrality after collision removal.
+Module 194: Projected local-model matching dependency list.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`, unless a complete
 proof is actually supplied.
 
-The key question is whether the generic projected model and the conditional
-collision-defect bound from Module 192 combine into a neutral projected model
-without being mistaken for actual projected local-model matching.
+The key question is what exact model-matching theorem is still required to
+turn actual major-arc projected cubes into the projected local model, now that
+model-neutrality has a conditional package.
 
 The overflow region remains:
 

@@ -21,6 +21,8 @@ This module does not prove the required collision-defect bound.
 Module 192 later gives a conditional composition lemma for that bound, but
 only under explicit structural, overflow, kernel/range, and W-limit
 hypotheses.
+Module 193 then combines that conditional collision-defect bound with the
+generic W-tail calculation to give conditional projected model neutrality.
 
 ## 2. Status label
 
@@ -224,14 +226,16 @@ major projected residual model
 The next useful major-arc step is an explicit collision-defect estimate or a
 range-limited lemma showing that the kernel-weighted collision average is
 small. Module 192 supplies such a conditional composition, while leaving its
-input hypotheses open for the actual projected kernel.
+input hypotheses open for the actual projected kernel. Module 193 uses that
+composition to organize projected model neutrality, still without proving
+actual model matching.
 
 ## 8. What remains open
 
 This module does not prove:
 
-- verification of the Module 192 hypotheses for the averaged collision-defect
-  bound in the actual projected model;
+- verification of the Module 193 projected model-neutrality hypotheses in the
+  actual projected model;
 - projected local-model matching for the actual major-arc cube;
 - minor-arc large-spectrum decay;
 - `ResCube_3^sharp`, `CPC_3^sharp`, `RBDH_pair_short`, or `AU^3`;

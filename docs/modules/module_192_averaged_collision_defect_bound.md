@@ -254,9 +254,8 @@ Module 192: averaged collision-defect composition.
 ```
 
 Thus Module 192 organizes only the collision-defect subproblem under explicit
-hypotheses. The next major-arc task is to combine this with generic projected
-model neutrality while keeping the result separate from actual projected
-local-model matching.
+hypotheses. Module 193 combines this with generic projected model neutrality
+while keeping the result separate from actual projected local-model matching.
 
 ## 8. What remains open
 
@@ -268,7 +267,8 @@ This module does not prove:
 - the Module 189 joint-divisibility criterion in the true ranges;
 - projected local-model matching;
 - minor-arc large-spectrum decay;
-- generic projected model neutrality as a final major-arc statement;
+- verification of the Module 193 projected model-neutrality hypotheses for the
+  actual projected kernel;
 - `ResCube_3^sharp`, `CPC_3^sharp`, `RBDH_pair_short`, or `AU^3`;
 - the original positive existence problem or the all-alpha theorem.
 

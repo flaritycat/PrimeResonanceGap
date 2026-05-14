@@ -236,6 +236,8 @@ fixed w
 This module supports the major-arc collision-control branch. It does not prove
 projected local-model matching and it does not address the minor-arc branch.
 Module 192 is the next composition step using this W-admissibility contract.
+Module 193 uses the generic `G_2(w)` tail from this module to control the
+collision-free projected residual model under absolute kernel mass.
 
 ## 8. What remains open
 
@@ -245,6 +247,7 @@ This module does not prove:
 - W-admissibility of the Module 190 kernel-tail and CRT range errors;
 - verification of the Module 192 collision-defect hypotheses for the actual
   projected kernel;
+- verification of the Module 193 generic projected model-neutrality package;
 - projected local-model matching;
 - structural and boundary negligibility for the sharp interval model;
 - minor-arc large-spectrum decay;

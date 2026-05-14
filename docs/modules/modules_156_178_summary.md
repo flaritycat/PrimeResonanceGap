@@ -1,4 +1,4 @@
-# Modules 156-192 summary
+# Modules 156-193 summary
 
 ## 156
 
@@ -96,6 +96,10 @@ W-limit order and generic tail uniformity.
 
 Averaged collision-defect bound under the qualified envelope.
 
+## 193
+
+Generic projected model neutrality after collision removal.
+
 ## Next
 
-Module 193: Generic projected model neutrality after collision removal.
+Module 194: Projected local-model matching dependency list.
