@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 220
-Post-Reflective_1 solving count: 39
-Long-term-plan count: 33
+Latest completed module: 221
+Post-Reflective_1 solving count: 40
+Long-term-plan count: 34
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -50,7 +50,8 @@ First plan challenge:    Module 202 (completed)
 Second plan update:      Module 205 (completed)
 Third plan update:       Module 214 (completed)
 Second plan challenge:   Module 217 (completed)
-Next reflective log:     Module 221
+Reflective_2 log:        Module 221 (completed)
+Next reflective log:     Module 261
 Fourth plan update:      Module 223
 Fifth plan update:       Module 232
 Third plan challenge:    Module 232
@@ -317,6 +318,10 @@ Expected work:
   alpha-exception accounting in the residual fourth-moment norms;
 - Module 221: create `Reflective_2.md`, the required 40-iteration memory log
   after `Reflective_1.md`, and record corrections from Modules 179-220;
+  completed as a structural memory log reviewing the residual cube,
+  major/minor, projected local model, selector-transfer, frozen-to-moving, and
+  deterministic-extraction branches, while preserving all open endpoint
+  statuses and setting the next reflection expectation around Module 261;
 - Module 222: consolidate the selector-transfer dependency graph after the
   reflection;
 - Module 223: perform the fourth 9-iteration plan update.
@@ -391,13 +396,21 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 221: Reflective_2.md memory log after Reflective_1.
+Module 222: Consolidate the selector-transfer dependency graph after Reflective_2.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 220 completed the Bernoulli and finite-stage deterministic extraction
-audit. The verdict was:
+Module 221 completed `Reflective_2.md`, the required 40-iteration memory log
+after `Reflective_1.md`. The reflection's main verdict was:
+
+```text
+Modules 179-220 clarified the endpoint dependency graph and blocked several
+false upgrades, but they did not solve the endpoint; the next work should
+consolidate rather than keep multiplying package names.
+```
+
+Module 220 had already shown:
 
 ```text
 Bernoulli expectation, Bernoulli high-probability, or finite-stage density
@@ -405,23 +418,16 @@ control does not become an actual fixed-alpha selector theorem without
 deterministic extraction in the same residual fourth-moment norms.
 ```
 
-Module 219 had already shown:
+The next module should consolidate the selector-transfer dependency graph
+after the reflection. In particular it should:
 
 ```text
-The fr -> mv row is not harmless boundary bookkeeping unless the
-moving-threshold residual layer cubes are small in the same fourth-moment
-normalization as the endpoint.
+combine the Module 216 matrix with Modules 218-220,
+mark each transfer row as local, mixed, endpoint-strength, or blocked,
+record which rows feed major arcs, minor arcs, and full nonzero transfer,
+identify duplicate names that should be merged,
+name the smallest honest next analytic target.
 ```
 
-The next iteration reaches the 40-iteration reflection cadence after
-`Reflective_1.md`. Create:
-
-```text
-Reflective_2.md
-```
-
-The reflection should cover Modules 179-220, especially the corrections that
-kept the branch from upgrading decompositions, model estimates, selector
-transfer, frozen-to-moving transfer, or Bernoulli/finite-stage extraction into
-proofs of the open endpoint. It should also update the memory-log cadence for
-the next 40 solving iterations.
+It must not introduce a new transfer package unless it removes ambiguity or
+strictly consolidates existing dependencies.

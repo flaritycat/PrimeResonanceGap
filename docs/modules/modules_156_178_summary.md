@@ -1,4 +1,4 @@
-# Modules 156-220 summary
+# Modules 156-221 summary
 
 ## 156
 
@@ -285,6 +285,15 @@ frozen/moving compatibility, and alpha-exception accounting. It blocks using
 expectation, high-probability, or finite-stage density estimates as actual
 fixed-alpha selector theorems without residual fourth-moment extraction.
 
+## 221
+
+`Reflective_2.md` memory log after the 40th solving iteration following
+`Reflective_1.md`; reviews Modules 179-220, records the main corrections
+around residual cubes, projected local models, major/minor composition,
+selector transfer, frozen-to-moving transfer, and deterministic extraction,
+and warns that the next work should consolidate rather than multiply package
+names.
+
 ## Next
 
-Module 221: Reflective_2.md memory log after Reflective_1.
+Module 222: Consolidate the selector-transfer dependency graph after Reflective_2.
