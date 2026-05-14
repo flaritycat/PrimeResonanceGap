@@ -1,4 +1,4 @@
-# Modules 156-256 summary
+# Modules 156-257 summary
 
 ## 156
 
@@ -590,7 +590,15 @@ local model `Theta_{w,S}^proj=kappa_w(d)`, and defines
 pair side rows, kernel discipline, and explicit inheritance of unresolved
 one-point gates rather than treating escalation as proof.
 
+## 257
+
+Minor-arc reentry gate; defines `BoundaryMinorReentry_257` as a routing
+ledger comparing fixed-support boundary gates with `NarrowMinorArc_3^B` and
+`MinorArcTransfer_3^B`, showing that minor-arc packages do not automatically
+prove boundary gates and boundary gates do not prove minor-arc cancellation
+unless a named localized transfer row is supplied.
+
 ## Next
 
-Module 257: minor-arc reentry gate, comparing the boundary obstruction with
-`NarrowMinorArc_3^B` and `MinorArcTransfer_3^B`.
+Module 258: projected-major reentry gate, comparing the boundary obstruction
+with `ProjectedMajorTarget_3^B` and `WProjectedLocalMatch_3^major`.

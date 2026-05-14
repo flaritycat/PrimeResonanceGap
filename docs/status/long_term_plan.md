@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 256
-Post-Reflective_1 solving count: 75
-Long-term-plan count: 69
+Latest completed module: 257
+Post-Reflective_1 solving count: 76
+Long-term-plan count: 70
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -642,6 +642,10 @@ Expected work:
   unresolved one-point gates explicitly;
 - Module 257: minor-arc reentry gate, comparing the boundary obstruction with
   `NarrowMinorArc_3^B` and `MinorArcTransfer_3^B`;
+  completed as `BoundaryMinorReentry_257`, classifying boundary/minor-arc
+  routing and recording that minor-arc packages do not automatically prove
+  boundary gates and boundary gates do not prove minor-arc cancellation unless
+  named localized transfer rows are supplied;
 - Module 258: projected-major reentry gate, comparing the boundary
   obstruction with `ProjectedMajorTarget_3^B` and
   `WProjectedLocalMatch_3^major`;
@@ -688,18 +692,6 @@ that the challenge is written down before momentum turns into folklore.
 
 ## 8. Immediate next action
 
-Continue with:
-
-```text
-Module 257: minor-arc reentry gate, comparing the boundary obstruction with
-NarrowMinorArc_3^B and MinorArcTransfer_3^B.
-```
-
-Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, not `PROVEN`.
-The module should decide whether the boundary obstruction should keep
-absorbing effort or whether the project should reenter the residual cube
-minor-arc branch.
-
 Module 256 completed the two-point diagnostic escalation gate:
 
 ```text
@@ -716,17 +708,29 @@ The two-point row introduces a real pair local factor but also inherits the
 unresolved one-point mean, kernel, range, and side-row gates.
 ```
 
-Module 257 should check:
+Module 257 completed the reentry comparison:
 
 ```text
-whether the fixed-support boundary obstruction is smaller than the minor-arc
-obstruction,
-whether NarrowMinorArc_3^B would automatically dominate the boundary gates or
-would be endpoint-strength,
-which boundary gates are genuinely local compared with MinorArcTransfer_3^B,
-whether the next useful branch is minor-arc reentry or continued boundary
-tuple expansion.
+BoundaryMinorReentry_257
+  compares fixed boundary gates with
+  NarrowMinorArc_3^B and MinorArcTransfer_3^B.
+
+Verdict:
+  minor-arc packages and boundary gates control different objects unless an
+  explicit localized trace/side-transfer row is supplied.
 ```
+
+Continue with:
+
+```text
+Module 258: projected-major reentry gate, comparing the boundary obstruction
+with ProjectedMajorTarget_3^B and WProjectedLocalMatch_3^major.
+```
+
+Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, not `PROVEN`.
+The module should decide whether the fixed-support boundary gates are local
+transfer rows inside the projected-major branch, endpoint-strength major-arc
+control in disguise, mixed transfer rows, or blocked shortcuts.
 
 It must keep the same fixed row:
 
@@ -736,6 +740,17 @@ Pi=P_M,
 edge=cyc_s0 -> int_s0,
 same selector class s0,
 fixed dyadic shell D0<|d|<=2D0.
+```
+
+Module 258 should check:
+
+```text
+whether boundary gates are local transfer rows inside projected-major routing,
+whether WProjectedLocalMatch_3^major would dominate them only at
+endpoint-strength,
+which gates belong to MajorAnalyticPkg_229 and which remain separate,
+whether Module 259 should redirect, continue boundary tests, or update the
+project map around major/minor reentry.
 ```
 
 Do not prove the prototype by assuming:

@@ -5,7 +5,7 @@ This file is the first status document Codex should read.
 Current frontier:
 
 ```text
-Latest module frontier: Module 256
+Latest module frontier: Module 257
 Active phase: Phase G, fixed-row package feasibility gates
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -38,6 +38,9 @@ Latest project-wide review:
   proved closure.
 - A same-slot two-point escalation gate, diagnostic only and still
   conditional.
+- A minor-arc reentry comparison showing that boundary gates and
+  `NarrowMinorArc_3^B` control different objects unless a localized transfer
+  row is supplied.
 
 ## What the project has not proved
 
@@ -49,8 +52,9 @@ Latest project-wide review:
   moving-selector endpoint.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
-  `FixedRowFeasGate_255`, `TwoPointEscGate_256`, `OnePointBIHL_242`, or
-  `TwoPointBIHL_256` outside exact model conventions.
+  `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
+  `BoundaryMinorReentry_257`, `OnePointBIHL_242`, or `TwoPointBIHL_256`
+  outside exact model conventions.
 
 ## Current endpoint class
 
@@ -101,6 +105,10 @@ Assembled one-point verdict:
 Two-point diagnostic:
   TwoPointEscGate_256
     => BoundaryIntervalHL_234({(00,0),(00,1)},(00,0))
+
+Minor-arc reentry:
+  BoundaryMinorReentry_257
+    classifies boundary/minor-arc routing
 ```
 
 Status: **CONDITIONAL**.
