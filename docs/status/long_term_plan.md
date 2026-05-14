@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 214
-Post-Reflective_1 solving count: 33
-Long-term-plan count: 27
+Latest completed module: 215
+Post-Reflective_1 solving count: 34
+Long-term-plan count: 28
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -278,6 +278,10 @@ Expected work:
 
 - Module 215: build a selector inventory for Modules 156-213, recording every
   theorem's selector class and the norm in which transfer would be required;
+  completed as `SelectorInventory_156_213`, a structural audit ledger marking
+  selector classes as explicit, inferred, ambiguous, or non-selector-bearing,
+  and separating actual sharp moving-selector transfer from model, W-tricked,
+  cyclic, smoothed, frozen, Bernoulli, and finite-stage statements;
 - Module 216: state a global boundary / prefix / transition / denominator /
   tail transfer matrix for the actual sharp moving selector;
 - Module 217: perform the second 15-iteration plan challenge and decide
@@ -364,31 +368,35 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 215: Selector inventory for Modules 156-213.
+Module 216: Global selector-transfer matrix for the actual sharp moving
+selector.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION`.
+Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 214 completed the third 9-iteration plan update and moved the project
-into Phase D:
+Module 215 completed the selector inventory:
 
 ```text
-global selector and boundary transfer audit.
+SelectorInventory_156_213.
 ```
 
-The next module should inventory every selector class appearing in the current
-endpoint branch. For each theorem, route, or package, it should record:
+The next module should turn the inventory into a transfer matrix. It should
+separate:
 
 ```text
-declared selector class,
-whether the declaration is explicit or inferred,
-target selector if transfer is needed,
-required norm for transfer,
-whether the required transfer is already named,
-whether the transfer appears weaker than the endpoint.
+boundary,
+prefix,
+transition,
+moving-window,
+denominator,
+tail,
+projection,
+W-residue,
+prime-power,
+centering / zero-mode,
+core residual fourth-moment transfer.
 ```
 
-In particular, it must not let an estimate with a smoothed, frozen,
-finite-stage, Bernoulli, cyclic, or W-tricked selector be treated as an actual
-sharp moving-selector estimate. Ambiguous selector declarations should be
-marked as gaps, not repaired by interpretation.
+In particular, it should identify which transfer rows plausibly look local or
+boundary-level and which rows may be endpoint-strength in disguise. The matrix
+should prepare Module 217's plan challenge.

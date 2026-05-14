@@ -1,4 +1,4 @@
-# Modules 156-203 summary
+# Modules 156-215 summary
 
 ## 156
 
@@ -233,6 +233,14 @@ Third 9-iteration plan update; records that Phase C clarified the projected
 major-arc dependency graph without proving the endpoint, then moves the next
 window to Phase D: global selector and boundary transfer audit.
 
+## 215
+
+Selector inventory for Modules 156-213; defines `SelectorInventory_156_213`
+and classifies endpoint-branch statements as explicit, inferred, ambiguous, or
+non-selector-bearing with the required major, minor, or unprojected residual
+fourth-moment transfer norm recorded.
+
 ## Next
 
-Module 215: Selector inventory for Modules 156-213.
+Module 216: Global selector-transfer matrix for the actual sharp moving
+selector.
