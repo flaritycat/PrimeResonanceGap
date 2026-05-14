@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 317
-Active phase: Phase K, signed minor-kernel combination verdict next
+Latest module frontier: Module 318
+Active phase: Phase K, anti-diagonal new-input inventory next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -87,6 +87,7 @@ modules/
   module_315_zero_mode_product_audit.md
   module_316_centered_full_antidiagonal_audit.md
   module_317_major_kernel_correction_audit.md
+  module_318_signed_minor_kernel_verdict.md
   modules_156_178_summary.md
 
 reviews/

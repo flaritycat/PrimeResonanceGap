@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 317
-Active phase: Phase K, signed minor-kernel combination verdict next
+Latest module frontier: Module 318
+Active phase: Phase K, anti-diagonal new-input inventory next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -748,10 +748,16 @@ Completed major-kernel correction audit:
     pair/first-moment/projected-major shortcuts, and leaves
     MajorKernelCorrectionControl_314(P_minor^0) open
 
+Completed signed minor-kernel combination verdict:
+  SignedMinorKernelCombinationVerdict_318(P_minor^0)
+    records that the centered full-minus-major row is exactly WOff_311,
+    blocks the split as a smaller route under current inputs, and leaves
+    SignedMinorKernelGain_318(P_minor^0) open
+
 Next scheduled check:
-  Module 318 SignedMinorKernelCombinationVerdict_318(P_minor^0)
+  Module 319 AntiDiagonalNewInputInventory_319(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Phase K major-kernel
-correction audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed Phase K signed
+minor-kernel combination verdict;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

@@ -66,7 +66,8 @@ flowchart TD
   ZeroAudit315["ZeroModeProductAudit_315<br/>audit STRUCTURAL; standalone control BLOCKED"]
   CenteredFull316["CenteredFullAntiDiagonalAudit_316<br/>audit STRUCTURAL; current route BLOCKED"]
   MajorCorr317["MajorKernelCorrectionAudit_317<br/>audit STRUCTURAL; current route BLOCKED"]
-  SignedVerdict318["SignedMinorKernelCombinationVerdict_318<br/>next target OPEN"]
+  SignedVerdict318["SignedMinorKernelCombinationVerdict_318<br/>verdict STRUCTURAL; smaller route BLOCKED"]
+  NewInput319["AntiDiagonalNewInputInventory_319<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -168,7 +169,8 @@ flowchart TD
   ZeroAudit315 --> CenteredFull316
   CenteredFull316 --> MajorCorr317
   MajorCorr317 --> SignedVerdict318
-  SignedVerdict318 --> AntiDiag312
+  SignedVerdict318 --> NewInput319
+  NewInput319 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -326,3 +328,8 @@ flowchart TD
   positivity, cardinality-kernel, pair-BDH, first-moment, and conditional
   projected-major shortcuts do not close it. The next audit is whether the
   signed full-minus-major formulation is a genuine smaller route.
+- `SignedMinorKernelCombinationVerdict_318` records that the centered
+  full-minus-major expression is exactly `WOff_311`. The split is diagnostic
+  unless a new same-family signed minor-kernel estimate is supplied. The next
+  target is an inventory of genuinely new non-endpoint inputs for the
+  anti-diagonal minor-kernel row.

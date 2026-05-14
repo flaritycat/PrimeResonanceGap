@@ -3141,3 +3141,60 @@ Module 318:
   route with a named new estimate, or merely a restatement of the original
   minor anti-diagonal target under current inputs.
 ```
+
+Module 318 completed:
+
+```text
+SignedMinorKernelCombinationVerdict_318(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+SignedFullMajorIdentity_318:
+  STRUCTURAL / EXTRACTION.
+
+SignedCombinationAsSmallerRoute_318,
+IndependentFullMajorClosure_318:
+  FALSE / BLOCKED under current inputs.
+
+SignedMinorKernelGain_318(P_minor^0):
+  OPEN.
+
+AntiDiagonalNewInputInventory_319(P_minor^0):
+  OPEN next target.
+```
+
+The verdict records:
+
+```text
+FullAntiDiag_circ_316
+  -
+MajorKernelCorrectionRow_circ_317
+  =
+WOff_311.
+```
+
+Thus the centered full-minus-major expression is exactly the original
+off-diagonal minor row. It is not a smaller theorem unless a new same-family
+signed minor-kernel estimate is supplied.
+
+The current cadence records:
+
+```text
+Latest completed module: 318
+Post-Reflective_1 solving count: 137
+Long-term-plan count: 131
+
+131 is not divisible by 9, so no plan update is due.
+131 is not divisible by 15, so no plan challenge is due.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 319:
+  perform AntiDiagonalNewInputInventory_319(P_minor^0), listing only genuinely
+  new non-endpoint inputs that could attack the same-family minor-kernel
+  anti-diagonal row, and rejecting any candidate that merely assumes an open
+  endpoint, transfer theorem, projected-major target, or column-barrier
+  closure.
+```

@@ -412,13 +412,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the major-kernel correction audit**.
+the signed minor-kernel combination verdict**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 317
-Active phase: Phase K, signed minor-kernel combination verdict next
+Latest module frontier: Module 318
+Active phase: Phase K, anti-diagonal new-input inventory next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -654,13 +654,19 @@ Module 317:
   pair-BDH, first-moment HL, and conditional projected-major shortcuts do not
   close it; a genuine route would need the exact residual eight-slot major
   model in the same `P_minor^0` conventions.
+
+Module 318:
+  gave the signed minor-kernel combination verdict. The centered
+  full-minus-major row is exactly `WOff_311`; without a new signed
+  minor-kernel theorem, the split is diagnostic rather than a smaller proof
+  route.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-317 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-318 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
-do not prove the threshold window.
+do not prove the threshold window or the signed minor-kernel row.
 
 The next planned module is:
 
@@ -674,9 +680,14 @@ Module 317:
   in the centered full-minus-major formulation.
 
 Module 318:
-  perform SignedMinorKernelCombinationVerdict_318(P_minor^0), deciding
+  performed SignedMinorKernelCombinationVerdict_318(P_minor^0), deciding
   whether the split has produced a genuinely smaller route or only restated
   the original minor-kernel target.
+
+Module 319:
+  perform AntiDiagonalNewInputInventory_319(P_minor^0), listing only genuinely
+  new non-endpoint inputs that could attack the same-family minor-kernel
+  anti-diagonal row.
 ```
 
 ## What Is Proved?
@@ -728,7 +739,11 @@ Compact status table:
 | Major-kernel correction audit `MajorKernelCorrectionAudit_317` | **STRUCTURAL / EXTRACTION** |
 | Current major-correction route `CurrentMajorCorrectionToolsClose_317` | **FALSE / BLOCKED** |
 | Major local-model transfer `MajorLocalModelTransfer_317` | **OPEN** |
-| Signed minor-kernel verdict `SignedMinorKernelCombinationVerdict_318` | **OPEN next target** |
+| Signed minor-kernel verdict `SignedMinorKernelCombinationVerdict_318` | **STRUCTURAL / EXTRACTION** |
+| Signed full-major identity `SignedFullMajorIdentity_318` | **STRUCTURAL / EXTRACTION** |
+| Signed combination as smaller route `SignedCombinationAsSmallerRoute_318` | **FALSE / BLOCKED** |
+| Signed minor-kernel gain `SignedMinorKernelGain_318` | **OPEN** |
+| Anti-diagonal new-input inventory `AntiDiagonalNewInputInventory_319` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
