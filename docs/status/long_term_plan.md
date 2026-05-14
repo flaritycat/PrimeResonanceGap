@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 313
-Post-Reflective_1 solving count: 132
-Long-term-plan count: 126
+Latest completed module: 314
+Post-Reflective_1 solving count: 133
+Long-term-plan count: 127
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -2886,4 +2886,70 @@ Module 314:
   perform MinorKernelRowSplit_314(P_minor^0), splitting the Module 312
   minor-kernel identity into full-frequency anti-diagonal, zero-mode product,
   and major-correction rows before any weighted pair gain claim.
+```
+
+Module 314 completed:
+
+```text
+MinorKernelRowSplit_314(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+FullAntiDiagonalRowIdentity_314,
+ZeroModeProductIdentity_314,
+MajorKernelCorrectionIdentity_314:
+  STRUCTURAL / EXTRACTION.
+
+IndependentRowSmallnessRoute_314:
+  FALSE / BLOCKED.
+
+FullAntiDiagonalControl_314(P_minor^0),
+ZeroModeProductControl_314(P_minor^0),
+MajorKernelCorrectionControl_314(P_minor^0),
+SignedMinorKernelCombinationTarget_314(P_minor^0):
+  OPEN.
+
+ZeroModeProductAudit_315(P_minor^0):
+  OPEN next target.
+```
+
+The exact row identity is:
+
+```text
+WOff_311
+  =
+  FullAntiDiagonalRow_314
+  -
+  ZeroModeProductRow_314
+  -
+  MajorKernelCorrectionRow_314.
+```
+
+The zero row is exactly:
+
+```text
+ZeroModeProductRow_314
+  =
+  D^(-1) sum_{d_1 != d_2}
+    |beta_0(d_1,0)|^2 |beta_0(d_2,0)|^2.
+```
+
+The current cadence records:
+
+```text
+Latest completed module: 314
+Post-Reflective_1 solving count: 133
+Long-term-plan count: 127
+
+127 is not divisible by 9, so no plan update is due.
+127 is not divisible by 15, so no plan challenge is due.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 315:
+  perform ZeroModeProductAudit_315(P_minor^0), deciding whether the zero-mode
+  product row is killed by convention, controlled by a local pair-covariance
+  estimate, or remains open.
 ```

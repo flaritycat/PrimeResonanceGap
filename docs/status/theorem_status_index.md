@@ -180,7 +180,12 @@ FALSE / BLOCKED
 | `PlanUpdate_14_313` | STRUCTURAL / EXTRACTION | Fourteenth plan update; selects row split before direct anti-diagonal attack | `module_313_fourteenth_plan_update.md` | Only as steering |
 | `DirectAntiDiagonalAttack_313` | FALSE / BLOCKED | Bundled anti-diagonal target is blocked as the next move under current tools | `module_313_fourteenth_plan_update.md` | No |
 | `ColumnBranchContinue_313` | CONDITIONAL | Column branch may continue only through the minor-kernel row split | `module_313_fourteenth_plan_update.md` | Only as steering |
-| `MinorKernelRowSplit_314(P_minor^0)` | OPEN | Next target: split full-frequency, zero-mode, and major-correction rows | `module_313_fourteenth_plan_update.md` | No |
+| `MinorKernelRowSplit_314(P_minor^0)` | STRUCTURAL / EXTRACTION | Exact split of `WOff_311` into full-frequency, zero-mode, and major-correction rows | `module_314_minor_kernel_row_split.md` | Only as an identity/audit |
+| `FullAntiDiagonalRowIdentity_314 / ZeroModeProductIdentity_314 / MajorKernelCorrectionIdentity_314` | STRUCTURAL / EXTRACTION | Exact row identities; no row smallness follows | `module_314_minor_kernel_row_split.md` | Only as identities |
+| `IndependentRowSmallnessRoute_314` | FALSE / BLOCKED | Current tools do not control the full, zero, and major rows independently at the needed scale | `module_314_minor_kernel_row_split.md` | No |
+| `FullAntiDiagonalControl_314 / ZeroModeProductControl_314 / MajorKernelCorrectionControl_314` | OPEN | Same-family row controls remain missing | `module_314_minor_kernel_row_split.md` | No |
+| `SignedMinorKernelCombinationTarget_314(P_minor^0)` | OPEN | Needs same-family control of the signed row combination after threshold weights | `module_314_minor_kernel_row_split.md` | No |
+| `ZeroModeProductAudit_315(P_minor^0)` | OPEN | Next target: decide whether the zero-mode row is conventionally killed, locally controlled, or open | `module_314_minor_kernel_row_split.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

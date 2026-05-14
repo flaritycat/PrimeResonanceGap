@@ -412,13 +412,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the fourteenth plan update**.
+the minor-kernel row split**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 313
-Active phase: Phase K, minor-kernel row split next
+Latest module frontier: Module 314
+Active phase: Phase K, zero-mode product audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -628,20 +628,26 @@ Module 313:
   performed the fourteenth plan update. It blocks a direct attack on the
   bundled anti-diagonal target as the next move and selects a smaller
   full/zero/major minor-kernel row split for Module 314.
+
+Module 314:
+  split the Module 312 minor-kernel identity into full-frequency
+  anti-diagonal, zero-mode product, and major-kernel correction rows. The
+  split is exact and structural; independent row smallness is blocked under
+  current tools, and the zero-mode product row is the next audit target.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-313 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-314 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, and autocorrelation inputs do not prove the threshold window.
 
 The next planned module is:
 
 ```text
-Module 314:
-  perform MinorKernelRowSplit_314(P_minor^0), splitting the Module 312
-  identity into full-frequency anti-diagonal, zero-mode product, and
-  major-kernel correction rows.
+Module 315:
+  perform ZeroModeProductAudit_315(P_minor^0), deciding whether the
+  zero-mode product row is killed by convention, controlled by a local
+  pair-covariance estimate, or remains open.
 ```
 
 ## What Is Proved?
@@ -680,7 +686,10 @@ Compact status table:
 | Anti-diagonal two-shift gain `AntiDiagonalTwoShiftKernelGain_312` | **OPEN** |
 | Fourteenth plan update `PlanUpdate_14_313` | **STRUCTURAL / EXTRACTION** |
 | Direct anti-diagonal attack as next move `DirectAntiDiagonalAttack_313` | **FALSE / BLOCKED** |
-| Minor-kernel row split `MinorKernelRowSplit_314` | **OPEN next target** |
+| Minor-kernel row split `MinorKernelRowSplit_314` | **STRUCTURAL / EXTRACTION** |
+| Independent row smallness route `IndependentRowSmallnessRoute_314` | **FALSE / BLOCKED** |
+| Full/zero/major row controls from Module 314 | **OPEN** |
+| Zero-mode product audit `ZeroModeProductAudit_315` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -962,7 +971,12 @@ wins.
 | `AntiDiagonalTwoShiftKernelGain_312(P_minor^0)` | OPEN | Needs same-family two-shift kernel gain after threshold weights |
 | `PlanUpdate_14_313` | STRUCTURAL / EXTRACTION | Fourteenth plan update completed; selects row split before direct attack |
 | `DirectAntiDiagonalAttack_313` | FALSE / BLOCKED | Bundled target is too broad as the next move under current tools |
-| `MinorKernelRowSplit_314(P_minor^0)` | OPEN | Next target: split full-frequency, zero-mode, and major-correction rows |
+| `MinorKernelRowSplit_314(P_minor^0)` | STRUCTURAL / EXTRACTION | Exact split into full-frequency, zero-mode, and major-correction rows |
+| `FullAntiDiagonalRowIdentity_314 / ZeroModeProductIdentity_314 / MajorKernelCorrectionIdentity_314` | STRUCTURAL / EXTRACTION | Exact row identities only |
+| `IndependentRowSmallnessRoute_314` | FALSE / BLOCKED | Current tools do not make the rows independently harmless |
+| `FullAntiDiagonalControl_314 / ZeroModeProductControl_314 / MajorKernelCorrectionControl_314` | OPEN | Row control remains missing |
+| `SignedMinorKernelCombinationTarget_314(P_minor^0)` | OPEN | Needs same-family control of the signed row combination |
+| `ZeroModeProductAudit_315(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

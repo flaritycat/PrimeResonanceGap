@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 313
-Active phase: Phase K, minor-kernel row split next
+Latest module frontier: Module 314
+Active phase: Phase K, zero-mode product audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -254,6 +254,10 @@ Latest project-wide review:
 - A fourteenth plan update `PlanUpdate_14_313`, blocking a direct attack on
   the bundled anti-diagonal target as the next move and selecting
   `MinorKernelRowSplit_314(P_minor^0)` as the next smaller row split.
+- A minor-kernel row split `MinorKernelRowSplit_314(P_minor^0)`, decomposing
+  the Module 312 weighted pair kernel into full-frequency anti-diagonal,
+  zero-mode product, and major-kernel correction rows, while leaving each row
+  control and the signed combination target open.
 
 ## What the project has not proved
 
@@ -393,6 +397,14 @@ Latest project-wide review:
   `AntiDiagonalTwoShiftKernelGain_312(P_minor^0)`.
 - `PlanUpdate_14_313`, `ColumnBranchContinue_313`, or
   `MinorKernelRowSplit_314(P_minor^0)` as analytic estimates.
+- `FullAntiDiagonalRowIdentity_314`, `ZeroModeProductIdentity_314`,
+  `MajorKernelCorrectionIdentity_314`, or
+  `IndependentRowSmallnessRoute_314` as weighted pair smallness.
+- `FullAntiDiagonalControl_314(P_minor^0)`,
+  `ZeroModeProductControl_314(P_minor^0)`,
+  `MajorKernelCorrectionControl_314(P_minor^0)`,
+  `SignedMinorKernelCombinationTarget_314(P_minor^0)`, or
+  `ZeroModeProductAudit_315(P_minor^0)` as proved.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -701,10 +713,16 @@ Completed fourteenth plan update:
     move, keeps the column branch only conditionally, and selects
     MinorKernelRowSplit_314(P_minor^0)
 
+Completed minor-kernel row split:
+  MinorKernelRowSplit_314(P_minor^0)
+    splits WOff_311 into full-frequency anti-diagonal, zero-mode product, and
+    major-kernel correction rows; records independent row smallness as
+    FALSE / BLOCKED and leaves ZeroModeProductAudit_315(P_minor^0) as next
+
 Next scheduled check:
-  Module 314 MinorKernelRowSplit_314(P_minor^0)
+  Module 315 ZeroModeProductAudit_315(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed fourteenth Phase K plan
-update;
+Status: **STRUCTURAL / EXTRACTION** for the completed Phase K minor-kernel
+row split;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 313
-Active phase: Phase K, minor-kernel row split next
+Latest module frontier: Module 314
+Active phase: Phase K, zero-mode product audit next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -83,6 +83,7 @@ modules/
   module_311_weighted_column_pair_energy_audit.md
   module_312_weighted_pair_autocorrelation_expansion.md
   module_313_fourteenth_plan_update.md
+  module_314_minor_kernel_row_split.md
   modules_156_178_summary.md
 
 reviews/
