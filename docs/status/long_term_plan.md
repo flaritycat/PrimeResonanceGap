@@ -3198,3 +3198,63 @@ Module 319:
   endpoint, transfer theorem, projected-major target, or column-barrier
   closure.
 ```
+
+Module 319 completed:
+
+```text
+AntiDiagonalNewInputInventory_319(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+EndpointAssumptionFilter_319,
+RejectedInputList_319:
+  STRUCTURAL / EXTRACTION.
+
+CurrentInventoryClosesAntiDiagonal_319:
+  FALSE / BLOCKED.
+
+DirectSignedMinorKernelTheorem_319(P_minor^0),
+DataDependentLargeSpectrumGain_319(P_minor^0),
+ResidualEightSlotMinorCancellation_319(P_minor^0):
+  OPEN.
+
+SizeSensitiveMinorKernelCriterion_320(P_minor^0):
+  OPEN next target.
+```
+
+The inventory records that any new input must control:
+
+```text
+M_minor^{circ}
+  =
+  D^(-1) sum_{d_1 != d_2}
+    E_{h,k}
+      A_{d_1}^{circ}(h)A_{d_2}^{circ}(k)K_minor^0(h+k)
+```
+
+inside the exact `P_minor^0` family, with the Module 310 threshold losses and
+Module 284 column-barrier weights still visible. Endpoint objects, transfer
+theorems, projected-major targets, column-barrier closures, pair-BDH,
+first-moment HL, fixed-set large sieve, Cauchy/Parseval ceilings, low-level
+tail, and vacuous-removal inputs are not accepted as closures.
+
+The current cadence records:
+
+```text
+Latest completed module: 319
+Post-Reflective_1 solving count: 138
+Long-term-plan count: 132
+
+132 is not divisible by 9, so no plan update is due.
+132 is not divisible by 15, so no plan challenge is due.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 320:
+  perform SizeSensitiveMinorKernelCriterion_320(P_minor^0), defining an exact
+  size/energy/kernel criterion for M_minor^{circ}, and checking which
+  exponents or losses would actually survive the Module 310 threshold
+  conversion and Module 284 column-barrier weights.
+```

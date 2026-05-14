@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 318
-Active phase: Phase K, anti-diagonal new-input inventory next
+Latest module frontier: Module 319
+Active phase: Phase K, size-sensitive minor-kernel criterion next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -754,10 +754,16 @@ Completed signed minor-kernel combination verdict:
     blocks the split as a smaller route under current inputs, and leaves
     SignedMinorKernelGain_318(P_minor^0) open
 
+Completed anti-diagonal new-input inventory:
+  AntiDiagonalNewInputInventory_319(P_minor^0)
+    filters candidate inputs for the exact centered minor-kernel row, rejects
+    endpoint assumptions and current-tool ceilings, and selects the
+    size-sensitive minor-kernel criterion as the next smaller target
+
 Next scheduled check:
-  Module 319 AntiDiagonalNewInputInventory_319(P_minor^0)
+  Module 320 SizeSensitiveMinorKernelCriterion_320(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Phase K signed
-minor-kernel combination verdict;
+Status: **STRUCTURAL / EXTRACTION** for the completed Phase K anti-diagonal
+new-input inventory;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

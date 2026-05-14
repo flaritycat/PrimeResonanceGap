@@ -412,13 +412,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the signed minor-kernel combination verdict**.
+the anti-diagonal new-input inventory**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 318
-Active phase: Phase K, anti-diagonal new-input inventory next
+Latest module frontier: Module 319
+Active phase: Phase K, size-sensitive minor-kernel criterion next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -660,10 +660,15 @@ Module 318:
   full-minus-major row is exactly `WOff_311`; without a new signed
   minor-kernel theorem, the split is diagnostic rather than a smaller proof
   route.
+
+Module 319:
+  inventoried candidate new inputs for the exact centered minor-kernel row.
+  Endpoint assumptions and current-tool ceilings are rejected; the selected
+  next smaller target is a size-sensitive minor-kernel criterion.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-318 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-319 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window or the signed minor-kernel row.
@@ -685,9 +690,14 @@ Module 318:
   the original minor-kernel target.
 
 Module 319:
-  perform AntiDiagonalNewInputInventory_319(P_minor^0), listing only genuinely
+  performed AntiDiagonalNewInputInventory_319(P_minor^0), listing only genuinely
   new non-endpoint inputs that could attack the same-family minor-kernel
   anti-diagonal row.
+
+Module 320:
+  perform SizeSensitiveMinorKernelCriterion_320(P_minor^0), defining the
+  exact size/energy/kernel criterion and checking which losses would survive
+  the Module 310 threshold conversion and Module 284 column-barrier weights.
 ```
 
 ## What Is Proved?
@@ -743,7 +753,10 @@ Compact status table:
 | Signed full-major identity `SignedFullMajorIdentity_318` | **STRUCTURAL / EXTRACTION** |
 | Signed combination as smaller route `SignedCombinationAsSmallerRoute_318` | **FALSE / BLOCKED** |
 | Signed minor-kernel gain `SignedMinorKernelGain_318` | **OPEN** |
-| Anti-diagonal new-input inventory `AntiDiagonalNewInputInventory_319` | **OPEN next target** |
+| Anti-diagonal new-input inventory `AntiDiagonalNewInputInventory_319` | **STRUCTURAL / EXTRACTION** |
+| Current inventory closes anti-diagonal `CurrentInventoryClosesAntiDiagonal_319` | **FALSE / BLOCKED** |
+| Direct/data-dependent/eight-slot candidate inputs from Module 319 | **OPEN** |
+| Size-sensitive minor-kernel criterion `SizeSensitiveMinorKernelCriterion_320` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 

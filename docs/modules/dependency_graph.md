@@ -67,7 +67,8 @@ flowchart TD
   CenteredFull316["CenteredFullAntiDiagonalAudit_316<br/>audit STRUCTURAL; current route BLOCKED"]
   MajorCorr317["MajorKernelCorrectionAudit_317<br/>audit STRUCTURAL; current route BLOCKED"]
   SignedVerdict318["SignedMinorKernelCombinationVerdict_318<br/>verdict STRUCTURAL; smaller route BLOCKED"]
-  NewInput319["AntiDiagonalNewInputInventory_319<br/>next target OPEN"]
+  NewInput319["AntiDiagonalNewInputInventory_319<br/>inventory STRUCTURAL; current closures BLOCKED"]
+  SizeSensitive320["SizeSensitiveMinorKernelCriterion_320<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -170,7 +171,8 @@ flowchart TD
   CenteredFull316 --> MajorCorr317
   MajorCorr317 --> SignedVerdict318
   SignedVerdict318 --> NewInput319
-  NewInput319 --> AntiDiag312
+  NewInput319 --> SizeSensitive320
+  SizeSensitive320 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -333,3 +335,7 @@ flowchart TD
   unless a new same-family signed minor-kernel estimate is supplied. The next
   target is an inventory of genuinely new non-endpoint inputs for the
   anti-diagonal minor-kernel row.
+- `AntiDiagonalNewInputInventory_319` rejects endpoint assumptions,
+  projected-major inputs, transfer shortcuts, column-barrier closures, and
+  current-tool ceilings as anti-diagonal inputs. The next smaller target is a
+  size-sensitive minor-kernel criterion with explicit losses.
