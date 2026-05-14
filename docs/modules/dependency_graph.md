@@ -61,7 +61,8 @@ flowchart TD
   WPair311["WeightedColumnPairEnergyAudit_311<br/>audit STRUCTURAL; current route BLOCKED"]
   AutoCorr312["WeightedPairAutocorrelationExpansion_312<br/>identity STRUCTURAL; current tools BLOCKED"]
   AntiDiag312["AntiDiagonalTwoShiftKernelGain_312<br/>OPEN"]
-  PlanUpdate14["PlanUpdate_14_313<br/>next scheduled plan update"]
+  PlanUpdate14["PlanUpdate_14_313<br/>completed; selects row split"]
+  MinorKernel314["MinorKernelRowSplit_314<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -157,6 +158,8 @@ flowchart TD
   AutoCorr312 --> AntiDiag312
   AntiDiag312 --> ThresholdP0
   AutoCorr312 --> PlanUpdate14
+  PlanUpdate14 --> MinorKernel314
+  MinorKernel314 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -293,3 +296,7 @@ flowchart TD
   kernel with the minor cutoff. Full-frequency and minor-kernel
   decompositions are diagnostics only; the open analytic row is
   `AntiDiagonalTwoShiftKernelGain_312`.
+- `PlanUpdate_14_313` blocks direct attack on the bundled anti-diagonal
+  target as the next move and selects `MinorKernelRowSplit_314`; that split
+  must classify full-frequency, zero-mode, and major-correction rows before
+  any weighted pair gain is claimed.

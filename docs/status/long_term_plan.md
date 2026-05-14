@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 312
-Post-Reflective_1 solving count: 131
-Long-term-plan count: 125
+Latest completed module: 313
+Post-Reflective_1 solving count: 132
+Long-term-plan count: 126
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -68,9 +68,11 @@ Sixth plan challenge:    Module 277 (completed)
 Eleventh plan update:    Module 286 (completed)
 Twelfth plan update:     Module 295 (completed)
 Thirteenth plan update:  Module 304 (completed)
-Fourteenth plan update:  Module 313
+Fourteenth plan update:  Module 313 (completed)
+Fifteenth plan update:   Module 322
 Seventh plan challenge:  Module 292 (completed)
 Eighth plan challenge:   Module 307 (completed)
+Ninth plan challenge:    Module 322
 ```
 
 These module numbers are bookkeeping estimates. If an iteration is not a
@@ -2830,4 +2832,58 @@ Module 313:
   AntiDiagonalTwoShiftKernelGain_312(P_minor^0), first split the
   full/zero/major kernel rows, or pause the column branch as endpoint-strength
   under current tools.
+```
+
+Module 313 completed:
+
+```text
+PlanUpdate_14_313:
+  STRUCTURAL / EXTRACTION.
+
+DirectAntiDiagonalAttack_313:
+  FALSE / BLOCKED as the next move under current tools.
+
+ColumnBranchContinue_313:
+  CONDITIONAL.
+
+MinorKernelRowSplit_314(P_minor^0):
+  OPEN next target.
+```
+
+The cadence records:
+
+```text
+Latest completed module: 313
+Post-Reflective_1 solving count: 132
+Long-term-plan count: 126
+
+126 is divisible by 9, so the fourteenth plan update is due and completed.
+126 is not divisible by 15, so the ninth plan challenge is not due.
+Next reflective log remains expected around Module 341.
+```
+
+The update decides not to attack the bundled anti-diagonal target directly.
+The next narrower task is to split:
+
+```text
+FullAntiDiagonalRow_314,
+ZeroModeProductRow_314,
+MajorKernelCorrectionRow_314.
+```
+
+The next cadence checkpoints are:
+
+```text
+Fifteenth plan update:   Module 322
+Ninth plan challenge:    Module 322
+Next reflective log:     Module 341
+```
+
+Continue with:
+
+```text
+Module 314:
+  perform MinorKernelRowSplit_314(P_minor^0), splitting the Module 312
+  minor-kernel identity into full-frequency anti-diagonal, zero-mode product,
+  and major-correction rows before any weighted pair gain claim.
 ```

@@ -177,6 +177,10 @@ FALSE / BLOCKED
 | `SameFrequencyAutocorrelationIdentity_312 / MinorKernelDecomposition_312` | STRUCTURAL / EXTRACTION | Exact autocorrelation and full/zero/major kernel decompositions; no cancellation follows | `module_312_weighted_pair_autocorrelation_expansion.md` | Only as identities |
 | `CurrentAutocorrelationToolsClose_312` | FALSE / BLOCKED | Full-frequency, absolute-kernel, and Cauchy/Parseval routes recover ceilings only | `module_312_weighted_pair_autocorrelation_expansion.md` | No |
 | `AntiDiagonalTwoShiftKernelGain_312(P_minor^0)` | OPEN | Needs same-family anti-diagonal two-shift minor-kernel gain after threshold weights | `module_312_weighted_pair_autocorrelation_expansion.md` | No |
+| `PlanUpdate_14_313` | STRUCTURAL / EXTRACTION | Fourteenth plan update; selects row split before direct anti-diagonal attack | `module_313_fourteenth_plan_update.md` | Only as steering |
+| `DirectAntiDiagonalAttack_313` | FALSE / BLOCKED | Bundled anti-diagonal target is blocked as the next move under current tools | `module_313_fourteenth_plan_update.md` | No |
+| `ColumnBranchContinue_313` | CONDITIONAL | Column branch may continue only through the minor-kernel row split | `module_313_fourteenth_plan_update.md` | Only as steering |
+| `MinorKernelRowSplit_314(P_minor^0)` | OPEN | Next target: split full-frequency, zero-mode, and major-correction rows | `module_313_fourteenth_plan_update.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

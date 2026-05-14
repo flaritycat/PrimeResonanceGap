@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 312
-Active phase: Phase K, fourteenth plan update next
+Latest module frontier: Module 313
+Active phase: Phase K, minor-kernel row split next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -251,6 +251,9 @@ Latest project-wide review:
   autocorrelation kernel with the minor cutoff, and recording that current
   full-frequency, absolute-kernel, and Cauchy/Parseval tools still do not
   prove a weighted pair gain.
+- A fourteenth plan update `PlanUpdate_14_313`, blocking a direct attack on
+  the bundled anti-diagonal target as the next move and selecting
+  `MinorKernelRowSplit_314(P_minor^0)` as the next smaller row split.
 
 ## What the project has not proved
 
@@ -388,6 +391,8 @@ Latest project-wide review:
   `WeightedPairAutocorrelationExpansion_312(P_minor^0)`,
   `CurrentAutocorrelationToolsClose_312`, or
   `AntiDiagonalTwoShiftKernelGain_312(P_minor^0)`.
+- `PlanUpdate_14_313`, `ColumnBranchContinue_313`, or
+  `MinorKernelRowSplit_314(P_minor^0)` as analytic estimates.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -687,13 +692,19 @@ Completed weighted column-pair energy audit:
 Completed weighted pair autocorrelation expansion:
   WeightedPairAutocorrelationExpansion_312(P_minor^0)
     expands WPair(d_1,d_2) into the exact minor-kernel anti-diagonal
-    two-shift autocorrelation form, blocks current autocorrelation tools as
-    closure, and leaves AntiDiagonalTwoShiftKernelGain_312(P_minor^0) open
+    two-shift autocorrelation form, blocks current autocorrelation tools as a
+    proof route, and leaves AntiDiagonalTwoShiftKernelGain_312(P_minor^0) open
+
+Completed fourteenth plan update:
+  PlanUpdate_14_313
+    records DirectAntiDiagonalAttack_313 as FALSE / BLOCKED for the next
+    move, keeps the column branch only conditionally, and selects
+    MinorKernelRowSplit_314(P_minor^0)
 
 Next scheduled check:
-  Module 313 PlanUpdate_14_313
+  Module 314 MinorKernelRowSplit_314(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Phase K weighted-pair
-autocorrelation expansion;
+Status: **STRUCTURAL / EXTRACTION** for the completed fourteenth Phase K plan
+update;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

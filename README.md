@@ -412,13 +412,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the weighted pair autocorrelation expansion**.
+the fourteenth plan update**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 312
-Active phase: Phase K, fourteenth plan update next
+Latest module frontier: Module 313
+Active phase: Phase K, minor-kernel row split next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -623,21 +623,25 @@ Module 312:
   anti-diagonal two-shift autocorrelation kernel with the minor cutoff
   K_minor^0. Full-frequency and minor-kernel decompositions are diagnostic
   only; current tools still do not prove a weighted pair gain.
+
+Module 313:
+  performed the fourteenth plan update. It blocks a direct attack on the
+  bundled anti-diagonal target as the next move and selects a smaller
+  full/zero/major minor-kernel row split for Module 314.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-312 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-313 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, and autocorrelation inputs do not prove the threshold window.
 
 The next planned module is:
 
 ```text
-Module 313:
-  perform PlanUpdate_14_313, deciding whether to attack
-  AntiDiagonalTwoShiftKernelGain_312(P_minor^0), first split the
-  full/zero/major minor-kernel rows, or pause the column branch as too close
-  to endpoint strength under current tools.
+Module 314:
+  perform MinorKernelRowSplit_314(P_minor^0), splitting the Module 312
+  identity into full-frequency anti-diagonal, zero-mode product, and
+  major-kernel correction rows.
 ```
 
 ## What Is Proved?
@@ -674,6 +678,9 @@ Compact status table:
 | Weighted pair autocorrelation expansion `WeightedPairAutocorrelationExpansion_312` | **STRUCTURAL / EXTRACTION** |
 | Current autocorrelation route `CurrentAutocorrelationToolsClose_312` | **FALSE / BLOCKED** |
 | Anti-diagonal two-shift gain `AntiDiagonalTwoShiftKernelGain_312` | **OPEN** |
+| Fourteenth plan update `PlanUpdate_14_313` | **STRUCTURAL / EXTRACTION** |
+| Direct anti-diagonal attack as next move `DirectAntiDiagonalAttack_313` | **FALSE / BLOCKED** |
+| Minor-kernel row split `MinorKernelRowSplit_314` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -953,6 +960,9 @@ wins.
 | `SameFrequencyAutocorrelationIdentity_312 / MinorKernelDecomposition_312` | STRUCTURAL / EXTRACTION | Exact identities only; not cancellation |
 | `CurrentAutocorrelationToolsClose_312` | FALSE / BLOCKED | Full-frequency, absolute-kernel, and Cauchy/Parseval routes do not close weighted pair energy |
 | `AntiDiagonalTwoShiftKernelGain_312(P_minor^0)` | OPEN | Needs same-family two-shift kernel gain after threshold weights |
+| `PlanUpdate_14_313` | STRUCTURAL / EXTRACTION | Fourteenth plan update completed; selects row split before direct attack |
+| `DirectAntiDiagonalAttack_313` | FALSE / BLOCKED | Bundled target is too broad as the next move under current tools |
+| `MinorKernelRowSplit_314(P_minor^0)` | OPEN | Next target: split full-frequency, zero-mode, and major-correction rows |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
