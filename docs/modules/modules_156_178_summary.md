@@ -1,4 +1,4 @@
-# Modules 156-248 summary
+# Modules 156-249 summary
 
 ## 156
 
@@ -520,6 +520,16 @@ as shortcuts, while short-interval W-PNT, boundary-length majorants, Holder
 kernel routes, and side-row controls remain conditional only when stated in
 the fixed `|W_M|`-weighted row.
 
+## 249
+
+One-point prototype proof-or-blocked verdict; defines
+`FixedRowOnePointPkg_249` and records that `OnePointBIHL_242` is conditional
+local only under fixed-row local mean and side-row hypotheses, mixed under
+transfer routes, endpoint-strength if closed by residual endpoint assumptions,
+and false/blocked as a shortcut from ordinary first-moment HL, full-interval
+PNT, full-interval W-tricked PNT, ordinary pair-BDH, or rectangle-BDH.
+
 ## Next
 
-Module 249: give the proof-or-blocked verdict for the one-point prototype.
+Module 250: perform the seventh plan update and decide the next branch after
+the one-point prototype verdict.

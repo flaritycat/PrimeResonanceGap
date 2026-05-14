@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 248
-Post-Reflective_1 solving count: 67
-Long-term-plan count: 61
+Latest completed module: 249
+Post-Reflective_1 solving count: 68
+Long-term-plan count: 62
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -562,6 +562,12 @@ Expected work:
 - Module 249: give a proof-or-blocked verdict for the one-point prototype:
   conditional local, mixed, endpoint-strength, or false/blocked as a
   shortcut;
+  completed as `OnePointVerdict_249(s0,D0,rho0)`, with
+  `FixedRowOnePointPkg_249 => OnePointBIHL_242` as the conditional local
+  route, transfer routes marked mixed, endpoint assumptions marked
+  endpoint-strength, and ordinary first-moment HL, full-interval PNT,
+  full-interval W-tricked PNT, ordinary pair-BDH, and rectangle-BDH blocked
+  as shortcuts;
 - Module 250: perform the seventh plan update and decide whether to attempt
   a two-point fixed-support row, redirect to minor arcs, or stop the boundary
   branch.
@@ -610,48 +616,36 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 249: give the proof-or-blocked verdict for the one-point prototype.
+Module 250: perform the seventh plan update and decide the next branch after
+the one-point prototype verdict.
 ```
 
-Expected status: `CONDITIONAL`, `STRUCTURAL / EXTRACTION`, or
-`FALSE / BLOCKED`, depending on whether the verdict is framed as a conditional
-route or a shortcut rejection.
+Expected status: `STRUCTURAL / EXTRACTION`.
 
-Module 248 completed the available-tools comparison:
+Module 249 completed the one-point proof-or-blocked verdict:
 
 ```text
-ToolCompare_248:
-  ordinary first-moment HL, full-interval W-tricked PNT, and ordinary pair-BDH
-  are blocked as shortcuts;
-  short-interval W-PNT, boundary-length majorants, Holder routes, and side-row
-  controls remain conditional only in the fixed |W_M|-weighted row.
+FixedRowOnePointPkg_249(s0,D0,rho0)
+  => OnePointBIHL_242(s0,D0,rho0)
 ```
 
-Module 249 should now decide how to label:
+with the route classified as conditional local only if both:
 
 ```text
 KernelAvgStrength_245(s0,D0,rho0)
-  + OnePointSideRows_246(s0,D0,rho0)
-    => OnePointBIHL_242(s0,D0,rho0)
+OnePointSideRows_246(s0,D0,rho0)
 ```
 
-The verdict options are:
+are supplied by fixed-row local estimates or exact conventions.
+
+The next iteration brings the long-term-plan count to 63, so the 9-step plan
+update cadence is due. Module 250 should decide whether to:
 
 ```text
-conditional local:
-  only if exact fixed-row boundary mean and side-row hypotheses are named;
-
-mixed:
-  if the route needs selector, projection, cutoff, W-residue, or range
-  transfer;
-
-endpoint-strength:
-  if closure uses projected residual fourth-moment control or endpoint
-  packages;
-
-false / blocked as a shortcut:
-  if someone tries to close it using ordinary first-moment HL, full-interval
-  PNT, or ordinary pair-BDH alone.
+attempt a two-point fixed-support row,
+redirect to minor arcs,
+return to projected major-arc local matching,
+or stop the boundary branch for now.
 ```
 
 The prototype remains inside the fixed-row discipline:
