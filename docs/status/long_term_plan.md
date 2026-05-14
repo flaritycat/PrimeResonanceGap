@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 212
-Post-Reflective_1 solving count: 31
-Long-term-plan count: 25
+Latest completed module: 213
+Post-Reflective_1 solving count: 32
+Long-term-plan count: 26
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -250,6 +250,11 @@ Expected work:
   replacement;
 - Module 213: state the selector-class transfer line for projected major arcs,
   separating model, smoothed, frozen, and actual sharp moving selectors;
+  completed as `MajorSelectorTransfer_3^P(P_adm;s_0 -> s_*)`, a conditional
+  adjacent-selector transfer chain measured after forming `B_d` and applying
+  the projected major-arc operator, with boundary, transition, moving-window,
+  prefix, denominator, tail, projection, W-residue, prime-power, and centering
+  errors separated;
 - Module 214: perform the third 9-iteration plan update.
 
 Success criterion: the major-arc branch becomes a clean dependency diagram
@@ -341,29 +346,28 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 213: Selector-class transfer line for projected major arcs.
+Module 214: Third 9-iteration plan update.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
+Expected status: `STRUCTURAL / EXTRACTION`.
 
-Module 212 fixed the local-model compatibility ledger:
+Module 213 fixed the projected major-arc selector-transfer line:
 
 ```text
-LocalModelCompat_3^major(P_adm).
+MajorSelectorTransfer_3^P(P_adm;s_0 -> s_*).
 ```
 
-The next module should state the selector-class transfer line for projected
-major arcs. It should separate:
+The next iteration is the scheduled third plan update. It should:
 
 ```text
-finite-stage model selector,
-smoothed finite-band frozen selector,
-sharp frozen dyadic selector,
-hidden Bernoulli lift,
-actual sharp moving selector chi_alpha(p).
+record what Phase C has clarified since Module 205,
+decide whether to continue into Phase D immediately,
+revise the next 9-iteration target window,
+keep the endpoint and original problem open,
+update the counters.
 ```
 
-In particular, it must not transfer any projected major-arc estimate to the
-actual sharp moving selector without boundary, transition, moving-window,
-prefix, denominator, tail, projection, W-residue, and prime-power transfer
-errors in the same projected fourth-moment normalization.
+In particular, it should question whether the current work is becoming a clean
+dependency graph or only accumulating names for still-open estimates. The
+answer may continue the selector/boundary transfer phase, but it should say
+why that remains the right use of the next window.

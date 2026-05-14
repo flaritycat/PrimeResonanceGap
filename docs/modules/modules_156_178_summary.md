@@ -219,6 +219,14 @@ Pair, rectangle, and projected cube local-model compatibility ledger; defines
 `Sigma_w`, `Theta_w^proj`, and `Omega_w^proj`, while naming the averaged
 compatibility errors required for any non-exact replacement.
 
+## 213
+
+Selector-class transfer line for projected major arcs; defines
+`MajorSelectorTransfer_3^P(P_adm;s_0 -> s_*)` with finite-stage, Bernoulli,
+smoothed frozen, sharp frozen, and actual moving selector classes separated,
+and requires adjacent projected fourth-moment transfer after forming `B_d` and
+applying `P_M`.
+
 ## Next
 
-Module 213: Selector-class transfer line for projected major arcs.
+Module 214: Third 9-iteration plan update.
