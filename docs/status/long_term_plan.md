@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 241
-Post-Reflective_1 solving count: 60
-Long-term-plan count: 54
+Latest completed module: 242
+Post-Reflective_1 solving count: 61
+Long-term-plan count: 55
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -514,6 +514,11 @@ Expected work:
   `BoundaryIntervalHL_234({sigma0},lambda0)`, including the choice of
   `sigma0`, `lambda0`, same-vertex versus off-vertex cases, boundary interval
   geometry, and exact `Theta_{w,{sigma0}}^proj` local factor;
+  completed as `OnePointBIHL_242(s0,D0,rho0)`, choosing the active
+  same-vertex prototype
+  `BoundaryIntervalHL_234({(00,0)},(00,0))`, fixing the two boundary
+  intervals, exact one-point model term, averaged error `BIHLErr_242`, and
+  side-error slots without proving the row or any off-vertex case;
 - Module 243: derive the exact one-point local model and boundary interval
   main term, including W-residue, diagonal, and range synchronization;
 - Module 244: reduce the prototype to a W-admissible one-point boundary
@@ -579,38 +584,45 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 242: fix the one-point nonempty fixed-support prototype row.
+Module 243: derive the exact one-point local model and boundary interval main
+term.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION`.
 
-Module 241 completed the sixth plan update:
+Module 242 fixed the active one-point prototype:
 
 ```text
-PlanUpdate_6_241.
+OnePointBIHL_242(s0,D0,rho0)
+  = BoundaryIntervalHL_234({(00,0)},(00,0)).
 ```
 
-It closed Phase F1 as a narrow success and selected Phase F2:
+It chose the same-vertex case:
 
 ```text
-one-row nonempty fixed-support prototype.
+sigma0=lambda0=(00,0),
+v_sigma0=v_lambda0=n-t0.
 ```
 
-Module 242 should fix, but not prove, the prototype row:
+Module 243 should derive the exact one-point local model and boundary
+interval main term:
 
 ```text
-BoundaryIntervalHL_234({sigma0},lambda0).
+E_n 1_{J_r}(n) mu_s0(n-t0)
+  =
+ell_r(d,h,k;t)
+  |Theta_{w,{(00,0)}}^proj(d,h,k;t)|
+  + Err_r^242(d,h,k;t),
 ```
 
-It should specify:
+including:
 
 ```text
-sigma0, lambda0,
-same-vertex versus off-vertex cases,
-boundary interval pieces J_{lambda0,r},
-the one-point local factor Theta_{w,{sigma0}}^proj,
-the exact W-admissible limit order,
-and all cutoff, range, W-residue, prime-power, and zero-mode error slots.
+whether Theta_{w,{(00,0)}}^proj is exact, normalized, or reducible in the
+chosen class;
+W-residue synchronization;
+range and cutoff effects;
+prime-power and zero-mode slots.
 ```
 
 The prototype remains inside the fixed-row discipline:

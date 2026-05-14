@@ -1,4 +1,4 @@
-# Modules 156-241 summary
+# Modules 156-242 summary
 
 ## 156
 
@@ -462,6 +462,15 @@ nonempty tuple bottleneck, and selects Phase F2 as a one-row prototype attack
 on `BoundaryIntervalHL_234({sigma0},lambda0)` with explicit stop conditions
 against endpoint-strength shortcuts.
 
+## 242
+
+One-point fixed-support prototype row; defines
+`OnePointBIHL_242(s0,D0,rho0)` as the active same-vertex prototype
+`BoundaryIntervalHL_234({(00,0)},(00,0))`, fixes its boundary intervals,
+exact one-point model term, averaged error `BIHLErr_242`, and side-error
+slots, without proving any estimate or transferring to off-vertex cases.
+
 ## Next
 
-Module 242: fix the one-point nonempty fixed-support prototype row.
+Module 243: derive the exact one-point local model and boundary interval main
+term.
