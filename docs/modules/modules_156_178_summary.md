@@ -1,4 +1,4 @@
-# Modules 156-224 summary
+# Modules 156-225 summary
 
 ## 156
 
@@ -319,7 +319,16 @@ shell, fixed W-limit order, and exact boundary/prefix support after the eight
 residual `B_d` vertices are formed. The row is conditional and remains
 unestimated.
 
+## 225
+
+Boundary/prefix row cube expansion and envelope ledger; expands
+`BdPrefRow_224^P` into boundary-marked eight-vertex residual tuple averages
+and reduces its smallness to `AbsMajorant_225`, `KernelAbsTail_225`,
+`BoundaryTupleHL_225(S,lambda)`, `BoundaryModelMass_225(S,lambda)`,
+`WPPBoundary_225`, and the normalization row, while recording why
+first-moment boundary counting is insufficient.
+
 ## Next
 
-Module 225: Expand the fixed boundary/prefix row into the residual
-fourth-moment cube and list the required envelopes.
+Module 226: Decide whether the fixed boundary/prefix row is plausibly local,
+conditional but mixed, or blocked as endpoint-strength.

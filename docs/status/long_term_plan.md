@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 224
-Post-Reflective_1 solving count: 43
-Long-term-plan count: 37
+Latest completed module: 225
+Post-Reflective_1 solving count: 44
+Long-term-plan count: 38
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -358,6 +358,12 @@ Expected work:
   the eight residual vertices are formed;
 - Module 225: expand that row into its residual fourth-moment cube and list
   the exact envelopes needed to make it `o(1)`;
+  completed as a conditional envelope ledger reducing
+  `BdPrefRow_224^P=o_W(1)` to `AbsMajorant_225`,
+  `KernelAbsTail_225`, boundary-marked tuple estimates
+  `BoundaryTupleHL_225(S,lambda)`, model-mass bounds
+  `BoundaryModelMass_225(S,lambda)`, W/prime-power boundary control, and
+  `NormRow_224^P=o_W(1)`;
 - Module 226: decide whether the fixed boundary/prefix row is plausibly local,
   conditional, or blocked as endpoint-strength under the available envelopes;
 - Module 227: build the endpoint-equivalence arrow inventory from the residual
@@ -428,39 +434,49 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 225: Expand the fixed boundary/prefix row into the residual fourth-moment cube.
+Module 226: Classify the fixed boundary/prefix row verdict.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 224 fixed the exact test row:
+Module 225 expanded the fixed test row:
 
 ```text
 BdPrefRow_224^P(s0,D0;N,w,rho0)
 ```
 
-The row uses:
+into boundary-marked residual fourth-moment envelopes:
 
 ```text
-Pi=P_M,
-edge=cyc_s0 -> int_s0,
-selector class s0 held fixed,
-one dyadic shell D0<|d|<=2D0,
-fixed-w then N->infinity then w->infinity,
-boundary/prefix support defined after the eight B_d vertices are formed.
+AbsMajorant_225(s0),
+KernelAbsTail_225(P_M,T0),
+BoundaryTupleHL_225(S,lambda),
+BoundaryModelMass_225(S,lambda),
+WPPBoundary_225,
+NormRow_224^P.
 ```
 
-Module 224 did not estimate the row. The next module should expand
-`BdPrefRow_224^P` into the residual fourth-moment cube and list the exact
-envelopes that would make it `o_W(1)`.
+Module 225 did not prove these envelopes. It also sharpened the warning that
+first-moment boundary counting is insufficient once the absolute row contains
+up to eight prime-type weights and `|W_M|`.
 
-In particular, Module 225 should specify:
+Module 226 should now decide whether the fixed row is:
 
 ```text
-which of the eight vertices lies in the boundary/prefix set;
-how the remaining seven vertices are bounded or modeled;
-what local-factor, kernel-mass, divisor, W-residue, prime-power, and
-  normalization envelopes are needed;
-whether first-moment boundary counting is insufficient and why;
-whether the row still appears genuinely local after expansion.
+plausibly local,
+conditional but mixed,
+or blocked as endpoint-strength.
+```
+
+The decision should be based on whether the needed boundary-marked tuple
+estimates are smaller than the residual endpoint or merely repackage it. In
+particular, check:
+
+```text
+whether the boundary support gives a genuine o(1) volume saving after weights;
+whether kernel absolute mass is acceptable for the chosen P_M;
+whether structural collisions on the boundary are lower-dimensional or
+  endpoint-strength;
+whether W-residue, prime-power, zero-mode, and normalization rows remain local;
+whether a first useful theorem should state the row as a conditional package.
 ```
