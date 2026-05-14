@@ -1,4 +1,4 @@
-# Modules 156-262 summary
+# Modules 156-263 summary
 
 ## 156
 
@@ -639,6 +639,16 @@ alive only in narrowed proof-or-blocked mode through signed
 inclusion-exclusion, collision-defect, kernel, and W/denominator/projection
 uniformity tests.
 
+## 263
+
+Signed inclusion-exclusion expansion of `NeutralErr_major^P`; defines
+`SignedSubsetExpansion_263(P_adm)`, expands the exact projected residual model
+into subset-size layers `A_s^P`, isolates the generic size-only term
+`Kbar_P Omega_w^gen` and collision remainder `CollSigned_263`, records exact
+one-point, pair, rectangle, and full-layer face identities, and identifies
+`AvgFaceCompat_263(P_adm)` as an open averaged compatibility row.
+
 ## Next
 
-Module 263: signed inclusion-exclusion expansion of `NeutralErr_major^P`.
+Module 264: collision and diagonal strata for `CollSigned_263` /
+`CollNeutral_260`.

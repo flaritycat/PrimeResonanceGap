@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 262
-Post-Reflective_1 solving count: 81
-Long-term-plan count: 75
+Latest completed module: 263
+Post-Reflective_1 solving count: 82
+Long-term-plan count: 76
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -715,6 +715,10 @@ Expected work:
 - Module 263: expand `NeutralErr_major^P` into the signed
   inclusion-exclusion subset average and identify which subset sizes and face
   factors can cancel structurally and which require averaged compatibility;
+  completed as `SignedSubsetExpansion_263(P_adm)`, an exact structural
+  expansion into subset layers that isolates `Kbar_P Omega_w^gen`,
+  `CollSigned_263`, exact lower-face identities, and the open averaged
+  compatibility row `AvgFaceCompat_263(P_adm)`;
 - Module 264: audit collision and diagonal strata inside projected
   model-neutrality, separating exact local-model collisions from removable
   collision-defect routes;
@@ -848,28 +852,37 @@ PlanChallenge_5_262
   through model-neutrality subrow tests.
 ```
 
+Module 263 completed the signed expansion:
+
+```text
+SignedSubsetExpansion_263(P_adm)
+  expands NeutralErr_major^P into exact subset layers,
+  isolates Kbar_P Omega_w^gen and CollSigned_263,
+  and names AvgFaceCompat_263(P_adm) as still open.
+```
+
 Continue with:
 
 ```text
-Module 263: signed inclusion-exclusion expansion of NeutralErr_major^P.
+Module 264: collision and diagonal strata for CollSigned_263 / CollNeutral_260.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, not `PROVEN`.
-Module 263 should expand the exact model-neutrality object without replacing
-the projected model:
+Module 264 should start from the exact signed remainder:
 
 ```text
-NeutralErr_major^P
-  = |(1/D) sum_d E_{h,k,t} W_M(t)
-        sum_{S subset Lambda_8} (-1)^(8-|S|)
-          Theta_{w,S}^proj(d,h,k;t)|.
+CollSigned_263
+  = sum_{S subset Lambda_8} (-1)^(8-|S|)
+      (1/D) sum_d E_{h,k,t} W_M(t)
+        (Theta_{w,S}^proj-Theta_{w,|S|}^gen).
 ```
 
-It should identify generic binomial cancellations, subset-size layers, exact
-face identities, and the averaged compatibility needed to pass from local
-face cancellations to the projected model average.
+It should separate structural zero strata from large-prime congruence
+collisions, decide which pieces belong to the exact local model and which
+pieces are removable collision defects, and state whether any signed
+cancellation is genuinely model-side.
 
-Module 263 should preserve these statuses:
+Module 264 should preserve these statuses:
 
 ```text
 ProjectedModelNeutrality_3^major: not proved,
@@ -878,7 +891,7 @@ ProjectedMajorTarget_3^B: not proved,
 ResCube_3^sharp: OPEN.
 ```
 
-Do not use Module 263 to prove or claim, or to assume as input:
+Do not use Module 264 to prove or claim, or to assume as input:
 
 ```text
 ProjectedMajorTarget_3^B,

@@ -7,16 +7,16 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 262
+Latest module frontier: Module 263
 Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 262 performs the fifth plan challenge for Phase H. It keeps the
-projected model-neutrality branch alive only in narrowed proof-or-blocked mode:
-the next work must test signed inclusion-exclusion, collision, kernel, and
-uniformity rows before any broader projected-major claim is attempted.
+Module 263 expands `NeutralErr_major^P` into the exact signed
+inclusion-exclusion subset layers, isolates `CollSigned_263`, and records the
+face-compatibility rows needed before local identities can become estimates.
+The projected model-neutrality and residual cube endpoints remain open.
 
 ## Global status
 
