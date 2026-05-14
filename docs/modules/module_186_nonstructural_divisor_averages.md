@@ -205,12 +205,15 @@ collision defects
 
 This advances the projected model-neutrality branch, subject to the still-open
 local-factor collision envelope and projected local-model matching theorem.
+Module 187 adds that the linear collision envelope also needs a small-load or
+overflow hypothesis.
 
 ## 8. What remains open
 
 This module does not prove:
 
 - the local-factor collision-envelope bound from Module 183;
+- the overflow estimate for large total collision load in Module 187;
 - the kernel absolute-mass bound for the actual major-arc projection;
 - the boundary transfer for the sharp interval model;
 - projected local-model matching;

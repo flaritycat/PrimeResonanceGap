@@ -35,6 +35,11 @@ term.
 Then the projected model collision defect is controlled if the kernel-weighted
 averages of `beta_w(L_{ij})` and `Err_w` are `o(1)`.
 
+Module 187 records a correction: this linear envelope is not automatic
+pointwise from Euler products. It requires either a small collision-load
+restriction or an overflow estimate for the region where the total collision
+load is large.
+
 ## 2. Status label
 
 `CONDITIONAL`
@@ -107,6 +112,8 @@ This module assumes:
 |Delta_w^{coll}|
   <= C sum_{i<j} beta_w(L_{ij}) + Err_w;
 ```
+
+  with the small-load or overflow qualification stated in Module 187;
 
 - a kernel `K_M` with enough absolute summability for the displayed averages;
 - structural zero sets `L_{ij}=0` are removed or shown negligible;

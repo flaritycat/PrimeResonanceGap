@@ -1,4 +1,4 @@
-# Modules 156-186 summary
+# Modules 156-187 summary
 
 ## 156
 
@@ -72,6 +72,10 @@ Kernel and range hypotheses for structural collision negligibility.
 
 Nonstructural divisor averages for projected pair-difference forms.
 
+## 187
+
+Local-factor collision envelope for projected singular models.
+
 ## Next
 
-Module 187: Local-factor collision envelope for projected singular models.
+Module 188: Overflow estimate for large collision load.
