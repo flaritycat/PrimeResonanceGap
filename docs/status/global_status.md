@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 276
-Active phase: Phase I, minor-arc transverse-incidence feasibility window
+Latest module frontier: Module 277
+Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -108,6 +108,9 @@ Latest project-wide review:
 - A proof-or-blocked verdict `TransverseGateVerdict_276`, classifying the
   Phase I transverse route as a valid mixed/conditional architecture with
   direct shortcuts blocked and no transverse closure proved.
+- A tenth plan update and sixth plan challenge `PlanUpdate_10_277` /
+  `PlanChallenge_6_277`, pausing broad Phase I and selecting the minimal
+  transverse proof-package feasibility window as Phase J.
 
 ## What the project has not proved
 
@@ -142,6 +145,8 @@ Latest project-wide review:
 - `DegFreePhaseGate_275` or smallness of any routed transverse degeneracy row.
 - `TransverseGateProofPkg_276` or `TransverseIncidenceGate_273` as a usable
   proof input.
+- `MinimalTransverseFamily_278(P_minor^0)` or any Phase J proof package for
+  `PhaseKernelBound_273`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -261,8 +266,17 @@ Completed Phase I verdict:
     keeps the transverse route mixed/conditional and records that
     TransverseGateProofPkg_276 is still open
 
+Completed Phase I plan update and challenge:
+  PlanUpdate_10_277 / PlanChallenge_6_277
+    pauses broad Phase I as a conditional architecture and starts Phase J
+
+Active Phase J target:
+  MinimalTransverseFamily_278(P_minor^0)
+    fix the smallest declared environment before testing PhaseKernelBound_273
+
 Next scheduled check:
-  Module 277 perform the tenth plan update and sixth plan challenge
+  Module 278 define MinimalTransverseFamily_278(P_minor^0)
 ```
 
-Status: **CONDITIONAL**.
+Status: **STRUCTURAL / EXTRACTION** for the active Phase J steering step;
+Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 276
-Post-Reflective_1 solving count: 95
-Long-term-plan count: 89
+Latest completed module: 277
+Post-Reflective_1 solving count: 96
+Long-term-plan count: 90
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -62,8 +62,10 @@ Seventh plan update:     Module 250 (completed)
 Eighth plan update:      Module 259 (completed)
 Fifth plan challenge:    Module 262 (completed)
 Ninth plan update:       Module 268 (completed)
-Tenth plan update:       Module 277
-Sixth plan challenge:    Module 277
+Tenth plan update:       Module 277 (completed)
+Sixth plan challenge:    Module 277 (completed)
+Eleventh plan update:    Module 286
+Seventh plan challenge:  Module 292
 ```
 
 These module numbers are bookkeeping estimates. If an iteration is not a
@@ -852,7 +854,10 @@ Expected work:
   mixed/conditional architecture with direct shortcuts blocked and
   `TransverseGateProofPkg_276` still open;
 - Module 277: perform the tenth plan update and the sixth plan challenge,
-  since the long-term-plan count will reach 90.
+  since the long-term-plan count will reach 90;
+  completed as `PlanUpdate_10_277` and `PlanChallenge_6_277`, pausing broad
+  Phase I as a conditional architecture and selecting Phase J:
+  minimal transverse proof-package feasibility.
 
 Success criterion: produce a named transverse-incidence row that is
 demonstrably smaller than `M_minor=o(1)`, or classify the transverse route as
@@ -861,6 +866,53 @@ mixed, endpoint-strength, or blocked with a precise reason.
 Failure criterion: Phase I merely renames `Gamma_trans` without unpacking the
 incidences, phase equations, thresholds, transfer rows, and forbidden
 shortcuts.
+
+### Phase J: Minimal transverse proof-package feasibility
+
+Target window: iterations 91-99 after this document.
+
+Purpose: shrink the transverse question to the smallest declared environment
+where `PhaseKernelBound_273` can be formulated honestly. Phase J does not
+attempt to prove `NarrowMinorArc_3^B`; it tests whether the candidate
+transverse proof package survives a fixed family without hidden endpoint
+assumptions.
+
+Decision from Module 277:
+
+```text
+Pause broad Phase I as a conditional architecture.
+Begin Phase J:
+  minimal transverse proof-package feasibility.
+```
+
+Expected work:
+
+- Module 278: define `MinimalTransverseFamily_278(P_minor^0)`, including
+  selector/model class, Fourier group, W-order, D-range, R/eta, Lambda,
+  thresholds, shell convention, residue/cutoff conventions, and limiting
+  order;
+- Module 279: derive the exact dual/phase expansion of `Xi_273` inside
+  `P_minor^0` and mark every data-dependent set;
+- Module 280: compare fixed frequency sets with data-dependent shell sets
+  inside `P_minor^0`;
+- Module 281: benchmark the strongest non-endpoint large-sieve or
+  Bessel-type estimate available for `Xi_273` in `P_minor^0`;
+- Module 282: audit routed degeneracy rows inside `P_minor^0`;
+- Module 283: audit the minimum W-limit, cutoff, boundary, threshold,
+  residue, and selector side rows needed for `P_minor^0`;
+- Module 284: give a proof-or-blocked verdict for `PhaseKernelBound_273`
+  inside `P_minor^0`;
+- Module 285: give a micro-verdict for `TransverseGateProofPkg_276` over
+  `P_minor^0`;
+- Module 286: perform the eleventh plan update.
+
+Success criterion: Phase J either produces a concrete non-endpoint candidate
+for `PhaseKernelBound_273` in `P_minor^0`, or proves that the candidate is
+endpoint-strength/blocked in that minimal family.
+
+Failure criterion: Phase J merely renames `P_minor`, `X_273`, or
+`Gamma_trans` without fixing the family, shell selection, side rows, and
+forbidden endpoint dependencies.
 
 ## 6. How each future iteration should start
 
@@ -1192,13 +1244,14 @@ TransverseGateVerdict_276
 Continue with:
 
 ```text
-Module 277:
-  perform the tenth plan update and the sixth plan challenge.
+Module 277 completed:
+  PlanUpdate_10_277 / PlanChallenge_6_277
+    pauses broad Phase I as a conditional architecture
+    and selects Phase J:
+      minimal transverse proof-package feasibility.
 ```
 
-Module 277 should decide whether to continue Phase I, return to Phase H
-subtargets, or branch to a narrower side row. It should preserve these
-statuses:
+Module 277 preserved these statuses:
 
 ```text
 NarrowMinorArc_3^B,
@@ -1222,3 +1275,15 @@ RBDH_pair_short,
 AU^3
 remain unproved.
 ```
+
+Continue with:
+
+```text
+Module 278:
+  define MinimalTransverseFamily_278(P_minor^0).
+```
+
+Module 278 should fix the selector/model class, Fourier group, W-order,
+dyadic ranges, R/eta/Lambda parameters, row and column thresholds, shell
+selection convention, W-residue and cutoff conventions, and limiting order
+before any new `PhaseKernelBound_273` estimate is tested.
