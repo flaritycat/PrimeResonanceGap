@@ -27,7 +27,7 @@
 | `docs\ledger\prime_gap_resonance_project_250_page_breakdown.txt` | 808464 |
 | `docs\modules\generated_250_page_index.md` | 16201 |
 | `docs\modules\generated_500_page_index.md` | 31915 |
-| `docs\modules\generated_file_index.md` | 3052 |
+| `docs\modules\generated_file_index.md` | 3128 |
 | `docs\modules\generated_index.md` | 32419 |
 | `docs\modules\module_178_residual_cube.md` | 2671 |
 | `docs\modules\module_179_fourier_major_minor.md` | 8654 |
@@ -35,7 +35,8 @@
 | `docs\modules\module_181_major_arc_projected_model.md` | 7155 |
 | `docs\modules\module_182_projected_model_neutrality_collision.md` | 6738 |
 | `docs\modules\module_183_kernel_weighted_collision_template.md` | 5888 |
-| `docs\modules\modules_156_178_summary.md` | 1227 |
+| `docs\modules\module_184_structural_collision_strata.md` | 5920 |
+| `docs\modules\modules_156_178_summary.md` | 1289 |
 | `docs\paper\Prime_Resonance_Gap_500_Page_Paper.txt` | 1285247 |
 | `docs\status\endpoint_status.md` | 849 |
 | `docs\status\forbidden_upgrades.md` | 1574 |

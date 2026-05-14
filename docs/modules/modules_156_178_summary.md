@@ -1,4 +1,4 @@
-# Modules 156-183 summary
+# Modules 156-184 summary
 
 ## 156
 
@@ -60,6 +60,10 @@ Projected residual model neutrality and collision defects.
 
 Kernel-weighted collision-defect estimate template.
 
+## 184
+
+Structural collision strata for projected cubes.
+
 ## Next
 
-Module 184: Structural collision strata classification for projected cubes.
+Module 185: Kernel and range hypotheses for structural collision negligibility.
