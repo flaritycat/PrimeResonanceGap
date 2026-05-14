@@ -22,6 +22,7 @@ flowchart TD
   TransGate["TransverseIncidenceGate_273 / PhaseKernelBound_273<br/>gate STRUCTURAL; kernel bound OPEN"]
   TransGateCompat["TransGateCompatAudit_274 / TransGateSideRows_274<br/>audit STRUCTURAL; side rows OPEN"]
   DegAudit["TransDegeneracyAudit_275 / DegFreePhaseGate_275<br/>routing STRUCTURAL; remainder OPEN"]
+  TransVerdict["TransverseGateVerdict_276 / TransverseGateProofPkg_276<br/>verdict STRUCTURAL; proof package OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
 
@@ -56,6 +57,9 @@ flowchart TD
   BoundaryTransfer --> TransGateCompat
   DegAudit --> TransGate
   DegAudit --> PhaseExpansion
+  TransVerdict --> TransGate
+  TransVerdict --> TransGateCompat
+  TransVerdict --> DegAudit
   SelectorTransfer --> ResCube
   BoundaryTransfer --> ResCube
   EndpointClass -. "structural/equivalence map, not proof" .-> ResCube

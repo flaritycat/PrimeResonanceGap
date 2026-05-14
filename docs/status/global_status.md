@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 275
+Latest module frontier: Module 276
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -105,6 +105,9 @@ Latest project-wide review:
   row diagonals, column diagonals, major-difference terms, physical diagonals,
   boundary/cutoff cases, W-residue artifacts, and selector changes to named
   rows and isolating the open `DegFreePhaseGate_275` remainder.
+- A proof-or-blocked verdict `TransverseGateVerdict_276`, classifying the
+  Phase I transverse route as a valid mixed/conditional architecture with
+  direct shortcuts blocked and no transverse closure proved.
 
 ## What the project has not proved
 
@@ -137,6 +140,8 @@ Latest project-wide review:
   lambda-summed smallness of `Gamma_trans^273`.
 - `TransGateSideRows_274` or any of its compatibility rows.
 - `DegFreePhaseGate_275` or smallness of any routed transverse degeneracy row.
+- `TransverseGateProofPkg_276` or `TransverseIncidenceGate_273` as a usable
+  proof input.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -251,8 +256,13 @@ Completed Phase I degeneracy audit:
     routes low-dimensional transverse degeneracies to named rows and leaves
     DegFreePhaseGate_275 open
 
+Completed Phase I verdict:
+  TransverseGateVerdict_276
+    keeps the transverse route mixed/conditional and records that
+    TransverseGateProofPkg_276 is still open
+
 Next scheduled check:
-  Module 276 give a proof-or-blocked verdict for the transverse incidence gate
+  Module 277 perform the tenth plan update and sixth plan challenge
 ```
 
 Status: **CONDITIONAL**.

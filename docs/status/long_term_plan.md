@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 275
-Post-Reflective_1 solving count: 94
-Long-term-plan count: 88
+Latest completed module: 276
+Post-Reflective_1 solving count: 95
+Long-term-plan count: 89
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -848,6 +848,9 @@ Expected work:
 - Module 276: give a proof-or-blocked verdict for the transverse incidence
   gate: local/model-side, mixed, endpoint-strength, or false / blocked as a
   shortcut;
+  completed as `TransverseGateVerdict_276`, classifying Phase I as a precise
+  mixed/conditional architecture with direct shortcuts blocked and
+  `TransverseGateProofPkg_276` still open;
 - Module 277: perform the tenth plan update and the sixth plan challenge,
   since the long-term-plan count will reach 90.
 
@@ -1170,7 +1173,7 @@ TransDegeneracyAudit_275
   to named rows, leaving DegFreePhaseGate_275 open.
 ```
 
-Continue with:
+Module 275 selected:
 
 ```text
 Module 276:
@@ -1178,7 +1181,24 @@ Module 276:
   local/model-side, mixed, endpoint-strength, or false / blocked as a shortcut.
 ```
 
-Module 276 should preserve these statuses:
+Module 276 completed:
+
+```text
+TransverseGateVerdict_276
+  keeps Phase I as a precise mixed/conditional architecture,
+  blocks direct shortcuts, and leaves TransverseGateProofPkg_276 open.
+```
+
+Continue with:
+
+```text
+Module 277:
+  perform the tenth plan update and the sixth plan challenge.
+```
+
+Module 277 should decide whether to continue Phase I, return to Phase H
+subtargets, or branch to a narrower side row. It should preserve these
+statuses:
 
 ```text
 NarrowMinorArc_3^B,
@@ -1190,6 +1210,7 @@ PhaseKernelBound_273,
 TransverseIncidenceGate_273,
 TransGateSideRows_274,
 DegFreePhaseGate_275,
+TransverseGateProofPkg_276,
 MinorArcTransfer_3^B,
 ProjectedMajorTarget_3^B,
 WProjectedLocalMatch_3^major,
