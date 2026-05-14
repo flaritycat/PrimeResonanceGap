@@ -49,7 +49,8 @@ flowchart TD
   ThresholdWindow299["ThresholdWindowCompatibilityAudit_299<br/>audit STRUCTURAL; barriers OPEN"]
   RowBarrier300["RowBarrierMomentAudit_300<br/>audit STRUCTURAL; current route BLOCKED"]
   Reflective4["Reflective_4<br/>memory log STRUCTURAL"]
-  RowMoment302["RowMomentDistributionAudit_302<br/>next target OPEN"]
+  RowMoment302["RowMomentDistributionAudit_302<br/>audit STRUCTURAL; Markov/circular routes BLOCKED"]
+  RowSquare303["RowSquareMomentExpansion_303<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -132,7 +133,8 @@ flowchart TD
   RowBarrier300 --> ThresholdP0
   RowBarrier300 --> Reflective4
   Reflective4 --> RowMoment302
-  RowMoment302 --> ThresholdP0
+  RowMoment302 --> RowSquare303
+  RowSquare303 --> ThresholdP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -229,3 +231,6 @@ flowchart TD
   needs a genuine row-energy distribution or high-moment gain.
 - `Reflective_4` is a memory log for Modules 261-300. It records no theorem
   upgrade and points the next mathematical work to `RowMomentDistributionAudit_302`.
+- `RowMomentDistributionAudit_302` is a structural audit: layer-cake is a
+  criterion, current Markov tails are blocked at the Module 300 ceiling, and
+  the fourth-moment route is circular without an independent theorem.

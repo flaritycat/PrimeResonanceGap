@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 301
-Active phase: Phase K, row-distribution audit
+Latest module frontier: Module 302
+Active phase: Phase K, row-square moment expansion
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -196,6 +196,11 @@ Latest project-wide review:
 - `Reflective_4.md`, a memory log reviewing Modules 261-300, preserving the
   open endpoint statuses, and selecting the row-energy distribution audit as
   the next mathematical target.
+- A row-moment distribution audit
+  `RowMomentDistributionAudit_302(P_minor^0)`, extracting the exact
+  layer-cake criterion, blocking the current first-energy Markov distribution
+  route as only the Module 300 ceiling, and blocking the fourth-moment
+  large-spectrum route as circular unless supplied independently.
 
 ## What the project has not proved
 
@@ -285,6 +290,13 @@ Latest project-wide review:
 - `CurrentRowBarrierRoute_300(q)` or `LowLevelTailToRowBarrier_300`; Module
   297's low-level proof does not prove high-level row-moment distribution.
 - `RowMomentGainTarget_300(q)`.
+- `LayerCakeRowCriterion_302(q)` as an analytic estimate; it is only an exact
+  criterion.
+- `CurrentMarkovRowDistribution_302(q)` as row-barrier smallness; it
+  reproduces the Module 300 ceiling.
+- `EndpointFourthMomentRowRoute_302` as a proof route; it is circular without
+  an independent non-endpoint fourth-moment theorem.
+- `RowTailGainTarget_302(q)` or `RowSquareMomentTarget_302`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -525,8 +537,14 @@ Completed reflection checkpoint:
     reviews Modules 261-300 and preserves all endpoint and transfer
     guardrails
 
+Completed row-moment distribution audit:
+  RowMomentDistributionAudit_302(P_minor^0)
+    extracts the layer-cake criterion, blocks the current Markov route, and
+    marks the fourth-moment large-spectrum route circular without an
+    independent theorem
+
 Next scheduled check:
-  Module 302 RowMomentDistributionAudit_302(P_minor^0)
+  Module 303 RowSquareMomentExpansion_303(P_minor^0)
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;

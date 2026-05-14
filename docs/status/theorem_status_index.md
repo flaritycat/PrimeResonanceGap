@@ -119,7 +119,13 @@ FALSE / BLOCKED
 | `LowLevelTailToRowBarrier_300` | FALSE / BLOCKED | Below-`lambda_min` fourth-moment tail control does not control high-level row distribution | `module_300_row_barrier_moment_audit.md` | No |
 | `RowMomentGainTarget_300(q)` | OPEN | Needs same-family row-energy distribution or high-moment gain sufficient for the lambda-summed row barrier | `module_300_row_barrier_moment_audit.md` | No |
 | `Reflective_4` | STRUCTURAL / EXTRACTION | Memory log for Modules 261-300; no theorem status upgrades | `Reflective_4.md` | Only as governance |
-| `RowMomentDistributionAudit_302(P_minor^0)` | OPEN | Next mathematical target: test same-family row-energy distribution or high-moment gains for `ShiftMomentP0_284(q;lambda_j)` | `Reflective_4.md` | No |
+| `RowMomentDistributionAudit_302(P_minor^0)` | STRUCTURAL / EXTRACTION | Tests same-family row-energy distribution and high-moment routes for `ShiftMomentP0_284(q;lambda_j)`; proves no row-barrier smallness | `module_302_row_moment_distribution_audit.md` | Only as an audit |
+| `LayerCakeRowCriterion_302(q)` | STRUCTURAL / EXTRACTION | Exact layer-cake criterion for tail bounds strong enough to feed `RowMomentGainTarget_300(q)` | `module_302_row_moment_distribution_audit.md` | Only as a criterion |
+| `CurrentMarkovRowDistribution_302(q)` | FALSE / BLOCKED | First-energy Markov tail recovers the Module 300 polylogarithmic ceiling, not `o_W(1)` | `module_302_row_moment_distribution_audit.md` | No |
+| `EndpointFourthMomentRowRoute_302` | FALSE / BLOCKED | The large-spectrum inequality is valid, but using `M_minor^0=o_W(1)` here assumes endpoint-strength fourth-moment control | `module_302_row_moment_distribution_audit.md` | No |
+| `RowTailGainTarget_302(q)` | OPEN | Needs same-family tail bounds beating Markov from first energy alone | `module_302_row_moment_distribution_audit.md` | No |
+| `RowSquareMomentTarget_302` | OPEN | Concrete q=2 row moment target for `D^(-1) sum_d E_{d,0}(lambda_j)^2` | `module_302_row_moment_distribution_audit.md` | No |
+| `RowSquareMomentExpansion_303(P_minor^0)` | OPEN | Next target: expand the q=2 row-square object into same-shift frequency-pair form | `module_302_row_moment_distribution_audit.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

@@ -418,8 +418,8 @@ the side-package low-level and removal audits**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 301
-Active phase: Phase K, row-distribution audit
+Latest module frontier: Module 302
+Active phase: Phase K, row-square moment expansion
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -552,23 +552,26 @@ Module 301:
   wrote Reflective_4, reviewing Modules 261-300 and preserving the open
   endpoint statuses. The reflection selects the row-energy distribution audit
   as the next mathematical target.
+
+Module 302:
+  audited row-moment distribution inside P_minor^0. The layer-cake criterion
+  is exact but structural, the current Markov tail reproduces the Module 300
+  polylogarithmic ceiling, and the fourth-moment large-spectrum route is
+  circular unless supplied by an independent non-endpoint theorem. Row-tail
+  and q=2 row-square targets remain open.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-now handled, and vacuous removal is only bookkeeping. Module 300 shows that
-the existing energy-only inputs do not prove the row side of the threshold
-window.
+now handled, vacuous removal is only bookkeeping, and Module 302 shows that
+the existing first-energy row-distribution inputs do not prove the row side of
+the threshold window.
 
 The next planned module is:
 
 ```text
-Module 301:
-  completed Reflective_4.
-
-Module 302:
-  audit RowMomentDistributionAudit_302(P_minor^0), testing whether any
-  same-family input gives nontrivial row-energy distribution or high-moment
-  control for ShiftMomentP0_284(q;lambda_j).
+Module 303:
+  expand RowSquareMomentExpansion_303(P_minor^0), the concrete q=2
+  same-shift frequency-pair object behind RowSquareMomentTarget_302.
 ```
 
 ## What Is Proved?
@@ -805,7 +808,13 @@ wins.
 | `LowLevelTailToRowBarrier_300` | FALSE / BLOCKED | Module 297 controls below-threshold tail only, not high-level row distribution |
 | `RowMomentGainTarget_300(q)` | OPEN | Needs same-family row-energy distribution or high-moment gain |
 | `Reflective_4` | STRUCTURAL / EXTRACTION | Memory log for Modules 261-300; no theorem upgrade |
-| `RowMomentDistributionAudit_302(P_minor^0)` | OPEN | Next mathematical target after the reflection |
+| `RowMomentDistributionAudit_302(P_minor^0)` | STRUCTURAL / EXTRACTION | Row-distribution route audited; no row-barrier smallness proved |
+| `LayerCakeRowCriterion_302(q)` | STRUCTURAL / EXTRACTION | Exact criterion only, not an estimate |
+| `CurrentMarkovRowDistribution_302(q)` | FALSE / BLOCKED | Markov reproduces the Module 300 ceiling |
+| `EndpointFourthMomentRowRoute_302` | FALSE / BLOCKED | Circular unless an independent non-endpoint fourth-moment theorem is supplied |
+| `RowTailGainTarget_302(q)` | OPEN | Needs a same-family tail gain beating first-energy Markov |
+| `RowSquareMomentTarget_302` | OPEN | Concrete q=2 high-moment row target |
+| `RowSquareMomentExpansion_303(P_minor^0)` | OPEN | Next target: expand the q=2 row-square object |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
