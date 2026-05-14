@@ -7,16 +7,16 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 271
+Latest module frontier: Module 272
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 271 expands transverse large Fourier coefficients into exact shifted
-`f_s`-correlation kernels. It records that phase equations appear only after
-specified frequency summation; restricted minor-arc kernels cannot be replaced
-by full-frequency diagonal equations.
+Module 272 audits standard tools against the exact phase kernels from Module
+271. Large sieve, additive energy, ordinary pair-BDH, rectangle-BDH,
+first-moment HL, and generic finite-complexity HL are useful diagnostics or
+conditional subroutes, but none currently proves the transverse phase gate.
 
 ## Global status
 

@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 271
-Post-Reflective_1 solving count: 90
-Long-term-plan count: 84
+Latest completed module: 272
+Post-Reflective_1 solving count: 91
+Long-term-plan count: 85
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -827,6 +827,9 @@ Expected work:
 - Module 272: compare available tools against the transverse object:
   large sieve, additive energy, ordinary pair-BDH, rectangle-BDH,
   first-moment HL, and generic finite-complexity HL;
+  completed as `PhaseToolCompatAudit_272`, recording that the listed tools do
+  not currently prove `PhaseIncidenceGate_271` unless upgraded into exact
+  same-family restricted weighted kernel estimates;
 - Module 273: formulate a non-tautological transverse incidence gate, with a
   candidate `Gamma_trans(lambda;D,R,eta,w)` and explicit non-endpoint
   criteria;
@@ -1093,7 +1096,7 @@ The extraction records that fixed minor frequencies are not congruence
 equations, and that restricted minor-arc kernels cannot be replaced by
 full-frequency diagonal equations without a new estimate.
 
-Continue with:
+Module 271 selected:
 
 ```text
 Module 272:
@@ -1102,13 +1105,31 @@ Module 272:
   first-moment HL, and generic finite-complexity HL.
 ```
 
-Module 272 should preserve these statuses:
+Module 272 completed:
+
+```text
+PhaseToolCompatAudit_272
+  records that the listed standard tools do not currently provide the exact
+  same-family restricted weighted phase-kernel estimate needed for
+  PhaseIncidenceGate_271.
+```
+
+Continue with:
+
+```text
+Module 273:
+  formulate a non-tautological transverse incidence gate with a candidate
+  Gamma_trans(lambda;D,R,eta,w) and explicit non-endpoint criteria.
+```
+
+Module 273 should preserve these statuses:
 
 ```text
 NarrowMinorArc_3^B,
 TransIncBound_269,
 ThresholdOnlyClosure_270,
 PhaseIncidenceGate_271,
+AvailableToolClosure_272,
 MinorArcTransfer_3^B,
 ProjectedMajorTarget_3^B,
 WProjectedLocalMatch_3^major,

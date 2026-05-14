@@ -1,4 +1,4 @@
-# Modules 156-271 summary
+# Modules 156-272 summary
 
 ## 156
 
@@ -714,8 +714,15 @@ and bipartite rectangles in `I_trans_s(lambda)` into exact shifted
 `f_s`-correlation kernels, while recording that restricted minor-arc kernels
 cannot be replaced by full-frequency diagonal equations.
 
+## 272
+
+Tool compatibility audit for the transverse phase kernels; defines
+`PhaseToolCompatAudit_272`, comparing large sieve, additive energy,
+ordinary pair-BDH, rectangle-BDH, first-moment HL, and generic
+finite-complexity HL against the exact Module 271 kernels. The audit records
+that no listed off-the-shelf tool currently proves `PhaseIncidenceGate_271`.
+
 ## Next
 
-Module 272: compare large sieve, additive energy, ordinary pair-BDH,
-rectangle-BDH, first-moment HL, and generic finite-complexity HL against the
-exact phase-kernel objects extracted in Module 271.
+Module 273: formulate a non-tautological transverse incidence gate with a
+candidate `Gamma_trans(lambda;D,R,eta,w)` and explicit non-endpoint criteria.

@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 271
+Latest module frontier: Module 272
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -91,6 +91,9 @@ Latest project-wide review:
 - A transverse phase-equation extraction `TransPhaseExpansion_271`, expanding
   same-frequency pairs, same-shift pairs, and rectangles into exact shifted
   `f_s`-correlation kernels.
+- A tool-compatibility audit `PhaseToolCompatAudit_272`, recording that the
+  listed standard tools do not currently supply the exact restricted
+  weighted phase-kernel estimate needed for the transverse gate.
 
 ## What the project has not proved
 
@@ -117,6 +120,8 @@ Latest project-wide review:
   `MultMoment_{r,s}` estimates.
 - `PhaseIncidenceGate_271` or any replacement of restricted minor-arc kernels
   by full-frequency diagonal equations.
+- `AvailableToolClosure_272` or an exact restricted weighted rectangle
+  theorem for the active selector/model family.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -211,8 +216,13 @@ Completed Phase I phase expansion:
     kernels, without replacing restricted minor-arc kernels by diagonal
     equations
 
+Completed Phase I tool audit:
+  PhaseToolCompatAudit_272
+    compares large sieve, additive energy, pair-BDH, rectangle-BDH,
+    first-moment HL, and finite-complexity HL against the exact phase kernels
+
 Next scheduled check:
-  Module 272 compare available tools against the exact phase-kernel objects
+  Module 273 formulate a non-tautological transverse incidence gate
 ```
 
 Status: **CONDITIONAL**.
