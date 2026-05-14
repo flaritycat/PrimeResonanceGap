@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 293
-Active phase: Phase K, side-package triage
+Latest module frontier: Module 294
+Active phase: Phase K, low-level side-row triage
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -164,6 +164,11 @@ Latest project-wide review:
   package into convention, uniformity, threshold/low-level, degeneracy, and
   adaptive-core rows while selecting `LowLevelBudgetTriage_294` as the next
   narrow target.
+- A low-level budget triage `LowLevelBudgetTriage_294(P_minor^0)`, recording
+  that below-`lambda_min` leakage is not controlled by definition, extracting
+  deterministic counting barriers for possible reconstructions, and leaving
+  `LowLevelBudgetP0_284`, `LowLevelCutoffP0_283`, and
+  `LowLevelCountingBarrier_294` open.
 
 ## What the project has not proved
 
@@ -230,8 +235,8 @@ Latest project-wide review:
   labels is blocked.
 - `SidePkg_291`, `ThresholdBudgetP0Closure_284(q,r)`,
   `SideRowsP0Ready_283`, or `DegRowsP0Small_282`.
-- `SidePkgReady_293`, `LowLevelBudgetTriage_294`, or
-  `LowLevelBudgetP0_284`.
+- `SidePkgReady_293`, `LowLevelBudgetP0_284`, `LowLevelCutoffP0_283`,
+  or `LowLevelCountingBarrier_294`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -434,13 +439,14 @@ Completed side-package triage:
     splits side rows into convention, uniformity, threshold/low-level,
     degeneracy, and adaptive-core rows while keeping SidePkgReady_293 open
 
-Active Phase K target:
+Completed low-level budget triage:
   LowLevelBudgetTriage_294(P_minor^0)
-    classify below-lambda_min leakage without assuming PhaseKernelBound_273^0
+    classifies below-lambda_min leakage, blocks low-level smallness by
+    definition, and leaves LowLevelCountingBarrier_294 open
 
 Next scheduled check:
-  Module 294 LowLevelBudgetTriage_294(P_minor^0)
+  Module 295 twelfth plan update
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the active Phase K steering step;
+Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

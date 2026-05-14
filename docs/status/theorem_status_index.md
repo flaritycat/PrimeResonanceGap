@@ -91,7 +91,11 @@ FALSE / BLOCKED
 | `SidePkgTriage_293(P_minor^0)` | STRUCTURAL / EXTRACTION | Splits side package into convention, uniformity, threshold/low-level, degeneracy, and adaptive-core rows | `module_293_side_package_triage.md` | Only as triage |
 | `SidePkgReady_293` | OPEN | Triage does not prove threshold, side, degeneracy, or low-level rows | `module_293_side_package_triage.md` | No |
 | `ShellSelectionAsSideRow_293 / DegFreeAsSideRow_293` | FALSE / BLOCKED | Shell selection and deg-free phase gate are adaptive-core rows, not side bookkeeping | `module_293_side_package_triage.md` | No |
-| `LowLevelBudgetTriage_294(P_minor^0)` | OPEN | Next target for below-`lambda_min` leakage classification | `module_293_side_package_triage.md` | No |
+| `LowLevelBudgetTriage_294(P_minor^0)` | STRUCTURAL / EXTRACTION | Classifies below-`lambda_min` leakage and extracts counting barriers; proves no smallness | `module_294_low_level_budget_triage.md` | Only as triage |
+| `LowLevelBudgetP0_284 / LowLevelCutoffP0_283` | OPEN | Requires a same-family low-level budget or reconstruction estimate below `lambda_min` | `module_294_low_level_budget_triage.md` | No |
+| `LowLevelCountingCriterion_294` | STRUCTURAL / EXTRACTION | Deterministic `LowPow_a,0 <= C_D m_minor^0 (A_N^0)^a N^{-a kappa_lambda}` criterion | `module_294_low_level_budget_triage.md` | Only as a criterion |
+| `LowLevelCountingBarrier_294` | OPEN | Need the target-weighted counting barrier to be `o_W(1)` uniformly over `P_minor^0` | `module_294_low_level_budget_triage.md` | No |
+| `LowLevelByDefinition_294` | FALSE / BLOCKED | Excluding coefficients below `lambda_min` from the shell grid is not an analytic estimate | `module_294_low_level_budget_triage.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

@@ -92,10 +92,10 @@ adaptive-shell inputs. The first Phase K audit isolates the direct-shell
 by themselves supply a low-complexity selection theorem; the third blocks a
 row/column-only uniform-fiber gain and isolates a weighted subgraph target.
 The Phase K verdict now records that these tests do not close the adaptive
-shell target with current tools. The cleanup packet now blocks another
-same-tools Phase K pass and sets the exact question for the next plan
-challenge. The seventh plan challenge selects side-package triage as the next
-branch.
+shell target with current tools. The cleanup packet blocks another same-tools
+Phase K pass, the seventh plan challenge selects side-package triage, and the
+latest module classifies the below-`lambda_min` low-level row as still open
+unless an explicit counting or same-family energy budget is proved.
 
 ## The Whole Project In One Narrative
 
@@ -410,13 +410,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: adaptive-shell gain triage**.
+The current active phase is **Phase K: side-package triage after the
+adaptive-shell gain block**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 293
-Active phase: Phase K, side-package triage after the adaptive-gain block
+Latest module frontier: Module 294
+Active phase: Phase K, low-level side-row triage after the adaptive-gain block
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -504,18 +505,26 @@ Module 293:
   returned ShellSelectionP0_283 and DegFreePhaseGate_282 to the adaptive core
   rather than treating them as harmless side bookkeeping, and selected
   LowLevelBudgetTriage_294(P_minor^0) as the next narrow target.
+
+Module 294:
+  classified below-lambda_min leakage. The module records that low-level
+  smallness is not proved by the shell-grid definition, gives deterministic
+  counting barriers for possible reconstructions, and leaves
+  LowLevelBudgetP0_284, LowLevelCutoffP0_283, and LowLevelCountingBarrier_294
+  open.
 ```
 
 The next planned module is:
 
 ```text
-Module 294:
-  perform LowLevelBudgetTriage_294(P_minor^0), deciding whether below-
-  lambda_min leakage has a non-endpoint local route or is already blocked.
+Module 295:
+  perform the twelfth plan update, using the Module 294 low-level verdict to
+  decide whether to test LowLevelCountingBarrier_294, shift/frequency removal
+  budgets, or another smaller side row.
 ```
 
-The next step should not claim low-level smallness. It should decide what a
-real low-level leakage statement would need and whether it avoids
+The next step should not claim low-level smallness. It should decide which
+local side row is small enough to test without smuggling in
 `PhaseKernelBound_273^0`.
 
 ## What Is Proved?
@@ -725,7 +734,10 @@ wins.
 | `SidePkgReady_293` | OPEN | Side package still not proved after triage |
 | `ShellSelectionAsSideRow_293` | FALSE / BLOCKED | Shell selection is adaptive-core, not harmless side bookkeeping |
 | `DegFreeAsSideRow_293` | FALSE / BLOCKED | Deg-free phase gate is core phase work, not side bookkeeping |
-| `LowLevelBudgetTriage_294(P_minor^0)` | OPEN | Next target for below-`lambda_min` leakage |
+| `LowLevelBudgetTriage_294(P_minor^0)` | STRUCTURAL / EXTRACTION | Below-`lambda_min` leakage classified; no smallness proved |
+| `LowLevelBudgetP0_284 / LowLevelCutoffP0_283` | OPEN | Low-level contribution still needs an actual budget |
+| `LowLevelCountingBarrier_294` | OPEN | Deterministic counting criterion not proved `o_W(1)` |
+| `LowLevelByDefinition_294` | FALSE / BLOCKED | Excluding low levels from the shell grid is not an estimate |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

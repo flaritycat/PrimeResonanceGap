@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 293
-Active phase: Phase K, side-package triage
+Latest module frontier: Module 294
+Active phase: Phase K, low-level side-row triage
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -64,6 +64,7 @@ modules/
   module_291_phase_k_status_cleanup.md
   module_292_seventh_plan_challenge.md
   module_293_side_package_triage.md
+  module_294_low_level_budget_triage.md
   modules_156_178_summary.md
 
 reviews/

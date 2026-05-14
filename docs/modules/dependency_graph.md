@@ -41,7 +41,8 @@ flowchart TD
   PhaseKCleanup291["PhaseKStatusCleanup_291<br/>same-tools continuation BLOCKED"]
   PlanChallenge7["PlanChallenge_7_292<br/>selects side-package triage"]
   SidePkgTriage293["SidePkgTriage_293<br/>triage STRUCTURAL; ready package OPEN"]
-  LowLevelTriage294["LowLevelBudgetTriage_294<br/>next diagnostic"]
+  LowLevelTriage294["LowLevelBudgetTriage_294<br/>triage STRUCTURAL; budget OPEN"]
+  PlanUpdate12["PlanUpdate_12_295<br/>next scheduled check"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -111,6 +112,7 @@ flowchart TD
   SidePkgTriage293 --> LowLevelTriage294
   SidePkgTriage293 --> AdaptiveShellP0
   LowLevelTriage294 --> AdaptiveShellP0
+  LowLevelTriage294 --> PlanUpdate12
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -184,3 +186,6 @@ flowchart TD
 - `SidePkgTriage_293` splits the side package and returns shell selection and
   deg-free phase rows to the adaptive core; the next narrow side target is
   low-level leakage.
+- `LowLevelBudgetTriage_294` classifies the below-`lambda_min` row and gives
+  deterministic counting barriers, but it does not prove
+  `LowLevelBudgetP0_284`, `LowLevelCutoffP0_283`, or any threshold closure.

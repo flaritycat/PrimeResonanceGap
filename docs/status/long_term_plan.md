@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 293
-Post-Reflective_1 solving count: 112
-Long-term-plan count: 106
+Latest completed module: 294
+Post-Reflective_1 solving count: 113
+Long-term-plan count: 107
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -2050,4 +2050,57 @@ Module 294:
   perform LowLevelBudgetTriage_294(P_minor^0), deciding whether the
   below-lambda_min contribution has a non-endpoint local route or is already
   endpoint-strength.
+```
+
+Module 294 completed:
+
+```text
+LowLevelBudgetTriage_294(P_minor^0)
+  classifies below-lambda_min leakage as a missing local budget row.
+```
+
+The triage records:
+
+```text
+LowLevelBudgetTriage_294(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+LowLevelByDefinition_294:
+  FALSE / BLOCKED.
+
+LowLevelBudgetP0_284:
+  OPEN.
+
+LowLevelCutoffP0_283:
+  OPEN.
+
+LowLevelCountingBarrier_294:
+  OPEN.
+```
+
+It preserves:
+
+```text
+ThresholdBudgetP0Closure_284(q,r),
+SideRowsP0Ready_283,
+SidePkg_291,
+SidePkgReady_293,
+AdaptiveShellGainP0_285,
+PhaseKernelBound_273^0,
+MinorArcTransfer_3^B,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3,
+the original selected-average problem
+remain unproved.
+```
+
+Continue with:
+
+```text
+Module 295:
+  perform the twelfth plan update, using the low-level verdict to decide
+  whether the next side-package move should test LowLevelCountingBarrier_294,
+  shift/frequency removal budgets, or another smaller row.
 ```
