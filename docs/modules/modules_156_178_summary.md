@@ -1,4 +1,4 @@
-# Modules 156-182 summary
+# Modules 156-183 summary
 
 ## 156
 
@@ -56,6 +56,10 @@ Major-arc projected residual local model.
 
 Projected residual model neutrality and collision defects.
 
+## 183
+
+Kernel-weighted collision-defect estimate template.
+
 ## Next
 
-Module 183: Kernel-weighted collision-defect estimate template.
+Module 184: Structural collision strata classification for projected cubes.
