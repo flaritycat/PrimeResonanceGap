@@ -1,4 +1,4 @@
-# Modules 156-227 summary
+# Modules 156-228 summary
 
 ## 156
 
@@ -345,6 +345,15 @@ and maps the arrows among `ResCube_3^sharp`, `RBDH_pair_short`,
 and `LocalBdPkg_226` boundary-transfer locations without proving any endpoint
 arrow.
 
+## 228
+
+Structural endpoint-arrow audit; defines `StructuralArrowAudit_228` and
+separates fixed-object algebraic identities from analytic estimates, keeping
+only `ResCube_3^sharp <-> DyadicDerivativeU^2`,
+`DyadicDerivativeU^2 <-> AU^3`, `SPAC_2^sharp <-> SU2Pair_2^sharp`, and the
+exact sharp major/minor Fourier split as structural, while deferring the
+ResCube/CPC, CPC/SPAC, and CPC/RBDH analytic side packages.
+
 ## Next
 
-Module 228: Audit exact algebra and structural extraction arrows.
+Module 229: Audit analytic side-package arrows.

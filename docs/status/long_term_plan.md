@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 227
-Post-Reflective_1 solving count: 46
-Long-term-plan count: 40
+Latest completed module: 228
+Post-Reflective_1 solving count: 47
+Long-term-plan count: 41
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -379,6 +379,12 @@ Expected work:
   selector, and `LocalBdPkg_226` boundary locations recorded;
 - Module 228: audit the arrows that are exact algebra or structural
   extraction, separating them from analytic estimates;
+  completed as `StructuralArrowAudit_228`, isolating the structural identities
+  `ResCube_3^sharp <-> DyadicDerivativeU^2`,
+  `DyadicDerivativeU^2 <-> AU^3`,
+  `SPAC_2^sharp <-> SU2Pair_2^sharp`, and the exact sharp
+  major/minor Fourier split, while deferring ResCube/CPC, CPC/SPAC, and
+  CPC/RBDH analytic arrows to Module 229;
 - Module 229: audit the arrows that require analytic side packages: local
   models, covariance calibration, pair-margin absorption, boundary transfer,
   collision control, W-limit order, prime-power transfer, and range coverage;
@@ -442,48 +448,51 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 228: Audit exact algebra and structural extraction arrows.
+Module 229: Audit analytic side-package arrows.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 227 completed the endpoint-equivalence arrow inventory:
+Module 228 completed the structural-arrow audit:
 
 ```text
-EndpointArrowInventory_227.
+StructuralArrowAudit_228.
 ```
 
-It separated the current endpoint map into:
-
-```text
-Fourier and derivative arrows,
-ResCube-to-CPC arrows,
-CPC/SPAC/SU2Pair arrows,
-CPC/RBDH arrows,
-major/minor decomposition and recomposition arrows.
-```
-
-Module 228 should audit only the arrows that are exact algebra or structural
-extraction, and should separate them from analytic estimates. In particular,
-check:
+It classified as structural only the fixed-object identities:
 
 ```text
 ResCube_3^sharp <-> DyadicDerivativeU^2,
 DyadicDerivativeU^2 <-> AU^3,
 SPAC_2^sharp <-> SU2Pair_2^sharp,
-ResCube_3^sharp <-> major/minor Fourier split.
+ResCube_3^sharp <-> exact sharp major/minor Fourier split.
 ```
 
-For each structural arrow, record:
+Module 228 also recorded that these are identities of quantities, not
+estimates. Module 229 should now audit the analytic side-package arrows:
 
 ```text
-the exact identity;
-the domain convention;
-the zero-mode / centering convention;
-whether it changes selector class;
-whether it changes cyclic/interval or projection convention;
-which side packages remain external.
+ResCube_3^sharp <-> CPC_3^sharp,
+CPC_3^sharp <-> SPAC_2^sharp,
+CPC_3^sharp <-> RBDH_pair_short,
+major-arc model matching,
+minor-arc large-spectrum control.
 ```
 
-Do not audit analytic arrows yet except to mark them outside Module 228's
-scope. CPC/RBDH and ResCube/CPC analytic side packages belong to Module 229.
+For each analytic arrow, record which side packages are required:
+
+```text
+exact local models kappa_w, Sigma_w, Omega_w;
+covariance calibration;
+pair-margin absorption;
+linear U^2 control;
+boundary transfer, including LocalBdPkg_226's limited role;
+collision control;
+W-limit order;
+prime-power transfer;
+range coverage;
+selector transfer.
+```
+
+Do not upgrade these analytic arrows to `PROVEN`. The expected result is a
+side-package audit, not a closure theorem.
