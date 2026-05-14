@@ -141,7 +141,13 @@ FALSE / BLOCKED
 | `CurrentToolsFixedFiberGain_305` | FALSE / BLOCKED | Recorded Parseval/Bessel/linear fixed-set tools do not give q=2 row-square gain | `module_305_fixed_fiber_row_square_benchmark.md` | No |
 | `FullFrequencyFixedFiberDiagnostic_305` | FALSE / BLOCKED | Full-frequency case is a normalization diagnostic, not the restricted minor-arc target | `module_305_fixed_fiber_row_square_benchmark.md` | No |
 | `FixedFiberRowSquareGain_305(P_minor^0)` | OPEN | Would require a new same-family q=2 fixed-fiber row-square estimate with summable losses | `module_305_fixed_fiber_row_square_benchmark.md` | No |
-| `FixedFiberBlockedVerdict_306(P_minor^0)` | OPEN | Next target: decide whether to pause row-square branch or isolate a smaller size-sensitive criterion | `module_305_fixed_fiber_row_square_benchmark.md` | No |
+| `FixedFiberBlockedVerdict_306(P_minor^0)` | STRUCTURAL / EXTRACTION | Current fixed-fiber route classified; selection transfer blocked as next move | `module_306_fixed_fiber_blocked_verdict.md` | Only as a verdict |
+| `SelectionTransferNext_306` | FALSE / BLOCKED | Cannot transfer a fixed-fiber gain that has not been supplied | `module_306_fixed_fiber_blocked_verdict.md` | No |
+| `CurrentFixedFiberRoute_306` | FALSE / BLOCKED | Current fixed-fiber toolkit recovers only the Module 300/302 ceiling scale | `module_306_fixed_fiber_blocked_verdict.md` | No |
+| `SizeSensitiveSubcriterion_306(M_U,E2_U)` | STRUCTURAL / EXTRACTION | Extracted size/energy criterion for a possible prescribed-fiber route | `module_306_fixed_fiber_blocked_verdict.md` | Only as a criterion |
+| `SizeSensitiveClosure_306` | OPEN | Needs a genuine prescribed-fiber size/energy package with summable losses | `module_306_fixed_fiber_blocked_verdict.md` | No |
+| `PauseRowSquareBranch_306` | CONDITIONAL / STEERING | Steering pause unless the challenge selects a new same-shift input or smaller criterion | `module_306_fixed_fiber_blocked_verdict.md` | Only as governance |
+| `PlanChallenge_8_307` | OPEN | Next scheduled plan challenge | `module_306_fixed_fiber_blocked_verdict.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

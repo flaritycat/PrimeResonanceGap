@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 305
-Active phase: Phase K, fixed-fiber blocked verdict
+Latest module frontier: Module 306
+Active phase: Phase K, eighth plan challenge
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -213,6 +213,10 @@ Latest project-wide review:
   fibers remove the selection issue but current Parseval/Bessel/full-frequency
   diagnostics still return ceiling-scale bounds rather than q=2 row-square
   gain.
+- A fixed-fiber blocked verdict `FixedFiberBlockedVerdict_306(P_minor^0)`,
+  recording that selection transfer is blocked as the next move because no
+  fixed-fiber gain has been supplied, and sending the row-square branch to the
+  eighth plan challenge.
 
 ## What the project has not proved
 
@@ -319,6 +323,9 @@ Latest project-wide review:
   `FixedFiberRowSquareBenchmark_305(P_minor^0)`.
 - `CurrentToolsFixedFiberGain_305`, `FixedFiberRowSquareGain_305(P_minor^0)`,
   or `FixedFiberBlockedVerdict_306(P_minor^0)`.
+- `SelectionTransferNext_306`, `CurrentFixedFiberRoute_306`,
+  `SizeSensitiveClosure_306`, or `PauseRowSquareBranch_306` as analytic
+  closure.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -581,8 +588,13 @@ Completed fixed-fiber row-square benchmark:
     extracts the prescribed-fiber kernel identity and records that current
     tools recover only ceiling-scale bounds
 
+Completed fixed-fiber blocked verdict:
+  FixedFiberBlockedVerdict_306(P_minor^0)
+    blocks selection transfer as the next step and sends the row-square branch
+    to the scheduled challenge
+
 Next scheduled check:
-  Module 306 FixedFiberBlockedVerdict_306(P_minor^0)
+  Module 307 PlanChallenge_8_307
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;

@@ -418,8 +418,8 @@ the side-package low-level and removal audits**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 305
-Active phase: Phase K, fixed-fiber blocked verdict
+Latest module frontier: Module 306
+Active phase: Phase K, eighth plan challenge
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -579,6 +579,12 @@ Module 305:
   the same ceiling scale as Modules 300/302, and full-frequency diagnostics
   do not prove the restricted row-square target. FixedFiberRowSquareGain_305
   remains open.
+
+Module 306:
+  recorded the fixed-fiber blocked verdict. Since no fixed-fiber gain exists
+  in the current toolkit, selection transfer is blocked as the next move; the
+  remaining size-sensitive criterion is structural only. The row-square branch
+  is sent to the scheduled plan challenge.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
@@ -589,10 +595,10 @@ side of the threshold window.
 The next planned module is:
 
 ```text
-Module 306:
-  perform FixedFiberBlockedVerdict_306(P_minor^0), deciding whether to pause
-  the row-square branch until a new same-shift theorem appears or isolate a
-  smaller size-sensitive fixed-fiber criterion before PlanChallenge_8_307.
+Module 307:
+  perform PlanChallenge_8_307, deciding whether to pause the row-square
+  branch, isolate SizeSensitiveClosure_306, return to threshold/column rows,
+  or choose a different Phase K branch.
 ```
 
 ## What Is Proved?
@@ -851,7 +857,13 @@ wins.
 | `CurrentToolsFixedFiberGain_305` | FALSE / BLOCKED | Current Parseval/Bessel tools recover ceilings only |
 | `FullFrequencyFixedFiberDiagnostic_305` | FALSE / BLOCKED | Full-frequency diagnostic is not the restricted target |
 | `FixedFiberRowSquareGain_305(P_minor^0)` | OPEN | New fixed-fiber same-shift estimate would be needed |
-| `FixedFiberBlockedVerdict_306(P_minor^0)` | OPEN | Next target before PlanChallenge_8_307 |
+| `FixedFiberBlockedVerdict_306(P_minor^0)` | STRUCTURAL / EXTRACTION | Current fixed-fiber route classified before challenge |
+| `SelectionTransferNext_306` | FALSE / BLOCKED | No fixed-fiber gain exists to transfer |
+| `CurrentFixedFiberRoute_306` | FALSE / BLOCKED | Current toolkit gives only ceilings |
+| `SizeSensitiveSubcriterion_306(M_U,E2_U)` | STRUCTURAL / EXTRACTION | Criterion only, not verified |
+| `SizeSensitiveClosure_306` | OPEN | Needs actual prescribed-fiber size/energy package |
+| `PauseRowSquareBranch_306` | CONDITIONAL / STEERING | Pause unless challenge selects a new input |
+| `PlanChallenge_8_307` | OPEN | Next scheduled challenge |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
