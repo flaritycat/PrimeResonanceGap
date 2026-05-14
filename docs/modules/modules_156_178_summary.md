@@ -1,4 +1,4 @@
-# Modules 156-233 summary
+# Modules 156-234 summary
 
 ## 156
 
@@ -396,6 +396,15 @@ absolute kernel mass, exact projected local-factor envelopes, and localized
 bad-factor mass, while keeping `BoundaryTupleHL_225(S,lambda)` and the fixed
 boundary row open.
 
+## 234
+
+Boundary tuple-HL audit; defines `BoundaryTupleAudit_234(S,lambda)`, records
+that the `S=emptyset` tuple row has zero error by definition, and reduces
+nonempty `BoundaryTupleHL_225(S,lambda)` rows to the boundary interval
+weighted-HL package `BoundaryIntervalHL_234(S,lambda)`, while classifying
+W-residue, prime-power, diagonal, and range dependencies as mixed unless they
+are handled inside the fixed row.
+
 ## Next
 
-Module 234: Boundary tuple-HL audit for the fixed row.
+Module 235: Kernel absolute-tail budget for the fixed row.

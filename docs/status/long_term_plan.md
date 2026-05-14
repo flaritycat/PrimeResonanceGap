@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 233
-Post-Reflective_1 solving count: 52
-Long-term-plan count: 46
+Latest completed module: 234
+Post-Reflective_1 solving count: 53
+Long-term-plan count: 47
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -440,6 +440,11 @@ Expected work:
   bad-factor mass, without proving the tuple row or the endpoint;
 - Module 234: audit `BoundaryTupleHL_225(S,lambda)` and decide whether it is
   a local weighted tuple input or endpoint-strength in disguise;
+  completed as `BoundaryTupleAudit_234(S,lambda)`, separating the exact
+  empty-subset row from the nonempty rows and reducing the latter to
+  `BoundaryIntervalHL_234(S,lambda)`, with W-residue, prime-power,
+  diagonal, and range errors classified as mixed unless they are handled
+  inside the fixed boundary interval theorem;
 - Module 235: isolate `KernelAbsTail_225(P_M,T0)` and the absolute kernel-mass
   budget needed by the fixed row;
 - Module 236: audit `WPPBoundary_225`, separating W-residue boundary failures
@@ -497,35 +502,33 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 234: Boundary tuple-HL audit for the fixed row.
+Module 235: Kernel absolute-tail budget for the fixed row.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
 
-Module 233 completed the first Phase F1 model-side test:
+Module 234 completed the actual tuple-side audit:
 
 ```text
-BoundaryModelVolume_233(S,lambda)
-  => BoundaryModelMass_225(S,lambda).
+BoundaryIntervalHL_234(S,lambda)
+  => BoundaryTupleHL_225(S,lambda)
 ```
 
-It showed conditionally that the model mass is a smaller local row only when:
+for nonempty `S`, while:
 
 ```text
-boundary volume,
-absolute kernel mass,
-exact projected local factors,
-and localized collision/bad-factor mass
+BoundaryTupleHL_225(emptyset,lambda)
 ```
 
-are all budgeted inside the fixed row. It did not prove the actual weighted
-tuple estimate.
+has zero error by definition. It did not prove the nonempty weighted boundary
+tuple estimates.
 
-Module 234 should focus on:
+Module 235 should focus on:
 
 ```text
-BoundaryTupleHL_225(S,lambda):
-  |BTuple_225(S,lambda)-BdModel_225(S,lambda)|=o_W(1)
+KernelAbsTail_225(P_M,T0):
+  A_W(M)=E_t |W_M(t)| budget,
+  TailCube_225(T0)=o_W(1)
 ```
 
 inside:
@@ -538,9 +541,10 @@ same selector class s0,
 fixed dyadic shell D0<|d|<=2D0.
 ```
 
-The goal is to decide whether the tuple-matching row is a local weighted
-boundary Hardy-Littlewood input, a mixed W/prime-power/range statement, or an
-endpoint-strength statement in disguise. Do not replace this row by
-first-moment boundary volume, ordinary pair-BDH, first-moment HL,
+The goal is to decide how much absolute kernel mass and tail decay the fixed
+boundary row can tolerate after passing to `|W_M|`, and whether this remains a
+projection-local budget or becomes mixed with smoothing/projection transfer.
+Do not use cancellation from `W_M`, do not hide kernel tails inside
+`BoundaryModelMass_225` or `BoundaryTupleHL_225`, and do not assume
 `ProjectedMajorTarget_3^B`, `ResCube_3^sharp`, selector transfer, or any
 endpoint object.
