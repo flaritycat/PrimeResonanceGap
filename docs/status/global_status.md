@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 281
+Latest module frontier: Module 282
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -124,6 +124,9 @@ Latest project-wide review:
   that currently available non-endpoint Bessel bounds reproduce row/column
   ceilings or fixed-set diagnostics rather than proving the adaptive shell
   estimate.
+- A degeneracy audit `DegRowsP0Audit_282(P_minor^0)`, separating internal
+  model-zero degeneracies from the row, column, major-difference,
+  physical-diagonal, and deg-free rows that remain open.
 
 ## What the project has not proved
 
@@ -165,6 +168,8 @@ Latest project-wide review:
 - `UniformFiberBound_280`, `SelectionTransfer_280`, or
   `DirectShellBound_280`.
 - `LargeSieveBesselClosure_281` or `AdaptiveBesselGain_281`.
+- `DegRowsP0Small_282`, `MajorDiffBound_282`, `PhysDiagLocal_282`, or
+  `DegFreePhaseGate_282`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -305,12 +310,18 @@ Completed Phase J Bessel benchmark:
   LSBesselBenchmark_281(P_minor^0)
     leaves LargeSieveBesselClosure_281 and AdaptiveBesselGain_281 open
 
+Completed Phase J degeneracy audit:
+  DegRowsP0Audit_282(P_minor^0)
+    keeps row/column, major-difference, physical-diagonal, and deg-free rows
+    open inside P_minor^0
+
 Active Phase J target:
   PhaseKernelBound_273^0 over P_minor^0
-    next audit routed degeneracy rows inside P_minor^0
+    next audit the minimum side rows still needed in P_minor^0
 
 Next scheduled check:
-  Module 282 audit routed degeneracy rows inside P_minor^0
+  Module 283 audit W-limit, cutoff, boundary, threshold, residue, selector,
+  and dyadic side rows inside P_minor^0
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the active Phase J steering step;

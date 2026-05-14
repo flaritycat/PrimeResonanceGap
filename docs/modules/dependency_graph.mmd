@@ -21,7 +21,8 @@ flowchart TD
   FixedShellAudit["FixedSetShellAudit_280<br/>audit STRUCTURAL; automatic transfer BLOCKED"]
   FixedShellTransfer["UniformFiber / SelectionTransfer / DirectShell<br/>OPEN routes"]
   LSBesselBench["LSBesselBenchmark_281<br/>benchmark STRUCTURAL; adaptive gain OPEN"]
-  DegRowsP0["Degeneracy audit in P_minor^0_282<br/>next diagnostic"]
+  DegRowsP0["DegRowsP0Audit_282(P_minor^0)<br/>audit STRUCTURAL; smallness OPEN"]
+  SideRowsP0["Side-row audit in P_minor^0_283<br/>next diagnostic"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -68,6 +69,7 @@ flowchart TD
   FixedShellTransfer --> PhaseKernel0
   LSBesselBench --> FixedShellTransfer
   DegRowsP0 --> PhaseKernel0
+  SideRowsP0 --> PhaseKernel0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube

@@ -284,7 +284,7 @@ feasibility**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 281
+Latest module frontier: Module 282
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -307,17 +307,23 @@ Module 281:
   benchmarked large-sieve/Bessel-type estimates and found that currently
   available non-endpoint versions reproduce row/column ceilings or fixed-set
   diagnostics, not the adaptive shell gain needed for PhaseKernelBound_273^0.
+
+Module 282:
+  audited degeneracy rows inside P_minor^0. Boundary/cutoff, WPP, and
+  selector degeneracies vanish only by internal model convention; row,
+  column, major-difference, physical-diagonal, and deg-free rows remain open.
 ```
 
 The next planned module is:
 
 ```text
-Module 282:
-  audit routed degeneracy rows inside P_minor^0.
+Module 283:
+  audit the minimum side rows still needed for P_minor^0.
 ```
 
-The next audit should decide which degeneracy rows are local/model-side and
-which are already endpoint-strength.
+The next audit should decide which W-limit, cutoff, boundary, threshold,
+residue, selector, and dyadic conventions are still genuine side rows even in
+the minimal family.
 
 ## What Is Proved?
 
@@ -483,6 +489,12 @@ wins.
 | `LSBesselBenchmark_281(P_minor^0)` | STRUCTURAL / EXTRACTION | Bessel/large-sieve benchmark performed |
 | `LargeSieveBesselClosure_281` | OPEN | Benchmark does not close the shell target |
 | `AdaptiveBesselGain_281` | OPEN | No adaptive Bessel gain beyond row/column ceilings |
+| `DegRowsP0Audit_282(P_minor^0)` | STRUCTURAL / EXTRACTION | Degeneracy rows classified inside the minimal family |
+| `BoundaryCutoff_282 / WPP_282 / Selector_282` | STRUCTURAL / EXTRACTION | Zero only by internal `P_minor^0` convention, not target transfer |
+| `DegRowsP0Small_282` | OPEN | Lambda-summed smallness of routed local degeneracies missing |
+| `MajorDiffBound_282` | OPEN | Major-like relations among minor frequencies not controlled |
+| `PhysDiagLocal_282` | OPEN | Same-family physical-diagonal shifted-correlation row missing |
+| `DegFreePhaseGate_282` | OPEN | Deg-free shell phase estimate missing |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

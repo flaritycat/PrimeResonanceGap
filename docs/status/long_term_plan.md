@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 281
-Post-Reflective_1 solving count: 100
-Long-term-plan count: 94
+Latest completed module: 282
+Post-Reflective_1 solving count: 101
+Long-term-plan count: 95
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -911,6 +911,10 @@ Expected work:
   ceilings or fixed-set diagnostics and do not prove
   `PhaseKernelBound_273^0`;
 - Module 282: audit routed degeneracy rows inside `P_minor^0`;
+  completed as `DegRowsP0Audit_282(P_minor^0)`, recording that
+  boundary/cutoff, WPP, and selector degeneracies vanish only by internal
+  model convention while row, column, major-difference, physical-diagonal,
+  and deg-free rows remain open;
 - Module 283: audit the minimum W-limit, cutoff, boundary, threshold,
   residue, and selector side rows needed for `P_minor^0`;
 - Module 284: give a proof-or-blocked verdict for `PhaseKernelBound_273`
@@ -1456,4 +1460,53 @@ Continue with:
 Module 282:
   audit routed degeneracy rows inside P_minor^0 and decide which are
   local/model-side and which are already endpoint-strength.
+```
+
+Module 282 completed:
+
+```text
+DegRowsP0Audit_282(P_minor^0)
+  classifies degeneracy rows inside the fixed minimal family.
+```
+
+Internal model-zero rows:
+
+```text
+BoundaryCutoff_282(P_minor^0)=0,
+WPP_282(P_minor^0)=0,
+Selector_282(P_minor^0)=0,
+```
+
+only by the conventions of `P_minor^0`, not by transfer to the actual target.
+
+It preserves these statuses:
+
+```text
+DegRowsP0Small_282,
+MajorDiffBound_282,
+PhysDiagLocal_282,
+DegFreePhaseGate_282,
+LargeSieveBesselClosure_281,
+AdaptiveBesselGain_281,
+PhaseKernelBound_273^0,
+PhaseKernelBound_273,
+TransverseGateProofPkg_276,
+TransIncBound_269,
+MinorArcTransfer_3^B,
+NarrowMinorArc_3^B,
+selector transfer,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3
+remain unproved.
+```
+
+Continue with:
+
+```text
+Module 283:
+  audit the minimum side rows still needed for P_minor^0:
+  W-limit, cutoff, boundary, threshold, residue, selector, and dyadic
+  conventions.
 ```

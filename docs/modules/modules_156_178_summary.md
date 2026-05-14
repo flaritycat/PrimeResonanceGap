@@ -1,4 +1,4 @@
-# Modules 156-281 summary
+# Modules 156-282 summary
 
 ## 156
 
@@ -795,6 +795,14 @@ Bessel/counting ceilings, classifies fixed-set large-sieve estimates as
 diagnostic only, and leaves `LargeSieveBesselClosure_281` and
 `AdaptiveBesselGain_281` open.
 
+## 282
+
+Degeneracy audit inside `P_minor^0`; defines
+`DegRowsP0Audit_282(P_minor^0)`, records that boundary/cutoff, WPP, and
+selector degeneracies vanish only by internal model convention, and leaves
+`DegRowsP0Small_282`, `MajorDiffBound_282`, `PhysDiagLocal_282`, and
+`DegFreePhaseGate_282` open.
+
 ## Next
 
-Module 282: audit routed degeneracy rows inside `P_minor^0`.
+Module 283: audit the minimum side rows still needed for `P_minor^0`.
