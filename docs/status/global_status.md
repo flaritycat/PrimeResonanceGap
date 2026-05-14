@@ -5,7 +5,7 @@ This file is the first status document Codex should read.
 Current frontier:
 
 ```text
-Latest module frontier: Module 255
+Latest module frontier: Module 256
 Active phase: Phase G, fixed-row package feasibility gates
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -36,6 +36,8 @@ Latest project-wide review:
   defect estimates.
 - A fixed-row one-point feasibility verdict: valid conditional route, no
   proved closure.
+- A same-slot two-point escalation gate, diagnostic only and still
+  conditional.
 
 ## What the project has not proved
 
@@ -47,8 +49,8 @@ Latest project-wide review:
   moving-selector endpoint.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
-  `FixedRowFeasGate_255`, or `OnePointBIHL_242` outside exact model
-  conventions.
+  `FixedRowFeasGate_255`, `TwoPointEscGate_256`, `OnePointBIHL_242`, or
+  `TwoPointBIHL_256` outside exact model conventions.
 
 ## Current endpoint class
 
@@ -95,6 +97,10 @@ Assembled one-point verdict:
   FixedRowFeasGate_255
     = MeanFeasGate_255 + SideConventionGate_254
     => FixedRowOnePointPkg_249
+
+Two-point diagnostic:
+  TwoPointEscGate_256
+    => BoundaryIntervalHL_234({(00,0),(00,1)},(00,0))
 ```
 
 Status: **CONDITIONAL**.

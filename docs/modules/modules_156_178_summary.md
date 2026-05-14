@@ -1,4 +1,4 @@
-# Modules 156-255 summary
+# Modules 156-256 summary
 
 ## 156
 
@@ -581,6 +581,16 @@ that the model branch is exact only inside model conventions while W,
 smoothed, frozen, Holder, boundary-mass, and side-row routes remain
 conditional unless their fixed-row gates are actually proved.
 
+## 256
+
+Two-point escalation gate; selects the same-slot derivative pair
+`S={(00,0),(00,1)}` with boundary label `(00,0)`, records the exact pair
+local model `Theta_{w,S}^proj=kappa_w(d)`, and defines
+`TwoPointEscGate_256` as a diagnostic package requiring pair boundary mean,
+pair side rows, kernel discipline, and explicit inheritance of unresolved
+one-point gates rather than treating escalation as proof.
+
 ## Next
 
-Module 256: two-point escalation gate after the one-point feasibility verdict.
+Module 257: minor-arc reentry gate, comparing the boundary obstruction with
+`NarrowMinorArc_3^B` and `MinorArcTransfer_3^B`.

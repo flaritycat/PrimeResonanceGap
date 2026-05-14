@@ -7,7 +7,7 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 255
+Latest module frontier: Module 256
 Active phase: Phase G, fixed-row package feasibility gates
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -28,7 +28,7 @@ modules/
   module_178_residual_cube.md
   module_179_fourier_major_minor.md
   ...
-  module_255_fixed_row_one_point_feasibility_verdict.md
+  module_256_two_point_escalation_gate.md
   modules_156_178_summary.md
 
 reviews/
