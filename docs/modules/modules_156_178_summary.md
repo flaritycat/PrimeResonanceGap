@@ -1,4 +1,4 @@
-# Modules 156-258 summary
+# Modules 156-259 summary
 
 ## 156
 
@@ -607,7 +607,14 @@ boundary gates can enter only as local or mixed slices of
 `CycIntTransfer_3^major` and cannot prove projected local-model matching,
 model neutrality, or the major target.
 
+## 259
+
+Eighth plan update and branch decision; defines `PlanUpdate_8_259`, closes
+Phase G as a diagnostic window, blocks blind expansion to larger boundary
+tuple rows, and selects Phase H as a projected model-neutrality feasibility
+window beginning with `ProjectedModelNeutralityGate_260(P_adm)`.
+
 ## Next
 
-Module 259: eighth long-term plan update and branch decision after the
-minor-arc and projected-major reentry comparisons.
+Module 260: projected model-neutrality feasibility gate for
+`NeutralErr_major^P` and `Omega_w^proj`.

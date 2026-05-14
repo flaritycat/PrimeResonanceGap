@@ -7,15 +7,15 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 258
-Active phase: Phase G, fixed-row package feasibility gates
+Latest module frontier: Module 259
+Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 258 compares the fixed-support boundary obstruction with the
-projected-major packages. The route remains conditional and does not prove the
-residual cube endpoint.
+Module 259 closes Phase G as a diagnostic window and redirects the next
+branch to projected model-neutrality. The route remains conditional and does
+not prove the residual cube endpoint.
 
 ## Global status
 

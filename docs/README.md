@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 258
-Active phase: Phase G, fixed-row package feasibility gates
+Latest module frontier: Module 259
+Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -28,7 +28,7 @@ modules/
   module_178_residual_cube.md
   module_179_fourier_major_minor.md
   ...
-  module_258_projected_major_reentry_gate.md
+  module_259_eighth_plan_update.md
   modules_156_178_summary.md
 
 reviews/

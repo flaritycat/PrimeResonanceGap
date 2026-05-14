@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 258
-Post-Reflective_1 solving count: 77
-Long-term-plan count: 71
+Latest completed module: 259
+Post-Reflective_1 solving count: 78
+Long-term-plan count: 72
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -56,10 +56,11 @@ Fourth plan update:      Module 223 (completed)
 Fifth plan update:       Module 232 (completed)
 Third plan challenge:    Module 232 (completed)
 Sixth plan update:       Module 241 (completed)
-Fourth plan challenge:   Module 247
+Fourth plan challenge:   Module 247 (completed)
 Seventh plan update:     Module 250 (completed)
-Eighth plan update:      Module 259
+Eighth plan update:      Module 259 (completed)
 Fifth plan challenge:    Module 262
+Ninth plan update:       Module 268
 ```
 
 These module numbers are bookkeeping estimates. If an iteration is not a
@@ -653,7 +654,10 @@ Expected work:
   as possible local or mixed slices of `CycIntTransfer_3^major` while blocking
   their use as proofs of `WProjectedLocalMatch_3^major`,
   `ProjectedModelNeutrality_3^major`, or `ProjectedMajorTarget_3^B`;
-- Module 259: perform the eighth plan update and choose the next branch.
+- Module 259: perform the eighth plan update and choose the next branch;
+  completed as `PlanUpdate_8_259`, closing Phase G as a diagnostic window,
+  blocking blind escalation to larger boundary tuple rows, and selecting
+  Phase H as a projected model-neutrality feasibility window.
 
 Success criterion: either a concrete fixed-row route to
 `FixedRowOnePointPkg_249` survives the feasibility gates, or the boundary
@@ -662,6 +666,64 @@ branch is stopped with a precise reason.
 Failure criterion: Phase G merely renames `KernelAvgStrength_245` or the side
 rows without testing boundary length, kernel mass, short-interval range, and
 exact conventions.
+
+### Phase H: Projected model-neutrality feasibility window
+
+Target window: iterations 73-81 after this document.
+
+Purpose: test a non-boundary projected-major bottleneck after the boundary
+branch has been classified as transfer-only. The first target is the
+model-side neutrality row:
+
+```text
+ProjectedModelNeutrality_3^major(P_adm):
+  NeutralErr_major^P=o_W(1).
+```
+
+Decision from Module 259:
+
+```text
+Close Phase G as a useful diagnostic window.
+Do not continue blind boundary tuple expansion.
+Begin with projected model neutrality before attempting full
+WProjectedLocalMatch_3^major or returning to minor transverse incidence.
+```
+
+Expected work:
+
+- Module 260: formulate `ProjectedModelNeutralityGate_260(P_adm)`, fixing the
+  exact model-neutrality object, admissibility scope, and sufficient
+  local-factor, kernel, collision, denominator, and W-limit rows;
+- Module 261: create `Reflective_3.md`, the required 40-iteration memory log
+  after `Reflective_1`, reviewing Modules 221-260 and checking for weakened
+  claims or hidden upgrades;
+- Module 262: perform the fifth 15-iteration plan challenge, deciding whether
+  the model-neutrality branch remains preferable to minor transverse
+  incidence or a localized boundary-transfer slice;
+- Module 263: expand `NeutralErr_major^P` into the signed
+  inclusion-exclusion subset average and identify which subset sizes and face
+  factors can cancel structurally and which require averaged compatibility;
+- Module 264: audit collision and diagonal strata inside projected
+  model-neutrality, separating exact local-model collisions from removable
+  collision-defect routes;
+- Module 265: audit kernel signed-cancellation versus absolute-mass
+  requirements for model neutrality, including the risk that replacing `W_M`
+  by `|W_M|` loses the only available cancellation;
+- Module 266: audit W-limit, denominator, CRT range, projection-boundary, and
+  dyadic uniformity requirements for model neutrality over `P_adm`;
+- Module 267: give a proof-or-blocked verdict for projected model neutrality:
+  conditional local/model-side, mixed, endpoint-strength, or false/blocked as
+  a shortcut;
+- Module 268: perform the ninth plan update and choose whether to continue
+  major matching, return to minor arcs, or isolate a boundary-transfer slice.
+
+Success criterion: either `ProjectedModelNeutrality_3^major` is reduced to
+checkable model-side rows smaller than the projected major endpoint, or it is
+marked mixed/endpoint-strength/blocked with a precise reason.
+
+Failure criterion: Phase H merely renames `WProjectedLocalMatch_3^major` or
+`ProjectedMajorTarget_3^B` without testing the model-side local-factor,
+kernel, collision, denominator, and W-limit requirements.
 
 ## 6. How each future iteration should start
 
@@ -738,44 +800,55 @@ Verdict:
   matching, model neutrality, or the major target.
 ```
 
+Module 259 completed the eighth plan update:
+
+```text
+PlanUpdate_8_259
+  closes Phase G as a diagnostic window
+  and selects Phase H:
+    projected model-neutrality feasibility.
+```
+
 Continue with:
 
 ```text
-Module 259: eighth long-term plan update and branch decision after the
-minor-arc and projected-major reentry comparisons.
+Module 260: ProjectedModelNeutralityGate_260(P_adm), a feasibility gate for
+the model-side NeutralErr_major^P row.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION`, not `PROVEN`.
-The module should update the plan at the 72nd long-term-plan iteration and
-choose whether the next branch attacks a localized projected-major boundary
-slice, a non-boundary major-arc row, a minor-arc row, or pauses Phase G.
+Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, not `PROVEN`.
+The module should test the model-side projected major-arc neutrality row
+without assuming projected local-model matching or the projected major target.
 
-It must keep the same fixed row:
+It must keep the exact projected-major model objects:
 
 ```text
-BdPrefRow_224^P(s0,D0;N,w,rho0),
-Pi=P_M,
-edge=cyc_s0 -> int_s0,
-same selector class s0,
-fixed dyadic shell D0<|d|<=2D0.
+ModelProjCube_d^P
+  = E_{h,k,t} W_M(t) Omega_w^proj(d,h,k;t),
+
+NeutralErr_major^P
+  = |(1/D) sum_{D<|d|<=2D} ModelProjCube_d^P|.
 ```
 
-Module 259 should check:
+Module 260 should check:
 
 ```text
-whether the boundary branch has become too narrow or still supplies useful
-local transfer slices,
-whether the next analytic target should be a boundary-transfer slice,
-ResHLErr_major, ProjectedModelNeutrality_3^major, NarrowMinorArc_3^B, or a
-different fixed row,
-how the next 9-iteration window should avoid endpoint-strength assumptions,
-what would count as a stop condition for Phase G.
+whether model neutrality is a genuine model-side row smaller than the major
+endpoint,
+which local-factor cancellations are structural and which require averaged
+compatibility,
+whether signed kernel cancellation, absolute kernel mass, collision strata,
+denominator/CRT ranges, W-limit order, projection-boundary rows, or selector
+class changes are being smuggled in,
+what side rows would make ProjectedModelNeutrality_3^major conditional rather
+than endpoint-strength.
 ```
 
-Do not prove the prototype by assuming:
+Do not prove the model row by assuming:
 
 ```text
 ProjectedMajorTarget_3^B,
+WProjectedLocalMatch_3^major,
 ResCube_3^sharp,
 selector transfer,
 CPC_3^sharp,

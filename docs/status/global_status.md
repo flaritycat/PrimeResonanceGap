@@ -5,8 +5,8 @@ This file is the first status document Codex should read.
 Current frontier:
 
 ```text
-Latest module frontier: Module 258
-Active phase: Phase G, fixed-row package feasibility gates
+Latest module frontier: Module 259
+Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -44,6 +44,8 @@ Latest project-wide review:
 - A projected-major reentry comparison showing that fixed boundary gates are
   only local slices of `CycIntTransfer_3^major`, not proofs of
   `WProjectedLocalMatch_3^major` or `ProjectedMajorTarget_3^B`.
+- An eighth plan update closing Phase G as a diagnostic window and redirecting
+  the next branch to projected model-neutrality.
 
 ## What the project has not proved
 
@@ -72,9 +74,9 @@ RBDH_pair_short(Hcal)
 
 Status: **OPEN**, modulo side packages.
 
-## Active local diagnostic
+## Active diagnostics
 
-The active Phase G diagnostic is the one-point fixed-support package:
+The completed Phase G fixed-row diagnostic remains:
 
 ```text
 FixedRowOnePointPkg_249
@@ -82,7 +84,7 @@ FixedRowOnePointPkg_249
     + OnePointSideRows_246^local.
 ```
 
-The current Phase G gates are:
+The completed Phase G gates are:
 
 ```text
 Boundary mass:
@@ -116,6 +118,11 @@ Minor-arc reentry:
 Projected-major reentry:
   BoundaryMajorReentry_258
     classifies boundary/projected-major routing
+
+Phase H next target:
+  ProjectedModelNeutralityGate_260(P_adm)
+    tests the model-side NeutralErr_major^P row before full projected
+    local-model matching
 ```
 
 Status: **CONDITIONAL**.
