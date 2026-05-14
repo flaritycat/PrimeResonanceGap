@@ -1,4 +1,4 @@
-# Modules 156-244 summary
+# Modules 156-245 summary
 
 ## 156
 
@@ -487,6 +487,15 @@ W-admissible boundary mean of `mu_s0-1` after the `|W_M|` average, with
 separate model, W-tricked, smoothed, and frozen branches and no transfer to
 other selector classes for free.
 
+## 245
+
+Kernel-average strength audit for the one-point row; defines
+`KernelAvgStrength_245(s0,D0,rho0)`, `BLength_245`, and pointwise,
+boundary-length, relative-PNT, and Holder sufficient routes for
+`OPMeanErr_244=o_W(1)`, while stressing that any boundary mean saving must
+survive the `|W_M|` average and possible absolute kernel-mass growth.
+
 ## Next
 
-Module 245: audit the strength required after the `|W_M(t)|` average.
+Module 246: audit W-residue, prime-power, range, normalization, and zero-mode
+side rows for the one-point prototype.

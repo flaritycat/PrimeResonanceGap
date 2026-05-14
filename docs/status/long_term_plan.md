@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 244
-Post-Reflective_1 solving count: 63
-Long-term-plan count: 57
+Latest completed module: 245
+Post-Reflective_1 solving count: 64
+Long-term-plan count: 58
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -534,6 +534,10 @@ Expected work:
 - Module 245: audit the strength required after the `|W_M(t)|` average:
   supremum versus averaged error, kernel absolute mass, and boundary interval
   length;
+  completed as `KernelAvgStrength_245(s0,D0,rho0)`, giving direct weighted,
+  uniform pointwise, boundary-length, relative-PNT, and Holder sufficient
+  routes for `OPMeanErr_244=o_W(1)` and recording that any route must beat
+  absolute kernel mass growth without changing selector class or projection;
 - Module 246: audit W-residue, prime-power, range, normalization, and
   zero-mode side rows for the one-point prototype;
 - Module 247: perform the fourth 15-iteration plan challenge;
@@ -591,39 +595,41 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 245: audit the strength required after the |W_M(t)| average.
+Module 246: audit W-residue, prime-power, range, normalization, and zero-mode
+side rows for the one-point prototype.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
 
-Module 244 reduced the active prototype to:
+Module 245 audited the strength needed after the absolute kernel average:
 
 ```text
-OPMeanErr_244(s0,D0,rho0)=o_W(1),
+KernelAvgStrength_245(s0,D0,rho0)
+  => OPMeanErr_244(s0,D0,rho0)=o_W(1).
 ```
 
-where:
+It isolated the main sufficient routes:
 
 ```text
-OPMeanErr_244(s0,D0,rho0)
-  = (1/D0) sum_{D0<|d|<=2D0}
-      E_{h,k,t} |W_M(t)|
-        sum_{r in {L,R}}
-          |E_n 1_{J_r}(n)(mu_s0(n-t0)-1)|
+direct weighted control,
+uniform pointwise control beating A_W(M),
+boundary-length majorant control via BLength_245,
+relative boundary-PNT control,
+Holder control using K_q(M)E_p(s0).
 ```
 
-Module 245 should audit how strong this input must be after the absolute
-kernel average:
+Module 246 should now audit the side rows left outside that strength package:
 
 ```text
-pointwise versus averaged control in (d,h,k,t),
-the size of A_W(M),
-the lengths ell_r of the boundary intervals,
-the available short-interval range,
-and whether the error must beat kernel-mass growth.
+CutOne_242,
+RangeOne_242,
+WResOne_242,
+PPOne_242,
+NormZeroOne_242.
 ```
 
-It must keep the selector branches from Module 244 separate:
+It should classify each as zero by convention, local, mixed, endpoint-strength,
+or open, while preserving the selector branches:
 
 ```text
 model, W, sm, fr.
