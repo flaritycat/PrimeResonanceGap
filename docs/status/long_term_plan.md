@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 190
-Post-Reflective_1 solving count: 9
-Long-term-plan count: 3
+Latest completed module: 191
+Post-Reflective_1 solving count: 10
+Long-term-plan count: 4
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -126,7 +126,8 @@ Expected modules:
   conditional joint-divisibility criterion;
 - Module 190: kernel absolute-mass and range audit for major projection;
   completed as a conditional kernel/range package;
-- Module 191: W-limit order and generic tail uniformity;
+- Module 191: W-limit order and generic tail uniformity; completed as a
+  conditional W-admissibility contract;
 - Module 192: averaged collision-defect bound under the qualified envelope;
 - Module 193: generic projected model neutrality after collision removal;
 - Module 194: projected local-model matching dependency list;
@@ -259,16 +260,15 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 191: W-limit order and generic tail uniformity.
+Module 192: Averaged collision-defect bound under the qualified envelope.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`, unless a complete
 proof is actually supplied.
 
-The key question is whether the generic `sum_{p>w}1/p^2` tails and the
-Euler-product tails used in Modules 187-190 are uniform under the project
-limit order, especially after kernel truncation and finite-range envelopes are
-introduced.
+The key question is whether Modules 187-191 can now be composed into a single
+conditional averaged collision-defect statement without losing any of the
+small-load, overflow, kernel, CRT-range, or W-limit hypotheses.
 
 The overflow region remains:
 

@@ -157,6 +157,8 @@ The constants `C_0,K_0` may depend on the finite cube complexity and on fixed
 kernel-shape parameters, but not on `N,D,h,k,w`, or the finite prime set `P`.
 Module 190 audits the kernel absolute-mass and finite-range hypotheses needed
 to verify this assumption for a concrete major-arc projection.
+Module 191 supplies the W-limit condition that makes the displayed
+`sum_{p>w}1/p^2` product tail uniformly negligible.
 
 ## 5. Proof / disproof / reduction
 
@@ -286,6 +288,8 @@ matching and not a minor-arc estimate.
 Module 190 is the next infrastructure check: it asks whether the absolute
 kernel and CRT range errors are strong enough to support the displayed joint
 criterion.
+Module 191 then separates the generic W-tail from the non-generic arithmetic
+errors in that criterion.
 
 ## 8. What remains open
 
@@ -294,6 +298,8 @@ This module does not prove:
 - the Module 190 kernel/range package needed for the joint
   union-divisibility estimate for the actual projected kernel;
 - summability of `Err_exp(lambda)` in the true parameter ranges;
+- W-admissibility of the non-generic errors after the Module 191 limit-order
+  check;
 - kernel absolute-mass bounds for the major-arc projection;
 - structural and boundary negligibility in the sharp interval model;
 - projected local-model matching;

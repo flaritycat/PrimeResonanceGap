@@ -1,4 +1,4 @@
-# Modules 156-190 summary
+# Modules 156-191 summary
 
 ## 156
 
@@ -88,6 +88,10 @@ Exponential-moment criterion for beta-load sums.
 
 Kernel absolute-mass and range audit for major projection.
 
+## 191
+
+W-limit order and generic tail uniformity.
+
 ## Next
 
-Module 191: W-limit order and generic tail uniformity.
+Module 192: Averaged collision-defect bound under the qualified envelope.

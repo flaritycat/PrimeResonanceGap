@@ -156,6 +156,8 @@ B_w(S)=sum_{i<j, i,j in S} beta_w(L_{ij})
 ```
 
 and `tail_w` covers the generic `sum_{p>w} 1/p^2` errors.
+Module 191 records the W-limit uniformity condition under which this generic
+tail is actually negligible.
 
 Since there are only finitely many subsets `S` of the eight vertices,
 inclusion-exclusion gives:
@@ -182,7 +184,7 @@ its missing hypothesis made explicit.
 - Multiple collisions at the same prime can increase `delta_p(S)`, but only
   by a bounded amount because the cube has eight vertices.
 - The generic `sum_{p>w} 1/p^2` tail is harmless only after the W-limit order
-  is respected.
+  is respected and the constants are uniform in the active ranges.
 - If `B_w` has a heavy tail, the exponential envelope cannot be replaced by a
   linear one.
 - Local obstructions not caused by pair collisions must be listed separately;
@@ -204,8 +206,9 @@ local projected singular factors
 
 Module 188 supplies a conditional overflow criterion for the region `B_w>1`.
 Module 189 reduces one exponential-integrability route to a joint
-union-divisibility criterion. The remaining work is to verify that criterion
-for the actual projected kernel.
+union-divisibility criterion. Module 191 records the W-limit order needed for
+the generic Euler tails in this chain. The remaining work is to verify the
+non-generic arithmetic and kernel hypotheses for the actual projected kernel.
 
 ## 8. What remains open
 

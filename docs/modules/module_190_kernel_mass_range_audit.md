@@ -256,7 +256,8 @@ provided `A_W(M)=O(1)`.
 
 The exponential-expansion error in Module 189 is controlled by
 `Err_range(lambda)` plus the summable kernel-tail contribution
-`Tail_exp(lambda,T)`. Thus, under the assumptions in Section 4:
+`Tail_exp(lambda,T)`. Module 191 records the W-limit uniformity needed for the
+generic `p^{-2}` product tails. Thus, under the assumptions in Section 4:
 
 ```text
 E_abs prod_{p in P} X_p
@@ -341,6 +342,8 @@ major-arc kernel K_M
 
 This module therefore sits between the formal collision-load reductions and
 any attempted proof of the actual major-arc collision package.
+Module 191 is the next bookkeeping layer: it identifies which tails are
+genuinely generic W-tails and which remain arithmetic range errors.
 
 ## 8. What remains open
 
@@ -351,6 +354,7 @@ This module does not prove:
 - exponential summability of the kernel-tail contribution;
 - the finite-range CRT package for all projected pair-difference assignments;
 - summability of range errors in the Module 189 exponential expansion;
+- the W-admissibility checks isolated in Module 191;
 - projected local-model matching;
 - minor-arc large-spectrum decay;
 - `ResCube_3^sharp`, `CPC_3^sharp`, `RBDH_pair_short`, or `AU^3`;
