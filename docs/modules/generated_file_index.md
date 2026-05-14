@@ -27,7 +27,7 @@
 | `docs\ledger\prime_gap_resonance_project_250_page_breakdown.txt` | 808464 |
 | `docs\modules\generated_250_page_index.md` | 16201 |
 | `docs\modules\generated_500_page_index.md` | 31915 |
-| `docs\modules\generated_file_index.md` | 4864 |
+| `docs\modules\generated_file_index.md` | 4938 |
 | `docs\modules\generated_index.md` | 32419 |
 | `docs\modules\module_178_residual_cube.md` | 2671 |
 | `docs\modules\module_179_fourier_major_minor.md` | 8654 |
@@ -59,12 +59,13 @@
 | `docs\modules\module_205_second_plan_update.md` | 8801 |
 | `docs\modules\module_206_exact_projected_major_arc_target.md` | 12245 |
 | `docs\modules\module_207_projected_local_model_factors.md` | 11219 |
-| `docs\modules\modules_156_178_summary.md` | 4663 |
+| `docs\modules\module_208_projected_collision_hyperplanes.md` | 10157 |
+| `docs\modules\modules_156_178_summary.md` | 4930 |
 | `docs\paper\Prime_Resonance_Gap_500_Page_Paper.txt` | 1285247 |
 | `docs\status\endpoint_status.md` | 849 |
 | `docs\status\forbidden_upgrades.md` | 1574 |
 | `docs\status\global_status.md` | 1305 |
-| `docs\status\long_term_plan.md` | 13682 |
+| `docs\status\long_term_plan.md` | 14016 |
 | `docs\status\selector_taxonomy.md` | 1015 |
 | `docs\status\status_ledger.json` | 878 |
 | `experiments\pair_rectangle_statistics\README.md` | 69 |

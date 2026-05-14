@@ -183,7 +183,13 @@ Exact projected major-arc local model factors; defines
 pair/rectangle/eight-form marginals, and records explicitly why
 `Sigma_w(d,h)` is not pointwise `kappa_w(d)^2`.
 
+## 208
+
+Collision hyperplane stratification for the projected residual cube; reduces
+the 28 labeled pair collisions to a 19-form projected affine list and separates
+structural zero strata, large-prime congruence strata, boundary/kernel-tail
+strata, W-residue strata, and prime-power strata.
+
 ## Next
 
-Module 208: Collision hyperplane stratification for the projected residual
-cube.
+Module 209: W-admissible projected local-model theorem.

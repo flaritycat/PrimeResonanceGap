@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 207
-Post-Reflective_1 solving count: 26
-Long-term-plan count: 20
+Latest completed module: 208
+Post-Reflective_1 solving count: 27
+Long-term-plan count: 21
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -219,6 +219,10 @@ Expected work:
   pointwise `kappa_w(d)^2`;
 - Module 208: stratify major-arc collision hyperplanes for the projected
   residual cube and separate structural collisions from analytic error terms;
+  completed by reducing the 28 labeled pair collisions to a 19-form
+  projected affine list, while separating structural zero strata, large-prime
+  congruence strata, boundary/kernel-tail strata, W-residue strata, and
+  prime-power strata;
 - Module 209: formulate the W-admissible projected local-model theorem with
   all limit orders, uniformity ranges, and denominator restrictions;
 - Module 210: audit cyclic-to-interval boundary transfer for the projected
@@ -321,29 +325,31 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 208: Collision hyperplane stratification for the projected residual
-cube.
+Module 209: W-admissible projected local-model theorem.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 207 fixed the projected local factor dictionary:
+Module 208 fixed the projected collision stratification:
 
 ```text
-Theta_{w,S}^proj(d,h,k;t),
-Omega_w^proj(d,h,k;t).
+B_w^red(d,h,k;t),
+Z_struct,
+C_p(L),
+boundary/kernel-tail strata.
 ```
 
-The next module should stratify the collision hyperplanes that make the local
-model non-generic. In particular it should list:
+The next module should state the exact W-admissible theorem that would turn
+the projected local model into a usable major-arc input. In particular it
+should specify:
 
 ```text
-pair differences among the eight projected vertices,
-structural zero strata,
-large-prime congruence collision strata,
-boundary and kernel-tail interactions,
-which strata belong to the exact model and which require estimates.
+the fixed-w then N->infinity then w->infinity limit order,
+uniformity over D,R,eta,P_M,H,K,T,
+which model-matching errors are averaged absolutely,
+how structural, collision, boundary, W-residue, and prime-power errors enter,
+which assumptions are conditional rather than proved.
 ```
 
-In particular, it must not discard collision strata from the actual side
-unless the same removal is mirrored in `Omega_w^proj`.
+In particular, it must not convert local Euler-factor definitions or collision
+stratification into actual projected local-model matching.
