@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 304
-Active phase: Phase K, fixed-fiber row-square benchmark
+Latest module frontier: Module 305
+Active phase: Phase K, fixed-fiber blocked verdict
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -208,6 +208,11 @@ Latest project-wide review:
 - A thirteenth plan update `PlanUpdate_13_304`, selecting a fixed-fiber
   row-square benchmark before attempting the full data-dependent
   `SameShiftSquareKernelGain_303` route.
+- A fixed-fiber row-square benchmark
+  `FixedFiberRowSquareBenchmark_305(P_minor^0)`, showing that prescribed
+  fibers remove the selection issue but current Parseval/Bessel/full-frequency
+  diagnostics still return ceiling-scale bounds rather than q=2 row-square
+  gain.
 
 ## What the project has not proved
 
@@ -312,6 +317,8 @@ Latest project-wide review:
   `OffDiagonalSameShiftRow_303(lambda_j)`.
 - `PlanUpdate_13_304` as an estimate, or
   `FixedFiberRowSquareBenchmark_305(P_minor^0)`.
+- `CurrentToolsFixedFiberGain_305`, `FixedFiberRowSquareGain_305(P_minor^0)`,
+  or `FixedFiberBlockedVerdict_306(P_minor^0)`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -569,8 +576,13 @@ Completed thirteenth plan update:
     selects FixedFiberRowSquareBenchmark_305(P_minor^0) before any direct
     attack on SameShiftSquareKernelGain_303(P_minor^0)
 
+Completed fixed-fiber row-square benchmark:
+  FixedFiberRowSquareBenchmark_305(P_minor^0)
+    extracts the prescribed-fiber kernel identity and records that current
+    tools recover only ceiling-scale bounds
+
 Next scheduled check:
-  Module 305 FixedFiberRowSquareBenchmark_305(P_minor^0)
+  Module 306 FixedFiberBlockedVerdict_306(P_minor^0)
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;

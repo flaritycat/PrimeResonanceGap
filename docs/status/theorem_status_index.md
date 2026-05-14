@@ -134,7 +134,14 @@ FALSE / BLOCKED
 | `EndpointFourthMomentShortcut_303` | FALSE / BLOCKED | Endpoint fourth moments are circular here and do not control the off-diagonal row alone | `module_303_row_square_moment_expansion.md` | No |
 | `SameShiftSquareKernelGain_303(P_minor^0)` | OPEN | New q=2 kernel-gain target strong enough to imply `RowSquareMomentTarget_302` | `module_303_row_square_moment_expansion.md` | No |
 | `PlanUpdate_13_304` | STRUCTURAL / EXTRACTION | Thirteenth plan update; selects a fixed-fiber row-square benchmark before direct data-dependent kernel attack | `module_304_thirteenth_plan_update.md` | Only as governance |
-| `FixedFiberRowSquareBenchmark_305(P_minor^0)` | OPEN | Next target: benchmark prescribed fibers `U_d` independent of `beta_0` before selection transfer | `module_304_thirteenth_plan_update.md` | No |
+| `FixedFiberRowSquareBenchmark_305(P_minor^0)` | STRUCTURAL / EXTRACTION | Benchmarks prescribed fibers `U_d` independent of `beta_0`; current tools give ceilings only | `module_305_fixed_fiber_row_square_benchmark.md` | Only as a benchmark |
+| `FixedFiberKernelIdentity_305(U)` | STRUCTURAL / EXTRACTION | Exact same-shift kernel identity with prescribed fibers `U_d` | `module_305_fixed_fiber_row_square_benchmark.md` | Only as an exact identity |
+| `FixedFiberParsevalCeiling_305(U)` | STRUCTURAL / EXTRACTION | Gives `RowSq^U <= C_D L_{N,w}^8`, not `o_W(1)` row-barrier smallness | `module_305_fixed_fiber_row_square_benchmark.md` | Only as a ceiling |
+| `FixedFiberSizeCriterion_305(U)` | STRUCTURAL / EXTRACTION | Size/loss criterion needed for prescribed fibers to feed the row barrier | `module_305_fixed_fiber_row_square_benchmark.md` | Only as a criterion |
+| `CurrentToolsFixedFiberGain_305` | FALSE / BLOCKED | Recorded Parseval/Bessel/linear fixed-set tools do not give q=2 row-square gain | `module_305_fixed_fiber_row_square_benchmark.md` | No |
+| `FullFrequencyFixedFiberDiagnostic_305` | FALSE / BLOCKED | Full-frequency case is a normalization diagnostic, not the restricted minor-arc target | `module_305_fixed_fiber_row_square_benchmark.md` | No |
+| `FixedFiberRowSquareGain_305(P_minor^0)` | OPEN | Would require a new same-family q=2 fixed-fiber row-square estimate with summable losses | `module_305_fixed_fiber_row_square_benchmark.md` | No |
+| `FixedFiberBlockedVerdict_306(P_minor^0)` | OPEN | Next target: decide whether to pause row-square branch or isolate a smaller size-sensitive criterion | `module_305_fixed_fiber_row_square_benchmark.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

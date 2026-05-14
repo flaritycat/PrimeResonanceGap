@@ -52,7 +52,8 @@ flowchart TD
   RowMoment302["RowMomentDistributionAudit_302<br/>audit STRUCTURAL; Markov/circular routes BLOCKED"]
   RowSquare303["RowSquareMomentExpansion_303<br/>identity STRUCTURAL; shortcuts BLOCKED"]
   PlanUpdate13["PlanUpdate_13_304<br/>plan update STRUCTURAL"]
-  FixedFiber305["FixedFiberRowSquareBenchmark_305<br/>next target OPEN"]
+  FixedFiber305["FixedFiberRowSquareBenchmark_305<br/>benchmark STRUCTURAL; current tools BLOCKED"]
+  FixedFiber306["FixedFiberBlockedVerdict_306<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -138,7 +139,8 @@ flowchart TD
   RowMoment302 --> RowSquare303
   RowSquare303 --> PlanUpdate13
   PlanUpdate13 --> FixedFiber305
-  FixedFiber305 --> ThresholdP0
+  FixedFiber305 --> FixedFiber306
+  FixedFiber306 --> ThresholdP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -244,3 +246,7 @@ flowchart TD
   and leaves `SameShiftSquareKernelGain_303` open.
 - `PlanUpdate_13_304` selects `FixedFiberRowSquareBenchmark_305` before a
   direct attack on the data-dependent same-shift row-square kernel.
+- `FixedFiberRowSquareBenchmark_305` shows that prescribed fibers remove the
+  selection issue but current tools still recover ceiling-scale row-square
+  bounds. The fixed-fiber branch now needs a blocked verdict or a genuinely
+  smaller size-sensitive criterion.

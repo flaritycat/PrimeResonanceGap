@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 304
-Post-Reflective_1 solving count: 123
-Long-term-plan count: 117
+Latest completed module: 305
+Post-Reflective_1 solving count: 124
+Long-term-plan count: 118
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -2479,4 +2479,43 @@ Continue with:
 Module 305:
   perform FixedFiberRowSquareBenchmark_305(P_minor^0), replacing S_{d,j} by
   prescribed fibers U_d independent of beta_0 and auditing current tools.
+```
+
+Module 305 completed:
+
+```text
+FixedFiberRowSquareBenchmark_305(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+FixedFiberKernelIdentity_305(U):
+  STRUCTURAL / EXTRACTION.
+
+FixedFiberParsevalCeiling_305(U):
+  STRUCTURAL / EXTRACTION.
+
+FixedFiberSizeCriterion_305(U):
+  STRUCTURAL / EXTRACTION.
+
+CurrentToolsFixedFiberGain_305:
+  FALSE / BLOCKED.
+
+FullFrequencyFixedFiberDiagnostic_305:
+  FALSE / BLOCKED as a proof route.
+
+FixedFiberRowSquareGain_305(P_minor^0):
+  OPEN.
+```
+
+The benchmark shows that prescribing the fibers removes the selection issue,
+but current Parseval/Bessel/full-frequency diagnostics still give only
+ceiling-scale q=2 row-square bounds. Selection transfer is therefore not the
+first missing input unless a genuine fixed-fiber theorem is supplied.
+
+Continue with:
+
+```text
+Module 306:
+  perform FixedFiberBlockedVerdict_306(P_minor^0), deciding whether the
+  row-square branch should pause until a new same-shift theorem appears or
+  isolate a smaller size-sensitive criterion before PlanChallenge_8_307.
 ```

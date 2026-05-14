@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 304
-Active phase: Phase K, fixed-fiber row-square benchmark
+Latest module frontier: Module 305
+Active phase: Phase K, fixed-fiber blocked verdict
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -74,6 +74,7 @@ modules/
   module_302_row_moment_distribution_audit.md
   module_303_row_square_moment_expansion.md
   module_304_thirteenth_plan_update.md
+  module_305_fixed_fiber_row_square_benchmark.md
   modules_156_178_summary.md
 
 reviews/

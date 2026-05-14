@@ -418,8 +418,8 @@ the side-package low-level and removal audits**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 304
-Active phase: Phase K, fixed-fiber row-square benchmark
+Latest module frontier: Module 305
+Active phase: Phase K, fixed-fiber blocked verdict
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -572,6 +572,13 @@ Module 304:
   full data-dependent row-square kernel and selects the smaller fixed-fiber
   benchmark first, to decide whether the obstruction is already present
   before selection transfer.
+
+Module 305:
+  benchmarked prescribed fibers U_d independent of beta_0. The exact
+  fixed-fiber kernel identity is structural, Parseval/Bessel tools return
+  the same ceiling scale as Modules 300/302, and full-frequency diagnostics
+  do not prove the restricted row-square target. FixedFiberRowSquareGain_305
+  remains open.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
@@ -582,10 +589,10 @@ side of the threshold window.
 The next planned module is:
 
 ```text
-Module 305:
-  perform FixedFiberRowSquareBenchmark_305(P_minor^0), replacing S_{d,j} by
-  prescribed fibers U_d independent of beta_0 and auditing whether current
-  tools give a genuine q=2 row-square gain or only the existing ceiling.
+Module 306:
+  perform FixedFiberBlockedVerdict_306(P_minor^0), deciding whether to pause
+  the row-square branch until a new same-shift theorem appears or isolate a
+  smaller size-sensitive fixed-fiber criterion before PlanChallenge_8_307.
 ```
 
 ## What Is Proved?
@@ -837,7 +844,14 @@ wins.
 | `EndpointFourthMomentShortcut_303` | FALSE / BLOCKED | Circular and does not control the off-diagonal row alone |
 | `SameShiftSquareKernelGain_303(P_minor^0)` | OPEN | New q=2 row-square kernel target |
 | `PlanUpdate_13_304` | STRUCTURAL / EXTRACTION | Thirteenth plan update; selects fixed-fiber benchmark first |
-| `FixedFiberRowSquareBenchmark_305(P_minor^0)` | OPEN | Next target: test prescribed fibers before selection transfer |
+| `FixedFiberRowSquareBenchmark_305(P_minor^0)` | STRUCTURAL / EXTRACTION | Prescribed-fiber benchmark completed; no gain proved |
+| `FixedFiberKernelIdentity_305(U)` | STRUCTURAL / EXTRACTION | Exact fixed-fiber same-shift kernel identity |
+| `FixedFiberParsevalCeiling_305(U)` | STRUCTURAL / EXTRACTION | Valid ceiling, not row-barrier smallness |
+| `FixedFiberSizeCriterion_305(U)` | STRUCTURAL / EXTRACTION | Conditional size/loss criterion only |
+| `CurrentToolsFixedFiberGain_305` | FALSE / BLOCKED | Current Parseval/Bessel tools recover ceilings only |
+| `FullFrequencyFixedFiberDiagnostic_305` | FALSE / BLOCKED | Full-frequency diagnostic is not the restricted target |
+| `FixedFiberRowSquareGain_305(P_minor^0)` | OPEN | New fixed-fiber same-shift estimate would be needed |
+| `FixedFiberBlockedVerdict_306(P_minor^0)` | OPEN | Next target before PlanChallenge_8_307 |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
