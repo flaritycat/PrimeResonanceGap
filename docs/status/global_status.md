@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 277
+Latest module frontier: Module 278
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -111,6 +111,9 @@ Latest project-wide review:
 - A tenth plan update and sixth plan challenge `PlanUpdate_10_277` /
   `PlanChallenge_6_277`, pausing broad Phase I and selecting the minimal
   transverse proof-package feasibility window as Phase J.
+- A minimal transverse family definition `MinimalTransverseFamily_278`, fixing
+  the local W-cyclic model environment `P_minor^0` for future tests of
+  `PhaseKernelBound_273^0`.
 
 ## What the project has not proved
 
@@ -145,8 +148,8 @@ Latest project-wide review:
 - `DegFreePhaseGate_275` or smallness of any routed transverse degeneracy row.
 - `TransverseGateProofPkg_276` or `TransverseIncidenceGate_273` as a usable
   proof input.
-- `MinimalTransverseFamily_278(P_minor^0)` or any Phase J proof package for
-  `PhaseKernelBound_273`.
+- `PhaseKernelBound_273^0` inside `P_minor^0`, or any Phase J proof package
+  for `PhaseKernelBound_273`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -270,12 +273,18 @@ Completed Phase I plan update and challenge:
   PlanUpdate_10_277 / PlanChallenge_6_277
     pauses broad Phase I as a conditional architecture and starts Phase J
 
-Active Phase J target:
+Completed Phase J family definition:
   MinimalTransverseFamily_278(P_minor^0)
-    fix the smallest declared environment before testing PhaseKernelBound_273
+    fixes a W-cyclic prime-only model family and leaves PhaseKernelBound_273^0
+    open
+
+Active Phase J target:
+  PhaseKernelBound_273^0 over P_minor^0
+    begin with the exact dual/phase expansion of Xi_273^0
 
 Next scheduled check:
-  Module 278 define MinimalTransverseFamily_278(P_minor^0)
+  Module 279 derive the exact dual/phase expansion of Xi_273^0 inside
+  P_minor^0
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the active Phase J steering step;

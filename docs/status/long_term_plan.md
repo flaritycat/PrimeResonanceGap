@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 277
-Post-Reflective_1 solving count: 96
-Long-term-plan count: 90
+Latest completed module: 278
+Post-Reflective_1 solving count: 97
+Long-term-plan count: 91
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -891,7 +891,9 @@ Expected work:
   selector/model class, Fourier group, W-order, D-range, R/eta, Lambda,
   thresholds, shell convention, residue/cutoff conventions, and limiting
   order;
-- Module 279: derive the exact dual/phase expansion of `Xi_273` inside
+  completed as a structural W-cyclic prime-only model family for future
+  tests of `PhaseKernelBound_273^0`;
+- Module 279: derive the exact dual/phase expansion of `Xi_273^0` inside
   `P_minor^0` and mark every data-dependent set;
 - Module 280: compare fixed frequency sets with data-dependent shell sets
   inside `P_minor^0`;
@@ -907,7 +909,7 @@ Expected work:
 - Module 286: perform the eleventh plan update.
 
 Success criterion: Phase J either produces a concrete non-endpoint candidate
-for `PhaseKernelBound_273` in `P_minor^0`, or proves that the candidate is
+for `PhaseKernelBound_273` in `P_minor^0`, or classifies the candidate as
 endpoint-strength/blocked in that minimal family.
 
 Failure criterion: Phase J merely renames `P_minor`, `X_273`, or
@@ -1276,14 +1278,41 @@ AU^3
 remain unproved.
 ```
 
+Module 278 completed:
+
+```text
+MinimalTransverseFamily_278(P_minor^0)
+  fixes the local W-cyclic prime-only model environment for Phase J.
+```
+
+It preserves these statuses:
+
+```text
+PhaseKernelBound_273^0,
+PhaseKernelBound_273,
+TransverseGateProofPkg_276,
+TransGateSideRows_274,
+DegFreePhaseGate_275,
+TransIncBound_269,
+MinorArcTransfer_3^B,
+NarrowMinorArc_3^B,
+selector transfer,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3
+remain unproved.
+```
+
 Continue with:
 
 ```text
-Module 278:
-  define MinimalTransverseFamily_278(P_minor^0).
+Module 279:
+  derive the exact dual/phase expansion of Xi_273^0 inside P_minor^0 and
+  mark every data-dependent set.
 ```
 
-Module 278 should fix the selector/model class, Fourier group, W-order,
-dyadic ranges, R/eta/Lambda parameters, row and column thresholds, shell
-selection convention, W-residue and cutoff conventions, and limiting order
-before any new `PhaseKernelBound_273` estimate is tested.
+Module 279 should keep the selector/model class, Fourier group, W-residue,
+cutoff, thresholds, and base-tail shell convention of `P_minor^0` fixed. It
+should not replace data-dependent shells by fixed frequency sets unless it
+names the exact selection theorem that would justify the move.

@@ -23,7 +23,8 @@ flowchart TD
   TransGateCompat["TransGateCompatAudit_274 / TransGateSideRows_274<br/>audit STRUCTURAL; side rows OPEN"]
   DegAudit["TransDegeneracyAudit_275 / DegFreePhaseGate_275<br/>routing STRUCTURAL; remainder OPEN"]
   TransVerdict["TransverseGateVerdict_276 / TransverseGateProofPkg_276<br/>verdict STRUCTURAL; proof package OPEN"]
-  MinTransFamily["MinimalTransverseFamily_278(P_minor^0)<br/>Phase J subtarget OPEN"]
+  MinTransFamily["MinimalTransverseFamily_278(P_minor^0)<br/>definition STRUCTURAL"]
+  PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
 
@@ -61,7 +62,8 @@ flowchart TD
   TransVerdict --> TransGate
   TransVerdict --> TransGateCompat
   TransVerdict --> DegAudit
-  MinTransFamily --> TransGate
+  PhaseKernel0 --> TransGate
+  MinTransFamily --> PhaseKernel0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -91,5 +93,5 @@ flowchart TD
   prove the absolute row `CollNeutral_260`.
 - The actual selected-average problem still needs the actual sharp moving
   selector and full gap discipline; model/frozen/smoothed rows are not enough.
-- Phase J starts by defining `P_minor^0`; that definition is a steering
-  prerequisite, not a proof of `PhaseKernelBound_273`.
+- Phase J now has `P_minor^0`; that definition is a convention package, not a
+  proof of `PhaseKernelBound_273^0`.

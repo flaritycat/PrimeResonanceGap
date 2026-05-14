@@ -1,4 +1,4 @@
-# Modules 156-277 summary
+# Modules 156-278 summary
 
 ## 156
 
@@ -762,6 +762,15 @@ Tenth plan update and sixth plan challenge; defines `PlanUpdate_10_277` and
 and selects Phase J as a minimal transverse proof-package feasibility window
 starting with `MinimalTransverseFamily_278(P_minor^0)`.
 
+## 278
+
+Minimal transverse family definition for Phase J; defines
+`MinimalTransverseFamily_278(P_minor^0)` as a local W-cyclic prime-only model
+environment with fixed Fourier group, W-order, dyadic range, major/minor arc
+convention, lambda grid, thresholds, base-tail shell convention, cutoff, and
+limiting order. The same-family input `PhaseKernelBound_273^0` remains open.
+
 ## Next
 
-Module 278: define `MinimalTransverseFamily_278(P_minor^0)`.
+Module 279: derive the exact dual/phase expansion of `Xi_273^0` inside
+`P_minor^0`.

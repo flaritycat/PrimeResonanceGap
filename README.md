@@ -7,16 +7,16 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 277
+Latest module frontier: Module 278
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 277 performs the tenth plan update and sixth plan challenge. It pauses
-broad Phase I as a conditional architecture and selects the next narrow target:
-`MinimalTransverseFamily_278(P_minor^0)`. No transverse proof package or
-endpoint estimate is proved.
+Module 278 defines the minimal local W-cyclic transverse family
+`P_minor^0`. It fixes the model class, Fourier group, W-order, dyadic ranges,
+threshold schedules, shell convention, cutoff convention, and limiting order
+for the next phase-kernel test. `PhaseKernelBound_273^0` remains open.
 
 ## Global status
 
