@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 243
-Post-Reflective_1 solving count: 62
-Long-term-plan count: 56
+Latest completed module: 244
+Post-Reflective_1 solving count: 63
+Long-term-plan count: 57
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -528,6 +528,9 @@ Expected work:
 - Module 244: reduce the prototype to a W-admissible one-point boundary
   prime-mean estimate, separating model, W-tricked, smoothed, and frozen
   selector classes;
+  completed as `OnePointMeanPkg_244(s0,D0,rho0)`, reducing the active
+  prototype to `OPMeanErr_244(s0,D0,rho0)=o_W(1)`, with separate model,
+  W-tricked, smoothed, and frozen branches and no free selector transfer;
 - Module 245: audit the strength required after the `|W_M(t)|` average:
   supremum versus averaged error, kernel absolute mass, and boundary interval
   length;
@@ -588,48 +591,42 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 244: reduce the prototype to a W-admissible one-point boundary
-prime-mean estimate.
+Module 245: audit the strength required after the |W_M(t)| average.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
 
-Module 243 derived the singleton local model for the active prototype:
+Module 244 reduced the active prototype to:
 
 ```text
-Theta_{w,{(00,0)}}^proj=1,
-M_r^mod(d,h,k;t)=ell_r(d,h,k;t).
+OPMeanErr_244(s0,D0,rho0)=o_W(1),
 ```
 
-The open analytic target is now:
+where:
 
 ```text
-BIHLErr_243
+OPMeanErr_244(s0,D0,rho0)
   = (1/D0) sum_{D0<|d|<=2D0}
       E_{h,k,t} |W_M(t)|
         sum_{r in {L,R}}
           |E_n 1_{J_r}(n)(mu_s0(n-t0)-1)|
-  = o_W(1).
 ```
 
-Module 244 should reduce this to the precise one-point boundary prime-mean
-input needed in each allowed selector class:
+Module 245 should audit how strong this input must be after the absolute
+kernel average:
 
 ```text
-model,
-W,
-sm,
-fr.
+pointwise versus averaged control in (d,h,k,t),
+the size of A_W(M),
+the lengths ell_r of the boundary intervals,
+the available short-interval range,
+and whether the error must beat kernel-mass growth.
 ```
 
-It should separate:
+It must keep the selector branches from Module 244 separate:
 
 ```text
-pure model identity rows,
-W-tricked one-point boundary PNT rows,
-smoothed/frozen selector rows,
-range and short-interval limitations,
-and the side-error slots from Module 243.
+model, W, sm, fr.
 ```
 
 The prototype remains inside the fixed-row discipline:

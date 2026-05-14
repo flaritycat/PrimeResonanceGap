@@ -1,4 +1,4 @@
-# Modules 156-243 summary
+# Modules 156-244 summary
 
 ## 156
 
@@ -478,7 +478,15 @@ W-tail factor `Theta_{w,{(00,0)}}^proj=1` for the active primitive form
 `|W_M|`-averaged boundary mean error `BIHLErr_243` plus W-residue, range,
 prime-power, cutoff, normalization, and zero-mode slots.
 
+## 244
+
+One-point boundary prime-mean reduction by selector class; defines
+`OnePointMeanPkg_244(s0,D0,rho0)` and
+`OPMeanErr_244(s0,D0,rho0)`, reducing the active prototype to a
+W-admissible boundary mean of `mu_s0-1` after the `|W_M|` average, with
+separate model, W-tricked, smoothed, and frozen branches and no transfer to
+other selector classes for free.
+
 ## Next
 
-Module 244: reduce the prototype to a W-admissible one-point boundary
-prime-mean estimate.
+Module 245: audit the strength required after the `|W_M(t)|` average.
