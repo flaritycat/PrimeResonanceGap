@@ -39,7 +39,9 @@ Module 187 records a correction: this linear envelope is not automatic
 pointwise from Euler products. It requires either a small collision-load
 restriction or an overflow estimate for the region where the total collision
 load is large. Module 188 gives a conditional overflow criterion and shows
-that first-moment divisor averages alone do not supply it.
+that first-moment divisor averages alone do not supply it. Module 192 gives
+the corrected averaged collision-defect composition under the qualified
+exponential envelope.
 
 ## 2. Status label
 
@@ -209,14 +211,15 @@ collision defect
 
 This is one piece of the major-arc program. It does not address the actual
 major-arc model-matching theorem, and it does not touch the minor-arc
-large-spectrum branch.
+large-spectrum branch. Module 192 supersedes the purely linear template when
+the large-load region is present.
 
 ## 8. What remains open
 
 The following are still open:
 
-- prove the local-factor collision-envelope bound in the exact projected
-  singular model;
+- verify the qualified Module 192 collision-defect hypotheses for the exact
+  projected singular model;
 - prove the required kernel absolute-summability and boundary estimates for
   the chosen major-arc projection;
 - remove or bound all structural collision strata;

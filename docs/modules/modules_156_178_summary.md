@@ -1,4 +1,4 @@
-# Modules 156-191 summary
+# Modules 156-192 summary
 
 ## 156
 
@@ -92,6 +92,10 @@ Kernel absolute-mass and range audit for major projection.
 
 W-limit order and generic tail uniformity.
 
+## 192
+
+Averaged collision-defect bound under the qualified envelope.
+
 ## Next
 
-Module 192: Averaged collision-defect bound under the qualified envelope.
+Module 193: Generic projected model neutrality after collision removal.

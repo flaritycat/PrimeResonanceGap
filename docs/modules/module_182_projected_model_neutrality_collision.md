@@ -18,6 +18,9 @@ major-arc model-neutrality problem reduces to bounding the averaged
 large-prime collision defects.
 
 This module does not prove the required collision-defect bound.
+Module 192 later gives a conditional composition lemma for that bound, but
+only under explicit structural, overflow, kernel/range, and W-limit
+hypotheses.
 
 ## 2. Status label
 
@@ -220,13 +223,15 @@ major projected residual model
 
 The next useful major-arc step is an explicit collision-defect estimate or a
 range-limited lemma showing that the kernel-weighted collision average is
-small.
+small. Module 192 supplies such a conditional composition, while leaving its
+input hypotheses open for the actual projected kernel.
 
 ## 8. What remains open
 
 This module does not prove:
 
-- the averaged collision-defect bound;
+- verification of the Module 192 hypotheses for the averaged collision-defect
+  bound in the actual projected model;
 - projected local-model matching for the actual major-arc cube;
 - minor-arc large-spectrum decay;
 - `ResCube_3^sharp`, `CPC_3^sharp`, `RBDH_pair_short`, or `AU^3`;

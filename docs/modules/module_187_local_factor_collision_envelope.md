@@ -207,8 +207,10 @@ local projected singular factors
 Module 188 supplies a conditional overflow criterion for the region `B_w>1`.
 Module 189 reduces one exponential-integrability route to a joint
 union-divisibility criterion. Module 191 records the W-limit order needed for
-the generic Euler tails in this chain. The remaining work is to verify the
-non-generic arithmetic and kernel hypotheses for the actual projected kernel.
+the generic Euler tails in this chain. Module 192 composes these inputs into a
+conditional averaged collision-defect bound. The remaining work is to verify
+the non-generic arithmetic and kernel hypotheses for the actual projected
+kernel.
 
 ## 8. What remains open
 
@@ -216,7 +218,8 @@ This module does not prove:
 
 - verification of the Module 189 joint-divisibility criterion behind the
   Module 188 overflow hypotheses for `B_w>1`;
-- the averaged collision-defect bound under the exponential envelope;
+- verification of the Module 192 hypotheses for the averaged collision-defect
+  bound under the exponential envelope;
 - projected local-model matching for the actual major-arc cube;
 - minor-arc large-spectrum decay;
 - `ResCube_3^sharp`, `CPC_3^sharp`, `RBDH_pair_short`, or `AU^3`;

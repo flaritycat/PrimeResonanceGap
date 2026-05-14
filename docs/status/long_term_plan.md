@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 191
-Post-Reflective_1 solving count: 10
-Long-term-plan count: 4
+Latest completed module: 192
+Post-Reflective_1 solving count: 11
+Long-term-plan count: 5
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -129,6 +129,7 @@ Expected modules:
 - Module 191: W-limit order and generic tail uniformity; completed as a
   conditional W-admissibility contract;
 - Module 192: averaged collision-defect bound under the qualified envelope;
+  completed as a conditional composition lemma;
 - Module 193: generic projected model neutrality after collision removal;
 - Module 194: projected local-model matching dependency list;
 - Module 195: audit of Modules 183-194 for hidden upgrades;
@@ -260,15 +261,15 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 192: Averaged collision-defect bound under the qualified envelope.
+Module 193: Generic projected model neutrality after collision removal.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`, unless a complete
 proof is actually supplied.
 
-The key question is whether Modules 187-191 can now be composed into a single
-conditional averaged collision-defect statement without losing any of the
-small-load, overflow, kernel, CRT-range, or W-limit hypotheses.
+The key question is whether the generic projected model and the conditional
+collision-defect bound from Module 192 combine into a neutral projected model
+without being mistaken for actual projected local-model matching.
 
 The overflow region remains:
 

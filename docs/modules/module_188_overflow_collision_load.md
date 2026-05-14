@@ -272,7 +272,8 @@ first-moment divisor averages
 
 This keeps the major-arc branch conditional but better specified. Module 189
 gives a sufficient joint-divisibility criterion for the required exponential
-integrability.
+integrability, and Module 192 uses the resulting overflow input in the
+averaged collision-defect composition.
 
 ## 8. What remains open
 
@@ -280,6 +281,8 @@ This module does not prove:
 
 - verification of the Module 190 kernel/range package behind the Module 189
   joint-divisibility criterion for `B_w`;
+- verification of the Module 192 structural and W-admissibility hypotheses in
+  the actual projected model;
 - the high-moment divisor estimates needed when `R_w(N)` grows;
 - kernel absolute-mass bounds for the actual major-arc projection;
 - negligibility of all structural and boundary regions;
