@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 201
-Post-Reflective_1 solving count: 20
-Long-term-plan count: 14
+Latest completed module: 202
+Post-Reflective_1 solving count: 21
+Long-term-plan count: 15
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -46,7 +46,7 @@ checkpoint modules are:
 
 ```text
 First plan update:       Module 196 (completed)
-First plan challenge:    Module 202
+First plan challenge:    Module 202 (completed)
 Second plan update:      Module 205
 Next reflective log:     Module 221
 ```
@@ -174,7 +174,8 @@ Expected modules:
   pass through low-level leakage, dyadic count/energy failure, bad-shift
   concentration, persistent minor-frequency concentration, or transverse
   incidence concentration;
-- Module 202: perform the first 15-iteration plan challenge;
+- Module 202: perform the first 15-iteration plan challenge; completed with a
+  narrowed continuation verdict for Phase B through Module 205;
 - Module 203: refine the conditional minor-arc criterion after the challenge;
 - Module 204: audit boundary, W-range, and selector compatibility for minor
   arcs;
@@ -287,30 +288,29 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 202: First 15-iteration plan challenge.
+Module 203: Refined conditional minor-arc criterion after the challenge.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION`.
+Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
 
-Module 201 mapped failure of minor-arc decay into the obstruction tree:
+Module 202 completed the first plan challenge. The verdict is:
 
 ```text
-M_minor(D) not small
-  -> LowLevelLeak(lambda_0)
-  or CountObs(lambda)
-  or EnergyObs(lambda)
-       -> density failure
-       -> adaptive restriction failure
-            -> bad-shift concentration
-            -> persistent minor-frequency concentration
-            -> transverse incidence concentration.
+Continue Phase B through Module 205, but narrow it.
 ```
 
-The next iteration is the first 15-iteration plan challenge because the
-long-term-plan count will become 15. It should explicitly ask whether Phase B
-should continue into refined minor-arc criteria, pivot back to major-arc
-matching, or branch toward a weaker honest theorem.
+The next module should turn the Module 201 obstruction tree into a named
+conditional package. It should separate genuinely smaller subconditions from
+endpoint-equivalent restatements:
 
 ```text
-Module 202: plan challenge, not a theorem upgrade.
+LowLevelLeak(lambda_0),
+CountObs(lambda),
+EnergyObs(lambda),
+BadShiftEnergy(lambda,mu),
+PersistentMinorFrequency(lambda),
+TransverseIncidence(lambda).
 ```
+
+Module 203 must not call the package useful unless at least one branch is
+stated in a checkable form smaller than `M_minor(D)=o(1)`.

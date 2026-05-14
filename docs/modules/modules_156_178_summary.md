@@ -1,4 +1,4 @@
-# Modules 156-201 summary
+# Modules 156-202 summary
 
 ## 156
 
@@ -143,6 +143,12 @@ is routed through low-level leakage, count/energy failure, bad-shift
 concentration, persistent minor-frequency concentration, or transverse
 incidence concentration.
 
+## 202
+
+First 15-iteration plan challenge; Phase B continues through Module 205 only
+in narrowed form, with Module 203 required to separate checkable minor-arc
+subconditions from endpoint-equivalent restatements.
+
 ## Next
 
-Module 202: First 15-iteration plan challenge.
+Module 203: Refined conditional minor-arc criterion after the challenge.
