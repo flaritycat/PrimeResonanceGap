@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 288
+Latest module frontier: Module 289
 Active phase: Phase K, adaptive-shell gain triage
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -147,6 +147,9 @@ Latest project-wide review:
 - A selection-complexity audit `SelectionComplexityAudit_288(P_minor^0)`,
   blocking raw union selection, fixed-threshold-as-fixed-fiber shortcuts, and
   favorable-omega selection while leaving `SelectionComplexityGain_288` open.
+- A uniform-fiber stress test `UniformFiberStress_289(P_minor^0)`, blocking
+  row/column-only uniform-fiber gain and isolating
+  `WeightedRCSubgraphGain_289` as the remaining structured target.
 
 ## What the project has not proved
 
@@ -205,6 +208,8 @@ Latest project-wide review:
   degeneracy, and threshold rows.
 - `SelectionComplexityGain_288`, `SelectionTransferPkg_288`, or any
   entropy/stopping-time/sparse/VC theorem for the adaptive shell class.
+- `WeightedRCSubgraphGain_289`, `UniformFiberBound_280`, or any nontrivial
+  uniform-fiber theorem beyond deterministic row/column ceilings.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -382,12 +387,17 @@ Completed Phase K selection-complexity audit:
     records raw union selection and fixed-threshold-to-fixed-fiber shortcuts as
     blocked while keeping SelectionComplexityGain_288 open
 
+Completed Phase K uniform-fiber stress test:
+  UniformFiberStress_289(P_minor^0)
+    records row/column-only uniform-fiber gain as blocked while keeping
+    WeightedRCSubgraphGain_289 open
+
 Active Phase K target:
   AdaptiveShellGainP0_285 over P_minor^0
-    next stress-test the uniform-fiber route over the row/column class
+    next give the Phase K proof-or-blocked verdict
 
 Next scheduled check:
-  Module 289 UniformFiberStress_289(P_minor^0)
+  Module 290 AdaptiveShellGainP0 verdict
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the active Phase K steering step;

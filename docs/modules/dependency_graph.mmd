@@ -28,7 +28,9 @@ flowchart TD
   PlanUpdate11["PlanUpdate_11_286<br/>Phase K selected"]
   DirectTTStar["DirectShellTTStarAudit_287<br/>audit STRUCTURAL; cross gain OPEN"]
   SelectionComplexity["SelectionComplexityAudit_288<br/>audit STRUCTURAL; complexity gain OPEN"]
-  UniformFiberStress["UniformFiberStress_289<br/>next diagnostic"]
+  UniformFiberStress["UniformFiberStress_289<br/>audit STRUCTURAL; row/column-only gain BLOCKED"]
+  WeightedRCSubgraph["WeightedRCSubgraphGain_289<br/>OPEN"]
+  AdaptiveVerdict290["AdaptiveShellGain verdict_290<br/>next diagnostic"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -87,7 +89,11 @@ flowchart TD
   DirectTTStar --> SelectionComplexity
   SelectionComplexity --> UniformFiberStress
   SelectionComplexity --> AdaptiveShellP0
+  UniformFiberStress --> WeightedRCSubgraph
+  WeightedRCSubgraph --> AdaptiveShellP0
+  UniformFiberStress --> AdaptiveVerdict290
   UniformFiberStress --> AdaptiveShellP0
+  AdaptiveVerdict290 --> AdaptiveShellP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube

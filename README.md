@@ -89,7 +89,8 @@ threshold-budget barriers, records that the current adaptive-shell tool
 package is blocked, and now starts a narrower triage of possible new
 adaptive-shell inputs. The first Phase K audit isolates the direct-shell
 `TT*` cross-term gain as open; the second shows that row/column caps do not
-by themselves supply a low-complexity selection theorem.
+by themselves supply a low-complexity selection theorem; the third blocks a
+row/column-only uniform-fiber gain and isolates a weighted subgraph target.
 
 ## Whole Project Map
 
@@ -289,7 +290,7 @@ The current active phase is **Phase K: adaptive-shell gain triage**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 288
+Latest module frontier: Module 289
 Active phase: Phase K, adaptive-shell gain triage after the Phase J block
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -350,18 +351,24 @@ Module 288:
   union bounds are too large, row/column graph entropy is diagnostic only,
   fixed thresholds do not make fibers predetermined, and
   SelectionComplexityGain_288 remains open.
+
+Module 289:
+  stress-tested the uniform-fiber route over row/column-admissible shells.
+  Row/column-only data reproduce deterministic ceilings rather than a gain;
+  WeightedRCSubgraphGain_289 is the remaining open structured target.
 ```
 
 The next planned module is:
 
 ```text
-Module 289:
-  stress-test the uniform-fiber route over the declared row/column class.
+Module 290:
+  give the Phase K AdaptiveShellGainP0 verdict after the direct-shell,
+  selection-complexity, and uniform-fiber stress tests.
 ```
 
-The next audit should decide whether a theorem uniform over every
-row/column-admissible fiber family is plausible, or whether it is already too
-strong without extra structure.
+The next audit should decide whether Phase K has found a viable new
+same-family input or whether `AdaptiveShellGainP0_285` remains open with all
+three tested routes blocked at current strength.
 
 ## What Is Proved?
 
@@ -555,6 +562,9 @@ wins.
 | `SelectionComplexityAudit_288(P_minor^0)` | STRUCTURAL / EXTRACTION | Adaptive shell selection complexity audited |
 | `SelectionComplexityGain_288` | OPEN | No entropy, stopping-time, sparse, or VC theorem supplied for `S_d(J)` |
 | Raw union selection for `S_d(J)` | FALSE / BLOCKED | Selection class too large for harmless logarithmic loss |
+| `UniformFiberStress_289(P_minor^0)` | STRUCTURAL / EXTRACTION | Uniform-fiber route stress-tested over row/column shells |
+| `RowColumnOnlyUniformFiberGain_289` | FALSE / BLOCKED | Row/column data alone reproduce deterministic ceilings |
+| `WeightedRCSubgraphGain_289(P_minor^0)` | OPEN | Would need structured residual Fourier control of weighted row/column subgraphs |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

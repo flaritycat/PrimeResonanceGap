@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 288
-Post-Reflective_1 solving count: 107
-Long-term-plan count: 101
+Latest completed module: 289
+Post-Reflective_1 solving count: 108
+Long-term-plan count: 102
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -1836,4 +1836,39 @@ Module 289:
   UniformFiberStress_289(P_minor^0), stress-testing whether the row/column
   class left by Module 288 can support a same-family uniform-fiber theorem
   without endpoint-strength assumptions.
+```
+
+Module 289 completed:
+
+```text
+UniformFiberStress_289(P_minor^0)
+  blocks row/column-only uniform-fiber gain and isolates
+  WeightedRCSubgraphGain_289(P_minor^0) as the remaining structured uniform
+  route.
+```
+
+It preserves:
+
+```text
+WeightedRCSubgraphGain_289,
+UniformFiberBound_280,
+SelectionComplexityGain_288,
+SelectionTransfer_280,
+DirectShellBound_280,
+AdaptiveShellGainP0_285,
+PhaseKernelBound_273^0,
+MinorArcTransfer_3^B,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3
+remain unproved.
+```
+
+Continue with:
+
+```text
+Module 290:
+  give the Phase K AdaptiveShellGainP0 verdict after the direct-shell,
+  selection-complexity, and uniform-fiber stress tests.
 ```

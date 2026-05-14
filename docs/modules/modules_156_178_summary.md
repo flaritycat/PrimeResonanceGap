@@ -1,4 +1,4 @@
-# Modules 156-288 summary
+# Modules 156-289 summary
 
 ## 156
 
@@ -850,7 +850,15 @@ selection do not currently yield a lambda-summable selection theorem, and
 leaves `SelectionComplexityGain_288`, `SelectionTransfer_280`, and
 `AdaptiveShellGainP0_285` open.
 
+## 289
+
+Uniform-fiber stress test over row/column-admissible shells; defines
+`UniformFiberStress_289(P_minor^0)`, blocks the row/column-only
+uniform-fiber gain route by showing it reproduces deterministic ceilings, and
+isolates `WeightedRCSubgraphGain_289(P_minor^0)` as the remaining open
+structured target.
+
 ## Next
 
-Module 289: stress-test the uniform-fiber route over the declared row/column
-class.
+Module 290: give the Phase K `AdaptiveShellGainP0_285` verdict after the
+direct-shell, selection-complexity, and uniform-fiber tests.

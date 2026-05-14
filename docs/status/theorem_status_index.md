@@ -77,6 +77,9 @@ FALSE / BLOCKED
 | `SelectionComplexityAudit_288(P_minor^0)` | STRUCTURAL / EXTRACTION | Audits entropy, row/column graph complexity, fixed thresholds, and adversarial phases for adaptive shell fibers | `module_288_selection_complexity_audit.md` | Only as an audit |
 | `SelectionComplexityGain_288` | OPEN | No entropy, stopping-time, sparse-domination, VC, or chaining theorem supplied for `S_d(J)` | `module_288_selection_complexity_audit.md` | No |
 | Raw union selection / fixed-threshold-to-fixed-fiber shortcuts | FALSE / BLOCKED | Selection family too large; fixed thresholds do not make shell fibers predetermined | `module_288_selection_complexity_audit.md` | No |
+| `UniformFiberStress_289(P_minor^0)` | STRUCTURAL / EXTRACTION | Stress-tests uniform-fiber route over row/column-admissible shells | `module_289_uniform_fiber_stress.md` | Only as an audit |
+| `RowColumnOnlyUniformFiberGain_289` | FALSE / BLOCKED | Row/column data alone cannot produce a gain beyond deterministic ceilings | `module_289_uniform_fiber_stress.md` | No |
+| `WeightedRCSubgraphGain_289(P_minor^0)` | OPEN | Requires structured residual Fourier control of weighted row/column subgraphs with compatible losses | `module_289_uniform_fiber_stress.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |
