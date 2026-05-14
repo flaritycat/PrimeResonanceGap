@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 222
-Post-Reflective_1 solving count: 41
-Long-term-plan count: 35
+Latest completed module: 223
+Post-Reflective_1 solving count: 42
+Long-term-plan count: 36
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -52,7 +52,7 @@ Third plan update:       Module 214 (completed)
 Second plan challenge:   Module 217 (completed)
 Reflective_2 log:        Module 221 (completed)
 Next reflective log:     Module 261
-Fourth plan update:      Module 223
+Fourth plan update:      Module 223 (completed)
 Fifth plan update:       Module 232
 Third plan challenge:    Module 232
 ```
@@ -330,26 +330,49 @@ Expected work:
   names, and identifying a genuinely supported boundary/prefix residual
   fourth-moment row as the smallest honest next analytic target;
 - Module 223: perform the fourth 9-iteration plan update.
+  completed with the verdict that Phase D clarified selector-transfer
+  dependencies but did not prove transfer, and that the next window should
+  first test one genuinely supported boundary/prefix residual fourth-moment
+  row before auditing endpoint-equivalence arrows.
 
 Success criterion: every future endpoint statement has an explicit selector
 line and cannot accidentally jump selector class.
 
-### Phase E: Endpoint equivalence audit
+### Phase E: Boundary-row test and endpoint equivalence audit
 
 Target window: iterations 37-45 after this document.
 
-Purpose: return to the compressed endpoint class and test whether the side
-packages are truly equivalent or only one-way reductions.
+Purpose: test whether the cleanest local selector-transfer row is genuinely
+smaller than the endpoint, then return to the compressed endpoint class and
+label every equivalence arrow with its side dependencies.
 
 Expected work:
 
-- audit each arrow in the endpoint chain;
-- label each arrow as proved in ledger, conditional, structural, or open;
-- create `Reflective_2.md` when the 40-iteration reflection cadence is reached;
-- perform the fifth plan update and third plan challenge at iteration 45.
+- Module 224: fix one boundary/prefix test row, preferably projected-major and
+  selector-fixed, with one projection, one edge, one dyadic `D` range, fixed
+  W-limit order, no moving threshold, no Bernoulli extraction, and no
+  major/minor partition change;
+- Module 225: expand that row into its residual fourth-moment cube and list
+  the exact envelopes needed to make it `o(1)`;
+- Module 226: decide whether the fixed boundary/prefix row is plausibly local,
+  conditional, or blocked as endpoint-strength under the available envelopes;
+- Module 227: build the endpoint-equivalence arrow inventory from the residual
+  cube branch back to `RBDH_pair_short`, `CPC_3^sharp`, `SPAC_2^sharp`,
+  `SU2Pair_2^sharp`, `DyadicDerivativeU^2`, and `AU^3`;
+- Module 228: audit the arrows that are exact algebra or structural
+  extraction, separating them from analytic estimates;
+- Module 229: audit the arrows that require analytic side packages: local
+  models, covariance calibration, pair-margin absorption, boundary transfer,
+  collision control, W-limit order, prime-power transfer, and range coverage;
+- Module 230: attach selector-transfer requirements to every endpoint arrow
+  using `SelectorTransferGraph_3^consol`;
+- Module 231: produce a consolidated endpoint dependency table with each arrow
+  labeled by the allowed status labels;
+- Module 232: perform the fifth plan update and third plan challenge in the
+  same iteration.
 
-Success criterion: the project has a current dependency graph with no
-unlabeled arrows.
+Success criterion: the project has one honest local-row verdict and a current
+endpoint dependency graph with no unlabeled arrows.
 
 ### Phase F: Decision branch
 
@@ -401,13 +424,21 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 223: Fourth 9-iteration plan update.
+Module 224: Fixed boundary/prefix selector-transfer test row.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 222 completed the consolidated selector-transfer dependency graph. The
-verdict was:
+Module 223 completed the fourth 9-iteration plan update. The verdict was:
+
+```text
+Phase D clarified selector-transfer dependencies but did not prove transfer.
+The next window should first test one genuinely supported boundary/prefix
+residual fourth-moment row, then audit endpoint-equivalence arrows with
+selector dependencies attached.
+```
+
+Module 222 had already warned:
 
 ```text
 Do not add another selector-transfer package before proving one genuinely
@@ -415,24 +446,19 @@ supported boundary/prefix residual fourth-moment row, or before deciding that
 the selector-transfer branch should be redirected.
 ```
 
-Module 221 had already warned:
+The next module should fix the exact local test row before any estimate is
+claimed. In particular it should specify:
 
 ```text
-Modules 179-220 clarified the endpoint dependency graph and blocked several
-false upgrades, but they did not solve the endpoint; the next work should
-consolidate rather than keep multiplying package names.
+Pi, preferably P_M;
+one selector/model edge, preferably cyclic-to-interval or cutoff-boundary
+  with selector class held fixed;
+one dyadic D range;
+the fixed-w then N->infinity then w->infinity limit order;
+the exact boundary or prefix support after forming B_d;
+the reason no moving threshold, Bernoulli extraction, or major/minor partition
+  change is present.
 ```
 
-The next iteration is the fourth 9-iteration plan update after the long-term
-plan was adopted. It should revise Phase E using the Module 222 graph. In
-particular it should decide:
-
-```text
-whether the next target window attacks a fixed boundary/prefix row,
-whether endpoint-equivalence auditing should begin immediately,
-which selector-transfer rows are endpoint-strength and should be paused,
-which duplicate row names should be retired from future modules.
-```
-
-It must preserve all open endpoint statuses and should not turn the plan
-update itself into an analytic proof.
+It must not estimate the row unless the residual fourth-moment cube support
+and normalization have first been stated exactly.

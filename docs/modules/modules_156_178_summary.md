@@ -1,4 +1,4 @@
-# Modules 156-222 summary
+# Modules 156-223 summary
 
 ## 156
 
@@ -303,6 +303,13 @@ endpoint-strength, or blocked-as-shortcut, folding duplicate names, and naming
 one genuinely supported boundary/prefix residual fourth-moment row as the
 smallest honest next analytic target.
 
+## 223
+
+Fourth 9-iteration plan update; records that Phase D clarified selector
+transfer but did not prove it, then revises the next window to first test one
+fixed boundary/prefix residual fourth-moment row before auditing the endpoint
+equivalence arrows with selector-transfer dependencies attached.
+
 ## Next
 
-Module 223: Fourth 9-iteration plan update.
+Module 224: Fixed boundary/prefix selector-transfer test row.
