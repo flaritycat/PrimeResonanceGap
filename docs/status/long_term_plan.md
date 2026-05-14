@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 215
-Post-Reflective_1 solving count: 34
-Long-term-plan count: 28
+Latest completed module: 216
+Post-Reflective_1 solving count: 35
+Long-term-plan count: 29
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -284,6 +284,10 @@ Expected work:
   cyclic, smoothed, frozen, Bernoulli, and finite-stage statements;
 - Module 216: state a global boundary / prefix / transition / denominator /
   tail transfer matrix for the actual sharp moving selector;
+  completed as `SharpSelectorTransferMatrix_3`, a structural matrix separating
+  boundary, prefix, transition, moving-window, denominator, tail, projection,
+  W-residue, prime-power, centering, Bernoulli/finite-stage extraction, and
+  core residual fourth-moment selector rows by their relation to the endpoint;
 - Module 217: perform the second 15-iteration plan challenge and decide
   whether Phase D should continue, narrow, or stop;
 - Module 218: audit compatibility between major-arc and minor-arc
@@ -368,35 +372,29 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 216: Global selector-transfer matrix for the actual sharp moving
-selector.
+Module 217: Second 15-iteration plan challenge.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
+Expected status: `STRUCTURAL / EXTRACTION`.
 
-Module 215 completed the selector inventory:
+Module 216 completed the global selector-transfer matrix:
 
 ```text
-SelectorInventory_156_213.
+SharpSelectorTransferMatrix_3.
 ```
 
-The next module should turn the inventory into a transfer matrix. It should
-separate:
+The next module is the scheduled plan challenge at long-term-plan count 30. It
+should answer:
 
 ```text
-boundary,
-prefix,
-transition,
-moving-window,
-denominator,
-tail,
-projection,
-W-residue,
-prime-power,
-centering / zero-mode,
-core residual fourth-moment transfer.
+Is Phase D identifying genuinely smaller transfer problems,
+or only restating the endpoint under selector-transfer names?
+Which selector row would be abandoned if one conditional estimate had to be
+removed?
+Should the project continue Phase D, narrow to a single transfer obstruction,
+or redirect toward endpoint equivalence / weaker theorem work?
 ```
 
-In particular, it should identify which transfer rows plausibly look local or
-boundary-level and which rows may be endpoint-strength in disguise. The matrix
-should prepare Module 217's plan challenge.
+In particular, it must scrutinize the core residual selector rows
+`SelErr_4`, `SelErr_4^minor`, and `SelErr_major^P`, since those may be
+endpoint-strength unless additional localization is supplied.

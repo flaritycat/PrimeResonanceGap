@@ -1,4 +1,4 @@
-# Modules 156-215 summary
+# Modules 156-216 summary
 
 ## 156
 
@@ -240,7 +240,14 @@ and classifies endpoint-branch statements as explicit, inferred, ambiguous, or
 non-selector-bearing with the required major, minor, or unprojected residual
 fourth-moment transfer norm recorded.
 
+## 216
+
+Global selector-transfer matrix for the actual sharp moving selector; defines
+`SharpSelectorTransferMatrix_3` and separates boundary, prefix, transition,
+moving-window, denominator, tail, projection, W-residue, prime-power,
+centering, extraction, and core residual fourth-moment selector rows by whether
+they look local, mixed, or potentially endpoint-strength.
+
 ## Next
 
-Module 216: Global selector-transfer matrix for the actual sharp moving
-selector.
+Module 217: Second 15-iteration plan challenge.
