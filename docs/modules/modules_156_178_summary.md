@@ -1,4 +1,4 @@
-# Modules 156-184 summary
+# Modules 156-185 summary
 
 ## 156
 
@@ -64,6 +64,10 @@ Kernel-weighted collision-defect estimate template.
 
 Structural collision strata for projected cubes.
 
+## 185
+
+Kernel and range hypotheses for structural collision negligibility.
+
 ## Next
 
-Module 185: Kernel and range hypotheses for structural collision negligibility.
+Module 186: Nonstructural divisor averages for projected pair-difference forms.
