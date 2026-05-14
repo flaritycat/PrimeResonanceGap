@@ -147,7 +147,10 @@ FALSE / BLOCKED
 | `SizeSensitiveSubcriterion_306(M_U,E2_U)` | STRUCTURAL / EXTRACTION | Extracted size/energy criterion for a possible prescribed-fiber route | `module_306_fixed_fiber_blocked_verdict.md` | Only as a criterion |
 | `SizeSensitiveClosure_306` | OPEN | Needs a genuine prescribed-fiber size/energy package with summable losses | `module_306_fixed_fiber_blocked_verdict.md` | No |
 | `PauseRowSquareBranch_306` | CONDITIONAL / STEERING | Steering pause unless the challenge selects a new same-shift input or smaller criterion | `module_306_fixed_fiber_blocked_verdict.md` | Only as governance |
-| `PlanChallenge_8_307` | OPEN | Next scheduled plan challenge | `module_306_fixed_fiber_blocked_verdict.md` | No |
+| `PlanChallenge_8_307` | STRUCTURAL / EXTRACTION | Eighth plan challenge after fixed-fiber blockage; no estimate proved | `module_307_eighth_plan_challenge.md` | Only as steering |
+| `ChallengeDecision_307` | STRUCTURAL / EXTRACTION | Selects the column-barrier moment audit as the next local test | `module_307_eighth_plan_challenge.md` | Only as steering |
+| `RowSquareContinue_307` | FALSE / BLOCKED | Direct row-square continuation is blocked as the next move under the current toolkit | `module_307_eighth_plan_challenge.md` | No |
+| `ColumnBarrierMomentAudit_308(P_minor^0)` | OPEN | Next target: audit `MultMomentP0_284`, `ColumnBarrierP0_284`, and `SigmaColumnBarrierP0_284` under current local inputs | `module_307_eighth_plan_challenge.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

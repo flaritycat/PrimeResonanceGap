@@ -84,20 +84,13 @@ testing whether any non-endpoint estimate can control the shell functional
 `Xi_273^0` in a fixed minimal model family `P_minor^0`. The current verdict is
 that fixed frequency-set estimates do not automatically control these
 data-dependent shells, and the remaining local side rows must still be proved
-before any Phase J kernel bound can be used. The latest audit isolates the
-threshold-budget barriers, records that the current adaptive-shell tool
-package is blocked, and now starts a narrower triage of possible new
-adaptive-shell inputs. The first Phase K audit isolates the direct-shell
-`TT*` cross-term gain as open; the second shows that row/column caps do not
-by themselves supply a low-complexity selection theorem; the third blocks a
-row/column-only uniform-fiber gain and isolates a weighted subgraph target.
-The Phase K verdict now records that these tests do not close the adaptive
-shell target with current tools. The cleanup packet blocks another same-tools
-Phase K pass, the seventh plan challenge selects side-package triage, and the
-low-level audit classifies the below-`lambda_min` row as still open unless an
-explicit counting or same-family energy budget is proved. The counting-barrier
-audit blocks pure counting, and the second-energy audit now closes the local
-fourth-moment low-level tail inside `P_minor^0`.
+before any Phase J kernel bound can be used. The later Phase K audits narrowed
+the threshold-window obstruction: the local low-level fourth-moment tail is
+proved inside `P_minor^0`, vacuous removal is only bookkeeping, and the row
+barrier remains blocked under the current first-energy, row-distribution,
+row-square, and fixed-fiber tests. The latest steering challenge pauses direct
+row-square continuation and sends the next audit to the column-multiplicity
+barriers. None of this proves the endpoint.
 
 ## The Whole Project In One Narrative
 
@@ -413,13 +406,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the side-package low-level and removal audits**.
+the row-square blocked verdict**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 306
-Active phase: Phase K, eighth plan challenge
+Latest module frontier: Module 307
+Active phase: Phase K, column-barrier moment audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -585,20 +578,26 @@ Module 306:
   in the current toolkit, selection transfer is blocked as the next move; the
   remaining size-sensitive criterion is structural only. The row-square branch
   is sent to the scheduled plan challenge.
+
+Module 307:
+  performed the eighth plan challenge. It pauses direct row-square
+  continuation under the current toolkit, declines to assume the
+  size-sensitive fixed-fiber criterion, keeps selection transfer blocked as
+  the next move, and selects the column-multiplicity barrier audit as the next
+  local test.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-now handled, vacuous removal is only bookkeeping, and Modules 302-303 show
-that the existing first-energy and exact-expansion inputs do not prove the row
-side of the threshold window.
+now handled, vacuous removal is only bookkeeping, and Modules 300-307 show
+that the existing first-energy, row-distribution, row-square, and fixed-fiber
+inputs do not prove the row side of the threshold window.
 
 The next planned module is:
 
 ```text
-Module 307:
-  perform PlanChallenge_8_307, deciding whether to pause the row-square
-  branch, isolate SizeSensitiveClosure_306, return to threshold/column rows,
-  or choose a different Phase K branch.
+Module 308:
+  perform ColumnBarrierMomentAudit_308(P_minor^0), testing the Module 284
+  column multiplicity barriers under current same-family local inputs.
 ```
 
 ## What Is Proved?
@@ -614,6 +613,12 @@ Compact status table:
 | `s=2` rational-major endpoint | **OPEN** |
 | Residual derivative cube endpoint `ResCube_3^sharp` | **OPEN** |
 | Current local shell target `PhaseKernelBound_273^0` | **OPEN** |
+| Local low-level fourth-moment tail inside `P_minor^0` | **PROVEN inside `P_minor^0` only** |
+| Vacuous actual bad-set removal inside `P_minor^0` | **PROVEN inside `P_minor^0` only; not threshold closure** |
+| Row barrier `RowBarrierP0_284(q)=o_W(1)` | **OPEN** |
+| Fixed-fiber row-square gain `FixedFiberRowSquareGain_305` | **OPEN** |
+| Direct row-square continuation as next move `RowSquareContinue_307` | **FALSE / BLOCKED** |
+| Column-barrier moment audit `ColumnBarrierMomentAudit_308` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 

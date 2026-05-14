@@ -54,7 +54,8 @@ flowchart TD
   PlanUpdate13["PlanUpdate_13_304<br/>plan update STRUCTURAL"]
   FixedFiber305["FixedFiberRowSquareBenchmark_305<br/>benchmark STRUCTURAL; current tools BLOCKED"]
   FixedFiber306["FixedFiberBlockedVerdict_306<br/>verdict STRUCTURAL; selection next BLOCKED"]
-  PlanChallenge8["PlanChallenge_8_307<br/>next scheduled challenge"]
+  PlanChallenge8["PlanChallenge_8_307<br/>challenge STRUCTURAL; row-square next move BLOCKED"]
+  ColumnBarrier308["ColumnBarrierMomentAudit_308<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -142,7 +143,8 @@ flowchart TD
   PlanUpdate13 --> FixedFiber305
   FixedFiber305 --> FixedFiber306
   FixedFiber306 --> PlanChallenge8
-  PlanChallenge8 --> ThresholdP0
+  PlanChallenge8 --> ColumnBarrier308
+  ColumnBarrier308 --> ThresholdP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -254,3 +256,6 @@ flowchart TD
   smaller size-sensitive criterion.
 - `FixedFiberBlockedVerdict_306` blocks selection transfer as the immediate
   next step and sends the row-square branch to `PlanChallenge_8_307`.
+- `PlanChallenge_8_307` pauses direct row-square continuation under the
+  current toolkit and selects `ColumnBarrierMomentAudit_308`; this is a
+  steering decision, not a column estimate.

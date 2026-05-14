@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 306
-Active phase: Phase K, eighth plan challenge
+Latest module frontier: Module 307
+Active phase: Phase K, column-barrier moment audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -217,6 +217,11 @@ Latest project-wide review:
   recording that selection transfer is blocked as the next move because no
   fixed-fiber gain has been supplied, and sending the row-square branch to the
   eighth plan challenge.
+- An eighth plan challenge `PlanChallenge_8_307`, pausing direct row-square
+  continuation under the current toolkit, keeping selection transfer blocked
+  as the next move, declining to assume `SizeSensitiveClosure_306`, and
+  selecting `ColumnBarrierMomentAudit_308(P_minor^0)` as the next local
+  threshold-window test.
 
 ## What the project has not proved
 
@@ -326,6 +331,11 @@ Latest project-wide review:
 - `SelectionTransferNext_306`, `CurrentFixedFiberRoute_306`,
   `SizeSensitiveClosure_306`, or `PauseRowSquareBranch_306` as analytic
   closure.
+- `PlanChallenge_8_307`, `ChallengeDecision_307`, or
+  `RowSquareContinue_307` as an analytic estimate; these are steering
+  classifications only.
+- `ColumnBarrierMomentAudit_308(P_minor^0)`, `ColumnBarrierP0_284(r)`, or
+  `SigmaColumnBarrierP0_284(r)` as proved column smallness.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -593,8 +603,14 @@ Completed fixed-fiber blocked verdict:
     blocks selection transfer as the next step and sends the row-square branch
     to the scheduled challenge
 
+Completed eighth plan challenge:
+  PlanChallenge_8_307
+    pauses direct row-square continuation, records RowSquareContinue_307 as
+    FALSE / BLOCKED for the next move under current tools, and selects the
+    column-barrier moment audit as the next target
+
 Next scheduled check:
-  Module 307 PlanChallenge_8_307
+  Module 308 ColumnBarrierMomentAudit_308(P_minor^0)
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;

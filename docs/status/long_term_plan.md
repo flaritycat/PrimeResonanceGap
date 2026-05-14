@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 306
-Post-Reflective_1 solving count: 125
-Long-term-plan count: 119
+Latest completed module: 307
+Post-Reflective_1 solving count: 126
+Long-term-plan count: 120
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -70,7 +70,7 @@ Twelfth plan update:     Module 295 (completed)
 Thirteenth plan update:  Module 304 (completed)
 Fourteenth plan update:  Module 313
 Seventh plan challenge:  Module 292 (completed)
-Eighth plan challenge:   Module 307
+Eighth plan challenge:   Module 307 (completed)
 ```
 
 These module numbers are bookkeeping estimates. If an iteration is not a
@@ -2553,4 +2553,41 @@ Module 307:
   perform PlanChallenge_8_307, deciding whether to pause the row-square
   branch, isolate SizeSensitiveClosure_306, return to threshold/column rows,
   or choose a different Phase K branch.
+```
+
+Module 307 completed:
+
+```text
+PlanChallenge_8_307:
+  STRUCTURAL / EXTRACTION.
+
+ChallengeDecision_307:
+  STRUCTURAL / EXTRACTION.
+
+RowSquareContinue_307:
+  FALSE / BLOCKED as the next move under the current toolkit.
+
+ColumnBarrierMomentAudit_308(P_minor^0):
+  OPEN next target.
+```
+
+The challenge pauses direct row-square continuation, keeps selection transfer
+blocked as the next move because no fixed-fiber gain has been supplied, and
+declines to treat `SizeSensitiveClosure_306` as an available input. The next
+target is the column-multiplicity side of the Module 284 threshold barriers.
+
+The next cadence checkpoints are:
+
+```text
+Fourteenth plan update:  Module 313
+Next reflective log:     Module 341
+```
+
+Continue with:
+
+```text
+Module 308:
+  perform ColumnBarrierMomentAudit_308(P_minor^0), testing
+  MultMomentP0_284(r;lambda_j), ColumnBarrierP0_284(r), and
+  SigmaColumnBarrierP0_284(r) against current same-family local inputs.
 ```
