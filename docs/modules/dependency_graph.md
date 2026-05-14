@@ -73,7 +73,8 @@ flowchart TD
   Plan322["PlanUpdate_15_Challenge_9_322<br/>STRUCTURAL; cap-only route BLOCKED"]
   ResidualEight323["ResidualEightSlotMinorExpansion_323<br/>STRUCTURAL; fixed-kernel reading BLOCKED"]
   Collision324["CollisionDiagonalStrataAudit_324<br/>STRUCTURAL; closure BLOCKED"]
-  GenericSplit325["GenericCollisionLocalModelSplit_325<br/>OPEN next target"]
+  GenericSplit325["GenericCollisionLocalModelSplit_325<br/>STRUCTURAL; closure BLOCKED"]
+  SignedIE326["SignedInclusionExclusionMinorAudit_326<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -182,7 +183,8 @@ flowchart TD
   Plan322 --> ResidualEight323
   ResidualEight323 --> Collision324
   Collision324 --> GenericSplit325
-  GenericSplit325 --> AntiDiag312
+  GenericSplit325 --> SignedIE326
+  SignedIE326 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -218,6 +220,9 @@ flowchart TD
   selector and full gap discipline; model/frozen/smoothed rows are not enough.
 - Phase J now has `P_minor^0`; that definition is a convention package, not a
   proof of `PhaseKernelBound_273^0`.
+- The Module 325 generic/collision split is a local-model partition, not a
+  proof of structural diagonal, finite-prime load, overflow, data-dependent
+  kernel, generic noncollision, or local-model insertion rows.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still

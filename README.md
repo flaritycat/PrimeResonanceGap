@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: generic-versus-collision local-model
-split after the eight-slot strata audit**.
+The current active phase is **Phase K: signed inclusion-exclusion audit after
+the generic-versus-collision eight-slot split**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 324
-Active phase: Phase K, generic-versus-collision local-model split next
+Latest module frontier: Module 325
+Active phase: Phase K, signed inclusion-exclusion minor audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -697,13 +697,21 @@ Module 324:
   anti-diagonal diagnostic. It blocks the shortcut from collision catalog to
   collision smallness and selects a generic-versus-collision local-model
   split for Module 325.
+
+Module 325:
+  formulated the generic-versus-collision local-model split for the eight-slot
+  minor row. It extracts the generic size-only factor, the collision-defect
+  partition, structural diagonal rows, finite-prime collision-load rows,
+  overflow rows, data-dependent kernel-selection rows, generic noncollision
+  row, and local-model insertion row. All analytic smallness rows remain open.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-323 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-325 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
-do not prove the threshold window or the signed minor-kernel row.
+do not prove the threshold window, the signed minor-kernel row, or the
+generic/collision rows.
 
 The next planned module is:
 
@@ -750,8 +758,13 @@ Module 324:
   collision and diagonal strata of the eight-slot minor row.
 
 Module 325:
-  perform GenericCollisionLocalModelSplit_325(P_minor^0), formulating the
+  performed GenericCollisionLocalModelSplit_325(P_minor^0), formulating the
   exact generic-versus-collision split needed for the eight-slot minor row.
+
+Module 326:
+  perform SignedInclusionExclusionMinorAudit_326(P_minor^0), deciding which
+  generic and collision-defect terms are only formally cancelled and which
+  survive as same-family analytic rows.
 ```
 
 ## What Is Proved?
@@ -830,7 +843,11 @@ Compact status table:
 | Slot-difference and structural diagonal catalogs from Module 324 | **STRUCTURAL / EXTRACTION** |
 | Finite-prime collision load `FinitePrimeCollisionLoad_324` | **STRUCTURAL / EXTRACTION** |
 | Current collision-strata closure `CurrentCollisionStrataClosure_324` | **FALSE / BLOCKED** |
-| Generic-versus-collision local-model split `GenericCollisionLocalModelSplit_325` | **OPEN next target** |
+| Generic-versus-collision local-model split `GenericCollisionLocalModelSplit_325` | **STRUCTURAL / EXTRACTION** |
+| Generic local factor and collision-defect decomposition from Module 325 | **STRUCTURAL / EXTRACTION** |
+| Structural diagonal, finite-prime load, overflow, data-dependent kernel-selection, generic noncollision, and local-model insertion rows from Module 325 | **OPEN** |
+| Current generic/collision closure `CurrentGenericCollisionClosure_325` | **FALSE / BLOCKED** |
+| Signed inclusion-exclusion minor audit `SignedInclusionExclusionMinorAudit_326` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1147,7 +1164,12 @@ wins.
 | `FixedKernelInterpretation_323(U,V)` | FALSE / BLOCKED | Data-dependent shell masks cannot be treated as a fixed external kernel |
 | `CollisionDiagonalStrataAudit_324(P_minor^0)` | STRUCTURAL / EXTRACTION | Internal/cross-block diagonals, collision load, and kernel anti-diagonal cataloged |
 | `CurrentCollisionStrataClosure_324` | FALSE / BLOCKED | Cataloging strata does not prove weighted collision smallness |
-| `GenericCollisionLocalModelSplit_325(P_minor^0)` | OPEN | Next target |
+| `GenericCollisionLocalModelSplit_325(P_minor^0)` | STRUCTURAL / EXTRACTION | Generic/collision local-model split formulated; no smallness proved |
+| `GenericMinorLocalFactor_325 / CollisionDefectDecomposition_325` | STRUCTURAL / EXTRACTION | Exact local factors and defect partition only |
+| `StructuralDiagonalRows_325 / FinitePrimeCollisionLoadRows_325 / OverflowRows_325` | OPEN | Analytic collision and high-load estimates missing |
+| `DataDependentKernelSelectionRows_325 / GenericNoncollisionRow_325 / LocalModelInsertion_325` | OPEN | Data-dependent masks, generic contribution, and model insertion not proved |
+| `CurrentGenericCollisionClosure_325` | FALSE / BLOCKED | The split does not close the minor row |
+| `SignedInclusionExclusionMinorAudit_326(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

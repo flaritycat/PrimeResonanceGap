@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 324
-Active phase: Phase K, generic-versus-collision local-model split next
+Latest module frontier: Module 325
+Active phase: Phase K, signed inclusion-exclusion minor audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -792,10 +792,18 @@ Completed collision and diagonal strata audit:
     collision load, and the kernel anti-diagonal diagnostic; it blocks the
     shortcut from cataloging strata to weighted collision smallness
 
+Completed generic-versus-collision local-model split:
+  GenericCollisionLocalModelSplit_325(P_minor^0)
+    extracts the generic eight-distinct local factor, the exact collision
+    defect partition, and the open structural diagonal, finite-prime load,
+    overflow, data-dependent kernel-selection, generic noncollision, and
+    local-model insertion rows; it records CurrentGenericCollisionClosure_325
+    as FALSE / BLOCKED
+
 Next scheduled module:
-  Module 325 GenericCollisionLocalModelSplit_325(P_minor^0)
+  Module 326 SignedInclusionExclusionMinorAudit_326(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed collision and diagonal
-strata audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed generic-versus-collision
+local-model split;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

@@ -3591,3 +3591,70 @@ Module 325:
   overflow, data-dependent kernel selection, and the W-limit order without
   claiming those rows are already small.
 ```
+
+Module 325 completed:
+
+```text
+GenericCollisionLocalModelSplit_325(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+GenericMinorLocalFactor_325:
+  STRUCTURAL / EXTRACTION.
+
+CollisionDefectDecomposition_325:
+  STRUCTURAL / EXTRACTION.
+
+StructuralDiagonalRows_325:
+  OPEN.
+
+FinitePrimeCollisionLoadRows_325:
+  OPEN.
+
+OverflowRows_325:
+  OPEN.
+
+DataDependentKernelSelectionRows_325:
+  OPEN.
+
+GenericNoncollisionRow_325:
+  OPEN.
+
+LocalModelInsertion_325:
+  OPEN.
+
+CurrentGenericCollisionClosure_325:
+  FALSE / BLOCKED.
+
+SignedInclusionExclusionMinorAudit_326(P_minor^0):
+  OPEN next target.
+```
+
+The split extracts the generic size-only local factor, the exact residual
+local-model subset expansion, and the collision-defect partition. It keeps
+structural diagonals, finite-prime collision load, overflow, data-dependent
+kernel selection, generic noncollision cancellation, and local-model insertion
+as open same-family analytic rows.
+
+The current cadence records:
+
+```text
+Latest completed module: 325
+Post-Reflective_1 solving count: 144
+Long-term-plan count: 138
+
+138 is not divisible by 9, so no plan update is due in this module.
+138 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 326:
+  perform SignedInclusionExclusionMinorAudit_326(P_minor^0), deciding which
+  generic and collision-defect terms in the eight-slot minor row are formally
+  killed by exact signed inclusion-exclusion, and which survive as structural
+  diagonal, finite-prime load, overflow, data-dependent kernel, generic, or
+  local-model insertion rows. It must not claim cancellation smallness unless
+  the exact same-family analytic row is supplied.
+```

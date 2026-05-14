@@ -94,6 +94,7 @@ modules/
   module_322_fifteenth_plan_update_ninth_challenge.md
   module_323_residual_eight_slot_minor_expansion.md
   module_324_collision_diagonal_strata_audit.md
+  module_325_generic_collision_local_model_split.md
   modules_156_178_summary.md
 
 reviews/
