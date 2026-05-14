@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 311
-Active phase: Phase K, weighted pair autocorrelation expansion
+Latest module frontier: Module 312
+Active phase: Phase K, fourteenth plan update next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -245,6 +245,12 @@ Latest project-wide review:
   `WeightedColumnSecondMomentTarget_311(P_minor^0)` open and selecting
   `WeightedPairAutocorrelationExpansion_312(P_minor^0)` as the next
   structural target.
+- A weighted pair autocorrelation expansion
+  `WeightedPairAutocorrelationExpansion_312(P_minor^0)`, rewriting the
+  weighted same-frequency pair energy as an exact anti-diagonal two-shift
+  autocorrelation kernel with the minor cutoff, and recording that current
+  full-frequency, absolute-kernel, and Cauchy/Parseval tools still do not
+  prove a weighted pair gain.
 
 ## What the project has not proved
 
@@ -378,8 +384,10 @@ Latest project-wide review:
   `WeightedColumnPairEnergyAudit_311(P_minor^0)`.
 - `EnergySquareWPairCeiling_311`, `FourthPowerWPairCeiling_311`, or
   `WeightedCurrentToolsClose_311` as weighted pair smallness.
-- `WeightedColumnSecondMomentTarget_311(P_minor^0)` or
-  `WeightedPairAutocorrelationExpansion_312(P_minor^0)`.
+- `WeightedColumnSecondMomentTarget_311(P_minor^0)`,
+  `WeightedPairAutocorrelationExpansion_312(P_minor^0)`,
+  `CurrentAutocorrelationToolsClose_312`, or
+  `AntiDiagonalTwoShiftKernelGain_312(P_minor^0)`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -676,10 +684,16 @@ Completed weighted column-pair energy audit:
     tools as a weighted pair proof route, and leaves
     WeightedColumnSecondMomentTarget_311(P_minor^0) open
 
+Completed weighted pair autocorrelation expansion:
+  WeightedPairAutocorrelationExpansion_312(P_minor^0)
+    expands WPair(d_1,d_2) into the exact minor-kernel anti-diagonal
+    two-shift autocorrelation form, blocks current autocorrelation tools as
+    closure, and leaves AntiDiagonalTwoShiftKernelGain_312(P_minor^0) open
+
 Next scheduled check:
-  Module 312 WeightedPairAutocorrelationExpansion_312(P_minor^0)
+  Module 313 PlanUpdate_14_313
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the completed Phase K weighted-pair
-audit;
+autocorrelation expansion;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

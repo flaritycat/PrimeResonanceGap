@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 311
-Active phase: Phase K, weighted pair autocorrelation expansion
+Latest module frontier: Module 312
+Active phase: Phase K, fourteenth plan update next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -81,6 +81,7 @@ modules/
   module_309_column_multiplicity_distribution_audit.md
   module_310_column_pair_multiplicity_expansion.md
   module_311_weighted_column_pair_energy_audit.md
+  module_312_weighted_pair_autocorrelation_expansion.md
   modules_156_178_summary.md
 
 reviews/

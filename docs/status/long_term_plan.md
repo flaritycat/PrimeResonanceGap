@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 311
-Post-Reflective_1 solving count: 130
-Long-term-plan count: 124
+Latest completed module: 312
+Post-Reflective_1 solving count: 131
+Long-term-plan count: 125
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -2773,4 +2773,61 @@ Module 312:
   perform WeightedPairAutocorrelationExpansion_312(P_minor^0), expanding
   WPair(d_1,d_2) into exact same-frequency autocorrelation kernels before
   any further weighted column-pair gain claim.
+```
+
+Module 312 completed:
+
+```text
+WeightedPairAutocorrelationExpansion_312(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+SameFrequencyAutocorrelationIdentity_312,
+MinorKernelDecomposition_312,
+FullFrequencyAntiDiagonalDiagnostic_312:
+  STRUCTURAL / EXTRACTION.
+
+CurrentAutocorrelationToolsClose_312:
+  FALSE / BLOCKED.
+
+AntiDiagonalTwoShiftKernelGain_312(P_minor^0):
+  OPEN.
+```
+
+The expansion records the exact identity:
+
+```text
+WPair(d_1,d_2)
+  =
+  E_{h,k}
+    A_{d_1}(h)A_{d_2}(k)K_minor^0(h+k),
+
+A_d(h)=E_n B_d^0(n)conj(B_d^0(n+h)).
+```
+
+Under the standard nonzero-minor convention:
+
+```text
+K_minor^0(t)=N 1_{t=0}-1-K_major^0(t).
+```
+
+This decomposition is diagnostic only. It does not make the full-frequency,
+zero-mode, or major-correction rows small, and current absolute-kernel,
+full-frequency, and Cauchy/Parseval tools still recover only ceiling-scale
+bounds.
+
+The next cadence checkpoint is due:
+
+```text
+Fourteenth plan update:  Module 313
+Next reflective log:     Module 341
+```
+
+Continue with:
+
+```text
+Module 313:
+  perform PlanUpdate_14_313, deciding whether the next branch should attack
+  AntiDiagonalTwoShiftKernelGain_312(P_minor^0), first split the
+  full/zero/major kernel rows, or pause the column branch as endpoint-strength
+  under current tools.
 ```

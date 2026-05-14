@@ -59,7 +59,9 @@ flowchart TD
   ColumnDist309["ColumnMultiplicityDistributionAudit_309<br/>audit STRUCTURAL; first-moment route BLOCKED"]
   ColumnPair310["ColumnPairMultiplicityExpansion_310<br/>expansion STRUCTURAL; off-diagonal OPEN"]
   WPair311["WeightedColumnPairEnergyAudit_311<br/>audit STRUCTURAL; current route BLOCKED"]
-  AutoCorr312["WeightedPairAutocorrelationExpansion_312<br/>next target OPEN"]
+  AutoCorr312["WeightedPairAutocorrelationExpansion_312<br/>identity STRUCTURAL; current tools BLOCKED"]
+  AntiDiag312["AntiDiagonalTwoShiftKernelGain_312<br/>OPEN"]
+  PlanUpdate14["PlanUpdate_14_313<br/>next scheduled plan update"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -152,7 +154,9 @@ flowchart TD
   ColumnDist309 --> ColumnPair310
   ColumnPair310 --> WPair311
   WPair311 --> AutoCorr312
-  AutoCorr312 --> ThresholdP0
+  AutoCorr312 --> AntiDiag312
+  AntiDiag312 --> ThresholdP0
+  AutoCorr312 --> PlanUpdate14
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -284,3 +288,8 @@ flowchart TD
   fourth-power Cauchy estimates return ceiling-scale weighted pair bounds
   under current inputs. It blocks current tools as weighted pair closure and
   sends the next step to the exact weighted pair autocorrelation expansion.
+- `WeightedPairAutocorrelationExpansion_312` is an exact identity ledger: it
+  rewrites `WPair(d_1,d_2)` as an anti-diagonal two-shift autocorrelation
+  kernel with the minor cutoff. Full-frequency and minor-kernel
+  decompositions are diagnostics only; the open analytic row is
+  `AntiDiagonalTwoShiftKernelGain_312`.

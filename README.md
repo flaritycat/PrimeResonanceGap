@@ -412,13 +412,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the weighted column-pair energy audit**.
+the weighted pair autocorrelation expansion**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 311
-Active phase: Phase K, weighted pair autocorrelation expansion
+Latest module frontier: Module 312
+Active phase: Phase K, fourteenth plan update next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -617,20 +617,27 @@ Module 311:
   Cauchy estimates both return ceiling-scale bounds under current local
   inputs. The weighted route remains open, but needs an exact autocorrelation
   expansion before another analytic claim is made.
+
+Module 312:
+  expanded the weighted same-frequency pair energy into an exact
+  anti-diagonal two-shift autocorrelation kernel with the minor cutoff
+  K_minor^0. Full-frequency and minor-kernel decompositions are diagnostic
+  only; current tools still do not prove a weighted pair gain.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-now handled, vacuous removal is only bookkeeping, and Modules 300-307 show
-that the existing first-energy, row-distribution, row-square, and fixed-fiber
-inputs do not prove the row side of the threshold window.
+handled, vacuous removal is only bookkeeping, and Modules 300-312 show that
+the existing first-energy, row-distribution, row-square, fixed-fiber, column,
+weighted-pair, and autocorrelation inputs do not prove the threshold window.
 
 The next planned module is:
 
 ```text
-Module 312:
-  perform WeightedPairAutocorrelationExpansion_312(P_minor^0), expanding the
-  weighted same-frequency pair energy through autocorrelation kernels and the
-  minor-arc cutoff.
+Module 313:
+  perform PlanUpdate_14_313, deciding whether to attack
+  AntiDiagonalTwoShiftKernelGain_312(P_minor^0), first split the
+  full/zero/major minor-kernel rows, or pause the column branch as too close
+  to endpoint strength under current tools.
 ```
 
 ## What Is Proved?
@@ -664,7 +671,9 @@ Compact status table:
 | Weighted column-pair energy audit `WeightedColumnPairEnergyAudit_311` | **STRUCTURAL / EXTRACTION** |
 | Current weighted route `WeightedCurrentToolsClose_311` | **FALSE / BLOCKED** |
 | Weighted column second moment `WeightedColumnSecondMomentTarget_311` | **OPEN** |
-| Weighted pair autocorrelation expansion `WeightedPairAutocorrelationExpansion_312` | **OPEN next target** |
+| Weighted pair autocorrelation expansion `WeightedPairAutocorrelationExpansion_312` | **STRUCTURAL / EXTRACTION** |
+| Current autocorrelation route `CurrentAutocorrelationToolsClose_312` | **FALSE / BLOCKED** |
+| Anti-diagonal two-shift gain `AntiDiagonalTwoShiftKernelGain_312` | **OPEN** |
 
 For the live object-by-object ledger, read:
 
@@ -940,7 +949,10 @@ wins.
 | `EnergySquareWPairCeiling_311 / FourthPowerWPairCeiling_311` | STRUCTURAL / EXTRACTION | Valid energy-square and fourth-power ceilings only |
 | `WeightedCurrentToolsClose_311` | FALSE / BLOCKED | Current Parseval/Cauchy inputs do not close weighted pair energy |
 | `WeightedColumnSecondMomentTarget_311(P_minor^0)` | OPEN | Needs distribution control of weighted columns `sum_d |beta_0(d,xi)|^2` |
-| `WeightedPairAutocorrelationExpansion_312(P_minor^0)` | OPEN | Next target |
+| `WeightedPairAutocorrelationExpansion_312(P_minor^0)` | STRUCTURAL / EXTRACTION | Exact anti-diagonal two-shift autocorrelation expansion |
+| `SameFrequencyAutocorrelationIdentity_312 / MinorKernelDecomposition_312` | STRUCTURAL / EXTRACTION | Exact identities only; not cancellation |
+| `CurrentAutocorrelationToolsClose_312` | FALSE / BLOCKED | Full-frequency, absolute-kernel, and Cauchy/Parseval routes do not close weighted pair energy |
+| `AntiDiagonalTwoShiftKernelGain_312(P_minor^0)` | OPEN | Needs same-family two-shift kernel gain after threshold weights |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
