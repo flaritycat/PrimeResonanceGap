@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 239
-Post-Reflective_1 solving count: 58
-Long-term-plan count: 52
+Latest completed module: 240
+Post-Reflective_1 solving count: 59
+Long-term-plan count: 53
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -476,6 +476,10 @@ Expected work:
   weighted tuple rows without `FixedSupportTupleHL_238`;
 - Module 240: decide whether `LocalBdPkg_226` remains a plausible local route
   or should be marked mixed/endpoint-strength for practical purposes;
+  completed as `LocalBdPkgPracticalVerdict_240`, extracting the corrected
+  reading that `LocalBdPkg_226` remains usable only as an expanded
+  conditional package, with the `S=emptyset` / model / convention subrow
+  separated from the active nonempty `FixedSupportTupleHL_238` bottleneck;
 - Module 241: perform the sixth plan update.
 
 Success criterion: at least one subrow of `LocalBdPkg_226` is either reduced
@@ -521,37 +525,35 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 240: LocalBdPkg_226 plausibility verdict after the fixed-row tests.
+Module 241: sixth plan update.
 ```
 
-Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
+Expected status: `STRUCTURAL / EXTRACTION`.
 
-Module 239 completed the easiest subrow test:
+Module 240 completed the practical verdict for `LocalBdPkg_226`:
 
 ```text
-EasyModelPkg_239(lambda)
-  => EasyModelSubrow_239(lambda).
+LocalBdPkg_226 remains usable only as an expanded conditional package.
 ```
 
-It closed the `S=emptyset` model/convention subrow under explicit
-kernel-volume and convention hypotheses, but blocked the extension to:
+It kept the `S=emptyset` model/convention subrow separate from the active
+nonempty bottleneck:
 
 ```text
 FixedSupportTupleHL_238,
 nonempty BoundaryIntervalHL_234(S,lambda).
 ```
 
-The first genuine analytic bottleneck remains nonempty fixed-support weighted
-tuple control.
-
-Module 240 should decide:
+Module 241 should perform the sixth 9-iteration plan update and decide the
+next window after Phase F1:
 
 ```text
-Does LocalBdPkg_226 remain a plausible local route,
-or should it be marked mixed / endpoint-strength for practical purposes?
+Should the project attack a one-row nonempty FixedSupportTupleHL prototype,
+such as BoundaryIntervalHL_234({sigma},lambda),
+or should Phase F1 stop and redirect?
 ```
 
-inside:
+The update should preserve the fixed-row discipline:
 
 ```text
 BdPrefRow_224^P(s0,D0;N,w,rho0),
@@ -561,8 +563,7 @@ same selector class s0,
 fixed dyadic shell D0<|d|<=2D0.
 ```
 
-The goal is to review Modules 233-239 and give a practical route verdict.
-Do not let the closed empty subrow hide the open nonempty tuple bottleneck,
-do not merge distinct rows into a generic side package, and do not assume
-`ProjectedMajorTarget_3^B`, `ResCube_3^sharp`, selector transfer, or any
-endpoint object.
+The plan update should not let the closed empty subrow hide the open
+nonempty tuple bottleneck, should not merge distinct rows into a generic side
+package, and should not assume `ProjectedMajorTarget_3^B`,
+`ResCube_3^sharp`, selector transfer, or any endpoint object.

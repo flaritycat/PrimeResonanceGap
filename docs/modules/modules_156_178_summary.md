@@ -1,4 +1,4 @@
-# Modules 156-239 summary
+# Modules 156-240 summary
 
 ## 156
 
@@ -446,6 +446,14 @@ boundary/model/tail/convention subrow under explicit kernel-volume and
 convention hypotheses, while blocking extension to nonempty actual weighted
 tuple rows without `FixedSupportTupleHL_238`.
 
+## 240
+
+LocalBdPkg practical verdict after fixed-row tests; extracts the corrected
+reading of `LocalBdPkg_226` after Modules 233-239, keeping it as an expanded
+conditional package only, with `FixedSupportTupleHL_238` and the nonempty
+`BoundaryIntervalHL_234(S,lambda)` / tail / W-residue / prime-power tuple
+families as the active bottleneck rather than a solved side error.
+
 ## Next
 
-Module 240: LocalBdPkg_226 plausibility verdict after the fixed-row tests.
+Module 241: sixth plan update.
