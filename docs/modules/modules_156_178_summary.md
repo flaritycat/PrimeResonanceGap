@@ -163,6 +163,13 @@ target selector only after fourth-moment transfer, arc-boundary stability,
 W-admissibility, threshold stability, prime-power control, and dyadic-range
 uniformity.
 
+## 205
+
+Second 9-iteration plan update; pauses Phase B after extracting
+`NarrowMinorArc_3^B` and `MinorArcTransfer_3^B` as named open dependencies,
+then pivots the next window to projected major-arc local-model matching.
+
 ## Next
 
-Module 205: Second 9-iteration plan update.
+Module 206: Exact projected major-arc target for the residual derivative
+product.

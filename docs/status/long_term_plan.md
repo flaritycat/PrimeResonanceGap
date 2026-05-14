@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 204
-Post-Reflective_1 solving count: 23
-Long-term-plan count: 17
+Latest completed module: 205
+Post-Reflective_1 solving count: 24
+Long-term-plan count: 18
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -47,7 +47,9 @@ checkpoint modules are:
 ```text
 First plan update:       Module 196 (completed)
 First plan challenge:    Module 202 (completed)
-Second plan update:      Module 205
+Second plan update:      Module 205 (completed)
+Third plan update:       Module 214
+Second plan challenge:   Module 217
 Next reflective log:     Module 221
 ```
 
@@ -185,7 +187,10 @@ Expected modules:
   completed as `MinorArcTransfer_3^B`, a conditional transfer-compatibility
   package separating model minor-arc cancellation from boundary, W-limit,
   prime-power, threshold, dyadic-range, and sharp-selector transfer;
-- Module 205: perform the second 9-iteration plan update.
+- Module 205: perform the second 9-iteration plan update;
+  completed with the verdict that Phase B has produced useful named open
+  dependencies but should now pause rather than keep renaming the missing
+  transverse and transfer estimates.
 
 Success criterion: a named open estimate replaces the vague phrase
 "minor-arc cancellation", or a conditional route is rejected as insufficient.
@@ -199,11 +204,26 @@ Euler-factor algebra from actual selector transfer.
 
 Expected work:
 
-- define the projected model with all shifts and Fourier projection;
-- specify the exact averaging domains and boundary terms;
-- prove only the formal reductions that follow from stated assumptions;
-- isolate the missing local-model matching theorem;
-- perform the third plan update at iteration 27.
+- Module 206: state the exact projected major-arc target for the residual
+  derivative product, including Fourier projection, dyadic domains, and
+  zero-mode convention;
+- Module 207: define the exact major-arc local model, including the required
+  `Omega_w` factor and its relation to `kappa_w`, `Sigma_w`, and
+  higher-shift local factors;
+- Module 208: stratify major-arc collision hyperplanes for the projected
+  residual cube and separate structural collisions from analytic error terms;
+- Module 209: formulate the W-admissible projected local-model theorem with
+  all limit orders, uniformity ranges, and denominator restrictions;
+- Module 210: audit cyclic-to-interval boundary transfer for the projected
+  major-arc model;
+- Module 211: audit prime-power and small-prime removal for the projected
+  major-arc model;
+- Module 212: check compatibility between pair, rectangle, and projected cube
+  local models, with no pointwise replacement of `Sigma_w(d,h)` by
+  `kappa_w(d)^2`;
+- Module 213: state the selector-class transfer line for projected major arcs,
+  separating model, smoothed, frozen, and actual sharp moving selectors;
+- Module 214: perform the third 9-iteration plan update.
 
 Success criterion: the major-arc branch becomes a clean dependency diagram
 rather than a blended proof narrative.
@@ -294,28 +314,30 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 205: Second 9-iteration plan update.
+Module 206: Exact projected major-arc target for the residual derivative
+product.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION`.
+Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 204 created the conditional transfer package:
+Module 205 paused Phase B with two named open dependencies:
 
 ```text
+NarrowMinorArc_3^B(D;R,eta),
 MinorArcTransfer_3^B(D;R,eta;w).
 ```
 
-The next module must update the long-term plan at count 18. It should decide
-whether Phase B has produced a useful checkable route or whether it is now
-mostly an endpoint-strength transfer problem. It should review:
+The next module begins Phase C. It should state the exact major-arc projected
+target before trying to estimate it. In particular it should define:
 
 ```text
-NarrowMinorArc_3^B,
-MinorArcTransfer_3^B,
-the status of Gamma_trans,
-the W-admissibility and threshold-stability burden,
-whether to continue minor arcs or pivot.
+B_d,
+the major-arc projection,
+the dyadic d-average,
+the zero-frequency convention,
+the target local model object to be called Omega_w,
+all averaging domains and boundary terms.
 ```
 
-In particular, it must not let the phrase "minor-arc route" hide the fact that
-both analytic cancellation and model-to-target transfer are still open.
+In particular, it must not claim local-model matching before `Omega_w` and the
+projection domains are exactly stated.
