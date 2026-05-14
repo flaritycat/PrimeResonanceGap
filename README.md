@@ -94,7 +94,8 @@ row/column-only uniform-fiber gain and isolates a weighted subgraph target.
 The Phase K verdict now records that these tests do not close the adaptive
 shell target with current tools. The cleanup packet now blocks another
 same-tools Phase K pass and sets the exact question for the next plan
-challenge.
+challenge. The seventh plan challenge selects side-package triage as the next
+branch.
 
 ## Whole Project Map
 
@@ -294,8 +295,8 @@ The current active phase is **Phase K: adaptive-shell gain triage**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 291
-Active phase: Phase K, adaptive-shell gain triage after the Phase J block
+Latest module frontier: Module 292
+Active phase: Phase K, side-package triage after the adaptive-gain block
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -371,18 +372,23 @@ Module 291:
   cleaned up the Phase K status map and prepared ChallengePacket_291 for the
   seventh plan challenge. Continuing Phase K without a new input is now
   explicitly blocked.
+
+Module 292:
+  performed the seventh plan challenge and selected OptionD_SidePkg_291.
+  AdaptiveGainFirst_292 is FALSE / BLOCKED as the next move, and
+  SidePkgTriage_293(P_minor^0) is the next target.
 ```
 
 The next planned module is:
 
 ```text
-Module 292:
-  perform the seventh plan challenge using ChallengePacket_291.
+Module 293:
+  perform SidePkgTriage_293(P_minor^0), splitting the side package into
+  smaller proof-or-blocked rows.
 ```
 
-The challenge should decide whether to attempt direct-shell cross terms,
-selection complexity, weighted row/column subgraphs, side-package work, or to
-pause Phase K and redirect.
+The next step should not claim the side package. It should decide which side
+row is genuinely smaller than the blocked adaptive-shell target.
 
 ## What Is Proved?
 
@@ -584,6 +590,10 @@ wins.
 | `PhaseKStatusCleanup_291(P_minor^0)` | STRUCTURAL / EXTRACTION | Phase K status map cleaned and Module 292 challenge packet prepared |
 | `ContinuePhaseKWithoutNewInput_291` | FALSE / BLOCKED | Repeating the same Phase K tests cannot prove `AdaptiveShellGainP0_285` |
 | `ChallengePacket_291` | STRUCTURAL / EXTRACTION | Decision packet for the seventh plan challenge |
+| `PlanChallenge_7_292` | STRUCTURAL / EXTRACTION | Seventh plan challenge completed using `ChallengePacket_291` |
+| `ChallengeDecision_292` | STRUCTURAL / EXTRACTION | Selects OptionD: side-package triage |
+| `AdaptiveGainFirst_292` | FALSE / BLOCKED | Next move should not be another adaptive-shell gain attempt without a new input |
+| `SidePkgTriage_293(P_minor^0)` | OPEN | Next target; side package not yet split into proof-or-blocked rows |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
