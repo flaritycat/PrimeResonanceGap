@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 303
-Post-Reflective_1 solving count: 122
-Long-term-plan count: 116
+Latest completed module: 304
+Post-Reflective_1 solving count: 123
+Long-term-plan count: 117
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -67,7 +67,8 @@ Tenth plan update:       Module 277 (completed)
 Sixth plan challenge:    Module 277 (completed)
 Eleventh plan update:    Module 286 (completed)
 Twelfth plan update:     Module 295 (completed)
-Thirteenth plan update:  Module 304
+Thirteenth plan update:  Module 304 (completed)
+Fourteenth plan update:  Module 313
 Seventh plan challenge:  Module 292 (completed)
 Eighth plan challenge:   Module 307
 ```
@@ -2443,4 +2444,39 @@ Module 304:
   perform PlanUpdate_13_304, then decide whether to attempt
   SameShiftSquareKernelGain_303 directly or first define a smaller
   fixed-fiber/selection-transfer subproblem for K_{d,j}.
+```
+
+Module 304 completed:
+
+```text
+PlanUpdate_13_304:
+  STRUCTURAL / EXTRACTION.
+
+Decision:
+  do not attack SameShiftSquareKernelGain_303(P_minor^0) directly yet.
+
+Next target:
+  FixedFiberRowSquareBenchmark_305(P_minor^0).
+```
+
+The update records that fixed-fiber benchmarking is the smaller immediate
+test: if prescribed fibers already only recover the Module 300/302 ceiling,
+selection transfer is not the first missing input; if prescribed fibers give a
+genuine gain, then the next obstruction is transfer from fixed fibers to the
+data-dependent fibers `S_{d,j}`.
+
+The next cadence checkpoints are unchanged:
+
+```text
+Eighth plan challenge:   Module 307
+Fourteenth plan update:  Module 313
+Next reflective log:     Module 341
+```
+
+Continue with:
+
+```text
+Module 305:
+  perform FixedFiberRowSquareBenchmark_305(P_minor^0), replacing S_{d,j} by
+  prescribed fibers U_d independent of beta_0 and auditing current tools.
 ```

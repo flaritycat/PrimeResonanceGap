@@ -133,6 +133,8 @@ FALSE / BLOCKED
 | `FixedFiberShortcut_303` | FALSE / BLOCKED | Fixed-fiber estimates require uniformity over data-dependent fibers or selection transfer | `module_303_row_square_moment_expansion.md` | No |
 | `EndpointFourthMomentShortcut_303` | FALSE / BLOCKED | Endpoint fourth moments are circular here and do not control the off-diagonal row alone | `module_303_row_square_moment_expansion.md` | No |
 | `SameShiftSquareKernelGain_303(P_minor^0)` | OPEN | New q=2 kernel-gain target strong enough to imply `RowSquareMomentTarget_302` | `module_303_row_square_moment_expansion.md` | No |
+| `PlanUpdate_13_304` | STRUCTURAL / EXTRACTION | Thirteenth plan update; selects a fixed-fiber row-square benchmark before direct data-dependent kernel attack | `module_304_thirteenth_plan_update.md` | Only as governance |
+| `FixedFiberRowSquareBenchmark_305(P_minor^0)` | OPEN | Next target: benchmark prescribed fibers `U_d` independent of `beta_0` before selection transfer | `module_304_thirteenth_plan_update.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

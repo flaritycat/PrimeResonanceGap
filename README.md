@@ -418,8 +418,8 @@ the side-package low-level and removal audits**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 303
-Active phase: Phase K, thirteenth plan update after row-square expansion
+Latest module frontier: Module 304
+Active phase: Phase K, fixed-fiber row-square benchmark
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -566,6 +566,12 @@ Module 303:
   is structural only: full-frequency orthogonality, fixed-fiber transfer, and
   endpoint fourth moments are blocked as automatic proof routes, while
   SameShiftSquareKernelGain_303 remains open.
+
+Module 304:
+  performed the thirteenth plan update. It questions a direct attack on the
+  full data-dependent row-square kernel and selects the smaller fixed-fiber
+  benchmark first, to decide whether the obstruction is already present
+  before selection transfer.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
@@ -576,10 +582,10 @@ side of the threshold window.
 The next planned module is:
 
 ```text
-Module 304:
-  perform PlanUpdate_13_304, then decide whether to attack
-  SameShiftSquareKernelGain_303 directly or first define a smaller
-  fixed-fiber/selection-transfer subproblem for K_{d,j}.
+Module 305:
+  perform FixedFiberRowSquareBenchmark_305(P_minor^0), replacing S_{d,j} by
+  prescribed fibers U_d independent of beta_0 and auditing whether current
+  tools give a genuine q=2 row-square gain or only the existing ceiling.
 ```
 
 ## What Is Proved?
@@ -830,6 +836,8 @@ wins.
 | `FixedFiberShortcut_303` | FALSE / BLOCKED | Fixed-set estimates need uniformity or selection transfer |
 | `EndpointFourthMomentShortcut_303` | FALSE / BLOCKED | Circular and does not control the off-diagonal row alone |
 | `SameShiftSquareKernelGain_303(P_minor^0)` | OPEN | New q=2 row-square kernel target |
+| `PlanUpdate_13_304` | STRUCTURAL / EXTRACTION | Thirteenth plan update; selects fixed-fiber benchmark first |
+| `FixedFiberRowSquareBenchmark_305(P_minor^0)` | OPEN | Next target: test prescribed fibers before selection transfer |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

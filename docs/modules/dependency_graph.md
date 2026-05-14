@@ -51,7 +51,8 @@ flowchart TD
   Reflective4["Reflective_4<br/>memory log STRUCTURAL"]
   RowMoment302["RowMomentDistributionAudit_302<br/>audit STRUCTURAL; Markov/circular routes BLOCKED"]
   RowSquare303["RowSquareMomentExpansion_303<br/>identity STRUCTURAL; shortcuts BLOCKED"]
-  PlanUpdate13["PlanUpdate_13_304<br/>next scheduled update"]
+  PlanUpdate13["PlanUpdate_13_304<br/>plan update STRUCTURAL"]
+  FixedFiber305["FixedFiberRowSquareBenchmark_305<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -136,7 +137,8 @@ flowchart TD
   Reflective4 --> RowMoment302
   RowMoment302 --> RowSquare303
   RowSquare303 --> PlanUpdate13
-  PlanUpdate13 --> ThresholdP0
+  PlanUpdate13 --> FixedFiber305
+  FixedFiber305 --> ThresholdP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -240,3 +242,5 @@ flowchart TD
   row-square object into exact same-shift restricted kernels over
   data-dependent fibers, blocks full-frequency/fixed-fiber/endpoint shortcuts,
   and leaves `SameShiftSquareKernelGain_303` open.
+- `PlanUpdate_13_304` selects `FixedFiberRowSquareBenchmark_305` before a
+  direct attack on the data-dependent same-shift row-square kernel.

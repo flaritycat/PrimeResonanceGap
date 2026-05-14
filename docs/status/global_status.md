@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 303
-Active phase: Phase K, thirteenth plan update after row-square expansion
+Latest module frontier: Module 304
+Active phase: Phase K, fixed-fiber row-square benchmark
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -205,6 +205,9 @@ Latest project-wide review:
   `RowSquareMomentExpansion_303(P_minor^0)`, identifying the exact q=2
   same-shift restricted-kernel identity over data-dependent large-spectrum
   fibers and leaving the needed same-shift kernel gain open.
+- A thirteenth plan update `PlanUpdate_13_304`, selecting a fixed-fiber
+  row-square benchmark before attempting the full data-dependent
+  `SameShiftSquareKernelGain_303` route.
 
 ## What the project has not proved
 
@@ -307,6 +310,8 @@ Latest project-wide review:
   `EndpointFourthMomentShortcut_303` as proof routes.
 - `SameShiftSquareKernelGain_303(P_minor^0)` or
   `OffDiagonalSameShiftRow_303(lambda_j)`.
+- `PlanUpdate_13_304` as an estimate, or
+  `FixedFiberRowSquareBenchmark_305(P_minor^0)`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -559,8 +564,13 @@ Completed row-square moment expansion:
     kernel over the data-dependent fibers S_{d,j}; no row-square gain is
     proved
 
+Completed thirteenth plan update:
+  PlanUpdate_13_304
+    selects FixedFiberRowSquareBenchmark_305(P_minor^0) before any direct
+    attack on SameShiftSquareKernelGain_303(P_minor^0)
+
 Next scheduled check:
-  Module 304 PlanUpdate_13_304
+  Module 305 FixedFiberRowSquareBenchmark_305(P_minor^0)
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;
