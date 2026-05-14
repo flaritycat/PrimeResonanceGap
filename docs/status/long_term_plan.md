@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 249
-Post-Reflective_1 solving count: 68
-Long-term-plan count: 62
+Latest completed module: 250
+Post-Reflective_1 solving count: 69
+Long-term-plan count: 63
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -57,7 +57,9 @@ Fifth plan update:       Module 232 (completed)
 Third plan challenge:    Module 232 (completed)
 Sixth plan update:       Module 241 (completed)
 Fourth plan challenge:   Module 247
-Seventh plan update:     Module 250
+Seventh plan update:     Module 250 (completed)
+Eighth plan update:      Module 259
+Fifth plan challenge:    Module 262
 ```
 
 These module numbers are bookkeeping estimates. If an iteration is not a
@@ -571,6 +573,10 @@ Expected work:
 - Module 250: perform the seventh plan update and decide whether to attempt
   a two-point fixed-support row, redirect to minor arcs, or stop the boundary
   branch.
+  completed as `PlanUpdate_7_250`, with the decision not to escalate
+  immediately to two-point fixed-support rows and instead test
+  `FixedRowOnePointPkg_249` through deterministic boundary-length,
+  kernel-mass / Holder, short-interval W-PNT, and side-row feasibility gates.
 
 Success criterion: the project either obtains a precise conditional local
 criterion for `BoundaryIntervalHL_234({sigma0},lambda0)` that is smaller than
@@ -579,6 +585,47 @@ reason.
 
 Failure criterion: the project again only renames tuple rows without testing
 one concrete nonempty row.
+
+### Phase G: Fixed-row package feasibility gates
+
+Target window: iterations 64-72 after this document.
+
+Purpose: test whether the conditional package from Module 249 has any
+plausible fixed-row local proof route before attempting harder tuple rows.
+
+Decision from Module 250:
+
+```text
+Do not attempt a two-point fixed-support row yet.
+First test FixedRowOnePointPkg_249 itself.
+```
+
+Expected work:
+
+- Module 251: deterministic boundary-length feasibility for `BLength_245`;
+- Module 252: kernel absolute-mass and Holder feasibility for `A_W(M)`,
+  `K_q(M)`, and `P_M`;
+- Module 253: short-interval W-PNT range audit for `WOneBoundaryPNT_244`;
+- Module 254: exact side-row convention audit for `CutOne_242`,
+  `RangeOne_242`, `WResOne_242`, `PPOne_242`, and `NormZeroOne_242`;
+- Module 255: assemble a feasibility verdict for
+  `FixedRowOnePointPkg_249`;
+- Module 256: two-point escalation gate after the one-point feasibility
+  verdict;
+- Module 257: minor-arc reentry gate, comparing the boundary obstruction with
+  `NarrowMinorArc_3^B` and `MinorArcTransfer_3^B`;
+- Module 258: projected-major reentry gate, comparing the boundary
+  obstruction with `ProjectedMajorTarget_3^B` and
+  `WProjectedLocalMatch_3^major`;
+- Module 259: perform the eighth plan update and choose the next branch.
+
+Success criterion: either a concrete fixed-row route to
+`FixedRowOnePointPkg_249` survives the feasibility gates, or the boundary
+branch is stopped with a precise reason.
+
+Failure criterion: Phase G merely renames `KernelAvgStrength_245` or the side
+rows without testing boundary length, kernel mass, short-interval range, and
+exact conventions.
 
 ## 6. How each future iteration should start
 
@@ -616,39 +663,35 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 250: perform the seventh plan update and decide the next branch after
-the one-point prototype verdict.
+Module 251: deterministic boundary-length feasibility for BLength_245.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION`.
+Expected status: `CONDITIONAL` or `FALSE / BLOCKED`, depending on whether the
+boundary-length route survives the fixed-row kernel mass.
 
-Module 249 completed the one-point proof-or-blocked verdict:
+Module 250 completed the seventh plan update:
 
 ```text
-FixedRowOnePointPkg_249(s0,D0,rho0)
-  => OnePointBIHL_242(s0,D0,rho0)
+PlanUpdate_7_250:
+  pause two-point fixed-support escalation;
+  test FixedRowOnePointPkg_249 first.
 ```
 
-with the route classified as conditional local only if both:
+Module 251 should test the Module 245 boundary-length route:
 
 ```text
-KernelAvgStrength_245(s0,D0,rho0)
-OnePointSideRows_246(s0,D0,rho0)
+OPMeanErr_244
+  <= (C_mean+1)BLength_245 + MassErr_245.
 ```
 
-are supplied by fixed-row local estimates or exact conventions.
-
-The next iteration brings the long-term-plan count to 63, so the 9-step plan
-update cadence is due. Module 250 should decide whether to:
+It should decide whether deterministic boundary geometry and absolute kernel
+mass can make:
 
 ```text
-attempt a two-point fixed-support row,
-redirect to minor arcs,
-return to projected major-arc local matching,
-or stop the boundary branch for now.
+BLength_245=o_W(1)
 ```
 
-The prototype remains inside the fixed-row discipline:
+in the fixed row:
 
 ```text
 BdPrefRow_224^P(s0,D0;N,w,rho0),

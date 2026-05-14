@@ -1,4 +1,4 @@
-# Modules 156-249 summary
+# Modules 156-250 summary
 
 ## 156
 
@@ -529,7 +529,14 @@ transfer routes, endpoint-strength if closed by residual endpoint assumptions,
 and false/blocked as a shortcut from ordinary first-moment HL, full-interval
 PNT, full-interval W-tricked PNT, ordinary pair-BDH, or rectangle-BDH.
 
+## 250
+
+Seventh 9-iteration plan update; defines `PlanUpdate_7_250`, pauses immediate
+two-point fixed-support escalation, and opens Phase G as a feasibility window
+for `FixedRowOnePointPkg_249`, beginning with deterministic boundary-length
+control for `BLength_245` before testing kernel, short-interval, side-row, and
+branch reentry gates.
+
 ## Next
 
-Module 250: perform the seventh plan update and decide the next branch after
-the one-point prototype verdict.
+Module 251: deterministic boundary-length feasibility for `BLength_245`.
