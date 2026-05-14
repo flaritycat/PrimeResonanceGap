@@ -1,4 +1,4 @@
-# Modules 156-245 summary
+# Modules 156-246 summary
 
 ## 156
 
@@ -495,7 +495,15 @@ boundary-length, relative-PNT, and Holder sufficient routes for
 `OPMeanErr_244=o_W(1)`, while stressing that any boundary mean saving must
 survive the `|W_M|` average and possible absolute kernel-mass growth.
 
+## 246
+
+One-point side-row audit; defines `OnePointSideRows_246(s0,D0,rho0)` as the
+package of cutoff, range, W-residue, prime-power, normalization, and zero-mode
+side estimates needed with `KernelAvgStrength_245` to conditionally recover
+`OnePointBIHL_242`, classifying each row as zero by convention, local, mixed,
+endpoint-strength, or open without proving any row.
+
 ## Next
 
-Module 246: audit W-residue, prime-power, range, normalization, and zero-mode
-side rows for the one-point prototype.
+Module 247: perform the fourth 15-iteration plan challenge for the one-point
+prototype branch.

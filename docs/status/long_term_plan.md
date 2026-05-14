@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 245
-Post-Reflective_1 solving count: 64
-Long-term-plan count: 58
+Latest completed module: 246
+Post-Reflective_1 solving count: 65
+Long-term-plan count: 59
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -540,6 +540,11 @@ Expected work:
   absolute kernel mass growth without changing selector class or projection;
 - Module 246: audit W-residue, prime-power, range, normalization, and
   zero-mode side rows for the one-point prototype;
+  completed as `OnePointSideRows_246(s0,D0,rho0)`, a conditional side-row
+  package for `CutOne_242`, `RangeOne_242`, `WResOne_242`, `PPOne_242`, and
+  `NormZeroOne_242`, classifying each as zero by convention, local, mixed,
+  endpoint-strength, or open and composing it with `KernelAvgStrength_245`
+  without proving the prototype;
 - Module 247: perform the fourth 15-iteration plan challenge;
 - Module 248: compare the one-point prototype against available
   first-moment tools, W-tricked prime number theorem input, short-interval
@@ -595,44 +600,33 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 246: audit W-residue, prime-power, range, normalization, and zero-mode
-side rows for the one-point prototype.
+Module 247: perform the fourth 15-iteration plan challenge for the one-point
+prototype branch.
 ```
 
-Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
+Expected status: `STRUCTURAL / EXTRACTION`.
 
-Module 245 audited the strength needed after the absolute kernel average:
+Module 246 completed the side-row audit:
 
 ```text
 KernelAvgStrength_245(s0,D0,rho0)
-  => OPMeanErr_244(s0,D0,rho0)=o_W(1).
+  + OnePointSideRows_246(s0,D0,rho0)
+    => OnePointBIHL_242(s0,D0,rho0).
 ```
 
-It isolated the main sufficient routes:
+The next iteration brings the long-term-plan counter to 60, so the 15-step
+challenge cadence is due. Module 247 should question Phase F2 before adding
+more one-point machinery.
+
+It should ask:
 
 ```text
-direct weighted control,
-uniform pointwise control beating A_W(M),
-boundary-length majorant control via BLength_245,
-relative boundary-PNT control,
-Holder control using K_q(M)E_p(s0).
-```
-
-Module 246 should now audit the side rows left outside that strength package:
-
-```text
-CutOne_242,
-RangeOne_242,
-WResOne_242,
-PPOne_242,
-NormZeroOne_242.
-```
-
-It should classify each as zero by convention, local, mixed, endpoint-strength,
-or open, while preserving the selector branches:
-
-```text
-model, W, sm, fr.
+Are we relying on a convenient boundary mean theorem?
+Are the side rows actually local, or are they quietly endpoint-strength?
+Does OPMeanErr_244 require too-short an interval PNT or kernel smoothing?
+Has the one-point prototype exposed a smaller target, or merely renamed the
+projected residual endpoint?
+Should Phase F2 continue to Module 248, narrow, or redirect?
 ```
 
 The prototype remains inside the fixed-row discipline:
@@ -645,5 +639,13 @@ same selector class s0,
 fixed dyadic shell D0<|d|<=2D0.
 ```
 
-Do not prove the prototype by assuming `ProjectedMajorTarget_3^B`,
-`ResCube_3^sharp`, selector transfer, or any endpoint object.
+Do not prove the prototype by assuming:
+
+```text
+ProjectedMajorTarget_3^B,
+ResCube_3^sharp,
+selector transfer,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3.
+```
