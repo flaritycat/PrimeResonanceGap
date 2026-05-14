@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 211
-Post-Reflective_1 solving count: 30
-Long-term-plan count: 24
+Latest completed module: 212
+Post-Reflective_1 solving count: 31
+Long-term-plan count: 25
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -244,6 +244,10 @@ Expected work:
 - Module 212: check compatibility between pair, rectangle, and projected cube
   local models, with no pointwise replacement of `Sigma_w(d,h)` by
   `kappa_w(d)^2`;
+  completed as `LocalModelCompat_3^major(P_adm)`, a structural ledger of exact
+  pair, rectangle, full-cube, and residual projected face identities, together
+  with the named averaged compatibility errors needed for any non-exact model
+  replacement;
 - Module 213: state the selector-class transfer line for projected major arcs,
   separating model, smoothed, frozen, and actual sharp moving selectors;
 - Module 214: perform the third 9-iteration plan update.
@@ -337,30 +341,29 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 212: Pair, rectangle, and projected cube local-model compatibility.
+Module 213: Selector-class transfer line for projected major arcs.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 211 fixed the prime-power and small-prime transfer side package:
+Module 212 fixed the local-model compatibility ledger:
 
 ```text
-PPSPTransfer_3^major(P_adm).
+LocalModelCompat_3^major(P_adm).
 ```
 
-The next module should audit compatibility between the local factors already
-used in the project:
+The next module should state the selector-class transfer line for projected
+major arcs. It should separate:
 
 ```text
-kappa_w(d),
-Sigma_w(d,h),
-Theta_w(d,h,k),
-Theta_{w,S}^proj(d,h,k;t),
-Omega_w^proj(d,h,k;t).
+finite-stage model selector,
+smoothed finite-band frozen selector,
+sharp frozen dyadic selector,
+hidden Bernoulli lift,
+actual sharp moving selector chi_alpha(p).
 ```
 
-In particular, it must not replace `Sigma_w(d,h)` pointwise by
-`kappa_w(d)^2`, must not replace the projected residual inclusion-exclusion
-model by the full eight-form model, and must state exactly which averaged
-compatibility lemmas would be needed to pass between pair, rectangle, and
-projected cube marginals.
+In particular, it must not transfer any projected major-arc estimate to the
+actual sharp moving selector without boundary, transition, moving-window,
+prefix, denominator, tail, projection, W-residue, and prime-power transfer
+errors in the same projected fourth-moment normalization.

@@ -212,6 +212,13 @@ Prime-power and small-prime transfer for the projected major-arc model; defines
 prime-power cube removal, model-side prime-power exclusion, and boundary /
 W-residue interaction separated from first-moment sparsity.
 
+## 212
+
+Pair, rectangle, and projected cube local-model compatibility ledger; defines
+`LocalModelCompat_3^major(P_adm)` with exact face identities for `kappa_w`,
+`Sigma_w`, `Theta_w^proj`, and `Omega_w^proj`, while naming the averaged
+compatibility errors required for any non-exact replacement.
+
 ## Next
 
-Module 212: Pair, rectangle, and projected cube local-model compatibility.
+Module 213: Selector-class transfer line for projected major arcs.
