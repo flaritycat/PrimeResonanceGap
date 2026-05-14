@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this research ledger, cite it as below."
+title: "Prime Gap Resonance Project: Structural Ledger and Conditional Endpoint Architecture"
+authors:
+  - family-names: "flaritycat"
+    given-names: "PrimeResonanceGap project"
+year: 2026
+repository-code: "https://github.com/flaritycat/PrimeResonanceGap"
+version: "codex-handoff-2026-05-14"
+abstract: "A research ledger and conditional theorem architecture for Bohr-selected normalized prime gaps. Not a proof of the original positive existence problem or the all-alpha no-positive-limit theorem."

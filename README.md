@@ -1,0 +1,94 @@
+# Prime Resonance Gap
+
+This repository documents the **Prime Gap Resonance Project**.
+
+This is a research ledger, proof-map, conditional theorem architecture, endpoint-reduction record, and computational/documentation workspace. It is **not** a proof of the original positive existence problem and **not** a proof of the all-alpha no-positive-limit theorem.
+
+## Global status
+
+| Claim | Status |
+|---|---|
+| Existence of irrational `alpha` with `A_alpha(x) -> L0 > 1` | **OPEN** |
+| All-alpha no-positive-limit theorem | **OPEN** |
+| Metric theorem `A_alpha(x) -> 1` for Lebesgue-a.e. irrational `alpha` | **PROVEN according to project ledger** |
+| Finite-type no-positive-limit theorem | **CONDITIONAL** |
+| `s=2` rational-major endpoint | **OPEN ANALYTIC ENGINE** |
+
+## Core selected average
+
+```text
+chi_alpha(p) = 1_{||alpha p|| < 1/log p}
+D_alpha(x)  = sum_{p <= x} chi_alpha(p)
+N_alpha(x)  = sum_{p <= x} chi_alpha(p) g(p)
+A_alpha(x)  = N_alpha(x) / D_alpha(x)
+g(p)        = (p^+ - p) / log p
+```
+
+## Current endpoint target
+
+The current compressed `s=2` endpoint class is:
+
+```text
+RBDH_pair_short(Hcal)
+  <=> CPC_3^sharp(Hcal)
+  <=> SPAC_2^sharp
+  <=> SU2Pair_2^sharp
+  <=> DyadicDerivativeU^2
+  <=> AU^3
+```
+
+The endpoint itself remains **OPEN**.
+
+## Repository layout
+
+```text
+AGENTS.md                         Codex operating rules and status discipline
+README.md                         This file
+CITATION.cff                      Citation metadata placeholder
+LICENSE_PENDING.md                License decision placeholder
+
+source_texts/                     Original large text artifacts
+  Prime_Resonance_Gap_500_Page_Paper.txt
+  prime_gap_resonance_project_250_page_breakdown.txt
+
+docs/
+  paper/                          Copy of the generated 500-page paper
+  ledger/                         Copy of the 250-page project ledger
+  status/                         Global status, endpoint status, forbidden upgrades
+  modules/                        Current module handoff and generated indexes
+  codex/                          Prompts, continuation protocol, review checklist
+
+papers/
+  paper_I_structural_obstruction/
+  paper_II_conditional_finite_type/
+  paper_III_s2_endpoint_compression/
+
+experiments/                      Computational experiment stubs
+scripts/                          Lightweight audit/index scripts
+.github/                          Codex prompt files, workflows, issue templates
+```
+
+## How to continue
+
+A continuation agent should begin with:
+
+```text
+Read AGENTS.md, docs/status/global_status.md, docs/status/forbidden_upgrades.md,
+docs/codex/continuation_protocol.md, and docs/modules/module_178_residual_cube.md.
+Then continue with Module 179.
+```
+
+The next mathematical target is a **structural Fourier major/minor decomposition** for the residual derivative cube:
+
+```text
+(1/D) sum_{D<|d|<=2D} sum_{xi != 0} |widehat{B_d}(xi)|^4 = o(1)
+```
+
+where:
+
+```text
+B_d(n) = f(n+d) conjugate(f(n))
+f      = nu - 1
+```
+
+Do not call this solved. It is not. The endpoint has merely been cornered into a more explicit formula, which is progress in the same sense that finding the basement monster is progress.

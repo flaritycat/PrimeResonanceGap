@@ -1,0 +1,34 @@
+{
+  "global_status": {
+    "positive_existence": "OPEN",
+    "all_alpha_no_positive_limit": "OPEN",
+    "metric_theorem": "PROVEN according to project ledger",
+    "finite_type_no_positive_limit": "CONDITIONAL",
+    "s2_rational_major_endpoint": "OPEN ANALYTIC ENGINE"
+  },
+  "allowed_status_labels": [
+    "PROVEN",
+    "CONDITIONAL",
+    "STRUCTURAL / EXTRACTION",
+    "HEURISTIC",
+    "OPEN",
+    "FALSE / BLOCKED"
+  ],
+  "current_endpoint": {
+    "primary": "RBDH_pair_short(Hcal)",
+    "equivalent": [
+      "CPC_3^sharp(Hcal)",
+      "SPAC_2^sharp",
+      "SU2Pair_2^sharp",
+      "DyadicDerivativeU^2",
+      "AU^3"
+    ],
+    "status": "OPEN ANALYTIC ENGINE"
+  },
+  "forbidden_substitutions": {
+    "Sigma_w(d,h)": "kappa_w(d)^2 pointwise",
+    "first_moment_HL": "RBDH",
+    "Pair_BDH": "CPC_3^sharp",
+    "smoothed_selector": "actual_sharp_moving_selector"
+  }
+}
