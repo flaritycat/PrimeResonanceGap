@@ -1,4 +1,4 @@
-# Modules 156-200 summary
+# Modules 156-201 summary
 
 ## 156
 
@@ -136,6 +136,13 @@ Dyadic derivative `U^2` route to minor arcs; `Pi_minor Delta_d f` gives exactly
 the minor-arc fourth moment, so endpoint-equivalence language must be replaced
 by a projected derivative input.
 
+## 201
+
+Minor-arc spectral large-spectrum obstruction map; failure of minor-arc decay
+is routed through low-level leakage, count/energy failure, bad-shift
+concentration, persistent minor-frequency concentration, or transverse
+incidence concentration.
+
 ## Next
 
-Module 201: Minor-arc spectral large-spectrum obstruction map.
+Module 202: First 15-iteration plan challenge.

@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 200
-Post-Reflective_1 solving count: 19
-Long-term-plan count: 13
+Latest completed module: 201
+Post-Reflective_1 solving count: 20
+Long-term-plan count: 14
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -170,6 +170,10 @@ Expected modules:
   same minor-arc fourth moment after applying `Pi_minor`, so it needs a new
   projected derivative input rather than endpoint-equivalence language;
 - Module 201: build the minor-arc spectral large-spectrum obstruction map;
+  completed as a structural obstruction tree: failure of minor-arc decay must
+  pass through low-level leakage, dyadic count/energy failure, bad-shift
+  concentration, persistent minor-frequency concentration, or transverse
+  incidence concentration;
 - Module 202: perform the first 15-iteration plan challenge;
 - Module 203: refine the conditional minor-arc criterion after the challenge;
 - Module 204: audit boundary, W-range, and selector compatibility for minor
@@ -283,32 +287,30 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 201: Minor-arc spectral large-spectrum obstruction map.
+Module 202: First 15-iteration plan challenge.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION`.
 
-Module 200 showed that the dyadic derivative route is exact but not by itself
-new:
+Module 201 mapped failure of minor-arc decay into the obstruction tree:
 
 ```text
-DDU2_minor(D;R,eta)
-  =
-(1/D) sum_{D<|d|<=2D}
-  sum_{xi in Minor(R,eta)} |widehat{B_d}(xi)|^4.
+M_minor(D) not small
+  -> LowLevelLeak(lambda_0)
+  or CountObs(lambda)
+  or EnergyObs(lambda)
+       -> density failure
+       -> adaptive restriction failure
+            -> bad-shift concentration
+            -> persistent minor-frequency concentration
+            -> transverse incidence concentration.
 ```
 
-The next module should map what a failure of minor-arc decay would imply. It
-should start from the large-spectrum sets:
+The next iteration is the first 15-iteration plan challenge because the
+long-term-plan count will become 15. It should explicitly ask whether Phase B
+should continue into refined minor-arc criteria, pivot back to major-arc
+matching, or branch toward a weaker honest theorem.
 
 ```text
-Spec_d^minor(lambda)
-  = { xi in Minor(R,eta) : |widehat{B_d}(xi)| >= lambda }
-```
-
-and ask which spectral structures, correlations, or concentration profiles
-would obstruct:
-
-```text
-R_{2,B}^minor(rho;D) <= Psi_*(rho;D).
+Module 202: plan challenge, not a theorem upgrade.
 ```
