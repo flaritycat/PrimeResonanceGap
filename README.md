@@ -284,7 +284,7 @@ feasibility**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 280
+Latest module frontier: Module 281
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -302,24 +302,22 @@ Module 279:
 Module 280:
   showed that fixed frequency-set estimates do not automatically transfer to
   the data-dependent shell fibers S_d(J) and D_xi(J).
+
+Module 281:
+  benchmarked large-sieve/Bessel-type estimates and found that currently
+  available non-endpoint versions reproduce row/column ceilings or fixed-set
+  diagnostics, not the adaptive shell gain needed for PhaseKernelBound_273^0.
 ```
 
 The next planned module is:
 
 ```text
-Module 281:
-  benchmark large-sieve or Bessel-type estimates against Xi_273^0.
+Module 282:
+  audit routed degeneracy rows inside P_minor^0.
 ```
 
-The benchmark must decide whether a candidate estimate is one of:
-
-```text
-UniformFiberBound_280,
-SelectionTransfer_280,
-DirectShellBound_280,
-fixed-set-only diagnostic,
-or endpoint-strength / blocked.
-```
+The next audit should decide which degeneracy rows are local/model-side and
+which are already endpoint-strength.
 
 ## What Is Proved?
 
@@ -425,3 +423,69 @@ Do not call the original problem solved.
 Do not assign endpoint status PROVEN unless a module supplies the proof.
 Do not turn structural reductions into analytic estimates.
 ```
+
+## Status Snapshot
+
+This table is a reader-friendly snapshot of the main project statuses. If it
+ever conflicts with `docs/status/global_status.md`, the global status file
+wins.
+
+| Object / Claim | Status | Short Meaning |
+|---|---:|---|
+| Original selected-average problem: exists irrational `alpha` with `A_alpha(x)->L0>1` | OPEN | Main problem; no construction or proof yet |
+| All-alpha no-positive-limit theorem | OPEN | No theorem rules out positive limits for every irrational `alpha` |
+| Metric theorem `A_alpha(x)->1` a.e. | PROVEN according to project ledger | Applies to Lebesgue-a.e. alpha, not all alpha |
+| Finite-type no-positive-limit theorem | CONDITIONAL | Needs finite-type hypotheses and side packages |
+| `s=2` rational-major endpoint | OPEN | Major analytic engine still missing |
+| Residual derivative cube `ResCube_3^sharp` | OPEN | Central Fourier fourth-moment endpoint |
+| `RBDH_pair_short(Hcal)` | OPEN | Endpoint-equivalent object, not available |
+| `CPC_3^sharp(Hcal)` | OPEN | Endpoint-equivalent object, not available |
+| `SPAC_2^sharp` | OPEN | Endpoint-equivalent object, not available |
+| `SU2Pair_2^sharp` | OPEN | Endpoint-equivalent object, not available |
+| `DyadicDerivativeU^2` | OPEN | Structural target; analytic estimate missing |
+| `AU^3` | OPEN | Endpoint-equivalent object, not available |
+| `WProjectedLocalMatch_3^major` | CONDITIONAL | Major-arc local-model schema only |
+| `ProjectedMajorTarget_3^B` | OPEN | Needs local matching and model neutrality |
+| `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Gate with open generic-tail, kernel, collision, and uniformity rows |
+| `ProjectedModelNeutrality_3^major` | OPEN | Not proved by the gate |
+| `CollNeutral_260(P_adm)` | OPEN | Absolute collision neutrality missing |
+| `AbsCollStrataGate_264` | OPEN | Absolute collision-strata route missing |
+| `SignedCoverGate_264` | OPEN | Signed full-cover route missing; not an absolute row |
+| `KernelAbsBudget_265` | OPEN | Absolute kernel budget missing |
+| `KernelSignedBudget_265` | OPEN | Signed kernel budget missing |
+| `UniformityLedger_266(P_adm)` | OPEN | Same-family W-limit and parameter uniformity not proved |
+| `NarrowMinorArc_3^B` | CONDITIONAL | Minor-arc criterion; needs all input rows |
+| `MinorArcTransfer_3^B` | OPEN | Transfer from model/cyclic rows to target missing |
+| `TransIncCore_269` | STRUCTURAL / EXTRACTION | Exact transverse graph identified |
+| `TransIncBound_269` | OPEN | Non-tautological transverse bound missing |
+| `ThresholdRemovalAudit_270` | STRUCTURAL / EXTRACTION | Threshold tension identified |
+| `ThresholdOnlyClosure_270` | OPEN | Moment-and-threshold closure missing |
+| `TransPhaseExpansion_271` | STRUCTURAL / EXTRACTION | Exact phase kernels expanded |
+| `PhaseIncidenceGate_271` | OPEN | Same-family restricted phase-kernel estimate missing |
+| `PhaseToolCompatAudit_272` | STRUCTURAL / EXTRACTION | Standard tools audited |
+| `AvailableToolClosure_272` | OPEN | No listed off-the-shelf tool closes the phase gate |
+| `TransverseIncidenceGate_273` | STRUCTURAL / EXTRACTION | Candidate gate, not a usable proof input |
+| `PhaseKernelBound_273` | OPEN | Shell graph-restriction bound missing |
+| `TransGateCompatAudit_274` | STRUCTURAL / EXTRACTION | Side-row requirements named |
+| `TransGateSideRows_274` | OPEN | W-limit, cutoff, boundary, selector, and dyadic rows missing |
+| `TransDegeneracyAudit_275` | STRUCTURAL / EXTRACTION | Degeneracies routed |
+| `DegFreePhaseGate_275` | OPEN | Genuine nondegenerate transverse remainder missing |
+| `TransverseGateVerdict_276` | STRUCTURAL / EXTRACTION | Phase I classified as mixed/conditional |
+| `TransverseGateProofPkg_276` | OPEN | Full transverse proof package missing |
+| `PlanUpdate_10_277 / PlanChallenge_6_277` | STRUCTURAL / EXTRACTION | Governance update; Phase J selected |
+| `MinimalTransverseFamily_278(P_minor^0)` | STRUCTURAL / EXTRACTION | Minimal W-cyclic model family fixed |
+| `XiDualPhaseExpansion_279(P_minor^0)` | STRUCTURAL / EXTRACTION | `Xi_273^0` expanded exactly |
+| `FixedSetShellAudit_280(P_minor^0)` | STRUCTURAL / EXTRACTION | Automatic fixed-set to shell transfer blocked |
+| `FixedSetShellTransfer_280` | OPEN | Needs uniform fiber, selection, or direct shell theorem |
+| `UniformFiberBound_280` | OPEN | Adaptive-fiber uniform estimate missing |
+| `SelectionTransfer_280` | OPEN | Fixed-set-to-shell selection theorem missing |
+| `DirectShellBound_280` | OPEN | Direct estimate for `X_J(omega)` missing |
+| `LSBesselBenchmark_281(P_minor^0)` | STRUCTURAL / EXTRACTION | Bessel/large-sieve benchmark performed |
+| `LargeSieveBesselClosure_281` | OPEN | Benchmark does not close the shell target |
+| `AdaptiveBesselGain_281` | OPEN | No adaptive Bessel gain beyond row/column ceilings |
+| Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
+| Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
+| First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
+| Ordinary pair-BDH `=> CPC_3^sharp` | FALSE / BLOCKED | Missing residual, rectangle, and endpoint-strength rows |
+| Pointwise replacement of `Sigma_w(d,h)` by `kappa_w(d)^2` | FALSE / BLOCKED | Exact rectangle local factor is different |
+| Model/smoothed/frozen selector estimate `=>` actual sharp moving selector | FALSE / BLOCKED | Requires named selector-transfer theorem |

@@ -27,7 +27,8 @@ flowchart TD
   XiExpansion["XiDualPhaseExpansion_279(P_minor^0)<br/>identity STRUCTURAL"]
   FixedShellAudit["FixedSetShellAudit_280<br/>audit STRUCTURAL; automatic transfer BLOCKED"]
   FixedShellTransfer["UniformFiber / SelectionTransfer / DirectShell<br/>OPEN routes"]
-  LSBesselBench["Large-sieve/Bessel benchmark_281<br/>next diagnostic"]
+  LSBesselBench["LSBesselBenchmark_281<br/>benchmark STRUCTURAL; adaptive gain OPEN"]
+  DegRowsP0["Degeneracy audit in P_minor^0_282<br/>next diagnostic"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -73,6 +74,7 @@ flowchart TD
   FixedShellAudit --> FixedShellTransfer
   FixedShellTransfer --> PhaseKernel0
   LSBesselBench --> FixedShellTransfer
+  DegRowsP0 --> PhaseKernel0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -108,3 +110,5 @@ flowchart TD
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still
   require uniform adaptive-fiber, selection-transfer, or direct-shell input.
+- `LSBesselBenchmark_281` records that current non-endpoint Bessel bounds
+  reproduce row/column ceilings, not adaptive shell closure.

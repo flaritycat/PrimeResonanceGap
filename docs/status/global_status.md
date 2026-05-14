@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 280
+Latest module frontier: Module 281
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -120,6 +120,10 @@ Latest project-wide review:
 - A fixed-set versus shell-set audit `FixedSetShellAudit_280(P_minor^0)`,
   blocking automatic transfer from predetermined frequency-set estimates to
   the data-dependent shell functional `Xi_273^0`.
+- A large-sieve/Bessel benchmark `LSBesselBenchmark_281(P_minor^0)`, showing
+  that currently available non-endpoint Bessel bounds reproduce row/column
+  ceilings or fixed-set diagnostics rather than proving the adaptive shell
+  estimate.
 
 ## What the project has not proved
 
@@ -160,6 +164,7 @@ Latest project-wide review:
   `J_trans_0(lambda;sigma)`.
 - `UniformFiberBound_280`, `SelectionTransfer_280`, or
   `DirectShellBound_280`.
+- `LargeSieveBesselClosure_281` or `AdaptiveBesselGain_281`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -296,14 +301,16 @@ Completed Phase J fixed-set transfer audit:
   FixedSetShellAudit_280(P_minor^0)
     blocks the automatic fixed-set to data-dependent shell shortcut
 
+Completed Phase J Bessel benchmark:
+  LSBesselBenchmark_281(P_minor^0)
+    leaves LargeSieveBesselClosure_281 and AdaptiveBesselGain_281 open
+
 Active Phase J target:
   PhaseKernelBound_273^0 over P_minor^0
-    next benchmark large-sieve/Bessel-type estimates against the adaptive
-    shell routes
+    next audit routed degeneracy rows inside P_minor^0
 
 Next scheduled check:
-  Module 281 benchmark non-endpoint large-sieve or Bessel-type estimates for
-  Xi_273^0 inside P_minor^0
+  Module 282 audit routed degeneracy rows inside P_minor^0
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the active Phase J steering step;

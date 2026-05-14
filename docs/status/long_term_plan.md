@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 280
-Post-Reflective_1 solving count: 99
-Long-term-plan count: 93
+Latest completed module: 281
+Post-Reflective_1 solving count: 100
+Long-term-plan count: 94
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -906,6 +906,10 @@ Expected work:
   `DirectShellBound_280` is supplied;
 - Module 281: benchmark the strongest non-endpoint large-sieve or
   Bessel-type estimate available for `Xi_273^0` in `P_minor^0`;
+  completed as `LSBesselBenchmark_281(P_minor^0)`, showing that the
+  available non-endpoint Bessel/large-sieve bounds reproduce row/column
+  ceilings or fixed-set diagnostics and do not prove
+  `PhaseKernelBound_273^0`;
 - Module 282: audit routed degeneracy rows inside `P_minor^0`;
 - Module 283: audit the minimum W-limit, cutoff, boundary, threshold,
   residue, and selector side rows needed for `P_minor^0`;
@@ -1415,4 +1419,41 @@ SelectionTransfer_280 candidate,
 DirectShellBound_280 candidate,
 fixed-set-only diagnostic,
 or endpoint-strength / blocked.
+```
+
+Module 281 completed:
+
+```text
+LSBesselBenchmark_281(P_minor^0)
+  available non-endpoint Bessel bounds are row/column diagnostics only.
+```
+
+It preserves these statuses:
+
+```text
+LargeSieveBesselClosure_281,
+AdaptiveBesselGain_281,
+UniformFiberBound_280,
+SelectionTransfer_280,
+DirectShellBound_280,
+PhaseKernelBound_273^0,
+PhaseKernelBound_273,
+TransverseGateProofPkg_276,
+TransIncBound_269,
+MinorArcTransfer_3^B,
+NarrowMinorArc_3^B,
+selector transfer,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3
+remain unproved.
+```
+
+Continue with:
+
+```text
+Module 282:
+  audit routed degeneracy rows inside P_minor^0 and decide which are
+  local/model-side and which are already endpoint-strength.
 ```

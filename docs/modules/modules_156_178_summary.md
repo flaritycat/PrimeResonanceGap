@@ -1,4 +1,4 @@
-# Modules 156-280 summary
+# Modules 156-281 summary
 
 ## 156
 
@@ -787,7 +787,14 @@ predetermined frequency-set estimates to the adaptive shell fibers
 `SelectionTransfer_280`, and `DirectShellBound_280` as the admissible open
 routes.
 
+## 281
+
+Large-sieve and Bessel benchmark for `Xi_273^0`; defines
+`LSBesselBenchmark_281(P_minor^0)`, derives the available row and column
+Bessel/counting ceilings, classifies fixed-set large-sieve estimates as
+diagnostic only, and leaves `LargeSieveBesselClosure_281` and
+`AdaptiveBesselGain_281` open.
+
 ## Next
 
-Module 281: benchmark the strongest non-endpoint large-sieve or Bessel-type
-estimate available for `Xi_273^0` in `P_minor^0`.
+Module 282: audit routed degeneracy rows inside `P_minor^0`.
