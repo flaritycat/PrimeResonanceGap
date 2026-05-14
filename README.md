@@ -412,13 +412,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the anti-diagonal new-input inventory**.
+the size-sensitive minor-kernel criterion**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 319
-Active phase: Phase K, size-sensitive minor-kernel criterion next
+Latest module frontier: Module 320
+Active phase: Phase K, data-dependent fiber gain audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -665,10 +665,16 @@ Module 319:
   inventoried candidate new inputs for the exact centered minor-kernel row.
   Endpoint assumptions and current-tool ceilings are rejected; the selected
   next smaller target is a size-sensitive minor-kernel criterion.
+
+Module 320:
+  formulated the size-sensitive cross-shell `Phi` criterion. A proved
+  admissible `Phi` could feed the r=2 column-pair route, but deterministic
+  energy-product, column-cap, and incidence bounds still recover current
+  ceilings.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-319 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-320 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window or the signed minor-kernel row.
@@ -695,9 +701,14 @@ Module 319:
   anti-diagonal row.
 
 Module 320:
-  perform SizeSensitiveMinorKernelCriterion_320(P_minor^0), defining the
+  performed SizeSensitiveMinorKernelCriterion_320(P_minor^0), defining the
   exact size/energy/kernel criterion and checking which losses would survive
   the Module 310 threshold conversion and Module 284 column-barrier weights.
+
+Module 321:
+  perform DataDependentFiberGainAudit_321(P_minor^0), deciding whether the
+  current row caps, column caps, shell restrictions, energy tails, or selection
+  rules imply any genuine overlap gain for the `Phi` criterion.
 ```
 
 ## What Is Proved?
@@ -756,7 +767,11 @@ Compact status table:
 | Anti-diagonal new-input inventory `AntiDiagonalNewInputInventory_319` | **STRUCTURAL / EXTRACTION** |
 | Current inventory closes anti-diagonal `CurrentInventoryClosesAntiDiagonal_319` | **FALSE / BLOCKED** |
 | Direct/data-dependent/eight-slot candidate inputs from Module 319 | **OPEN** |
-| Size-sensitive minor-kernel criterion `SizeSensitiveMinorKernelCriterion_320` | **OPEN next target** |
+| Size-sensitive minor-kernel criterion `SizeSensitiveMinorKernelCriterion_320` | **STRUCTURAL / EXTRACTION** |
+| Conditional Phi criterion `PhiCriterion_320(Phi)` | **CONDITIONAL** |
+| Current size-sensitive closure `CurrentSizeSensitiveClosure_320` | **FALSE / BLOCKED** |
+| Admissible Phi gain `AdmissiblePhiGain_320` | **OPEN** |
+| Data-dependent fiber gain audit `DataDependentFiberGainAudit_321` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 

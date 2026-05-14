@@ -3258,3 +3258,69 @@ Module 320:
   exponents or losses would actually survive the Module 310 threshold
   conversion and Module 284 column-barrier weights.
 ```
+
+Module 320 completed:
+
+```text
+SizeSensitiveMinorKernelCriterion_320(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+CrossShellWeightedPairIdentity_320,
+DeterministicSizeBounds_320:
+  STRUCTURAL / EXTRACTION.
+
+PhiCriterion_320(Phi):
+  CONDITIONAL.
+
+CurrentSizeSensitiveClosure_320:
+  FALSE / BLOCKED.
+
+AdmissiblePhiGain_320(P_minor^0):
+  OPEN.
+
+DataDependentFiberGainAudit_321(P_minor^0):
+  OPEN next target.
+```
+
+The criterion records:
+
+```text
+PairOff_310(lambda_j)
+  <=
+  sum_{k,l>=j}
+    (lambda_k lambda_l)^(-2)
+    WOff(J_{j,k},J_{j,l}).
+```
+
+If a same-family majorant `Phi_{j;k,l}` proves:
+
+```text
+WOff(J_{j,k},J_{j,l}) <= Phi_{j;k,l},
+```
+
+then it must pass the displayed `ColumnBarrier_320(Phi)` or
+`SigmaColumnBarrier_320(Phi)` lambda sums before it can feed the r=2
+column-pair route. Deterministic energy-product, column-cap, and incidence
+bounds still recover current ceilings.
+
+The current cadence records:
+
+```text
+Latest completed module: 320
+Post-Reflective_1 solving count: 139
+Long-term-plan count: 133
+
+133 is not divisible by 9, so no plan update is due.
+133 is not divisible by 15, so no plan challenge is due.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 321:
+  perform DataDependentFiberGainAudit_321(P_minor^0), auditing whether the
+  current row caps, column caps, shell-height restrictions, energy tails, and
+  selection rules imply any nontrivial weighted or unweighted column-overlap
+  gain that could produce an admissible Phi.
+```

@@ -68,7 +68,8 @@ flowchart TD
   MajorCorr317["MajorKernelCorrectionAudit_317<br/>audit STRUCTURAL; current route BLOCKED"]
   SignedVerdict318["SignedMinorKernelCombinationVerdict_318<br/>verdict STRUCTURAL; smaller route BLOCKED"]
   NewInput319["AntiDiagonalNewInputInventory_319<br/>inventory STRUCTURAL; current closures BLOCKED"]
-  SizeSensitive320["SizeSensitiveMinorKernelCriterion_320<br/>next target OPEN"]
+  SizeSensitive320["SizeSensitiveMinorKernelCriterion_320<br/>criterion STRUCTURAL; deterministic closure BLOCKED"]
+  FiberGain321["DataDependentFiberGainAudit_321<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -172,7 +173,8 @@ flowchart TD
   MajorCorr317 --> SignedVerdict318
   SignedVerdict318 --> NewInput319
   NewInput319 --> SizeSensitive320
-  SizeSensitive320 --> AntiDiag312
+  SizeSensitive320 --> FiberGain321
+  FiberGain321 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -339,3 +341,7 @@ flowchart TD
   projected-major inputs, transfer shortcuts, column-barrier closures, and
   current-tool ceilings as anti-diagonal inputs. The next smaller target is a
   size-sensitive minor-kernel criterion with explicit losses.
+- `SizeSensitiveMinorKernelCriterion_320` formulates the cross-shell `Phi`
+  criterion with Module 310 threshold conversion and Module 284 column-barrier
+  weights visible. Deterministic size bounds still recover current ceilings,
+  so the next audit is data-dependent fiber overlap gain.

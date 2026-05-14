@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 319
-Active phase: Phase K, size-sensitive minor-kernel criterion next
+Latest module frontier: Module 320
+Active phase: Phase K, data-dependent fiber gain audit next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -89,6 +89,7 @@ modules/
   module_317_major_kernel_correction_audit.md
   module_318_signed_minor_kernel_verdict.md
   module_319_antidiagonal_new_input_inventory.md
+  module_320_size_sensitive_minor_kernel_criterion.md
   modules_156_178_summary.md
 
 reviews/

@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 319
-Active phase: Phase K, size-sensitive minor-kernel criterion next
+Latest module frontier: Module 320
+Active phase: Phase K, data-dependent fiber gain audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -760,10 +760,16 @@ Completed anti-diagonal new-input inventory:
     endpoint assumptions and current-tool ceilings, and selects the
     size-sensitive minor-kernel criterion as the next smaller target
 
+Completed size-sensitive minor-kernel criterion:
+  SizeSensitiveMinorKernelCriterion_320(P_minor^0)
+    formulates the conditional cross-shell Phi criterion, keeps the Module
+    310 threshold conversion and Module 284 column-barrier weights visible,
+    and records that deterministic size bounds still recover current ceilings
+
 Next scheduled check:
-  Module 320 SizeSensitiveMinorKernelCriterion_320(P_minor^0)
+  Module 321 DataDependentFiberGainAudit_321(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Phase K anti-diagonal
-new-input inventory;
+Status: **STRUCTURAL / EXTRACTION** for the completed Phase K size-sensitive
+minor-kernel criterion;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.
