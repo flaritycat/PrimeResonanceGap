@@ -125,15 +125,20 @@ Read these files first:
 2. `docs/status/forbidden_upgrades.md`
 3. `docs/codex/continuation_protocol.md`
 4. `docs/modules/module_178_residual_cube.md`
-5. `docs/codex/SHORT_CODEX_PROMPT.md`
+5. `docs/status/long_term_plan.md`
+6. `docs/codex/SHORT_CODEX_PROMPT.md`
 
-Then continue with **Module 179**:
+Then continue from the latest completed module and the current next action in
+`docs/status/long_term_plan.md`. As of the long-term plan created after Module
+187, the next module is:
 
 ```text
-Fourier major/minor decomposition for the residual derivative cube endpoint.
+Module 188: Overflow estimate for large collision load.
 ```
 
-Do not prove `ResCube_3^sharp` unless an actual proof is supplied. A decomposition is structural. A bound is analytic. Mixing those up is how proof ledgers become folklore.
+Do not prove `ResCube_3^sharp` unless an actual proof is supplied. A
+decomposition is structural. A bound is analytic. Mixing those up is how proof
+ledgers become folklore.
 
 ## Verification expectations
 
@@ -157,3 +162,13 @@ These scripts are lightweight sanity checks, not mathematical proof. Yes, even t
 Create a new `Reflective_N.md` memory log every 40 further solving iterations after `Reflective_1.md`.
 
 A solving iteration means a substantive project advance such as a new module, a committed analytic reduction, a proof attempt with a resolved outcome, or a correction that changes the proof map. Record what changed, what was corrected, what remains open, and which forbidden upgrades remain blocked.
+
+## Long-term planning cadence
+
+Follow `docs/status/long_term_plan.md`.
+
+- Update the plan every 9th solving iteration after the plan was adopted.
+- Question the plan every 15th solving iteration after the plan was adopted.
+- If the 9-, 15-, or 40-iteration cadences coincide, perform all due reviews in
+  that iteration.
+- Current counters are maintained in `docs/status/long_term_plan.md`.

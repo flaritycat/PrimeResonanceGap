@@ -1,0 +1,272 @@
+# Long-term project plan
+
+Created: 2026-05-14
+
+Planning status: `STRUCTURAL / EXTRACTION`
+
+This document gives the working schedule for continuing the Prime Gap
+Resonance Project after Module 187. It is an operating plan, not a proof
+ledger. It may organize attempts, reductions, and conditional routes, but it
+does not upgrade any theorem status.
+
+## 1. Non-negotiable guardrails
+
+The project continues under the global status ledger:
+
+- the original positive existence problem is `OPEN`;
+- the all-alpha no-positive-limit theorem is `OPEN`;
+- the metric theorem `A_alpha(x) -> 1` for Lebesgue-a.e. irrational alpha is
+  `PROVEN according to project ledger`;
+- the finite-type no-positive-limit theorem is `CONDITIONAL`;
+- `RBDH_pair_short`, `CPC_3^sharp`, `AU^3`, and the `s=2` endpoint are `OPEN`.
+
+Every module must preserve selector discipline, gap-object discipline, exact
+local-model discipline, and the forbidden-upgrade list.
+
+## 2. Iteration counters
+
+A solving iteration means a substantive project advance: a new module, a
+committed analytic reduction, a proof attempt with a resolved outcome, a
+correction that changes the proof map, or a governance update that changes the
+future working protocol.
+
+Current anchor:
+
+```text
+Latest completed module: 187
+Post-Reflective_1 solving count: 6
+Long-term-plan count: 0
+```
+
+This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
+begin with the next substantive continuation after this document.
+
+If future work proceeds one module per solving iteration, the expected
+checkpoint modules are:
+
+```text
+First plan update:       Module 196
+First plan challenge:    Module 202
+Next reflective log:     Module 221
+```
+
+These module numbers are bookkeeping estimates. If an iteration is not a
+module, the counters still advance by iteration count rather than by module
+number.
+
+## 3. Cadence rules
+
+Plan update cadence:
+
+- every 9th solving iteration after this document, update this plan;
+- record what changed in the project map;
+- revise the next 9-iteration target window;
+- adjust the counters above.
+
+Plan challenge cadence:
+
+- every 15th solving iteration after this document, question the plan;
+- explicitly ask whether the current branch is still the best use of effort;
+- identify any assumptions that have become too strong, too vague, or too
+  convenient;
+- decide whether to continue, narrow, branch, or abandon the current route.
+
+Reflection cadence:
+
+- continue the existing `Reflective_N.md` cadence every 40 solving iterations
+  after `Reflective_1.md`;
+- a reflection may include a plan update or challenge if the counters coincide,
+  but it does not replace them unless it explicitly performs those tasks.
+
+When cadences coincide, perform all due actions in the same iteration. For
+example, iteration 45 after this document requires both a 9-iteration plan
+update and a 15-iteration plan challenge.
+
+## 4. Long-term route
+
+The present analytic branch is the residual derivative cube endpoint. The work
+from Modules 179-187 has clarified the endpoint into four live packages:
+
+```text
+major arcs
+  -> projected local model
+  -> collision control
+  -> W-limit and boundary transfer
+
+minor arcs
+  -> large-spectrum control
+  -> fourth-moment decay
+
+selector transfer
+  -> frozen/smoothed/model selector estimates
+  -> actual sharp moving selector only with all transfer packages
+
+endpoint equivalence
+  -> RBDH_pair_short / CPC_3^sharp / AU^3 remains open
+```
+
+The first priority is not to announce a proof. The first priority is to turn
+each informal obstruction into an explicit lemma, conditional criterion, or
+false route.
+
+## 5. Phase schedule
+
+### Phase A: Collision load and major-arc envelope
+
+Target window: iterations 1-9 after this document.
+
+Purpose: finish the correction started in Module 187 and decide whether major
+arc collision control can be reduced to manageable divisor-moment estimates.
+
+Expected modules:
+
+- Module 188: overflow estimate for large total collision load;
+- Module 189: exponential-moment criterion for beta-load sums;
+- Module 190: kernel absolute-mass and range audit for major projection;
+- Module 191: W-limit order and generic tail uniformity;
+- Module 192: averaged collision-defect bound under the qualified envelope;
+- Module 193: generic projected model neutrality after collision removal;
+- Module 194: projected local-model matching dependency list;
+- Module 195: audit of Modules 183-194 for hidden upgrades;
+- Module 196: first 9-iteration plan update.
+
+Success criterion: either a credible conditional major-arc collision package is
+isolated, or the route is marked too expensive and the next plan redirects.
+
+### Phase B: Minor arcs and large-spectrum control
+
+Target window: iterations 10-18 after this document.
+
+Purpose: convert the minor-arc fourth-moment target from Module 180 into
+checkable large-spectrum estimates.
+
+Expected modules:
+
+- formulate a minor-arc density/energy criterion for `B_d`;
+- compare ordinary pair-BDH, rectangle-BDH, and residual-subtracted variants;
+- identify exactly where first-moment Hardy-Littlewood information fails;
+- test whether a dyadic derivative `U^2` package gives the needed decay;
+- at iteration 15, perform the first plan challenge;
+- at iteration 18, perform the second plan update.
+
+Success criterion: a named open estimate replaces the vague phrase
+"minor-arc cancellation", or a conditional route is rejected as insufficient.
+
+### Phase C: Projected local model matching
+
+Target window: iterations 19-27 after this document.
+
+Purpose: state the exact local model needed on major arcs and separate formal
+Euler-factor algebra from actual selector transfer.
+
+Expected work:
+
+- define the projected model with all shifts and Fourier projection;
+- specify the exact averaging domains and boundary terms;
+- prove only the formal reductions that follow from stated assumptions;
+- isolate the missing local-model matching theorem;
+- perform the third plan update at iteration 27.
+
+Success criterion: the major-arc branch becomes a clean dependency diagram
+rather than a blended proof narrative.
+
+### Phase D: Selector and boundary transfer
+
+Target window: iterations 28-36 after this document.
+
+Purpose: prevent model estimates from silently becoming sharp moving-selector
+estimates.
+
+Expected work:
+
+- list every selector appearing in Modules 156-187 and later;
+- route each estimate through frozen, smoothed, finite-band, and sharp moving
+  forms;
+- define denominator, prefix, transition, and tail transfer hypotheses;
+- perform the second plan challenge at iteration 30;
+- perform the fourth plan update at iteration 36.
+
+Success criterion: every future endpoint statement has an explicit selector
+line and cannot accidentally jump selector class.
+
+### Phase E: Endpoint equivalence audit
+
+Target window: iterations 37-45 after this document.
+
+Purpose: return to the compressed endpoint class and test whether the side
+packages are truly equivalent or only one-way reductions.
+
+Expected work:
+
+- audit each arrow in the endpoint chain;
+- label each arrow as proved in ledger, conditional, structural, or open;
+- create `Reflective_2.md` when the 40-iteration reflection cadence is reached;
+- perform the fifth plan update and third plan challenge at iteration 45.
+
+Success criterion: the project has a current dependency graph with no
+unlabeled arrows.
+
+### Phase F: Decision branch
+
+Target window: after iteration 45.
+
+At this point the project should choose one of three routes:
+
+- close a genuinely isolated conditional package if the missing estimate has
+  become plausible;
+- retreat to a weaker theorem whose hypotheses are honest and useful;
+- mark the endpoint branch blocked and return to the original problem through
+  a different obstruction analysis.
+
+The decision must be recorded as a status update before more modules are added.
+
+## 6. How each future iteration should start
+
+At the start of each substantive continuation, check:
+
+```text
+latest module number
+post-Reflective_1 solving count
+long-term-plan count
+whether iteration is divisible by 9
+whether iteration is divisible by 15
+whether the 40-iteration reflection cadence is due
+```
+
+Then choose the next module from the current phase unless there is a clear
+mathematical reason to deviate. If deviating, record the reason in the module
+or in this plan.
+
+## 7. How to question the plan
+
+A 15-iteration challenge must answer:
+
+- What assumption am I relying on because it is convenient rather than proven?
+- Which route would I abandon if I had to remove one conditional estimate?
+- Is the current work moving toward the original problem, or only polishing an
+  endpoint formalism?
+- Did any module since the last challenge weaken an earlier claim?
+- What would convince me that the current phase should stop?
+
+The answer may keep the plan, revise it, or reject it. The important part is
+that the challenge is written down before momentum turns into folklore.
+
+## 8. Immediate next action
+
+Continue with:
+
+```text
+Module 188: Overflow estimate for large collision load.
+```
+
+Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`, unless a complete
+proof is actually supplied.
+
+The key question is whether the region
+
+```text
+B_w(d,h,k;t) > 1
+```
+
+has enough averaged decay under the projected kernel weights to justify the
+linear collision-envelope replacement used by earlier modules.
