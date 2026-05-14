@@ -418,8 +418,8 @@ the side-package low-level and removal audits**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 299
-Active phase: Phase K, row-barrier moment audit
+Latest module frontier: Module 300
+Active phase: Phase K, reflective checkpoint before row-distribution audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -541,18 +541,25 @@ Module 299:
   require the optimized row/column barriers from Module 284 to be small, plus
   integer/range, declared-schedule, and W-uniformity rows. The trivial caps
   and vacuous schedule do not close the window.
+
+Module 300:
+  audited the row barrier against the current same-family energy inputs.
+  Pointwise bounds, Parseval, and the local low-level tail give only a
+  polylogarithmic row-barrier ceiling, not `o_W(1)`. The row barrier remains
+  open, and the current route is blocked.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-now handled, and vacuous removal is only bookkeeping. Module 299 reduces the
-next useful test to barrier smallness rather than threshold choice alone.
+now handled, and vacuous removal is only bookkeeping. Module 300 shows that
+the existing energy-only inputs do not prove the row side of the threshold
+window.
 
 The next planned module is:
 
 ```text
-Module 300:
-  audit RowBarrierMomentAudit_300(P_minor^0), testing whether current
-  same-family inputs can prove RowBarrierP0_284(q)=o_W(1) for some q>1.
+Module 301:
+  write Reflective_4, reviewing Modules 261-300 before continuing to the next
+  row-energy distribution target.
 ```
 
 ## What Is Proved?
@@ -783,7 +790,12 @@ wins.
 | `CurrentTrivialWindowRoute_299` | FALSE / BLOCKED | Trivial caps reproduce row/column ceiling scale and do not prove barrier smallness |
 | `ThresholdWindowClosure_299(q,r)` | OPEN | Needs barrier smallness plus integer/range and uniform schedule rows |
 | `BarrierSmallnessPackage_299(q,r)` | OPEN | Requires row barrier and at least one column barrier to be `o_W(1)` |
-| `RowBarrierMomentAudit_300(P_minor^0)` | OPEN | Next target |
+| `RowBarrierMomentAudit_300(P_minor^0)` | STRUCTURAL / EXTRACTION | Current energy-only inputs tested against the row barrier |
+| `EnergyOnlyRowBarrierBound_300(q)` | STRUCTURAL / EXTRACTION | Gives only a polylogarithmic ceiling, not smallness |
+| `CurrentRowBarrierRoute_300(q)` | FALSE / BLOCKED | Pointwise envelope plus Parseval plus low-level tail do not force `RowBarrierP0_284(q)=o_W(1)` |
+| `LowLevelTailToRowBarrier_300` | FALSE / BLOCKED | Module 297 controls below-threshold tail only, not high-level row distribution |
+| `RowMomentGainTarget_300(q)` | OPEN | Needs same-family row-energy distribution or high-moment gain |
+| `Reflective_4` | OPEN | Next scheduled reflection over Modules 261-300 |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

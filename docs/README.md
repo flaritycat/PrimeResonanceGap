@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 299
-Active phase: Phase K, row-barrier moment audit
+Latest module frontier: Module 300
+Active phase: Phase K, reflective checkpoint before row-distribution audit
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -70,6 +70,7 @@ modules/
   module_297_e2_minor_energy_tail_audit.md
   module_298_shift_frequency_removal_audit.md
   module_299_threshold_window_compatibility_audit.md
+  module_300_row_barrier_moment_audit.md
   modules_156_178_summary.md
 
 reviews/

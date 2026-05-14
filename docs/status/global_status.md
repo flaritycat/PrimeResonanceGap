@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 299
-Active phase: Phase K, row-barrier moment audit
+Latest module frontier: Module 300
+Active phase: Phase K, reflective checkpoint before row-distribution audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -189,6 +189,10 @@ Latest project-wide review:
   `ThresholdWindowCompatibilityAudit_299(P_minor^0)`, extracting the
   continuous row/column minimization criteria and recording that current
   trivial caps and vacuous thresholds do not prove barrier smallness.
+- A row-barrier moment audit
+  `RowBarrierMomentAudit_300(P_minor^0)`, deriving the energy-only
+  row-barrier ceiling and blocking the current pointwise/Parseval/low-level
+  route to `RowBarrierP0_284(q)=o_W(1)`.
 
 ## What the project has not proved
 
@@ -273,6 +277,11 @@ Latest project-wide review:
   `SigmaColumnBarrierP0_284(r)=o_W(1)`.
 - `CurrentTrivialWindowRoute_299`; the trivial caps do not prove a useful
   threshold window.
+- `EnergyOnlyRowBarrierBound_300(q)` as row-barrier smallness; it is only a
+  ceiling.
+- `CurrentRowBarrierRoute_300(q)` or `LowLevelTailToRowBarrier_300`; Module
+  297's low-level proof does not prove high-level row-moment distribution.
+- `RowMomentGainTarget_300(q)`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -503,8 +512,13 @@ Completed threshold-window compatibility audit:
     extracts continuous row/column barrier criteria and blocks the current
     trivial-window route
 
+Completed row-barrier moment audit:
+  RowBarrierMomentAudit_300(P_minor^0)
+    extracts the energy-only row-barrier ceiling and blocks the current
+    route to RowBarrierP0_284(q)=o_W(1)
+
 Next scheduled check:
-  Module 300 RowBarrierMomentAudit_300(P_minor^0)
+  Module 301 Reflective_4 memory log for Modules 261-300
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;

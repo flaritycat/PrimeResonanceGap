@@ -47,7 +47,8 @@ flowchart TD
   E2Tail297["E2MinorEnergyTailAudit_297<br/>audit STRUCTURAL; local tail PROVEN"]
   ShiftFreq298["ShiftFreqRemovalAudit_298<br/>audit STRUCTURAL; vacuous removal not closure"]
   ThresholdWindow299["ThresholdWindowCompatibilityAudit_299<br/>audit STRUCTURAL; barriers OPEN"]
-  RowBarrier300["RowBarrierMomentAudit_300<br/>next target OPEN"]
+  RowBarrier300["RowBarrierMomentAudit_300<br/>audit STRUCTURAL; current route BLOCKED"]
+  RowMoment302["RowMomentDistributionAudit_302<br/>post-reflection target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -128,6 +129,8 @@ flowchart TD
   ThresholdWindow299 --> ThresholdP0
   ThresholdWindow299 --> RowBarrier300
   RowBarrier300 --> ThresholdP0
+  RowBarrier300 --> RowMoment302
+  RowMoment302 --> ThresholdP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -219,3 +222,6 @@ flowchart TD
 - `ThresholdWindowCompatibilityAudit_299` reduces useful threshold-window
   closure to optimized barrier smallness plus admissible threshold scheduling.
   The current trivial caps do not prove those barriers.
+- `RowBarrierMomentAudit_300` shows that the current energy-only row route
+  gives only a polylogarithmic ceiling. The row barrier remains open and now
+  needs a genuine row-energy distribution or high-moment gain.
