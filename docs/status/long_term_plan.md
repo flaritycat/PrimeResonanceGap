@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 292
-Post-Reflective_1 solving count: 111
-Long-term-plan count: 105
+Latest completed module: 293
+Post-Reflective_1 solving count: 112
+Long-term-plan count: 106
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -1999,4 +1999,55 @@ Continue with:
 Module 293:
   perform SidePkgTriage_293(P_minor^0), splitting the side package into
   smaller proof-or-blocked rows and selecting the first narrow side target.
+```
+
+Module 293 completed:
+
+```text
+SidePkgTriage_293(P_minor^0)
+  splits the side package into convention rows, proof-hygiene rows,
+  threshold/low-level rows, degeneracy rows, and adaptive-core rows.
+```
+
+The triage records:
+
+```text
+ShellSelectionAsSideRow_293:
+  FALSE / BLOCKED.
+
+DegFreeAsSideRow_293:
+  FALSE / BLOCKED.
+
+SidePkgReady_293:
+  OPEN.
+
+LowLevelBudgetTriage_294(P_minor^0):
+  next target.
+```
+
+It preserves:
+
+```text
+SidePkg_291,
+ThresholdBudgetP0Closure_284(q,r),
+SideRowsP0Ready_283,
+DegRowsP0Small_282,
+AdaptiveShellGainP0_285,
+PhaseKernelBound_273^0,
+MinorArcTransfer_3^B,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3,
+the original selected-average problem
+remain unproved.
+```
+
+Continue with:
+
+```text
+Module 294:
+  perform LowLevelBudgetTriage_294(P_minor^0), deciding whether the
+  below-lambda_min contribution has a non-endpoint local route or is already
+  endpoint-strength.
 ```

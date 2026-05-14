@@ -1,4 +1,4 @@
-# Modules 156-292 summary
+# Modules 156-293 summary
 
 ## 156
 
@@ -880,6 +880,14 @@ Seventh plan challenge after the Phase K current-tool block; defines
 `AdaptiveGainFirst_292` as `FALSE / BLOCKED` for the next move, and sets
 `SidePkgTriage_293(P_minor^0)` as the next target.
 
+## 293
+
+Side-package triage inside `P_minor^0`; defines
+`SidePkgTriage_293(P_minor^0)`, separates convention, uniformity,
+threshold/low-level, degeneracy, and adaptive-core rows, blocks treating
+`ShellSelectionP0_283` or `DegFreePhaseGate_282` as harmless side rows, and
+selects `LowLevelBudgetTriage_294(P_minor^0)` as the next narrow target.
+
 ## Next
 
-Module 293: perform `SidePkgTriage_293(P_minor^0)`.
+Module 294: perform `LowLevelBudgetTriage_294(P_minor^0)`.

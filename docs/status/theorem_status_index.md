@@ -88,7 +88,10 @@ FALSE / BLOCKED
 | `PlanChallenge_7_292` | STRUCTURAL / EXTRACTION | Seventh plan challenge selecting the side-package triage branch | `module_292_seventh_plan_challenge.md` | Only as steering |
 | `ChallengeDecision_292` | STRUCTURAL / EXTRACTION | Selects `OptionD_SidePkg_291` as the next branch | `module_292_seventh_plan_challenge.md` | Only as steering |
 | `AdaptiveGainFirst_292` | FALSE / BLOCKED | Another adaptive-shell gain attempt is blocked as the next move without a new input | `module_292_seventh_plan_challenge.md` | No |
-| `SidePkgTriage_293(P_minor^0)` | OPEN | Next target; side package must be split into smaller proof-or-blocked rows | `module_292_seventh_plan_challenge.md` | No |
+| `SidePkgTriage_293(P_minor^0)` | STRUCTURAL / EXTRACTION | Splits side package into convention, uniformity, threshold/low-level, degeneracy, and adaptive-core rows | `module_293_side_package_triage.md` | Only as triage |
+| `SidePkgReady_293` | OPEN | Triage does not prove threshold, side, degeneracy, or low-level rows | `module_293_side_package_triage.md` | No |
+| `ShellSelectionAsSideRow_293 / DegFreeAsSideRow_293` | FALSE / BLOCKED | Shell selection and deg-free phase gate are adaptive-core rows, not side bookkeeping | `module_293_side_package_triage.md` | No |
+| `LowLevelBudgetTriage_294(P_minor^0)` | OPEN | Next target for below-`lambda_min` leakage classification | `module_293_side_package_triage.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

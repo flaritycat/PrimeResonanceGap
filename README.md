@@ -415,7 +415,7 @@ The current active phase is **Phase K: adaptive-shell gain triage**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 292
+Latest module frontier: Module 293
 Active phase: Phase K, side-package triage after the adaptive-gain block
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -497,18 +497,26 @@ Module 292:
   performed the seventh plan challenge and selected OptionD_SidePkg_291.
   AdaptiveGainFirst_292 is FALSE / BLOCKED as the next move, and
   SidePkgTriage_293(P_minor^0) is the next target.
+
+Module 293:
+  split the side package into convention rows, proof-hygiene rows,
+  threshold/low-level rows, degeneracy rows, and adaptive-core rows. It
+  returned ShellSelectionP0_283 and DegFreePhaseGate_282 to the adaptive core
+  rather than treating them as harmless side bookkeeping, and selected
+  LowLevelBudgetTriage_294(P_minor^0) as the next narrow target.
 ```
 
 The next planned module is:
 
 ```text
-Module 293:
-  perform SidePkgTriage_293(P_minor^0), splitting the side package into
-  smaller proof-or-blocked rows.
+Module 294:
+  perform LowLevelBudgetTriage_294(P_minor^0), deciding whether below-
+  lambda_min leakage has a non-endpoint local route or is already blocked.
 ```
 
-The next step should not claim the side package. It should decide which side
-row is genuinely smaller than the blocked adaptive-shell target.
+The next step should not claim low-level smallness. It should decide what a
+real low-level leakage statement would need and whether it avoids
+`PhaseKernelBound_273^0`.
 
 ## What Is Proved?
 
@@ -713,7 +721,11 @@ wins.
 | `PlanChallenge_7_292` | STRUCTURAL / EXTRACTION | Seventh plan challenge completed using `ChallengePacket_291` |
 | `ChallengeDecision_292` | STRUCTURAL / EXTRACTION | Selects OptionD: side-package triage |
 | `AdaptiveGainFirst_292` | FALSE / BLOCKED | Next move should not be another adaptive-shell gain attempt without a new input |
-| `SidePkgTriage_293(P_minor^0)` | OPEN | Next target; side package not yet split into proof-or-blocked rows |
+| `SidePkgTriage_293(P_minor^0)` | STRUCTURAL / EXTRACTION | Side package split into convention, uniformity, threshold, degeneracy, and adaptive-core rows |
+| `SidePkgReady_293` | OPEN | Side package still not proved after triage |
+| `ShellSelectionAsSideRow_293` | FALSE / BLOCKED | Shell selection is adaptive-core, not harmless side bookkeeping |
+| `DegFreeAsSideRow_293` | FALSE / BLOCKED | Deg-free phase gate is core phase work, not side bookkeeping |
+| `LowLevelBudgetTriage_294(P_minor^0)` | OPEN | Next target for below-`lambda_min` leakage |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

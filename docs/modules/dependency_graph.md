@@ -40,7 +40,8 @@ flowchart TD
   AdaptiveVerdict290["PhaseKAdaptiveShellVerdict_290<br/>current closure BLOCKED"]
   PhaseKCleanup291["PhaseKStatusCleanup_291<br/>same-tools continuation BLOCKED"]
   PlanChallenge7["PlanChallenge_7_292<br/>selects side-package triage"]
-  SidePkgTriage293["SidePkgTriage_293<br/>next diagnostic"]
+  SidePkgTriage293["SidePkgTriage_293<br/>triage STRUCTURAL; ready package OPEN"]
+  LowLevelTriage294["LowLevelBudgetTriage_294<br/>next diagnostic"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -107,7 +108,9 @@ flowchart TD
   AdaptiveVerdict290 --> PhaseKCleanup291
   PhaseKCleanup291 --> PlanChallenge7
   PlanChallenge7 --> SidePkgTriage293
+  SidePkgTriage293 --> LowLevelTriage294
   SidePkgTriage293 --> AdaptiveShellP0
+  LowLevelTriage294 --> AdaptiveShellP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -178,3 +181,6 @@ flowchart TD
   prepares `ChallengePacket_291` for the seventh plan challenge.
 - `PlanChallenge_7_292` selects side-package triage as the next branch; this
   is not a proof of the side package or adaptive shell gain.
+- `SidePkgTriage_293` splits the side package and returns shell selection and
+  deg-free phase rows to the adaptive core; the next narrow side target is
+  low-level leakage.

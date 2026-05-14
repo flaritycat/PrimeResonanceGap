@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 292
+Latest module frontier: Module 293
 Active phase: Phase K, side-package triage
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -160,6 +160,10 @@ Latest project-wide review:
 - A seventh plan challenge `PlanChallenge_7_292`, selecting
   `OptionD_SidePkg_291` and making `SidePkgTriage_293(P_minor^0)` the next
   target.
+- A side-package triage `SidePkgTriage_293(P_minor^0)`, splitting the side
+  package into convention, uniformity, threshold/low-level, degeneracy, and
+  adaptive-core rows while selecting `LowLevelBudgetTriage_294` as the next
+  narrow target.
 
 ## What the project has not proved
 
@@ -224,8 +228,10 @@ Latest project-wide review:
   uniform-fiber tests do not close `AdaptiveShellGainP0_285`.
 - `ContinuePhaseKWithoutNewInput_291`; repeating Modules 287-290 with new
   labels is blocked.
-- `SidePkg_291`, `SidePkgTriage_293`, `ThresholdBudgetP0Closure_284(q,r)`,
+- `SidePkg_291`, `ThresholdBudgetP0Closure_284(q,r)`,
   `SideRowsP0Ready_283`, or `DegRowsP0Small_282`.
+- `SidePkgReady_293`, `LowLevelBudgetTriage_294`, or
+  `LowLevelBudgetP0_284`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -423,13 +429,17 @@ Completed seventh plan challenge:
     selects OptionD_SidePkg_291 and blocks AdaptiveGainFirst_292 as the next
     move under current information
 
-Active Phase K target:
+Completed side-package triage:
   SidePkgTriage_293(P_minor^0)
-    split ThresholdBudgetP0Closure_284, SideRowsP0Ready_283, and
-    DegRowsP0Small_282 into smaller proof-or-blocked rows
+    splits side rows into convention, uniformity, threshold/low-level,
+    degeneracy, and adaptive-core rows while keeping SidePkgReady_293 open
+
+Active Phase K target:
+  LowLevelBudgetTriage_294(P_minor^0)
+    classify below-lambda_min leakage without assuming PhaseKernelBound_273^0
 
 Next scheduled check:
-  Module 293 SidePkgTriage_293(P_minor^0)
+  Module 294 LowLevelBudgetTriage_294(P_minor^0)
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the active Phase K steering step;
