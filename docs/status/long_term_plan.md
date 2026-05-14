@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 199
-Post-Reflective_1 solving count: 18
-Long-term-plan count: 12
+Latest completed module: 200
+Post-Reflective_1 solving count: 19
+Long-term-plan count: 13
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -166,6 +166,9 @@ Expected modules:
   upgraded by named residual, margin, adaptive, and variance-strength packages;
 - Module 200: test whether a dyadic derivative `U^2` package gives the needed
   decay;
+  completed as a structural extraction: dyadic derivative `U^2` is exactly the
+  same minor-arc fourth moment after applying `Pi_minor`, so it needs a new
+  projected derivative input rather than endpoint-equivalence language;
 - Module 201: build the minor-arc spectral large-spectrum obstruction map;
 - Module 202: perform the first 15-iteration plan challenge;
 - Module 203: refine the conditional minor-arc criterion after the challenge;
@@ -280,31 +283,32 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 200: Dyadic derivative U^2 route to minor arcs.
+Module 201: Minor-arc spectral large-spectrum obstruction map.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
+Expected status: `STRUCTURAL / EXTRACTION`.
 
-Module 199 blocked the ordinary rectangle/HL shortcuts. The next module should
-test whether the dyadic derivative `U^2` formulation gives a cleaner route to
-the minor-arc target:
+Module 200 showed that the dyadic derivative route is exact but not by itself
+new:
 
 ```text
-B_d(n)=f(n+d)conj(f(n)).
+DDU2_minor(D;R,eta)
+  =
+(1/D) sum_{D<|d|<=2D}
+  sum_{xi in Minor(R,eta)} |widehat{B_d}(xi)|^4.
 ```
 
-The comparison should distinguish:
+The next module should map what a failure of minor-arc decay would imply. It
+should start from the large-spectrum sets:
 
 ```text
-DyadicDerivativeU^2 as an endpoint-equivalent formulation,
-minor-arc adaptive restriction for B_d,
-linear-margin and selector-transfer side packages.
+Spec_d^minor(lambda)
+  = { xi in Minor(R,eta) : |widehat{B_d}(xi)| >= lambda }
 ```
 
-It should not treat endpoint equivalence as an analytic estimate. The key
-question is whether dyadic derivative `U^2` supplies new minor-arc information
-or merely renames:
+and ask which spectral structures, correlations, or concentration profiles
+would obstruct:
 
 ```text
-sum_{xi in Minor(R,eta)} |widehat{B_d}(xi)|^4.
+R_{2,B}^minor(rho;D) <= Psi_*(rho;D).
 ```

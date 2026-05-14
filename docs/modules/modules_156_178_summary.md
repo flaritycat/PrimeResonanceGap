@@ -1,4 +1,4 @@
-# Modules 156-199 summary
+# Modules 156-200 summary
 
 ## 156
 
@@ -130,6 +130,12 @@ Rectangle/BDH and first-moment HL insufficiency audit; mean rectangle-HL and
 ordinary rectangle-BDH do not supply residual adaptive minor-arc control
 without named residual, margin, adaptive, and variance-strength packages.
 
+## 200
+
+Dyadic derivative `U^2` route to minor arcs; `Pi_minor Delta_d f` gives exactly
+the minor-arc fourth moment, so endpoint-equivalence language must be replaced
+by a projected derivative input.
+
 ## Next
 
-Module 200: Dyadic derivative `U^2` route to minor arcs.
+Module 201: Minor-arc spectral large-spectrum obstruction map.
