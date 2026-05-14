@@ -1,4 +1,4 @@
-# Modules 156-254 summary
+# Modules 156-255 summary
 
 ## 156
 
@@ -572,6 +572,15 @@ pointwise exactness checks `CutExact_254`, `RangeExact_254`, `WResExact_254`,
 checks require fixed-row weighted defect estimates rather than being hidden in
 `KernelAvgStrength_245` or upgraded through endpoint assumptions.
 
+## 255
+
+Fixed-row one-point feasibility verdict; defines `MeanFeasGate_255` and
+`FixedRowFeasGate_255 = MeanFeasGate_255 + SideConventionGate_254`, proving
+only the conditional implication to `FixedRowOnePointPkg_249` and recording
+that the model branch is exact only inside model conventions while W,
+smoothed, frozen, Holder, boundary-mass, and side-row routes remain
+conditional unless their fixed-row gates are actually proved.
+
 ## Next
 
-Module 255: assemble the `FixedRowOnePointPkg_249` feasibility verdict.
+Module 256: two-point escalation gate after the one-point feasibility verdict.

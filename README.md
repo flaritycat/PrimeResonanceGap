@@ -7,15 +7,14 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 254
+Latest module frontier: Module 255
 Active phase: Phase G, fixed-row package feasibility gates
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 254 audits whether the one-point side rows are exact conventions or
-still require fixed-row weighted estimates. The route remains conditional and
-does not prove the residual cube endpoint.
+Module 255 assembles the one-point fixed-row feasibility verdict. The route
+remains conditional and does not prove the residual cube endpoint.
 
 ## Global status
 

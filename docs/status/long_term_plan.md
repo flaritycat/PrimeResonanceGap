@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 254
-Post-Reflective_1 solving count: 73
-Long-term-plan count: 67
+Latest completed module: 255
+Post-Reflective_1 solving count: 74
+Long-term-plan count: 68
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -629,6 +629,10 @@ Expected work:
   endpoint-strength estimates;
 - Module 255: assemble a feasibility verdict for
   `FixedRowOnePointPkg_249`;
+  completed as `FixedRowFeasGate_255`, assembling
+  `MeanFeasGate_255 + SideConventionGate_254` into a conditional implication
+  to `FixedRowOnePointPkg_249` and recording that the one-point row is a valid
+  conditional route but remains unproved outside exact model conventions;
 - Module 256: two-point escalation gate after the one-point feasibility
   verdict;
 - Module 257: minor-arc reentry gate, comparing the boundary obstruction with
@@ -682,42 +686,38 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 255: assemble the FixedRowOnePointPkg_249 feasibility verdict.
+Module 256: two-point escalation gate after the one-point feasibility verdict.
 ```
 
-Expected status: `CONDITIONAL` or `FALSE / BLOCKED`, depending on whether
-the surviving Phase G gates are genuinely smaller than the residual endpoint
-or merely rename missing endpoint-strength estimates.
+Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, not `PROVEN`.
+The module should decide whether a two-point fixed-support row is worth
+testing as a diagnostic, not treat the one-point gates as closed.
 
-Module 254 completed the side-row convention audit:
+Module 255 completed the fixed-row one-point feasibility verdict:
 
 ```text
-SideConventionGate_254:
-  CutExact_254 / CutDefect_254,
-  RangeExact_254 / RangeDefect_254,
-  WResExact_254 / WResDefect_254,
-  PPExact_254 / PPDefect_254,
-  NormZeroExact_254 / NormZeroDefect_254.
+FixedRowFeasGate_255
+  = MeanFeasGate_255 + SideConventionGate_254
+  => FixedRowOnePointPkg_249
+  => OnePointBIHL_242.
 ```
 
-Module 255 should assemble the full one-point feasibility ledger:
+The verdict is conditional:
 
 ```text
-BoundaryLengthGate_251,
-KernelHolderGate_252,
-WShortRangeGate_253,
-SideConventionGate_254
-  -> FixedRowOnePointPkg_249?
+The one-point row has exposed concrete gates, but it has not delivered a
+proved local theorem in the W, smoothed, frozen, or actual moving selector
+classes.
 ```
 
-It must check:
+Module 256 should check:
 
 ```text
-which gates are local,
-which gates are mixed,
-which gates are endpoint-strength,
-which gates are false / blocked as shortcuts,
-whether the boundary branch should continue to a two-point row or stop.
+whether two-point rows introduce a genuinely new obstruction,
+whether they merely duplicate unresolved one-point mean/kernel/side gates,
+which exact local model changes from one point to two points,
+whether escalation should continue only as a diagnostic or pause the boundary
+branch.
 ```
 
 It must keep the same fixed row:

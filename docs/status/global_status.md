@@ -5,7 +5,7 @@ This file is the first status document Codex should read.
 Current frontier:
 
 ```text
-Latest module frontier: Module 254
+Latest module frontier: Module 255
 Active phase: Phase G, fixed-row package feasibility gates
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -34,6 +34,8 @@ Latest project-wide review:
 - A fixed-row short-interval range gate for the W one-point boundary mean.
 - A side-row convention gate separating exact conventions from weighted
   defect estimates.
+- A fixed-row one-point feasibility verdict: valid conditional route, no
+  proved closure.
 
 ## What the project has not proved
 
@@ -44,8 +46,9 @@ Latest project-wide review:
 - `ResCube_3^sharp`, `ProjectedMajorTarget_3^B`, or the actual sharp
   moving-selector endpoint.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
-  `WShortRangeGate_253`, `SideConventionGate_254`, or `OnePointBIHL_242`
-  outside exact model conventions.
+  `WShortRangeGate_253`, `SideConventionGate_254`,
+  `FixedRowFeasGate_255`, or `OnePointBIHL_242` outside exact model
+  conventions.
 
 ## Current endpoint class
 
@@ -87,6 +90,11 @@ W short-interval range:
 Side-row convention:
   SideConventionGate_254
     => OnePointSideRows_246^local
+
+Assembled one-point verdict:
+  FixedRowFeasGate_255
+    = MeanFeasGate_255 + SideConventionGate_254
+    => FixedRowOnePointPkg_249
 ```
 
 Status: **CONDITIONAL**.
