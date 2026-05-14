@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 236
-Post-Reflective_1 solving count: 55
-Long-term-plan count: 49
+Latest completed module: 237
+Post-Reflective_1 solving count: 56
+Long-term-plan count: 50
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -459,6 +459,9 @@ Expected work:
   positive tuple routes recorded and endpoint-strength shortcuts blocked;
 - Module 237: audit `NormRow_224^P` and possible zero-mode leakage for the
   fixed cyclic-to-interval row;
+  completed as `NormZeroAudit_237(s0,D0,rho0)`, separating exact
+  normalization, small normalization drift, centering consistency, and
+  truncated zero-mode leakage, with endpoint-strength envelopes blocked;
 - Module 238: compose the fixed-row subpackages and identify the first true
   bottleneck;
 - Module 239: attempt a model-class proof or blocked verdict for the easiest
@@ -510,36 +513,39 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 237: Normalization and zero-mode audit for the fixed row.
+Module 238: Compose fixed-row subpackages and identify the first bottleneck.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
 
-Module 236 completed the W-residue / prime-power boundary audit:
+Module 237 completed the normalization and zero-mode audit:
 
 ```text
-WPPBoundaryAudit_236(s0,D0,rho0)
-  => WPPBoundary_225=o_W(1).
+NormZeroAudit_237(s0,D0,rho0)
+  => NormRow_224^P=o_W(1)
+     and ZeroBd_226=o_W(1) when active.
 ```
 
 It separated:
 
 ```text
-WResBoundary_236,
-PPBoundary_236,
-WPPOverlap_236 or DisjointAccount_236
+NormExact_237,
+NormDrift_237,
+CenterDiff_237,
+ZeroBd_226
 ```
 
-and warned that W-residue failures and prime-power artifacts must not be
-hidden inside local factors, tuple-HL, model mass, kernel tails, or
-normalization.
+and warned that exact cyclic zero-mode removal does not automatically survive
+interval or kernel truncation.
 
-Module 237 should focus on:
+Module 238 should focus on composing:
 
 ```text
-NormRow_224^P,
-ZeroBd_226,
-zero-mode leakage from centering/truncation
+BoundaryModelVolume_233,
+BoundaryIntervalHL_234,
+KernelTailBudget_235,
+WPPBoundaryAudit_236,
+NormZeroAudit_237
 ```
 
 inside:
@@ -552,9 +558,8 @@ same selector class s0,
 fixed dyadic shell D0<|d|<=2D0.
 ```
 
-The goal is to decide when the cyclic and interval normalizations agree, when
-the row is identically zero by convention, and when centering or truncated
-projection creates zero-mode leakage. Do not hide normalization or zero-mode
-terms inside boundary, W/prime-power, kernel-tail, tuple-HL, or model-mass
-notation, and do not assume `ProjectedMajorTarget_3^B`,
-`ResCube_3^sharp`, selector transfer, or any endpoint object.
+The goal is to decide whether the fixed row now has a genuinely smaller
+conditional proof obligation than the projected residual endpoint, and to name
+the first bottleneck. Do not merge distinct rows into a generic side package,
+and do not assume `ProjectedMajorTarget_3^B`, `ResCube_3^sharp`, selector
+transfer, or any endpoint object.

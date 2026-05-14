@@ -1,4 +1,4 @@
-# Modules 156-236 summary
+# Modules 156-237 summary
 
 ## 156
 
@@ -422,6 +422,14 @@ disjoint accounting or `WPPOverlap_236`, with positive tuple routes recorded
 and all W/prime-power terms kept separate from local factors, kernel tails,
 tuple-HL, model mass, and normalization.
 
+## 237
+
+Normalization and zero-mode audit; defines `NormZeroAudit_237(s0,D0,rho0)`
+and conditionally reduces `NormRow_224^P` and active `ZeroBd_226` to exact
+normalization or small normalization drift, centering consistency, and
+truncated zero-mode leakage control, while warning that `m_M(0)=0` cyclically
+does not automatically remove constants after interval or kernel truncation.
+
 ## Next
 
-Module 237: Normalization and zero-mode audit for the fixed row.
+Module 238: Compose fixed-row subpackages and identify the first bottleneck.
