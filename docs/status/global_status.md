@@ -5,7 +5,7 @@ This file is the first status document Codex should read.
 Current frontier:
 
 ```text
-Latest module frontier: Module 260
+Latest module frontier: Module 261
 Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -49,6 +49,8 @@ Latest project-wide review:
 - A projected model-neutrality feasibility gate separating generic W-tail
   cancellation, kernel budget, collision defects, denominator/W-limit
   uniformity, and model-domain conventions.
+- `Reflective_3.md`, a memory log reviewing Modules 221-260 and preserving
+  the open endpoint statuses.
 
 ## What the project has not proved
 
@@ -128,6 +130,9 @@ Phase H next target:
   ProjectedModelNeutralityGate_260(P_adm)
     conditionally reduces NeutralErr_major^P to generic-tail, kernel,
     collision, denominator, W-limit, and model-convention rows
+
+Next governance checkpoint:
+  Module 262 fifth plan challenge
 ```
 
 Status: **CONDITIONAL**.

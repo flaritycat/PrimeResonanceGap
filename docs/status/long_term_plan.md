@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 260
-Post-Reflective_1 solving count: 79
-Long-term-plan count: 73
+Latest completed module: 261
+Post-Reflective_1 solving count: 80
+Long-term-plan count: 74
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -51,7 +51,8 @@ Second plan update:      Module 205 (completed)
 Third plan update:       Module 214 (completed)
 Second plan challenge:   Module 217 (completed)
 Reflective_2 log:        Module 221 (completed)
-Next reflective log:     Module 261
+Reflective_3 log:        Module 261 (completed)
+Next reflective log:     Module 301
 Fourth plan update:      Module 223 (completed)
 Fifth plan update:       Module 232 (completed)
 Third plan challenge:    Module 232 (completed)
@@ -702,6 +703,9 @@ Expected work:
 - Module 261: create `Reflective_3.md`, the required 40-iteration memory log
   after `Reflective_1`, reviewing Modules 221-260 and checking for weakened
   claims or hidden upgrades;
+  completed as a structural memory log recording the boundary-row,
+  endpoint-arrow, one-point/two-point, reentry, and Phase H model-neutrality
+  corrections while preserving all open endpoint statuses;
 - Module 262: perform the fifth 15-iteration plan challenge, deciding whether
   the model-neutrality branch remains preferable to minor transverse
   incidence or a localized boundary-transfer slice;
@@ -825,38 +829,47 @@ only conditionally, under exact model discipline, generic W-tail cancellation,
 kernel budget, collision-defect control, denominator/W-limit/projection
 uniformity, and model-domain convention rows.
 
+Module 261 completed the reflection cadence:
+
+```text
+Reflective_3.md
+  reviews Modules 221-260
+  and records corrections without proving any endpoint.
+```
+
 Continue with:
 
 ```text
-Module 261: Reflective_3.md, the required memory log after the
-post-Reflective_1 solving count reaches 80.
+Module 262: fifth plan challenge for Phase H and the projected
+model-neutrality branch.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION`, not `PROVEN`.
-The reflection should review Modules 221-260, correct any weakened or
-overstated claims, and update the memory log without proving any endpoint.
+The challenge should decide whether Phase H should continue with projected
+model neutrality, redirect to minor transverse incidence, isolate a boundary
+transfer slice, or stop the current route.
 
-It should keep these anchors explicit:
-
-```text
-Phase D after Reflective_2,
-Phase E endpoint dependency table,
-Phase F fixed boundary/model-mass and one-point prototype,
-Phase G fixed-row feasibility and reentry comparisons,
-Phase H start with ProjectedModelNeutralityGate_260.
-```
-
-Module 261 should check:
+It should answer:
 
 ```text
-what was corrected since Reflective_2,
-which branches were narrowed or stopped,
-which conditional gates remain genuinely smaller than the endpoint,
-whether any route has become endpoint-strength in disguise,
-what Module 262 should challenge.
+whether ProjectedModelNeutralityGate_260 is genuinely smaller than the
+projected major endpoint,
+whether removing CollNeutral_260 collapses the route,
+whether removing signed kernel cancellation collapses the route,
+whether NarrowMinorArc_3^B / transverse incidence is now a better target,
+what would make Phase H stop early.
 ```
 
-Do not use the reflection to prove or claim:
+Module 262 should preserve these statuses:
+
+```text
+ProjectedModelNeutrality_3^major: not proved,
+WProjectedLocalMatch_3^major: not proved,
+ProjectedMajorTarget_3^B: not proved,
+ResCube_3^sharp: OPEN.
+```
+
+Do not use the challenge to prove or claim:
 
 ```text
 ProjectedMajorTarget_3^B,

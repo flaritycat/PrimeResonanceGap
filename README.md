@@ -7,15 +7,15 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 260
+Latest module frontier: Module 261
 Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 260 defines the projected model-neutrality gate for the model-side
-major-arc row. The route remains conditional and does not prove the residual
-cube endpoint.
+Module 261 adds `Reflective_3.md`, the required memory log through Module
+260. The route remains conditional and does not prove the residual cube
+endpoint.
 
 ## Global status
 

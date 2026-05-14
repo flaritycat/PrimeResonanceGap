@@ -1,4 +1,4 @@
-# Modules 156-260 summary
+# Modules 156-261 summary
 
 ## 156
 
@@ -623,7 +623,15 @@ W-tail cancellation, a signed or absolute kernel budget, collision-defect
 control, denominator/W-limit/projection uniformity, and model-domain
 conventions.
 
+## 261
+
+`Reflective_3.md` memory log at the 80th solving iteration after
+`Reflective_1.md`; reviews Modules 221-260, records corrections around
+boundary rows, endpoint-arrow discipline, one-point and two-point fixed-row
+gates, minor/projected-major reentry, and the Phase H model-neutrality pivot,
+while preserving all open endpoint statuses.
+
 ## Next
 
-Module 261: create `Reflective_3.md`, the required 40-iteration memory log
-after `Reflective_1`.
+Module 262: fifth plan challenge for the Phase H projected model-neutrality
+branch.
