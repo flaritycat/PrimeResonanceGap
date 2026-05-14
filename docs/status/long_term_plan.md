@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 300
-Post-Reflective_1 solving count: 119
-Long-term-plan count: 113
+Latest completed module: 301
+Post-Reflective_1 solving count: 120
+Long-term-plan count: 114
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -52,7 +52,8 @@ Third plan update:       Module 214 (completed)
 Second plan challenge:   Module 217 (completed)
 Reflective_2 log:        Module 221 (completed)
 Reflective_3 log:        Module 261 (completed)
-Next reflective log:     Module 301
+Reflective_4 log:        Module 301 (completed)
+Next reflective log:     Module 341
 Fourth plan update:      Module 223 (completed)
 Fifth plan update:       Module 232 (completed)
 Third plan challenge:    Module 232 (completed)
@@ -2353,7 +2354,19 @@ Module 301:
   row-distribution branch.
 ```
 
-After that reflection, the next mathematical target should be:
+Module 301 completed:
+
+```text
+Reflective_4.md:
+  STRUCTURAL / EXTRACTION.
+```
+
+The reflection reviews Modules 261-300, preserves the open endpoint statuses,
+records the actual local wins in Modules 297 and 298, and keeps the next
+mathematical target focused on row-energy distribution rather than reusing the
+blocked energy-only row-barrier route.
+
+Continue with:
 
 ```text
 Module 302:

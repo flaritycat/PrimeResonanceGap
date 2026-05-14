@@ -418,8 +418,8 @@ the side-package low-level and removal audits**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 300
-Active phase: Phase K, reflective checkpoint before row-distribution audit
+Latest module frontier: Module 301
+Active phase: Phase K, row-distribution audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -547,6 +547,11 @@ Module 300:
   Pointwise bounds, Parseval, and the local low-level tail give only a
   polylogarithmic row-barrier ceiling, not `o_W(1)`. The row barrier remains
   open, and the current route is blocked.
+
+Module 301:
+  wrote Reflective_4, reviewing Modules 261-300 and preserving the open
+  endpoint statuses. The reflection selects the row-energy distribution audit
+  as the next mathematical target.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
@@ -558,8 +563,12 @@ The next planned module is:
 
 ```text
 Module 301:
-  write Reflective_4, reviewing Modules 261-300 before continuing to the next
-  row-energy distribution target.
+  completed Reflective_4.
+
+Module 302:
+  audit RowMomentDistributionAudit_302(P_minor^0), testing whether any
+  same-family input gives nontrivial row-energy distribution or high-moment
+  control for ShiftMomentP0_284(q;lambda_j).
 ```
 
 ## What Is Proved?
@@ -795,7 +804,8 @@ wins.
 | `CurrentRowBarrierRoute_300(q)` | FALSE / BLOCKED | Pointwise envelope plus Parseval plus low-level tail do not force `RowBarrierP0_284(q)=o_W(1)` |
 | `LowLevelTailToRowBarrier_300` | FALSE / BLOCKED | Module 297 controls below-threshold tail only, not high-level row distribution |
 | `RowMomentGainTarget_300(q)` | OPEN | Needs same-family row-energy distribution or high-moment gain |
-| `Reflective_4` | OPEN | Next scheduled reflection over Modules 261-300 |
+| `Reflective_4` | STRUCTURAL / EXTRACTION | Memory log for Modules 261-300; no theorem upgrade |
+| `RowMomentDistributionAudit_302(P_minor^0)` | OPEN | Next mathematical target after the reflection |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

@@ -48,7 +48,8 @@ flowchart TD
   ShiftFreq298["ShiftFreqRemovalAudit_298<br/>audit STRUCTURAL; vacuous removal not closure"]
   ThresholdWindow299["ThresholdWindowCompatibilityAudit_299<br/>audit STRUCTURAL; barriers OPEN"]
   RowBarrier300["RowBarrierMomentAudit_300<br/>audit STRUCTURAL; current route BLOCKED"]
-  RowMoment302["RowMomentDistributionAudit_302<br/>post-reflection target OPEN"]
+  Reflective4["Reflective_4<br/>memory log STRUCTURAL"]
+  RowMoment302["RowMomentDistributionAudit_302<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -129,7 +130,8 @@ flowchart TD
   ThresholdWindow299 --> ThresholdP0
   ThresholdWindow299 --> RowBarrier300
   RowBarrier300 --> ThresholdP0
-  RowBarrier300 --> RowMoment302
+  RowBarrier300 --> Reflective4
+  Reflective4 --> RowMoment302
   RowMoment302 --> ThresholdP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
@@ -225,3 +227,5 @@ flowchart TD
 - `RowBarrierMomentAudit_300` shows that the current energy-only row route
   gives only a polylogarithmic ceiling. The row barrier remains open and now
   needs a genuine row-energy distribution or high-moment gain.
+- `Reflective_4` is a memory log for Modules 261-300. It records no theorem
+  upgrade and points the next mathematical work to `RowMomentDistributionAudit_302`.

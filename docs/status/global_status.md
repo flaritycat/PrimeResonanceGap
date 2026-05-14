@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 300
-Active phase: Phase K, reflective checkpoint before row-distribution audit
+Latest module frontier: Module 301
+Active phase: Phase K, row-distribution audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -193,6 +193,9 @@ Latest project-wide review:
   `RowBarrierMomentAudit_300(P_minor^0)`, deriving the energy-only
   row-barrier ceiling and blocking the current pointwise/Parseval/low-level
   route to `RowBarrierP0_284(q)=o_W(1)`.
+- `Reflective_4.md`, a memory log reviewing Modules 261-300, preserving the
+  open endpoint statuses, and selecting the row-energy distribution audit as
+  the next mathematical target.
 
 ## What the project has not proved
 
@@ -517,8 +520,13 @@ Completed row-barrier moment audit:
     extracts the energy-only row-barrier ceiling and blocks the current
     route to RowBarrierP0_284(q)=o_W(1)
 
+Completed reflection checkpoint:
+  Reflective_4.md
+    reviews Modules 261-300 and preserves all endpoint and transfer
+    guardrails
+
 Next scheduled check:
-  Module 301 Reflective_4 memory log for Modules 261-300
+  Module 302 RowMomentDistributionAudit_302(P_minor^0)
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;

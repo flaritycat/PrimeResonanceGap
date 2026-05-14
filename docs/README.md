@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 300
-Active phase: Phase K, reflective checkpoint before row-distribution audit
+Latest module frontier: Module 301
+Active phase: Phase K, row-distribution audit
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -78,6 +78,8 @@ reviews/
 
 root/
   Reflective_3.md
+  Reflective_4.md
+  project-effectiviness-improvement.md
 
 paper/
   Prime_Resonance_Gap_500_Page_Paper.txt

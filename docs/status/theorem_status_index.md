@@ -118,7 +118,8 @@ FALSE / BLOCKED
 | `CurrentRowBarrierRoute_300(q)` | FALSE / BLOCKED | Current pointwise/Parseval/low-level inputs do not force row-barrier smallness | `module_300_row_barrier_moment_audit.md` | No |
 | `LowLevelTailToRowBarrier_300` | FALSE / BLOCKED | Below-`lambda_min` fourth-moment tail control does not control high-level row distribution | `module_300_row_barrier_moment_audit.md` | No |
 | `RowMomentGainTarget_300(q)` | OPEN | Needs same-family row-energy distribution or high-moment gain sufficient for the lambda-summed row barrier | `module_300_row_barrier_moment_audit.md` | No |
-| `Reflective_4` | OPEN | Next scheduled memory log for Modules 261-300 | `module_300_row_barrier_moment_audit.md` | Only as governance when written |
+| `Reflective_4` | STRUCTURAL / EXTRACTION | Memory log for Modules 261-300; no theorem status upgrades | `Reflective_4.md` | Only as governance |
+| `RowMomentDistributionAudit_302(P_minor^0)` | OPEN | Next mathematical target: test same-family row-energy distribution or high-moment gains for `ShiftMomentP0_284(q;lambda_j)` | `Reflective_4.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |
