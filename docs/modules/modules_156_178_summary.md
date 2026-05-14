@@ -1,4 +1,4 @@
-# Modules 156-193 summary
+# Modules 156-194 summary
 
 ## 156
 
@@ -100,6 +100,10 @@ Averaged collision-defect bound under the qualified envelope.
 
 Generic projected model neutrality after collision removal.
 
+## 194
+
+Projected local-model matching dependency list.
+
 ## Next
 
-Module 194: Projected local-model matching dependency list.
+Module 195: Audit of Modules 183-194 for hidden upgrades.

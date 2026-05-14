@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 193
-Post-Reflective_1 solving count: 12
-Long-term-plan count: 6
+Latest completed module: 194
+Post-Reflective_1 solving count: 13
+Long-term-plan count: 7
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -132,7 +132,8 @@ Expected modules:
   completed as a conditional composition lemma;
 - Module 193: generic projected model neutrality after collision removal;
   completed as a conditional projected model-neutrality package;
-- Module 194: projected local-model matching dependency list;
+- Module 194: projected local-model matching dependency list; completed as a
+  structural dependency list for `ProjectedLocalMatch_3^major`;
 - Module 195: audit of Modules 183-194 for hidden upgrades;
 - Module 196: first 9-iteration plan update.
 
@@ -262,15 +263,16 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 194: Projected local-model matching dependency list.
+Module 195: Audit of Modules 183-194 for hidden upgrades.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`, unless a complete
 proof is actually supplied.
 
-The key question is what exact model-matching theorem is still required to
-turn actual major-arc projected cubes into the projected local model, now that
-model-neutrality has a conditional package.
+The key question is whether Modules 183-194 introduced any hidden upgrade:
+linear envelope without overflow, model neutrality mistaken for model
+matching, first-moment HL mistaken for variance control, or smoothed/cyclic
+estimates transferred to the actual sharp selector.
 
 The overflow region remains:
 

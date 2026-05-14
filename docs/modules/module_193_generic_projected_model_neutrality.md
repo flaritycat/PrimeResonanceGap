@@ -251,6 +251,8 @@ actual projected cube
 ```
 
 which is the projected local-model matching theorem still to be specified.
+Module 194 records it as `ProjectedLocalMatch_3^major` and lists its
+dependencies.
 
 ## 8. What remains open
 
@@ -258,7 +260,7 @@ This module does not prove:
 
 - the Module 192 hypotheses for the actual projected kernel;
 - kernel absolute-mass control in the sharp major-arc projection;
-- projected local-model matching;
+- `ProjectedLocalMatch_3^major`;
 - boundary transfer from cyclic/smoothed models to the sharp interval model;
 - minor-arc large-spectrum decay;
 - `ResCube_3^sharp`, `CPC_3^sharp`, `RBDH_pair_short`, or `AU^3`;

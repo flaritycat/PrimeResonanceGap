@@ -39,6 +39,9 @@ Neither estimate is proved in this module.
 The projection expansion and the identification of the correct local model are
 structural. The model-matching and model-neutrality estimates are open analytic
 inputs.
+Module 193 later organizes a conditional projected model-neutrality package.
+Module 194 names the separate projected local-model matching theorem still
+required for the actual major-arc cube.
 
 ## 3. Definitions and variables
 
@@ -117,6 +120,9 @@ The analytic major-arc closure would additionally require:
 - a projected model-neutrality theorem showing that the averaged
   `Omega_w^{proj}` contribution is `o(1)`;
 - uniformity in `D`, `R`, `eta`, `w`, and the projection kernel.
+
+Module 194 records this matching theorem as `ProjectedLocalMatch_3^major` and
+lists its required side packages.
 
 ## 5. Proof / disproof / reduction
 
@@ -215,8 +221,9 @@ two-front analytic program for the residual cube endpoint.
 
 This module does not prove:
 
-- projected local-model matching for the major arcs;
-- projected model-neutrality for `Omega_w^{proj}`;
+- `ProjectedLocalMatch_3^major`;
+- verification of the Module 193 projected model-neutrality hypotheses for
+  `Omega_w^{proj}`;
 - the minor-arc large-spectrum estimates from Module 180;
 - `ResCube_3^sharp`, `CPC_3^sharp`, `RBDH_pair_short`, or `AU^3`;
 - the finite-type theorem without all required endpoint and transfer packages;
