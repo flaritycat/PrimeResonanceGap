@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 196
-Post-Reflective_1 solving count: 15
-Long-term-plan count: 9
+Latest completed module: 197
+Post-Reflective_1 solving count: 16
+Long-term-plan count: 10
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -154,6 +154,7 @@ checkable large-spectrum estimates.
 Expected modules:
 
 - Module 197: formulate a minor-arc density/energy criterion for `B_d`;
+  completed as a conditional restriction-envelope criterion;
 - Module 198: compare ordinary pair-BDH with the residual fourth-moment target;
 - Module 199: audit rectangle-BDH and first-moment Hardy-Littlewood
   insufficiency;
@@ -273,24 +274,25 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 197: Minor-arc density/energy criterion for B_d.
+Module 198: Ordinary pair-BDH versus residual fourth-moment comparison.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 196 completed the first plan-update cadence point after adoption of the
-long-term plan. The decision is to move into the scheduled Phase B minor-arc
-large-spectrum work while preserving the major-arc dependency map as open.
+Module 197 began Phase B by replacing a count-only large-spectrum target with
+an energy-tail and restriction-envelope criterion.
 
-The next module should start from the residual object:
+The next module should test whether ordinary pair-BDH can supply the new
+minor-arc density/energy requirement for the residual object:
 
 ```text
 B_d(n)=f(n+d)conj(f(n)),   f=nu-1,
 ```
 
-and isolate a checkable density/energy condition that would imply the
-minor-arc part of:
+The expected issue is that pair-BDH controls lower-order averaged pair
+variance, while the Module 197 criterion asks for adaptive minor-arc energy
+control over frequency sets selected from the large spectrum of `B_d`.
 
 ```text
-(1/D) sum_{D<|d|<=2D} sum_{xi != 0} |widehat{B_d}(xi)|^4 = o(1).
+R_2^minor(rho;D) <= Psi_*(rho;D).
 ```

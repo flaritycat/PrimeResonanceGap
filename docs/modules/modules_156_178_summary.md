@@ -1,4 +1,4 @@
-# Modules 156-196 summary
+# Modules 156-197 summary
 
 ## 156
 
@@ -113,6 +113,11 @@ Audit of Modules 183-194 for hidden upgrades.
 First 9-iteration plan update; Phase A is dependency-mapped and Phase B moves
 to minor-arc large-spectrum control.
 
+## 197
+
+Minor-arc density/energy criterion for `B_d`, reducing the minor-arc fourth
+moment to low-level `L^2`, density, and adaptive restriction-energy envelopes.
+
 ## Next
 
-Module 197: Minor-arc density/energy criterion for `B_d`.
+Module 198: Ordinary pair-BDH versus residual fourth-moment comparison.
