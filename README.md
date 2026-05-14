@@ -7,16 +7,15 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 278
+Latest module frontier: Module 279
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 278 defines the minimal local W-cyclic transverse family
-`P_minor^0`. It fixes the model class, Fourier group, W-order, dyadic ranges,
-threshold schedules, shell convention, cutoff convention, and limiting order
-for the next phase-kernel test. `PhaseKernelBound_273^0` remains open.
+Module 279 expands `Xi_273^0` inside the fixed `P_minor^0` family. It records
+the exact linear dual form, `TT*` square, fourth-power phase kernel, and
+data-dependent shell ledger. `PhaseKernelBound_273^0` remains open.
 
 ## Global status
 

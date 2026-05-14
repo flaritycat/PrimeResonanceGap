@@ -24,6 +24,8 @@ flowchart TD
   DegAudit["TransDegeneracyAudit_275 / DegFreePhaseGate_275<br/>routing STRUCTURAL; remainder OPEN"]
   TransVerdict["TransverseGateVerdict_276 / TransverseGateProofPkg_276<br/>verdict STRUCTURAL; proof package OPEN"]
   MinTransFamily["MinimalTransverseFamily_278(P_minor^0)<br/>definition STRUCTURAL"]
+  XiExpansion["XiDualPhaseExpansion_279(P_minor^0)<br/>identity STRUCTURAL"]
+  FixedShellTransfer["FixedSetShellTransfer_280<br/>OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -63,7 +65,10 @@ flowchart TD
   TransVerdict --> TransGateCompat
   TransVerdict --> DegAudit
   PhaseKernel0 --> TransGate
-  MinTransFamily --> PhaseKernel0
+  MinTransFamily --> XiExpansion
+  XiExpansion --> PhaseKernel0
+  FixedShellTransfer --> PhaseKernel0
+  XiExpansion --> FixedShellTransfer
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -95,3 +100,5 @@ flowchart TD
   selector and full gap discipline; model/frozen/smoothed rows are not enough.
 - Phase J now has `P_minor^0`; that definition is a convention package, not a
   proof of `PhaseKernelBound_273^0`.
+- `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
+  fixed frequency-set estimates to data-dependent shells.

@@ -1,4 +1,4 @@
-# Modules 156-278 summary
+# Modules 156-279 summary
 
 ## 156
 
@@ -770,7 +770,15 @@ environment with fixed Fourier group, W-order, dyadic range, major/minor arc
 convention, lambda grid, thresholds, base-tail shell convention, cutoff, and
 limiting order. The same-family input `PhaseKernelBound_273^0` remains open.
 
+## 279
+
+Exact dual and phase expansion of the Module 278 shell functional; defines
+`XiDualPhaseExpansion_279(P_minor^0)`, rewriting `Xi_273^0` as a linear
+dual correlation, a `TT*` four-form, and a fourth-power eight-slot residual
+phase kernel over the data-dependent shell `J_trans_0(lambda;sigma)`.
+No bound for `Xi_273^0` or fixed-set transfer is proved.
+
 ## Next
 
-Module 279: derive the exact dual/phase expansion of `Xi_273^0` inside
-`P_minor^0`.
+Module 280: compare fixed frequency-set estimates with data-dependent shell
+sets inside `P_minor^0`.

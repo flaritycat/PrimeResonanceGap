@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 278
-Post-Reflective_1 solving count: 97
-Long-term-plan count: 91
+Latest completed module: 279
+Post-Reflective_1 solving count: 98
+Long-term-plan count: 92
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -895,6 +895,9 @@ Expected work:
   tests of `PhaseKernelBound_273^0`;
 - Module 279: derive the exact dual/phase expansion of `Xi_273^0` inside
   `P_minor^0` and mark every data-dependent set;
+  completed as `XiDualPhaseExpansion_279(P_minor^0)`, an exact expansion into
+  the linear dual form, `TT*` square, fourth-power phase kernel, and
+  data-dependent shell ledger;
 - Module 280: compare fixed frequency sets with data-dependent shell sets
   inside `P_minor^0`;
 - Module 281: benchmark the strongest non-endpoint large-sieve or
@@ -1316,3 +1319,42 @@ Module 279 should keep the selector/model class, Fourier group, W-residue,
 cutoff, thresholds, and base-tail shell convention of `P_minor^0` fixed. It
 should not replace data-dependent shells by fixed frequency sets unless it
 names the exact selection theorem that would justify the move.
+
+Module 279 completed:
+
+```text
+XiDualPhaseExpansion_279(P_minor^0)
+  expands Xi_273^0 into exact linear, TT*, and fourth-power phase kernels
+  over the data-dependent shell J_trans_0(lambda;sigma).
+```
+
+It preserves these statuses:
+
+```text
+PhaseKernelBound_273^0,
+fixed-set to data-dependent shell transfer,
+PhaseKernelBound_273,
+TransverseGateProofPkg_276,
+TransIncBound_269,
+MinorArcTransfer_3^B,
+NarrowMinorArc_3^B,
+selector transfer,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3
+remain unproved.
+```
+
+Continue with:
+
+```text
+Module 280:
+  compare fixed frequency-set estimates with the data-dependent shell sets
+  inside P_minor^0.
+```
+
+Module 280 should decide whether a theorem for predetermined frequency sets
+can transfer to the actual fibers `S_d(J)` and `D_xi(J)`, or whether a new
+uniform selection theorem is required before `PhaseKernelBound_273^0` can be
+approached.

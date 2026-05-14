@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 278
+Latest module frontier: Module 279
 Active phase: Phase J, minimal transverse proof-package feasibility
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -114,6 +114,9 @@ Latest project-wide review:
 - A minimal transverse family definition `MinimalTransverseFamily_278`, fixing
   the local W-cyclic model environment `P_minor^0` for future tests of
   `PhaseKernelBound_273^0`.
+- An exact dual and phase expansion `XiDualPhaseExpansion_279(P_minor^0)`,
+  identifying the linear dual form, `TT*` square, fourth-power shell kernel,
+  and data-dependent set ledger for `Xi_273^0`.
 
 ## What the project has not proved
 
@@ -150,6 +153,8 @@ Latest project-wide review:
   proof input.
 - `PhaseKernelBound_273^0` inside `P_minor^0`, or any Phase J proof package
   for `PhaseKernelBound_273`.
+- Fixed-frequency-set transfer to the data-dependent shells
+  `J_trans_0(lambda;sigma)`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -278,13 +283,17 @@ Completed Phase J family definition:
     fixes a W-cyclic prime-only model family and leaves PhaseKernelBound_273^0
     open
 
+Completed Phase J dual expansion:
+  XiDualPhaseExpansion_279(P_minor^0)
+    expands Xi_273^0 into exact data-dependent shell phase kernels
+
 Active Phase J target:
   PhaseKernelBound_273^0 over P_minor^0
-    begin with the exact dual/phase expansion of Xi_273^0
+    next compare fixed frequency-set estimates with data-dependent shells
 
 Next scheduled check:
-  Module 279 derive the exact dual/phase expansion of Xi_273^0 inside
-  P_minor^0
+  Module 280 compare fixed frequency sets with data-dependent shell sets
+  inside P_minor^0
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the active Phase J steering step;
