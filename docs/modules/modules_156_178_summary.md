@@ -1,4 +1,4 @@
-# Modules 156-181 summary
+# Modules 156-182 summary
 
 ## 156
 
@@ -52,6 +52,10 @@ Minor-arc large-spectrum criterion for the residual derivative cube.
 
 Major-arc projected residual local model.
 
+## 182
+
+Projected residual model neutrality and collision defects.
+
 ## Next
 
-Module 182: Projected residual model neutrality and collision audit.
+Module 183: Kernel-weighted collision-defect estimate template.

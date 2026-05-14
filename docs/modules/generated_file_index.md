@@ -33,7 +33,8 @@
 | `docs\modules\module_179_fourier_major_minor.md` | 8654 |
 | `docs\modules\module_180_minor_arc_large_spectrum.md` | 6495 |
 | `docs\modules\module_181_major_arc_projected_model.md` | 7155 |
-| `docs\modules\modules_156_178_summary.md` | 1091 |
+| `docs\modules\module_182_projected_model_neutrality_collision.md` | 6738 |
+| `docs\modules\modules_156_178_summary.md` | 1154 |
 | `docs\paper\Prime_Resonance_Gap_500_Page_Paper.txt` | 1285247 |
 | `docs\status\endpoint_status.md` | 849 |
 | `docs\status\forbidden_upgrades.md` | 1574 |
