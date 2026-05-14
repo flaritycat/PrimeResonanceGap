@@ -1,4 +1,4 @@
-# Modules 156-259 summary
+# Modules 156-260 summary
 
 ## 156
 
@@ -614,7 +614,16 @@ Phase G as a diagnostic window, blocks blind expansion to larger boundary
 tuple rows, and selects Phase H as a projected model-neutrality feasibility
 window beginning with `ProjectedModelNeutralityGate_260(P_adm)`.
 
+## 260
+
+Projected model-neutrality feasibility gate; defines
+`ProjectedModelNeutralityGate_260(P_adm)` and conditionally reduces
+`ProjectedModelNeutrality_3^major(P_adm)` to exact model discipline, generic
+W-tail cancellation, a signed or absolute kernel budget, collision-defect
+control, denominator/W-limit/projection uniformity, and model-domain
+conventions.
+
 ## Next
 
-Module 260: projected model-neutrality feasibility gate for
-`NeutralErr_major^P` and `Omega_w^proj`.
+Module 261: create `Reflective_3.md`, the required 40-iteration memory log
+after `Reflective_1`.

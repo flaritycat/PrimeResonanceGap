@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 259
-Post-Reflective_1 solving count: 78
-Long-term-plan count: 72
+Latest completed module: 260
+Post-Reflective_1 solving count: 79
+Long-term-plan count: 73
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -694,6 +694,11 @@ Expected work:
 - Module 260: formulate `ProjectedModelNeutralityGate_260(P_adm)`, fixing the
   exact model-neutrality object, admissibility scope, and sufficient
   local-factor, kernel, collision, denominator, and W-limit rows;
+  completed as a conditional gate reducing
+  `ProjectedModelNeutrality_3^major(P_adm)` to exact model discipline,
+  generic W-tail cancellation, a signed or absolute kernel budget,
+  collision-defect control, denominator/W-limit/projection uniformity, and
+  model-domain conventions;
 - Module 261: create `Reflective_3.md`, the required 40-iteration memory log
   after `Reflective_1`, reviewing Modules 221-260 and checking for weakened
   claims or hidden upgrades;
@@ -809,46 +814,54 @@ PlanUpdate_8_259
     projected model-neutrality feasibility.
 ```
 
+Module 260 completed the projected model-neutrality gate:
+
+```text
+ProjectedModelNeutralityGate_260(P_adm)
+  => ProjectedModelNeutrality_3^major(P_adm)
+```
+
+only conditionally, under exact model discipline, generic W-tail cancellation,
+kernel budget, collision-defect control, denominator/W-limit/projection
+uniformity, and model-domain convention rows.
+
 Continue with:
 
 ```text
-Module 260: ProjectedModelNeutralityGate_260(P_adm), a feasibility gate for
-the model-side NeutralErr_major^P row.
+Module 261: Reflective_3.md, the required memory log after the
+post-Reflective_1 solving count reaches 80.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, not `PROVEN`.
-The module should test the model-side projected major-arc neutrality row
-without assuming projected local-model matching or the projected major target.
+Expected status: `STRUCTURAL / EXTRACTION`, not `PROVEN`.
+The reflection should review Modules 221-260, correct any weakened or
+overstated claims, and update the memory log without proving any endpoint.
 
-It must keep the exact projected-major model objects:
+It should keep these anchors explicit:
 
 ```text
-ModelProjCube_d^P
-  = E_{h,k,t} W_M(t) Omega_w^proj(d,h,k;t),
-
-NeutralErr_major^P
-  = |(1/D) sum_{D<|d|<=2D} ModelProjCube_d^P|.
+Phase D after Reflective_2,
+Phase E endpoint dependency table,
+Phase F fixed boundary/model-mass and one-point prototype,
+Phase G fixed-row feasibility and reentry comparisons,
+Phase H start with ProjectedModelNeutralityGate_260.
 ```
 
-Module 260 should check:
+Module 261 should check:
 
 ```text
-whether model neutrality is a genuine model-side row smaller than the major
-endpoint,
-which local-factor cancellations are structural and which require averaged
-compatibility,
-whether signed kernel cancellation, absolute kernel mass, collision strata,
-denominator/CRT ranges, W-limit order, projection-boundary rows, or selector
-class changes are being smuggled in,
-what side rows would make ProjectedModelNeutrality_3^major conditional rather
-than endpoint-strength.
+what was corrected since Reflective_2,
+which branches were narrowed or stopped,
+which conditional gates remain genuinely smaller than the endpoint,
+whether any route has become endpoint-strength in disguise,
+what Module 262 should challenge.
 ```
 
-Do not prove the model row by assuming:
+Do not use the reflection to prove or claim:
 
 ```text
 ProjectedMajorTarget_3^B,
 WProjectedLocalMatch_3^major,
+ProjectedModelNeutrality_3^major,
 ResCube_3^sharp,
 selector transfer,
 CPC_3^sharp,

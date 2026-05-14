@@ -5,7 +5,7 @@ This file is the first status document Codex should read.
 Current frontier:
 
 ```text
-Latest module frontier: Module 259
+Latest module frontier: Module 260
 Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -46,6 +46,9 @@ Latest project-wide review:
   `WProjectedLocalMatch_3^major` or `ProjectedMajorTarget_3^B`.
 - An eighth plan update closing Phase G as a diagnostic window and redirecting
   the next branch to projected model-neutrality.
+- A projected model-neutrality feasibility gate separating generic W-tail
+  cancellation, kernel budget, collision defects, denominator/W-limit
+  uniformity, and model-domain conventions.
 
 ## What the project has not proved
 
@@ -55,6 +58,8 @@ Latest project-wide review:
 - `RBDH_pair_short(Hcal)`, `CPC_3^sharp(Hcal)`, or `AU^3(Hcal)`.
 - `ResCube_3^sharp`, `ProjectedMajorTarget_3^B`, or the actual sharp
   moving-selector endpoint.
+- `ProjectedModelNeutralityGate_260` or
+  `ProjectedModelNeutrality_3^major(P_adm)`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -121,8 +126,8 @@ Projected-major reentry:
 
 Phase H next target:
   ProjectedModelNeutralityGate_260(P_adm)
-    tests the model-side NeutralErr_major^P row before full projected
-    local-model matching
+    conditionally reduces NeutralErr_major^P to generic-tail, kernel,
+    collision, denominator, W-limit, and model-convention rows
 ```
 
 Status: **CONDITIONAL**.
