@@ -94,8 +94,9 @@ row/column-only uniform-fiber gain and isolates a weighted subgraph target.
 The Phase K verdict now records that these tests do not close the adaptive
 shell target with current tools. The cleanup packet blocks another same-tools
 Phase K pass, the seventh plan challenge selects side-package triage, and the
-latest module classifies the below-`lambda_min` low-level row as still open
-unless an explicit counting or same-family energy budget is proved.
+low-level audit classifies the below-`lambda_min` row as still open unless an
+explicit counting or same-family energy budget is proved. The latest plan
+update keeps the branch narrow by selecting a counting-barrier audit next.
 
 ## The Whole Project In One Narrative
 
@@ -416,8 +417,8 @@ adaptive-shell gain block**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 294
-Active phase: Phase K, low-level side-row triage after the adaptive-gain block
+Latest module frontier: Module 295
+Active phase: Phase K, side-package counting-barrier audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -512,20 +513,26 @@ Module 294:
   counting barriers for possible reconstructions, and leaves
   LowLevelBudgetP0_284, LowLevelCutoffP0_283, and LowLevelCountingBarrier_294
   open.
+
+Module 295:
+  performed the twelfth plan update. It keeps the side-package branch narrow,
+  questions whether low-level triage is useful without an exact
+  reconstruction formula, and selects LowLevelCountingBarrierAudit_296 as the
+  next concrete test.
 ```
 
 The next planned module is:
 
 ```text
-Module 295:
-  perform the twelfth plan update, using the Module 294 low-level verdict to
-  decide whether to test LowLevelCountingBarrier_294, shift/frequency removal
-  budgets, or another smaller side row.
+Module 296:
+  audit the LowLevelCountingBarrier_294 criterion against the exact
+  low-level reconstruction, target power, target weights, and P_minor^0
+  parameter ranges.
 ```
 
-The next step should not claim low-level smallness. It should decide which
-local side row is small enough to test without smuggling in
-`PhaseKernelBound_273^0`.
+The next step should not claim low-level smallness. It should either make the
+counting barrier explicit enough to test, or mark the missing reconstruction
+formula as the blocker.
 
 ## What Is Proved?
 
@@ -738,6 +745,8 @@ wins.
 | `LowLevelBudgetP0_284 / LowLevelCutoffP0_283` | OPEN | Low-level contribution still needs an actual budget |
 | `LowLevelCountingBarrier_294` | OPEN | Deterministic counting criterion not proved `o_W(1)` |
 | `LowLevelByDefinition_294` | FALSE / BLOCKED | Excluding low levels from the shell grid is not an estimate |
+| `PlanUpdate_12_295` | STRUCTURAL / EXTRACTION | Twelfth plan update; selects the next low-level counting audit |
+| `LowLevelCountingBarrierAudit_296(P_minor^0)` | OPEN | Next target; must test the exact reconstruction and target weights |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

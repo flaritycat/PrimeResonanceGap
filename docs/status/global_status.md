@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 294
-Active phase: Phase K, low-level side-row triage
+Latest module frontier: Module 295
+Active phase: Phase K, side-package counting-barrier audit
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -169,6 +169,9 @@ Latest project-wide review:
   deterministic counting barriers for possible reconstructions, and leaving
   `LowLevelBudgetP0_284`, `LowLevelCutoffP0_283`, and
   `LowLevelCountingBarrier_294` open.
+- A twelfth plan update `PlanUpdate_12_295`, keeping the side-package branch
+  narrow after the low-level verdict and selecting
+  `LowLevelCountingBarrierAudit_296(P_minor^0)` as the next concrete test.
 
 ## What the project has not proved
 
@@ -237,6 +240,8 @@ Latest project-wide review:
   `SideRowsP0Ready_283`, or `DegRowsP0Small_282`.
 - `SidePkgReady_293`, `LowLevelBudgetP0_284`, `LowLevelCutoffP0_283`,
   or `LowLevelCountingBarrier_294`.
+- `LowLevelCountingBarrierAudit_296(P_minor^0)`; it is the next target, not a
+  completed estimate.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -444,8 +449,13 @@ Completed low-level budget triage:
     classifies below-lambda_min leakage, blocks low-level smallness by
     definition, and leaves LowLevelCountingBarrier_294 open
 
+Completed twelfth plan update:
+  PlanUpdate_12_295
+    selects LowLevelCountingBarrierAudit_296(P_minor^0) as the next narrow
+    side-package target
+
 Next scheduled check:
-  Module 295 twelfth plan update
+  Module 296 LowLevelCountingBarrierAudit_296(P_minor^0)
 ```
 
 Status: **STRUCTURAL / EXTRACTION** for the completed Phase K steering step;

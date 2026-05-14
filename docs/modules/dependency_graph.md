@@ -42,7 +42,8 @@ flowchart TD
   PlanChallenge7["PlanChallenge_7_292<br/>selects side-package triage"]
   SidePkgTriage293["SidePkgTriage_293<br/>triage STRUCTURAL; ready package OPEN"]
   LowLevelTriage294["LowLevelBudgetTriage_294<br/>triage STRUCTURAL; budget OPEN"]
-  PlanUpdate12["PlanUpdate_12_295<br/>next scheduled check"]
+  PlanUpdate12["PlanUpdate_12_295<br/>plan update STRUCTURAL"]
+  LowLevelBarrier296["LowLevelCountingBarrierAudit_296<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -113,6 +114,8 @@ flowchart TD
   SidePkgTriage293 --> AdaptiveShellP0
   LowLevelTriage294 --> AdaptiveShellP0
   LowLevelTriage294 --> PlanUpdate12
+  PlanUpdate12 --> LowLevelBarrier296
+  LowLevelBarrier296 --> ThresholdP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -189,3 +192,6 @@ flowchart TD
 - `LowLevelBudgetTriage_294` classifies the below-`lambda_min` row and gives
   deterministic counting barriers, but it does not prove
   `LowLevelBudgetP0_284`, `LowLevelCutoffP0_283`, or any threshold closure.
+- `PlanUpdate_12_295` keeps the side-package branch narrow and selects
+  `LowLevelCountingBarrierAudit_296`; that next target is still open and must
+  test the exact reconstruction formula and target weights.

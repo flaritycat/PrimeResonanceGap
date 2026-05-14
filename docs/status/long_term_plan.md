@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 294
-Post-Reflective_1 solving count: 113
-Long-term-plan count: 107
+Latest completed module: 295
+Post-Reflective_1 solving count: 114
+Long-term-plan count: 108
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -65,7 +65,8 @@ Ninth plan update:       Module 268 (completed)
 Tenth plan update:       Module 277 (completed)
 Sixth plan challenge:    Module 277 (completed)
 Eleventh plan update:    Module 286 (completed)
-Twelfth plan update:     Module 295
+Twelfth plan update:     Module 295 (completed)
+Thirteenth plan update:  Module 304
 Seventh plan challenge:  Module 292 (completed)
 Eighth plan challenge:   Module 307
 ```
@@ -2103,4 +2104,54 @@ Module 295:
   perform the twelfth plan update, using the low-level verdict to decide
   whether the next side-package move should test LowLevelCountingBarrier_294,
   shift/frequency removal budgets, or another smaller row.
+```
+
+Module 295 completed:
+
+```text
+PlanUpdate_12_295
+  keeps Phase K on the side-package branch and selects
+  LowLevelCountingBarrierAudit_296(P_minor^0) as the next narrow target.
+```
+
+The cadence records:
+
+```text
+Latest completed module: 295
+Post-Reflective_1 solving count: 114
+Long-term-plan count: 108
+
+108 is divisible by 9, so the twelfth plan update is due and completed.
+108 is not divisible by 15, so the eighth plan challenge is not due.
+Next reflective log remains expected around Module 301.
+```
+
+It preserves:
+
+```text
+LowLevelCountingBarrier_294,
+LowLevelBudgetP0_284,
+LowLevelCutoffP0_283,
+ThresholdBudgetP0Closure_284(q,r),
+SideRowsP0Ready_283,
+SidePkg_291,
+SidePkgReady_293,
+AdaptiveShellGainP0_285,
+PhaseKernelBound_273^0,
+MinorArcTransfer_3^B,
+ResCube_3^sharp,
+CPC_3^sharp,
+RBDH_pair_short,
+AU^3,
+the original selected-average problem
+remain unproved.
+```
+
+Continue with:
+
+```text
+Module 296:
+  perform LowLevelCountingBarrierAudit_296(P_minor^0), testing the Module 294
+  counting criterion against the exact low-level reconstruction, target
+  power, target weights, and declared P_minor^0 parameter ranges.
 ```
