@@ -5,7 +5,7 @@ This file is the first status document Codex should read.
 Current frontier:
 
 ```text
-Latest module frontier: Module 264
+Latest module frontier: Module 265
 Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -60,6 +60,9 @@ Latest project-wide review:
 - A collision and diagonal strata audit separating the absolute route
   `AbsCollStrataGate_264 => CollNeutral_260` from the signed full-cover route
   `SignedCoverGate_264 => CollSigned_263=o_W(1)`.
+- A kernel-budget fork audit separating `KernelAbsBudget_265` from
+  `KernelSignedBudget_265`, with no transfer from signed estimates to
+  absolute rows.
 
 ## What the project has not proved
 
@@ -75,6 +78,8 @@ Latest project-wide review:
   or `AvgFaceCompat_263(P_adm)`.
 - `AbsCollStrataGate_264`, `SignedCoverGate_264`, `CollNeutral_260`, or the
   full-cover signed collision estimate.
+- `KernelAbsBudget_265`, `KernelSignedBudget_265`, `KernelAbsNeutral_260`, or
+  `KernelSignedNeutral_260`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -149,7 +154,8 @@ Phase H challenge:
     continues Phase H only through narrowed proof-or-blocked subrow tests
 
 Next Phase H check:
-  Module 265 kernel absolute budget versus signed kernel cancellation
+  Module 266 W-limit, denominator, CRT range, projection-boundary, and dyadic
+  uniformity over P_adm
 ```
 
 Status: **CONDITIONAL**.

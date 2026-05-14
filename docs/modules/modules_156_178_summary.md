@@ -1,4 +1,4 @@
-# Modules 156-264 summary
+# Modules 156-265 summary
 
 ## 156
 
@@ -657,6 +657,16 @@ and large-prime congruence strata, gives the conditional absolute route
 full-cover route `SignedCoverGate_264 => CollSigned_263=o_W(1)` without
 identifying it with the absolute collision row.
 
+## 265
+
+Kernel absolute budget versus signed kernel cancellation; defines
+`KernelBudgetAudit_265(P_adm)`, splits Phase H into the absolute fork
+`KernelAbsBudget_265 + AbsCollStrataGate_264` and the signed fork
+`KernelSignedBudget_265 + SignedCoverGate_264`, and records that signed kernel
+cancellation cannot be exported to `|W_M|` boundary, collision, or transfer
+rows.
+
 ## Next
 
-Module 265: kernel absolute budget versus signed kernel cancellation.
+Module 266: W-limit, denominator, CRT range, projection-boundary, and dyadic
+uniformity over `P_adm`.

@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 264
-Post-Reflective_1 solving count: 83
-Long-term-plan count: 77
+Latest completed module: 265
+Post-Reflective_1 solving count: 84
+Long-term-plan count: 78
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -729,6 +729,10 @@ Expected work:
 - Module 265: audit kernel signed-cancellation versus absolute-mass
   requirements for model neutrality, including the risk that replacing `W_M`
   by `|W_M|` loses the only available cancellation;
+  completed as `KernelBudgetAudit_265(P_adm)`, splitting Phase H into the
+  absolute fork `KernelAbsBudget_265 + AbsCollStrataGate_264` and the signed
+  fork `KernelSignedBudget_265 + SignedCoverGate_264`, with signed estimates
+  barred from proving absolute rows;
 - Module 266: audit W-limit, denominator, CRT range, projection-boundary, and
   dyadic uniformity requirements for model neutrality over `P_adm`;
 - Module 267: give a proof-or-blocked verdict for projected model neutrality:
@@ -874,28 +878,40 @@ CollStrataAudit_264(P_adm)
   and splits the collision row into absolute and signed routes.
 ```
 
+Module 265 completed the kernel-budget audit:
+
+```text
+KernelBudgetAudit_265(P_adm)
+  splits Phase H into an absolute |W_M| fork
+  and a same-family signed W_M fork,
+  without transferring signed cancellation to absolute rows.
+```
+
 Continue with:
 
 ```text
-Module 265: kernel absolute budget versus signed kernel cancellation.
+Module 266: W-limit, denominator, CRT range, projection-boundary, and dyadic
+uniformity over P_adm.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, not `PROVEN`.
-Module 265 should test whether the absolute route can pay the kernel costs:
+Module 266 should test whether all Phase H rows are uniform in the same
+admissible family:
 
 ```text
-A_W(M) eps_gen(w),
-StructAbs_264,
-E_abs B_w^red,
-E_abs exp(C B_w^red) B_w^red 1_{B_w^red>1},
+fixed w, then N -> infinity, then w -> infinity,
+D,R,eta and dyadic shells,
+denominator and CRT ranges,
+projection boundary and kernel truncation,
+cutoff and W-residue conventions,
+selector class,
+rho in P_adm(N,w).
 ```
 
-or whether Phase H is relying on signed cancellation in `W_M`. If signed
-kernel cancellation is used, it must be stated as a same-family
-`KernelSignedNeutral` or signed collision row, not imported from boundary
-absolute estimates.
+It should decide which rows are local, mixed, endpoint-strength, or blocked
+when the required constants are made uniform over `P_adm`.
 
-Module 265 should preserve these statuses:
+Module 266 should preserve these statuses:
 
 ```text
 ProjectedModelNeutrality_3^major: not proved,
@@ -904,7 +920,7 @@ ProjectedMajorTarget_3^B: not proved,
 ResCube_3^sharp: OPEN.
 ```
 
-Do not use Module 265 to prove or claim, or to assume as input:
+Do not use Module 266 to prove or claim, or to assume as input:
 
 ```text
 ProjectedMajorTarget_3^B,

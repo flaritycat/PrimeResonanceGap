@@ -7,15 +7,15 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 264
+Latest module frontier: Module 265
 Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 264 audits collision and diagonal strata for `CollSigned_263`. It
-separates the absolute route to `CollNeutral_260` from the signed full-cover
-route to `CollSigned_263=o_W(1)`, and records that both routes remain open.
+Module 265 audits the kernel fork for Phase H: either pay every generic,
+collision, overflow, tail, and range term with `|W_M|`, or prove a same-family
+signed theorem for the exact `W_M` average. Both kernel budgets remain open.
 
 ## Global status
 
