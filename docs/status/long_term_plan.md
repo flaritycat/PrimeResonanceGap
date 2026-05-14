@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 230
-Post-Reflective_1 solving count: 49
-Long-term-plan count: 43
+Latest completed module: 231
+Post-Reflective_1 solving count: 50
+Long-term-plan count: 44
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -400,6 +400,10 @@ Expected work:
   endpoint arrows;
 - Module 231: produce a consolidated endpoint dependency table with each arrow
   labeled by the allowed status labels;
+  completed as `EndpointDependencyTable_231`, merging the structural,
+  analytic, selector-transfer, and fixed boundary-row audits into one table
+  with endpoint objects kept `OPEN`, analytic bridges kept `CONDITIONAL`, and
+  shortcut implications kept `FALSE / BLOCKED`;
 - Module 232: perform the fifth plan update and third plan challenge in the
   same iteration.
 
@@ -456,42 +460,18 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 231: Consolidate the endpoint dependency table with allowed status
-labels.
+Module 232: Perform the fifth plan update and third plan challenge.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
+Expected status: `STRUCTURAL / EXTRACTION`.
 
-Module 230 completed the selector-transfer attachment ledger:
+Module 231 completed the consolidated endpoint dependency table:
 
 ```text
-EndpointSelectorAttach_230.
+EndpointDependencyTable_231.
 ```
 
-It attached distinct selector-transfer norms to the endpoint arrows:
-
-```text
-Sel_B^full,
-Sel_B^major,
-Sel_B^minor,
-Sel_R^pair,
-Sel_Rect.
-```
-
-Module 231 should now consolidate Modules 227-230 into a dependency table with
-one row per endpoint arrow or target. Each row should include:
-
-```text
-arrow / target;
-fixed-object status;
-analytic side package;
-selector-transfer package;
-boundary / W / prime-power / range package;
-allowed status label;
-whether the row is structural, conditional, blocked-as-shortcut, or open.
-```
-
-The table should keep the previous distinctions:
+It merged:
 
 ```text
 structural identities from Module 228,
@@ -500,6 +480,22 @@ selector-transfer attachments from Module 230,
 LocalBdPkg_226 as only one fixed local boundary row.
 ```
 
-Do not mark any endpoint theorem `PROVEN`. The expected result is a
-consolidated dependency table, not a closure theorem. The fifth plan update and
-third plan challenge remain scheduled for Module 232, not Module 231.
+Module 232 is a cadence point. It must perform both:
+
+```text
+fifth plan update,
+third plan challenge.
+```
+
+The challenge should explicitly ask whether the endpoint-equivalence audit has
+become useful enough to guide an analytic attack, or whether the project is
+now only polishing endpoint formalism. It should decide the next branch:
+
+```text
+attempt one smaller conditional row,
+retreat to a weaker honest theorem,
+or mark the current endpoint branch blocked and redirect.
+```
+
+Do not mark any endpoint theorem `PROVEN`. The expected result is governance
+and branch selection, not a closure theorem.

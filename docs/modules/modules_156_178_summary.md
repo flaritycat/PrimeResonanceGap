@@ -1,4 +1,4 @@
-# Modules 156-230 summary
+# Modules 156-231 summary
 
 ## 156
 
@@ -371,7 +371,14 @@ selector chains, required residual fourth-moment norms, active transfer rows,
 and local/mixed/endpoint-strength classifications to each endpoint arrow,
 separating `B_d`, `R_d`, projected major, minor, and rectangle transfer norms.
 
+## 231
+
+Consolidated endpoint dependency table; defines `EndpointDependencyTable_231`
+and merges the Module 228 structural identities, Module 229 analytic side
+packages, Module 230 selector-transfer norms, and the limited `LocalBdPkg_226`
+row into one allowed-status table, keeping endpoint objects `OPEN` and
+shortcut implications `FALSE / BLOCKED`.
+
 ## Next
 
-Module 231: Consolidate the endpoint dependency table with allowed status
-labels.
+Module 232: Perform the fifth plan update and third plan challenge.
