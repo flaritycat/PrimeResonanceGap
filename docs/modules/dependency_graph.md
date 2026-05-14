@@ -58,7 +58,8 @@ flowchart TD
   ColumnBarrier308["ColumnBarrierMomentAudit_308<br/>audit STRUCTURAL; current route BLOCKED"]
   ColumnDist309["ColumnMultiplicityDistributionAudit_309<br/>audit STRUCTURAL; first-moment route BLOCKED"]
   ColumnPair310["ColumnPairMultiplicityExpansion_310<br/>expansion STRUCTURAL; off-diagonal OPEN"]
-  WPair311["WeightedColumnPairEnergyAudit_311<br/>next target OPEN"]
+  WPair311["WeightedColumnPairEnergyAudit_311<br/>audit STRUCTURAL; current route BLOCKED"]
+  AutoCorr312["WeightedPairAutocorrelationExpansion_312<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -150,6 +151,8 @@ flowchart TD
   ColumnBarrier308 --> ColumnDist309
   ColumnDist309 --> ColumnPair310
   ColumnPair310 --> WPair311
+  WPair311 --> AutoCorr312
+  AutoCorr312 --> ThresholdP0
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -277,3 +280,7 @@ flowchart TD
 - `ColumnPairMultiplicityExpansion_310` expands the `r=2` column moment and
   isolates the off-diagonal same-frequency pair row; the weighted
   coefficient-pair route is still only a criterion.
+- `WeightedColumnPairEnergyAudit_311` records that energy-square and
+  fourth-power Cauchy estimates return ceiling-scale weighted pair bounds
+  under current inputs. It blocks current tools as weighted pair closure and
+  sends the next step to the exact weighted pair autocorrelation expansion.

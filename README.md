@@ -94,7 +94,9 @@ counting gives only column-barrier ceilings. The distributional audit then
 shows that layer-cake with first-moment tails collapses back to the same
 ceiling. The concrete `r=2` expansion now isolates the off-diagonal
 same-frequency shift-pair row and points to a weighted coefficient-pair energy
-audit. None of this proves the endpoint.
+audit. That audit shows current Cauchy/Parseval inputs still give only
+energy-square ceilings, so the next useful step is an autocorrelation
+expansion. None of this proves the endpoint.
 
 ## The Whole Project In One Narrative
 
@@ -410,13 +412,13 @@ open analytic engines and transfer barriers.
 ## What Are We Actually Doing Now?
 
 The current active phase is **Phase K: threshold-window compatibility after
-the column-pair multiplicity expansion**.
+the weighted column-pair energy audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 310
-Active phase: Phase K, weighted column-pair energy audit
+Latest module frontier: Module 311
+Active phase: Phase K, weighted pair autocorrelation expansion
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -609,6 +611,12 @@ Module 310:
   controlled, the off-diagonal row remains open, and first incidence again
   collapses to the Module 308 ceiling. The next test is a weighted
   coefficient-pair energy audit.
+
+Module 311:
+  audited the weighted coefficient-pair route. Energy-square and fourth-power
+  Cauchy estimates both return ceiling-scale bounds under current local
+  inputs. The weighted route remains open, but needs an exact autocorrelation
+  expansion before another analytic claim is made.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
@@ -619,10 +627,10 @@ inputs do not prove the row side of the threshold window.
 The next planned module is:
 
 ```text
-Module 311:
-  perform WeightedColumnPairEnergyAudit_311(P_minor^0), testing whether the
-  weighted coefficient-pair criterion is smaller than column multiplicity or
-  only another ceiling under current Parseval/Cauchy inputs.
+Module 312:
+  perform WeightedPairAutocorrelationExpansion_312(P_minor^0), expanding the
+  weighted same-frequency pair energy through autocorrelation kernels and the
+  minor-arc cutoff.
 ```
 
 ## What Is Proved?
@@ -653,7 +661,10 @@ Compact status table:
 | Column-pair expansion `ColumnPairMultiplicityExpansion_310` | **STRUCTURAL / EXTRACTION** |
 | Off-diagonal same-frequency pair row `OffDiagonalSameFrequencyPair_310` | **OPEN** |
 | Weighted column-pair energy target `WeightedColumnPairEnergyTarget_310` | **OPEN** |
-| Weighted column-pair energy audit `WeightedColumnPairEnergyAudit_311` | **OPEN next target** |
+| Weighted column-pair energy audit `WeightedColumnPairEnergyAudit_311` | **STRUCTURAL / EXTRACTION** |
+| Current weighted route `WeightedCurrentToolsClose_311` | **FALSE / BLOCKED** |
+| Weighted column second moment `WeightedColumnSecondMomentTarget_311` | **OPEN** |
+| Weighted pair autocorrelation expansion `WeightedPairAutocorrelationExpansion_312` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -925,7 +936,11 @@ wins.
 | `FirstIncidencePairCollapse_310(lambda_j)` | FALSE / BLOCKED | Pair route collapses to Module 308 ceiling under first incidence |
 | `WeightedPairEnergyCriterion_310(lambda_j)` | STRUCTURAL / EXTRACTION | Threshold-to-weighted-coefficient-pair criterion only |
 | `WeightedColumnPairEnergyTarget_310(P_minor^0)` | OPEN | Needs same-family weighted off-diagonal pair energy gain |
-| `WeightedColumnPairEnergyAudit_311(P_minor^0)` | OPEN | Next target |
+| `WeightedColumnPairEnergyAudit_311(P_minor^0)` | STRUCTURAL / EXTRACTION | Weighted route audited; current tools give ceilings |
+| `EnergySquareWPairCeiling_311 / FourthPowerWPairCeiling_311` | STRUCTURAL / EXTRACTION | Valid energy-square and fourth-power ceilings only |
+| `WeightedCurrentToolsClose_311` | FALSE / BLOCKED | Current Parseval/Cauchy inputs do not close weighted pair energy |
+| `WeightedColumnSecondMomentTarget_311(P_minor^0)` | OPEN | Needs distribution control of weighted columns `sum_d |beta_0(d,xi)|^2` |
+| `WeightedPairAutocorrelationExpansion_312(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

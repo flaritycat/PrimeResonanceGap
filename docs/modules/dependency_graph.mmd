@@ -51,7 +51,8 @@ flowchart TD
   ColumnBarrier308["ColumnBarrierMomentAudit_308<br/>audit STRUCTURAL; current route BLOCKED"]
   ColumnDist309["ColumnMultiplicityDistributionAudit_309<br/>audit STRUCTURAL; first-moment route BLOCKED"]
   ColumnPair310["ColumnPairMultiplicityExpansion_310<br/>expansion STRUCTURAL; off-diagonal OPEN"]
-  WPair311["WeightedColumnPairEnergyAudit_311<br/>next target OPEN"]
+  WPair311["WeightedColumnPairEnergyAudit_311<br/>audit STRUCTURAL; current route BLOCKED"]
+  AutoCorr312["WeightedPairAutocorrelationExpansion_312<br/>next target OPEN"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -143,6 +144,8 @@ flowchart TD
   ColumnBarrier308 --> ColumnDist309
   ColumnDist309 --> ColumnPair310
   ColumnPair310 --> WPair311
+  WPair311 --> AutoCorr312
+  AutoCorr312 --> ThresholdP0
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0

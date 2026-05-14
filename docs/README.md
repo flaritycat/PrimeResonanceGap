@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 310
-Active phase: Phase K, weighted column-pair energy audit
+Latest module frontier: Module 311
+Active phase: Phase K, weighted pair autocorrelation expansion
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -80,6 +80,7 @@ modules/
   module_308_column_barrier_moment_audit.md
   module_309_column_multiplicity_distribution_audit.md
   module_310_column_pair_multiplicity_expansion.md
+  module_311_weighted_column_pair_energy_audit.md
   modules_156_178_summary.md
 
 reviews/

@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 310
-Active phase: Phase K, weighted column-pair energy audit
+Latest module frontier: Module 311
+Active phase: Phase K, weighted pair autocorrelation expansion
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -238,6 +238,13 @@ Latest project-wide review:
   `r=2` column moment into diagonal and off-diagonal same-frequency shift-pair
   incidences, blocking the first-incidence pair route as another ceiling, and
   leaving `WeightedColumnPairEnergyTarget_310(P_minor^0)` open.
+- A weighted column-pair energy audit
+  `WeightedColumnPairEnergyAudit_311(P_minor^0)`, showing that energy-square
+  and fourth-power Cauchy/Parseval bounds still give only ceiling-scale
+  estimates for the weighted route, leaving
+  `WeightedColumnSecondMomentTarget_311(P_minor^0)` open and selecting
+  `WeightedPairAutocorrelationExpansion_312(P_minor^0)` as the next
+  structural target.
 
 ## What the project has not proved
 
@@ -369,6 +376,10 @@ Latest project-wide review:
   `WeightedPairEnergyCriterion_310(lambda_j)`,
   `WeightedColumnPairEnergyTarget_310(P_minor^0)`, or
   `WeightedColumnPairEnergyAudit_311(P_minor^0)`.
+- `EnergySquareWPairCeiling_311`, `FourthPowerWPairCeiling_311`, or
+  `WeightedCurrentToolsClose_311` as weighted pair smallness.
+- `WeightedColumnSecondMomentTarget_311(P_minor^0)` or
+  `WeightedPairAutocorrelationExpansion_312(P_minor^0)`.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -659,10 +670,16 @@ Completed column-pair multiplicity expansion:
     isolates OffDiagonalSameFrequencyPair_310(lambda_j) as open, and leaves
     WeightedColumnPairEnergyTarget_310(P_minor^0) open
 
+Completed weighted column-pair energy audit:
+  WeightedColumnPairEnergyAudit_311(P_minor^0)
+    records energy-square and fourth-power Cauchy ceilings, blocks current
+    tools as a weighted pair proof route, and leaves
+    WeightedColumnSecondMomentTarget_311(P_minor^0) open
+
 Next scheduled check:
-  Module 311 WeightedColumnPairEnergyAudit_311(P_minor^0)
+  Module 312 WeightedPairAutocorrelationExpansion_312(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Phase K column-pair
-expansion;
+Status: **STRUCTURAL / EXTRACTION** for the completed Phase K weighted-pair
+audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

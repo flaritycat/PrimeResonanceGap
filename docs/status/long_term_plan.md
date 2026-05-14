@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 310
-Post-Reflective_1 solving count: 129
-Long-term-plan count: 123
+Latest completed module: 311
+Post-Reflective_1 solving count: 130
+Long-term-plan count: 124
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -2724,4 +2724,53 @@ Module 311:
   perform WeightedColumnPairEnergyAudit_311(P_minor^0), testing whether the
   weighted coefficient-pair criterion gives a smaller route than column
   multiplicity or only repeats current Parseval/Cauchy ceilings.
+```
+
+Module 311 completed:
+
+```text
+WeightedColumnPairEnergyAudit_311(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+EnergySquareWPairCeiling_311,
+FourthPowerWPairCeiling_311:
+  STRUCTURAL / EXTRACTION.
+
+WeightedCurrentToolsClose_311:
+  FALSE / BLOCKED.
+
+WeightedColumnSecondMomentTarget_311(P_minor^0):
+  OPEN.
+
+WeightedPairAutocorrelationExpansion_312(P_minor^0):
+  OPEN next target.
+```
+
+The audit shows that both natural weighted routes available from current
+inputs still return the same ceiling-scale bound:
+
+```text
+WOff_311 <= D (E2_minor^0)^2,
+WOff_311 <= C_D D F4_minor^0 <= C_D^2 D L_{N,w}^8.
+```
+
+After the Module 310 threshold conversion, these estimates do not give a
+uniform column-pair gain across the declared threshold grid. The next useful
+move is therefore not another Cauchy/Parseval repackaging, but the exact
+weighted pair autocorrelation expansion.
+
+The next cadence checkpoints are unchanged:
+
+```text
+Fourteenth plan update:  Module 313
+Next reflective log:     Module 341
+```
+
+Continue with:
+
+```text
+Module 312:
+  perform WeightedPairAutocorrelationExpansion_312(P_minor^0), expanding
+  WPair(d_1,d_2) into exact same-frequency autocorrelation kernels before
+  any further weighted column-pair gain claim.
 ```
