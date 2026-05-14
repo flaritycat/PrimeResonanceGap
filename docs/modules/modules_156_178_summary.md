@@ -1,4 +1,4 @@
-# Modules 156-265 summary
+# Modules 156-266 summary
 
 ## 156
 
@@ -666,7 +666,15 @@ Kernel absolute budget versus signed kernel cancellation; defines
 cancellation cannot be exported to `|W_M|` boundary, collision, or transfer
 rows.
 
+## 266
+
+Uniformity audit for the Phase H admissible family; defines
+`UniformityLedger_266(P_adm)`, requiring the same W-limit order,
+denominator/CRT ranges, projection boundary, kernel truncation, cutoff,
+W-residue, dyadic ranges, selector class, and supremum closure before any
+row from the absolute or signed fork can be used over `P_adm`.
+
 ## Next
 
-Module 266: W-limit, denominator, CRT range, projection-boundary, and dyadic
-uniformity over `P_adm`.
+Module 267: proof-or-blocked verdict for
+`ProjectedModelNeutralityGate_260(P_adm)`.

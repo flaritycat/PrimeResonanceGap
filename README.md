@@ -7,15 +7,16 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 265
+Latest module frontier: Module 266
 Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 265 audits the kernel fork for Phase H: either pay every generic,
-collision, overflow, tail, and range term with `|W_M|`, or prove a same-family
-signed theorem for the exact `W_M` average. Both kernel budgets remain open.
+Module 266 audits whether the Phase H rows are uniform over the same
+`P_adm` family: W-limit order, denominator/CRT ranges, projection boundary,
+kernel truncation, cutoff, W-residue, dyadic ranges, and selector class. The
+next step is a proof-or-blocked verdict for projected model neutrality.
 
 ## Global status
 

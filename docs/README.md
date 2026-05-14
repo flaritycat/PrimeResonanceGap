@@ -7,7 +7,7 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 265
+Latest module frontier: Module 266
 Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -33,6 +33,7 @@ modules/
   module_263_signed_inclusion_exclusion_expansion.md
   module_264_collision_diagonal_strata.md
   module_265_kernel_absolute_vs_signed.md
+  module_266_uniformity_admissible_family.md
   modules_156_178_summary.md
 
 reviews/

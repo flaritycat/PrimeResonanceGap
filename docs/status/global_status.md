@@ -5,7 +5,7 @@ This file is the first status document Codex should read.
 Current frontier:
 
 ```text
-Latest module frontier: Module 265
+Latest module frontier: Module 266
 Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -63,6 +63,9 @@ Latest project-wide review:
 - A kernel-budget fork audit separating `KernelAbsBudget_265` from
   `KernelSignedBudget_265`, with no transfer from signed estimates to
   absolute rows.
+- A uniformity ledger for Phase H requiring the same W-limit order,
+  denominator/CRT ranges, projection boundary, kernel truncation, cutoff,
+  W-residue, dyadic ranges, and selector class over `P_adm`.
 
 ## What the project has not proved
 
@@ -80,6 +83,8 @@ Latest project-wide review:
   full-cover signed collision estimate.
 - `KernelAbsBudget_265`, `KernelSignedBudget_265`, `KernelAbsNeutral_260`, or
   `KernelSignedNeutral_260`.
+- `UniformityLedger_266(P_adm)` or any of its W-order, denominator,
+  projection, cutoff, W-residue, dyadic, selector, or supremum-closure rows.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -154,8 +159,7 @@ Phase H challenge:
     continues Phase H only through narrowed proof-or-blocked subrow tests
 
 Next Phase H check:
-  Module 266 W-limit, denominator, CRT range, projection-boundary, and dyadic
-  uniformity over P_adm
+  Module 267 proof-or-blocked verdict for ProjectedModelNeutralityGate_260
 ```
 
 Status: **CONDITIONAL**.

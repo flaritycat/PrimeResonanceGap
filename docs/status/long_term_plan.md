@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 265
-Post-Reflective_1 solving count: 84
-Long-term-plan count: 78
+Latest completed module: 266
+Post-Reflective_1 solving count: 85
+Long-term-plan count: 79
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -735,6 +735,10 @@ Expected work:
   barred from proving absolute rows;
 - Module 266: audit W-limit, denominator, CRT range, projection-boundary, and
   dyadic uniformity requirements for model neutrality over `P_adm`;
+  completed as `UniformityLedger_266(P_adm)`, requiring same-family W-limit,
+  denominator/CRT, projection-boundary, kernel-truncation, cutoff,
+  W-residue, dyadic, selector, and supremum-closure rows before either Phase H
+  fork can be used over `P_adm`;
 - Module 267: give a proof-or-blocked verdict for projected model neutrality:
   conditional local/model-side, mixed, endpoint-strength, or false/blocked as
   a shortcut;
@@ -887,31 +891,43 @@ KernelBudgetAudit_265(P_adm)
   without transferring signed cancellation to absolute rows.
 ```
 
+Module 266 completed the uniformity audit:
+
+```text
+UniformityLedger_266(P_adm)
+  requires W-limit, denominator/CRT, projection, kernel,
+  cutoff, W-residue, dyadic, selector, and supremum closure
+  in the same admissible family.
+```
+
 Continue with:
 
 ```text
-Module 266: W-limit, denominator, CRT range, projection-boundary, and dyadic
-uniformity over P_adm.
+Module 267: proof-or-blocked verdict for
+ProjectedModelNeutralityGate_260(P_adm).
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, not `PROVEN`.
-Module 266 should test whether all Phase H rows are uniform in the same
-admissible family:
+Module 267 should decide whether the Phase H model-neutrality branch is:
 
 ```text
-fixed w, then N -> infinity, then w -> infinity,
-D,R,eta and dyadic shells,
-denominator and CRT ranges,
-projection boundary and kernel truncation,
-cutoff and W-residue conventions,
-selector class,
-rho in P_adm(N,w).
+conditional local/model-side,
+mixed,
+endpoint-strength,
+or false / blocked as a shortcut.
 ```
 
-It should decide which rows are local, mixed, endpoint-strength, or blocked
-when the required constants are made uniform over `P_adm`.
+It should explicitly classify both forks:
 
-Module 266 should preserve these statuses:
+```text
+absolute fork:
+  KernelAbsBudget_265 + AbsCollStrataGate_264 + UniformityLedger_266;
+
+signed fork:
+  KernelSignedBudget_265 + SignedCoverGate_264 + UniformityLedger_266.
+```
+
+Module 267 should preserve these statuses:
 
 ```text
 ProjectedModelNeutrality_3^major: not proved,
@@ -920,7 +936,7 @@ ProjectedMajorTarget_3^B: not proved,
 ResCube_3^sharp: OPEN.
 ```
 
-Do not use Module 266 to prove or claim, or to assume as input:
+Do not use Module 267 to prove or claim, or to assume as input:
 
 ```text
 ProjectedMajorTarget_3^B,
