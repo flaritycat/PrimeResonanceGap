@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 263
-Post-Reflective_1 solving count: 82
-Long-term-plan count: 76
+Latest completed module: 264
+Post-Reflective_1 solving count: 83
+Long-term-plan count: 77
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -722,6 +722,10 @@ Expected work:
 - Module 264: audit collision and diagonal strata inside projected
   model-neutrality, separating exact local-model collisions from removable
   collision-defect routes;
+  completed as `CollStrataAudit_264(P_adm)`, splitting the collision row into
+  the absolute route `AbsCollStrataGate_264 => CollNeutral_260` and the
+  signed full-cover route `SignedCoverGate_264 => CollSigned_263=o_W(1)`,
+  while recording that the signed route is not the absolute defect row;
 - Module 265: audit kernel signed-cancellation versus absolute-mass
   requirements for model neutrality, including the risk that replacing `W_M`
   by `|W_M|` loses the only available cancellation;
@@ -861,28 +865,37 @@ SignedSubsetExpansion_263(P_adm)
   and names AvgFaceCompat_263(P_adm) as still open.
 ```
 
+Module 264 completed the collision-strata audit:
+
+```text
+CollStrataAudit_264(P_adm)
+  separates structural zero and projected diagonal strata from
+  large-prime congruence collisions,
+  and splits the collision row into absolute and signed routes.
+```
+
 Continue with:
 
 ```text
-Module 264: collision and diagonal strata for CollSigned_263 / CollNeutral_260.
+Module 265: kernel absolute budget versus signed kernel cancellation.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`, not `PROVEN`.
-Module 264 should start from the exact signed remainder:
+Module 265 should test whether the absolute route can pay the kernel costs:
 
 ```text
-CollSigned_263
-  = sum_{S subset Lambda_8} (-1)^(8-|S|)
-      (1/D) sum_d E_{h,k,t} W_M(t)
-        (Theta_{w,S}^proj-Theta_{w,|S|}^gen).
+A_W(M) eps_gen(w),
+StructAbs_264,
+E_abs B_w^red,
+E_abs exp(C B_w^red) B_w^red 1_{B_w^red>1},
 ```
 
-It should separate structural zero strata from large-prime congruence
-collisions, decide which pieces belong to the exact local model and which
-pieces are removable collision defects, and state whether any signed
-cancellation is genuinely model-side.
+or whether Phase H is relying on signed cancellation in `W_M`. If signed
+kernel cancellation is used, it must be stated as a same-family
+`KernelSignedNeutral` or signed collision row, not imported from boundary
+absolute estimates.
 
-Module 264 should preserve these statuses:
+Module 265 should preserve these statuses:
 
 ```text
 ProjectedModelNeutrality_3^major: not proved,
@@ -891,7 +904,7 @@ ProjectedMajorTarget_3^B: not proved,
 ResCube_3^sharp: OPEN.
 ```
 
-Do not use Module 264 to prove or claim, or to assume as input:
+Do not use Module 265 to prove or claim, or to assume as input:
 
 ```text
 ProjectedMajorTarget_3^B,

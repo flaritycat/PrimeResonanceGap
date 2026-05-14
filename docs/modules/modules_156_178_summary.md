@@ -1,4 +1,4 @@
-# Modules 156-263 summary
+# Modules 156-264 summary
 
 ## 156
 
@@ -648,7 +648,15 @@ into subset-size layers `A_s^P`, isolates the generic size-only term
 one-point, pair, rectangle, and full-layer face identities, and identifies
 `AvgFaceCompat_263(P_adm)` as an open averaged compatibility row.
 
+## 264
+
+Collision and diagonal strata audit for `CollSigned_263`; defines
+`CollStrataAudit_264(P_adm)`, separates structural zero, projected diagonal,
+and large-prime congruence strata, gives the conditional absolute route
+`AbsCollStrataGate_264 => CollNeutral_260`, and gives a separate signed
+full-cover route `SignedCoverGate_264 => CollSigned_263=o_W(1)` without
+identifying it with the absolute collision row.
+
 ## Next
 
-Module 264: collision and diagonal strata for `CollSigned_263` /
-`CollNeutral_260`.
+Module 265: kernel absolute budget versus signed kernel cancellation.

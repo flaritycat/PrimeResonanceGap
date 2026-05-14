@@ -5,7 +5,7 @@ This file is the first status document Codex should read.
 Current frontier:
 
 ```text
-Latest module frontier: Module 263
+Latest module frontier: Module 264
 Active phase: Phase H, projected model-neutrality feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -57,6 +57,9 @@ Latest project-wide review:
 - A signed inclusion-exclusion expansion of `NeutralErr_major^P` into subset
   layers, generic size-only cancellation, exact lower-face identities, and the
   open averaged compatibility row `AvgFaceCompat_263`.
+- A collision and diagonal strata audit separating the absolute route
+  `AbsCollStrataGate_264 => CollNeutral_260` from the signed full-cover route
+  `SignedCoverGate_264 => CollSigned_263=o_W(1)`.
 
 ## What the project has not proved
 
@@ -70,6 +73,8 @@ Latest project-wide review:
   `ProjectedModelNeutrality_3^major(P_adm)`.
 - `SignedSubsetExpansion_263` as any decay estimate, `CollSigned_263=o_W(1)`,
   or `AvgFaceCompat_263(P_adm)`.
+- `AbsCollStrataGate_264`, `SignedCoverGate_264`, `CollNeutral_260`, or the
+  full-cover signed collision estimate.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -144,7 +149,7 @@ Phase H challenge:
     continues Phase H only through narrowed proof-or-blocked subrow tests
 
 Next Phase H check:
-  Module 264 collision and diagonal strata for CollSigned_263 / CollNeutral_260
+  Module 265 kernel absolute budget versus signed kernel cancellation
 ```
 
 Status: **CONDITIONAL**.
