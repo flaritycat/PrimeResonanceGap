@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 274
+Latest module frontier: Module 275
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -101,6 +101,10 @@ Latest project-wide review:
   threshold-buffer, arc-boundary, prime-power/W-residue, cutoff/truncation,
   selector-transfer, and dyadic-uniformity rows needed before the candidate
   transverse gate can be used.
+- A transverse degeneracy routing audit `TransDegeneracyAudit_275`, sending
+  row diagonals, column diagonals, major-difference terms, physical diagonals,
+  boundary/cutoff cases, W-residue artifacts, and selector changes to named
+  rows and isolating the open `DegFreePhaseGate_275` remainder.
 
 ## What the project has not proved
 
@@ -132,6 +136,7 @@ Latest project-wide review:
 - `PhaseKernelBound_273`, `TransverseIncidenceGate_273`, or the
   lambda-summed smallness of `Gamma_trans^273`.
 - `TransGateSideRows_274` or any of its compatibility rows.
+- `DegFreePhaseGate_275` or smallness of any routed transverse degeneracy row.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -241,10 +246,13 @@ Completed Phase I compatibility audit:
     names the side rows required before the candidate transverse gate can be
     used in the active minor-arc environment
 
+Completed Phase I degeneracy audit:
+  TransDegeneracyAudit_275
+    routes low-dimensional transverse degeneracies to named rows and leaves
+    DegFreePhaseGate_275 open
+
 Next scheduled check:
-  Module 275 test whether low-dimensional transverse degeneracies reduce to
-  already named bad-shift, persistent-frequency, major-arc leakage, or
-  boundary rows
+  Module 276 give a proof-or-blocked verdict for the transverse incidence gate
 ```
 
 Status: **CONDITIONAL**.

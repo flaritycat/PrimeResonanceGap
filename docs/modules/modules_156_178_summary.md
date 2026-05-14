@@ -1,4 +1,4 @@
-# Modules 156-274 summary
+# Modules 156-275 summary
 
 ## 156
 
@@ -739,8 +739,15 @@ Compatibility audit for the candidate transverse gate; defines
 boundaries, prime-power/W-residue artifacts, cutoff/truncation, selector
 transfer, and dyadic uniformity.
 
+## 275
+
+Degeneracy routing inside the transverse phase equations; defines
+`TransDegeneracyAudit_275`, routing shift diagonals, frequency diagonals,
+major-difference terms, physical diagonals, boundary/cutoff cases, W-residue
+artifacts, and selector changes to named rows while isolating the open
+`DegFreePhaseGate_275` remainder.
+
 ## Next
 
-Module 275: test whether low-dimensional transverse degeneracies reduce to
-bad-shift, persistent-frequency, major-arc leakage, or boundary rows already
-named.
+Module 276: give a proof-or-blocked verdict for the transverse incidence gate:
+local/model-side, mixed, endpoint-strength, or false / blocked as a shortcut.

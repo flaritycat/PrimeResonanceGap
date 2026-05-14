@@ -7,15 +7,16 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 274
+Latest module frontier: Module 275
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 274 audits the side rows needed before `TransverseIncidenceGate_273`
-can be used: W-limit order, threshold buffers, arc boundaries, prime-power
-and W-residue artifacts, cutoffs, selector transfer, and dyadic uniformity.
+Module 275 classifies low-dimensional transverse degeneracies. Row diagonals,
+column diagonals, major-difference terms, boundary/cutoff cases, W-residue
+artifacts, and selector changes are routed to named open rows; the genuinely
+transverse remainder remains open as `DegFreePhaseGate_275`.
 
 ## Global status
 

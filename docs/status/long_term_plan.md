@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 274
-Post-Reflective_1 solving count: 93
-Long-term-plan count: 87
+Latest completed module: 275
+Post-Reflective_1 solving count: 94
+Long-term-plan count: 88
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -843,6 +843,8 @@ Expected work:
 - Module 275: test whether low-dimensional degeneracies in the transverse
   equations reduce to bad-shift, persistent-frequency, major-arc leakage, or
   boundary rows already named;
+  completed as `TransDegeneracyAudit_275`, routing low-dimensional
+  degeneracies to named open rows and isolating `DegFreePhaseGate_275`;
 - Module 276: give a proof-or-blocked verdict for the transverse incidence
   gate: local/model-side, mixed, endpoint-strength, or false / blocked as a
   shortcut;
@@ -1151,7 +1153,7 @@ TransGateCompatAudit_274
   TransverseIncidenceGate_273 can be used in the active minor-arc environment.
 ```
 
-Continue with:
+Module 274 selected:
 
 ```text
 Module 275:
@@ -1159,7 +1161,24 @@ Module 275:
   persistent-frequency, major-arc leakage, or boundary rows already named.
 ```
 
-Module 275 should preserve these statuses:
+Module 275 completed:
+
+```text
+TransDegeneracyAudit_275
+  routes row diagonals, column diagonals, major-difference terms, physical
+  diagonals, boundary/cutoff cases, W-residue artifacts, and selector changes
+  to named rows, leaving DegFreePhaseGate_275 open.
+```
+
+Continue with:
+
+```text
+Module 276:
+  give a proof-or-blocked verdict for the transverse incidence gate:
+  local/model-side, mixed, endpoint-strength, or false / blocked as a shortcut.
+```
+
+Module 276 should preserve these statuses:
 
 ```text
 NarrowMinorArc_3^B,
@@ -1170,6 +1189,7 @@ AvailableToolClosure_272,
 PhaseKernelBound_273,
 TransverseIncidenceGate_273,
 TransGateSideRows_274,
+DegFreePhaseGate_275,
 MinorArcTransfer_3^B,
 ProjectedMajorTarget_3^B,
 WProjectedLocalMatch_3^major,
