@@ -1,4 +1,4 @@
-# Modules 156-221 summary
+# Modules 156-222 summary
 
 ## 156
 
@@ -294,6 +294,15 @@ selector transfer, frozen-to-moving transfer, and deterministic extraction,
 and warns that the next work should consolidate rather than multiply package
 names.
 
+## 222
+
+Consolidated selector-transfer dependency graph; defines
+`SelectorTransferGraph_3^consol` as a structural ledger merging the Module 216
+matrix with Modules 218-220, classifying rows as local, mixed,
+endpoint-strength, or blocked-as-shortcut, folding duplicate names, and naming
+one genuinely supported boundary/prefix residual fourth-moment row as the
+smallest honest next analytic target.
+
 ## Next
 
-Module 222: Consolidate the selector-transfer dependency graph after Reflective_2.
+Module 223: Fourth 9-iteration plan update.

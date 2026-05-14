@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 221
-Post-Reflective_1 solving count: 40
-Long-term-plan count: 34
+Latest completed module: 222
+Post-Reflective_1 solving count: 41
+Long-term-plan count: 35
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -324,6 +324,11 @@ Expected work:
   statuses and setting the next reflection expectation around Module 261;
 - Module 222: consolidate the selector-transfer dependency graph after the
   reflection;
+  completed as `SelectorTransferGraph_3^consol`, a structural consolidation
+  of the Module 216 matrix with Modules 218-220, classifying rows as local,
+  mixed, endpoint-strength, or blocked-as-shortcut, merging duplicate row
+  names, and identifying a genuinely supported boundary/prefix residual
+  fourth-moment row as the smallest honest next analytic target;
 - Module 223: perform the fourth 9-iteration plan update.
 
 Success criterion: every future endpoint statement has an explicit selector
@@ -396,13 +401,21 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 222: Consolidate the selector-transfer dependency graph after Reflective_2.
+Module 223: Fourth 9-iteration plan update.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 221 completed `Reflective_2.md`, the required 40-iteration memory log
-after `Reflective_1.md`. The reflection's main verdict was:
+Module 222 completed the consolidated selector-transfer dependency graph. The
+verdict was:
+
+```text
+Do not add another selector-transfer package before proving one genuinely
+supported boundary/prefix residual fourth-moment row, or before deciding that
+the selector-transfer branch should be redirected.
+```
+
+Module 221 had already warned:
 
 ```text
 Modules 179-220 clarified the endpoint dependency graph and blocked several
@@ -410,24 +423,16 @@ false upgrades, but they did not solve the endpoint; the next work should
 consolidate rather than keep multiplying package names.
 ```
 
-Module 220 had already shown:
+The next iteration is the fourth 9-iteration plan update after the long-term
+plan was adopted. It should revise Phase E using the Module 222 graph. In
+particular it should decide:
 
 ```text
-Bernoulli expectation, Bernoulli high-probability, or finite-stage density
-control does not become an actual fixed-alpha selector theorem without
-deterministic extraction in the same residual fourth-moment norms.
+whether the next target window attacks a fixed boundary/prefix row,
+whether endpoint-equivalence auditing should begin immediately,
+which selector-transfer rows are endpoint-strength and should be paused,
+which duplicate row names should be retired from future modules.
 ```
 
-The next module should consolidate the selector-transfer dependency graph
-after the reflection. In particular it should:
-
-```text
-combine the Module 216 matrix with Modules 218-220,
-mark each transfer row as local, mixed, endpoint-strength, or blocked,
-record which rows feed major arcs, minor arcs, and full nonzero transfer,
-identify duplicate names that should be merged,
-name the smallest honest next analytic target.
-```
-
-It must not introduce a new transfer package unless it removes ambiguity or
-strictly consolidates existing dependencies.
+It must preserve all open endpoint statuses and should not turn the plan
+update itself into an analytic proof.
