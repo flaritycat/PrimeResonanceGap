@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 205
-Post-Reflective_1 solving count: 24
-Long-term-plan count: 18
+Latest completed module: 206
+Post-Reflective_1 solving count: 25
+Long-term-plan count: 19
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -207,6 +207,9 @@ Expected work:
 - Module 206: state the exact projected major-arc target for the residual
   derivative product, including Fourier projection, dyadic domains, and
   zero-mode convention;
+  completed as `ProjectedMajorTarget_3^B`, with the Fourier target,
+  physical projected cube, `Omega_w^proj` model object, and boundary-error
+  slots separated from the still-open matching and neutrality estimates;
 - Module 207: define the exact major-arc local model, including the required
   `Omega_w` factor and its relation to `kappa_w`, `Sigma_w`, and
   higher-shift local factors;
@@ -314,30 +317,28 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 206: Exact projected major-arc target for the residual derivative
-product.
+Module 207: Exact projected major-arc local model and `Omega_w^proj` factors.
 ```
 
 Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 205 paused Phase B with two named open dependencies:
+Module 206 fixed the projected major-arc target:
 
 ```text
-NarrowMinorArc_3^B(D;R,eta),
-MinorArcTransfer_3^B(D;R,eta;w).
+ProjectedMajorTarget_3^B(D;R,eta;P_M).
 ```
 
-The next module begins Phase C. It should state the exact major-arc projected
-target before trying to estimate it. In particular it should define:
+The next module should define the exact local singular model used in
+`Omega_w^proj`. In particular it should specify:
 
 ```text
-B_d,
-the major-arc projection,
-the dyadic d-average,
-the zero-frequency convention,
-the target local model object to be called Omega_w,
-all averaging domains and boundary terms.
+Theta_{w,S}^proj(d,h,k;t),
+the local prime factor for each p>w,
+the residual inclusion-exclusion formula for Omega_w^proj,
+the generic collision-free factor,
+how kappa_w and Sigma_w appear as lower-dimensional marginals,
+why Sigma_w(d,h) is not kappa_w(d)^2 pointwise.
 ```
 
-In particular, it must not claim local-model matching before `Omega_w` and the
-projection domains are exactly stated.
+In particular, it must not replace the projected residual model by the
+unprojected `Omega_w(d,h,k)` or by the full eight-form model alone.

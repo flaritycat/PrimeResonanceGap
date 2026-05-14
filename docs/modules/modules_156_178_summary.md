@@ -169,7 +169,13 @@ Second 9-iteration plan update; pauses Phase B after extracting
 `NarrowMinorArc_3^B` and `MinorArcTransfer_3^B` as named open dependencies,
 then pivots the next window to projected major-arc local-model matching.
 
+## 206
+
+Exact projected major-arc target for the residual derivative product; defines
+`ProjectedMajorTarget_3^B`, the Fourier and physical projected-cube forms, the
+nonzero-mode convention, the `Omega_w^proj` model object, and the required
+boundary-error slots without claiming matching or neutrality.
+
 ## Next
 
-Module 206: Exact projected major-arc target for the residual derivative
-product.
+Module 207: Exact projected major-arc local model and `Omega_w^proj` factors.
