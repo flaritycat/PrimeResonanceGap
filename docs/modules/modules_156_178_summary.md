@@ -1,4 +1,4 @@
-# Modules 156-246 summary
+# Modules 156-247 summary
 
 ## 156
 
@@ -503,7 +503,15 @@ side estimates needed with `KernelAvgStrength_245` to conditionally recover
 `OnePointBIHL_242`, classifying each row as zero by convention, local, mixed,
 endpoint-strength, or open without proving any row.
 
+## 247
+
+Fourth 15-iteration plan challenge for the one-point prototype; defines
+`PlanChallenge_4_247` and narrows Phase F2 to a proof-or-blocked test through
+Modules 248-249, with Module 248 required to compare actual available tools
+against `OPMeanErr_244` and the side rows before any further abstraction is
+added.
+
 ## Next
 
-Module 247: perform the fourth 15-iteration plan challenge for the one-point
-prototype branch.
+Module 248: compare the one-point prototype against available first-moment,
+W-tricked PNT, short-interval, side-row, and ordinary pair-BDH tools.

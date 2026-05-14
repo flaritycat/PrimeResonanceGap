@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 246
-Post-Reflective_1 solving count: 65
-Long-term-plan count: 59
+Latest completed module: 247
+Post-Reflective_1 solving count: 66
+Long-term-plan count: 60
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -546,6 +546,10 @@ Expected work:
   endpoint-strength, or open and composing it with `KernelAvgStrength_245`
   without proving the prototype;
 - Module 247: perform the fourth 15-iteration plan challenge;
+  completed as `PlanChallenge_4_247`, with the verdict to continue Phase F2
+  only through Modules 248-249 in narrowed proof-or-blocked mode, because the
+  one-point prototype has exposed a smaller diagnostic target but not a proved
+  smaller theorem;
 - Module 248: compare the one-point prototype against available
   first-moment tools, W-tricked prime number theorem input, short-interval
   limitations, and ordinary pair-BDH shortcuts;
@@ -600,34 +604,48 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 247: perform the fourth 15-iteration plan challenge for the one-point
-prototype branch.
+Module 248: compare the one-point prototype against available first-moment,
+W-tricked PNT, short-interval, side-row, and ordinary pair-BDH tools.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION`.
+Expected status: `STRUCTURAL / EXTRACTION`, `CONDITIONAL`, or
+`FALSE / BLOCKED`, depending on the tool comparison.
 
-Module 246 completed the side-row audit:
+Module 247 completed the fourth 15-iteration challenge:
+
+```text
+PlanChallenge_4_247:
+  Continue Phase F2 through Modules 248-249 only, in narrowed
+  proof-or-blocked mode.
+```
+
+Module 248 should test whether the active reduction:
 
 ```text
 KernelAvgStrength_245(s0,D0,rho0)
   + OnePointSideRows_246(s0,D0,rho0)
-    => OnePointBIHL_242(s0,D0,rho0).
+    => OnePointBIHL_242(s0,D0,rho0)
 ```
 
-The next iteration brings the long-term-plan counter to 60, so the 15-step
-challenge cadence is due. Module 247 should question Phase F2 before adding
-more one-point machinery.
+can be supported by tools that are genuinely smaller than the residual
+endpoint.
 
-It should ask:
+It should compare:
 
 ```text
-Are we relying on a convenient boundary mean theorem?
-Are the side rows actually local, or are they quietly endpoint-strength?
-Does OPMeanErr_244 require too-short an interval PNT or kernel smoothing?
-Has the one-point prototype exposed a smaller target, or merely renamed the
-projected residual endpoint?
-Should Phase F2 continue to Module 248, narrow, or redirect?
+ordinary first-moment Hardy-Littlewood,
+full-interval W-tricked PNT,
+short-interval W-tricked PNT ranges,
+boundary-length majorants,
+Holder routes with kernel integrability,
+prime-power sparsity,
+W-residue exactness,
+normalization / zero-mode control,
+ordinary pair-BDH.
 ```
+
+It must state which tools fail, which are conditional, and which would be
+local if their exact hypotheses were available.
 
 The prototype remains inside the fixed-row discipline:
 
