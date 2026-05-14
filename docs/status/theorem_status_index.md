@@ -36,6 +36,8 @@ FALSE / BLOCKED
 | `TransIncBound_269` | OPEN | Non-tautological `Gamma_trans`, threshold compatibility, same selector/model class, dyadic/W-limit discipline | `module_269_transverse_incidence_object.md` | No |
 | `ThresholdRemovalAudit_270` | STRUCTURAL / EXTRACTION | Threshold-only diagnostic; derives tension between removal thresholds and trivial transverse ceilings | `module_270_threshold_removal_audit.md` | Only as an audit formula |
 | `ThresholdOnlyClosure_270` | OPEN | External `ShiftMoment_{q,s}` and `MultMoment_{r,s}` estimates plus compatible lambda-summed threshold window | `module_270_threshold_removal_audit.md` | No |
+| `TransPhaseExpansion_271` | STRUCTURAL / EXTRACTION | Exact expansion of transverse coefficients into shifted `f_s`-correlation kernels | `module_271_transverse_phase_equations.md` | Only as an algebraic identity |
+| `PhaseIncidenceGate_271` | OPEN | Same-family estimates for restricted minor-arc phase kernels, same-frequency pairs, same-shift pairs, and rectangles | `module_271_transverse_phase_equations.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

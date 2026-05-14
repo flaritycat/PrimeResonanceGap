@@ -7,16 +7,16 @@ This is a research ledger, proof-map, conditional theorem architecture, endpoint
 ## Current frontier
 
 ```text
-Latest module frontier: Module 270
+Latest module frontier: Module 271
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
-Module 270 audits the bad-shift and persistent-frequency removals after
-`TransIncCore_269`. It defines the threshold-only feasibility test
-`ThresholdOnlyClosure_270` and records that row/column ceilings alone do not
-prove the transverse estimate in the current ledger.
+Module 271 expands transverse large Fourier coefficients into exact shifted
+`f_s`-correlation kernels. It records that phase equations appear only after
+specified frequency summation; restricted minor-arc kernels cannot be replaced
+by full-frequency diagonal equations.
 
 ## Global status
 

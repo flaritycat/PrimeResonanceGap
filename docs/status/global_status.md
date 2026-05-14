@@ -12,7 +12,7 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 270
+Latest module frontier: Module 271
 Active phase: Phase I, minor-arc transverse-incidence feasibility window
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -88,6 +88,9 @@ Latest project-wide review:
   tension between large thresholds needed for bad-shift/persistent-frequency
   removals and small thresholds needed for trivial transverse row/column
   ceilings.
+- A transverse phase-equation extraction `TransPhaseExpansion_271`, expanding
+  same-frequency pairs, same-shift pairs, and rectangles into exact shifted
+  `f_s`-correlation kernels.
 
 ## What the project has not proved
 
@@ -112,6 +115,8 @@ Latest project-wide review:
   `NarrowMinorArc_3^B`, or `MinorArcTransfer_3^B`.
 - `ThresholdOnlyClosure_270`, `ShiftMoment_{q,s}` estimates, or
   `MultMoment_{r,s}` estimates.
+- `PhaseIncidenceGate_271` or any replacement of restricted minor-arc kernels
+  by full-frequency diagonal equations.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -200,9 +205,14 @@ Completed Phase I threshold audit:
     shows row/column ceilings close the transverse term only under the still
     open ThresholdOnlyClosure_270 moment-and-threshold window
 
+Completed Phase I phase expansion:
+  TransPhaseExpansion_271
+    expands transverse pairs and rectangles into exact shifted f_s-correlation
+    kernels, without replacing restricted minor-arc kernels by diagonal
+    equations
+
 Next scheduled check:
-  Module 271 expand transverse Fourier coefficients into shifted
-  f-correlations and phase equations
+  Module 272 compare available tools against the exact phase-kernel objects
 ```
 
 Status: **CONDITIONAL**.
