@@ -34,7 +34,8 @@ flowchart TD
   AdaptiveShellP0["AdaptiveShellVerdict_285<br/>current tools BLOCKED; gain OPEN"]
   PlanUpdate11["PlanUpdate_11_286<br/>Phase K selected"]
   DirectTTStar["DirectShellTTStarAudit_287<br/>audit STRUCTURAL; cross gain OPEN"]
-  SelectionComplexity["SelectionComplexityAudit_288<br/>next diagnostic"]
+  SelectionComplexity["SelectionComplexityAudit_288<br/>audit STRUCTURAL; complexity gain OPEN"]
+  UniformFiberStress["UniformFiberStress_289<br/>next diagnostic"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -91,7 +92,9 @@ flowchart TD
   DirectTTStar --> AdaptiveShellP0
   DirectTTStar --> PhaseKernel0
   DirectTTStar --> SelectionComplexity
+  SelectionComplexity --> UniformFiberStress
   SelectionComplexity --> AdaptiveShellP0
+  UniformFiberStress --> AdaptiveShellP0
   MinTransFamily --> TransGateCompat
   MinTransFamily --> TransVerdict
   SelectorTransfer --> ResCube
@@ -148,3 +151,7 @@ flowchart TD
 - `DirectShellTTStarAudit_287` isolates `DirectShellCrossTermGain_287` as
   open; Cauchy/Bessel, fixed-set, full-orthogonality, and endpoint-derived
   closures remain blocked.
+- `SelectionComplexityAudit_288` records that raw union selection,
+  fixed-threshold-to-fixed-fiber transfer, and favorable phase selection do
+  not supply `SelectionComplexityGain_288`; row/column graph entropy is only a
+  diagnostic until a uniform theorem is proved.

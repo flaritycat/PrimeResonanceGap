@@ -88,7 +88,8 @@ before any Phase J kernel bound can be used. The latest audit isolates the
 threshold-budget barriers, records that the current adaptive-shell tool
 package is blocked, and now starts a narrower triage of possible new
 adaptive-shell inputs. The first Phase K audit isolates the direct-shell
-`TT*` cross-term gain as open.
+`TT*` cross-term gain as open; the second shows that row/column caps do not
+by themselves supply a low-complexity selection theorem.
 
 ## Whole Project Map
 
@@ -288,7 +289,7 @@ The current active phase is **Phase K: adaptive-shell gain triage**.
 Current frontier:
 
 ```text
-Latest module frontier: Module 287
+Latest module frontier: Module 288
 Active phase: Phase K, adaptive-shell gain triage after the Phase J block
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
@@ -343,18 +344,24 @@ Module 287:
   diagonal gives only energy, Cauchy/Bessel returns row/column ceilings,
   fixed-set and full-orthogonality shortcuts are blocked, and
   DirectShellCrossTermGain_287 remains open.
+
+Module 288:
+  audited selection complexity for the adaptive shell fibers S_d(J). Raw
+  union bounds are too large, row/column graph entropy is diagnostic only,
+  fixed thresholds do not make fibers predetermined, and
+  SelectionComplexityGain_288 remains open.
 ```
 
 The next planned module is:
 
 ```text
-Module 288:
-  audit selection complexity for the adaptive shell class S_d(J).
+Module 289:
+  stress-test the uniform-fiber route over the declared row/column class.
 ```
 
-The next audit should test whether the shell class has any concrete entropy,
-stopping-time, or sparse-domination structure compatible with the
-lambda-summed target.
+The next audit should decide whether a theorem uniform over every
+row/column-admissible fiber family is plausible, or whether it is already too
+strong without extra structure.
 
 ## What Is Proved?
 
@@ -545,6 +552,9 @@ wins.
 | `DirectShellTTStarAudit_287(P_minor^0)` | STRUCTURAL / EXTRACTION | Direct-shell `TT*` cross terms routed and shortcuts blocked |
 | `DirectShellCrossTermGain_287` | OPEN | Uniform cross-term gain for adversarial `omega` and data-dependent `J` missing |
 | `DirectShellTTStarClosure_287` | OPEN | Would require cross-term gain plus side, degeneracy, and threshold rows |
+| `SelectionComplexityAudit_288(P_minor^0)` | STRUCTURAL / EXTRACTION | Adaptive shell selection complexity audited |
+| `SelectionComplexityGain_288` | OPEN | No entropy, stopping-time, sparse, or VC theorem supplied for `S_d(J)` |
+| Raw union selection for `S_d(J)` | FALSE / BLOCKED | Selection class too large for harmless logarithmic loss |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

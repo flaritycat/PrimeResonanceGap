@@ -1,4 +1,4 @@
-# Modules 156-287 summary
+# Modules 156-288 summary
 
 ## 156
 
@@ -841,7 +841,16 @@ same-frequency, and fully transverse cross terms, blocks Cauchy/Bessel,
 fixed-set, full-orthogonality, and endpoint-derived shortcuts, and leaves
 `DirectShellCrossTermGain_287` open.
 
+## 288
+
+Selection-complexity audit for adaptive shell fibers inside `P_minor^0`;
+defines `SelectionComplexityAudit_288(P_minor^0)`, records that raw union
+selection, row/column graph entropy, fixed thresholds, and favorable phase
+selection do not currently yield a lambda-summable selection theorem, and
+leaves `SelectionComplexityGain_288`, `SelectionTransfer_280`, and
+`AdaptiveShellGainP0_285` open.
+
 ## Next
 
-Module 288: audit selection complexity for the adaptive shell class
-`S_d(J)`.
+Module 289: stress-test the uniform-fiber route over the declared row/column
+class.
