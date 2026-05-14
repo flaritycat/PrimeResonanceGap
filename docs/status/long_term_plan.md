@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 234
-Post-Reflective_1 solving count: 53
-Long-term-plan count: 47
+Latest completed module: 235
+Post-Reflective_1 solving count: 54
+Long-term-plan count: 48
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -447,6 +447,10 @@ Expected work:
   inside the fixed boundary interval theorem;
 - Module 235: isolate `KernelAbsTail_225(P_M,T0)` and the absolute kernel-mass
   budget needed by the fixed row;
+  completed as `KernelTailBudget_235(P_M,T0;s0,D0,rho0)`, separating
+  `A_W(M)=O_W(1)` and `Tail_W(T0)=o_W(1)` from the stronger
+  `TailCube_225(T0)=o_W(1)` requirement, and showing that the latter also
+  needs tail residual-product envelopes or tail tuple rows;
 - Module 236: audit `WPPBoundary_225`, separating W-residue boundary failures
   from prime-power boundary artifacts;
 - Module 237: audit `NormRow_224^P` and possible zero-mode leakage for the
@@ -502,33 +506,35 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 235: Kernel absolute-tail budget for the fixed row.
+Module 236: W-residue and prime-power boundary audit for the fixed row.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
 
-Module 234 completed the actual tuple-side audit:
+Module 235 completed the kernel absolute-tail audit:
 
 ```text
-BoundaryIntervalHL_234(S,lambda)
-  => BoundaryTupleHL_225(S,lambda)
+KernelTailBudget_235(P_M,T0;s0,D0,rho0)
+  => KernelAbsTail_225(P_M,T0).
 ```
 
-for nonempty `S`, while:
+It separated:
 
 ```text
-BoundaryTupleHL_225(emptyset,lambda)
+A_W(M)=O_W(1),
+Tail_W(T0)=o_W(1),
+TailCube_225(T0)=o_W(1)
 ```
 
-has zero error by definition. It did not prove the nonempty weighted boundary
-tuple estimates.
+and warned that `TailCube_225(T0)` is not a kernel fact alone; it also needs
+tail residual-product envelopes or tail tuple rows.
 
-Module 235 should focus on:
+Module 236 should focus on:
 
 ```text
-KernelAbsTail_225(P_M,T0):
-  A_W(M)=E_t |W_M(t)| budget,
-  TailCube_225(T0)=o_W(1)
+WPPBoundary_225:
+  W-residue boundary failures,
+  prime-power boundary artifacts
 ```
 
 inside:
@@ -541,10 +547,9 @@ same selector class s0,
 fixed dyadic shell D0<|d|<=2D0.
 ```
 
-The goal is to decide how much absolute kernel mass and tail decay the fixed
-boundary row can tolerate after passing to `|W_M|`, and whether this remains a
-projection-local budget or becomes mixed with smoothing/projection transfer.
-Do not use cancellation from `W_M`, do not hide kernel tails inside
-`BoundaryModelMass_225` or `BoundaryTupleHL_225`, and do not assume
+The goal is to separate W-residue boundary failures from prime-power boundary
+artifacts and decide which parts are zero by convention, local boundary rows,
+mixed transfer rows, or endpoint-strength. Do not hide W/prime-power errors
+inside local factors, kernel tails, tuple HL, or model mass, and do not assume
 `ProjectedMajorTarget_3^B`, `ResCube_3^sharp`, selector transfer, or any
 endpoint object.

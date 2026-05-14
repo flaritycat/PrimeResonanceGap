@@ -1,4 +1,4 @@
-# Modules 156-234 summary
+# Modules 156-235 summary
 
 ## 156
 
@@ -405,6 +405,14 @@ weighted-HL package `BoundaryIntervalHL_234(S,lambda)`, while classifying
 W-residue, prime-power, diagonal, and range dependencies as mixed unless they
 are handled inside the fixed row.
 
+## 235
+
+Kernel absolute-tail budget; defines
+`KernelTailBudget_235(P_M,T0;s0,D0,rho0)` and conditionally reduces
+`KernelAbsTail_225(P_M,T0)` to absolute kernel mass, kernel tail mass, and
+tail residual-product envelopes, while warning that `Tail_W(T0)=o_W(1)` alone
+does not imply `TailCube_225(T0)=o_W(1)`.
+
 ## Next
 
-Module 235: Kernel absolute-tail budget for the fixed row.
+Module 236: W-residue and prime-power boundary audit for the fixed row.
