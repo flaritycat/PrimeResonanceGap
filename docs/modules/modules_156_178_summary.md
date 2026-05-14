@@ -1,4 +1,4 @@
-# Modules 156-237 summary
+# Modules 156-238 summary
 
 ## 156
 
@@ -430,6 +430,14 @@ normalization or small normalization drift, centering consistency, and
 truncated zero-mode leakage control, while warning that `m_M(0)=0` cyclically
 does not automatically remove constants after interval or kernel truncation.
 
+## 238
+
+Fixed-row composition and first bottleneck; defines
+`FixedRowPkg_238(s0,D0,rho0)`, composes the Module 233-237 subpackages into a
+conditional route to `BdPrefRow_224^P=o_W(1)`, and identifies
+`FixedSupportTupleHL_238`, led by nonempty `BoundaryIntervalHL_234(S,lambda)`,
+as the first genuine analytic bottleneck.
+
 ## Next
 
-Module 238: Compose fixed-row subpackages and identify the first bottleneck.
+Module 239: Model-class proof or blocked verdict for the easiest boundary subrow.

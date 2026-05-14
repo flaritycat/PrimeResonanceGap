@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 237
-Post-Reflective_1 solving count: 56
-Long-term-plan count: 50
+Latest completed module: 238
+Post-Reflective_1 solving count: 57
+Long-term-plan count: 51
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -464,6 +464,10 @@ Expected work:
   truncated zero-mode leakage, with endpoint-strength envelopes blocked;
 - Module 238: compose the fixed-row subpackages and identify the first true
   bottleneck;
+  completed as `FixedRowPkg_238(s0,D0,rho0)`, composing Modules 233-237 and
+  identifying `FixedSupportTupleHL_238`, led by nonempty
+  `BoundaryIntervalHL_234(S,lambda)`, as the first genuine analytic
+  bottleneck;
 - Module 239: attempt a model-class proof or blocked verdict for the easiest
   boundary subrow under bounded local-factor hypotheses;
 - Module 240: decide whether `LocalBdPkg_226` remains a plausible local route
@@ -513,39 +517,36 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 238: Compose fixed-row subpackages and identify the first bottleneck.
+Module 239: Model-class proof or blocked verdict for the easiest boundary subrow.
 ```
 
 Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
 
-Module 237 completed the normalization and zero-mode audit:
+Module 238 completed the fixed-row composition:
 
 ```text
-NormZeroAudit_237(s0,D0,rho0)
-  => NormRow_224^P=o_W(1)
-     and ZeroBd_226=o_W(1) when active.
+FixedRowPkg_238(s0,D0,rho0)
+  => BdPrefRow_224^P(s0,D0;N,w,rho0)=o_W(1).
 ```
 
-It separated:
+It identified the first true bottleneck as:
 
 ```text
-NormExact_237,
-NormDrift_237,
-CenterDiff_237,
-ZeroBd_226
+FixedSupportTupleHL_238,
+headed by nonempty BoundaryIntervalHL_234(S,lambda).
 ```
 
-and warned that exact cyclic zero-mode removal does not automatically survive
-interval or kernel truncation.
+This remains smaller than the projected residual endpoint only while all
+supports stay fixed, boundary/tail/local, and selector/projection classes do
+not move.
 
-Module 238 should focus on composing:
+Module 239 should focus on the easiest subrow:
 
 ```text
-BoundaryModelVolume_233,
-BoundaryIntervalHL_234,
-KernelTailBudget_235,
-WPPBoundaryAudit_236,
-NormZeroAudit_237
+S=emptyset or model-class boundary/model side,
+fixed selector class,
+bounded local factors,
+no actual prime-weight tuple matching.
 ```
 
 inside:
@@ -558,8 +559,8 @@ same selector class s0,
 fixed dyadic shell D0<|d|<=2D0.
 ```
 
-The goal is to decide whether the fixed row now has a genuinely smaller
-conditional proof obligation than the projected residual endpoint, and to name
-the first bottleneck. Do not merge distinct rows into a generic side package,
-and do not assume `ProjectedMajorTarget_3^B`, `ResCube_3^sharp`, selector
-transfer, or any endpoint object.
+The goal is to obtain either a genuine proof in the easiest model/convention
+subrow or a precise blocked verdict. Do not treat the easiest model subrow as
+proof of nonempty actual `BoundaryIntervalHL_234`, do not merge distinct rows
+into a generic side package, and do not assume `ProjectedMajorTarget_3^B`,
+`ResCube_3^sharp`, selector transfer, or any endpoint object.
