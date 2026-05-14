@@ -3465,3 +3465,69 @@ Module 323:
   the expansion exposes a smaller non-endpoint target or only restates the
   signed minor-kernel obstruction.
 ```
+
+Module 323 completed:
+
+```text
+ResidualEightSlotMinorExpansion_323(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+RawEightSlotTopFaceIdentity_323:
+  STRUCTURAL / EXTRACTION.
+
+ThresholdLocalizedKernelIdentity_323(U,V):
+  STRUCTURAL / EXTRACTION.
+
+ZeroMeanLowerFaceIdentity_323:
+  STRUCTURAL / EXTRACTION.
+
+FixedKernelInterpretation_323(U,V):
+  FALSE / BLOCKED for data-dependent threshold-localized rows.
+
+EightSlotExpansionClosesMinorGain_323:
+  FALSE / BLOCKED.
+
+CollisionDiagonalStrataAudit_324(P_minor^0):
+  OPEN next target.
+```
+
+The expansion records:
+
+```text
+WOff_{U,V}
+  =
+  D^(-1) sum_{d_1 != d_2}
+    E_{x,y,h,k}
+      F_8(d_1,d_2;x,y,h,k)
+      K_{U,V}^0(d_1,d_2;h+k).
+```
+
+The centered lower faces vanish exactly because the localized minor kernel
+has no zero frequency. This is zero-mode bookkeeping only. For shell masks
+such as `J_{j,k},J_{j,l}`, the kernel `K_{U,V}^0` is data-dependent through
+the large-spectrum selection, so the threshold-localized row cannot be read
+as a fixed-kernel eight-linear estimate without a new selection or adaptive
+kernel theorem.
+
+The current cadence records:
+
+```text
+Latest completed module: 323
+Post-Reflective_1 solving count: 142
+Long-term-plan count: 136
+
+136 is not divisible by 9, so no plan update is due in this module.
+136 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 324:
+  perform CollisionDiagonalStrataAudit_324(P_minor^0), classifying the
+  collision and diagonal strata of the exact eight-slot minor row. It should
+  separate structural diagonals, finite-prime collision load, full-frequency
+  diagnostics, and genuinely oscillatory minor-kernel rows, while deciding
+  whether a smaller non-endpoint collision/generic split survives.
+```

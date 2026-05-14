@@ -71,7 +71,8 @@ flowchart TD
   SizeSensitive320["SizeSensitiveMinorKernelCriterion_320<br/>criterion STRUCTURAL; deterministic closure BLOCKED"]
   FiberGain321["DataDependentFiberGainAudit_321<br/>audit STRUCTURAL; caps force gain BLOCKED"]
   Plan322["PlanUpdate_15_Challenge_9_322<br/>STRUCTURAL; cap-only route BLOCKED"]
-  ResidualEight323["ResidualEightSlotMinorExpansion_323<br/>OPEN next target"]
+  ResidualEight323["ResidualEightSlotMinorExpansion_323<br/>STRUCTURAL; fixed-kernel reading BLOCKED"]
+  Collision324["CollisionDiagonalStrataAudit_324<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -178,7 +179,8 @@ flowchart TD
   SizeSensitive320 --> FiberGain321
   FiberGain321 --> Plan322
   Plan322 --> ResidualEight323
-  ResidualEight323 --> AntiDiag312
+  ResidualEight323 --> Collision324
+  Collision324 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -357,3 +359,7 @@ flowchart TD
   pauses the direct cap-only/fiber-only continuation, and selects
   `ResidualEightSlotMinorExpansion_323(P_minor^0)` as the next extraction-only
   audit. This pivot is not a residual cancellation theorem.
+- `ResidualEightSlotMinorExpansion_323` extracts the exact eight-slot
+  residual top face and the threshold-localized kernel identity. It also
+  blocks treating data-dependent shell masks as fixed kernels. The next open
+  audit is `CollisionDiagonalStrataAudit_324(P_minor^0)`.

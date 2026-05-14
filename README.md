@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: residual eight-slot minor expansion
-after the combined plan update/challenge**.
+The current active phase is **Phase K: collision and diagonal strata after
+the residual eight-slot minor expansion**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 322
-Active phase: Phase K, residual eight-slot minor expansion next
+Latest module frontier: Module 323
+Active phase: Phase K, collision and diagonal strata audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -683,10 +683,17 @@ Module 322:
   direct cap-only/fiber-only continuation, blocks a direct attack on
   FiberOverlapGainTarget_321 as the next move under current inputs, and selects
   an extraction-only residual eight-slot minor expansion for Module 323.
+
+Module 323:
+  expanded the centered minor-kernel row into the exact eight-slot residual
+  top face. Centered lower faces vanish only by the nonzero minor-kernel
+  identity, and threshold-localized rows keep a data-dependent kernel through
+  the large-spectrum masks. The expansion is structural and does not prove
+  residual cancellation.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-321 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-323 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window or the signed minor-kernel row.
@@ -727,9 +734,13 @@ Module 322:
   and plan challenge after the fiber-gain blockage.
 
 Module 323:
-  perform ResidualEightSlotMinorExpansion_323(P_minor^0), expanding the
-  centered minor-kernel row into exact eight residual slots without claiming
-  cancellation.
+  performed ResidualEightSlotMinorExpansion_323(P_minor^0), expanding the
+  centered minor-kernel row into the exact eight residual slots without
+  claiming cancellation.
+
+Module 324:
+  perform CollisionDiagonalStrataAudit_324(P_minor^0), classifying the
+  collision and diagonal strata of the eight-slot minor row.
 ```
 
 ## What Is Proved?
@@ -799,7 +810,12 @@ Compact status table:
 | Direct cap-only/fiber-only Phase K continuation `PhaseKColumnBranchContinue_322` | **FALSE / BLOCKED** |
 | Direct fiber-overlap attack as next move `FiberOverlapDirectAttack_322` | **FALSE / BLOCKED** |
 | Residual eight-slot minor pivot `ResidualEightSlotMinorPivot_322` | **STRUCTURAL / EXTRACTION** |
-| Residual eight-slot minor expansion `ResidualEightSlotMinorExpansion_323` | **OPEN next target** |
+| Residual eight-slot minor expansion `ResidualEightSlotMinorExpansion_323` | **STRUCTURAL / EXTRACTION** |
+| Eight-slot top-face identity `RawEightSlotTopFaceIdentity_323` | **STRUCTURAL / EXTRACTION** |
+| Zero-mean lower-face identity `ZeroMeanLowerFaceIdentity_323` | **STRUCTURAL / EXTRACTION** |
+| Fixed-kernel reading of localized rows `FixedKernelInterpretation_323(U,V)` | **FALSE / BLOCKED** |
+| Eight-slot expansion closes minor gain `EightSlotExpansionClosesMinorGain_323` | **FALSE / BLOCKED** |
+| Collision and diagonal strata audit `CollisionDiagonalStrataAudit_324` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1111,7 +1127,10 @@ wins.
 | `PlanUpdate_15_Challenge_9_322` | STRUCTURAL / EXTRACTION | Combined plan update/challenge completed after fiber-gain blockage |
 | `PhaseKColumnBranchContinue_322 / FiberOverlapDirectAttack_322` | FALSE / BLOCKED | Direct cap-only/fiber-only continuation is blocked as the next move under current inputs |
 | `ResidualEightSlotMinorPivot_322(P_minor^0)` | STRUCTURAL / EXTRACTION | Selects residual eight-slot minor expansion as the next extraction-only audit |
-| `ResidualEightSlotMinorExpansion_323(P_minor^0)` | OPEN | Next target |
+| `ResidualEightSlotMinorExpansion_323(P_minor^0)` | STRUCTURAL / EXTRACTION | Exact eight-slot residual top face extracted; no cancellation proved |
+| `ThresholdLocalizedKernelIdentity_323(U,V)` | STRUCTURAL / EXTRACTION | Cross-shell masks are kept inside a localized nonzero-frequency kernel |
+| `FixedKernelInterpretation_323(U,V)` | FALSE / BLOCKED | Data-dependent shell masks cannot be treated as a fixed external kernel |
+| `CollisionDiagonalStrataAudit_324(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

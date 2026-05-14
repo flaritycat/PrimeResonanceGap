@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 322
-Active phase: Phase K, residual eight-slot minor expansion next
+Latest module frontier: Module 323
+Active phase: Phase K, collision and diagonal strata audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -779,10 +779,17 @@ Completed fifteenth plan update and ninth plan challenge:
     selects ResidualEightSlotMinorExpansion_323(P_minor^0) as the next
     extraction-only target
 
+Completed residual eight-slot minor expansion:
+  ResidualEightSlotMinorExpansion_323(P_minor^0)
+    extracts the exact eight-slot residual top face, records that centered
+    lower faces vanish only by the nonzero minor-kernel identity, blocks the
+    fixed-kernel interpretation for data-dependent threshold-localized rows,
+    and leaves collision/diagonal strata open
+
 Next scheduled module:
-  Module 323 ResidualEightSlotMinorExpansion_323(P_minor^0)
+  Module 324 CollisionDiagonalStrataAudit_324(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Phase K combined plan
-update and challenge;
+Status: **STRUCTURAL / EXTRACTION** for the completed residual eight-slot
+minor expansion;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.
