@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 202
-Post-Reflective_1 solving count: 21
-Long-term-plan count: 15
+Latest completed module: 203
+Post-Reflective_1 solving count: 22
+Long-term-plan count: 16
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -177,6 +177,9 @@ Expected modules:
 - Module 202: perform the first 15-iteration plan challenge; completed with a
   narrowed continuation verdict for Phase B through Module 205;
 - Module 203: refine the conditional minor-arc criterion after the challenge;
+  completed as `NarrowMinorArc_3^B`, a conditional package separating
+  low-level leakage, bad-shift moments, persistent-frequency multiplicities,
+  and transverse incidence risk;
 - Module 204: audit boundary, W-range, and selector compatibility for minor
   arcs;
 - Module 205: perform the second 9-iteration plan update.
@@ -288,29 +291,28 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 203: Refined conditional minor-arc criterion after the challenge.
+Module 204: Boundary, W-range, and selector compatibility for minor arcs.
 ```
 
-Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
+Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 202 completed the first plan challenge. The verdict is:
+Module 203 created the conditional package:
 
 ```text
-Continue Phase B through Module 205, but narrow it.
+NarrowMinorArc_3^B(D;R,eta).
 ```
 
-The next module should turn the Module 201 obstruction tree into a named
-conditional package. It should separate genuinely smaller subconditions from
-endpoint-equivalent restatements:
+The next module must test whether that package can live in the actual project
+setting rather than only in the cyclic Fourier model. It should audit:
 
 ```text
-LowLevelLeak(lambda_0),
-CountObs(lambda),
-EnergyObs(lambda),
-BadShiftEnergy(lambda,mu),
-PersistentMinorFrequency(lambda),
-TransverseIncidence(lambda).
+boundary transfer,
+W-trick size and limit order,
+dyadic D-range uniformity,
+prime-power artifacts,
+selector transfer to the actual sharp moving selector.
 ```
 
-Module 203 must not call the package useful unless at least one branch is
-stated in a checkable form smaller than `M_minor(D)=o(1)`.
+In particular, it must not allow the transverse incidence input
+`Gamma_trans` or the Fourier envelope `A_N` to hide endpoint-strength or
+selector-transfer assumptions.

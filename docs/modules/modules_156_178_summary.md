@@ -1,4 +1,4 @@
-# Modules 156-202 summary
+# Modules 156-203 summary
 
 ## 156
 
@@ -149,6 +149,12 @@ First 15-iteration plan challenge; Phase B continues through Module 205 only
 in narrowed form, with Module 203 required to separate checkable minor-arc
 subconditions from endpoint-equivalent restatements.
 
+## 203
+
+Refined conditional minor-arc criterion `NarrowMinorArc_3^B`, separating
+low-level leakage, bad-shift moments, persistent-frequency multiplicities, and
+the transverse incidence input.
+
 ## Next
 
-Module 203: Refined conditional minor-arc criterion after the challenge.
+Module 204: Boundary, W-range, and selector compatibility for minor arcs.
