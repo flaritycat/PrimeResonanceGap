@@ -762,6 +762,32 @@ Failure criterion: Phase H merely renames `WProjectedLocalMatch_3^major` or
 `ProjectedMajorTarget_3^B` without testing the model-side local-factor,
 kernel, collision, denominator, and W-limit requirements.
 
+Maintenance steering note for any Phase H revisit:
+
+```text
+1. SharpGenericTail:
+   prove or reject a sharper finite-difference bound for Omega_w^gen before
+   relying on generic W-tail savings.
+
+2. MinimalAdmissibleFamily:
+   define a concrete P_adm^0 with all parameters, cutoff conventions,
+   denominator ranges, W-residue conventions, selector class, projection
+   family, and limiting order.
+
+3. CollNeutral:
+   decide whether CollNeutral_260 can be obtained from finite-prime collision
+   load, CRT range estimates, structural diagonal stratification, kernel
+   budget, and dyadic averaging alone, or whether it is endpoint-strength.
+
+4. Fork viability:
+   only after the first three checks decide whether the absolute or signed
+   Phase H fork remains viable.
+```
+
+This note does not reopen Phase H as the active branch. Module 268 selected
+Phase I, but the note records the smallest safe Phase H targets if the branch
+is revisited.
+
 ### Phase I: Minor-arc transverse-incidence feasibility window
 
 Target window: iterations 82-90 after this document.

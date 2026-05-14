@@ -28,6 +28,10 @@ next window to the minor-arc transverse-incidence obstruction inside
 | Finite-type no-positive-limit theorem | **CONDITIONAL** |
 | `s=2` rational-major endpoint | **OPEN** (analytic-engine descriptor) |
 
+For a compact object-by-object ledger, see
+`docs/status/theorem_status_index.md`. For the dependency map, see
+`docs/modules/dependency_graph.md`.
+
 ## Core selected average
 
 ```text
@@ -68,8 +72,8 @@ source_texts/                     Original large text artifacts
 docs/
   paper/                          Copy of the generated 500-page paper
   ledger/                         Copy of the 250-page project ledger
-  status/                         Global status, endpoint status, forbidden upgrades
-  modules/                        Current module handoff and generated indexes
+  status/                         Global status, theorem index, forbidden upgrades
+  modules/                        Current modules, dependency graph, indexes
   reviews/                        Project-wide reviews and audits
   codex/                          Prompts, continuation protocol, review checklist
 

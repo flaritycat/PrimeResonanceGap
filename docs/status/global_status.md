@@ -2,6 +2,13 @@
 
 This file is the first status document Codex should read.
 
+Companion guardrails:
+
+```text
+docs/status/theorem_status_index.md
+docs/modules/dependency_graph.md
+```
+
 Current frontier:
 
 ```text

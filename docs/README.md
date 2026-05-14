@@ -21,10 +21,13 @@ unless explicitly marked otherwise in `docs/status/global_status.md`.
 ```text
 status/
   global_status.md          Global theorem/status ledger
+  theorem_status_index.md   Compact object-by-object status index
   forbidden_upgrades.md     Claims that must not be made without proof
   long_term_plan.md         Active schedule and iteration counters
 
 modules/
+  dependency_graph.md       Compact dependency/status graph
+  dependency_graph.mmd      Mermaid source for the dependency graph
   module_178_residual_cube.md
   module_179_fourier_major_minor.md
   ...

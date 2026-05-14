@@ -465,7 +465,55 @@ Kbar_P=0 after boundary or denominator restrictions,
 or signed cancellation after an absolute value has been inserted.
 ```
 
-### D. Final Phase H verdict
+### D. Smaller Phase H targets
+
+If Phase H is revisited, the next targets should be smaller than the full
+model-neutrality gate. The safe order is:
+
+```text
+1. SharpGenericTail_267:
+   prove or reject a sharper finite-difference bound for Omega_w^gen.
+
+2. MinimalAdmissibleFamily_267:
+   define a concrete P_adm^0 with all parameters, cutoff conventions,
+   denominator ranges, W-residue conventions, selector class, projection
+   family, and limiting order.
+
+3. CollNeutralHardClass_267:
+   decide whether CollNeutral_260 can be established from finite-prime collision
+   load, CRT range estimates, structural diagonal stratification, kernel
+   budget, and dyadic averaging alone, or whether it is endpoint-strength.
+```
+
+The generic model is:
+
+```text
+Omega_w^gen
+  = sum_{s=0}^8 binom(8,s)(-1)^(8-s) Theta_{w,s}^gen,
+
+Theta_{w,s}^gen
+  = prod_{p>w} (1-1/p)^(-s)(1-s/p).
+```
+
+The finite-difference heuristic suggests that the alternating sum should kill
+polynomial-in-`s` contributions of degree `<8`. A possible future target is a
+bound of the form:
+
+```text
+|Omega_w^gen| <= C * Polynomial(G_2(w),...,G_8(w)),
+```
+
+with a possible stronger corollary:
+
+```text
+|Omega_w^gen| <= C G_2(w)^4.
+```
+
+No such sharp generic-tail estimate is established here. It is only a proposed
+subtarget, and it cannot replace the collision, kernel, admissible-family, or
+selector rows.
+
+### E. Final Phase H verdict
 
 The Phase H model-neutrality branch survives only as a conditional route. It
 has not produced an analytic estimate.
