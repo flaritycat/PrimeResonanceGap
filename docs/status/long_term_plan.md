@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 231
-Post-Reflective_1 solving count: 50
-Long-term-plan count: 44
+Latest completed module: 232
+Post-Reflective_1 solving count: 51
+Long-term-plan count: 45
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -53,8 +53,10 @@ Second plan challenge:   Module 217 (completed)
 Reflective_2 log:        Module 221 (completed)
 Next reflective log:     Module 261
 Fourth plan update:      Module 223 (completed)
-Fifth plan update:       Module 232
-Third plan challenge:    Module 232
+Fifth plan update:       Module 232 (completed)
+Third plan challenge:    Module 232 (completed)
+Sixth plan update:       Module 241
+Fourth plan challenge:   Module 247
 ```
 
 These module numbers are bookkeeping estimates. If an iteration is not a
@@ -405,24 +407,55 @@ Expected work:
   with endpoint objects kept `OPEN`, analytic bridges kept `CONDITIONAL`, and
   shortcut implications kept `FALSE / BLOCKED`;
 - Module 232: perform the fifth plan update and third plan challenge in the
-  same iteration.
+  same iteration;
+  completed as `PlanUpdate_5_Challenge_3_232`, with the decision to stop
+  expanding the endpoint-equivalence map for now and attempt the fixed
+  boundary/model-mass row `BoundaryModelMass_225(S,lambda)` next.
 
 Success criterion: the project has one honest local-row verdict and a current
 endpoint dependency graph with no unlabeled arrows.
 
-### Phase F: Decision branch
+### Phase F1: Fixed boundary/model-mass attack
 
-Target window: after iteration 45.
+Target window: iterations 46-54 after this document.
 
-At this point the project should choose one of three routes:
+Purpose: stop adding global endpoint-equivalence labels and attempt one
+smaller row from `LocalBdPkg_226`.
 
-- close a genuinely isolated conditional package if the missing estimate has
-  become plausible;
-- retreat to a weaker theorem whose hypotheses are honest and useful;
-- mark the endpoint branch blocked and return to the original problem through
-  a different obstruction analysis.
+Challenge verdict from Module 232:
 
-The decision must be recorded as a status update before more modules are added.
+```text
+The endpoint-equivalence audit is now useful as a guardrail, but continuing
+the same audit would mostly polish formalism. The next branch should attack
+one fixed boundary/model-mass row or mark it blocked.
+```
+
+Expected work:
+
+- Module 233: formulate and test a boundary model-mass volume criterion for
+  `BoundaryModelMass_225(S,lambda)`;
+- Module 234: audit `BoundaryTupleHL_225(S,lambda)` and decide whether it is
+  a local weighted tuple input or endpoint-strength in disguise;
+- Module 235: isolate `KernelAbsTail_225(P_M,T0)` and the absolute kernel-mass
+  budget needed by the fixed row;
+- Module 236: audit `WPPBoundary_225`, separating W-residue boundary failures
+  from prime-power boundary artifacts;
+- Module 237: audit `NormRow_224^P` and possible zero-mode leakage for the
+  fixed cyclic-to-interval row;
+- Module 238: compose the fixed-row subpackages and identify the first true
+  bottleneck;
+- Module 239: attempt a model-class proof or blocked verdict for the easiest
+  boundary subrow under bounded local-factor hypotheses;
+- Module 240: decide whether `LocalBdPkg_226` remains a plausible local route
+  or should be marked mixed/endpoint-strength for practical purposes;
+- Module 241: perform the sixth plan update.
+
+Success criterion: at least one subrow of `LocalBdPkg_226` is either reduced
+to checkable local conditions or marked blocked/endpoint-strength with a
+precise reason.
+
+Failure criterion: the window only renames boundary rows without producing a
+smaller proof obligation than the projected residual endpoint.
 
 ## 6. How each future iteration should start
 
@@ -460,42 +493,42 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 232: Perform the fifth plan update and third plan challenge.
+Module 233: Boundary model-mass volume criterion for the fixed row.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION`.
+Expected status: `CONDITIONAL` or `STRUCTURAL / EXTRACTION`.
 
-Module 231 completed the consolidated endpoint dependency table:
+Module 232 completed the fifth plan update and third plan challenge:
 
 ```text
-EndpointDependencyTable_231.
+PlanUpdate_5_Challenge_3_232.
 ```
 
-It merged:
+It decided:
 
 ```text
-structural identities from Module 228,
-analytic side packages from Module 229,
-selector-transfer attachments from Module 230,
-LocalBdPkg_226 as only one fixed local boundary row.
+Stop expanding the endpoint-equivalence map for now.
+Attempt one smaller fixed boundary/model-mass row next.
 ```
 
-Module 232 is a cadence point. It must perform both:
+Module 233 should focus on:
 
 ```text
-fifth plan update,
-third plan challenge.
+BoundaryModelMass_225(S,lambda):
+  BdModel_225(S,lambda)=o_W(1)
 ```
 
-The challenge should explicitly ask whether the endpoint-equivalence audit has
-become useful enough to guide an analytic attack, or whether the project is
-now only polishing endpoint formalism. It should decide the next branch:
+inside:
 
 ```text
-attempt one smaller conditional row,
-retreat to a weaker honest theorem,
-or mark the current endpoint branch blocked and redirect.
+BdPrefRow_224^P(s0,D0;N,w,rho0),
+Pi=P_M,
+edge=cyc_s0 -> int_s0,
+same selector class s0,
+fixed dyadic shell D0<|d|<=2D0.
 ```
 
-Do not mark any endpoint theorem `PROVEN`. The expected result is governance
-and branch selection, not a closure theorem.
+The goal is to test whether the model mass follows from boundary-volume
+saving plus controlled local factors and kernel mass, without assuming
+`ProjectedMajorTarget_3^B`, `ResCube_3^sharp`, selector transfer, or any
+endpoint object.

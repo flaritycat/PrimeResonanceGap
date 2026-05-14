@@ -1,4 +1,4 @@
-# Modules 156-231 summary
+# Modules 156-232 summary
 
 ## 156
 
@@ -379,6 +379,14 @@ packages, Module 230 selector-transfer norms, and the limited `LocalBdPkg_226`
 row into one allowed-status table, keeping endpoint objects `OPEN` and
 shortcut implications `FALSE / BLOCKED`.
 
+## 232
+
+Fifth plan update and third plan challenge; defines
+`PlanUpdate_5_Challenge_3_232`, records that the endpoint-equivalence audit is
+now sufficient as a guardrail, and redirects the next window toward the fixed
+boundary/model-mass row `BoundaryModelMass_225(S,lambda)` inside
+`BdPrefRow_224^P`, without proving the row or the endpoint.
+
 ## Next
 
-Module 232: Perform the fifth plan update and third plan challenge.
+Module 233: Boundary model-mass volume criterion for the fixed row.
