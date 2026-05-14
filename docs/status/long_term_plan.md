@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 216
-Post-Reflective_1 solving count: 35
-Long-term-plan count: 29
+Latest completed module: 217
+Post-Reflective_1 solving count: 36
+Long-term-plan count: 30
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -49,7 +49,7 @@ First plan update:       Module 196 (completed)
 First plan challenge:    Module 202 (completed)
 Second plan update:      Module 205 (completed)
 Third plan update:       Module 214 (completed)
-Second plan challenge:   Module 217
+Second plan challenge:   Module 217 (completed)
 Next reflective log:     Module 221
 Fourth plan update:      Module 223
 Fifth plan update:       Module 232
@@ -290,6 +290,10 @@ Expected work:
   core residual fourth-moment selector rows by their relation to the endpoint;
 - Module 217: perform the second 15-iteration plan challenge and decide
   whether Phase D should continue, narrow, or stop;
+  completed with the verdict to continue Phase D but narrow it sharply:
+  generic `CoreSel` rows are not acceptable side packages unless localized,
+  and the next modules should isolate major/minor projection compatibility,
+  frozen-to-moving threshold transfer, and deterministic extraction;
 - Module 218: audit compatibility between major-arc and minor-arc
   selector-transfer packages, especially projection and denominator changes;
 - Module 219: state the frozen-to-moving dyadic threshold transfer obstruction
@@ -372,29 +376,30 @@ that the challenge is written down before momentum turns into folklore.
 Continue with:
 
 ```text
-Module 217: Second 15-iteration plan challenge.
+Module 218: Major/minor selector-transfer compatibility audit.
 ```
 
-Expected status: `STRUCTURAL / EXTRACTION`.
+Expected status: `STRUCTURAL / EXTRACTION` or `CONDITIONAL`.
 
-Module 216 completed the global selector-transfer matrix:
+Module 217 completed the second 15-iteration plan challenge. The verdict was:
 
 ```text
-SharpSelectorTransferMatrix_3.
+Continue Phase D, but narrow it sharply.
 ```
 
-The next module is the scheduled plan challenge at long-term-plan count 30. It
-should answer:
+The next module should audit whether the major-arc and minor-arc selector
+transfer packages use compatible objects. In particular it should compare:
 
 ```text
-Is Phase D identifying genuinely smaller transfer problems,
-or only restating the endpoint under selector-transfer names?
-Which selector row would be abandoned if one conditional estimate had to be
-removed?
-Should the project continue Phase D, narrow to a single transfer obstruction,
-or redirect toward endpoint equivalence / weaker theorem work?
+P_M versus Pi_minor,
+major/minor denominator ranges,
+buffered arc conventions,
+zero-mode and centering conventions,
+W-limit order,
+selector-chain edges,
+boundary and projection-boundary accounting.
 ```
 
-In particular, it must scrutinize the core residual selector rows
-`SelErr_4`, `SelErr_4^minor`, and `SelErr_major^P`, since those may be
-endpoint-strength unless additional localization is supplied.
+In particular, it must not combine major and minor selector-transfer packages
+into a full endpoint transfer unless the boundary between the projections is
+controlled in the same residual fourth-moment normalization.

@@ -1,4 +1,4 @@
-# Modules 156-216 summary
+# Modules 156-217 summary
 
 ## 156
 
@@ -248,6 +248,13 @@ moving-window, denominator, tail, projection, W-residue, prime-power,
 centering, extraction, and core residual fourth-moment selector rows by whether
 they look local, mixed, or potentially endpoint-strength.
 
+## 217
+
+Second 15-iteration plan challenge; continues Phase D only in narrowed form,
+rejecting unlocalized generic `CoreSel` transfer as a harmless side package
+and focusing the next modules on major/minor projection compatibility,
+frozen-to-moving threshold transfer, and deterministic extraction.
+
 ## Next
 
-Module 217: Second 15-iteration plan challenge.
+Module 218: Major/minor selector-transfer compatibility audit.
