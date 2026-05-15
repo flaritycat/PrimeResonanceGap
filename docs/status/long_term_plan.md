@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 336
-Post-Reflective_1 solving count: 155
-Long-term-plan count: 149
+Latest completed module: 337
+Post-Reflective_1 solving count: 156
+Long-term-plan count: 150
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -4055,9 +4055,10 @@ Module 335: MultiPrimeCRTMaskAudit_335(P_minor^0).
 Module 336: FinitePrimeTailCoverAudit_336(P_minor^0).
 Module 337: HighPrimeDivisorWindowAudit_337(P_minor^0), because the
             finite-prime tail audit blocks direct cutoff removal.
-Module 338: CoverMomentRouteVerdict_338(P_minor^0).
-Module 339: PhaseKBranchDecision_339.
-Module 340: prepare the next reflection boundary without upgrading open rows.
+Module 338: LowHighTailCouplingAudit_338(P_minor^0).
+Module 339: ExactZeroTailDiagonalAudit_339(P_minor^0).
+Module 340: CoverMomentRouteVerdict_340(P_minor^0), only if Modules 338-339
+            do not expose a sharper blocker.
 ```
 
 If the kernel-fiber or residue-uniformity rows reproduce row/column barriers
@@ -4387,4 +4388,78 @@ Module 337:
   tuple-level high-prime divisor ceiling can be averaged with the same
   absolute kernel, masks, dyadic ranges, W-residue conventions, and cutoff
   order.
+```
+
+Module 337 completed:
+
+```text
+HighPrimeDivisorWindowAudit_337(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+NonzeroHighPrimeExponentialEnvelope_337:
+  STRUCTURAL / EXTRACTION.
+
+LiftSizeWindowBound_337:
+  STRUCTURAL / EXTRACTION.
+
+KernelWeightedDivisorWindowCriterion_337:
+  CONDITIONAL.
+
+CutoffCompatibilityWindow_337:
+  CONDITIONAL.
+
+WeightedDivisorWindowRows_337:
+  OPEN.
+
+LowEnvelopeMassRows_337:
+  OPEN.
+
+ExactZeroTailDiagonalRows_337:
+  OPEN.
+
+DivisorWindowOnlyClosure_337:
+  FALSE / BLOCKED.
+
+CurrentHighPrimeDivisorClosure_337:
+  FALSE / BLOCKED.
+
+PlanChallenge_10_337:
+  STRUCTURAL / EXTRACTION.
+
+LowHighTailCouplingAudit_338(P_minor^0):
+  OPEN next target.
+```
+
+The audit extracts a positive envelope for the nonzero high-prime part:
+after excluding exact-zero lifted differences, high-prime cover factors are
+bounded by `exp(C_8 DivTail_Y)-1`. The lift-size window gives only the
+pointwise divisor bound `DivTail_Y <= C log N/(Y log Y)`. This does not prove
+the weighted tail row because the same absolute kernel, masks, low-prime
+cover envelope, dyadic ranges, and cutoff compatibility remain in the
+average.
+
+The tenth plan challenge is completed here. The old broad move toward a
+cover-moment route verdict is narrowed: first test low-high tail coupling,
+then exact-zero tail diagonals, and only then return to a cover-moment route
+verdict if no sharper blocker appears.
+
+The current cadence records:
+
+```text
+Latest completed module: 337
+Post-Reflective_1 solving count: 156
+Long-term-plan count: 150
+
+150 is not divisible by 9, so no plan update is due in this module.
+150 is divisible by 15, so PlanChallenge_10_337 is due and completed here.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 338:
+  perform LowHighTailCouplingAudit_338(P_minor^0), deciding whether the
+  low-prime cover envelope can be multiplied by the high-prime divisor
+  envelope under the same absolute kernel and masks.
 ```

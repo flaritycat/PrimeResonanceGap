@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 336
-Active phase: Phase K, high-prime divisor window audit next
+Latest module frontier: Module 337
+Active phase: Phase K, low-high tail coupling audit next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -106,6 +106,7 @@ modules/
   module_334_exact_partition_coarsening_audit.md
   module_335_multi_prime_crt_mask_audit.md
   module_336_finite_prime_tail_cover_audit.md
+  module_337_high_prime_divisor_window_audit.md
   modules_156_178_summary.md
 
 reviews/

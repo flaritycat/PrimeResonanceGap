@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: high-prime divisor window audit after
-the finite-prime tail cover audit**.
+The current active phase is **Phase K: low-high tail coupling audit after the
+high-prime divisor window audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 336
-Active phase: Phase K, high-prime divisor window audit next
+Latest module frontier: Module 337
+Active phase: Phase K, low-high tail coupling audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -775,15 +775,23 @@ Module 336:
   nonzero prime-divisor ceiling, while leaving weighted tail uniformity,
   low-high cover coupling, exact-zero diagonal handling, and the cutoff
   window open.
+
+Module 337:
+  audited the high-prime divisor window. It records the nonzero high-prime
+  exponential envelope, the lift-size divisor window, and a conditional
+  weighted divisor-window criterion, while leaving weighted divisor rows,
+  low-envelope mass, exact-zero tail diagonals, and the cutoff compatibility
+  window open. It also performs the tenth plan challenge and narrows the next
+  target to low-high tail coupling.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-336 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-337 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window, the signed minor-kernel row, or the
 generic/collision/full-cover/sharp-cover/Mobius-cover/CRT-mask/tail/window
-rows.
+and coupling rows.
 
 The next planned module is:
 
@@ -888,9 +896,14 @@ Module 336:
   cover moment.
 
 Module 337:
-  perform HighPrimeDivisorWindowAudit_337(P_minor^0), deciding whether the
+  performed HighPrimeDivisorWindowAudit_337(P_minor^0), deciding whether the
   tuple-level high-prime divisor ceiling can be averaged with the same
   kernel, masks, dyadic ranges, W-residue conventions, and cutoff order.
+
+Module 338:
+  perform LowHighTailCouplingAudit_338(P_minor^0), deciding whether the
+  low-prime cover envelope can be multiplied by the high-prime divisor
+  envelope under the same absolute kernel and masks.
 ```
 
 ## What Is Proved?
@@ -1026,7 +1039,13 @@ Compact status table:
 | Cutoff window criterion from Module 336 | **CONDITIONAL** |
 | Tail uniformity, low-high cover coupling, and exact-zero diagonal rows from Module 336 | **OPEN** |
 | Tail-only shortcut and current finite-prime tail closure from Module 336 | **FALSE / BLOCKED** |
-| High-prime divisor window audit `HighPrimeDivisorWindowAudit_337` | **OPEN next target** |
+| High-prime divisor window audit `HighPrimeDivisorWindowAudit_337` | **STRUCTURAL / EXTRACTION** |
+| Nonzero high-prime exponential envelope and lift-size window from Module 337 | **STRUCTURAL / EXTRACTION** |
+| Kernel-weighted divisor-window and cutoff compatibility criteria from Module 337 | **CONDITIONAL** |
+| Weighted divisor, low-envelope mass, and exact-zero tail diagonal rows from Module 337 | **OPEN** |
+| Divisor-window-only and current high-prime divisor closures from Module 337 | **FALSE / BLOCKED** |
+| Tenth plan challenge `PlanChallenge_10_337` | **STRUCTURAL / EXTRACTION** |
+| Low-high tail coupling audit `LowHighTailCouplingAudit_338` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1403,7 +1422,13 @@ wins.
 | `CutoffWindowCriterion_336` | CONDITIONAL | Requires compatible finite-side CRT/mask control, tail control, low-high coupling, exact-zero diagonal handling, and limit order |
 | `TailUniformityRows_336 / LowHighCoverCouplingRows_336 / ExactZeroDiagonalRows_336` | OPEN | Weighted tail, low-high, and exact-zero rows remain missing |
 | `TailOnlyShortcut_336 / CurrentFinitePrimeTailClosure_336` | FALSE / BLOCKED | Tuple divisor bounds alone do not prove the weighted finite-prime tail row |
-| `HighPrimeDivisorWindowAudit_337(P_minor^0)` | OPEN | Next target |
+| `HighPrimeDivisorWindowAudit_337(P_minor^0)` | STRUCTURAL / EXTRACTION | Audits whether the high-prime divisor ceiling can become a weighted tail row |
+| `NonzeroHighPrimeExponentialEnvelope_337 / LiftSizeWindowBound_337` | STRUCTURAL / EXTRACTION | Positive nonzero high-prime envelope and pointwise lift-size divisor window only |
+| `KernelWeightedDivisorWindowCriterion_337 / CutoffCompatibilityWindow_337` | CONDITIONAL | Need weighted divisor control and a cutoff compatible with finite CRT/mask ranges |
+| `WeightedDivisorWindowRows_337 / LowEnvelopeMassRows_337 / ExactZeroTailDiagonalRows_337` | OPEN | Weighted divisor, low-prime envelope, and exact-zero tail diagonal rows remain missing |
+| `DivisorWindowOnlyClosure_337 / CurrentHighPrimeDivisorClosure_337` | FALSE / BLOCKED | Divisor-window diagnostics alone do not close finite-prime tail removal |
+| `PlanChallenge_10_337` | STRUCTURAL / EXTRACTION | Tenth plan challenge; narrows the next step to low-high coupling |
+| `LowHighTailCouplingAudit_338(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

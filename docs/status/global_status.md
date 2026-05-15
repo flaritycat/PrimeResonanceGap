@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 336
-Active phase: Phase K, high-prime divisor window audit next
+Latest module frontier: Module 337
+Active phase: Phase K, low-high tail coupling audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -888,10 +888,18 @@ Completed finite-prime tail cover audit:
     shortcut, and leaves weighted tail uniformity, low-high cover coupling,
     exact-zero diagonal handling, and the cutoff window open
 
+Completed high-prime divisor window audit:
+  HighPrimeDivisorWindowAudit_337(P_minor^0)
+    records a nonzero high-prime exponential envelope and a lift-size divisor
+    window, states conditional weighted divisor-window and cutoff
+    compatibility criteria, blocks divisor-window-only closure, performs the
+    tenth plan challenge, and leaves weighted divisor rows, low-envelope mass,
+    exact-zero tail diagonals, and low-high coupling open
+
 Next scheduled module:
-  Module 337 HighPrimeDivisorWindowAudit_337(P_minor^0)
+  Module 338 LowHighTailCouplingAudit_338(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed finite-prime tail cover
-audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed high-prime divisor
+window audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.
