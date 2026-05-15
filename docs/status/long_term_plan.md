@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 362
-Post-Reflective_1 solving count: 181
-Long-term-plan count: 175
+Latest completed module: 363
+Post-Reflective_1 solving count: 182
+Long-term-plan count: 176
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -5879,4 +5879,61 @@ Module 363:
   the pair diagonal `a=0` in `kappa_w^0` is removed, renormalized, finitely
   truncated, or routed to a separate diagonal row before `K_+^0` is used in
   minor-frequency top-mass estimates.
+```
+
+Module 363 completed:
+
+```text
+PairModelDiagonalConventionAudit_363(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+PairDiagonalDivergenceLemma_363:
+  PROVEN.
+
+OffDiagonalPairFactorConvergenceLemma_363:
+  PROVEN.
+
+FiniteTruncatedDiagonalFourierLemma_363:
+  PROVEN.
+
+PairMixedDiagonalAbsorptionCriterion_363:
+  CONDITIONAL.
+
+OffDiagonalPairModelConvention_363:
+  STRUCTURAL / EXTRACTION.
+
+UnqualifiedPairDiagonalConvention_363:
+  FALSE / BLOCKED.
+
+PairModelDiagonalConventionGate_362:
+  CONDITIONAL.
+```
+
+The proof attack proves that the unqualified infinite pair Euler product
+diverges at `a=0`, while the fixed nonzero-shift off-diagonal pair factor is
+finite after a representative convention. It also proves that any finite
+diagonal atom leaks uniformly into every frequency, so retaining it requires
+an explicit mixed-row absorption criterion. The safe active convention is to
+separate the off-diagonal pair model from a named diagonal row.
+
+The current cadence records:
+
+```text
+Latest completed module: 363
+Post-Reflective_1 solving count: 182
+Long-term-plan count: 176
+
+176 is not divisible by 9, so no plan update is due in this module.
+176 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 364:
+  perform PairModelOffDiagonalRamanujanTailAudit_364(P_minor^0), testing
+  whether the separated off-diagonal pair model admits a finite-cyclic
+  Ramanujan expansion with a high-denominator tail bound strong enough for
+  PairModelMinorTopMassTarget_361.
 ```
