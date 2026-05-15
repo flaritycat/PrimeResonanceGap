@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 360
-Post-Reflective_1 solving count: 179
-Long-term-plan count: 173
+Latest completed module: 361
+Post-Reflective_1 solving count: 180
+Long-term-plan count: 174
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -5765,4 +5765,65 @@ Module 361:
   pair-residual square and pair-residual times exact pair-model top-mass
   rows can be reduced to genuine pair-residual distribution estimates, or
   whether current pair inputs again give only first-moment/variance ceilings.
+```
+
+Module 361 completed:
+
+```text
+PairResidualLargeValueStress_361(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+PairResidualSquareEnergyBound_361:
+  PROVEN.
+
+PairResidualMixedModelBound_361:
+  PROVEN.
+
+PairResidualEnergyCriterion_361:
+  CONDITIONAL.
+
+PairResidualMixedCriterion_361:
+  CONDITIONAL.
+
+FirstMomentPairResidualRoute_361:
+  FALSE / BLOCKED.
+
+CurrentPairResidualLargeValueClosure_361:
+  FALSE / BLOCKED.
+
+PairResidualFourierEnergyTarget_361:
+  OPEN.
+
+PairModelMinorTopMassTarget_361:
+  OPEN.
+```
+
+The proof attack proves that the pair-residual square top-mass row is bounded
+by the exact pair-residual Fourier energy
+`E_a |P_nu^0(a)-kappa_w^0(a)|^2`. It also proves that the mixed row
+`|E_+^0K_+^0|` needs both pair-residual energy and minor-frequency top-mass
+control for the exact pair-model coefficient `K_+^0`. Current first-moment
+pair inputs and ordinary pair-BDH language do not close these rows at the
+active no-twist mask-loss scale.
+
+The current cadence records:
+
+```text
+Latest completed module: 361
+Post-Reflective_1 solving count: 180
+Long-term-plan count: 174
+
+174 is not divisible by 9, so no plan update is due in this module.
+174 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 362:
+  perform PairModelMinorTopMassStress_362(P_minor^0), deciding whether the
+  exact pair-model coefficient `K_+^0` is harmless on the declared minor arcs
+  or whether treating it as harmless hides a major/minor local-model transfer
+  assumption.
 ```
