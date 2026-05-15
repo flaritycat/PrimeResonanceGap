@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 365
-Post-Reflective_1 solving count: 184
-Long-term-plan count: 178
+Latest completed module: 366
+Post-Reflective_1 solving count: 185
+Long-term-plan count: 179
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -6048,4 +6048,66 @@ Module 366:
   admissible choice of Q,z and diagonal convention can make the low-denominator
   leakage, high-denominator Ramanujan tail, and finite diagonal row
   simultaneously small enough for PairModelMinorTopMassTarget_361.
+```
+
+Module 366 completed:
+
+```text
+PairModelRangeAssemblyAudit_366(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+PolynomialRRangeOffDiagonalPairModelBound_366:
+  CONDITIONAL.
+
+FiniteTruncationAllDenominatorsLeakage_366:
+  PROVEN.
+  Scope: PolyR_rho.
+
+UniformOffDiagonalTruncationTail_366:
+  PROVEN.
+  Scope: PolyR_rho.
+
+DiagonalRemovedFiniteModelBound_366:
+  PROVEN.
+  Scope: PolyR_rho.
+
+CurrentPminor0UniformRangeClosure_366:
+  FALSE / BLOCKED.
+
+PairModelMinorTopMassTarget_361:
+  CONDITIONAL.
+  Note: not proved in full P_minor^0.
+```
+
+Best target selection: Module 366 was the right attack because Modules
+362-365 had already reduced the pair-model obstruction to a range assembly
+problem. The proof attack shows that, under a polynomial lower bound
+`R>=N^rho`, one may choose `z_N` proportional to `log N` with
+`P(w,z_N)<=R`, so all finite Ramanujan denominators leak through the
+low-denominator minor-arc lemma and the omitted off-diagonal Euler tail is
+uniformly `o(1)`. This proves conditional off-diagonal pair-model minor
+smallness in a polynomial-R subfamily, while full `P_minor^0` remains too
+broad because it allows bounded or very slowly growing `R`.
+
+The current cadence records:
+
+```text
+Latest completed module: 366
+Post-Reflective_1 solving count: 185
+Long-term-plan count: 179
+
+179 is not divisible by 9, so no plan update is due in this module.
+179 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 367:
+  perform PairModelMinorTopMassVerdict_367(P_minor^0), deciding whether the
+  conditional polynomial-R off-diagonal model bound from Module 366, the
+  diagonal row from Module 363, and the mixed-row scale from Module 361 are
+  enough to retire the pair-model branch, or whether the project should move
+  next to PairResidualFourierEnergyTarget_361 as the remaining active input.
 ```
