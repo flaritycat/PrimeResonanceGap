@@ -28,7 +28,7 @@
 | `docs\modules\dependency_graph.md` | 32487 |
 | `docs\modules\generated_250_page_index.md` | 16201 |
 | `docs\modules\generated_500_page_index.md` | 31915 |
-| `docs\modules\generated_file_index.md` | 15570 |
+| `docs\modules\generated_file_index.md` | 15644 |
 | `docs\modules\generated_index.md` | 32419 |
 | `docs\modules\module_178_residual_cube.md` | 2671 |
 | `docs\modules\module_179_fourier_major_minor.md` | 8654 |
@@ -206,6 +206,7 @@
 | `docs\modules\module_355_threshold_mask_mass_regularity_audit.md` | 13977 |
 | `docs\modules\module_356_no_twist_column_profile_correlation.md` | 16836 |
 | `docs\modules\module_357_signed_insertion_route_decision.md` | 17011 |
+| `docs\modules\module_358_coefficient_top_mass_feasibility.md` | 15512 |
 | `docs\modules\modules_156_178_summary.md` | 34604 |
 | `docs\paper\Prime_Resonance_Gap_500_Page_Paper.txt` | 1285247 |
 | `docs\README.md` | 6435 |
