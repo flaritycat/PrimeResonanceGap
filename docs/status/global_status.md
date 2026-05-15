@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 343
-Active phase: Phase K, CrossZeroKernelAudit_344 next
+Latest module frontier: Module 344
+Active phase: Phase K, PhaseKPostCoverBranchDecision_345 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -940,10 +940,17 @@ Completed internal exact-zero kernel audit:
     fixed-slice transfer criterion, and blocks codimension-only weighted
     closure
 
+Completed cross exact-zero kernel audit:
+  CrossZeroKernelAudit_344(P_minor^0)
+    catalogs the sixteen cross lifted-zero rows, records bare codimension
+    only, defines the weighted cross exact-zero functional, states a
+    conditional affine-slice transfer criterion, and blocks codimension-only
+    weighted closure
+
 Next scheduled module:
-  Module 344 CrossZeroKernelAudit_344(P_minor^0)
+  Module 345 PhaseKPostCoverBranchDecision_345
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed internal exact-zero
-kernel audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed cross exact-zero kernel
+audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

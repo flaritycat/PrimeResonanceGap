@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 343
-Post-Reflective_1 solving count: 162
-Long-term-plan count: 156
+Latest completed module: 344
+Post-Reflective_1 solving count: 163
+Long-term-plan count: 157
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -4773,19 +4773,19 @@ CodimensionOnlyInternalZeroClosure_343:
   FALSE / BLOCKED.
 
 CrossZeroKernelAudit_344(P_minor^0):
-  OPEN next target.
+  was the then-open next target.
 ```
 
 The audit records that the six internal lifted-zero rows have bare
 codimension at most `6/N`, but that this does not prove the weighted row with
 `KAbs_{U,V}^0`, `LowEnv_Y`, zero-tail weight, masks, cutoff, and limit order.
 
-The current cadence records:
+The Module 343 cadence recorded:
 
 ```text
-Latest completed module: 343
-Post-Reflective_1 solving count: 162
-Long-term-plan count: 156
+Module 343 latest completed module: 343
+Module 343 post-Reflective_1 solving count: 162
+Module 343 long-term-plan count: 156
 
 156 is not divisible by 9, so no plan update is due in this module.
 156 is not divisible by 15, so no plan challenge is due in this module.
@@ -4799,4 +4799,60 @@ Module 344:
   perform CrossZeroKernelAudit_344(P_minor^0), deciding whether the sixteen
   cross lifted-zero rows can be budgeted with the same kernel, low-prime
   envelope, zero-tail weights, masks, and cutoff order.
+```
+
+Module 344 completed:
+
+```text
+CrossZeroKernelAudit_344(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+CrossZeroRowsCatalog_344:
+  STRUCTURAL / EXTRACTION.
+
+BareCrossCodimension_344:
+  STRUCTURAL / EXTRACTION.
+
+CrossZeroWeightedFunctional_344:
+  STRUCTURAL / EXTRACTION.
+
+CrossZeroKernelTransferCriterion_344:
+  CONDITIONAL.
+
+CrossZeroKernelRows_339:
+  OPEN.
+
+CurrentCrossZeroKernelClosure_344:
+  FALSE / BLOCKED.
+
+CodimensionOnlyCrossZeroClosure_344:
+  FALSE / BLOCKED.
+
+PhaseKPostCoverBranchDecision_345:
+  OPEN next target.
+```
+
+The audit records that the sixteen cross lifted-zero rows have bare
+codimension at most `16/N`, but that this does not prove the weighted row with
+`KAbs_{U,V}^0`, `LowEnv_Y`, zero-tail weight, masks, cutoff, and limit order.
+
+The current cadence records:
+
+```text
+Latest completed module: 344
+Post-Reflective_1 solving count: 163
+Long-term-plan count: 157
+
+157 is not divisible by 9, so no plan update is due in this module.
+157 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 345:
+  perform PhaseKPostCoverBranchDecision_345, deciding whether Phase K should
+  continue through a sharper weighted theorem, move back to signed insertion,
+  or pause the cover route.
 ```

@@ -92,7 +92,8 @@ flowchart TD
   Reflective5["Reflective_5<br/>memory log STRUCTURAL"]
   LowEnvelope342["LowEnvelopeMassPrototype_342<br/>STRUCTURAL; current closure BLOCKED"]
   InternalZero343["InternalZeroKernelAudit_343<br/>STRUCTURAL; codimension closure BLOCKED"]
-  CrossZero344["CrossZeroKernelAudit_344<br/>OPEN next target"]
+  CrossZero344["CrossZeroKernelAudit_344<br/>STRUCTURAL; codimension closure BLOCKED"]
+  PhaseDecision345["PhaseKPostCoverBranchDecision_345<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -220,7 +221,8 @@ flowchart TD
   Reflective5 --> LowEnvelope342
   LowEnvelope342 --> InternalZero343
   InternalZero343 --> CrossZero344
-  CrossZero344 --> AntiDiag312
+  CrossZero344 --> PhaseDecision345
+  PhaseDecision345 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -315,6 +317,9 @@ flowchart TD
 - The Module 343 internal exact-zero kernel audit extracts bare codimension
   for the six internal rows only. It does not prove weighted internal
   zero-kernel control.
+- The Module 344 cross exact-zero kernel audit extracts bare codimension for
+  the sixteen cross rows only. It does not prove weighted cross zero-kernel
+  control.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still

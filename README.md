@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: cross exact-zero kernel audit after the
-internal exact-zero kernel audit**.
+The current active phase is **Phase K: post-cover branch decision after the
+cross exact-zero kernel audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 343
-Active phase: Phase K, CrossZeroKernelAudit_344 next
+Latest module frontier: Module 344
+Active phase: Phase K, PhaseKPostCoverBranchDecision_345 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -945,9 +945,14 @@ Module 343:
   codimension-only weighted closure shortcut.
 
 Module 344:
-  perform CrossZeroKernelAudit_344(P_minor^0), deciding whether the sixteen
-  cross lifted-zero rows can be budgeted with the same kernel, low-prime
-  envelope, zero-tail weights, masks, and cutoff order.
+  performed CrossZeroKernelAudit_344(P_minor^0), cataloging the sixteen cross
+  lifted-zero rows, extracting bare codimension, and blocking the
+  codimension-only weighted closure shortcut.
+
+Module 345:
+  perform PhaseKPostCoverBranchDecision_345, deciding whether Phase K should
+  continue through a sharper weighted theorem, move back to signed insertion,
+  or pause the cover route.
 ```
 
 ## What Is Proved?
@@ -1113,7 +1118,12 @@ Compact status table:
 | Internal zero kernel transfer criterion from Module 343 | **CONDITIONAL** |
 | Internal zero kernel rows from Module 343 | **OPEN** |
 | Current internal zero kernel closure from Module 343 | **FALSE / BLOCKED** |
-| Cross exact-zero kernel audit `CrossZeroKernelAudit_344` | **OPEN next target** |
+| Cross exact-zero kernel audit `CrossZeroKernelAudit_344` | **STRUCTURAL / EXTRACTION** |
+| Bare cross codimension and weighted cross functional from Module 344 | **STRUCTURAL / EXTRACTION** |
+| Cross zero kernel transfer criterion from Module 344 | **CONDITIONAL** |
+| Cross zero kernel rows from Module 344 | **OPEN** |
+| Current cross zero kernel closure from Module 344 | **FALSE / BLOCKED** |
+| Phase K post-cover branch decision `PhaseKPostCoverBranchDecision_345` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1520,7 +1530,11 @@ wins.
 | `InternalZeroRowsCatalog_343 / BareInternalCodimension_343 / InternalZeroWeightedFunctional_343` | STRUCTURAL / EXTRACTION | Catalog, bare codimension, and exact weighted target only |
 | `InternalZeroKernelTransferCriterion_343` | CONDITIONAL | Requires same-family fixed-slice estimates with kernel, low envelope, and zero-tail weights |
 | `CurrentInternalZeroKernelClosure_343 / CodimensionOnlyInternalZeroClosure_343` | FALSE / BLOCKED | Bare codimension does not control weighted kernel slices |
-| `CrossZeroKernelAudit_344(P_minor^0)` | OPEN | Next target |
+| `CrossZeroKernelAudit_344(P_minor^0)` | STRUCTURAL / EXTRACTION | Audits the sixteen cross lifted-zero rows |
+| `CrossZeroRowsCatalog_344 / BareCrossCodimension_344 / CrossZeroWeightedFunctional_344` | STRUCTURAL / EXTRACTION | Catalog, bare codimension, and exact weighted target only |
+| `CrossZeroKernelTransferCriterion_344` | CONDITIONAL | Requires same-family affine-slice estimates with kernel, low envelope, and zero-tail weights |
+| `CurrentCrossZeroKernelClosure_344 / CodimensionOnlyCrossZeroClosure_344` | FALSE / BLOCKED | Bare codimension does not control weighted cross slices |
+| `PhaseKPostCoverBranchDecision_345` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
