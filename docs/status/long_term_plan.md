@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 370
-Post-Reflective_1 solving count: 189
-Long-term-plan count: 183
+Latest completed module: 371
+Post-Reflective_1 solving count: 190
+Long-term-plan count: 184
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -6380,4 +6380,62 @@ Module 371:
   sum_xi |A(xi)| o_abs(xi)=o_W(1)
   can be bounded from existing profile/overlap ceilings or whether it needs
   a new same-family overlap theorem at the no-twist mask scale.
+```
+
+Module 371 completed:
+
+```text
+DiagonalOverlapLargeValueStress_371(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+DiagonalOverlapProfileIdentity_371:
+  PROVEN.
+
+DiagonalOverlapTopMassExtremalLemma_371:
+  PROVEN.
+
+DiagonalOverlapTopMassCriterion_371:
+  CONDITIONAL.
+
+FirstIncidenceDiagonalOverlapRoute_371:
+  FALSE / BLOCKED.
+
+CurrentDiagonalOverlapClosure_371:
+  FALSE / BLOCKED.
+
+OverlapProfileAntiConcentrationTarget_371:
+  OPEN.
+
+DiagonalOverlapLargeValueTarget_359:
+  OPEN.
+```
+
+Best target selection: Module 371 was the right attack because Modules
+360-370 had already stressed the rectangle-defect and pair-residual branches
+of the Module 359 split. The proof attack isolates the exact same-shift
+overlap profile `l_{U,V}`, proves the sharp top-mass extremal bound
+`sum_xi a(xi)o_abs(xi) <= D^(-1)K_O A_star(m_O)`, and shows that
+first-incidence ceilings alone cannot beat this bound. The diagonal branch
+therefore remains open as a same-family overlap anti-concentration problem.
+
+The current cadence records:
+
+```text
+Latest completed module: 371
+Post-Reflective_1 solving count: 190
+Long-term-plan count: 184
+
+184 is not divisible by 9, so no plan update is due in this module.
+184 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 372:
+  perform OverlapProfileStructureAudit_372(P_minor^0), deciding whether the
+  actual threshold overlap profile l_{U,V}(xi) has usable structure beyond
+  cap-and-total data, or whether OverlapProfileAntiConcentrationTarget_371 is
+  a genuinely new same-family input.
 ```
