@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 371
-Post-Reflective_1 solving count: 190
-Long-term-plan count: 184
+Latest completed module: 372
+Post-Reflective_1 solving count: 191
+Long-term-plan count: 185
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -6438,4 +6438,69 @@ Module 372:
   actual threshold overlap profile l_{U,V}(xi) has usable structure beyond
   cap-and-total data, or whether OverlapProfileAntiConcentrationTarget_371 is
   a genuinely new same-family input.
+```
+
+Module 372 completed:
+
+```text
+OverlapProfileStructureAudit_372(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+ThresholdAmplitudeDomination_372:
+  PROVEN.
+
+SameSourceOverlapReduction_372:
+  PROVEN.
+
+WeightedMixedAmplitudeCriterion_372:
+  CONDITIONAL.
+
+WeightedColumnMultiplicityCriterion_372:
+  CONDITIONAL.
+
+UnweightedEnergyOverlapClosure_372:
+  FALSE / BLOCKED.
+
+CurrentOverlapProfileStructureClosure_372:
+  FALSE / BLOCKED.
+
+WeightedMixedAmplitudeTarget_372:
+  OPEN.
+
+WeightedColumnMultiplicityTarget_372:
+  OPEN.
+
+OverlapProfileAntiConcentrationTarget_371:
+  OPEN.
+```
+
+Best target selection: Module 372 was the right attack because Module 371
+left the diagonal-overlap row as an exact overlap-profile top-mass problem.
+The proof attack shows that the actual threshold origin of the masks gives
+two sharper reductions: threshold-amplitude domination and same-source
+column-multiplicity reduction. It also shows that unweighted `E2_minor^0`
+and first-incidence data do not close the coefficient-weighted row. The next
+smallest concrete target is the same-source weighted column-multiplicity
+row for `beta_0`.
+
+The current cadence records:
+
+```text
+Latest completed module: 372
+Post-Reflective_1 solving count: 191
+Long-term-plan count: 185
+
+185 is not divisible by 9, so no plan update is due in this module.
+185 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 373:
+  perform WeightedColumnMultiplicityAudit_373(P_minor^0), testing whether
+  D^(-1) sum_xi |A(xi)|N_{beta_0}(xi;sigma)=o_W(1) follows from existing
+  coefficient norms, column-tail information, or the pair/rectangle
+  decompositions, or whether it is a genuinely new same-family input.
 ```
