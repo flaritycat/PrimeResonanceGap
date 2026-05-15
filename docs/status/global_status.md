@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 347
-Active phase: Phase K, MinimalActivePairDiscrepancyAudit_348 next
+Latest module frontier: Module 348
+Active phase: Phase K, MinimalFullyCoupledQuadrupleAudit_349 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -968,11 +968,20 @@ Completed subset model discrepancy audit:
     subsets, leaves those active discrepancy rows open, and selects the
     minimal active pair audit as the next target
 
+Completed minimal active pair discrepancy audit:
+  MinimalActivePairDiscrepancyAudit_348(P_minor^0)
+    proves inside P_minor^0 that the four minimal active pair discrepancies
+    and all non-fully-coupled subset discrepancies are exact zero under the
+    nonzero minor kernel, catalogs the 81 fully coupled subsets, leaves their
+    discrepancy rows open, and selects the minimal fully coupled quadruple
+    audit as the next target
+
 Next scheduled module:
-  Module 348 MinimalActivePairDiscrepancyAudit_348(P_minor^0)
+  Module 349 MinimalFullyCoupledQuadrupleAudit_349(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed subset model
-discrepancy audit; `OneSidedSubsetDiscrepancyZero_347(P_minor^0)` is
-**PROVEN inside P_minor^0** only;
+Status: **STRUCTURAL / EXTRACTION** for the completed minimal active pair
+discrepancy audit; `MinimalActivePairDiscrepancyZero_348(P_minor^0)` and
+`NonFullyCoupledSubsetDiscrepancyZero_348(P_minor^0)` are **PROVEN inside
+P_minor^0** only;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

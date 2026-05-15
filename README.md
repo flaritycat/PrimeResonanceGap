@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: minimal active pair discrepancy audit
-after the subset-model discrepancy audit**.
+The current active phase is **Phase K: minimal fully coupled quadruple audit
+after the minimal active pair discrepancy audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 347
-Active phase: Phase K, MinimalActivePairDiscrepancyAudit_348 next
+Latest module frontier: Module 348
+Active phase: Phase K, MinimalFullyCoupledQuadrupleAudit_349 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -966,6 +966,13 @@ Module 347:
   P_minor^0 that one-sided subset discrepancies are exact zero by the
   nonzero minor kernel, cataloging the 144 two-sided active subsets, and
   selecting the minimal active pair discrepancy audit as the next target.
+
+Module 348:
+  performed MinimalActivePairDiscrepancyAudit_348(P_minor^0), proving inside
+  P_minor^0 that the four minimal active pair discrepancies and all
+  non-fully-coupled subset discrepancies are exact zero, cataloging the 81
+  fully coupled subsets, and selecting the minimal fully coupled quadruple
+  audit as the next target.
 ```
 
 ## What Is Proved?
@@ -1150,7 +1157,13 @@ Compact status table:
 | Two-sided active subset catalog from Module 347 | **STRUCTURAL / EXTRACTION** |
 | Two-sided active subset discrepancy rows from Module 347 | **OPEN** |
 | All subset discrepancies close from Module 347 | **FALSE / BLOCKED** |
-| Minimal active pair discrepancy audit `MinimalActivePairDiscrepancyAudit_348` | **OPEN next target** |
+| Minimal active pair discrepancy audit `MinimalActivePairDiscrepancyAudit_348` | **STRUCTURAL / EXTRACTION** |
+| Minimal active pair discrepancy zero from Module 348 | **PROVEN inside `P_minor^0`** |
+| Non-fully-coupled subset discrepancy zero from Module 348 | **PROVEN inside `P_minor^0`** |
+| Fully coupled subset catalog from Module 348 | **STRUCTURAL / EXTRACTION** |
+| Fully coupled subset discrepancy rows from Module 348 | **OPEN** |
+| All two-sided active rows close from Module 348 | **FALSE / BLOCKED** |
+| Minimal fully coupled quadruple audit `MinimalFullyCoupledQuadrupleAudit_349` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1573,7 +1586,12 @@ wins.
 | `TwoSidedActiveSubsetCatalog_347` | STRUCTURAL / EXTRACTION | 144 active subsets cataloged |
 | `TwoSidedActiveSubsetDiscrepancyRows_347` | OPEN | Active two-direction discrepancies remain unproved |
 | `AllSubsetDiscrepanciesClose_347` | FALSE / BLOCKED | One-sided zeros do not close active subset rows |
-| `MinimalActivePairDiscrepancyAudit_348(P_minor^0)` | OPEN | Next target |
+| `MinimalActivePairDiscrepancyAudit_348(P_minor^0)` | STRUCTURAL / EXTRACTION | Minimal active pair rows audited |
+| `MinimalActivePairDiscrepancyZero_348 / NonFullyCoupledSubsetDiscrepancyZero_348` | PROVEN inside P_minor^0 | Exact nonzero-kernel cancellation for all non-fully-coupled subsets |
+| `FullyCoupledSubsetCatalog_348` | STRUCTURAL / EXTRACTION | 81 fully coupled subsets cataloged |
+| `FullyCoupledSubsetDiscrepancyRows_348` | OPEN | Fully coupled subset discrepancies remain unproved |
+| `AllTwoSidedActiveRowsClose_348` | FALSE / BLOCKED | Local zeros do not close fully coupled rows |
+| `MinimalFullyCoupledQuadrupleAudit_349(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

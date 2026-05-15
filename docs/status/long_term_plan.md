@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 347
-Post-Reflective_1 solving count: 166
-Long-term-plan count: 160
+Latest completed module: 348
+Post-Reflective_1 solving count: 167
+Long-term-plan count: 161
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -4990,12 +4990,12 @@ It leaves the 144 two-sided active subset discrepancies open. The smallest
 active tests are the four pair subsets `{3,7}`, `{3,8}`, `{4,7}`, and
 `{4,8}`.
 
-The current cadence records:
+The Module 347 cadence recorded:
 
 ```text
-Latest completed module: 347
-Post-Reflective_1 solving count: 166
-Long-term-plan count: 160
+Module 347 latest completed module: 347
+Module 347 post-Reflective_1 solving count: 166
+Module 347 long-term-plan count: 160
 
 160 is not divisible by 9, so no plan update is due in this module.
 160 is not divisible by 15, so no plan challenge is due in this module.
@@ -5010,4 +5010,58 @@ Module 348:
   the four minimal two-sided active pair discrepancies can be reduced to an
   existing pair local-model row, or whether they require a new weighted
   same-family insertion theorem.
+```
+
+Module 348 completed:
+
+```text
+MinimalActivePairDiscrepancyAudit_348(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+MinimalActivePairDiscrepancyZero_348(P_minor^0):
+  PROVEN inside P_minor^0.
+
+NonFullyCoupledSubsetDiscrepancyZero_348(P_minor^0):
+  PROVEN inside P_minor^0.
+
+FullyCoupledSubsetCatalog_348:
+  STRUCTURAL / EXTRACTION.
+
+FullyCoupledSubsetDiscrepancyRows_348:
+  OPEN.
+
+AllTwoSidedActiveRowsClose_348:
+  FALSE / BLOCKED.
+
+MinimalFullyCoupledQuadrupleAudit_349(P_minor^0):
+  OPEN next target.
+```
+
+The audit proves that the four minimal active pair discrepancies vanish
+inside the full cyclic nonzero-frequency `P_minor^0` model. The same
+coordinate-decoupling argument kills every subset that misses at least one of
+the four slot groups `{1,2}`, `{3,4}`, `{5,6}`, `{7,8}`. The remaining
+obstruction is the 81 fully coupled subset discrepancies, beginning with 16
+minimal quadruple rows.
+
+The current cadence records:
+
+```text
+Latest completed module: 348
+Post-Reflective_1 solving count: 167
+Long-term-plan count: 161
+
+161 is not divisible by 9, so no plan update is due in this module.
+161 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 349:
+  perform MinimalFullyCoupledQuadrupleAudit_349(P_minor^0), deciding whether
+  the 16 minimal fully coupled quadruple discrepancies reduce to an existing
+  rectangle/local-model row or require a new weighted same-family insertion
+  theorem.
 ```
