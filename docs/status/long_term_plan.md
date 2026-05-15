@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 363
-Post-Reflective_1 solving count: 182
-Long-term-plan count: 176
+Latest completed module: 364
+Post-Reflective_1 solving count: 183
+Long-term-plan count: 177
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -5936,4 +5936,60 @@ Module 364:
   whether the separated off-diagonal pair model admits a finite-cyclic
   Ramanujan expansion with a high-denominator tail bound strong enough for
   PairModelMinorTopMassTarget_361.
+```
+
+Module 364 completed:
+
+```text
+PairModelOffDiagonalRamanujanTailAudit_364(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+FinitePairRamanujanExpansion_364:
+  PROVEN.
+
+LowDenominatorRamanujanLeakage_364:
+  CONDITIONAL.
+
+ReducedCharacterAbsoluteTail_364:
+  FALSE / BLOCKED.
+
+RamanujanSquareCoefficientTail_364:
+  PROVEN.
+
+FiniteCyclicRamanujanLargeSieveTarget_364:
+  OPEN.
+
+PairModelRamanujanTailTarget_362:
+  OPEN.
+```
+
+The proof attack proves the exact finite Ramanujan expansion
+`kappa_{w,z}^0(a)=sum_{q|P(w,z)} mu(q)^2 phi(q)^(-2)c_q(a)`. It also proves
+that the reduced-character absolute high-denominator tail diverges, so the
+tail cannot be removed by triangle inequality. The square coefficient tail
+`sum_{q>Q} mu(q)^2/phi(q)^3` is summable, reducing the remaining route to a
+finite-cyclic large-sieve or almost-orthogonality estimate with the declared
+representative convention and diagonal routing.
+
+The current cadence records:
+
+```text
+Latest completed module: 364
+Post-Reflective_1 solving count: 183
+Long-term-plan count: 177
+
+177 is not divisible by 9, so no plan update is due in this module.
+177 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 365:
+  perform FiniteCyclicRamanujanLargeSieveAudit_365(P_minor^0), deciding
+  whether the square-summable off-diagonal Ramanujan tail from Module 364
+  can be converted into the minor-frequency top-mass bound needed for
+  PairModelMinorTopMassTarget_361, or whether range/spacing losses keep the
+  pair-model tail endpoint-strength.
 ```
