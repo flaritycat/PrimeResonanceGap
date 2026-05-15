@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 333
-Post-Reflective_1 solving count: 152
-Long-term-plan count: 146
+Latest completed module: 334
+Post-Reflective_1 solving count: 153
+Long-term-plan count: 147
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -4193,4 +4193,66 @@ Module 334:
   perform ExactPartitionCoarseningAudit_334(P_minor^0), deciding how exact
   partition inequalities relate to equality envelopes and whether coarsening
   inclusion-exclusion preserves the same weighted row.
+```
+
+Module 334 completed:
+
+```text
+ExactPartitionCoarseningAudit_334(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+PartitionLatticeMobiusIdentity_334:
+  STRUCTURAL / EXTRACTION.
+
+EqualityEnvelopeDomination_334:
+  STRUCTURAL / EXTRACTION.
+
+CoarseningWeightedCriterion_334:
+  CONDITIONAL.
+
+ExactWeightedPartitionRows_334:
+  OPEN.
+
+CoarseningWeightedUniformityRows_334:
+  OPEN.
+
+CoarseningSignCancellationRoute_334:
+  FALSE / BLOCKED.
+
+SameWeightEnvelopeShortcut_334:
+  FALSE / BLOCKED.
+
+CurrentExactPartitionClosure_334:
+  FALSE / BLOCKED.
+
+MultiPrimeCRTMaskAudit_335(P_minor^0):
+  OPEN next target.
+```
+
+The audit records the finite partition-lattice identity:
+`Exact_pi` is a signed sum over equality envelopes of coarsenings. It also
+records equality-envelope domination for nonnegative weights. Neither closes
+the weighted cover row: coarsenings must be charged with their own correct
+prime-local weights, and signed coarsening cancellation is unavailable after
+the absolute kernel and positive cover weights have been inserted.
+
+The current cadence records:
+
+```text
+Latest completed module: 334
+Post-Reflective_1 solving count: 153
+Long-term-plan count: 147
+
+147 is not divisible by 9, so no plan update is due in this module.
+147 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 335:
+  perform MultiPrimeCRTMaskAudit_335(P_minor^0), deciding whether one-prime
+  equality/coarsening rows can be combined across several primes under the
+  same kernel, dyadic, and mask weights.
 ```

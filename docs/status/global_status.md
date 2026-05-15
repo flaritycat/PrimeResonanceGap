@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 333
-Active phase: Phase K, exact partition coarsening audit next
+Latest module frontier: Module 334
+Active phase: Phase K, multi-prime CRT/mask audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -863,10 +863,18 @@ Completed dyadic residue uniformity audit:
     conditional finite-prime range criterion, and leaves the weighted dyadic
     projection and masked residue-uniformity rows open
 
+Completed exact partition coarsening audit:
+  ExactPartitionCoarseningAudit_334(P_minor^0)
+    records the finite partition-lattice Mobius identity and equality-envelope
+    domination, gives a conditional coarsening weighted criterion, blocks
+    same-weight envelope and signed coarsening-cancellation shortcuts inside
+    the absolute cover-moment row, and leaves exact/coarsening weighted
+    partition estimates open
+
 Next scheduled module:
-  Module 334 ExactPartitionCoarseningAudit_334(P_minor^0)
+  Module 335 MultiPrimeCRTMaskAudit_335(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed dyadic residue
-uniformity audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed exact partition
+coarsening audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

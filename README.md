@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: exact partition coarsening audit after
-the dyadic residue uniformity audit**.
+The current active phase is **Phase K: multi-prime CRT/mask audit after the
+exact partition coarsening audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 333
-Active phase: Phase K, exact partition coarsening audit next
+Latest module frontier: Module 334
+Active phase: Phase K, multi-prime CRT/mask audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -755,14 +755,20 @@ Module 333:
   unweighted residue saving for the two-sided dyadic shell, names the finite
   prime range condition needed to make boundary errors harmless, and leaves
   the weighted/masked dyadic projection row open.
+
+Module 334:
+  audited exact partition events versus equality envelopes. It records the
+  partition-lattice Mobius identity, equality-envelope domination, and a
+  conditional coarsening criterion, while blocking same-weight envelope and
+  signed-cancellation shortcuts inside the absolute cover-moment row.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-333 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-334 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window, the signed minor-kernel row, or the
-generic/collision/full-cover/sharp-cover/Mobius-cover/coarsening rows.
+generic/collision/full-cover/sharp-cover/Mobius-cover/CRT-mask rows.
 
 The next planned module is:
 
@@ -852,9 +858,14 @@ Module 333:
   `pi_d(C)`, including off-diagonal and wrap conventions.
 
 Module 334:
-  perform ExactPartitionCoarseningAudit_334(P_minor^0), deciding how exact
+  performed ExactPartitionCoarseningAudit_334(P_minor^0), deciding how exact
   partition inequalities relate to equality envelopes and whether coarsening
   inclusion-exclusion preserves the same weighted row.
+
+Module 335:
+  perform MultiPrimeCRTMaskAudit_335(P_minor^0), deciding whether one-prime
+  equality/coarsening rows can be combined across several primes under the
+  same kernel, dyadic, and mask weights.
 ```
 
 ## What Is Proved?
@@ -975,7 +986,12 @@ Compact status table:
 | Uniform prime range criterion `UniformPrimeRangeCriterion_333` | **CONDITIONAL** |
 | Weighted dyadic projection and masked dyadic residue-uniformity rows from Module 333 | **OPEN** |
 | Current dyadic residue closure `CurrentDyadicResidueClosure_333` | **FALSE / BLOCKED** |
-| Exact partition coarsening audit `ExactPartitionCoarseningAudit_334` | **OPEN next target** |
+| Exact partition coarsening audit `ExactPartitionCoarseningAudit_334` | **STRUCTURAL / EXTRACTION** |
+| Partition-lattice Mobius identity and equality-envelope domination from Module 334 | **STRUCTURAL / EXTRACTION** |
+| Coarsening weighted criterion `CoarseningWeightedCriterion_334` | **CONDITIONAL** |
+| Exact weighted partition and coarsening weighted-uniformity rows from Module 334 | **OPEN** |
+| Coarsening sign-cancellation and same-weight envelope shortcuts from Module 334 | **FALSE / BLOCKED** |
+| Multi-prime CRT/mask audit `MultiPrimeCRTMaskAudit_335` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1337,7 +1353,12 @@ wins.
 | `UniformPrimeRangeCriterion_333` | CONDITIONAL | Needs finite-prime range or weighted error summability beyond fixed-prime counting |
 | `WeightedDyadicProjectionRow_333 / MaskedDyadicResidueUniformity_333` | OPEN | Weighted and mask-sensitive residue rows remain missing |
 | `CurrentDyadicResidueClosure_333` | FALSE / BLOCKED | Bare dyadic counts do not prove the weighted projection row |
-| `ExactPartitionCoarseningAudit_334(P_minor^0)` | OPEN | Next target |
+| `ExactPartitionCoarseningAudit_334(P_minor^0)` | STRUCTURAL / EXTRACTION | Audits exact partition events versus equality envelopes and coarsenings |
+| `PartitionLatticeMobiusIdentity_334 / EqualityEnvelopeDomination_334` | STRUCTURAL / EXTRACTION | Finite partition-lattice identity and domination only |
+| `CoarseningWeightedCriterion_334` | CONDITIONAL | Requires weighted equality-envelope estimates for every coarsening with correct weights |
+| `ExactWeightedPartitionRows_334 / CoarseningWeightedUniformityRows_334` | OPEN | Same-family exact and coarsening weighted rows remain missing |
+| `CoarseningSignCancellationRoute_334 / SameWeightEnvelopeShortcut_334 / CurrentExactPartitionClosure_334` | FALSE / BLOCKED | Lattice signs and same-weight envelopes do not close the absolute cover row |
+| `MultiPrimeCRTMaskAudit_335(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

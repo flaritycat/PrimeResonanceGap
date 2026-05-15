@@ -82,7 +82,8 @@ flowchart TD
   PartitionCount331["PartitionClassCountingAudit_331<br/>STRUCTURAL; kernel residue rows OPEN"]
   KernelFiber332["KernelFiberPartitionAudit_332<br/>STRUCTURAL; dyadic residue rows OPEN"]
   Dyadic333["DyadicResidueUniformityAudit_333<br/>STRUCTURAL; weighted row OPEN"]
-  Coarsening334["ExactPartitionCoarseningAudit_334<br/>OPEN next target"]
+  Coarsening334["ExactPartitionCoarseningAudit_334<br/>STRUCTURAL; multi-prime rows OPEN"]
+  CRTMask335["MultiPrimeCRTMaskAudit_335<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -200,7 +201,8 @@ flowchart TD
   PartitionCount331 --> KernelFiber332
   KernelFiber332 --> Dyadic333
   Dyadic333 --> Coarsening334
-  Coarsening334 --> AntiDiag312
+  Coarsening334 --> CRTMask335
+  CRTMask335 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -262,6 +264,9 @@ flowchart TD
 - The Module 333 dyadic residue audit proves only unweighted fixed-prime
   interval-counting diagnostics. It does not prove weighted or masked
   dyadic projection uniformity.
+- The Module 334 exact partition audit is finite partition-lattice
+  bookkeeping. Same-weight envelope and signed-cancellation shortcuts remain
+  blocked in the absolute cover-moment row.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still
