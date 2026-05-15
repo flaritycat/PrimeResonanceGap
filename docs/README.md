@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 345
-Active phase: Phase K, SignedLocalModelInsertionFeasibility_346 next
+Latest module frontier: Module 346
+Active phase: Phase K, SubsetModelDiscrepancyAudit_347 next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -114,6 +114,7 @@ modules/
   module_343_internal_zero_kernel_audit.md
   module_344_cross_zero_kernel_audit.md
   module_345_phase_k_post_cover_branch_decision.md
+  module_346_signed_local_model_insertion_feasibility.md
   modules_156_178_summary.md
 
 reviews/

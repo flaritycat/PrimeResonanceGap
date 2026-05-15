@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: signed-local-model insertion
-feasibility after the post-cover branch decision**.
+The current active phase is **Phase K: subset-model discrepancy audit after
+the signed local-model insertion feasibility test**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 345
-Active phase: Phase K, SignedLocalModelInsertionFeasibility_346 next
+Latest module frontier: Module 346
+Active phase: Phase K, SubsetModelDiscrepancyAudit_347 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -954,6 +954,12 @@ Module 345:
   absolute cover route as the primary next closure route, blocking
   unqualified signed insertion as a proof, and selecting
   SignedLocalModelInsertionFeasibility_346(P_minor^0) as the next target.
+
+Module 346:
+  performed SignedLocalModelInsertionFeasibility_346(P_minor^0), expanding
+  the physical-to-model insertion error into a signed sum of weighted subset
+  discrepancies, stating the conditional subset-discrepancy criterion, and
+  blocking naive HL/proper-support insertion shortcuts.
 ```
 
 ## What Is Proved?
@@ -1128,7 +1134,12 @@ Compact status table:
 | Absolute cover continuation as immediate next move from Module 345 | **FALSE / BLOCKED** |
 | Unqualified signed insertion closure from Module 345 | **FALSE / BLOCKED** |
 | Cover route pause from Module 345 | **STRUCTURAL / EXTRACTION** |
-| Signed local-model insertion feasibility `SignedLocalModelInsertionFeasibility_346` | **OPEN next target** |
+| Signed local-model insertion feasibility `SignedLocalModelInsertionFeasibility_346` | **STRUCTURAL / EXTRACTION** |
+| Signed insertion error identity from Module 346 | **STRUCTURAL / EXTRACTION** |
+| Weighted subset-model discrepancy criterion from Module 346 | **CONDITIONAL** |
+| Naive HL/proper-support insertion shortcuts from Module 346 | **FALSE / BLOCKED** |
+| Current signed local-model insertion closure from Module 346 | **FALSE / BLOCKED** |
+| Subset model discrepancy audit `SubsetModelDiscrepancyAudit_347` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1542,7 +1553,11 @@ wins.
 | `PhaseKPostCoverBranchDecision_345(P_minor^0)` | STRUCTURAL / EXTRACTION | Post-cover branch decision |
 | `AbsoluteCoverContinuationAsNextMove_345 / UnqualifiedSignedInsertionClosure_345` | FALSE / BLOCKED | Blocks both another absolute cover diagnostic and unqualified signed insertion as closure |
 | `CoverRoutePause_345` | STRUCTURAL / EXTRACTION | Pauses the absolute cover route as primary next closure route |
-| `SignedLocalModelInsertionFeasibility_346(P_minor^0)` | OPEN | Next target |
+| `SignedLocalModelInsertionFeasibility_346(P_minor^0)` | STRUCTURAL / EXTRACTION | Physical-to-model insertion feasibility audited |
+| `SignedInsertionErrorIdentity_346` | STRUCTURAL / EXTRACTION | Exact signed sum of subset discrepancies |
+| `WeightedSubsetModelDiscrepancyCriterion_346` | CONDITIONAL | Would need all same-family weighted subset discrepancies |
+| `NaiveHLInsertionShortcut_346 / ProperSupportInsertionShortcut_346 / CurrentSignedLocalModelInsertionClosure_346` | FALSE / BLOCKED | Current tools do not insert the model |
+| `SubsetModelDiscrepancyAudit_347(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

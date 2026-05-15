@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 345
-Active phase: Phase K, SignedLocalModelInsertionFeasibility_346 next
+Latest module frontier: Module 346
+Active phase: Phase K, SubsetModelDiscrepancyAudit_347 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -954,10 +954,17 @@ Completed post-cover branch decision:
     insertion as a closure claim, and selects the signed local-model insertion
     feasibility row as the next target
 
+Completed signed local-model insertion feasibility test:
+  SignedLocalModelInsertionFeasibility_346(P_minor^0)
+    expands the physical-to-model insertion error into a signed sum of
+    weighted subset physical-minus-model discrepancies, states a conditional
+    subset-discrepancy criterion, blocks naive HL and proper-support
+    insertion shortcuts, and leaves signed local-model insertion unproved
+
 Next scheduled module:
-  Module 346 SignedLocalModelInsertionFeasibility_346(P_minor^0)
+  Module 347 SubsetModelDiscrepancyAudit_347(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed post-cover branch
-decision;
+Status: **STRUCTURAL / EXTRACTION** for the completed signed local-model
+insertion feasibility test;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

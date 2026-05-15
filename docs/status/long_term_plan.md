@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 345
-Post-Reflective_1 solving count: 164
-Long-term-plan count: 158
+Latest completed module: 346
+Post-Reflective_1 solving count: 165
+Long-term-plan count: 159
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -4887,12 +4887,12 @@ replacing the physical eight-slot product `F_8` by
 `Omega_{w,8}^{minor}` under the threshold-localized kernel is exactly the
 open insertion theorem.
 
-The current cadence records:
+The Module 345 cadence recorded:
 
 ```text
-Latest completed module: 345
-Post-Reflective_1 solving count: 164
-Long-term-plan count: 158
+Module 345 latest completed module: 345
+Module 345 post-Reflective_1 solving count: 164
+Module 345 long-term-plan count: 158
 
 158 is not divisible by 9, so no plan update is due in this module.
 158 is not divisible by 15, so no plan challenge is due in this module.
@@ -4907,4 +4907,57 @@ Module 346:
   whether the physical signed eight-slot row can be inserted into the
   collision-sensitive local model in the same family, or whether that step is
   endpoint-strength or blocked.
+```
+
+Module 346 completed:
+
+```text
+SignedLocalModelInsertionFeasibility_346(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+SignedInsertionErrorIdentity_346:
+  STRUCTURAL / EXTRACTION.
+
+WeightedSubsetModelDiscrepancyCriterion_346:
+  CONDITIONAL.
+
+NaiveHLInsertionShortcut_346:
+  FALSE / BLOCKED.
+
+ProperSupportInsertionShortcut_346:
+  FALSE / BLOCKED.
+
+CurrentSignedLocalModelInsertionClosure_346:
+  FALSE / BLOCKED.
+
+SubsetModelDiscrepancyAudit_347(P_minor^0):
+  OPEN next target.
+```
+
+The feasibility test expands the signed insertion error into the signed sum
+of weighted subset physical-minus-model discrepancies. It blocks first-moment
+HL and proper-support signed cancellation as insertion shortcuts. The next
+step is to audit the subset discrepancy rows directly and identify which rows
+are exact zeros, structural convention rows, conditional rows, or genuinely
+open weighted local-model estimates.
+
+The current cadence records:
+
+```text
+Latest completed module: 346
+Post-Reflective_1 solving count: 165
+Long-term-plan count: 159
+
+159 is not divisible by 9, so no plan update is due in this module.
+159 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 347:
+  perform SubsetModelDiscrepancyAudit_347(P_minor^0), deciding which
+  subset discrepancy rows in Module 346 are trivial, structural, conditional,
+  or still require new same-family weighted local-model input.
 ```
