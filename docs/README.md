@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 348
-Active phase: Phase K, MinimalFullyCoupledQuadrupleAudit_349 next
+Latest module frontier: Module 349
+Active phase: Phase K, AntiDiagonalPairPairDiscrepancyAudit_350 next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -117,6 +117,7 @@ modules/
   module_346_signed_local_model_insertion_feasibility.md
   module_347_subset_model_discrepancy_audit.md
   module_348_minimal_active_pair_discrepancy_audit.md
+  module_349_minimal_fully_coupled_quadruple_audit.md
   modules_156_178_summary.md
 
 reviews/

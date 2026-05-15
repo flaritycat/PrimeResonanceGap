@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 348
-Active phase: Phase K, MinimalFullyCoupledQuadrupleAudit_349 next
+Latest module frontier: Module 349
+Active phase: Phase K, AntiDiagonalPairPairDiscrepancyAudit_350 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -976,12 +976,20 @@ Completed minimal active pair discrepancy audit:
     discrepancy rows open, and selects the minimal fully coupled quadruple
     audit as the next target
 
+Completed minimal fully coupled quadruple audit:
+  MinimalFullyCoupledQuadrupleAudit_349(P_minor^0)
+    reduces the 16 minimal fully coupled quadruple rows to the common
+    anti-diagonal pair-pair discrepancy
+    widehat{Delta_pairpair^349}(-xi,-xi), records the nine offset/twist
+    types, blocks ordinary pair/rectangle tools as closure, performs
+    PlanUpdate_18_349, and leaves the anti-diagonal pair-pair discrepancy
+    audit as the next target
+
 Next scheduled module:
-  Module 349 MinimalFullyCoupledQuadrupleAudit_349(P_minor^0)
+  Module 350 AntiDiagonalPairPairDiscrepancyAudit_350(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed minimal active pair
-discrepancy audit; `MinimalActivePairDiscrepancyZero_348(P_minor^0)` and
-`NonFullyCoupledSubsetDiscrepancyZero_348(P_minor^0)` are **PROVEN inside
-P_minor^0** only;
+Status: **STRUCTURAL / EXTRACTION** for the completed minimal fully coupled
+quadruple audit; `AntiDiagonalPairPairDiscrepancyCriterion_349` is
+**CONDITIONAL**, and `MinimalFullyCoupledQuadrupleRows_349` remain **OPEN**.
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: minimal fully coupled quadruple audit
-after the minimal active pair discrepancy audit**.
+The current active phase is **Phase K: anti-diagonal pair-pair discrepancy
+audit after the minimal fully coupled quadruple audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 348
-Active phase: Phase K, MinimalFullyCoupledQuadrupleAudit_349 next
+Latest module frontier: Module 349
+Active phase: Phase K, AntiDiagonalPairPairDiscrepancyAudit_350 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -973,6 +973,12 @@ Module 348:
   non-fully-coupled subset discrepancies are exact zero, cataloging the 81
   fully coupled subsets, and selecting the minimal fully coupled quadruple
   audit as the next target.
+
+Module 349:
+  performed MinimalFullyCoupledQuadrupleAudit_349(P_minor^0), reducing the 16
+  minimal fully coupled quadruple rows to one anti-diagonal pair-pair
+  discrepancy function with nine offset/twist types, blocking current
+  pair/rectangle tools as closure, and completing PlanUpdate_18_349.
 ```
 
 ## What Is Proved?
@@ -1163,7 +1169,14 @@ Compact status table:
 | Fully coupled subset catalog from Module 348 | **STRUCTURAL / EXTRACTION** |
 | Fully coupled subset discrepancy rows from Module 348 | **OPEN** |
 | All two-sided active rows close from Module 348 | **FALSE / BLOCKED** |
-| Minimal fully coupled quadruple audit `MinimalFullyCoupledQuadrupleAudit_349` | **OPEN next target** |
+| Minimal fully coupled quadruple audit `MinimalFullyCoupledQuadrupleAudit_349` | **STRUCTURAL / EXTRACTION** |
+| Minimal quadruple pair-pair identity from Module 349 | **STRUCTURAL / EXTRACTION** |
+| Minimal quadruple offset collapse from Module 349 | **STRUCTURAL / EXTRACTION** |
+| Anti-diagonal pair-pair discrepancy criterion from Module 349 | **CONDITIONAL** |
+| Minimal fully coupled quadruple rows from Module 349 | **OPEN** |
+| Current pair/rectangle tools close Module 349 | **FALSE / BLOCKED** |
+| Eighteenth plan update `PlanUpdate_18_349` | **STRUCTURAL / EXTRACTION** |
+| Anti-diagonal pair-pair discrepancy audit `AntiDiagonalPairPairDiscrepancyAudit_350` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1591,7 +1604,13 @@ wins.
 | `FullyCoupledSubsetCatalog_348` | STRUCTURAL / EXTRACTION | 81 fully coupled subsets cataloged |
 | `FullyCoupledSubsetDiscrepancyRows_348` | OPEN | Fully coupled subset discrepancies remain unproved |
 | `AllTwoSidedActiveRowsClose_348` | FALSE / BLOCKED | Local zeros do not close fully coupled rows |
-| `MinimalFullyCoupledQuadrupleAudit_349(P_minor^0)` | OPEN | Next target |
+| `MinimalFullyCoupledQuadrupleAudit_349(P_minor^0)` | STRUCTURAL / EXTRACTION | Minimal quadruple rows reduced to pair-pair discrepancy form |
+| `MinimalQuadruplePairPairIdentity_349 / MinimalQuadrupleOffsetCollapse_349` | STRUCTURAL / EXTRACTION | Exact anti-diagonal identity; 16 rows collapse to nine offset/twist types |
+| `AntiDiagonalPairPairDiscrepancyCriterion_349` | CONDITIONAL | Would close the minimal quadruple rows only if proved in the same masked family |
+| `MinimalFullyCoupledQuadrupleRows_349` | OPEN | Anti-diagonal pair-pair discrepancy remains unproved |
+| `CurrentPairRectangleToolsClose_349` | FALSE / BLOCKED | Ordinary pair/rectangle inputs do not close the masked anti-diagonal row |
+| `PlanUpdate_18_349` | STRUCTURAL / EXTRACTION | Eighteenth plan update; no theorem upgraded |
+| `AntiDiagonalPairPairDiscrepancyAudit_350(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

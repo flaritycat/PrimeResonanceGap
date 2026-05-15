@@ -97,7 +97,8 @@ flowchart TD
   SignedInsertion346["SignedLocalModelInsertionFeasibility_346<br/>STRUCTURAL; current insertion closure BLOCKED"]
   SubsetDiscrep347["SubsetModelDiscrepancyAudit_347<br/>STRUCTURAL; one-sided rows locally zero"]
   MinPair348["MinimalActivePairDiscrepancyAudit_348<br/>STRUCTURAL; non-fully-coupled rows locally zero"]
-  MinQuad349["MinimalFullyCoupledQuadrupleAudit_349<br/>OPEN next target"]
+  MinQuad349["MinimalFullyCoupledQuadrupleAudit_349<br/>STRUCTURAL; pair-pair anti-diagonal extracted"]
+  PairPair350["AntiDiagonalPairPairDiscrepancyAudit_350<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -230,7 +231,8 @@ flowchart TD
   SignedInsertion346 --> SubsetDiscrep347
   SubsetDiscrep347 --> MinPair348
   MinPair348 --> MinQuad349
-  MinQuad349 --> SignedIE326
+  MinQuad349 --> PairPair350
+  PairPair350 --> SignedIE326
   MinPair348 --> SignedIE326
   SubsetDiscrep347 --> SignedIE326
   SignedInsertion346 --> SignedIE326
@@ -346,6 +348,10 @@ flowchart TD
   active pair rows and all non-fully-coupled subset rows are local
   nonzero-kernel zeros inside `P_minor^0`. The fully coupled subset rows
   remain open, starting with 16 minimal quadruple discrepancies.
+- The Module 349 minimal fully coupled quadruple audit reduces those 16 rows
+  to an anti-diagonal pair-pair discrepancy with nine offset/twist types.
+  This is an exact extraction and conditional criterion, not a proof of
+  fully coupled subset smallness.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still

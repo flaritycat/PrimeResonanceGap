@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 348
-Post-Reflective_1 solving count: 167
-Long-term-plan count: 161
+Latest completed module: 349
+Post-Reflective_1 solving count: 168
+Long-term-plan count: 162
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -72,10 +72,12 @@ Thirteenth plan update:  Module 304 (completed)
 Fourteenth plan update:  Module 313 (completed)
 Fifteenth plan update:   Module 322 (completed)
 Sixteenth plan update:   Module 331 (completed)
+Seventeenth plan update: Module 340 (completed)
+Eighteenth plan update:  Module 349 (completed)
 Seventh plan challenge:  Module 292 (completed)
 Eighth plan challenge:   Module 307 (completed)
 Ninth plan challenge:    Module 322 (completed)
-Tenth plan challenge:    Module 337 (expected if one module per iteration)
+Tenth plan challenge:    Module 337 (completed)
 ```
 
 These module numbers are bookkeeping estimates. If an iteration is not a
@@ -5064,4 +5066,76 @@ Module 349:
   the 16 minimal fully coupled quadruple discrepancies reduce to an existing
   rectangle/local-model row or require a new weighted same-family insertion
   theorem.
+```
+
+Module 349 completed:
+
+```text
+MinimalFullyCoupledQuadrupleAudit_349(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+MinimalQuadruplePairPairIdentity_349:
+  STRUCTURAL / EXTRACTION.
+
+MinimalQuadrupleOffsetCollapse_349:
+  STRUCTURAL / EXTRACTION.
+
+AntiDiagonalPairPairDiscrepancyCriterion_349:
+  CONDITIONAL.
+
+MinimalFullyCoupledQuadrupleRows_349:
+  OPEN.
+
+CurrentPairRectangleToolsClose_349:
+  FALSE / BLOCKED.
+
+PlanUpdate_18_349:
+  STRUCTURAL / EXTRACTION.
+
+AntiDiagonalPairPairDiscrepancyAudit_350(P_minor^0):
+  OPEN next target.
+```
+
+The audit reduces the 16 minimal fully coupled quadruple rows to one common
+pair-pair discrepancy function `Delta_pairpair^349(a,b)` tested on the
+Fourier anti-diagonal `(-xi,-xi)`, with nine offset/twist types. Ordinary
+pair-BDH, first-moment pair HL, and first-moment rectangle HL do not close
+the masked anti-diagonal row. The next target is to audit that anti-diagonal
+pair-pair discrepancy directly.
+
+The current cadence records:
+
+```text
+Latest completed module: 349
+Post-Reflective_1 solving count: 168
+Long-term-plan count: 162
+
+162 is divisible by 9, so PlanUpdate_18_349 is due and completed here.
+162 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+PlanUpdate_18_349:
+
+```text
+Module 350:
+  perform AntiDiagonalPairPairDiscrepancyAudit_350(P_minor^0), testing
+  whether `widehat{Delta_pairpair^349}(-xi,-xi)` can be bounded by existing
+  pair, rectangle, and same-family kernel inputs, or whether it is a new
+  analytic row.
+
+Module 351:
+  if Module 350 is blocked, split `Delta_pairpair^349` into pair-residual,
+  pair-model product, and rectangle-collision defect pieces without replacing
+  the exact rectangle factor by `kappa_w(a)kappa_w(b)`.
+
+Module 352:
+  audit the `d`-dependent twist and threshold masks to decide whether a
+  coefficient bound for `widehat{Delta_pairpair^349}` is enough, or whether
+  a stronger weighted same-family theorem is required.
+
+Module 353:
+  only after the minimal quadruple row is classified, decide whether larger
+  fully coupled subsets can be reduced by the same pair-pair mechanism or
+  require separate high-order local-model insertion rows.
 ```
