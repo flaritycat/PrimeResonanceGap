@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 339
-Post-Reflective_1 solving count: 158
-Long-term-plan count: 152
+Latest completed module: 340
+Post-Reflective_1 solving count: 159
+Long-term-plan count: 153
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -4575,32 +4575,73 @@ CurrentExactZeroTailClosure_339:
   FALSE / BLOCKED.
 
 CoverMomentRouteVerdict_340(P_minor^0):
-  OPEN next target.
+  STRUCTURAL / EXTRACTION.
+
+CoverRouteInputInventory_340:
+  STRUCTURAL / EXTRACTION.
+
+FiniteSideClosure_340:
+  FALSE / BLOCKED.
+
+TailClosure_340:
+  FALSE / BLOCKED.
+
+ExactZeroClosure_340:
+  FALSE / BLOCKED.
+
+SingleRowClosureShortcut_340:
+  FALSE / BLOCKED.
+
+CurrentCoverMomentRouteClosure_340:
+  FALSE / BLOCKED.
+
+LowEnvelopeMassPrototype_342(P_minor^0):
+  OPEN next analytic target after Reflective_5.
+
+PlanUpdate_17_340:
+  STRUCTURAL / EXTRACTION.
 ```
 
-The audit catalogs exact lifted zero differences: internal rows
-`h=0, h=+-d_1, k=0, k=+-d_2` and the sixteen cross rows
-`x-y=-a d_1-b h+c d_2+e k`. It records conditional absorption and
-structural-diagonal transfer criteria, but no weighted row follows from
-codimension or cyclic structural catalogs alone.
+The route verdict inventories Modules 329-339 and classifies the current
+cover-moment route as blocked by open finite-side, tail, low-high, and
+exact-zero rows. It does not prove `KernelWeightedMobiusMomentCriterion_330`,
+`SharpCoverSmallness_328`, `SignedLocalModelInsertion_326`,
+`PhaseKernelBound_273^0`, or any endpoint.
 
 The current cadence records:
 
 ```text
-Latest completed module: 339
-Post-Reflective_1 solving count: 158
-Long-term-plan count: 152
+Latest completed module: 340
+Post-Reflective_1 solving count: 159
+Long-term-plan count: 153
 
-152 is not divisible by 9, so no plan update is due in this module.
-152 is not divisible by 15, so no plan challenge is due in this module.
-Next reflective log remains expected around Module 341.
+153 is divisible by 9, so PlanUpdate_17_340 is due and completed here.
+153 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log is due at Module 341.
 ```
 
-Continue with:
+Seventeenth plan update:
 
 ```text
-Module 340:
-  perform CoverMomentRouteVerdict_340(P_minor^0), deciding whether the
-  cover-moment route is blocked by the current open rows or whether one
-  narrower analytic row remains plausible.
+Module 341:
+  perform Reflective_5, reviewing Modules 301-340 and checking that Phase K
+  did not upgrade open cover, tail, or endpoint rows.
+
+Module 342:
+  attempt LowEnvelopeMassPrototype_342(P_minor^0), a sharply scoped analytic
+  target for low-prime envelope mass under the same kernel, dyadic, mask,
+  W-residue, cutoff, and limiting conventions.
+
+Module 343:
+  perform InternalZeroKernelAudit_343(P_minor^0), deciding whether exact
+  internal lifted-zero rows can be budgeted without endpoint assumptions.
+
+Module 344:
+  perform CrossZeroKernelAudit_344(P_minor^0), deciding whether exact cross
+  lifted-zero rows can be budgeted in the same family.
+
+Module 345:
+  perform PhaseKPostCoverBranchDecision_345, deciding whether the cover route
+  remains viable, moves to signed insertion, or returns to the
+  PhaseKernelBound_273^0 obstruction.
 ```

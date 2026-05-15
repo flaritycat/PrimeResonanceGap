@@ -301,7 +301,13 @@ FALSE / BLOCKED
 | `ExactZeroTailAbsorptionCriterion_339 / StructuralDiagonalTransferCriterion_339` | CONDITIONAL | Need same-family exact-zero absorption or structural diagonal transfer including low-prime and zero-tail weights | `module_339_exact_zero_tail_diagonal_audit.md` | Only if proved |
 | `ExactZeroWeightedRows_339 / InternalZeroKernelRows_339 / CrossZeroKernelRows_339` | OPEN | Exact-zero weighted, internal, and cross kernel rows remain missing | `module_339_exact_zero_tail_diagonal_audit.md` | No |
 | `CyclicLiftShortcut_339 / DiagonalCodimensionShortcut_339 / CurrentExactZeroTailClosure_339` | FALSE / BLOCKED | Cyclic/lift identification and codimension counting do not prove weighted exact-zero tail control | `module_339_exact_zero_tail_diagonal_audit.md` | No |
-| `CoverMomentRouteVerdict_340(P_minor^0)` | OPEN | Next target: decide whether the current cover-moment route is blocked or has one narrower plausible analytic row | `module_339_exact_zero_tail_diagonal_audit.md` | No |
+| `CoverMomentRouteVerdict_340(P_minor^0)` | STRUCTURAL / EXTRACTION | Current route verdict; no theorem upgraded | `module_340_cover_moment_route_verdict.md` | Only as blocked-route classification |
+| `CoverRouteInputInventory_340` | STRUCTURAL / EXTRACTION | Inventory of Modules 329-339 inputs only | `module_340_cover_moment_route_verdict.md` | Only as dependency bookkeeping |
+| `FiniteSideClosure_340 / TailClosure_340 / ExactZeroClosure_340 / CurrentCoverMomentRouteClosure_340` | FALSE / BLOCKED | Current cover route not closed by existing inputs | `module_340_cover_moment_route_verdict.md` | No |
+| `SingleRowClosureShortcut_340` | FALSE / BLOCKED | Low-envelope mass alone would not close CRT, tail, exact-zero, or insertion rows | `module_340_cover_moment_route_verdict.md` | No |
+| `LowEnvelopeMassPrototype_342(P_minor^0)` | OPEN | Next analytic target after Reflective_5 | `module_340_cover_moment_route_verdict.md` | No |
+| `PlanUpdate_17_340` | STRUCTURAL / EXTRACTION | Seventeenth plan update | `module_340_cover_moment_route_verdict.md` | Planning only |
+| `Reflective_5` | OPEN | Next memory log target | `module_340_cover_moment_route_verdict.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

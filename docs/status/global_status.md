@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 339
-Active phase: Phase K, cover-moment route verdict next
+Latest module frontier: Module 340
+Active phase: Phase K, Reflective_5 memory log next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -912,10 +912,17 @@ Completed exact-zero tail diagonal audit:
     leaves exact-zero weighted, internal-zero kernel, and cross-zero kernel
     rows open
 
+Completed cover-moment route verdict:
+  CoverMomentRouteVerdict_340(P_minor^0)
+    inventories Modules 329-339, classifies finite-side, tail, exact-zero,
+    and current cover-moment route closures as FALSE / BLOCKED with current
+    inputs, blocks single-row closure, performs PlanUpdate_17_340, and leaves
+    Reflective_5 next
+
 Next scheduled module:
-  Module 340 CoverMomentRouteVerdict_340(P_minor^0)
+  Module 341 Reflective_5
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed exact-zero tail
-diagonal audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed cover-moment route
+verdict;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

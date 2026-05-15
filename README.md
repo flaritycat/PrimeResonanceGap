@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: cover-moment route verdict after the
-exact-zero tail diagonal audit**.
+The current active phase is **Phase K: Reflective_5 memory log after the
+cover-moment route verdict**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 339
-Active phase: Phase K, cover-moment route verdict next
+Latest module frontier: Module 340
+Active phase: Phase K, Reflective_5 memory log next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -800,14 +800,14 @@ Module 339:
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-339 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-340 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window, the signed minor-kernel row, or the
 generic/collision/full-cover/sharp-cover/Mobius-cover/CRT-mask/tail/window
-coupling, and exact-zero diagonal rows.
+coupling, exact-zero diagonal rows, or the current cover-route closure.
 
-The next planned module is:
+The current Phase K recent chain is:
 
 ```text
 Module 316:
@@ -925,9 +925,13 @@ Module 339:
   structural diagonal rows actually bound them.
 
 Module 340:
-  perform CoverMomentRouteVerdict_340(P_minor^0), deciding whether the
-  cover-moment route is blocked by the open finite-side, tail, low-high, and
-  exact-zero rows or whether one narrower analytic row remains plausible.
+  performed CoverMomentRouteVerdict_340(P_minor^0), classifying the current
+  cover-moment route as blocked by open finite-side, tail, low-high, and
+  exact-zero rows; it performs PlanUpdate_17_340 and leaves Reflective_5 next.
+
+Module 341:
+  perform Reflective_5, reviewing Modules 301-340 and checking that Phase K
+  did not upgrade open cover, tail, or endpoint rows.
 ```
 
 ## What Is Proved?
@@ -1079,7 +1083,11 @@ Compact status table:
 | Exact-zero absorption and structural-diagonal transfer criteria from Module 339 | **CONDITIONAL** |
 | Exact-zero weighted, internal-zero kernel, and cross-zero kernel rows from Module 339 | **OPEN** |
 | Cyclic-lift and diagonal-codimension shortcuts from Module 339 | **FALSE / BLOCKED** |
-| Cover-moment route verdict `CoverMomentRouteVerdict_340` | **OPEN next target** |
+| Cover-moment route verdict `CoverMomentRouteVerdict_340` | **STRUCTURAL / EXTRACTION** |
+| Finite-side, tail, and exact-zero closure verdicts from Module 340 | **FALSE / BLOCKED** |
+| Single-row closure shortcut from Module 340 | **FALSE / BLOCKED** |
+| Seventeenth plan update `PlanUpdate_17_340` | **STRUCTURAL / EXTRACTION** |
+| Reflective_5 | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1472,7 +1480,13 @@ wins.
 | `ExactZeroTailAbsorptionCriterion_339 / StructuralDiagonalTransferCriterion_339` | CONDITIONAL | Need same-family weighted exact-zero absorption or structural diagonal transfer with all tail weights |
 | `ExactZeroWeightedRows_339 / InternalZeroKernelRows_339 / CrossZeroKernelRows_339` | OPEN | Exact-zero weighted rows remain missing |
 | `CyclicLiftShortcut_339 / DiagonalCodimensionShortcut_339 / CurrentExactZeroTailClosure_339` | FALSE / BLOCKED | Cyclic/lift identification and codimension counting do not prove the weighted zero-tail row |
-| `CoverMomentRouteVerdict_340(P_minor^0)` | OPEN | Next target |
+| `CoverMomentRouteVerdict_340(P_minor^0)` | STRUCTURAL / EXTRACTION | Current route verdict; no theorem upgraded |
+| `CoverRouteInputInventory_340` | STRUCTURAL / EXTRACTION | Inventory of Modules 329-339 inputs only |
+| `FiniteSideClosure_340 / TailClosure_340 / ExactZeroClosure_340 / CurrentCoverMomentRouteClosure_340` | FALSE / BLOCKED | Current cover route not closed by existing inputs |
+| `SingleRowClosureShortcut_340` | FALSE / BLOCKED | Low-envelope mass alone would not close CRT, tail, exact-zero, or insertion rows |
+| `LowEnvelopeMassPrototype_342(P_minor^0)` | OPEN | Next analytic target after Reflective_5 |
+| `PlanUpdate_17_340` | STRUCTURAL / EXTRACTION | Seventeenth plan update |
+| `Reflective_5` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
