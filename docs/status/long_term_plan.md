@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 369
-Post-Reflective_1 solving count: 188
-Long-term-plan count: 182
+Latest completed module: 370
+Post-Reflective_1 solving count: 189
+Long-term-plan count: 183
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -6319,4 +6319,65 @@ Module 370:
   pair-residual energy target, or whether they show that the no-twist
   anti-diagonal route requires a genuinely new same-family pair variance
   theorem.
+```
+
+Module 370 completed:
+
+```text
+PairResidualVarianceInputVerdict_370(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+VariancePackageSufficiency_370:
+  PROVEN.
+
+CrossTermCauchyCircularity_370:
+  PROVEN.
+
+SmallModelSecondMomentAbsorptionCriterion_370:
+  CONDITIONAL.
+
+NondegenerateRectangleOnlyClosure_370:
+  FALSE / BLOCKED.
+
+CurrentPairResidualVarianceClosure_370:
+  FALSE / BLOCKED.
+
+SameFamilyPairVarianceNewInput_370:
+  OPEN.
+
+DiagonalOverlapLargeValueTarget_359:
+  OPEN.
+  Next best attack.
+```
+
+Best target selection: Module 370 was the right attack because Modules 368
+and 369 reduced the pair-residual Fourier energy to exact covariance rows.
+The proof attack proves that a four-row variance package would be sufficient
+and that the naive Cauchy treatment of the weighted cross term is circular
+unless a separate small model-second-moment estimate is proved. It also
+blocks the nondegenerate-rectangle-only closure route. The pair-residual
+branch remains open as a same-family variance input, so the next least-tested
+branch of the Module 359 split is the diagonal-overlap large-value row.
+
+The current cadence records:
+
+```text
+Latest completed module: 370
+Post-Reflective_1 solving count: 189
+Long-term-plan count: 183
+
+183 is not divisible by 9, so no plan update is due in this module.
+183 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 371:
+  perform DiagonalOverlapLargeValueStress_371(P_minor^0), testing whether
+  the diagonal-overlap row
+  sum_xi |A(xi)| o_abs(xi)=o_W(1)
+  can be bounded from existing profile/overlap ceilings or whether it needs
+  a new same-family overlap theorem at the no-twist mask scale.
 ```

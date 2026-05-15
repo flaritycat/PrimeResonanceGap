@@ -28,7 +28,7 @@
 | `docs\modules\dependency_graph.md` | 32487 |
 | `docs\modules\generated_250_page_index.md` | 16201 |
 | `docs\modules\generated_500_page_index.md` | 31915 |
-| `docs\modules\generated_file_index.md` | 16500 |
+| `docs\modules\generated_file_index.md` | 16656 |
 | `docs\modules\generated_index.md` | 32419 |
 | `docs\modules\module_178_residual_cube.md` | 2671 |
 | `docs\modules\module_179_fourier_major_minor.md` | 8654 |
@@ -218,6 +218,7 @@
 | `docs\modules\module_367_pair_model_minor_topmass_verdict.md` | 14134 |
 | `docs\modules\module_368_pair_residual_fourier_energy_audit.md` | 12988 |
 | `docs\modules\module_369_pair_residual_covariance_isolation.md` | 13804 |
+| `docs\modules\module_370_pair_residual_variance_input_verdict.md` | 13271 |
 | `docs\modules\modules_156_178_summary.md` | 34604 |
 | `docs\paper\Prime_Resonance_Gap_500_Page_Paper.txt` | 1285247 |
 | `docs\README.md` | 6435 |
@@ -225,7 +226,7 @@
 | `docs\status\endpoint_status.md` | 849 |
 | `docs\status\forbidden_upgrades.md` | 1574 |
 | `docs\status\global_status.md` | 53123 |
-| `docs\status\long_term_plan.md` | 184000 |
+| `docs\status\long_term_plan.md` | 185736 |
 | `docs\status\selector_taxonomy.md` | 1015 |
 | `docs\status\status_ledger.json` | 878 |
 | `docs\status\theorem_status_index.md` | 83990 |
