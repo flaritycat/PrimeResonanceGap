@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 361
-Post-Reflective_1 solving count: 180
-Long-term-plan count: 174
+Latest completed module: 362
+Post-Reflective_1 solving count: 181
+Long-term-plan count: 175
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -5826,4 +5826,57 @@ Module 362:
   exact pair-model coefficient `K_+^0` is harmless on the declared minor arcs
   or whether treating it as harmless hides a major/minor local-model transfer
   assumption.
+```
+
+Module 362 completed:
+
+```text
+PairModelMinorTopMassStress_362(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+LowDenominatorMinorLeakageLemma_362:
+  PROVEN.
+
+DiagonalAtomLeakageLemma_362:
+  PROVEN.
+
+PairModelExpansionCriterion_362:
+  CONDITIONAL.
+
+CurrentPairModelMinorTopMassClosure_362:
+  FALSE / BLOCKED.
+
+PairModelRamanujanTailTarget_362:
+  OPEN.
+
+PairModelDiagonalConventionGate_362:
+  OPEN.
+```
+
+The proof attack proves finite low-denominator minor leakage for any supplied
+denominator expansion and proves that a diagonal atom leaks into every
+frequency. Thus `K_+^0` can be treated as harmless on minor arcs only after
+an exact finite-cyclic expansion, high-denominator tail control, and a pair
+diagonal convention are supplied.
+
+The current cadence records:
+
+```text
+Latest completed module: 362
+Post-Reflective_1 solving count: 181
+Long-term-plan count: 175
+
+175 is not divisible by 9, so no plan update is due in this module.
+175 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 363:
+  perform PairModelDiagonalConventionAudit_363(P_minor^0), deciding whether
+  the pair diagonal `a=0` in `kappa_w^0` is removed, renormalized, finitely
+  truncated, or routed to a separate diagonal row before `K_+^0` is used in
+  minor-frequency top-mass estimates.
 ```
