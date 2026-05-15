@@ -85,18 +85,11 @@ testing whether any non-endpoint estimate can control the shell functional
 that fixed frequency-set estimates do not automatically control these
 data-dependent shells, and the remaining local side rows must still be proved
 before any Phase J kernel bound can be used. The later Phase K audits narrowed
-the threshold-window obstruction: the local low-level fourth-moment tail is
-proved inside `P_minor^0`, vacuous removal is only bookkeeping, and the row
-barrier remains blocked under the current first-energy, row-distribution,
-row-square, and fixed-fiber tests. The latest steering challenge pauses direct
-row-square continuation, and the column audit now shows that first-incidence
-counting gives only column-barrier ceilings. The distributional audit then
-shows that layer-cake with first-moment tails collapses back to the same
-ceiling. The concrete `r=2` expansion now isolates the off-diagonal
-same-frequency shift-pair row and points to a weighted coefficient-pair energy
-audit. That audit shows current Cauchy/Parseval inputs still give only
-energy-square ceilings, so the next useful step is an autocorrelation
-expansion. None of this proves the endpoint.
+the row, column, anti-diagonal, cover, insertion, subset-discrepancy, and
+twisted-mask barriers. Module 353 now shows that larger fully coupled subset
+rows do not collapse to the same minimal pair-pair coefficient/mask package;
+they create higher-order shift-dependent coefficient rows. None of this proves
+the endpoint.
 
 ## The Whole Project In One Narrative
 
@@ -411,14 +404,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: larger fully coupled subset reduction
-after the twisted-mask budget audit**.
+The current active phase is **Phase K: no-twist mask feasibility after the
+larger fully coupled subset reduction audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 352
-Active phase: Phase K, LargerFullyCoupledSubsetReductionAudit_353 next
+Latest module frontier: Module 353
+Active phase: Phase K, NoTwistMaskBudgetFeasibility_354 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -998,6 +991,13 @@ Module 352:
   coefficient into d-transform products minus the excluded diagonal, stating
   conditional mask-budget criteria, isolating the no-twist offset barrier,
   blocking coefficient-only closure, and completing PlanChallenge_11_352.
+
+Module 353:
+  performed LargerFullyCoupledSubsetReductionAudit_353(P_minor^0), extracting
+  the exact block normal form for fully coupled subsets, separating the 16
+  minimal rows from the 65 larger higher-order rows, blocking reduction of all
+  fully coupled rows to the same pair-pair coefficient/mask package, and
+  selecting NoTwistMaskBudgetFeasibility_354 as the next target.
 ```
 
 ## What Is Proved?
@@ -1216,7 +1216,13 @@ Compact status table:
 | Coefficient-only closure shortcut from Module 352 | **FALSE / BLOCKED** |
 | Current twisted-mask budget closure from Module 352 | **FALSE / BLOCKED** |
 | Eleventh plan challenge `PlanChallenge_11_352` | **STRUCTURAL / EXTRACTION** |
-| Larger fully coupled subset reduction audit `LargerFullyCoupledSubsetReductionAudit_353` | **OPEN next target** |
+| Larger fully coupled subset reduction audit `LargerFullyCoupledSubsetReductionAudit_353` | **STRUCTURAL / EXTRACTION** |
+| Fully coupled block normal form from Module 353 | **STRUCTURAL / EXTRACTION** |
+| Larger subset coefficient catalog from Module 353 | **STRUCTURAL / EXTRACTION** |
+| Higher-order block coefficient rows from Module 353 | **OPEN** |
+| Same coefficient/mask package for all fully coupled rows from Module 353 | **FALSE / BLOCKED** |
+| Enumeration branch continuation from Module 353 | **FALSE / BLOCKED** |
+| No-twist mask budget feasibility `NoTwistMaskBudgetFeasibility_354` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1664,7 +1670,11 @@ wins.
 | `MaskBudgetCriteria_352` | CONDITIONAL | Needs same-family mask norms for the data-dependent threshold masks |
 | `CoefficientOnlyClosureShortcut_352 / CurrentTwistedMaskBudgetClosure_352` | FALSE / BLOCKED | Coefficient estimates and current tools do not supply the masked row |
 | `PlanChallenge_11_352` | STRUCTURAL / EXTRACTION | Eleventh challenge: one bounded larger-subset test, then pause if no compression |
-| `LargerFullyCoupledSubsetReductionAudit_353(P_minor^0)` | OPEN | Next target |
+| `LargerFullyCoupledSubsetReductionAudit_353(P_minor^0)` | STRUCTURAL / EXTRACTION | Larger rows audited; no theorem upgraded |
+| `FullyCoupledBlockNormalForm_353 / LargerSubsetCoefficientCatalog_353` | STRUCTURAL / EXTRACTION | Exact normal form and 16/40/25 row split only |
+| `HigherOrderBlockCoefficientRows_353` | OPEN | The 65 larger fully coupled rows need same-family higher-order coefficient estimates |
+| `SameCoefficientMaskPackageForAllFullyCoupledRows_353 / EnumerationBranchContinuation_353` | FALSE / BLOCKED | Larger rows do not reduce to the minimal pair-pair package; enumeration should pause |
+| `NoTwistMaskBudgetFeasibility_354(P_minor^0)` | OPEN | Next named target after Module 353 |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

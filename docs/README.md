@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 352
-Active phase: Phase K, LargerFullyCoupledSubsetReductionAudit_353 next
+Latest module frontier: Module 353
+Active phase: Phase K, NoTwistMaskBudgetFeasibility_354 next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -121,6 +121,7 @@ modules/
   module_350_antidiagonal_pairpair_discrepancy_audit.md
   module_351_pair_rectangle_defect_split.md
   module_352_twisted_mask_budget_audit.md
+  module_353_larger_fully_coupled_subset_reduction_audit.md
   modules_156_178_summary.md
 
 reviews/

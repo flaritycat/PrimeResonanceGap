@@ -101,7 +101,8 @@ flowchart TD
   PairPair350["AntiDiagonalPairPairDiscrepancyAudit_350<br/>STRUCTURAL; coefficient plus mask budget extracted"]
   DefectSplit351["PairRectangleDefectSplit_351<br/>STRUCTURAL; pair and rectangle defects split"]
   TwistMask352["TwistedMaskBudgetAudit_352<br/>STRUCTURAL; mask transform identity extracted"]
-  LargeSubset353["LargerFullyCoupledSubsetReductionAudit_353<br/>OPEN next target"]
+  LargeSubset353["LargerFullyCoupledSubsetReductionAudit_353<br/>STRUCTURAL; larger rows do not compress"]
+  NoTwist354["NoTwistMaskBudgetFeasibility_354<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -238,7 +239,8 @@ flowchart TD
   PairPair350 --> DefectSplit351
   DefectSplit351 --> TwistMask352
   TwistMask352 --> LargeSubset353
-  LargeSubset353 --> SignedIE326
+  LargeSubset353 --> NoTwist354
+  NoTwist354 --> SignedIE326
   MinPair348 --> SignedIE326
   SubsetDiscrep347 --> SignedIE326
   SignedInsertion346 --> SignedIE326
@@ -519,3 +521,7 @@ flowchart TD
   full-frequency anti-diagonal diagnostic. Cataloging those strata does not
   prove weighted collision smallness; the next open target is
   `GenericCollisionLocalModelSplit_325(P_minor^0)`.
+- `LargerFullyCoupledSubsetReductionAudit_353` shows that the 65 larger fully
+  coupled rows create d-dependent higher-order block coefficients. They do
+  not reduce to the minimal pair-pair coefficient/mask package, so the
+  enumeration branch now points to the open no-twist mask feasibility target.

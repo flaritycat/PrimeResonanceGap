@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 352
-Active phase: Phase K, LargerFullyCoupledSubsetReductionAudit_353 next
+Latest module frontier: Module 353
+Active phase: Phase K, NoTwistMaskBudgetFeasibility_354 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -1009,11 +1009,21 @@ Completed twisted mask budget audit:
     current twisted-mask budget closure, performs PlanChallenge_11_352, and
     leaves LargerFullyCoupledSubsetReductionAudit_353 as the next target
 
+Completed larger fully coupled subset reduction audit:
+  LargerFullyCoupledSubsetReductionAudit_353(P_minor^0)
+    extracts the exact block-correlation normal form for every fully coupled
+    subset, separates the 16 minimal-minimal rows already treated by Modules
+    349-352 from the 65 larger rows, records that the larger rows create
+    d-dependent higher-order block coefficients rather than the same
+    pair-pair coefficient/mask package, blocks continued enumeration as the
+    next move, and selects NoTwistMaskBudgetFeasibility_354(P_minor^0) as the
+    next named target
+
 Next scheduled module:
-  Module 353 LargerFullyCoupledSubsetReductionAudit_353(P_minor^0)
+  Module 354 NoTwistMaskBudgetFeasibility_354(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed twisted mask budget
-audit; `MaskBudgetCriteria_352` is **CONDITIONAL**, and the anti-diagonal
-rows remain **OPEN**.
+Status: **STRUCTURAL / EXTRACTION** for the completed larger fully coupled
+subset reduction audit; `HigherOrderBlockCoefficientRows_353` and
+`NoTwistMaskBudgetFeasibility_354` remain **OPEN**.
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.
