@@ -3658,3 +3658,68 @@ Module 326:
   local-model insertion rows. It must not claim cancellation smallness unless
   the exact same-family analytic row is supplied.
 ```
+
+Module 326 completed:
+
+```text
+SignedInclusionExclusionMinorAudit_326(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+SubsetMobiusIdentity_326:
+  STRUCTURAL / EXTRACTION.
+
+ProperSupportCancellation_326:
+  STRUCTURAL / EXTRACTION.
+
+FullGenericMinorZeroIdentity_326:
+  STRUCTURAL / EXTRACTION.
+
+FullCoverCollisionRows_326:
+  OPEN.
+
+StratifiedGenericRemainderRows_326:
+  OPEN.
+
+SignedLocalModelInsertion_326:
+  OPEN.
+
+SignedIECancelsAllCollisionDefects_326:
+  FALSE / BLOCKED.
+
+CurrentSignedIEClosure_326:
+  FALSE / BLOCKED.
+
+FullCoverClusterAudit_327(P_minor^0):
+  OPEN next target.
+```
+
+The audit records that signed inclusion-exclusion extracts the top eight-label
+Mobius coefficient and kills only proper-support terms in the exact same
+signed average. It also records the unrestricted cyclic generic zero-mode
+identity inside `P_minor^0`. Full-cover collision clusters, stratified generic
+remainders, signed local-model insertion, data-dependent kernel selection, and
+transfer remain open.
+
+The current cadence records:
+
+```text
+Latest completed module: 326
+Post-Reflective_1 solving count: 145
+Long-term-plan count: 139
+
+139 is not divisible by 9, so no plan update is due in this module.
+139 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 327:
+  perform FullCoverClusterAudit_327(P_minor^0), classifying the full-cover
+  Mobius coefficients that survive signed inclusion-exclusion. It should
+  identify minimal full-cover collision/load structures, separate one-prime
+  full-cover events from products of proper-support events whose union covers
+  all eight labels, and decide which estimates would be needed before any
+  full-cover row can feed the signed minor-kernel target.
+```

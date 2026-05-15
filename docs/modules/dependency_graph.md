@@ -74,7 +74,8 @@ flowchart TD
   ResidualEight323["ResidualEightSlotMinorExpansion_323<br/>STRUCTURAL; fixed-kernel reading BLOCKED"]
   Collision324["CollisionDiagonalStrataAudit_324<br/>STRUCTURAL; closure BLOCKED"]
   GenericSplit325["GenericCollisionLocalModelSplit_325<br/>STRUCTURAL; closure BLOCKED"]
-  SignedIE326["SignedInclusionExclusionMinorAudit_326<br/>OPEN next target"]
+  SignedIE326["SignedInclusionExclusionMinorAudit_326<br/>STRUCTURAL; closure BLOCKED"]
+  FullCover327["FullCoverClusterAudit_327<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -184,7 +185,8 @@ flowchart TD
   ResidualEight323 --> Collision324
   Collision324 --> GenericSplit325
   GenericSplit325 --> SignedIE326
-  SignedIE326 --> AntiDiag312
+  SignedIE326 --> FullCover327
+  FullCover327 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -223,6 +225,9 @@ flowchart TD
 - The Module 325 generic/collision split is a local-model partition, not a
   proof of structural diagonal, finite-prime load, overflow, data-dependent
   kernel, generic noncollision, or local-model insertion rows.
+- The Module 326 signed inclusion-exclusion audit kills only proper-support
+  terms inside the exact same signed average. Full-cover clusters and
+  stratified/kernel-selected rows remain open.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still

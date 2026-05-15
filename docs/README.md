@@ -95,6 +95,7 @@ modules/
   module_323_residual_eight_slot_minor_expansion.md
   module_324_collision_diagonal_strata_audit.md
   module_325_generic_collision_local_model_split.md
+  module_326_signed_inclusion_exclusion_minor_audit.md
   modules_156_178_summary.md
 
 reviews/

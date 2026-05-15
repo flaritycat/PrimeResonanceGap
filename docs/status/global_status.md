@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 325
-Active phase: Phase K, signed inclusion-exclusion minor audit next
+Latest module frontier: Module 326
+Active phase: Phase K, full-cover cluster audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -800,10 +800,18 @@ Completed generic-versus-collision local-model split:
     local-model insertion rows; it records CurrentGenericCollisionClosure_325
     as FALSE / BLOCKED
 
+Completed signed inclusion-exclusion minor audit:
+  SignedInclusionExclusionMinorAudit_326(P_minor^0)
+    records the top-Mobius identity, proper-support cancellation, and the
+    unrestricted cyclic generic zero-mode identity, while leaving full-cover
+    collision rows, stratified generic remainders, signed local-model
+    insertion, and data-dependent kernel selection open; it records
+    CurrentSignedIEClosure_326 as FALSE / BLOCKED
+
 Next scheduled module:
-  Module 326 SignedInclusionExclusionMinorAudit_326(P_minor^0)
+  Module 327 FullCoverClusterAudit_327(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed generic-versus-collision
-local-model split;
+Status: **STRUCTURAL / EXTRACTION** for the completed signed
+inclusion-exclusion minor audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

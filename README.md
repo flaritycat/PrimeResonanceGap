@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: signed inclusion-exclusion audit after
-the generic-versus-collision eight-slot split**.
+The current active phase is **Phase K: full-cover cluster audit after the
+signed inclusion-exclusion minor audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 325
-Active phase: Phase K, signed inclusion-exclusion minor audit next
+Latest module frontier: Module 326
+Active phase: Phase K, full-cover cluster audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -704,14 +704,21 @@ Module 325:
   partition, structural diagonal rows, finite-prime collision-load rows,
   overflow rows, data-dependent kernel-selection rows, generic noncollision
   row, and local-model insertion row. All analytic smallness rows remain open.
+
+Module 326:
+  audited the exact signed inclusion-exclusion in the eight-slot minor local
+  model. It records the top-Mobius identity, proper-support cancellation, and
+  the unrestricted generic zero-mode identity, while leaving full-cover
+  collision clusters, stratified generic remainders, and signed local-model
+  insertion open.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-325 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-326 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window, the signed minor-kernel row, or the
-generic/collision rows.
+generic/collision/full-cover rows.
 
 The next planned module is:
 
@@ -762,9 +769,13 @@ Module 325:
   exact generic-versus-collision split needed for the eight-slot minor row.
 
 Module 326:
-  perform SignedInclusionExclusionMinorAudit_326(P_minor^0), deciding which
+  performed SignedInclusionExclusionMinorAudit_326(P_minor^0), deciding which
   generic and collision-defect terms are only formally cancelled and which
   survive as same-family analytic rows.
+
+Module 327:
+  perform FullCoverClusterAudit_327(P_minor^0), classifying the full-cover
+  Mobius coefficients that survive signed inclusion-exclusion.
 ```
 
 ## What Is Proved?
@@ -847,7 +858,12 @@ Compact status table:
 | Generic local factor and collision-defect decomposition from Module 325 | **STRUCTURAL / EXTRACTION** |
 | Structural diagonal, finite-prime load, overflow, data-dependent kernel-selection, generic noncollision, and local-model insertion rows from Module 325 | **OPEN** |
 | Current generic/collision closure `CurrentGenericCollisionClosure_325` | **FALSE / BLOCKED** |
-| Signed inclusion-exclusion minor audit `SignedInclusionExclusionMinorAudit_326` | **OPEN next target** |
+| Signed inclusion-exclusion minor audit `SignedInclusionExclusionMinorAudit_326` | **STRUCTURAL / EXTRACTION** |
+| Top-Mobius, proper-support, and full generic zero identities from Module 326 | **STRUCTURAL / EXTRACTION** |
+| Full-cover collision, stratified generic remainder, and signed local-model insertion rows from Module 326 | **OPEN** |
+| Shortcut that signed inclusion-exclusion kills all collision defects | **FALSE / BLOCKED** |
+| Current signed inclusion-exclusion closure `CurrentSignedIEClosure_326` | **FALSE / BLOCKED** |
+| Full-cover cluster audit `FullCoverClusterAudit_327` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1169,7 +1185,12 @@ wins.
 | `StructuralDiagonalRows_325 / FinitePrimeCollisionLoadRows_325 / OverflowRows_325` | OPEN | Analytic collision and high-load estimates missing |
 | `DataDependentKernelSelectionRows_325 / GenericNoncollisionRow_325 / LocalModelInsertion_325` | OPEN | Data-dependent masks, generic contribution, and model insertion not proved |
 | `CurrentGenericCollisionClosure_325` | FALSE / BLOCKED | The split does not close the minor row |
-| `SignedInclusionExclusionMinorAudit_326(P_minor^0)` | OPEN | Next target |
+| `SignedInclusionExclusionMinorAudit_326(P_minor^0)` | STRUCTURAL / EXTRACTION | Exact top-Mobius/proper-support audit; no analytic closure |
+| `SubsetMobiusIdentity_326 / ProperSupportCancellation_326` | STRUCTURAL / EXTRACTION | Signed subset sum extracts the full eight-label coefficient and kills proper-support terms |
+| `FullGenericMinorZeroIdentity_326` | STRUCTURAL / EXTRACTION | Unrestricted cyclic nonzero-frequency minor kernel kills the full size-only generic row |
+| `FullCoverCollisionRows_326 / StratifiedGenericRemainderRows_326 / SignedLocalModelInsertion_326` | OPEN | Surviving full-cover, restricted generic, and model-insertion rows remain unproved |
+| `SignedIECancelsAllCollisionDefects_326 / CurrentSignedIEClosure_326` | FALSE / BLOCKED | Inclusion-exclusion alone does not close collision defects or the minor row |
+| `FullCoverClusterAudit_327(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
