@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 346
-Active phase: Phase K, SubsetModelDiscrepancyAudit_347 next
+Latest module frontier: Module 347
+Active phase: Phase K, MinimalActivePairDiscrepancyAudit_348 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -961,10 +961,18 @@ Completed signed local-model insertion feasibility test:
     subset-discrepancy criterion, blocks naive HL and proper-support
     insertion shortcuts, and leaves signed local-model insertion unproved
 
+Completed subset model discrepancy audit:
+  SubsetModelDiscrepancyAudit_347(P_minor^0)
+    proves inside P_minor^0 that one-sided subset discrepancies are exact
+    zero under the nonzero minor kernel, catalogs the 144 two-sided active
+    subsets, leaves those active discrepancy rows open, and selects the
+    minimal active pair audit as the next target
+
 Next scheduled module:
-  Module 347 SubsetModelDiscrepancyAudit_347(P_minor^0)
+  Module 348 MinimalActivePairDiscrepancyAudit_348(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed signed local-model
-insertion feasibility test;
+Status: **STRUCTURAL / EXTRACTION** for the completed subset model
+discrepancy audit; `OneSidedSubsetDiscrepancyZero_347(P_minor^0)` is
+**PROVEN inside P_minor^0** only;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

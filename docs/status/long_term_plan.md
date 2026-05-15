@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 346
-Post-Reflective_1 solving count: 165
-Long-term-plan count: 159
+Latest completed module: 347
+Post-Reflective_1 solving count: 166
+Long-term-plan count: 160
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -4941,12 +4941,12 @@ step is to audit the subset discrepancy rows directly and identify which rows
 are exact zeros, structural convention rows, conditional rows, or genuinely
 open weighted local-model estimates.
 
-The current cadence records:
+The Module 346 cadence recorded:
 
 ```text
-Latest completed module: 346
-Post-Reflective_1 solving count: 165
-Long-term-plan count: 159
+Module 346 latest completed module: 346
+Module 346 post-Reflective_1 solving count: 165
+Module 346 long-term-plan count: 159
 
 159 is not divisible by 9, so no plan update is due in this module.
 159 is not divisible by 15, so no plan challenge is due in this module.
@@ -4960,4 +4960,54 @@ Module 347:
   perform SubsetModelDiscrepancyAudit_347(P_minor^0), deciding which
   subset discrepancy rows in Module 346 are trivial, structural, conditional,
   or still require new same-family weighted local-model input.
+```
+
+Module 347 completed:
+
+```text
+SubsetModelDiscrepancyAudit_347(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+OneSidedSubsetDiscrepancyZero_347(P_minor^0):
+  PROVEN inside P_minor^0.
+
+TwoSidedActiveSubsetCatalog_347:
+  STRUCTURAL / EXTRACTION.
+
+TwoSidedActiveSubsetDiscrepancyRows_347:
+  OPEN.
+
+AllSubsetDiscrepanciesClose_347:
+  FALSE / BLOCKED.
+
+MinimalActivePairDiscrepancyAudit_348(P_minor^0):
+  OPEN next target.
+```
+
+The audit proves the local cyclic nonzero-kernel zero for every subset that
+misses either the `h`-active slots `{3,4}` or the `k`-active slots `{7,8}`.
+It leaves the 144 two-sided active subset discrepancies open. The smallest
+active tests are the four pair subsets `{3,7}`, `{3,8}`, `{4,7}`, and
+`{4,8}`.
+
+The current cadence records:
+
+```text
+Latest completed module: 347
+Post-Reflective_1 solving count: 166
+Long-term-plan count: 160
+
+160 is not divisible by 9, so no plan update is due in this module.
+160 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 348:
+  perform MinimalActivePairDiscrepancyAudit_348(P_minor^0), deciding whether
+  the four minimal two-sided active pair discrepancies can be reduced to an
+  existing pair local-model row, or whether they require a new weighted
+  same-family insertion theorem.
 ```

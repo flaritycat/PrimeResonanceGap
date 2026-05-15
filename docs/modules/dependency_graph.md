@@ -95,7 +95,8 @@ flowchart TD
   CrossZero344["CrossZeroKernelAudit_344<br/>STRUCTURAL; codimension closure BLOCKED"]
   PhaseDecision345["PhaseKPostCoverBranchDecision_345<br/>STRUCTURAL; cover route paused"]
   SignedInsertion346["SignedLocalModelInsertionFeasibility_346<br/>STRUCTURAL; current insertion closure BLOCKED"]
-  SubsetDiscrep347["SubsetModelDiscrepancyAudit_347<br/>OPEN next target"]
+  SubsetDiscrep347["SubsetModelDiscrepancyAudit_347<br/>STRUCTURAL; one-sided rows locally zero"]
+  MinPair348["MinimalActivePairDiscrepancyAudit_348<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -226,6 +227,8 @@ flowchart TD
   CrossZero344 --> PhaseDecision345
   PhaseDecision345 --> SignedInsertion346
   SignedInsertion346 --> SubsetDiscrep347
+  SubsetDiscrep347 --> MinPair348
+  MinPair348 --> SignedIE326
   SubsetDiscrep347 --> SignedIE326
   SignedInsertion346 --> SignedIE326
   SignedInsertion346 --> AntiDiag312
@@ -333,6 +336,9 @@ flowchart TD
 - The Module 346 signed local-model insertion feasibility test expands the
   insertion error into weighted subset discrepancies and blocks naive HL or
   proper-support cancellation as insertion shortcuts.
+- The Module 347 subset discrepancy audit proves only the one-sided local
+  nonzero-kernel zeros inside `P_minor^0`. The two-sided active subset rows
+  remain open, starting with the four minimal active pair discrepancies.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still

@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: subset-model discrepancy audit after
-the signed local-model insertion feasibility test**.
+The current active phase is **Phase K: minimal active pair discrepancy audit
+after the subset-model discrepancy audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 346
-Active phase: Phase K, SubsetModelDiscrepancyAudit_347 next
+Latest module frontier: Module 347
+Active phase: Phase K, MinimalActivePairDiscrepancyAudit_348 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -960,6 +960,12 @@ Module 346:
   the physical-to-model insertion error into a signed sum of weighted subset
   discrepancies, stating the conditional subset-discrepancy criterion, and
   blocking naive HL/proper-support insertion shortcuts.
+
+Module 347:
+  performed SubsetModelDiscrepancyAudit_347(P_minor^0), proving inside
+  P_minor^0 that one-sided subset discrepancies are exact zero by the
+  nonzero minor kernel, cataloging the 144 two-sided active subsets, and
+  selecting the minimal active pair discrepancy audit as the next target.
 ```
 
 ## What Is Proved?
@@ -1139,7 +1145,12 @@ Compact status table:
 | Weighted subset-model discrepancy criterion from Module 346 | **CONDITIONAL** |
 | Naive HL/proper-support insertion shortcuts from Module 346 | **FALSE / BLOCKED** |
 | Current signed local-model insertion closure from Module 346 | **FALSE / BLOCKED** |
-| Subset model discrepancy audit `SubsetModelDiscrepancyAudit_347` | **OPEN next target** |
+| Subset model discrepancy audit `SubsetModelDiscrepancyAudit_347` | **STRUCTURAL / EXTRACTION** |
+| One-sided subset discrepancy zero from Module 347 | **PROVEN inside `P_minor^0`** |
+| Two-sided active subset catalog from Module 347 | **STRUCTURAL / EXTRACTION** |
+| Two-sided active subset discrepancy rows from Module 347 | **OPEN** |
+| All subset discrepancies close from Module 347 | **FALSE / BLOCKED** |
+| Minimal active pair discrepancy audit `MinimalActivePairDiscrepancyAudit_348` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1557,7 +1568,12 @@ wins.
 | `SignedInsertionErrorIdentity_346` | STRUCTURAL / EXTRACTION | Exact signed sum of subset discrepancies |
 | `WeightedSubsetModelDiscrepancyCriterion_346` | CONDITIONAL | Would need all same-family weighted subset discrepancies |
 | `NaiveHLInsertionShortcut_346 / ProperSupportInsertionShortcut_346 / CurrentSignedLocalModelInsertionClosure_346` | FALSE / BLOCKED | Current tools do not insert the model |
-| `SubsetModelDiscrepancyAudit_347(P_minor^0)` | OPEN | Next target |
+| `SubsetModelDiscrepancyAudit_347(P_minor^0)` | STRUCTURAL / EXTRACTION | Subset discrepancy rows audited |
+| `OneSidedSubsetDiscrepancyZero_347(P_minor^0)` | PROVEN inside P_minor^0 | Exact nonzero-kernel cancellation for one-sided subsets |
+| `TwoSidedActiveSubsetCatalog_347` | STRUCTURAL / EXTRACTION | 144 active subsets cataloged |
+| `TwoSidedActiveSubsetDiscrepancyRows_347` | OPEN | Active two-direction discrepancies remain unproved |
+| `AllSubsetDiscrepanciesClose_347` | FALSE / BLOCKED | One-sided zeros do not close active subset rows |
+| `MinimalActivePairDiscrepancyAudit_348(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
