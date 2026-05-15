@@ -78,7 +78,8 @@ flowchart TD
   FullCover327["FullCoverClusterAudit_327<br/>STRUCTURAL; closure BLOCKED"]
   CoverLoad328["FullCoverLoadCriterion_328<br/>STRUCTURAL; sharp cover OPEN"]
   PrimeMobius329["PrimePartitionMobiusAudit_329<br/>STRUCTURAL; cover moments OPEN"]
-  CoverMoment330["PrimePartitionCoverMomentCriterion_330<br/>OPEN next target"]
+  CoverMoment330["PrimePartitionCoverMomentCriterion_330<br/>STRUCTURAL; counting rows OPEN"]
+  PartitionCount331["PartitionClassCountingAudit_331<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -192,7 +193,8 @@ flowchart TD
   FullCover327 --> CoverLoad328
   CoverLoad328 --> PrimeMobius329
   PrimeMobius329 --> CoverMoment330
-  CoverMoment330 --> AntiDiag312
+  CoverMoment330 --> PartitionCount331
+  PartitionCount331 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -242,6 +244,9 @@ flowchart TD
   load alone.
 - The Module 329 prime-partition Mobius audit is pointwise local algebra only.
   It does not count partition classes or prove kernel-weighted cover moments.
+- The Module 330 cover-moment criterion is conditional routing only. Rank
+  heuristics and the finite cover functional are not proofs of
+  kernel-weighted cover smallness.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still

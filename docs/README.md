@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 324
-Active phase: Phase K, generic-versus-collision local-model split next
+Latest module frontier: Module 330
+Active phase: Phase K, partition-class counting audit next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -99,6 +99,7 @@ modules/
   module_327_full_cover_cluster_audit.md
   module_328_full_cover_load_criterion.md
   module_329_prime_partition_mobius_audit.md
+  module_330_prime_partition_cover_moment_criterion.md
   modules_156_178_summary.md
 
 reviews/

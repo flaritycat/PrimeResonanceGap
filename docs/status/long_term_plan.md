@@ -3919,3 +3919,67 @@ Module 330:
   whether any current counting/rank inputs can prove a non-endpoint
   kernel-weighted Mobius-cover moment, or whether the route remains blocked.
 ```
+
+Module 330 completed:
+
+```text
+PrimePartitionCoverMomentCriterion_330(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+MobiusCoverMomentFunctional_330:
+  STRUCTURAL / EXTRACTION.
+
+KernelWeightedMobiusMomentCriterion_330:
+  CONDITIONAL.
+
+PartitionClassCountingRows_330:
+  OPEN.
+
+StructuralRankUniformityRows_330:
+  OPEN.
+
+MultiPrimeCoverMomentRows_330:
+  OPEN.
+
+FinitePrimeTailRows_330:
+  OPEN.
+
+CurrentRankHeuristicClosure_330:
+  FALSE / BLOCKED.
+
+CurrentCoverMomentClosure_330:
+  FALSE / BLOCKED.
+
+PartitionClassCountingAudit_331(P_minor^0):
+  OPEN next target.
+```
+
+The criterion packages the Module 329 pointwise prime-local Mobius powers into
+a finite-cutoff kernel-weighted cover moment. It does not prove that moment is
+small. The missing rows are now sharper: count partition classes with the
+actual kernel and threshold masks, determine the true structural rank after
+wraparound and the `h+k` kernel variable, combine multiple primes with a
+same-family CRT/uniformity theorem, and remove or control finite-prime tails.
+
+The current cadence records:
+
+```text
+Latest completed module: 330
+Post-Reflective_1 solving count: 149
+Long-term-plan count: 143
+
+143 is not divisible by 9, so no plan update is due in this module.
+143 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 331:
+  perform PartitionClassCountingAudit_331(P_minor^0), testing whether one
+  fixed prime partition class can be counted with the actual kernel,
+  threshold masks, dyadic ranges, W-residue conventions, structural rank,
+  wraparound in G_N, and the h+k kernel variable. It should avoid using any
+  endpoint-strength cover, minor-kernel, or selector-transfer assumption.
+```

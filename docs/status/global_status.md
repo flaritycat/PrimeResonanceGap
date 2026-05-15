@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 329
-Active phase: Phase K, prime-partition cover-moment criterion next
+Latest module frontier: Module 330
+Active phase: Phase K, partition-class counting audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -830,10 +830,19 @@ Completed prime-partition Mobius audit:
     full-cover power table; it leaves partition-class counting,
     kernel-weighted Mobius-cover rows, and PrimeMobiusSmallness_329 open
 
+Completed prime-partition cover-moment criterion:
+  PrimePartitionCoverMomentCriterion_330(P_minor^0)
+    defines the finite-cutoff kernel-weighted Mobius cover-moment functional
+    using the Module 329 pointwise powers, states the conditional
+    same-family moment criterion, and leaves partition-class counting,
+    structural-rank uniformity, multi-prime CRT/uniformity, finite-prime
+    tails, and signed local-model insertion open; it records current
+    rank-heuristic and cover-moment closure as FALSE / BLOCKED
+
 Next scheduled module:
-  Module 330 PrimePartitionCoverMomentCriterion_330(P_minor^0)
+  Module 331 PartitionClassCountingAudit_331(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed prime-partition Mobius
-audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed prime-partition
+cover-moment criterion;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.
