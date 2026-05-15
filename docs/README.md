@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 354
-Active phase: Phase K, ThresholdMaskMassRegularityAudit_355 next
+Latest module frontier: Module 355
+Active phase: Phase K, NoTwistColumnProfileCorrelation_356 next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -123,6 +123,7 @@ modules/
   module_352_twisted_mask_budget_audit.md
   module_353_larger_fully_coupled_subset_reduction_audit.md
   module_354_no_twist_mask_budget_feasibility.md
+  module_355_threshold_mask_mass_regularity_audit.md
   modules_156_178_summary.md
 
 reviews/

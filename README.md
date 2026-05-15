@@ -89,8 +89,9 @@ the row, column, anti-diagonal, cover, insertion, subset-discrepancy, and
 twisted-mask barriers. Module 353 shows that larger fully coupled subset rows
 do not collapse to the same minimal pair-pair coefficient/mask package.
 Module 354 then identifies the no-twist mask row as an exact weighted
-off-diagonal shift-mass budget, still unproved by current tools. None of this
-proves the endpoint.
+off-diagonal shift-mass budget. Module 355 shows that existing threshold
+mask regularity gives only column-profile ceilings, not the needed
+coefficient-weighted profile correlation. None of this proves the endpoint.
 
 ## The Whole Project In One Narrative
 
@@ -405,14 +406,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: threshold-mask mass regularity after
-the no-twist feasibility audit**.
+The current active phase is **Phase K: no-twist column-profile correlation
+after the threshold-mask mass audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 354
-Active phase: Phase K, ThresholdMaskMassRegularityAudit_355 next
+Latest module frontier: Module 355
+Active phase: Phase K, NoTwistColumnProfileCorrelation_356 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -1006,6 +1007,13 @@ Module 354:
   weighted mass criterion, blocking oscillation-only and coefficient-only
   no-twist closure, and selecting ThresholdMaskMassRegularityAudit_355 as the
   next target.
+
+Module 355:
+  performed ThresholdMaskMassRegularityAudit_355(P_minor^0), extracting
+  threshold profile and diagonal-overlap ceilings, showing that first
+  incidence, low-level tail, and vacuous removal do not imply the no-twist
+  weighted mass criterion, and selecting NoTwistColumnProfileCorrelation_356
+  as the next target.
 ```
 
 ## What Is Proved?
@@ -1236,7 +1244,14 @@ Compact status table:
 | Current no-twist tools closure from Module 354 | **FALSE / BLOCKED** |
 | Oscillation-only no-twist route from Module 354 | **FALSE / BLOCKED** |
 | Coefficient-only no-twist route from Module 354 | **FALSE / BLOCKED** |
-| Threshold-mask mass regularity audit `ThresholdMaskMassRegularityAudit_355` | **OPEN next target** |
+| Threshold-mask mass regularity audit `ThresholdMaskMassRegularityAudit_355` | **STRUCTURAL / EXTRACTION** |
+| Threshold profile ceiling from Module 355 | **STRUCTURAL / EXTRACTION** |
+| Diagonal overlap ceiling from Module 355 | **STRUCTURAL / EXTRACTION** |
+| No-twist product profile criterion from Module 355 | **CONDITIONAL** |
+| First-incidence product route from Module 355 | **FALSE / BLOCKED** |
+| Low-level/removal route to mask mass from Module 355 | **FALSE / BLOCKED** |
+| Current threshold-mask regularity closure from Module 355 | **FALSE / BLOCKED** |
+| No-twist column-profile correlation `NoTwistColumnProfileCorrelation_356` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1692,7 +1707,11 @@ wins.
 | `NoTwistMassIdentity_354` | STRUCTURAL / EXTRACTION | Exact identity `M_{0,0}^{U,V}=Duv-o_{U,V}` |
 | `NoTwistWeightedMassCriterion_354` | CONDITIONAL | Needs same-family weighted shift-mass estimates for threshold masks |
 | `NoTwistCurrentToolsClosure_354 / OscillationOnlyNoTwistRoute_354 / CoefficientOnlyNoTwistRoute_354` | FALSE / BLOCKED | Current tools, pure oscillation, and coefficient-only inputs do not close the row |
-| `ThresholdMaskMassRegularityAudit_355(P_minor^0)` | OPEN | Next named target after Module 354 |
+| `ThresholdMaskMassRegularityAudit_355(P_minor^0)` | STRUCTURAL / EXTRACTION | Threshold-mask profile route audited; no theorem upgraded |
+| `ThresholdProfileCeiling_355 / DiagonalOverlapCeiling_355` | STRUCTURAL / EXTRACTION | Profile and overlap ceilings only |
+| `NoTwistProductProfileCriterion_355` | CONDITIONAL | Needs same-family coefficient-weighted profile control |
+| `FirstIncidenceProductRoute_355 / LowLevelRemovalToMaskMass_355 / CurrentThresholdMaskRegularityClosure_355` | FALSE / BLOCKED | Current threshold data do not prove no-twist mass regularity |
+| `NoTwistColumnProfileCorrelation_356(P_minor^0)` | OPEN | Next named target after Module 355 |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

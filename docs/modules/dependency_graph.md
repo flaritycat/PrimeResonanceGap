@@ -103,7 +103,8 @@ flowchart TD
   TwistMask352["TwistedMaskBudgetAudit_352<br/>STRUCTURAL; mask transform identity extracted"]
   LargeSubset353["LargerFullyCoupledSubsetReductionAudit_353<br/>STRUCTURAL; larger rows do not compress"]
   NoTwist354["NoTwistMaskBudgetFeasibility_354<br/>STRUCTURAL; current tools BLOCKED"]
-  MaskMass355["ThresholdMaskMassRegularityAudit_355<br/>OPEN next target"]
+  MaskMass355["ThresholdMaskMassRegularityAudit_355<br/>STRUCTURAL; first-incidence route BLOCKED"]
+  ProfileCorr356["NoTwistColumnProfileCorrelation_356<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -242,7 +243,8 @@ flowchart TD
   TwistMask352 --> LargeSubset353
   LargeSubset353 --> NoTwist354
   NoTwist354 --> MaskMass355
-  MaskMass355 --> SignedIE326
+  MaskMass355 --> ProfileCorr356
+  ProfileCorr356 --> SignedIE326
   MinPair348 --> SignedIE326
   SubsetDiscrep347 --> SignedIE326
   SignedInsertion346 --> SignedIE326
@@ -531,3 +533,7 @@ flowchart TD
   `M_{0,0}^{U,V}=Duv-o_{U,V}` and blocks oscillation-only, coefficient-only,
   and current-tool closure. The next open target is threshold-mask mass
   regularity in the same `P_minor^0` family.
+- `ThresholdMaskMassRegularityAudit_355` extracts profile and overlap
+  ceilings, but shows that first incidence, low-level tail, and vacuous
+  removal do not prove the coefficient-weighted no-twist mass criterion. The
+  next open row is no-twist column-profile correlation.

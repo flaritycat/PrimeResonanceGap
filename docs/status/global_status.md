@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 354
-Active phase: Phase K, ThresholdMaskMassRegularityAudit_355 next
+Latest module frontier: Module 355
+Active phase: Phase K, NoTwistColumnProfileCorrelation_356 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -1028,11 +1028,19 @@ Completed no-twist mask budget feasibility audit:
     the same-family mask-mass estimate, and selects
     ThresholdMaskMassRegularityAudit_355(P_minor^0) as the next target
 
+Completed threshold mask mass regularity audit:
+  ThresholdMaskMassRegularityAudit_355(P_minor^0)
+    extracts column-profile and diagonal-overlap ceilings for threshold masks,
+    states the conditional no-twist product-profile criterion, shows that
+    first-incidence, low-level-tail, and vacuous-removal inputs do not prove
+    the weighted no-twist mass criterion, and selects
+    NoTwistColumnProfileCorrelation_356(P_minor^0) as the next target
+
 Next scheduled module:
-  Module 355 ThresholdMaskMassRegularityAudit_355(P_minor^0)
+  Module 356 NoTwistColumnProfileCorrelation_356(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed no-twist mask budget
-feasibility audit; `NoTwistWeightedMassCriterion_354` and
-`ThresholdMaskMassRegularityAudit_355` remain **OPEN**.
+Status: **STRUCTURAL / EXTRACTION** for the completed threshold mask mass
+regularity audit; `NoTwistProductProfileCriterion_355` and
+`NoTwistColumnProfileCorrelation_356` remain **OPEN**.
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.
