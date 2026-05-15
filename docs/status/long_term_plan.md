@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 367
-Post-Reflective_1 solving count: 186
-Long-term-plan count: 180
+Latest completed module: 368
+Post-Reflective_1 solving count: 187
+Long-term-plan count: 181
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -6201,4 +6201,63 @@ Module 368:
   E_a |P_nu^0(a)-kappa_model^0(a)|^2 and deciding whether current pair inputs
   prove it, reduce it to a precise pair-BDH variance row, or show it is
   endpoint-strength.
+```
+
+Module 368 completed:
+
+```text
+PairResidualFourierEnergyAudit_368(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+PairResidualParsevalIdentity_368:
+  PROVEN.
+
+PairResidualRectangleEnergyExpansion_368:
+  PROVEN.
+
+MeanCalibrationZeroModeOnly_368:
+  PROVEN.
+
+FirstMomentPairHLToEnergy_368:
+  FALSE / BLOCKED.
+
+OrdinaryPairBDHShortcut_368:
+  FALSE / BLOCKED.
+
+SameFamilyPairBDHVarianceTarget_368:
+  OPEN.
+
+PairResidualFourierEnergyTarget_361:
+  OPEN.
+```
+
+Best target selection: Module 368 was the right attack because Module 367
+paused the pair-model coefficient branch and selected the pair-residual
+Fourier energy as the remaining active input. The proof attack proves the
+Parseval identity for the residual energy and expands it into a rectangle
+diagonal residual, a weighted pair-residual cross term, and an exact
+model-defect row. It also proves that first-moment pair calibration controls
+only the zero Fourier mode and does not imply energy control. The missing
+input is now named as `SameFamilyPairBDHVarianceTarget_368`.
+
+The current cadence records:
+
+```text
+Latest completed module: 368
+Post-Reflective_1 solving count: 187
+Long-term-plan count: 181
+
+181 is not divisible by 9, so no plan update is due in this module.
+181 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 369:
+  perform PairResidualCovarianceIsolation_369(P_minor^0), isolating the exact
+  off-diagonal shifted-prime covariance object inside
+  SameFamilyPairBDHVarianceTarget_368, including the same model convention
+  used in Modules 363-368.
 ```
