@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 366
-Post-Reflective_1 solving count: 185
-Long-term-plan count: 179
+Latest completed module: 367
+Post-Reflective_1 solving count: 186
+Long-term-plan count: 180
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -6056,7 +6056,7 @@ Module 366 completed:
 PairModelRangeAssemblyAudit_366(P_minor^0):
   STRUCTURAL / EXTRACTION.
 
-PolynomialRRangeOffDiagonalPairModelBound_366:
+PolynomialRSubfamilyPairModelMinorTopMass_366:
   CONDITIONAL.
 
 FiniteTruncationAllDenominatorsLeakage_366:
@@ -6075,8 +6075,8 @@ CurrentPminor0UniformRangeClosure_366:
   FALSE / BLOCKED.
 
 PairModelMinorTopMassTarget_361:
-  CONDITIONAL.
-  Note: not proved in full P_minor^0.
+  OPEN.
+  Scope note: full P_minor^0 is not proved.
 ```
 
 Best target selection: Module 366 was the right attack because Modules
@@ -6110,4 +6110,95 @@ Module 367:
   diagonal row from Module 363, and the mixed-row scale from Module 361 are
   enough to retire the pair-model branch, or whether the project should move
   next to PairResidualFourierEnergyTarget_361 as the remaining active input.
+```
+
+Module 367 completed:
+
+```text
+PairModelMinorTopMassVerdict_367(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+MixedRowAssemblyLemma_367:
+  PROVEN.
+
+PolynomialRSubfamilyModelCoefficientCriterion_367:
+  CONDITIONAL.
+
+FullPminorPairModelTopMassClosure_367:
+  FALSE / BLOCKED.
+
+PairModelBranchAsNextPrimaryAttack_367:
+  FALSE / BLOCKED.
+
+PairResidualFourierEnergyTarget_361:
+  OPEN.
+  Next primary attack.
+
+PlanUpdate_20_367:
+  STRUCTURAL / EXTRACTION.
+
+PlanChallenge_12_367:
+  STRUCTURAL / EXTRACTION.
+```
+
+Best target selection: Module 367 was the right attack because the
+pair-model branch had reached a verdict point. It proves the finite
+mixed-row assembly lemma, clarifies that Module 366 gives a conditional
+polynomial-R subfamily result rather than full `P_minor^0` closure, and
+selects the same-family pair-residual Fourier energy as the next primary
+attack. It also patches the Module 366 wording so the full
+`PairModelMinorTopMassTarget_361` remains open in `P_minor^0`.
+
+PlanUpdate_20_367:
+
+```text
+Module 368:
+  PairResidualFourierEnergyAudit_368(P_minor^0), expanding
+  E_a |P_nu^0(a)-kappa_model^0(a)|^2 and deciding whether it is a pair-BDH
+  strength input, a first-moment-HL consequence, or an endpoint-strength
+  variance row.
+
+Module 369:
+  if Module 368 is blocked, isolate the exact off-diagonal shifted-prime
+  covariance object needed for the pair residual, including the same model
+  convention used in Modules 363-367.
+
+Module 370:
+  return to rectangle-defect or diagonal-overlap large values only after the
+  pair-residual energy row is classified; do not resume pair-model range
+  tuning unless a new low-R tail idea appears.
+```
+
+PlanChallenge_12_367:
+
+```text
+Pause the pair-model coefficient branch as the primary attack. It yielded a
+conditional polynomial-R subfamily result and exposed the full-P_minor0 low-R
+obstruction. The next attack should be the same-family pair-residual Fourier
+energy. If that row is endpoint-strength, record that the no-twist masked
+anti-diagonal route requires a genuinely new pair variance input rather than
+more coefficient bookkeeping.
+```
+
+The current cadence records:
+
+```text
+Latest completed module: 367
+Post-Reflective_1 solving count: 186
+Long-term-plan count: 180
+
+180 is divisible by 9, so PlanUpdate_20_367 is due and completed here.
+180 is divisible by 15, so PlanChallenge_12_367 is due and completed here.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 368:
+  perform PairResidualFourierEnergyAudit_368(P_minor^0), expanding the exact
+  same-family residual energy
+  E_a |P_nu^0(a)-kappa_model^0(a)|^2 and deciding whether current pair inputs
+  prove it, reduce it to a precise pair-BDH variance row, or show it is
+  endpoint-strength.
 ```

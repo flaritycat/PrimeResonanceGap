@@ -36,7 +36,7 @@ Verdict:
 PairModelRangeAssemblyAudit_366(P_minor^0):
   STRUCTURAL / EXTRACTION.
 
-PolynomialRRangeOffDiagonalPairModelBound_366:
+PolynomialRSubfamilyPairModelMinorTopMass_366:
   CONDITIONAL.
 
 FiniteTruncationAllDenominatorsLeakage_366:
@@ -54,8 +54,8 @@ CurrentPminor0UniformRangeClosure_366:
   FALSE / BLOCKED.
 
 PairModelMinorTopMassTarget_361:
-  CONDITIONAL.
-  Note: not proved in full P_minor^0.
+  OPEN.
+  Scope note: full P_minor^0 is not proved.
 ```
 
 Module status label:
@@ -548,7 +548,7 @@ pair-residual energy.
 Classification:
 
 ```text
-PolynomialRRangeOffDiagonalPairModelBound_366:
+PolynomialRSubfamilyPairModelMinorTopMass_366:
   CONDITIONAL.
 ```
 
@@ -586,8 +586,8 @@ The parent target remains:
 
 ```text
 PairModelMinorTopMassTarget_361:
-  CONDITIONAL.
-  Note: not proved in full P_minor^0.
+  OPEN.
+  Scope note: full P_minor^0 is not proved.
 ```
 
 ## 6. Edge cases
@@ -721,7 +721,7 @@ No README, global status, or theorem-status index theorem claim is upgraded.
 PairModelRangeAssemblyAudit_366(P_minor^0):
   STRUCTURAL / EXTRACTION.
 
-PolynomialRRangeOffDiagonalPairModelBound_366:
+PolynomialRSubfamilyPairModelMinorTopMass_366:
   CONDITIONAL.
 
 FiniteTruncationAllDenominatorsLeakage_366:
@@ -740,8 +740,8 @@ CurrentPminor0UniformRangeClosure_366:
   FALSE / BLOCKED.
 
 PairModelMinorTopMassTarget_361:
-  CONDITIONAL.
-  Note: not proved in full P_minor^0.
+  OPEN.
+  Scope note: full P_minor^0 is not proved.
 ```
 
 Do not cite this module as a full proof of `PairModelMinorTopMassTarget_361`.
