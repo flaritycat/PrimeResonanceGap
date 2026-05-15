@@ -91,7 +91,10 @@ do not collapse to the same minimal pair-pair coefficient/mask package.
 Module 354 then identifies the no-twist mask row as an exact weighted
 off-diagonal shift-mass budget. Module 355 shows that existing threshold
 mask regularity gives only column-profile ceilings, not the needed
-coefficient-weighted profile correlation. None of this proves the endpoint.
+coefficient-weighted profile correlation. Module 356 formulates that
+correlation as an exact common-frequency overlap input and blocks continuing
+the no-twist branch without a new same-family theorem. None of this proves
+the endpoint.
 
 ## The Whole Project In One Narrative
 
@@ -406,14 +409,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: no-twist column-profile correlation
-after the threshold-mask mass audit**.
+The current active phase is **Phase K: signed-insertion route decision after
+the no-twist column-profile block**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 355
-Active phase: Phase K, NoTwistColumnProfileCorrelation_356 next
+Latest module frontier: Module 356
+Active phase: Phase K, SignedInsertionRouteDecision_357 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -1014,6 +1017,13 @@ Module 355:
   incidence, low-level tail, and vacuous removal do not imply the no-twist
   weighted mass criterion, and selecting NoTwistColumnProfileCorrelation_356
   as the next target.
+
+Module 356:
+  performed NoTwistColumnProfileCorrelationAudit_356(P_minor^0), extracting
+  the exact coefficient-weighted common-frequency overlap functional,
+  stating conditional weighted second-moment and coefficient top-mass
+  criteria, and blocking continuation of the no-twist masked anti-diagonal
+  route without a new same-family profile-correlation theorem.
 ```
 
 ## What Is Proved?
@@ -1251,7 +1261,14 @@ Compact status table:
 | First-incidence product route from Module 355 | **FALSE / BLOCKED** |
 | Low-level/removal route to mask mass from Module 355 | **FALSE / BLOCKED** |
 | Current threshold-mask regularity closure from Module 355 | **FALSE / BLOCKED** |
-| No-twist column-profile correlation `NoTwistColumnProfileCorrelation_356` | **OPEN next target** |
+| No-twist column-profile correlation audit `NoTwistColumnProfileCorrelationAudit_356` | **STRUCTURAL / EXTRACTION** |
+| Common-frequency overlap identity from Module 356 | **STRUCTURAL / EXTRACTION** |
+| Weighted profile second-moment criterion from Module 356 | **CONDITIONAL** |
+| Coefficient top-mass profile criterion from Module 356 | **CONDITIONAL** |
+| No-twist column-profile correlation `NoTwistColumnProfileCorrelation_356` | **OPEN** |
+| Cap-and-total-only correlation route from Module 356 | **FALSE / BLOCKED** |
+| Current no-twist column-profile closure from Module 356 | **FALSE / BLOCKED** |
+| No-twist masked anti-diagonal continuation from Module 356 | **FALSE / BLOCKED** |
 
 For the live object-by-object ledger, read:
 
@@ -1711,7 +1728,11 @@ wins.
 | `ThresholdProfileCeiling_355 / DiagonalOverlapCeiling_355` | STRUCTURAL / EXTRACTION | Profile and overlap ceilings only |
 | `NoTwistProductProfileCriterion_355` | CONDITIONAL | Needs same-family coefficient-weighted profile control |
 | `FirstIncidenceProductRoute_355 / LowLevelRemovalToMaskMass_355 / CurrentThresholdMaskRegularityClosure_355` | FALSE / BLOCKED | Current threshold data do not prove no-twist mass regularity |
-| `NoTwistColumnProfileCorrelation_356(P_minor^0)` | OPEN | Next named target after Module 355 |
+| `NoTwistColumnProfileCorrelationAudit_356(P_minor^0)` | STRUCTURAL / EXTRACTION | Exact no-twist common-frequency overlap audited; no theorem upgraded |
+| `CommonFrequencyOverlapIdentity_356` | STRUCTURAL / EXTRACTION | Exact identity for `D^(-1) sum_{d_1,d_2} sum_xi |A||U||V|` |
+| `WeightedProfileSecondMomentCriterion_356 / CoefficientTopMassProfileCriterion_356` | CONDITIONAL | Possible same-family routes, not proved |
+| `NoTwistColumnProfileCorrelation_356(P_minor^0)` | OPEN | Same-family coefficient-weighted profile-correlation estimate remains missing |
+| `CapTotalOnlyCorrelationRoute_356 / CurrentNoTwistColumnProfileClosure_356 / NoTwistMaskedAntiDiagonalContinuation_356` | FALSE / BLOCKED | Current cap-and-total data only reproduce the profile ceiling |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

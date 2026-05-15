@@ -104,7 +104,8 @@ flowchart TD
   LargeSubset353["LargerFullyCoupledSubsetReductionAudit_353<br/>STRUCTURAL; larger rows do not compress"]
   NoTwist354["NoTwistMaskBudgetFeasibility_354<br/>STRUCTURAL; current tools BLOCKED"]
   MaskMass355["ThresholdMaskMassRegularityAudit_355<br/>STRUCTURAL; first-incidence route BLOCKED"]
-  ProfileCorr356["NoTwistColumnProfileCorrelation_356<br/>OPEN next target"]
+  ProfileCorr356["NoTwistColumnProfileCorrelationAudit_356<br/>STRUCTURAL; correlation input OPEN"]
+  RouteDecision357["SignedInsertionRouteDecision_357<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -244,7 +245,8 @@ flowchart TD
   LargeSubset353 --> NoTwist354
   NoTwist354 --> MaskMass355
   MaskMass355 --> ProfileCorr356
-  ProfileCorr356 --> SignedIE326
+  ProfileCorr356 --> RouteDecision357
+  RouteDecision357 --> SignedIE326
   MinPair348 --> SignedIE326
   SubsetDiscrep347 --> SignedIE326
   SignedInsertion346 --> SignedIE326
@@ -531,9 +533,13 @@ flowchart TD
   enumeration branch now points to the open no-twist mask feasibility target.
 - `NoTwistMaskBudgetFeasibility_354` identifies
   `M_{0,0}^{U,V}=Duv-o_{U,V}` and blocks oscillation-only, coefficient-only,
-  and current-tool closure. The next open target is threshold-mask mass
-  regularity in the same `P_minor^0` family.
+  and current-tool closure. It led to the threshold-mask mass regularity
+  audit in the same `P_minor^0` family.
 - `ThresholdMaskMassRegularityAudit_355` extracts profile and overlap
   ceilings, but shows that first incidence, low-level tail, and vacuous
-  removal do not prove the coefficient-weighted no-twist mass criterion. The
-  next open row is no-twist column-profile correlation.
+  removal do not prove the coefficient-weighted no-twist mass criterion.
+- `NoTwistColumnProfileCorrelationAudit_356` identifies the exact
+  coefficient-weighted common-frequency overlap target and blocks continuing
+  the no-twist masked anti-diagonal route under current cap-and-total inputs.
+  The next target is a signed-insertion route decision, not another
+  first-incidence profile ceiling.

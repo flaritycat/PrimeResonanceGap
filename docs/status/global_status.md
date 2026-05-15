@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 355
-Active phase: Phase K, NoTwistColumnProfileCorrelation_356 next
+Latest module frontier: Module 356
+Active phase: Phase K, SignedInsertionRouteDecision_357 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -414,6 +414,14 @@ Latest project-wide review:
   `CenteredRewriteRemovesExplicitZeroRow_315`, or
   `CurrentZeroModeProductControl_315` as weighted pair smallness.
 - `CenteredFullAntiDiagonalAudit_316(P_minor^0)` as proved.
+- `NoTwistColumnProfileCorrelation_356(P_minor^0)`,
+  `WeightedProfileSecondMomentCriterion_356`, or
+  `CoefficientTopMassProfileCriterion_356` as proved estimates.
+- `CommonFrequencyOverlapIdentity_356` as no-twist mask smallness.
+- `CapTotalOnlyCorrelationRoute_356`,
+  `CurrentNoTwistColumnProfileClosure_356`, or
+  `NoTwistMaskedAntiDiagonalContinuation_356` as proof routes under the
+  current ledger.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
   `FixedRowFeasGate_255`, `TwoPointEscGate_256`,
@@ -1036,11 +1044,20 @@ Completed threshold mask mass regularity audit:
     the weighted no-twist mass criterion, and selects
     NoTwistColumnProfileCorrelation_356(P_minor^0) as the next target
 
+Completed no-twist column-profile correlation audit:
+  NoTwistColumnProfileCorrelationAudit_356(P_minor^0)
+    extracts the exact coefficient-weighted common-frequency overlap
+    functional, states conditional weighted second-moment and coefficient
+    top-mass criteria, records that cap-and-total data do not imply
+    decorrelation, and blocks continuing the no-twist masked anti-diagonal
+    route without a new same-family profile-correlation input
+
 Next scheduled module:
-  Module 356 NoTwistColumnProfileCorrelation_356(P_minor^0)
+  Module 357 SignedInsertionRouteDecision_357(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed threshold mask mass
-regularity audit; `NoTwistProductProfileCriterion_355` and
-`NoTwistColumnProfileCorrelation_356` remain **OPEN**.
+Status: **STRUCTURAL / EXTRACTION** for the completed no-twist
+column-profile correlation audit; `NoTwistColumnProfileCorrelation_356`,
+`NoTwistProductProfileCriterion_355`, and `NoTwistWeightedMassCriterion_354`
+remain **OPEN**.
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.
