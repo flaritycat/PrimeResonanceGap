@@ -105,7 +105,8 @@ flowchart TD
   NoTwist354["NoTwistMaskBudgetFeasibility_354<br/>STRUCTURAL; current tools BLOCKED"]
   MaskMass355["ThresholdMaskMassRegularityAudit_355<br/>STRUCTURAL; first-incidence route BLOCKED"]
   ProfileCorr356["NoTwistColumnProfileCorrelationAudit_356<br/>STRUCTURAL; correlation input OPEN"]
-  RouteDecision357["SignedInsertionRouteDecision_357<br/>OPEN next target"]
+  RouteDecision357["SignedInsertionRouteDecision_357<br/>STRUCTURAL; current branch BLOCKED"]
+  TopMass358["CoefficientTopMassFeasibility_358<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -246,6 +247,8 @@ flowchart TD
   NoTwist354 --> MaskMass355
   MaskMass355 --> ProfileCorr356
   ProfileCorr356 --> RouteDecision357
+  RouteDecision357 --> TopMass358
+  TopMass358 --> ProfileCorr356
   RouteDecision357 --> SignedIE326
   MinPair348 --> SignedIE326
   SubsetDiscrep347 --> SignedIE326
@@ -541,5 +544,8 @@ flowchart TD
 - `NoTwistColumnProfileCorrelationAudit_356` identifies the exact
   coefficient-weighted common-frequency overlap target and blocks continuing
   the no-twist masked anti-diagonal route under current cap-and-total inputs.
-  The next target is a signed-insertion route decision, not another
-  first-incidence profile ceiling.
+- `SignedInsertionRouteDecision_357` blocks no-twist continuation,
+  coefficient-only return, larger-row enumeration, and immediate absolute
+  cover return under current inputs. The next target is the coefficient
+  top-mass feasibility test from Module 356, not another first-incidence
+  profile ceiling.

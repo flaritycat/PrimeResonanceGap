@@ -93,8 +93,10 @@ off-diagonal shift-mass budget. Module 355 shows that existing threshold
 mask regularity gives only column-profile ceilings, not the needed
 coefficient-weighted profile correlation. Module 356 formulates that
 correlation as an exact common-frequency overlap input and blocks continuing
-the no-twist branch without a new same-family theorem. None of this proves
-the endpoint.
+the no-twist branch without a new same-family theorem. Module 357 then
+decides that the signed-insertion branch should not keep expanding under the
+current toolkit; the next narrow test is coefficient top-mass feasibility.
+None of this proves the endpoint.
 
 ## The Whole Project In One Narrative
 
@@ -409,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: signed-insertion route decision after
-the no-twist column-profile block**.
+The current active phase is **Phase K: coefficient top-mass feasibility after
+the signed-insertion route decision**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 356
-Active phase: Phase K, SignedInsertionRouteDecision_357 next
+Latest module frontier: Module 357
+Active phase: Phase K, CoefficientTopMassFeasibility_358 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -1024,6 +1026,13 @@ Module 356:
   stating conditional weighted second-moment and coefficient top-mass
   criteria, and blocking continuation of the no-twist masked anti-diagonal
   route without a new same-family profile-correlation theorem.
+
+Module 357:
+  performed SignedInsertionRouteDecision_357(P_minor^0), inventorying the
+  signed-insertion branch after Modules 346-356, blocking no-twist
+  continuation, coefficient-only return, higher-order enumeration, and
+  immediate absolute-cover return under current inputs, and selecting
+  CoefficientTopMassFeasibility_358 as the next concrete new-input test.
 ```
 
 ## What Is Proved?
@@ -1269,6 +1278,15 @@ Compact status table:
 | Cap-and-total-only correlation route from Module 356 | **FALSE / BLOCKED** |
 | Current no-twist column-profile closure from Module 356 | **FALSE / BLOCKED** |
 | No-twist masked anti-diagonal continuation from Module 356 | **FALSE / BLOCKED** |
+| Signed insertion route decision `SignedInsertionRouteDecision_357` | **STRUCTURAL / EXTRACTION** |
+| Signed insertion input inventory from Module 357 | **STRUCTURAL / EXTRACTION** |
+| No-twist continuation after Module 356 | **FALSE / BLOCKED** |
+| Coefficient-only return from Module 357 | **FALSE / BLOCKED** |
+| Higher-order enumeration return from Module 357 | **FALSE / BLOCKED** |
+| Immediate absolute-cover return from Module 357 | **FALSE / BLOCKED** |
+| Current signed-insertion branch closure from Module 357 | **FALSE / BLOCKED** |
+| New input required for signed insertion from Module 357 | **STRUCTURAL / EXTRACTION** |
+| Coefficient top-mass feasibility `CoefficientTopMassFeasibility_358` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1733,6 +1751,10 @@ wins.
 | `WeightedProfileSecondMomentCriterion_356 / CoefficientTopMassProfileCriterion_356` | CONDITIONAL | Possible same-family routes, not proved |
 | `NoTwistColumnProfileCorrelation_356(P_minor^0)` | OPEN | Same-family coefficient-weighted profile-correlation estimate remains missing |
 | `CapTotalOnlyCorrelationRoute_356 / CurrentNoTwistColumnProfileClosure_356 / NoTwistMaskedAntiDiagonalContinuation_356` | FALSE / BLOCKED | Current cap-and-total data only reproduce the profile ceiling |
+| `SignedInsertionRouteDecision_357(P_minor^0)` | STRUCTURAL / EXTRACTION | Signed-insertion branch decision after the no-twist profile block |
+| `SignedInsertionInputInventory_357 / NewInputRequiredForSignedInsertion_357` | STRUCTURAL / EXTRACTION | Inventory and new-input requirement only; no estimate proved |
+| `NoTwistContinuationAfter356_357 / CoefficientOnlyReturn_357 / HigherOrderEnumerationReturn_357 / AbsoluteCoverReturnAsNextMove_357 / CurrentSignedInsertionBranchClosure_357` | FALSE / BLOCKED | Current signed-insertion continuations do not close the branch |
+| `CoefficientTopMassFeasibility_358(P_minor^0)` | OPEN | Next target: test the coefficient top-mass route from Module 356 |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

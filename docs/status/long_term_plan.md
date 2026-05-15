@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 356
-Post-Reflective_1 solving count: 175
-Long-term-plan count: 169
+Latest completed module: 357
+Post-Reflective_1 solving count: 176
+Long-term-plan count: 170
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -5547,4 +5547,64 @@ Module 357:
   return to a coefficient-side target, revisit the higher-order fully
   coupled rows, or wait for a genuinely new same-family profile-correlation
   theorem.
+```
+
+Module 357 completed:
+
+```text
+SignedInsertionRouteDecision_357(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+SignedInsertionInputInventory_357:
+  STRUCTURAL / EXTRACTION.
+
+NoTwistContinuationAfter356_357:
+  FALSE / BLOCKED.
+
+CoefficientOnlyReturn_357:
+  FALSE / BLOCKED.
+
+HigherOrderEnumerationReturn_357:
+  FALSE / BLOCKED.
+
+AbsoluteCoverReturnAsNextMove_357:
+  FALSE / BLOCKED.
+
+CurrentSignedInsertionBranchClosure_357:
+  FALSE / BLOCKED.
+
+NewInputRequiredForSignedInsertion_357:
+  STRUCTURAL / EXTRACTION.
+
+CoefficientTopMassFeasibility_358(P_minor^0):
+  OPEN next target.
+```
+
+The decision records that the signed-insertion branch has exact reductions
+and local convention zeros, but no current-tool closure. The no-twist route,
+coefficient-only route, higher-order enumeration route, and immediate
+absolute cover return are all blocked as next proof moves unless a genuinely
+new same-family input is supplied. The next concrete test is the coefficient
+top-mass route isolated by Module 356.
+
+The current cadence records:
+
+```text
+Latest completed module: 357
+Post-Reflective_1 solving count: 176
+Long-term-plan count: 170
+
+170 is not divisible by 9, so no plan update is due in this module.
+170 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 358:
+  perform CoefficientTopMassFeasibility_358(P_minor^0), deciding whether the
+  coefficient top-mass criterion from Module 356 can be derived from current
+  coefficient-side information, or whether it is another genuinely new
+  same-family theorem.
 ```

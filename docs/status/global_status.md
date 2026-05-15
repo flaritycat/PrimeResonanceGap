@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 356
-Active phase: Phase K, SignedInsertionRouteDecision_357 next
+Latest module frontier: Module 357
+Active phase: Phase K, CoefficientTopMassFeasibility_358 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -421,6 +421,12 @@ Latest project-wide review:
 - `CapTotalOnlyCorrelationRoute_356`,
   `CurrentNoTwistColumnProfileClosure_356`, or
   `NoTwistMaskedAntiDiagonalContinuation_356` as proof routes under the
+  current ledger.
+- `SignedInsertionRouteDecision_357(P_minor^0)` as an analytic estimate or
+  as a disproof of signed local-model insertion.
+- `CoefficientOnlyReturn_357`, `HigherOrderEnumerationReturn_357`,
+  `AbsoluteCoverReturnAsNextMove_357`, or
+  `CurrentSignedInsertionBranchClosure_357` as proof routes under the
   current ledger.
 - `FixedRowOnePointPkg_249`, `KernelHolderGate_252`,
   `WShortRangeGate_253`, `SideConventionGate_254`,
@@ -1052,12 +1058,22 @@ Completed no-twist column-profile correlation audit:
     decorrelation, and blocks continuing the no-twist masked anti-diagonal
     route without a new same-family profile-correlation input
 
+Completed signed insertion route decision:
+  SignedInsertionRouteDecision_357(P_minor^0)
+    inventories the signed-insertion branch after Modules 346-356, blocks
+    no-twist continuation, coefficient-only return, higher-order enumeration,
+    and immediate absolute-cover return under the current ledger, records
+    that the current signed-insertion branch does not close, and selects
+    CoefficientTopMassFeasibility_358(P_minor^0) as the next concrete new
+    input test
+
 Next scheduled module:
-  Module 357 SignedInsertionRouteDecision_357(P_minor^0)
+  Module 358 CoefficientTopMassFeasibility_358(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed no-twist
-column-profile correlation audit; `NoTwistColumnProfileCorrelation_356`,
+Status: **STRUCTURAL / EXTRACTION** for the completed signed-insertion route
+decision; `SignedLocalModelInsertion_326`,
+`NoTwistColumnProfileCorrelation_356`, `CoefficientTopMassProfileCriterion_356`,
 `NoTwistProductProfileCriterion_355`, and `NoTwistWeightedMassCriterion_354`
 remain **OPEN**.
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.
