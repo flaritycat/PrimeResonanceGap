@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: internal exact-zero kernel audit after
-the low-envelope mass prototype**.
+The current active phase is **Phase K: cross exact-zero kernel audit after the
+internal exact-zero kernel audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 342
-Active phase: Phase K, InternalZeroKernelAudit_343 next
+Latest module frontier: Module 343
+Active phase: Phase K, CrossZeroKernelAudit_344 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -940,8 +940,13 @@ Module 342:
   ceiling, and blocking current low-envelope mass closure.
 
 Module 343:
-  perform InternalZeroKernelAudit_343(P_minor^0), deciding whether internal
-  exact lifted-zero rows can be budgeted with the same kernel, low-prime
+  performed InternalZeroKernelAudit_343(P_minor^0), cataloging the six
+  internal lifted-zero rows, extracting bare codimension, and blocking the
+  codimension-only weighted closure shortcut.
+
+Module 344:
+  perform CrossZeroKernelAudit_344(P_minor^0), deciding whether the sixteen
+  cross lifted-zero rows can be budgeted with the same kernel, low-prime
   envelope, zero-tail weights, masks, and cutoff order.
 ```
 
@@ -1103,7 +1108,12 @@ Compact status table:
 | Trivial low-envelope mass ceiling from Module 342 | **STRUCTURAL / EXTRACTION** |
 | Low-envelope absorption implication from Module 342 | **CONDITIONAL** |
 | Current low-envelope mass and mass-only cover-route closures from Module 342 | **FALSE / BLOCKED** |
-| Internal exact-zero kernel audit `InternalZeroKernelAudit_343` | **OPEN next target** |
+| Internal exact-zero kernel audit `InternalZeroKernelAudit_343` | **STRUCTURAL / EXTRACTION** |
+| Bare internal codimension and weighted internal functional from Module 343 | **STRUCTURAL / EXTRACTION** |
+| Internal zero kernel transfer criterion from Module 343 | **CONDITIONAL** |
+| Internal zero kernel rows from Module 343 | **OPEN** |
+| Current internal zero kernel closure from Module 343 | **FALSE / BLOCKED** |
+| Cross exact-zero kernel audit `CrossZeroKernelAudit_344` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1506,7 +1516,11 @@ wins.
 | `LowEnvelopeMassFunctional_342 / TrivialLowEnvelopeMassCeiling_342` | STRUCTURAL / EXTRACTION | Exact mass functional and total-weight ceiling only |
 | `LowEnvelopeAbsorptionImplication_342` | CONDITIONAL | Would feed Module 338 only if the same-family mass and cutoff window are proved |
 | `CurrentLowEnvelopeMassClosure_342 / MassOnlyCoverRouteClosure_342` | FALSE / BLOCKED | Current inputs do not prove the mass row, and mass alone does not close the cover route |
-| `InternalZeroKernelAudit_343(P_minor^0)` | OPEN | Next target |
+| `InternalZeroKernelAudit_343(P_minor^0)` | STRUCTURAL / EXTRACTION | Audits the six internal lifted-zero rows |
+| `InternalZeroRowsCatalog_343 / BareInternalCodimension_343 / InternalZeroWeightedFunctional_343` | STRUCTURAL / EXTRACTION | Catalog, bare codimension, and exact weighted target only |
+| `InternalZeroKernelTransferCriterion_343` | CONDITIONAL | Requires same-family fixed-slice estimates with kernel, low envelope, and zero-tail weights |
+| `CurrentInternalZeroKernelClosure_343 / CodimensionOnlyInternalZeroClosure_343` | FALSE / BLOCKED | Bare codimension does not control weighted kernel slices |
+| `CrossZeroKernelAudit_344(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 342
-Active phase: Phase K, InternalZeroKernelAudit_343 next
+Latest module frontier: Module 343
+Active phase: Phase K, CrossZeroKernelAudit_344 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -933,10 +933,17 @@ Completed low-envelope mass prototype:
     implication, blocks current low-envelope mass closure, and blocks the
     mass-only cover-route shortcut
 
+Completed internal exact-zero kernel audit:
+  InternalZeroKernelAudit_343(P_minor^0)
+    catalogs the six internal lifted-zero rows, records bare codimension only,
+    defines the weighted internal exact-zero functional, states a conditional
+    fixed-slice transfer criterion, and blocks codimension-only weighted
+    closure
+
 Next scheduled module:
-  Module 343 InternalZeroKernelAudit_343(P_minor^0)
+  Module 344 CrossZeroKernelAudit_344(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed low-envelope mass
-prototype;
+Status: **STRUCTURAL / EXTRACTION** for the completed internal exact-zero
+kernel audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

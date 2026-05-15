@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 342
-Active phase: Phase K, InternalZeroKernelAudit_343 next
+Latest module frontier: Module 343
+Active phase: Phase K, CrossZeroKernelAudit_344 next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -111,6 +111,7 @@ modules/
   module_339_exact_zero_tail_diagonal_audit.md
   module_340_cover_moment_route_verdict.md
   module_342_low_envelope_mass_prototype.md
+  module_343_internal_zero_kernel_audit.md
   modules_156_178_summary.md
 
 reviews/

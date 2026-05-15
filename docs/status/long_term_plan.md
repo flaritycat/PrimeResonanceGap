@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 342
-Post-Reflective_1 solving count: 161
-Long-term-plan count: 155
+Latest completed module: 343
+Post-Reflective_1 solving count: 162
+Long-term-plan count: 156
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -4709,7 +4709,7 @@ MassOnlyCoverRouteClosure_342:
   FALSE / BLOCKED.
 
 InternalZeroKernelAudit_343(P_minor^0):
-  OPEN next target.
+  was the then-open next target.
 ```
 
 The prototype defines the same-family first moment
@@ -4724,12 +4724,12 @@ LMass_Y^{342}(U,V)
 This total-weight ceiling discards the finite-side event structure and does
 not prove the absorption row or the cover route.
 
-The current cadence records:
+The Module 342 cadence recorded:
 
 ```text
-Latest completed module: 342
-Post-Reflective_1 solving count: 161
-Long-term-plan count: 155
+Module 342 latest completed module: 342
+Module 342 post-Reflective_1 solving count: 161
+Module 342 long-term-plan count: 155
 
 155 is not divisible by 9, so no plan update is due in this module.
 155 is not divisible by 15, so no plan challenge is due in this module.
@@ -4742,5 +4742,61 @@ Continue with:
 Module 343:
   perform InternalZeroKernelAudit_343(P_minor^0), deciding whether internal
   exact lifted-zero rows can be budgeted with the same kernel, low-prime
+  envelope, zero-tail weights, masks, and cutoff order.
+```
+
+Module 343 completed:
+
+```text
+InternalZeroKernelAudit_343(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+InternalZeroRowsCatalog_343:
+  STRUCTURAL / EXTRACTION.
+
+BareInternalCodimension_343:
+  STRUCTURAL / EXTRACTION.
+
+InternalZeroWeightedFunctional_343:
+  STRUCTURAL / EXTRACTION.
+
+InternalZeroKernelTransferCriterion_343:
+  CONDITIONAL.
+
+InternalZeroKernelRows_339:
+  OPEN.
+
+CurrentInternalZeroKernelClosure_343:
+  FALSE / BLOCKED.
+
+CodimensionOnlyInternalZeroClosure_343:
+  FALSE / BLOCKED.
+
+CrossZeroKernelAudit_344(P_minor^0):
+  OPEN next target.
+```
+
+The audit records that the six internal lifted-zero rows have bare
+codimension at most `6/N`, but that this does not prove the weighted row with
+`KAbs_{U,V}^0`, `LowEnv_Y`, zero-tail weight, masks, cutoff, and limit order.
+
+The current cadence records:
+
+```text
+Latest completed module: 343
+Post-Reflective_1 solving count: 162
+Long-term-plan count: 156
+
+156 is not divisible by 9, so no plan update is due in this module.
+156 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 344:
+  perform CrossZeroKernelAudit_344(P_minor^0), deciding whether the sixteen
+  cross lifted-zero rows can be budgeted with the same kernel, low-prime
   envelope, zero-tail weights, masks, and cutoff order.
 ```
