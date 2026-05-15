@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 357
-Post-Reflective_1 solving count: 176
-Long-term-plan count: 170
+Latest completed module: 359
+Post-Reflective_1 solving count: 178
+Long-term-plan count: 172
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -74,6 +74,8 @@ Fifteenth plan update:   Module 322 (completed)
 Sixteenth plan update:   Module 331 (completed)
 Seventeenth plan update: Module 340 (completed)
 Eighteenth plan update:  Module 349 (completed)
+Nineteenth plan update:  Module 358/359 (completed as narrow proof-attack
+                         steering; no theorem status upgraded)
 Seventh plan challenge:  Module 292 (completed)
 Eighth plan challenge:   Module 307 (completed)
 Ninth plan challenge:    Module 322 (completed)
@@ -5607,4 +5609,109 @@ Module 358:
   coefficient top-mass criterion from Module 356 can be derived from current
   coefficient-side information, or whether it is another genuinely new
   same-family theorem.
+```
+
+Module 358 completed:
+
+```text
+CoefficientTopMassFeasibility_358(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+FiniteTopMassExtremalLemma_358:
+  PROVEN.
+
+CapTotalTopMassClosure_358(P_minor^0):
+  FALSE / BLOCKED.
+
+LorentzTopMassRoute_358:
+  CONDITIONAL.
+
+CoefficientLargeValueDistributionTarget_358:
+  OPEN.
+```
+
+The proof attack proves a finite extremal lemma showing that cap-and-total
+profile data reduce sharply to coefficient top mass. It blocks the
+cap-and-total proof route without disproving the coefficient top-mass
+theorem. Because the long-term-plan count advances to `171`, the nineteenth
+plan update is due; the next window should attack the exact large-value
+distribution route rather than return to generic profile ceilings.
+
+The cadence after Module 358 is:
+
+```text
+Latest completed module: 358
+Post-Reflective_1 solving count: 177
+Long-term-plan count: 171
+
+171 is divisible by 9, so the nineteenth plan update is due and is recorded
+as a narrow steering update: continue by testing the exact coefficient
+large-value formulation.
+171 is not divisible by 15, so no plan challenge is due.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 359:
+  perform CoefficientLargeValueDistributionAudit_359(P_minor^0), proving the
+  exact large-value/top-mass formulation if possible, testing current
+  coefficient identities against it, and splitting the target into genuinely
+  smaller coefficient rows if the full route remains blocked.
+```
+
+Module 359 completed:
+
+```text
+CoefficientLargeValueDistributionAudit_359(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+LayerCakeTopMassIdentity_359:
+  PROVEN.
+
+SubadditiveCoefficientTopMassSplit_359:
+  PROVEN.
+
+CurrentCoefficientLargeValueClosure_359:
+  FALSE / BLOCKED.
+
+PairResidualLargeValueTarget_359:
+  OPEN.
+
+RectangleDefectLargeValueTarget_359:
+  OPEN.
+
+DiagonalOverlapLargeValueTarget_359:
+  OPEN.
+```
+
+The proof attack proves the exact layer-cake identity for coefficient top
+mass and a subadditive top-mass split across the Module 351 pair/rectangle
+decomposition. Current identities, first-moment pair/rectangle inputs, and
+Parseval/logarithmic envelopes do not prove the needed sorted-frequency
+distribution. The large-value branch is now split into pair-residual square,
+pair-residual times exact pair-model, rectangle-defect, and diagonal-overlap
+targets.
+
+The current cadence records:
+
+```text
+Latest completed module: 359
+Post-Reflective_1 solving count: 178
+Long-term-plan count: 172
+
+172 is not divisible by 9, so no plan update is due in this module.
+172 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 360:
+  perform RectangleDefectLargeValueStress_360(P_minor^0), deciding whether
+  the exact rectangle-defect coefficient `RDef_+^0` has exploitable
+  large-value structure, or whether controlling it already requires an
+  endpoint-strength rectangle variance/local-model theorem.
 ```
