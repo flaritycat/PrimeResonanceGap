@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 327
-Active phase: Phase K, full-cover load criterion next
+Latest module frontier: Module 328
+Active phase: Phase K, prime-partition Mobius audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -816,9 +816,17 @@ Completed full-cover cluster audit:
     rank/uniformity, and kernel-weighted cover rows open and records
     CurrentFullCoverClosure_327 as FALSE / BLOCKED
 
+Completed full-cover load criterion:
+  FullCoverLoadCriterion_328(P_minor^0)
+    replaces the crude edge-load envelope by a prime-local Mobius sharp-cover
+    functional, gives a conditional kernel-weighted sharp-cover criterion,
+    blocks crude-cover-as-exact, first-load, energy-only, and rank-only
+    closure routes, and leaves SharpCoverSmallness_328 open
+
 Next scheduled module:
-  Module 328 FullCoverLoadCriterion_328(P_minor^0)
+  Module 329 PrimePartitionMobiusAudit_329(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed full-cover cluster audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed full-cover load
+criterion;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

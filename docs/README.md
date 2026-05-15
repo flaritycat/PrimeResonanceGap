@@ -97,6 +97,7 @@ modules/
   module_325_generic_collision_local_model_split.md
   module_326_signed_inclusion_exclusion_minor_audit.md
   module_327_full_cover_cluster_audit.md
+  module_328_full_cover_load_criterion.md
   modules_156_178_summary.md
 
 reviews/

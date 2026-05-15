@@ -3789,3 +3789,66 @@ Module 328:
   rank inputs can prove the criterion, while blocking any route that assumes
   endpoint-strength collision or local-model insertion.
 ```
+
+Module 328 completed:
+
+```text
+FullCoverLoadCriterion_328(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+FinitePrimeMobiusExpansion_328:
+  STRUCTURAL / EXTRACTION.
+
+SharpCoverFunctional_328:
+  STRUCTURAL / EXTRACTION.
+
+KernelWeightedSharpCoverCriterion_328:
+  CONDITIONAL.
+
+CrudeCoverLoadAsExactCoefficient_328:
+  FALSE / BLOCKED.
+
+FirstLoadCoverRoute_328:
+  FALSE / BLOCKED.
+
+EnergyOnlyCoverRoute_328:
+  FALSE / BLOCKED.
+
+RankOnlyCoverRoute_328:
+  FALSE / BLOCKED.
+
+SharpCoverSmallness_328:
+  OPEN.
+
+PrimePartitionMobiusAudit_329(P_minor^0):
+  OPEN next target.
+```
+
+The criterion corrects the previous diagnostic envelope: crude edge cover load
+is not the exact signed coefficient. A sharper row must use prime-local Mobius
+weights `mu_p(T)=|m_T(delta_{p,.})|`, then prove a kernel-weighted sharp-cover
+estimate in the same family. Current first-load, energy-only, and rank-only
+inputs do not close that criterion.
+
+The current cadence records:
+
+```text
+Latest completed module: 328
+Post-Reflective_1 solving count: 147
+Long-term-plan count: 141
+
+141 is not divisible by 9, so no plan update is due in this module.
+141 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 329:
+  perform PrimePartitionMobiusAudit_329(P_minor^0), computing or bounding the
+  prime-local Mobius weights mu_p(T)=|m_T(delta_{p,.})| from the partition
+  Pi_p. It should separate singleton, pair-block, multi-block, one-prime
+  full-cover, and generic singleton partitions, and decide what powers of
+  1/p are actually present before any cover-load smallness claim is made.
+```

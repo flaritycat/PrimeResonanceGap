@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: full-cover load criterion after the
-full-cover cluster audit**.
+The current active phase is **Phase K: prime-partition Mobius audit after the
+full-cover load criterion**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 327
-Active phase: Phase K, full-cover load criterion next
+Latest module frontier: Module 328
+Active phase: Phase K, prime-partition Mobius audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -717,14 +717,20 @@ Module 327:
   It separates one-prime full-cover events, products of proper-support events
   whose union covers all eight labels, structural full-cover clusters, and a
   diagnostic cover-load envelope. All cover-load smallness rows remain open.
+
+Module 328:
+  turned that diagnostic envelope into a sharper criterion using prime-local
+  Mobius coefficients. It blocks reading the crude edge cover load as the
+  exact signed coefficient, and it blocks first-load, energy-only, and
+  rank-only routes as current closures.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-327 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-328 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window, the signed minor-kernel row, or the
-generic/collision/full-cover rows.
+generic/collision/full-cover/sharp-cover rows.
 
 The next planned module is:
 
@@ -784,9 +790,13 @@ Module 327:
   Mobius coefficients that survive signed inclusion-exclusion.
 
 Module 328:
-  perform FullCoverLoadCriterion_328(P_minor^0), turning the cover-load
-  envelope into a precise kernel-weighted criterion and testing what current
+  performed FullCoverLoadCriterion_328(P_minor^0), turning the cover-load
+  envelope into a sharper prime-local Mobius criterion and testing what current
   load moments can actually supply.
+
+Module 329:
+  perform PrimePartitionMobiusAudit_329(P_minor^0), computing or bounding the
+  prime-local Mobius weights that enter the sharp cover functional.
 ```
 
 ## What Is Proved?
@@ -878,7 +888,12 @@ Compact status table:
 | Full-cover support, one-prime, multi-prime, structural cluster catalogs, and cover-load envelope from Module 327 | **STRUCTURAL / EXTRACTION** |
 | Full-cover load smallness, rank uniformity, and kernel-weighted cover rows from Module 327 | **OPEN** |
 | Current full-cover closure `CurrentFullCoverClosure_327` | **FALSE / BLOCKED** |
-| Full-cover load criterion `FullCoverLoadCriterion_328` | **OPEN next target** |
+| Full-cover load criterion `FullCoverLoadCriterion_328` | **STRUCTURAL / EXTRACTION** |
+| Finite-prime Mobius expansion and sharp cover functional from Module 328 | **STRUCTURAL / EXTRACTION** |
+| Kernel-weighted sharp cover criterion from Module 328 | **CONDITIONAL** |
+| Sharp cover smallness `SharpCoverSmallness_328` | **OPEN** |
+| Crude cover load as exact coefficient, first-load, energy-only, and rank-only cover routes | **FALSE / BLOCKED** |
+| Prime-partition Mobius audit `PrimePartitionMobiusAudit_329` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1210,7 +1225,12 @@ wins.
 | `StructuralFullCoverClusterCatalog_327 / FullCoverLoadEnvelope_327` | STRUCTURAL / EXTRACTION | Structural cover clusters and a diagnostic cover-load envelope only |
 | `FullCoverLoadSmallness_327 / FullCoverRankUniformity_327 / KernelWeightedCoverRows_327` | OPEN | Kernel-weighted cover estimates and rank/uniformity remain missing |
 | `CurrentFullCoverClosure_327` | FALSE / BLOCKED | Full-cover catalogs do not prove cover smallness |
-| `FullCoverLoadCriterion_328(P_minor^0)` | OPEN | Next target |
+| `FullCoverLoadCriterion_328(P_minor^0)` | STRUCTURAL / EXTRACTION | Replaces the crude cover-load reading with a prime-local Mobius sharp-cover criterion |
+| `FinitePrimeMobiusExpansion_328 / SharpCoverFunctional_328` | STRUCTURAL / EXTRACTION | Finite-cutoff Mobius expansion and sharp cover envelope only |
+| `KernelWeightedSharpCoverCriterion_328` | CONDITIONAL | Usable only if the same-family kernel-weighted sharp cover estimate is proved |
+| `SharpCoverSmallness_328` | OPEN | Needed kernel-weighted sharp-cover smallness remains missing |
+| `CrudeCoverLoadAsExactCoefficient_328 / FirstLoadCoverRoute_328 / EnergyOnlyCoverRoute_328 / RankOnlyCoverRoute_328` | FALSE / BLOCKED | Current crude-load, first-load, energy-only, and rank-only routes do not close the cover row |
+| `PrimePartitionMobiusAudit_329(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

@@ -76,7 +76,8 @@ flowchart TD
   GenericSplit325["GenericCollisionLocalModelSplit_325<br/>STRUCTURAL; closure BLOCKED"]
   SignedIE326["SignedInclusionExclusionMinorAudit_326<br/>STRUCTURAL; closure BLOCKED"]
   FullCover327["FullCoverClusterAudit_327<br/>STRUCTURAL; closure BLOCKED"]
-  CoverLoad328["FullCoverLoadCriterion_328<br/>OPEN next target"]
+  CoverLoad328["FullCoverLoadCriterion_328<br/>STRUCTURAL; sharp cover OPEN"]
+  PrimeMobius329["PrimePartitionMobiusAudit_329<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -188,7 +189,8 @@ flowchart TD
   GenericSplit325 --> SignedIE326
   SignedIE326 --> FullCover327
   FullCover327 --> CoverLoad328
-  CoverLoad328 --> AntiDiag312
+  CoverLoad328 --> PrimeMobius329
+  PrimeMobius329 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -233,6 +235,9 @@ flowchart TD
 - The Module 327 full-cover cluster audit is only a cover-family
   classification. The diagnostic cover-load envelope is not a smallness
   estimate.
+- The Module 328 full-cover criterion corrects the crude cover-load reading:
+  prime-local Mobius weights are still open and must not be replaced by edge
+  load alone.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still
