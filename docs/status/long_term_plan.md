@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 359
-Post-Reflective_1 solving count: 178
-Long-term-plan count: 172
+Latest completed module: 360
+Post-Reflective_1 solving count: 179
+Long-term-plan count: 173
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -5714,4 +5714,55 @@ Module 360:
   the exact rectangle-defect coefficient `RDef_+^0` has exploitable
   large-value structure, or whether controlling it already requires an
   endpoint-strength rectangle variance/local-model theorem.
+```
+
+Module 360 completed:
+
+```text
+RectangleDefectLargeValueStress_360(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+RectangleAntiDiagonalCompression_360:
+  PROVEN.
+
+RectangleTopMassVarianceCriterion_360:
+  CONDITIONAL.
+
+FirstMomentRectangleDefectRoute_360:
+  FALSE / BLOCKED.
+
+CurrentRectangleDefectLargeValueClosure_360:
+  FALSE / BLOCKED.
+
+AntiDiagonalRectangleVarianceTarget_360:
+  OPEN.
+```
+
+The proof attack proves that `RDef_+^0(xi)` is the nonzero-frequency Fourier
+transform of the anti-diagonal rectangle-defect profile
+`RDag_w^0(t)=E_a RectDef_w^0(a,t-a)`. Top-mass control follows from a
+same-family anti-diagonal variance row, but current first-moment rectangle
+information only controls the zero mode and does not prove the needed
+variance.
+
+The current cadence records:
+
+```text
+Latest completed module: 360
+Post-Reflective_1 solving count: 179
+Long-term-plan count: 173
+
+173 is not divisible by 9, so no plan update is due in this module.
+173 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 361:
+  perform PairResidualLargeValueStress_361(P_minor^0), testing whether the
+  pair-residual square and pair-residual times exact pair-model top-mass
+  rows can be reduced to genuine pair-residual distribution estimates, or
+  whether current pair inputs again give only first-moment/variance ceilings.
 ```

@@ -208,6 +208,7 @@
 | `docs\modules\module_357_signed_insertion_route_decision.md` | 17011 |
 | `docs\modules\module_358_coefficient_top_mass_feasibility.md` | 15512 |
 | `docs\modules\module_359_coefficient_large_value_distribution.md` | 15383 |
+| `docs\modules\module_360_rectangle_defect_large_value_stress.md` | 13957 |
 | `docs\modules\modules_156_178_summary.md` | 34604 |
 | `docs\paper\Prime_Resonance_Gap_500_Page_Paper.txt` | 1285247 |
 | `docs\README.md` | 6435 |
@@ -215,7 +216,7 @@
 | `docs\status\endpoint_status.md` | 849 |
 | `docs\status\forbidden_upgrades.md` | 1574 |
 | `docs\status\global_status.md` | 53123 |
-| `docs\status\long_term_plan.md` | 167003 |
+| `docs\status\long_term_plan.md` | 168421 |
 | `docs\status\selector_taxonomy.md` | 1015 |
 | `docs\status\status_ledger.json` | 878 |
 | `docs\status\theorem_status_index.md` | 83990 |
