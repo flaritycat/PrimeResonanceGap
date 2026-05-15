@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: partition-class counting audit after
-the prime-partition cover-moment criterion**.
+The current active phase is **Phase K: kernel-fiber partition audit after
+the single-prime partition-class rank audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 330
-Active phase: Phase K, partition-class counting audit next
+Latest module frontier: Module 331
+Active phase: Phase K, kernel-fiber partition audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -736,14 +736,21 @@ Module 330:
   partition-class counting, structural-rank uniformity, multi-prime
   CRT/uniformity, finite-prime tails, and signed local-model insertion remain
   open.
+
+Module 331:
+  audited one-prime partition-class counting by reducing each class to a
+  linear congruence matrix in `(r,h,t,d_1,d_2)`, with `t=h+k`. It separates
+  free-fiber rank from compatibility rank in the weighted variables and
+  performs the sixteenth plan update. Kernel-residue, dyadic-residue, and
+  mask-uniformity rows remain open.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-330 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-331 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window, the signed minor-kernel row, or the
-generic/collision/full-cover/sharp-cover/Mobius-cover/partition-counting rows.
+generic/collision/full-cover/sharp-cover/Mobius-cover/kernel-fiber rows.
 
 The next planned module is:
 
@@ -817,10 +824,15 @@ Module 330:
   finite-prime tails.
 
 Module 331:
-  perform PartitionClassCountingAudit_331(P_minor^0), testing whether one fixed
+  performed PartitionClassCountingAudit_331(P_minor^0), testing whether one fixed
   prime partition class can be counted with the actual kernel, threshold masks,
   dyadic ranges, W-residue conventions, structural rank, wraparound, and the
   h+k kernel variable.
+
+Module 332:
+  perform KernelFiberPartitionAudit_332(P_minor^0), deciding what residue-mass
+  statements are available for `|K_{U,V}^0(d_1,d_2;t)|` on the compatibility
+  classes forced by a partition class.
 ```
 
 ## What Is Proved?
@@ -926,7 +938,12 @@ Compact status table:
 | Kernel-weighted Mobius moment criterion `KernelWeightedMobiusMomentCriterion_330` | **CONDITIONAL** |
 | Partition counting, structural-rank, multi-prime, and finite-prime-tail rows from Module 330 | **OPEN** |
 | Current rank-heuristic and cover-moment closures from Module 330 | **FALSE / BLOCKED** |
-| Partition-class counting audit `PartitionClassCountingAudit_331` | **OPEN next target** |
+| Partition-class counting audit `PartitionClassCountingAudit_331` | **STRUCTURAL / EXTRACTION** |
+| Equality matrix, kernel-fiber rank decomposition, and exact-partition upper envelope from Module 331 | **STRUCTURAL / EXTRACTION** |
+| Kernel-weighted partition counting, dyadic residue, kernel residue-mass, and mask residue-uniformity rows from Module 331 | **OPEN** |
+| Current partition-class counting closure `CurrentPartitionClassCountingClosure_331` | **FALSE / BLOCKED** |
+| Sixteenth plan update `PlanUpdate_16_331` | **STRUCTURAL / EXTRACTION** |
+| Kernel-fiber partition audit `KernelFiberPartitionAudit_332` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1273,7 +1290,12 @@ wins.
 | `KernelWeightedMobiusMomentCriterion_330` | CONDITIONAL | Usable only if proved in the same `P_minor^0` family with tails and masks |
 | `PartitionClassCountingRows_330 / StructuralRankUniformityRows_330 / MultiPrimeCoverMomentRows_330 / FinitePrimeTailRows_330` | OPEN | Counting, rank, CRT/uniformity, and tail rows remain missing |
 | `CurrentRankHeuristicClosure_330 / CurrentCoverMomentClosure_330` | FALSE / BLOCKED | Rank heuristics and the finite functional do not prove cover smallness |
-| `PartitionClassCountingAudit_331(P_minor^0)` | OPEN | Next target |
+| `PartitionClassCountingAudit_331(P_minor^0)` | STRUCTURAL / EXTRACTION | Reduces one-prime partition classes to equality matrices and kernel-fiber rank splits |
+| `EqualityConstraintMatrix_331 / KernelFiberRankDecomposition_331 / ExactPartitionUpperEnvelope_331` | STRUCTURAL / EXTRACTION | Rank bookkeeping and equality-envelope only |
+| `KernelWeightedPartitionClassCounting_331 / DyadicResidueUniformity_331 / KernelResidueMassRows_331 / MaskResidueUniformity_331` | OPEN | The actual weighted counting rows remain missing |
+| `CurrentPartitionClassCountingClosure_331` | FALSE / BLOCKED | Rank decomposition does not prove a kernel-weighted partition count |
+| `PlanUpdate_16_331` | STRUCTURAL / EXTRACTION | Sixteenth plan update; no theorem upgraded |
+| `KernelFiberPartitionAudit_332(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

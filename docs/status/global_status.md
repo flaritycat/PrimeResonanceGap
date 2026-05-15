@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 330
-Active phase: Phase K, partition-class counting audit next
+Latest module frontier: Module 331
+Active phase: Phase K, kernel-fiber partition audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -839,10 +839,19 @@ Completed prime-partition cover-moment criterion:
     tails, and signed local-model insertion open; it records current
     rank-heuristic and cover-moment closure as FALSE / BLOCKED
 
+Completed partition-class counting audit:
+  PartitionClassCountingAudit_331(P_minor^0)
+    reduces one fixed one-prime partition class to an equality matrix in
+    `(r,h,t,d_1,d_2)`, separates free-fiber rank from compatibility rank in
+    the weighted variables `(t,d_1,d_2)`, gives an exact-partition upper
+    envelope, performs PlanUpdate_16_331, and leaves kernel-residue,
+    dyadic-residue, mask-uniformity, exact coarsening, multi-prime CRT, and
+    finite-prime tail rows open
+
 Next scheduled module:
-  Module 331 PartitionClassCountingAudit_331(P_minor^0)
+  Module 332 KernelFiberPartitionAudit_332(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed prime-partition
-cover-moment criterion;
+Status: **STRUCTURAL / EXTRACTION** for the completed partition-class counting
+audit and sixteenth plan update;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

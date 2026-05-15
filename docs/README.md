@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 330
-Active phase: Phase K, partition-class counting audit next
+Latest module frontier: Module 331
+Active phase: Phase K, kernel-fiber partition audit next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -100,6 +100,7 @@ modules/
   module_328_full_cover_load_criterion.md
   module_329_prime_partition_mobius_audit.md
   module_330_prime_partition_cover_moment_criterion.md
+  module_331_partition_class_counting_audit.md
   modules_156_178_summary.md
 
 reviews/

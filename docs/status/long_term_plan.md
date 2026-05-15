@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 315
-Post-Reflective_1 solving count: 134
-Long-term-plan count: 128
+Latest completed module: 331
+Post-Reflective_1 solving count: 150
+Long-term-plan count: 144
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -69,10 +69,12 @@ Eleventh plan update:    Module 286 (completed)
 Twelfth plan update:     Module 295 (completed)
 Thirteenth plan update:  Module 304 (completed)
 Fourteenth plan update:  Module 313 (completed)
-Fifteenth plan update:   Module 322
+Fifteenth plan update:   Module 322 (completed)
+Sixteenth plan update:   Module 331 (completed)
 Seventh plan challenge:  Module 292 (completed)
 Eighth plan challenge:   Module 307 (completed)
-Ninth plan challenge:    Module 322
+Ninth plan challenge:    Module 322 (completed)
+Tenth plan challenge:    Module 337 (expected if one module per iteration)
 ```
 
 These module numbers are bookkeeping estimates. If an iteration is not a
@@ -3982,4 +3984,93 @@ Module 331:
   threshold masks, dyadic ranges, W-residue conventions, structural rank,
   wraparound in G_N, and the h+k kernel variable. It should avoid using any
   endpoint-strength cover, minor-kernel, or selector-transfer assumption.
+```
+
+Module 331 completed:
+
+```text
+PartitionClassCountingAudit_331(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+EqualityConstraintMatrix_331:
+  STRUCTURAL / EXTRACTION.
+
+KernelFiberRankDecomposition_331:
+  STRUCTURAL / EXTRACTION.
+
+ExactPartitionUpperEnvelope_331:
+  STRUCTURAL / EXTRACTION.
+
+KernelWeightedPartitionClassCounting_331:
+  OPEN.
+
+DyadicResidueUniformity_331:
+  OPEN.
+
+KernelResidueMassRows_331:
+  OPEN.
+
+MaskResidueUniformity_331:
+  OPEN.
+
+CurrentPartitionClassCountingClosure_331:
+  FALSE / BLOCKED.
+
+PlanUpdate_16_331:
+  STRUCTURAL / EXTRACTION.
+
+KernelFiberPartitionAudit_332(P_minor^0):
+  OPEN next target.
+```
+
+The audit reduces one-prime partition classes to equality matrices in
+`(r,h,t,d_1,d_2)` with `t=h+k`. It separates rank in the free fiber variables
+`(r,h)` from compatibility rank in the weighted variables `(t,d_1,d_2)`. This
+clarifies why full-residue rank alone does not prove the weighted partition
+row: kernel-residue mass, dyadic residue distribution, and mask uniformity are
+still missing.
+
+The current cadence records:
+
+```text
+Latest completed module: 331
+Post-Reflective_1 solving count: 150
+Long-term-plan count: 144
+
+144 is divisible by 9, so the sixteenth plan update is due and completed here.
+144 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log remains expected around Module 341.
+```
+
+Sixteenth plan update:
+
+```text
+Continue Phase K only through the kernel-fiber and residue-uniformity
+micro-rows. The next window is:
+
+Module 332: KernelFiberPartitionAudit_332(P_minor^0).
+Module 333: DyadicResidueUniformityAudit_333(P_minor^0).
+Module 334: ExactPartitionCoarseningAudit_334(P_minor^0).
+Module 335: MultiPrimeCRTMaskAudit_335(P_minor^0).
+Module 336: FinitePrimeTailCoverAudit_336(P_minor^0).
+Module 337: SignedLocalModelInsertionGate_337(P_minor^0), unless earlier rows
+            block the route more decisively.
+Module 338: CoverMomentRouteVerdict_338(P_minor^0).
+Module 339: PhaseKBranchDecision_339.
+Module 340: prepare the next reflection boundary without upgrading open rows.
+```
+
+If the kernel-fiber or residue-uniformity rows reproduce row/column barriers
+or require endpoint-strength hypotheses, the Mobius-cover route should stop
+being treated as a promising closure route. The next challenge should then
+redirect either to signed local-model insertion or back to the
+`PhaseKernelBound_273^0` obstruction.
+
+Continue with:
+
+```text
+Module 332:
+  perform KernelFiberPartitionAudit_332(P_minor^0), deciding what residue-mass
+  statements are available for |K_{U,V}^0(d_1,d_2;t)| on the compatibility
+  classes forced by one-prime partition classes.
 ```

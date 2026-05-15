@@ -79,7 +79,8 @@ flowchart TD
   CoverLoad328["FullCoverLoadCriterion_328<br/>STRUCTURAL; sharp cover OPEN"]
   PrimeMobius329["PrimePartitionMobiusAudit_329<br/>STRUCTURAL; cover moments OPEN"]
   CoverMoment330["PrimePartitionCoverMomentCriterion_330<br/>STRUCTURAL; counting rows OPEN"]
-  PartitionCount331["PartitionClassCountingAudit_331<br/>OPEN next target"]
+  PartitionCount331["PartitionClassCountingAudit_331<br/>STRUCTURAL; kernel residue rows OPEN"]
+  KernelFiber332["KernelFiberPartitionAudit_332<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -194,7 +195,8 @@ flowchart TD
   CoverLoad328 --> PrimeMobius329
   PrimeMobius329 --> CoverMoment330
   CoverMoment330 --> PartitionCount331
-  PartitionCount331 --> AntiDiag312
+  PartitionCount331 --> KernelFiber332
+  KernelFiber332 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -247,6 +249,9 @@ flowchart TD
 - The Module 330 cover-moment criterion is conditional routing only. Rank
   heuristics and the finite cover functional are not proofs of
   kernel-weighted cover smallness.
+- The Module 331 partition-class audit gives only equality matrices and rank
+  splits. It does not prove kernel-residue, dyadic-residue, or mask-uniform
+  partition counts.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still
