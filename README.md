@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: post-cover branch decision after the
-cross exact-zero kernel audit**.
+The current active phase is **Phase K: signed-local-model insertion
+feasibility after the post-cover branch decision**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 344
-Active phase: Phase K, PhaseKPostCoverBranchDecision_345 next
+Latest module frontier: Module 345
+Active phase: Phase K, SignedLocalModelInsertionFeasibility_346 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -950,9 +950,10 @@ Module 344:
   codimension-only weighted closure shortcut.
 
 Module 345:
-  perform PhaseKPostCoverBranchDecision_345, deciding whether Phase K should
-  continue through a sharper weighted theorem, move back to signed insertion,
-  or pause the cover route.
+  performed PhaseKPostCoverBranchDecision_345(P_minor^0), pausing the
+  absolute cover route as the primary next closure route, blocking
+  unqualified signed insertion as a proof, and selecting
+  SignedLocalModelInsertionFeasibility_346(P_minor^0) as the next target.
 ```
 
 ## What Is Proved?
@@ -1123,7 +1124,11 @@ Compact status table:
 | Cross zero kernel transfer criterion from Module 344 | **CONDITIONAL** |
 | Cross zero kernel rows from Module 344 | **OPEN** |
 | Current cross zero kernel closure from Module 344 | **FALSE / BLOCKED** |
-| Phase K post-cover branch decision `PhaseKPostCoverBranchDecision_345` | **OPEN next target** |
+| Phase K post-cover branch decision `PhaseKPostCoverBranchDecision_345` | **STRUCTURAL / EXTRACTION** |
+| Absolute cover continuation as immediate next move from Module 345 | **FALSE / BLOCKED** |
+| Unqualified signed insertion closure from Module 345 | **FALSE / BLOCKED** |
+| Cover route pause from Module 345 | **STRUCTURAL / EXTRACTION** |
+| Signed local-model insertion feasibility `SignedLocalModelInsertionFeasibility_346` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1534,7 +1539,10 @@ wins.
 | `CrossZeroRowsCatalog_344 / BareCrossCodimension_344 / CrossZeroWeightedFunctional_344` | STRUCTURAL / EXTRACTION | Catalog, bare codimension, and exact weighted target only |
 | `CrossZeroKernelTransferCriterion_344` | CONDITIONAL | Requires same-family affine-slice estimates with kernel, low envelope, and zero-tail weights |
 | `CurrentCrossZeroKernelClosure_344 / CodimensionOnlyCrossZeroClosure_344` | FALSE / BLOCKED | Bare codimension does not control weighted cross slices |
-| `PhaseKPostCoverBranchDecision_345` | OPEN | Next target |
+| `PhaseKPostCoverBranchDecision_345(P_minor^0)` | STRUCTURAL / EXTRACTION | Post-cover branch decision |
+| `AbsoluteCoverContinuationAsNextMove_345 / UnqualifiedSignedInsertionClosure_345` | FALSE / BLOCKED | Blocks both another absolute cover diagnostic and unqualified signed insertion as closure |
+| `CoverRoutePause_345` | STRUCTURAL / EXTRACTION | Pauses the absolute cover route as primary next closure route |
+| `SignedLocalModelInsertionFeasibility_346(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

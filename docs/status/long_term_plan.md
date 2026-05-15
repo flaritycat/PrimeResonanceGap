@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 344
-Post-Reflective_1 solving count: 163
-Long-term-plan count: 157
+Latest completed module: 345
+Post-Reflective_1 solving count: 164
+Long-term-plan count: 158
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -4836,12 +4836,12 @@ The audit records that the sixteen cross lifted-zero rows have bare
 codimension at most `16/N`, but that this does not prove the weighted row with
 `KAbs_{U,V}^0`, `LowEnv_Y`, zero-tail weight, masks, cutoff, and limit order.
 
-The current cadence records:
+The Module 344 cadence recorded:
 
 ```text
-Latest completed module: 344
-Post-Reflective_1 solving count: 163
-Long-term-plan count: 157
+Module 344 latest completed module: 344
+Module 344 post-Reflective_1 solving count: 163
+Module 344 long-term-plan count: 157
 
 157 is not divisible by 9, so no plan update is due in this module.
 157 is not divisible by 15, so no plan challenge is due in this module.
@@ -4855,4 +4855,56 @@ Module 345:
   perform PhaseKPostCoverBranchDecision_345, deciding whether Phase K should
   continue through a sharper weighted theorem, move back to signed insertion,
   or pause the cover route.
+```
+
+Module 345 completed:
+
+```text
+PhaseKPostCoverBranchDecision_345(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+PostCoverInputInventory_345:
+  STRUCTURAL / EXTRACTION.
+
+AbsoluteCoverContinuationAsNextMove_345:
+  FALSE / BLOCKED.
+
+UnqualifiedSignedInsertionClosure_345:
+  FALSE / BLOCKED.
+
+CoverRoutePause_345:
+  STRUCTURAL / EXTRACTION.
+
+SignedLocalModelInsertionFeasibility_346(P_minor^0):
+  OPEN next target.
+```
+
+The branch decision pauses the absolute cover-moment route as the primary
+next closure route, because Modules 342-344 show that the available
+low-envelope and exact-zero shortcuts do not yield weighted same-family
+control. It also blocks unqualified signed insertion as a closure claim:
+replacing the physical eight-slot product `F_8` by
+`Omega_{w,8}^{minor}` under the threshold-localized kernel is exactly the
+open insertion theorem.
+
+The current cadence records:
+
+```text
+Latest completed module: 345
+Post-Reflective_1 solving count: 164
+Long-term-plan count: 158
+
+158 is not divisible by 9, so no plan update is due in this module.
+158 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 346:
+  perform SignedLocalModelInsertionFeasibility_346(P_minor^0), deciding
+  whether the physical signed eight-slot row can be inserted into the
+  collision-sensitive local model in the same family, or whether that step is
+  endpoint-strength or blocked.
 ```

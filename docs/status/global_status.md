@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 344
-Active phase: Phase K, PhaseKPostCoverBranchDecision_345 next
+Latest module frontier: Module 345
+Active phase: Phase K, SignedLocalModelInsertionFeasibility_346 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -947,10 +947,17 @@ Completed cross exact-zero kernel audit:
     conditional affine-slice transfer criterion, and blocks codimension-only
     weighted closure
 
+Completed post-cover branch decision:
+  PhaseKPostCoverBranchDecision_345(P_minor^0)
+    inventories the post-cover absolute route, pauses the absolute cover
+    route as the primary next closure route, blocks unqualified signed
+    insertion as a closure claim, and selects the signed local-model insertion
+    feasibility row as the next target
+
 Next scheduled module:
-  Module 345 PhaseKPostCoverBranchDecision_345
+  Module 346 SignedLocalModelInsertionFeasibility_346(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed cross exact-zero kernel
-audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed post-cover branch
+decision;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.
