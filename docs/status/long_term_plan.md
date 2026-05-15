@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 372
-Post-Reflective_1 solving count: 191
-Long-term-plan count: 185
+Latest completed module: 373
+Post-Reflective_1 solving count: 192
+Long-term-plan count: 186
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -6503,4 +6503,75 @@ Module 373:
   D^(-1) sum_xi |A(xi)|N_{beta_0}(xi;sigma)=o_W(1) follows from existing
   coefficient norms, column-tail information, or the pair/rectangle
   decompositions, or whether it is a genuinely new same-family input.
+```
+
+Module 373 completed:
+
+```text
+WeightedColumnMultiplicityAudit_373(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+WeightedColumnIncidenceIdentity_373:
+  PROVEN.
+
+WeightedColumnLayerCakeIdentity_373:
+  PROVEN.
+
+WeightedColumnSubadditiveSplit_373:
+  PROVEN.
+
+WeightedBetaEnergyCriterion_373:
+  CONDITIONAL.
+
+HolderColumnMomentCriterion_373:
+  CONDITIONAL.
+
+TopMassColumnTailCriterion_373:
+  CONDITIONAL.
+
+SupNormFirstIncidenceRoute_373:
+  FALSE / BLOCKED.
+
+ExistingPairRectangleSplitClosure_373:
+  FALSE / BLOCKED.
+
+CurrentWeightedColumnMultiplicityClosure_373:
+  FALSE / BLOCKED.
+
+WeightedBetaEnergyTarget_373:
+  OPEN.
+
+WeightedColumnMultiplicityTarget_372:
+  OPEN.
+```
+
+Best target selection: Module 373 was the right attack because Module 372
+reduced same-source diagonal overlap to the weighted column-multiplicity row
+`D^(-1)sum_xi |A(xi)|N_{beta_0}(xi;sigma)`. The proof attack gives exact
+incidence, layer-cake, and pair/rectangle subadditive reductions. It also
+blocks the sup-norm plus first-incidence route and shows that current
+pair/rectangle decompositions split but do not estimate the weighted row.
+The next smallest target is the weighted beta-energy row.
+
+The current cadence records:
+
+```text
+Latest completed module: 373
+Post-Reflective_1 solving count: 192
+Long-term-plan count: 186
+
+186 is not divisible by 9, so no plan update is due in this module.
+186 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 374:
+  perform WeightedBetaEnergyAudit_374(P_minor^0), testing whether
+  D^(-1)sigma^(-2) sum_{d,xi}|A(xi)||beta_0(d,xi)|^2=o_W(1)
+  follows from Parseval, coefficient norms, pair/rectangle decompositions, or
+  an exact autocorrelation expansion, or whether it is a new same-family
+  coefficient-beta energy input.
 ```
