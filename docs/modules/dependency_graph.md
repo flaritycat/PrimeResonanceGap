@@ -83,7 +83,8 @@ flowchart TD
   KernelFiber332["KernelFiberPartitionAudit_332<br/>STRUCTURAL; dyadic residue rows OPEN"]
   Dyadic333["DyadicResidueUniformityAudit_333<br/>STRUCTURAL; weighted row OPEN"]
   Coarsening334["ExactPartitionCoarseningAudit_334<br/>STRUCTURAL; multi-prime rows OPEN"]
-  CRTMask335["MultiPrimeCRTMaskAudit_335<br/>OPEN next target"]
+  CRTMask335["MultiPrimeCRTMaskAudit_335<br/>STRUCTURAL; finite-prime tail OPEN"]
+  Tail336["FinitePrimeTailCoverAudit_336<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -202,7 +203,8 @@ flowchart TD
   KernelFiber332 --> Dyadic333
   Dyadic333 --> Coarsening334
   Coarsening334 --> CRTMask335
-  CRTMask335 --> AntiDiag312
+  CRTMask335 --> Tail336
+  Tail336 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -267,6 +269,9 @@ flowchart TD
 - The Module 334 exact partition audit is finite partition-lattice
   bookkeeping. Same-weight envelope and signed-cancellation shortcuts remain
   blocked in the absolute cover-moment row.
+- The Module 335 multi-prime CRT/mask audit is exact CRT bookkeeping plus an
+  unweighted composite-modulus benchmark only. One-prime weighted rows do not
+  automatically multiply under a shared kernel and data-dependent masks.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still

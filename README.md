@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: multi-prime CRT/mask audit after the
-exact partition coarsening audit**.
+The current active phase is **Phase K: finite-prime tail cover audit after the
+multi-prime CRT/mask audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 334
-Active phase: Phase K, multi-prime CRT/mask audit next
+Latest module frontier: Module 335
+Active phase: Phase K, finite-prime tail cover audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -761,14 +761,21 @@ Module 334:
   partition-lattice Mobius identity, equality-envelope domination, and a
   conditional coarsening criterion, while blocking same-weight envelope and
   signed-cancellation shortcuts inside the absolute cover-moment row.
+
+Module 335:
+  audited the multi-prime CRT/mask passage for cover families. It records the
+  distinct-prime CRT normal form, repeated-prime consolidation, an unweighted
+  composite-modulus benchmark, and a conditional weighted CRT/mask criterion,
+  while blocking the shortcut that one-prime weighted rows automatically
+  multiply under the same kernel and masks.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-334 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-335 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window, the signed minor-kernel row, or the
-generic/collision/full-cover/sharp-cover/Mobius-cover/CRT-mask rows.
+generic/collision/full-cover/sharp-cover/Mobius-cover/CRT-mask/tail rows.
 
 The next planned module is:
 
@@ -863,9 +870,14 @@ Module 334:
   inclusion-exclusion preserves the same weighted row.
 
 Module 335:
-  perform MultiPrimeCRTMaskAudit_335(P_minor^0), deciding whether one-prime
+  performed MultiPrimeCRTMaskAudit_335(P_minor^0), deciding whether one-prime
   equality/coarsening rows can be combined across several primes under the
   same kernel, dyadic, and mask weights.
+
+Module 336:
+  perform FinitePrimeTailCoverAudit_336(P_minor^0), deciding how to choose a
+  finite prime cutoff and separate the tail above it without assuming the
+  cover moment.
 ```
 
 ## What Is Proved?
@@ -991,7 +1003,12 @@ Compact status table:
 | Coarsening weighted criterion `CoarseningWeightedCriterion_334` | **CONDITIONAL** |
 | Exact weighted partition and coarsening weighted-uniformity rows from Module 334 | **OPEN** |
 | Coarsening sign-cancellation and same-weight envelope shortcuts from Module 334 | **FALSE / BLOCKED** |
-| Multi-prime CRT/mask audit `MultiPrimeCRTMaskAudit_335` | **OPEN next target** |
+| Multi-prime CRT/mask audit `MultiPrimeCRTMaskAudit_335` | **STRUCTURAL / EXTRACTION** |
+| Distinct-prime CRT normal form, repeated-prime consolidation, and unweighted CRT benchmark from Module 335 | **STRUCTURAL / EXTRACTION** |
+| Composite-modulus range and weighted CRT/mask criteria from Module 335 | **CONDITIONAL** |
+| Mask/kernel CRT uniformity rows from Module 335 | **OPEN** |
+| Prime-independence shortcut and current multi-prime CRT closure from Module 335 | **FALSE / BLOCKED** |
+| Finite-prime tail cover audit `FinitePrimeTailCoverAudit_336` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1358,7 +1375,12 @@ wins.
 | `CoarseningWeightedCriterion_334` | CONDITIONAL | Requires weighted equality-envelope estimates for every coarsening with correct weights |
 | `ExactWeightedPartitionRows_334 / CoarseningWeightedUniformityRows_334` | OPEN | Same-family exact and coarsening weighted rows remain missing |
 | `CoarseningSignCancellationRoute_334 / SameWeightEnvelopeShortcut_334 / CurrentExactPartitionClosure_334` | FALSE / BLOCKED | Lattice signs and same-weight envelopes do not close the absolute cover row |
-| `MultiPrimeCRTMaskAudit_335(P_minor^0)` | OPEN | Next target |
+| `MultiPrimeCRTMaskAudit_335(P_minor^0)` | STRUCTURAL / EXTRACTION | Audits the multi-prime CRT/mask passage for cover families |
+| `DistinctPrimeCRTNormalForm_335 / RepeatedPrimeConsolidation_335 / UnweightedCRTBenchmark_335` | STRUCTURAL / EXTRACTION | Distinct-prime CRT, same-prime consolidation, and unweighted composite-modulus counting only |
+| `CompositeModulusRangeCriterion_335 / WeightedCRTMaskCriterion_335` | CONDITIONAL | Need range/summability and same-family weighted composite-modulus estimates |
+| `MaskCRTUniformityRows_335 / KernelCRTUniformityRows_335` | OPEN | Composite-modulus mask and kernel uniformity remain missing |
+| `PrimeIndependenceShortcut_335 / CurrentMultiPrimeCRTClosure_335` | FALSE / BLOCKED | One-prime weighted rows do not automatically multiply under shared kernel and masks |
+| `FinitePrimeTailCoverAudit_336(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 334
-Active phase: Phase K, multi-prime CRT/mask audit next
+Latest module frontier: Module 335
+Active phase: Phase K, finite-prime tail cover audit next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -104,6 +104,7 @@ modules/
   module_332_kernel_fiber_partition_audit.md
   module_333_dyadic_residue_uniformity_audit.md
   module_334_exact_partition_coarsening_audit.md
+  module_335_multi_prime_crt_mask_audit.md
   modules_156_178_summary.md
 
 reviews/

@@ -76,7 +76,8 @@ flowchart TD
   KernelFiber332["KernelFiberPartitionAudit_332<br/>STRUCTURAL; dyadic residue rows OPEN"]
   Dyadic333["DyadicResidueUniformityAudit_333<br/>STRUCTURAL; weighted row OPEN"]
   Coarsening334["ExactPartitionCoarseningAudit_334<br/>STRUCTURAL; multi-prime rows OPEN"]
-  CRTMask335["MultiPrimeCRTMaskAudit_335<br/>OPEN next target"]
+  CRTMask335["MultiPrimeCRTMaskAudit_335<br/>STRUCTURAL; finite-prime tail OPEN"]
+  Tail336["FinitePrimeTailCoverAudit_336<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -195,7 +196,8 @@ flowchart TD
   KernelFiber332 --> Dyadic333
   Dyadic333 --> Coarsening334
   Coarsening334 --> CRTMask335
-  CRTMask335 --> AntiDiag312
+  CRTMask335 --> Tail336
+  Tail336 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0

@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 334
-Active phase: Phase K, multi-prime CRT/mask audit next
+Latest module frontier: Module 335
+Active phase: Phase K, finite-prime tail cover audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -871,10 +871,19 @@ Completed exact partition coarsening audit:
     the absolute cover-moment row, and leaves exact/coarsening weighted
     partition estimates open
 
+Completed multi-prime CRT/mask audit:
+  MultiPrimeCRTMaskAudit_335(P_minor^0)
+    records the distinct-prime CRT normal form, repeated-prime consolidation,
+    and an unweighted composite-modulus benchmark, states conditional
+    composite-range and weighted CRT/mask criteria, blocks the shortcut from
+    one-prime weighted rows to product-modulus rows under shared kernel/masks,
+    and leaves composite mask/kernel uniformity and finite-prime tail control
+    open
+
 Next scheduled module:
-  Module 335 MultiPrimeCRTMaskAudit_335(P_minor^0)
+  Module 336 FinitePrimeTailCoverAudit_336(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed exact partition
-coarsening audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed multi-prime CRT/mask
+audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

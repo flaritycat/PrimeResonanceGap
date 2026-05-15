@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 334
-Post-Reflective_1 solving count: 153
-Long-term-plan count: 147
+Latest completed module: 335
+Post-Reflective_1 solving count: 154
+Long-term-plan count: 148
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -4255,4 +4255,69 @@ Module 335:
   perform MultiPrimeCRTMaskAudit_335(P_minor^0), deciding whether one-prime
   equality/coarsening rows can be combined across several primes under the
   same kernel, dyadic, and mask weights.
+```
+
+Module 335 completed:
+
+```text
+MultiPrimeCRTMaskAudit_335(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+DistinctPrimeCRTNormalForm_335:
+  STRUCTURAL / EXTRACTION.
+
+RepeatedPrimeConsolidation_335:
+  STRUCTURAL / EXTRACTION.
+
+UnweightedCRTBenchmark_335:
+  STRUCTURAL / EXTRACTION.
+
+CompositeModulusRangeCriterion_335:
+  CONDITIONAL.
+
+WeightedCRTMaskCriterion_335:
+  CONDITIONAL.
+
+MaskCRTUniformityRows_335:
+  OPEN.
+
+KernelCRTUniformityRows_335:
+  OPEN.
+
+PrimeIndependenceShortcut_335:
+  FALSE / BLOCKED.
+
+CurrentMultiPrimeCRTClosure_335:
+  FALSE / BLOCKED.
+
+FinitePrimeTailCoverAudit_336(P_minor^0):
+  OPEN next target.
+```
+
+The audit records the distinct-prime CRT normal form, repeated-prime
+consolidation, and an unweighted composite-modulus benchmark. It also names
+the conditional product-modulus range and weighted CRT/mask criteria needed
+for cover families. The one-prime-to-multi-prime independence shortcut is
+blocked because the same absolute kernel, masks, dyadic variables, and
+`t`-variable are shared across all prime factors.
+
+The current cadence records:
+
+```text
+Latest completed module: 335
+Post-Reflective_1 solving count: 154
+Long-term-plan count: 148
+
+148 is not divisible by 9, so no plan update is due in this module.
+148 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 336:
+  perform FinitePrimeTailCoverAudit_336(P_minor^0), deciding how to choose a
+  finite prime cutoff and separate the tail above it without assuming the
+  cover moment.
 ```
