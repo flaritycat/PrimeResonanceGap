@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 350
-Active phase: Phase K, PairRectangleDefectSplit_351 next
+Latest module frontier: Module 351
+Active phase: Phase K, TwistedMaskBudgetAudit_352 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -993,11 +993,20 @@ Completed anti-diagonal pair-pair discrepancy audit:
     unweighted coefficient closure and current pair/rectangle coefficient
     closure, and leaves PairRectangleDefectSplit_351 as the next target
 
+Completed pair-rectangle defect split:
+  PairRectangleDefectSplit_351(P_minor^0)
+    splits Delta_pairpair^349 into pair-residual quadratic, pair-residual
+    linear, and exact rectangle product-defect pieces; records conditional
+    pair residual and rectangle-defect coefficient criteria; blocks pair-only
+    closure and the split itself as row closure; and leaves
+    TwistedMaskBudgetAudit_352 as the next target
+
 Next scheduled module:
-  Module 351 PairRectangleDefectSplit_351(P_minor^0)
+  Module 352 TwistedMaskBudgetAudit_352(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed anti-diagonal pair-pair
-discrepancy audit; `CoefficientNormCriteria_350` is **CONDITIONAL**, and
-`AntiDiagonalPairPairRows_350` remain **OPEN**.
+Status: **STRUCTURAL / EXTRACTION** for the completed pair-rectangle defect
+split; `PairResidualCriteria_351` and
+`RectangleDefectCoefficientCriterion_351` are **CONDITIONAL**, and the
+anti-diagonal rows remain **OPEN**.
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

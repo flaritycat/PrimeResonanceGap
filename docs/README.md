@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 350
-Active phase: Phase K, PairRectangleDefectSplit_351 next
+Latest module frontier: Module 351
+Active phase: Phase K, TwistedMaskBudgetAudit_352 next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -119,6 +119,7 @@ modules/
   module_348_minimal_active_pair_discrepancy_audit.md
   module_349_minimal_fully_coupled_quadruple_audit.md
   module_350_antidiagonal_pairpair_discrepancy_audit.md
+  module_351_pair_rectangle_defect_split.md
   modules_156_178_summary.md
 
 reviews/

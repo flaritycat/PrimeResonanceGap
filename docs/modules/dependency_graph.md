@@ -99,7 +99,8 @@ flowchart TD
   MinPair348["MinimalActivePairDiscrepancyAudit_348<br/>STRUCTURAL; non-fully-coupled rows locally zero"]
   MinQuad349["MinimalFullyCoupledQuadrupleAudit_349<br/>STRUCTURAL; pair-pair anti-diagonal extracted"]
   PairPair350["AntiDiagonalPairPairDiscrepancyAudit_350<br/>STRUCTURAL; coefficient plus mask budget extracted"]
-  DefectSplit351["PairRectangleDefectSplit_351<br/>OPEN next target"]
+  DefectSplit351["PairRectangleDefectSplit_351<br/>STRUCTURAL; pair and rectangle defects split"]
+  TwistMask352["TwistedMaskBudgetAudit_352<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -234,7 +235,8 @@ flowchart TD
   MinPair348 --> MinQuad349
   MinQuad349 --> PairPair350
   PairPair350 --> DefectSplit351
-  DefectSplit351 --> SignedIE326
+  DefectSplit351 --> TwistMask352
+  TwistMask352 --> SignedIE326
   MinPair348 --> SignedIE326
   SubsetDiscrep347 --> SignedIE326
   SignedInsertion346 --> SignedIE326
@@ -357,6 +359,9 @@ flowchart TD
 - The Module 350 anti-diagonal pair-pair discrepancy audit identifies the
   coefficient as `|widehat{nu_0}(xi)|^4-C_w^0(xi)` and separates the
   twisted-mask budget. Both coefficient and mask control remain open.
+- The Module 351 pair-rectangle defect split separates pair-residual
+  quadratic/linear pieces from the exact product-vs-rectangle defect. Pair
+  control alone still does not close the masked anti-diagonal row.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still

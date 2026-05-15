@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 350
-Post-Reflective_1 solving count: 169
-Long-term-plan count: 163
+Latest completed module: 351
+Post-Reflective_1 solving count: 170
+Long-term-plan count: 164
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -5197,4 +5197,60 @@ Module 351:
   `Delta_pairpair^349` into pair-residual, pair-model product, and exact
   rectangle-defect pieces while preserving the same Fourier anti-diagonal and
   threshold-mask family.
+```
+
+Module 351 completed:
+
+```text
+PairRectangleDefectSplit_351(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+PairResidualProductIdentity_351:
+  STRUCTURAL / EXTRACTION.
+
+AntiDiagonalDefectDecomposition_351:
+  STRUCTURAL / EXTRACTION.
+
+PairResidualCriteria_351:
+  CONDITIONAL.
+
+RectangleDefectCoefficientCriterion_351:
+  CONDITIONAL.
+
+PairOnlyClosureShortcut_351:
+  FALSE / BLOCKED.
+
+CurrentDefectSplitClosesRows_351:
+  FALSE / BLOCKED.
+
+TwistedMaskBudgetAudit_352(P_minor^0):
+  OPEN next target.
+```
+
+The split writes `Delta_pairpair^349` as the sum of pair-residual quadratic,
+pair-residual linear, and exact rectangle product-defect terms. It shows that
+pair residual control alone cannot close the anti-diagonal row unless the
+product-vs-rectangle defect and twisted-mask budget are also handled in the
+same family.
+
+The current cadence records:
+
+```text
+Latest completed module: 351
+Post-Reflective_1 solving count: 170
+Long-term-plan count: 164
+
+164 is not divisible by 9, so no plan update is due in this module.
+164 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 352:
+  perform TwistedMaskBudgetAudit_352(P_minor^0), deciding whether a
+  coefficient estimate for the pair-residual and rectangle-defect pieces can
+  feed the data-dependent twisted masks `M_{alpha,beta}^{U,V}`, or whether a
+  stronger weighted same-family theorem is required.
 ```

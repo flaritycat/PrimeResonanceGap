@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: pair/rectangle defect split after the
-anti-diagonal pair-pair discrepancy audit**.
+The current active phase is **Phase K: twisted-mask budget audit after the
+pair/rectangle defect split**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 350
-Active phase: Phase K, PairRectangleDefectSplit_351 next
+Latest module frontier: Module 351
+Active phase: Phase K, TwistedMaskBudgetAudit_352 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -986,6 +986,12 @@ Module 350:
   = |widehat{nu_0}(xi)|^4-C_w^0(xi), separating the twisted mask pairing,
   stating conditional norm criteria, and blocking unweighted coefficient and
   current pair/rectangle shortcuts.
+
+Module 351:
+  performed PairRectangleDefectSplit_351(P_minor^0), splitting
+  Delta_pairpair^349 into pair-residual quadratic, pair-residual linear, and
+  exact rectangle product-defect pieces, blocking pair-only closure, and
+  selecting the twisted-mask budget audit as the next target.
 ```
 
 ## What Is Proved?
@@ -1190,7 +1196,14 @@ Compact status table:
 | Unweighted coefficient shortcut from Module 350 | **FALSE / BLOCKED** |
 | Current pair/rectangle coefficient closure from Module 350 | **FALSE / BLOCKED** |
 | Anti-diagonal pair-pair rows from Module 350 | **OPEN** |
-| Pair/rectangle defect split `PairRectangleDefectSplit_351` | **OPEN next target** |
+| Pair/rectangle defect split `PairRectangleDefectSplit_351` | **STRUCTURAL / EXTRACTION** |
+| Pair residual product identity from Module 351 | **STRUCTURAL / EXTRACTION** |
+| Anti-diagonal defect decomposition from Module 351 | **STRUCTURAL / EXTRACTION** |
+| Pair residual criteria from Module 351 | **CONDITIONAL** |
+| Rectangle defect coefficient criterion from Module 351 | **CONDITIONAL** |
+| Pair-only closure shortcut from Module 351 | **FALSE / BLOCKED** |
+| Current defect split closes rows from Module 351 | **FALSE / BLOCKED** |
+| Twisted mask budget audit `TwistedMaskBudgetAudit_352` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1629,7 +1642,11 @@ wins.
 | `CoefficientNormCriteria_350` | CONDITIONAL | Needs both coefficient and twisted-mask norm bounds in the same family |
 | `UnweightedCoefficientShortcut_350 / CurrentPairRectangleCoefficientClosure_350` | FALSE / BLOCKED | Unweighted/current pair-rectangle tools do not close the masked row |
 | `AntiDiagonalPairPairRows_350` | OPEN | Coefficient smallness plus mask budget remains unproved |
-| `PairRectangleDefectSplit_351(P_minor^0)` | OPEN | Next target |
+| `PairRectangleDefectSplit_351(P_minor^0)` | STRUCTURAL / EXTRACTION | Pair-residual and rectangle-defect pieces split exactly |
+| `PairResidualProductIdentity_351 / AntiDiagonalDefectDecomposition_351` | STRUCTURAL / EXTRACTION | Exact physical and anti-diagonal decompositions |
+| `PairResidualCriteria_351 / RectangleDefectCoefficientCriterion_351` | CONDITIONAL | Need same-family pair residual and rectangle-defect estimates |
+| `PairOnlyClosureShortcut_351 / CurrentDefectSplitClosesRows_351` | FALSE / BLOCKED | Pair control alone and the split alone do not close the rows |
+| `TwistedMaskBudgetAudit_352(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
