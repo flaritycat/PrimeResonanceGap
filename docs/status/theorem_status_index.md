@@ -305,9 +305,14 @@ FALSE / BLOCKED
 | `CoverRouteInputInventory_340` | STRUCTURAL / EXTRACTION | Inventory of Modules 329-339 inputs only | `module_340_cover_moment_route_verdict.md` | Only as dependency bookkeeping |
 | `FiniteSideClosure_340 / TailClosure_340 / ExactZeroClosure_340 / CurrentCoverMomentRouteClosure_340` | FALSE / BLOCKED | Current cover route not closed by existing inputs | `module_340_cover_moment_route_verdict.md` | No |
 | `SingleRowClosureShortcut_340` | FALSE / BLOCKED | Low-envelope mass alone would not close CRT, tail, exact-zero, or insertion rows | `module_340_cover_moment_route_verdict.md` | No |
-| `LowEnvelopeMassPrototype_342(P_minor^0)` | OPEN | Next analytic target after Reflective_5 | `Reflective_5.md` | No |
 | `PlanUpdate_17_340` | STRUCTURAL / EXTRACTION | Seventeenth plan update | `module_340_cover_moment_route_verdict.md` | Planning only |
 | `Reflective_5` | STRUCTURAL / EXTRACTION | Memory log for Modules 301-340; no theorem status upgrades | `Reflective_5.md` | Only as governance |
+| `LowEnvelopeMassPrototype_342(P_minor^0)` | STRUCTURAL / EXTRACTION | Defines and tests the low-prime envelope mass row | `module_342_low_envelope_mass_prototype.md` | Only as a prototype/audit |
+| `LowEnvelopeMassFunctional_342 / TrivialLowEnvelopeMassCeiling_342` | STRUCTURAL / EXTRACTION | Exact mass functional and pointwise total-weight ceiling | `module_342_low_envelope_mass_prototype.md` | Only as a ceiling |
+| `LowEnvelopeAbsorptionImplication_342` | CONDITIONAL | Would imply Module 338 absorption only if same-family mass and cutoff window are proved | `module_342_low_envelope_mass_prototype.md` | Only if hypotheses are proved |
+| `LowEnvelopeMassRows_338` | OPEN | Current prototype does not prove the same-family low-envelope mass row | `module_342_low_envelope_mass_prototype.md` | No |
+| `CurrentLowEnvelopeMassClosure_342 / MassOnlyCoverRouteClosure_342` | FALSE / BLOCKED | Current inputs prove only a crude ceiling; mass alone does not close finite-side, tail, exact-zero, or insertion rows | `module_342_low_envelope_mass_prototype.md` | No |
+| `InternalZeroKernelAudit_343(P_minor^0)` | OPEN | Next target: internal exact lifted-zero rows under the same kernel and low-prime/zero-tail weights | `module_342_low_envelope_mass_prototype.md` | No |
 | `ProjectedModelNeutralityGate_260(P_adm)` | CONDITIONAL | Exact model discipline, generic tail, kernel route, collision route, uniformity, model-domain conventions | `module_260_projected_model_neutrality_gate.md`, `module_267_projected_model_neutrality_verdict.md` | Only if every row is supplied |
 | `CollNeutral_260(P_adm)` | OPEN | Absolute collision-defect control with `|W_M|` and same-family uniformity | `module_264_collision_diagonal_strata.md` | No |
 | `AbsCollStrataGate_264` | OPEN | Structural strata, nonstructural load, overflow, finite-prime-set CRT, absolute kernel weight | `module_264_collision_diagonal_strata.md` | No |

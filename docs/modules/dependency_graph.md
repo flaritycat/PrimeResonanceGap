@@ -90,7 +90,8 @@ flowchart TD
   ExactZero339["ExactZeroTailDiagonalAudit_339<br/>STRUCTURAL; route verdict complete"]
   CoverVerdict340["CoverMomentRouteVerdict_340<br/>STRUCTURAL; current route blocked"]
   Reflective5["Reflective_5<br/>memory log STRUCTURAL"]
-  LowEnvelope342["LowEnvelopeMassPrototype_342<br/>OPEN next target"]
+  LowEnvelope342["LowEnvelopeMassPrototype_342<br/>STRUCTURAL; current closure BLOCKED"]
+  InternalZero343["InternalZeroKernelAudit_343<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -216,7 +217,8 @@ flowchart TD
   ExactZero339 --> CoverVerdict340
   CoverVerdict340 --> Reflective5
   Reflective5 --> LowEnvelope342
-  LowEnvelope342 --> AntiDiag312
+  LowEnvelope342 --> InternalZero343
+  InternalZero343 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -305,6 +307,9 @@ flowchart TD
 - `Reflective_5` is a memory log for Modules 301-340. It records no theorem
   upgrade and selects `LowEnvelopeMassPrototype_342(P_minor^0)` as the next
   narrow analytic test.
+- The Module 342 low-envelope mass prototype defines the same-family
+  absolute-kernel first moment and extracts only a trivial total-weight
+  ceiling. It does not prove `LowEnvelopeMassRows_338` or the cover route.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still

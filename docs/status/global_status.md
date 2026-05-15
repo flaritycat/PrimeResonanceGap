@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 341
-Active phase: Phase K, LowEnvelopeMassPrototype_342 next
+Latest module frontier: Module 342
+Active phase: Phase K, InternalZeroKernelAudit_343 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -926,9 +926,17 @@ Completed reflective memory log:
     rows, and selects LowEnvelopeMassPrototype_342(P_minor^0) as the next
     narrow analytic test
 
+Completed low-envelope mass prototype:
+  LowEnvelopeMassPrototype_342(P_minor^0)
+    defines the same-family absolute-kernel low-envelope mass functional,
+    extracts a trivial total-weight ceiling, records a conditional absorption
+    implication, blocks current low-envelope mass closure, and blocks the
+    mass-only cover-route shortcut
+
 Next scheduled module:
-  Module 342 LowEnvelopeMassPrototype_342(P_minor^0)
+  Module 343 InternalZeroKernelAudit_343(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed Reflective_5 memory log;
+Status: **STRUCTURAL / EXTRACTION** for the completed low-envelope mass
+prototype;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

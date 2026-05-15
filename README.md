@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: low-envelope mass prototype after the
-Reflective_5 memory log**.
+The current active phase is **Phase K: internal exact-zero kernel audit after
+the low-envelope mass prototype**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 341
-Active phase: Phase K, LowEnvelopeMassPrototype_342 next
+Latest module frontier: Module 342
+Active phase: Phase K, InternalZeroKernelAudit_343 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -935,9 +935,14 @@ Module 341:
   or endpoint rows.
 
 Module 342:
-  attempt LowEnvelopeMassPrototype_342(P_minor^0), a narrow same-family test
-  for low-prime envelope mass under the actual kernel, masks, dyadic ranges,
-  W-residue conventions, cutoff order, selector class, and limit order.
+  performed LowEnvelopeMassPrototype_342(P_minor^0), defining the absolute
+  kernel low-envelope mass functional, extracting the trivial total-weight
+  ceiling, and blocking current low-envelope mass closure.
+
+Module 343:
+  perform InternalZeroKernelAudit_343(P_minor^0), deciding whether internal
+  exact lifted-zero rows can be budgeted with the same kernel, low-prime
+  envelope, zero-tail weights, masks, and cutoff order.
 ```
 
 ## What Is Proved?
@@ -1094,7 +1099,11 @@ Compact status table:
 | Single-row closure shortcut from Module 340 | **FALSE / BLOCKED** |
 | Seventeenth plan update `PlanUpdate_17_340` | **STRUCTURAL / EXTRACTION** |
 | Reflective_5 | **STRUCTURAL / EXTRACTION** |
-| Low-envelope mass prototype `LowEnvelopeMassPrototype_342` | **OPEN next target** |
+| Low-envelope mass prototype `LowEnvelopeMassPrototype_342` | **STRUCTURAL / EXTRACTION** |
+| Trivial low-envelope mass ceiling from Module 342 | **STRUCTURAL / EXTRACTION** |
+| Low-envelope absorption implication from Module 342 | **CONDITIONAL** |
+| Current low-envelope mass and mass-only cover-route closures from Module 342 | **FALSE / BLOCKED** |
+| Internal exact-zero kernel audit `InternalZeroKernelAudit_343` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1491,9 +1500,13 @@ wins.
 | `CoverRouteInputInventory_340` | STRUCTURAL / EXTRACTION | Inventory of Modules 329-339 inputs only |
 | `FiniteSideClosure_340 / TailClosure_340 / ExactZeroClosure_340 / CurrentCoverMomentRouteClosure_340` | FALSE / BLOCKED | Current cover route not closed by existing inputs |
 | `SingleRowClosureShortcut_340` | FALSE / BLOCKED | Low-envelope mass alone would not close CRT, tail, exact-zero, or insertion rows |
-| `LowEnvelopeMassPrototype_342(P_minor^0)` | OPEN | Next analytic target after Reflective_5 |
 | `PlanUpdate_17_340` | STRUCTURAL / EXTRACTION | Seventeenth plan update |
 | `Reflective_5` | STRUCTURAL / EXTRACTION | Memory log for Modules 301-340; no theorem upgrade |
+| `LowEnvelopeMassPrototype_342(P_minor^0)` | STRUCTURAL / EXTRACTION | Defines and tests the low-prime envelope mass row |
+| `LowEnvelopeMassFunctional_342 / TrivialLowEnvelopeMassCeiling_342` | STRUCTURAL / EXTRACTION | Exact mass functional and total-weight ceiling only |
+| `LowEnvelopeAbsorptionImplication_342` | CONDITIONAL | Would feed Module 338 only if the same-family mass and cutoff window are proved |
+| `CurrentLowEnvelopeMassClosure_342 / MassOnlyCoverRouteClosure_342` | FALSE / BLOCKED | Current inputs do not prove the mass row, and mass alone does not close the cover route |
+| `InternalZeroKernelAudit_343(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

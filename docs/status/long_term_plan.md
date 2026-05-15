@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 341
-Post-Reflective_1 solving count: 160
-Long-term-plan count: 154
+Latest completed module: 342
+Post-Reflective_1 solving count: 161
+Long-term-plan count: 155
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -4654,7 +4654,7 @@ Reflective_5:
   STRUCTURAL / EXTRACTION.
 
 LowEnvelopeMassPrototype_342(P_minor^0):
-  OPEN next analytic target.
+  was the then-open next analytic target.
 ```
 
 The reflection reviews Modules 301-340 and records that Phase K sharpened the
@@ -4663,12 +4663,12 @@ map without proving `PhaseKernelBound_273^0`, `NarrowMinorArc_3^B`,
 `ResCube_3^sharp`, or any global endpoint. It warns against continuing the
 cover route by further structural subdivision alone.
 
-The current cadence records:
+The Module 341 cadence recorded:
 
 ```text
-Latest completed module: 341
-Post-Reflective_1 solving count: 160
-Long-term-plan count: 154
+Module 341 latest completed module: 341
+Module 341 post-Reflective_1 solving count: 160
+Module 341 long-term-plan count: 154
 
 154 is not divisible by 9, so no plan update is due in this module.
 154 is not divisible by 15, so no plan challenge is due in this module.
@@ -4682,4 +4682,65 @@ Module 342:
   attempt LowEnvelopeMassPrototype_342(P_minor^0), testing a concrete
   low-prime envelope mass row under the same kernel, masks, dyadic ranges,
   W-residue conventions, cutoff order, selector class, and limit order.
+```
+
+Module 342 completed:
+
+```text
+LowEnvelopeMassPrototype_342(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+LowEnvelopeMassFunctional_342:
+  STRUCTURAL / EXTRACTION.
+
+TrivialLowEnvelopeMassCeiling_342:
+  STRUCTURAL / EXTRACTION.
+
+LowEnvelopeAbsorptionImplication_342:
+  CONDITIONAL.
+
+LowEnvelopeMassRows_338:
+  OPEN.
+
+CurrentLowEnvelopeMassClosure_342:
+  FALSE / BLOCKED.
+
+MassOnlyCoverRouteClosure_342:
+  FALSE / BLOCKED.
+
+InternalZeroKernelAudit_343(P_minor^0):
+  OPEN next target.
+```
+
+The prototype defines the same-family first moment
+`LMass_Y^{342}(U,V)` and records the only unconditional current bound:
+
+```text
+LMass_Y^{342}(U,V)
+  <=
+  A_low^{342}(Y) KMass_{U,V}^{342}.
+```
+
+This total-weight ceiling discards the finite-side event structure and does
+not prove the absorption row or the cover route.
+
+The current cadence records:
+
+```text
+Latest completed module: 342
+Post-Reflective_1 solving count: 161
+Long-term-plan count: 155
+
+155 is not divisible by 9, so no plan update is due in this module.
+155 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 343:
+  perform InternalZeroKernelAudit_343(P_minor^0), deciding whether internal
+  exact lifted-zero rows can be budgeted with the same kernel, low-prime
+  envelope, zero-tail weights, masks, and cutoff order.
 ```
