@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 340
-Active phase: Phase K, Reflective_5 memory log next
+Latest module frontier: Module 341
+Active phase: Phase K, LowEnvelopeMassPrototype_342 next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -118,6 +118,7 @@ reviews/
 root/
   Reflective_3.md
   Reflective_4.md
+  Reflective_5.md
   project-effectiviness-improvement.md
 
 paper/

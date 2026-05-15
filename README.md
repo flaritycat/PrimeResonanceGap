@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: Reflective_5 memory log after the
-cover-moment route verdict**.
+The current active phase is **Phase K: low-envelope mass prototype after the
+Reflective_5 memory log**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 340
-Active phase: Phase K, Reflective_5 memory log next
+Latest module frontier: Module 341
+Active phase: Phase K, LowEnvelopeMassPrototype_342 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -930,8 +930,14 @@ Module 340:
   exact-zero rows; it performs PlanUpdate_17_340 and leaves Reflective_5 next.
 
 Module 341:
-  perform Reflective_5, reviewing Modules 301-340 and checking that Phase K
-  did not upgrade open cover, tail, or endpoint rows.
+  wrote Reflective_5, reviewing Modules 301-340 and recording that Phase K
+  sharpened the cover-route obstruction without upgrading open cover, tail,
+  or endpoint rows.
+
+Module 342:
+  attempt LowEnvelopeMassPrototype_342(P_minor^0), a narrow same-family test
+  for low-prime envelope mass under the actual kernel, masks, dyadic ranges,
+  W-residue conventions, cutoff order, selector class, and limit order.
 ```
 
 ## What Is Proved?
@@ -1087,7 +1093,8 @@ Compact status table:
 | Finite-side, tail, and exact-zero closure verdicts from Module 340 | **FALSE / BLOCKED** |
 | Single-row closure shortcut from Module 340 | **FALSE / BLOCKED** |
 | Seventeenth plan update `PlanUpdate_17_340` | **STRUCTURAL / EXTRACTION** |
-| Reflective_5 | **OPEN next target** |
+| Reflective_5 | **STRUCTURAL / EXTRACTION** |
+| Low-envelope mass prototype `LowEnvelopeMassPrototype_342` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1486,7 +1493,7 @@ wins.
 | `SingleRowClosureShortcut_340` | FALSE / BLOCKED | Low-envelope mass alone would not close CRT, tail, exact-zero, or insertion rows |
 | `LowEnvelopeMassPrototype_342(P_minor^0)` | OPEN | Next analytic target after Reflective_5 |
 | `PlanUpdate_17_340` | STRUCTURAL / EXTRACTION | Seventeenth plan update |
-| `Reflective_5` | OPEN | Next target |
+| `Reflective_5` | STRUCTURAL / EXTRACTION | Memory log for Modules 301-340; no theorem upgrade |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

@@ -82,7 +82,8 @@ flowchart TD
   LowHigh338["LowHighTailCouplingAudit_338<br/>STRUCTURAL; exact-zero diagonals OPEN"]
   ExactZero339["ExactZeroTailDiagonalAudit_339<br/>STRUCTURAL; route verdict complete"]
   CoverVerdict340["CoverMomentRouteVerdict_340<br/>STRUCTURAL; current route blocked"]
-  Reflective5["Reflective_5<br/>OPEN next target"]
+  Reflective5["Reflective_5<br/>memory log STRUCTURAL"]
+  LowEnvelope342["LowEnvelopeMassPrototype_342<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -207,7 +208,8 @@ flowchart TD
   LowHigh338 --> ExactZero339
   ExactZero339 --> CoverVerdict340
   CoverVerdict340 --> Reflective5
-  Reflective5 --> AntiDiag312
+  Reflective5 --> LowEnvelope342
+  LowEnvelope342 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0

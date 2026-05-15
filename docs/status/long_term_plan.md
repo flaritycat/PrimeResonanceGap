@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 340
-Post-Reflective_1 solving count: 159
-Long-term-plan count: 153
+Latest completed module: 341
+Post-Reflective_1 solving count: 160
+Long-term-plan count: 154
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -53,7 +53,8 @@ Second plan challenge:   Module 217 (completed)
 Reflective_2 log:        Module 221 (completed)
 Reflective_3 log:        Module 261 (completed)
 Reflective_4 log:        Module 301 (completed)
-Next reflective log:     Module 341
+Reflective_5 log:        Module 341 (completed)
+Next reflective log:     Module 381
 Fourth plan update:      Module 223 (completed)
 Fifth plan update:       Module 232 (completed)
 Third plan challenge:    Module 232 (completed)
@@ -4608,12 +4609,12 @@ exact-zero rows. It does not prove `KernelWeightedMobiusMomentCriterion_330`,
 `SharpCoverSmallness_328`, `SignedLocalModelInsertion_326`,
 `PhaseKernelBound_273^0`, or any endpoint.
 
-The current cadence records:
+The Module 340 cadence recorded:
 
 ```text
-Latest completed module: 340
-Post-Reflective_1 solving count: 159
-Long-term-plan count: 153
+Module 340 latest completed module: 340
+Module 340 post-Reflective_1 solving count: 159
+Module 340 long-term-plan count: 153
 
 153 is divisible by 9, so PlanUpdate_17_340 is due and completed here.
 153 is not divisible by 15, so no plan challenge is due in this module.
@@ -4644,4 +4645,41 @@ Module 345:
   perform PhaseKPostCoverBranchDecision_345, deciding whether the cover route
   remains viable, moves to signed insertion, or returns to the
   PhaseKernelBound_273^0 obstruction.
+```
+
+Module 341 completed:
+
+```text
+Reflective_5:
+  STRUCTURAL / EXTRACTION.
+
+LowEnvelopeMassPrototype_342(P_minor^0):
+  OPEN next analytic target.
+```
+
+The reflection reviews Modules 301-340 and records that Phase K sharpened the
+row, column, anti-diagonal, cover, tail, low-high, and exact-zero obstruction
+map without proving `PhaseKernelBound_273^0`, `NarrowMinorArc_3^B`,
+`ResCube_3^sharp`, or any global endpoint. It warns against continuing the
+cover route by further structural subdivision alone.
+
+The current cadence records:
+
+```text
+Latest completed module: 341
+Post-Reflective_1 solving count: 160
+Long-term-plan count: 154
+
+154 is not divisible by 9, so no plan update is due in this module.
+154 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 342:
+  attempt LowEnvelopeMassPrototype_342(P_minor^0), testing a concrete
+  low-prime envelope mass row under the same kernel, masks, dyadic ranges,
+  W-residue conventions, cutoff order, selector class, and limit order.
 ```

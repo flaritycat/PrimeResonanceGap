@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 340
-Active phase: Phase K, Reflective_5 memory log next
+Latest module frontier: Module 341
+Active phase: Phase K, LowEnvelopeMassPrototype_342 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -919,10 +919,16 @@ Completed cover-moment route verdict:
     inputs, blocks single-row closure, performs PlanUpdate_17_340, and leaves
     Reflective_5 next
 
+Completed reflective memory log:
+  Reflective_5
+    reviews Modules 301-340, records that Phase K sharpened but did not close
+    row, column, anti-diagonal, cover, tail, low-high, exact-zero, or endpoint
+    rows, and selects LowEnvelopeMassPrototype_342(P_minor^0) as the next
+    narrow analytic test
+
 Next scheduled module:
-  Module 341 Reflective_5
+  Module 342 LowEnvelopeMassPrototype_342(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed cover-moment route
-verdict;
+Status: **STRUCTURAL / EXTRACTION** for the completed Reflective_5 memory log;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.
