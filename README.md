@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: kernel-fiber partition audit after
-the single-prime partition-class rank audit**.
+The current active phase is **Phase K: dyadic residue uniformity audit after
+the kernel-fiber partition audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 331
-Active phase: Phase K, kernel-fiber partition audit next
+Latest module frontier: Module 332
+Active phase: Phase K, dyadic residue uniformity audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -743,14 +743,20 @@ Module 331:
   free-fiber rank from compatibility rank in the weighted variables and
   performs the sixteenth plan update. Kernel-residue, dyadic-residue, and
   mask-uniformity rows remain open.
+
+Module 332:
+  audited the kernel-fiber part of the compatibility rank. It splits base
+  conditions into a `t`-fiber row and a dyadic `d_1,d_2` row, states the
+  conditional absolute kernel residue-mass criterion, and blocks the shortcut
+  from Fourier support or full-kernel diagnostics to residue uniformity.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-331 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-332 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window, the signed minor-kernel row, or the
-generic/collision/full-cover/sharp-cover/Mobius-cover/kernel-fiber rows.
+generic/collision/full-cover/sharp-cover/Mobius-cover/dyadic-residue rows.
 
 The next planned module is:
 
@@ -830,9 +836,14 @@ Module 331:
   h+k kernel variable.
 
 Module 332:
-  perform KernelFiberPartitionAudit_332(P_minor^0), deciding what residue-mass
+  performed KernelFiberPartitionAudit_332(P_minor^0), deciding what residue-mass
   statements are available for `|K_{U,V}^0(d_1,d_2;t)|` on the compatibility
   classes forced by a partition class.
+
+Module 333:
+  perform DyadicResidueUniformityAudit_333(P_minor^0), deciding whether the
+  dyadic ranges for `d_1,d_2` provide the residue savings required by
+  `pi_d(C)`, including off-diagonal and wrap conventions.
 ```
 
 ## What Is Proved?
@@ -943,7 +954,12 @@ Compact status table:
 | Kernel-weighted partition counting, dyadic residue, kernel residue-mass, and mask residue-uniformity rows from Module 331 | **OPEN** |
 | Current partition-class counting closure `CurrentPartitionClassCountingClosure_331` | **FALSE / BLOCKED** |
 | Sixteenth plan update `PlanUpdate_16_331` | **STRUCTURAL / EXTRACTION** |
-| Kernel-fiber partition audit `KernelFiberPartitionAudit_332` | **OPEN next target** |
+| Kernel-fiber partition audit `KernelFiberPartitionAudit_332` | **STRUCTURAL / EXTRACTION** |
+| Compatibility fiber split, trivial kernel ceiling, and full-kernel spike obstruction from Module 332 | **STRUCTURAL / EXTRACTION** |
+| Kernel residue-mass criterion `KernelResidueMassCriterion_332` | **CONDITIONAL** |
+| Absolute minor-kernel residue uniformity `AbsoluteMinorKernelResidueUniformity_332` | **OPEN** |
+| Fourier support implying residue uniformity and kernel-fiber closure from Module 332 | **FALSE / BLOCKED** |
+| Dyadic residue uniformity audit `DyadicResidueUniformityAudit_333` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1295,7 +1311,12 @@ wins.
 | `KernelWeightedPartitionClassCounting_331 / DyadicResidueUniformity_331 / KernelResidueMassRows_331 / MaskResidueUniformity_331` | OPEN | The actual weighted counting rows remain missing |
 | `CurrentPartitionClassCountingClosure_331` | FALSE / BLOCKED | Rank decomposition does not prove a kernel-weighted partition count |
 | `PlanUpdate_16_331` | STRUCTURAL / EXTRACTION | Sixteenth plan update; no theorem upgraded |
-| `KernelFiberPartitionAudit_332(P_minor^0)` | OPEN | Next target |
+| `KernelFiberPartitionAudit_332(P_minor^0)` | STRUCTURAL / EXTRACTION | Splits compatibility into dyadic `d` conditions and at most one `t`-kernel residue condition |
+| `CompatibilityFiberSplit_332 / TrivialKernelResidueCeiling_332 / FullKernelSpikeObstruction_332` | STRUCTURAL / EXTRACTION | Kernel-fiber bookkeeping, trivial ceiling, and full-kernel spike diagnostic |
+| `KernelResidueMassCriterion_332` | CONDITIONAL | Usable only if absolute L1 residue mass for the same localized kernel is proved |
+| `AbsoluteMinorKernelResidueUniformity_332` | OPEN | L1 residue uniformity for `|K_{U,V}^0|` remains missing |
+| `FourierSupportImpliesResidueUniformity_332 / KernelFiberCountingClosure_332` | FALSE / BLOCKED | Fourier support, Parseval, and current kernel bookkeeping do not close residue uniformity |
+| `DyadicResidueUniformityAudit_333(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

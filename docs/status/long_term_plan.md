@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 331
-Post-Reflective_1 solving count: 150
-Long-term-plan count: 144
+Latest completed module: 332
+Post-Reflective_1 solving count: 151
+Long-term-plan count: 145
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -4073,4 +4073,65 @@ Module 332:
   perform KernelFiberPartitionAudit_332(P_minor^0), deciding what residue-mass
   statements are available for |K_{U,V}^0(d_1,d_2;t)| on the compatibility
   classes forced by one-prime partition classes.
+```
+
+Module 332 completed:
+
+```text
+KernelFiberPartitionAudit_332(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+CompatibilityFiberSplit_332:
+  STRUCTURAL / EXTRACTION.
+
+KernelResidueMassCriterion_332:
+  CONDITIONAL.
+
+TrivialKernelResidueCeiling_332:
+  STRUCTURAL / EXTRACTION.
+
+FullKernelSpikeObstruction_332:
+  STRUCTURAL / EXTRACTION.
+
+FourierSupportImpliesResidueUniformity_332:
+  FALSE / BLOCKED.
+
+AbsoluteMinorKernelResidueUniformity_332:
+  OPEN.
+
+KernelFiberCountingClosure_332:
+  FALSE / BLOCKED.
+
+DyadicResidueUniformityAudit_333(P_minor^0):
+  OPEN next target.
+```
+
+The audit splits a one-prime compatibility subspace
+`C subset F_p^3` in variables `(t,d_1,d_2)` into a dyadic projection
+`pi_d(C)` and a `t`-fiber. Since the kernel variable is one-dimensional, the
+kernel can supply at most one residue saving. The remaining compatibility
+losses must come from dyadic residue uniformity for `d_1,d_2` and mask
+uniformity. Current Fourier-support, Parseval, and full-kernel diagnostics do
+not prove absolute L1 residue uniformity for `|K_{U,V}^0|`.
+
+The current cadence records:
+
+```text
+Latest completed module: 332
+Post-Reflective_1 solving count: 151
+Long-term-plan count: 145
+
+145 is not divisible by 9, so no plan update is due in this module.
+145 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 333:
+  perform DyadicResidueUniformityAudit_333(P_minor^0), deciding whether the
+  dyadic ranges for d_1,d_2 provide the residue savings required by pi_d(C),
+  with the off-diagonal condition, W-residue conventions, finite-cyclic wrap,
+  and threshold masks still present.
 ```

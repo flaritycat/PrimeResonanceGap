@@ -80,7 +80,8 @@ flowchart TD
   PrimeMobius329["PrimePartitionMobiusAudit_329<br/>STRUCTURAL; cover moments OPEN"]
   CoverMoment330["PrimePartitionCoverMomentCriterion_330<br/>STRUCTURAL; counting rows OPEN"]
   PartitionCount331["PartitionClassCountingAudit_331<br/>STRUCTURAL; kernel residue rows OPEN"]
-  KernelFiber332["KernelFiberPartitionAudit_332<br/>OPEN next target"]
+  KernelFiber332["KernelFiberPartitionAudit_332<br/>STRUCTURAL; dyadic residue rows OPEN"]
+  Dyadic333["DyadicResidueUniformityAudit_333<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -196,7 +197,8 @@ flowchart TD
   PrimeMobius329 --> CoverMoment330
   CoverMoment330 --> PartitionCount331
   PartitionCount331 --> KernelFiber332
-  KernelFiber332 --> AntiDiag312
+  KernelFiber332 --> Dyadic333
+  Dyadic333 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -252,6 +254,9 @@ flowchart TD
 - The Module 331 partition-class audit gives only equality matrices and rank
   splits. It does not prove kernel-residue, dyadic-residue, or mask-uniform
   partition counts.
+- The Module 332 kernel-fiber audit states only a conditional absolute
+  residue-mass criterion. Fourier support, Parseval, and the full-kernel
+  diagnostic do not prove `|K_{U,V}^0|` residue uniformity.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still
