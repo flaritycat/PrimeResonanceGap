@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 374
-Post-Reflective_1 solving count: 193
-Long-term-plan count: 187
+Latest completed module: 375
+Post-Reflective_1 solving count: 194
+Long-term-plan count: 188
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -6649,4 +6649,76 @@ Module 375:
   Lorentz structure in the autocorrelation identity for WBetaEng_A, or
   whether AutocorrelationKernelGainTarget_374 is a new endpoint-strength
   no-twist input.
+```
+
+Module 375 completed:
+
+```text
+WeightedBetaAutocorrelationObstruction_375(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+CoefficientKernelNormLedger_375:
+  PROVEN.
+
+AutocorrelationL2Identity_375:
+  PROVEN.
+
+KernelCauchyCriterion_375:
+  CONDITIONAL.
+
+ZeroLagIsolation_375:
+  PROVEN.
+
+ZeroLagAbsorptionCriterion_375:
+  CONDITIONAL.
+
+KernelLorentzCriterion_375:
+  CONDITIONAL.
+
+KernelNormClosure_375:
+  FALSE / BLOCKED.
+
+CancellationOnlyKernelRoute_375:
+  FALSE / BLOCKED.
+
+CurrentAutocorrelationKernelClosure_375:
+  FALSE / BLOCKED.
+
+CoefficientKernelGainTarget_375:
+  OPEN.
+
+AutocorrelationKernelGainTarget_374:
+  OPEN.
+```
+
+Best target selection: Module 375 was the right attack because Module 374
+identified the coefficient-kernel autocorrelation row as the smallest
+remaining weighted beta-energy route. The proof attack records the exact
+kernel norm ledger, proves the autocorrelation L2 identity, isolates the
+zero-lag row, and formulates Cauchy and Lorentz criteria. Current norm-only
+and cancellation-only routes do not close the target. The next best module is
+a synthesis verdict for the no-twist coefficient branch, since Modules
+360-375 have now stressed the rectangle-defect, pair-residual, and
+diagonal-overlap branches.
+
+The current cadence records:
+
+```text
+Latest completed module: 375
+Post-Reflective_1 solving count: 194
+Long-term-plan count: 188
+
+188 is not divisible by 9, so no plan update is due in this module.
+188 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 376:
+  perform NoTwistCoefficientBranchVerdict_376(P_minor^0), synthesizing
+  Modules 356-375 to decide whether the no-twist coefficient-profile route
+  has any remaining non-endpoint algebraic compression or whether it now
+  requires new same-family variance/overlap/kernel inputs.
 ```
