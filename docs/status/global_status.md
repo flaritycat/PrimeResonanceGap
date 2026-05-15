@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 335
-Active phase: Phase K, finite-prime tail cover audit next
+Latest module frontier: Module 336
+Active phase: Phase K, high-prime divisor window audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -880,10 +880,18 @@ Completed multi-prime CRT/mask audit:
     and leaves composite mask/kernel uniformity and finite-prime tail control
     open
 
+Completed finite-prime tail cover audit:
+  FinitePrimeTailCoverAudit_336(P_minor^0)
+    records the finite cutoff difference identity, defines the weighted tail
+    cover functional, proves only a tuple-level nonzero prime-divisor ceiling,
+    states a conditional cutoff-window criterion, blocks the tail-only
+    shortcut, and leaves weighted tail uniformity, low-high cover coupling,
+    exact-zero diagonal handling, and the cutoff window open
+
 Next scheduled module:
-  Module 336 FinitePrimeTailCoverAudit_336(P_minor^0)
+  Module 337 HighPrimeDivisorWindowAudit_337(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed multi-prime CRT/mask
+Status: **STRUCTURAL / EXTRACTION** for the completed finite-prime tail cover
 audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: finite-prime tail cover audit after the
-multi-prime CRT/mask audit**.
+The current active phase is **Phase K: high-prime divisor window audit after
+the finite-prime tail cover audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 335
-Active phase: Phase K, finite-prime tail cover audit next
+Latest module frontier: Module 336
+Active phase: Phase K, high-prime divisor window audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -768,14 +768,22 @@ Module 335:
   composite-modulus benchmark, and a conditional weighted CRT/mask criterion,
   while blocking the shortcut that one-prime weighted rows automatically
   multiply under the same kernel and masks.
+
+Module 336:
+  audited the finite-prime cutoff and high-prime tail. It records the exact
+  cutoff difference identity, the weighted tail functional, and a tuple-level
+  nonzero prime-divisor ceiling, while leaving weighted tail uniformity,
+  low-high cover coupling, exact-zero diagonal handling, and the cutoff
+  window open.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-335 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-336 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window, the signed minor-kernel row, or the
-generic/collision/full-cover/sharp-cover/Mobius-cover/CRT-mask/tail rows.
+generic/collision/full-cover/sharp-cover/Mobius-cover/CRT-mask/tail/window
+rows.
 
 The next planned module is:
 
@@ -875,9 +883,14 @@ Module 335:
   same kernel, dyadic, and mask weights.
 
 Module 336:
-  perform FinitePrimeTailCoverAudit_336(P_minor^0), deciding how to choose a
+  performed FinitePrimeTailCoverAudit_336(P_minor^0), deciding how to choose a
   finite prime cutoff and separate the tail above it without assuming the
   cover moment.
+
+Module 337:
+  perform HighPrimeDivisorWindowAudit_337(P_minor^0), deciding whether the
+  tuple-level high-prime divisor ceiling can be averaged with the same
+  kernel, masks, dyadic ranges, W-residue conventions, and cutoff order.
 ```
 
 ## What Is Proved?
@@ -1008,7 +1021,12 @@ Compact status table:
 | Composite-modulus range and weighted CRT/mask criteria from Module 335 | **CONDITIONAL** |
 | Mask/kernel CRT uniformity rows from Module 335 | **OPEN** |
 | Prime-independence shortcut and current multi-prime CRT closure from Module 335 | **FALSE / BLOCKED** |
-| Finite-prime tail cover audit `FinitePrimeTailCoverAudit_336` | **OPEN next target** |
+| Finite-prime tail cover audit `FinitePrimeTailCoverAudit_336` | **STRUCTURAL / EXTRACTION** |
+| Finite cutoff difference identity, tail cover functional, and tuple divisor ceiling from Module 336 | **STRUCTURAL / EXTRACTION** |
+| Cutoff window criterion from Module 336 | **CONDITIONAL** |
+| Tail uniformity, low-high cover coupling, and exact-zero diagonal rows from Module 336 | **OPEN** |
+| Tail-only shortcut and current finite-prime tail closure from Module 336 | **FALSE / BLOCKED** |
+| High-prime divisor window audit `HighPrimeDivisorWindowAudit_337` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1380,7 +1398,12 @@ wins.
 | `CompositeModulusRangeCriterion_335 / WeightedCRTMaskCriterion_335` | CONDITIONAL | Need range/summability and same-family weighted composite-modulus estimates |
 | `MaskCRTUniformityRows_335 / KernelCRTUniformityRows_335` | OPEN | Composite-modulus mask and kernel uniformity remain missing |
 | `PrimeIndependenceShortcut_335 / CurrentMultiPrimeCRTClosure_335` | FALSE / BLOCKED | One-prime weighted rows do not automatically multiply under shared kernel and masks |
-| `FinitePrimeTailCoverAudit_336(P_minor^0)` | OPEN | Next target |
+| `FinitePrimeTailCoverAudit_336(P_minor^0)` | STRUCTURAL / EXTRACTION | Audits finite cutoff removal and high-prime tail separation |
+| `FiniteCutoffDifferenceIdentity_336 / TailCoverFunctional_336 / TuplePrimeDivisorCeiling_336` | STRUCTURAL / EXTRACTION | Cutoff algebra, weighted tail functional, and tuple-level nonzero divisor ceiling only |
+| `CutoffWindowCriterion_336` | CONDITIONAL | Requires compatible finite-side CRT/mask control, tail control, low-high coupling, exact-zero diagonal handling, and limit order |
+| `TailUniformityRows_336 / LowHighCoverCouplingRows_336 / ExactZeroDiagonalRows_336` | OPEN | Weighted tail, low-high, and exact-zero rows remain missing |
+| `TailOnlyShortcut_336 / CurrentFinitePrimeTailClosure_336` | FALSE / BLOCKED | Tuple divisor bounds alone do not prove the weighted finite-prime tail row |
+| `HighPrimeDivisorWindowAudit_337(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

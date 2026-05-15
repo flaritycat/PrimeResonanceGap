@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 335
-Post-Reflective_1 solving count: 154
-Long-term-plan count: 148
+Latest completed module: 336
+Post-Reflective_1 solving count: 155
+Long-term-plan count: 149
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -4053,8 +4053,8 @@ Module 333: DyadicResidueUniformityAudit_333(P_minor^0).
 Module 334: ExactPartitionCoarseningAudit_334(P_minor^0).
 Module 335: MultiPrimeCRTMaskAudit_335(P_minor^0).
 Module 336: FinitePrimeTailCoverAudit_336(P_minor^0).
-Module 337: SignedLocalModelInsertionGate_337(P_minor^0), unless earlier rows
-            block the route more decisively.
+Module 337: HighPrimeDivisorWindowAudit_337(P_minor^0), because the
+            finite-prime tail audit blocks direct cutoff removal.
 Module 338: CoverMomentRouteVerdict_338(P_minor^0).
 Module 339: PhaseKBranchDecision_339.
 Module 340: prepare the next reflection boundary without upgrading open rows.
@@ -4320,4 +4320,71 @@ Module 336:
   perform FinitePrimeTailCoverAudit_336(P_minor^0), deciding how to choose a
   finite prime cutoff and separate the tail above it without assuming the
   cover moment.
+```
+
+Module 336 completed:
+
+```text
+FinitePrimeTailCoverAudit_336(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+FiniteCutoffDifferenceIdentity_336:
+  STRUCTURAL / EXTRACTION.
+
+TailCoverFunctional_336:
+  STRUCTURAL / EXTRACTION.
+
+TuplePrimeDivisorCeiling_336:
+  STRUCTURAL / EXTRACTION.
+
+CutoffWindowCriterion_336:
+  CONDITIONAL.
+
+TailUniformityRows_336:
+  OPEN.
+
+LowHighCoverCouplingRows_336:
+  OPEN.
+
+ExactZeroDiagonalRows_336:
+  OPEN.
+
+TailOnlyShortcut_336:
+  FALSE / BLOCKED.
+
+CurrentFinitePrimeTailClosure_336:
+  FALSE / BLOCKED.
+
+HighPrimeDivisorWindowAudit_337(P_minor^0):
+  OPEN next target.
+```
+
+The audit records the exact cutoff difference identity
+`Def_Z-Def_Y=(1+Def_Y)Def_{Y,Z}`, defines the weighted high-prime tail
+functional, and records only a tuple-level divisor ceiling for nonzero lifted
+differences. It blocks the tail-only shortcut because high-prime factors are
+coupled to the low-prime product, exact zero differences survive every prime,
+and a cutoff `Y(N,w)` must satisfy both finite-side CRT/mask range constraints
+and high-prime tail constraints.
+
+The current cadence records:
+
+```text
+Latest completed module: 336
+Post-Reflective_1 solving count: 155
+Long-term-plan count: 149
+
+149 is not divisible by 9, so no plan update is due in this module.
+149 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 337:
+  perform HighPrimeDivisorWindowAudit_337(P_minor^0), deciding whether the
+  tuple-level high-prime divisor ceiling can be averaged with the same
+  absolute kernel, masks, dyadic ranges, W-residue conventions, and cutoff
+  order.
 ```

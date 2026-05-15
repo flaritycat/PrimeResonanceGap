@@ -84,7 +84,8 @@ flowchart TD
   Dyadic333["DyadicResidueUniformityAudit_333<br/>STRUCTURAL; weighted row OPEN"]
   Coarsening334["ExactPartitionCoarseningAudit_334<br/>STRUCTURAL; multi-prime rows OPEN"]
   CRTMask335["MultiPrimeCRTMaskAudit_335<br/>STRUCTURAL; finite-prime tail OPEN"]
-  Tail336["FinitePrimeTailCoverAudit_336<br/>OPEN next target"]
+  Tail336["FinitePrimeTailCoverAudit_336<br/>STRUCTURAL; cutoff window OPEN"]
+  DivWindow337["HighPrimeDivisorWindowAudit_337<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -204,7 +205,8 @@ flowchart TD
   Dyadic333 --> Coarsening334
   Coarsening334 --> CRTMask335
   CRTMask335 --> Tail336
-  Tail336 --> AntiDiag312
+  Tail336 --> DivWindow337
+  DivWindow337 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -272,6 +274,9 @@ flowchart TD
 - The Module 335 multi-prime CRT/mask audit is exact CRT bookkeeping plus an
   unweighted composite-modulus benchmark only. One-prime weighted rows do not
   automatically multiply under a shared kernel and data-dependent masks.
+- The Module 336 finite-prime tail audit gives cutoff algebra and a
+  tuple-level nonzero divisor ceiling only. The weighted tail, low-high
+  coupling, exact-zero diagonal, and cutoff-window rows remain open.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still
