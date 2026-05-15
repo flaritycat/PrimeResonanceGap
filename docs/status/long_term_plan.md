@@ -3723,3 +3723,69 @@ Module 327:
   all eight labels, and decide which estimates would be needed before any
   full-cover row can feed the signed minor-kernel target.
 ```
+
+Module 327 completed:
+
+```text
+FullCoverClusterAudit_327(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+FullCoverSupportCriterion_327:
+  STRUCTURAL / EXTRACTION.
+
+OnePrimeFullCoverCatalog_327:
+  STRUCTURAL / EXTRACTION.
+
+MultiPrimeCoverProductCatalog_327:
+  STRUCTURAL / EXTRACTION.
+
+StructuralFullCoverClusterCatalog_327:
+  STRUCTURAL / EXTRACTION.
+
+FullCoverLoadEnvelope_327:
+  STRUCTURAL / EXTRACTION.
+
+FullCoverLoadSmallness_327:
+  OPEN.
+
+FullCoverRankUniformity_327:
+  OPEN.
+
+KernelWeightedCoverRows_327:
+  OPEN.
+
+CurrentFullCoverClosure_327:
+  FALSE / BLOCKED.
+
+FullCoverLoadCriterion_328(P_minor^0):
+  OPEN next target.
+```
+
+The audit records that full-cover support, not connectedness, is the surviving
+criterion after signed inclusion-exclusion. One-prime no-isolated-vertex
+events, products of proper-support events whose supports cover all eight
+labels, and structural full-cover intersections all survive support
+cancellation. The cover-load envelope is diagnostic only.
+
+The current cadence records:
+
+```text
+Latest completed module: 327
+Post-Reflective_1 solving count: 146
+Long-term-plan count: 140
+
+140 is not divisible by 9, so no plan update is due in this module.
+140 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 328:
+  perform FullCoverLoadCriterion_328(P_minor^0), turning the diagnostic
+  CoverLoad_{w,8}^{minor} envelope into a precise kernel-weighted criterion.
+  It should test whether current first-load, energy, overflow, and structural
+  rank inputs can prove the criterion, while blocking any route that assumes
+  endpoint-strength collision or local-model insertion.
+```

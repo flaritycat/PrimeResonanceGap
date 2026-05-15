@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 326
-Active phase: Phase K, full-cover cluster audit next
+Latest module frontier: Module 327
+Active phase: Phase K, full-cover load criterion next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -808,10 +808,17 @@ Completed signed inclusion-exclusion minor audit:
     insertion, and data-dependent kernel selection open; it records
     CurrentSignedIEClosure_326 as FALSE / BLOCKED
 
+Completed full-cover cluster audit:
+  FullCoverClusterAudit_327(P_minor^0)
+    classifies one-prime full-cover events, products of proper-support events
+    whose union covers all eight labels, structural full-cover clusters, and
+    a diagnostic cover-load envelope; it leaves full-cover load smallness,
+    rank/uniformity, and kernel-weighted cover rows open and records
+    CurrentFullCoverClosure_327 as FALSE / BLOCKED
+
 Next scheduled module:
-  Module 327 FullCoverClusterAudit_327(P_minor^0)
+  Module 328 FullCoverLoadCriterion_328(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed signed
-inclusion-exclusion minor audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed full-cover cluster audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

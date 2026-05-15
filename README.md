@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: full-cover cluster audit after the
-signed inclusion-exclusion minor audit**.
+The current active phase is **Phase K: full-cover load criterion after the
+full-cover cluster audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 326
-Active phase: Phase K, full-cover cluster audit next
+Latest module frontier: Module 327
+Active phase: Phase K, full-cover load criterion next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -711,10 +711,16 @@ Module 326:
   the unrestricted generic zero-mode identity, while leaving full-cover
   collision clusters, stratified generic remainders, and signed local-model
   insertion open.
+
+Module 327:
+  classified the full-cover clusters that survive the signed support audit.
+  It separates one-prime full-cover events, products of proper-support events
+  whose union covers all eight labels, structural full-cover clusters, and a
+  diagnostic cover-load envelope. All cover-load smallness rows remain open.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-326 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-327 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window, the signed minor-kernel row, or the
@@ -774,8 +780,13 @@ Module 326:
   survive as same-family analytic rows.
 
 Module 327:
-  perform FullCoverClusterAudit_327(P_minor^0), classifying the full-cover
+  performed FullCoverClusterAudit_327(P_minor^0), classifying the full-cover
   Mobius coefficients that survive signed inclusion-exclusion.
+
+Module 328:
+  perform FullCoverLoadCriterion_328(P_minor^0), turning the cover-load
+  envelope into a precise kernel-weighted criterion and testing what current
+  load moments can actually supply.
 ```
 
 ## What Is Proved?
@@ -863,7 +874,11 @@ Compact status table:
 | Full-cover collision, stratified generic remainder, and signed local-model insertion rows from Module 326 | **OPEN** |
 | Shortcut that signed inclusion-exclusion kills all collision defects | **FALSE / BLOCKED** |
 | Current signed inclusion-exclusion closure `CurrentSignedIEClosure_326` | **FALSE / BLOCKED** |
-| Full-cover cluster audit `FullCoverClusterAudit_327` | **OPEN next target** |
+| Full-cover cluster audit `FullCoverClusterAudit_327` | **STRUCTURAL / EXTRACTION** |
+| Full-cover support, one-prime, multi-prime, structural cluster catalogs, and cover-load envelope from Module 327 | **STRUCTURAL / EXTRACTION** |
+| Full-cover load smallness, rank uniformity, and kernel-weighted cover rows from Module 327 | **OPEN** |
+| Current full-cover closure `CurrentFullCoverClosure_327` | **FALSE / BLOCKED** |
+| Full-cover load criterion `FullCoverLoadCriterion_328` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1190,7 +1205,12 @@ wins.
 | `FullGenericMinorZeroIdentity_326` | STRUCTURAL / EXTRACTION | Unrestricted cyclic nonzero-frequency minor kernel kills the full size-only generic row |
 | `FullCoverCollisionRows_326 / StratifiedGenericRemainderRows_326 / SignedLocalModelInsertion_326` | OPEN | Surviving full-cover, restricted generic, and model-insertion rows remain unproved |
 | `SignedIECancelsAllCollisionDefects_326 / CurrentSignedIEClosure_326` | FALSE / BLOCKED | Inclusion-exclusion alone does not close collision defects or the minor row |
-| `FullCoverClusterAudit_327(P_minor^0)` | OPEN | Next target |
+| `FullCoverClusterAudit_327(P_minor^0)` | STRUCTURAL / EXTRACTION | Classifies full-cover cluster families that survive signed inclusion-exclusion |
+| `FullCoverSupportCriterion_327 / OnePrimeFullCoverCatalog_327 / MultiPrimeCoverProductCatalog_327` | STRUCTURAL / EXTRACTION | Support criterion and one-prime/multi-event cover catalogs only |
+| `StructuralFullCoverClusterCatalog_327 / FullCoverLoadEnvelope_327` | STRUCTURAL / EXTRACTION | Structural cover clusters and a diagnostic cover-load envelope only |
+| `FullCoverLoadSmallness_327 / FullCoverRankUniformity_327 / KernelWeightedCoverRows_327` | OPEN | Kernel-weighted cover estimates and rank/uniformity remain missing |
+| `CurrentFullCoverClosure_327` | FALSE / BLOCKED | Full-cover catalogs do not prove cover smallness |
+| `FullCoverLoadCriterion_328(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

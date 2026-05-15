@@ -68,7 +68,8 @@ flowchart TD
   Collision324["CollisionDiagonalStrataAudit_324<br/>STRUCTURAL; closure BLOCKED"]
   GenericSplit325["GenericCollisionLocalModelSplit_325<br/>STRUCTURAL; closure BLOCKED"]
   SignedIE326["SignedInclusionExclusionMinorAudit_326<br/>STRUCTURAL; closure BLOCKED"]
-  FullCover327["FullCoverClusterAudit_327<br/>OPEN next target"]
+  FullCover327["FullCoverClusterAudit_327<br/>STRUCTURAL; closure BLOCKED"]
+  CoverLoad328["FullCoverLoadCriterion_328<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -179,7 +180,8 @@ flowchart TD
   Collision324 --> GenericSplit325
   GenericSplit325 --> SignedIE326
   SignedIE326 --> FullCover327
-  FullCover327 --> AntiDiag312
+  FullCover327 --> CoverLoad328
+  CoverLoad328 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
