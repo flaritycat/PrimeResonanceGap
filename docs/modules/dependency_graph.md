@@ -81,7 +81,8 @@ flowchart TD
   CoverMoment330["PrimePartitionCoverMomentCriterion_330<br/>STRUCTURAL; counting rows OPEN"]
   PartitionCount331["PartitionClassCountingAudit_331<br/>STRUCTURAL; kernel residue rows OPEN"]
   KernelFiber332["KernelFiberPartitionAudit_332<br/>STRUCTURAL; dyadic residue rows OPEN"]
-  Dyadic333["DyadicResidueUniformityAudit_333<br/>OPEN next target"]
+  Dyadic333["DyadicResidueUniformityAudit_333<br/>STRUCTURAL; weighted row OPEN"]
+  Coarsening334["ExactPartitionCoarseningAudit_334<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -198,7 +199,8 @@ flowchart TD
   CoverMoment330 --> PartitionCount331
   PartitionCount331 --> KernelFiber332
   KernelFiber332 --> Dyadic333
-  Dyadic333 --> AntiDiag312
+  Dyadic333 --> Coarsening334
+  Coarsening334 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -257,6 +259,9 @@ flowchart TD
 - The Module 332 kernel-fiber audit states only a conditional absolute
   residue-mass criterion. Fourier support, Parseval, and the full-kernel
   diagnostic do not prove `|K_{U,V}^0|` residue uniformity.
+- The Module 333 dyadic residue audit proves only unweighted fixed-prime
+  interval-counting diagnostics. It does not prove weighted or masked
+  dyadic projection uniformity.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still

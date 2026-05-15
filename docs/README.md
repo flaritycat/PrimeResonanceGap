@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 332
-Active phase: Phase K, dyadic residue uniformity audit next
+Latest module frontier: Module 333
+Active phase: Phase K, exact partition coarsening audit next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -102,6 +102,7 @@ modules/
   module_330_prime_partition_cover_moment_criterion.md
   module_331_partition_class_counting_audit.md
   module_332_kernel_fiber_partition_audit.md
+  module_333_dyadic_residue_uniformity_audit.md
   modules_156_178_summary.md
 
 reviews/

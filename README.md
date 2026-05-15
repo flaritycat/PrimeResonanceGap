@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: dyadic residue uniformity audit after
-the kernel-fiber partition audit**.
+The current active phase is **Phase K: exact partition coarsening audit after
+the dyadic residue uniformity audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 332
-Active phase: Phase K, dyadic residue uniformity audit next
+Latest module frontier: Module 333
+Active phase: Phase K, exact partition coarsening audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -749,14 +749,20 @@ Module 332:
   conditions into a `t`-fiber row and a dyadic `d_1,d_2` row, states the
   conditional absolute kernel residue-mass criterion, and blocks the shortcut
   from Fourier support or full-kernel diagnostics to residue uniformity.
+
+Module 333:
+  audited the dyadic `d_1,d_2` projection. It records the fixed-prime
+  unweighted residue saving for the two-sided dyadic shell, names the finite
+  prime range condition needed to make boundary errors harmless, and leaves
+  the weighted/masked dyadic projection row open.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-332 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-333 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window, the signed minor-kernel row, or the
-generic/collision/full-cover/sharp-cover/Mobius-cover/dyadic-residue rows.
+generic/collision/full-cover/sharp-cover/Mobius-cover/coarsening rows.
 
 The next planned module is:
 
@@ -841,9 +847,14 @@ Module 332:
   classes forced by a partition class.
 
 Module 333:
-  perform DyadicResidueUniformityAudit_333(P_minor^0), deciding whether the
+  performed DyadicResidueUniformityAudit_333(P_minor^0), deciding whether the
   dyadic ranges for `d_1,d_2` provide the residue savings required by
   `pi_d(C)`, including off-diagonal and wrap conventions.
+
+Module 334:
+  perform ExactPartitionCoarseningAudit_334(P_minor^0), deciding how exact
+  partition inequalities relate to equality envelopes and whether coarsening
+  inclusion-exclusion preserves the same weighted row.
 ```
 
 ## What Is Proved?
@@ -959,7 +970,12 @@ Compact status table:
 | Kernel residue-mass criterion `KernelResidueMassCriterion_332` | **CONDITIONAL** |
 | Absolute minor-kernel residue uniformity `AbsoluteMinorKernelResidueUniformity_332` | **OPEN** |
 | Fourier support implying residue uniformity and kernel-fiber closure from Module 332 | **FALSE / BLOCKED** |
-| Dyadic residue uniformity audit `DyadicResidueUniformityAudit_333` | **OPEN next target** |
+| Dyadic residue uniformity audit `DyadicResidueUniformityAudit_333` | **STRUCTURAL / EXTRACTION** |
+| Bare dyadic residue count, fixed-prime dyadic saving, and off-diagonal removal from Module 333 | **STRUCTURAL / EXTRACTION** |
+| Uniform prime range criterion `UniformPrimeRangeCriterion_333` | **CONDITIONAL** |
+| Weighted dyadic projection and masked dyadic residue-uniformity rows from Module 333 | **OPEN** |
+| Current dyadic residue closure `CurrentDyadicResidueClosure_333` | **FALSE / BLOCKED** |
+| Exact partition coarsening audit `ExactPartitionCoarseningAudit_334` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1316,7 +1332,12 @@ wins.
 | `KernelResidueMassCriterion_332` | CONDITIONAL | Usable only if absolute L1 residue mass for the same localized kernel is proved |
 | `AbsoluteMinorKernelResidueUniformity_332` | OPEN | L1 residue uniformity for `|K_{U,V}^0|` remains missing |
 | `FourierSupportImpliesResidueUniformity_332 / KernelFiberCountingClosure_332` | FALSE / BLOCKED | Fourier support, Parseval, and current kernel bookkeeping do not close residue uniformity |
-| `DyadicResidueUniformityAudit_333(P_minor^0)` | OPEN | Next target |
+| `DyadicResidueUniformityAudit_333(P_minor^0)` | STRUCTURAL / EXTRACTION | Audits the two-sided dyadic residue count for projected shift classes |
+| `BareDyadicResidueCount_333 / FixedPrimeDyadicSaving_333 / OffDiagonalResidueRemoval_333` | STRUCTURAL / EXTRACTION | Unweighted interval counts and off-diagonal removal only |
+| `UniformPrimeRangeCriterion_333` | CONDITIONAL | Needs finite-prime range or weighted error summability beyond fixed-prime counting |
+| `WeightedDyadicProjectionRow_333 / MaskedDyadicResidueUniformity_333` | OPEN | Weighted and mask-sensitive residue rows remain missing |
+| `CurrentDyadicResidueClosure_333` | FALSE / BLOCKED | Bare dyadic counts do not prove the weighted projection row |
+| `ExactPartitionCoarseningAudit_334(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 332
-Post-Reflective_1 solving count: 151
-Long-term-plan count: 145
+Latest completed module: 333
+Post-Reflective_1 solving count: 152
+Long-term-plan count: 146
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -4134,4 +4134,63 @@ Module 333:
   dyadic ranges for d_1,d_2 provide the residue savings required by pi_d(C),
   with the off-diagonal condition, W-residue conventions, finite-cyclic wrap,
   and threshold masks still present.
+```
+
+Module 333 completed:
+
+```text
+DyadicResidueUniformityAudit_333(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+BareDyadicResidueCount_333:
+  STRUCTURAL / EXTRACTION.
+
+FixedPrimeDyadicSaving_333:
+  STRUCTURAL / EXTRACTION.
+
+UniformPrimeRangeCriterion_333:
+  CONDITIONAL.
+
+OffDiagonalResidueRemoval_333:
+  STRUCTURAL / EXTRACTION.
+
+MaskedDyadicResidueUniformity_333:
+  OPEN.
+
+WeightedDyadicProjectionRow_333:
+  OPEN.
+
+CurrentDyadicResidueClosure_333:
+  FALSE / BLOCKED.
+
+ExactPartitionCoarseningAudit_334(P_minor^0):
+  OPEN next target.
+```
+
+The audit records the elementary unweighted two-sided dyadic residue count:
+for fixed `p`, affine projected shift classes have the expected density up to
+boundary errors `O(p/D)+O(p^2/D^2)`. This is useful bookkeeping, but it does
+not prove the weighted projection row after the absolute localized kernel and
+data-dependent masks are inserted. Uniform finite-prime range control and
+masked dyadic residue uniformity remain open.
+
+The current cadence records:
+
+```text
+Latest completed module: 333
+Post-Reflective_1 solving count: 152
+Long-term-plan count: 146
+
+146 is not divisible by 9, so no plan update is due in this module.
+146 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 334:
+  perform ExactPartitionCoarseningAudit_334(P_minor^0), deciding how exact
+  partition inequalities relate to equality envelopes and whether coarsening
+  inclusion-exclusion preserves the same weighted row.
 ```

@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 332
-Active phase: Phase K, dyadic residue uniformity audit next
+Latest module frontier: Module 333
+Active phase: Phase K, exact partition coarsening audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -856,10 +856,17 @@ Completed kernel-fiber partition audit:
     ceilings as non-closures, and leaves absolute minor-kernel residue
     uniformity and dyadic residue uniformity open
 
+Completed dyadic residue uniformity audit:
+  DyadicResidueUniformityAudit_333(P_minor^0)
+    records the unweighted fixed-prime residue count for the two-sided dyadic
+    shell, identifies the `p/D` and `p^2/D^2` boundary errors, states the
+    conditional finite-prime range criterion, and leaves the weighted dyadic
+    projection and masked residue-uniformity rows open
+
 Next scheduled module:
-  Module 333 DyadicResidueUniformityAudit_333(P_minor^0)
+  Module 334 ExactPartitionCoarseningAudit_334(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed kernel-fiber partition
-audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed dyadic residue
+uniformity audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.
