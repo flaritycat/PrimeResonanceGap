@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: low-high tail coupling audit after the
-high-prime divisor window audit**.
+The current active phase is **Phase K: exact-zero tail diagonal audit after
+the low-high tail coupling audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 337
-Active phase: Phase K, low-high tail coupling audit next
+Latest module frontier: Module 338
+Active phase: Phase K, exact-zero tail diagonal audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -783,15 +783,22 @@ Module 337:
   low-envelope mass, exact-zero tail diagonals, and the cutoff compatibility
   window open. It also performs the tenth plan challenge and narrows the next
   target to low-high tail coupling.
+
+Module 338:
+  audited the coupled low-prime/high-prime tail product forced by
+  `Def_Z-Def_Y=(1+Def_Y)Def_{Y,Z}`. It records the positive low-high envelope
+  and three conditional routes through absorption, Cauchy, or decorrelation,
+  while leaving the actual weighted low-high rows open and blocking the
+  independence shortcut.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-337 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-338 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window, the signed minor-kernel row, or the
 generic/collision/full-cover/sharp-cover/Mobius-cover/CRT-mask/tail/window
-and coupling rows.
+coupling, and exact-zero diagonal rows.
 
 The next planned module is:
 
@@ -901,9 +908,14 @@ Module 337:
   kernel, masks, dyadic ranges, W-residue conventions, and cutoff order.
 
 Module 338:
-  perform LowHighTailCouplingAudit_338(P_minor^0), deciding whether the
+  performed LowHighTailCouplingAudit_338(P_minor^0), deciding whether the
   low-prime cover envelope can be multiplied by the high-prime divisor
   envelope under the same absolute kernel and masks.
+
+Module 339:
+  perform ExactZeroTailDiagonalAudit_339(P_minor^0), classifying exact lifted
+  zero differences in the high-prime tail row and deciding whether current
+  structural diagonal rows actually bound them.
 ```
 
 ## What Is Proved?
@@ -1045,7 +1057,12 @@ Compact status table:
 | Weighted divisor, low-envelope mass, and exact-zero tail diagonal rows from Module 337 | **OPEN** |
 | Divisor-window-only and current high-prime divisor closures from Module 337 | **FALSE / BLOCKED** |
 | Tenth plan challenge `PlanChallenge_10_337` | **STRUCTURAL / EXTRACTION** |
-| Low-high tail coupling audit `LowHighTailCouplingAudit_338` | **OPEN next target** |
+| Low-high tail coupling audit `LowHighTailCouplingAudit_338` | **STRUCTURAL / EXTRACTION** |
+| Cutoff product factorization and positive low-high envelope from Module 338 | **STRUCTURAL / EXTRACTION** |
+| Uniform low-mass absorption, Cauchy coupling, and divisor decorrelation criteria from Module 338 | **CONDITIONAL** |
+| Weighted low-high, low-envelope mass/second-moment, and high-divisor moment rows from Module 338 | **OPEN** |
+| Low-high independence shortcut and current low-high tail closure from Module 338 | **FALSE / BLOCKED** |
+| Exact-zero tail diagonal audit `ExactZeroTailDiagonalAudit_339` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1428,7 +1445,12 @@ wins.
 | `WeightedDivisorWindowRows_337 / LowEnvelopeMassRows_337 / ExactZeroTailDiagonalRows_337` | OPEN | Weighted divisor, low-prime envelope, and exact-zero tail diagonal rows remain missing |
 | `DivisorWindowOnlyClosure_337 / CurrentHighPrimeDivisorClosure_337` | FALSE / BLOCKED | Divisor-window diagnostics alone do not close finite-prime tail removal |
 | `PlanChallenge_10_337` | STRUCTURAL / EXTRACTION | Tenth plan challenge; narrows the next step to low-high coupling |
-| `LowHighTailCouplingAudit_338(P_minor^0)` | OPEN | Next target |
+| `LowHighTailCouplingAudit_338(P_minor^0)` | STRUCTURAL / EXTRACTION | Audits the low-prime cover envelope times the high-prime divisor envelope |
+| `CutoffProductFactorization_338 / PositiveLowHighEnvelope_338` | STRUCTURAL / EXTRACTION | Exact cutoff product and positive product envelope only |
+| `UniformLowMassAbsorptionCriterion_338 / CauchyCouplingCriterion_338 / DivisorDecorrelCriterion_338` | CONDITIONAL | Need proved low-mass, second-moment, or decorrelation estimates in the same family |
+| `WeightedLowHighCouplingRows_338 / LowEnvelopeMassRows_338 / LowEnvelopeSecondMomentRows_338 / HighDivisorMomentRows_338` | OPEN | The analytic rows needed by the product routes remain missing |
+| `LowHighIndependenceShortcut_338 / CurrentLowHighTailClosure_338` | FALSE / BLOCKED | Low-prime and high-prime factors share the same tuple, kernel, and masks |
+| `ExactZeroTailDiagonalAudit_339(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

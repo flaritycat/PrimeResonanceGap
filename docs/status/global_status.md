@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 337
-Active phase: Phase K, low-high tail coupling audit next
+Latest module frontier: Module 338
+Active phase: Phase K, exact-zero tail diagonal audit next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -896,10 +896,18 @@ Completed high-prime divisor window audit:
     tenth plan challenge, and leaves weighted divisor rows, low-envelope mass,
     exact-zero tail diagonals, and low-high coupling open
 
+Completed low-high tail coupling audit:
+  LowHighTailCouplingAudit_338(P_minor^0)
+    records the cutoff product factorization, a positive low-high envelope,
+    and conditional absorption/Cauchy/decorrelation routes, blocks the
+    low-high independence shortcut, and leaves weighted low-high coupling,
+    low-envelope mass and second moments, high-divisor moments, and exact-zero
+    tail diagonals open
+
 Next scheduled module:
-  Module 338 LowHighTailCouplingAudit_338(P_minor^0)
+  Module 339 ExactZeroTailDiagonalAudit_339(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed high-prime divisor
-window audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed low-high tail coupling
+audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

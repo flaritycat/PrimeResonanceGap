@@ -86,7 +86,8 @@ flowchart TD
   CRTMask335["MultiPrimeCRTMaskAudit_335<br/>STRUCTURAL; finite-prime tail OPEN"]
   Tail336["FinitePrimeTailCoverAudit_336<br/>STRUCTURAL; cutoff window OPEN"]
   DivWindow337["HighPrimeDivisorWindowAudit_337<br/>STRUCTURAL; low-high coupling OPEN"]
-  LowHigh338["LowHighTailCouplingAudit_338<br/>OPEN next target"]
+  LowHigh338["LowHighTailCouplingAudit_338<br/>STRUCTURAL; exact-zero diagonals OPEN"]
+  ExactZero339["ExactZeroTailDiagonalAudit_339<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -208,7 +209,8 @@ flowchart TD
   CRTMask335 --> Tail336
   Tail336 --> DivWindow337
   DivWindow337 --> LowHigh338
-  LowHigh338 --> AntiDiag312
+  LowHigh338 --> ExactZero339
+  ExactZero339 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -284,6 +286,9 @@ flowchart TD
   rows, low-envelope mass, exact-zero tail diagonals, and cutoff compatibility
   remain open; the tenth plan challenge narrows the next target to low-high
   coupling.
+- The Module 338 low-high tail coupling audit gives the product envelope and
+  conditional absorption, Cauchy, and decorrelation routes only. Weighted
+  low-high rows and exact-zero tail diagonals remain open.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still
