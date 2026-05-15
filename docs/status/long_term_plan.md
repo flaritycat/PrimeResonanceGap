@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 353
-Post-Reflective_1 solving count: 172
-Long-term-plan count: 166
+Latest completed module: 354
+Post-Reflective_1 solving count: 173
+Long-term-plan count: 167
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -5374,4 +5374,58 @@ Module 354:
   no-twist offset barrier can be controlled by a same-family threshold-mask
   norm theorem or whether the current masked anti-diagonal route is blocked
   without a new input.
+```
+
+Module 354 completed:
+
+```text
+NoTwistMaskBudgetFeasibility_354(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+NoTwistMassIdentity_354:
+  STRUCTURAL / EXTRACTION.
+
+NoTwistWeightedMassCriterion_354:
+  CONDITIONAL.
+
+NoTwistCurrentToolsClosure_354:
+  FALSE / BLOCKED.
+
+OscillationOnlyNoTwistRoute_354:
+  FALSE / BLOCKED.
+
+CoefficientOnlyNoTwistRoute_354:
+  FALSE / BLOCKED.
+
+ThresholdMaskMassRegularityAudit_355(P_minor^0):
+  OPEN next target.
+```
+
+The no-twist row is exactly the weighted off-diagonal shift-mass functional
+`M_{0,0}^{U,V}(xi)=D u(xi)v(xi)-o_{U,V}(xi)`. This gives a precise
+conditional criterion, but current oscillation, coefficient-only, fixed-set,
+row/column first-moment, and vacuous-removal inputs do not prove it. The next
+target is to test whether any existing threshold-mask regularity statement can
+feed this exact weighted mass criterion without assuming the endpoint.
+
+The current cadence records:
+
+```text
+Latest completed module: 354
+Post-Reflective_1 solving count: 173
+Long-term-plan count: 167
+
+167 is not divisible by 9, so no plan update is due in this module.
+167 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 355:
+  perform ThresholdMaskMassRegularityAudit_355(P_minor^0), deciding whether
+  the current threshold-mask definitions, row/column ceilings, low-level tail,
+  and removal bookkeeping imply the weighted no-twist mass criterion, or
+  whether a new same-family mask-regularity theorem is required.
 ```

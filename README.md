@@ -86,10 +86,11 @@ that fixed frequency-set estimates do not automatically control these
 data-dependent shells, and the remaining local side rows must still be proved
 before any Phase J kernel bound can be used. The later Phase K audits narrowed
 the row, column, anti-diagonal, cover, insertion, subset-discrepancy, and
-twisted-mask barriers. Module 353 now shows that larger fully coupled subset
-rows do not collapse to the same minimal pair-pair coefficient/mask package;
-they create higher-order shift-dependent coefficient rows. None of this proves
-the endpoint.
+twisted-mask barriers. Module 353 shows that larger fully coupled subset rows
+do not collapse to the same minimal pair-pair coefficient/mask package.
+Module 354 then identifies the no-twist mask row as an exact weighted
+off-diagonal shift-mass budget, still unproved by current tools. None of this
+proves the endpoint.
 
 ## The Whole Project In One Narrative
 
@@ -404,14 +405,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: no-twist mask feasibility after the
-larger fully coupled subset reduction audit**.
+The current active phase is **Phase K: threshold-mask mass regularity after
+the no-twist feasibility audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 353
-Active phase: Phase K, NoTwistMaskBudgetFeasibility_354 next
+Latest module frontier: Module 354
+Active phase: Phase K, ThresholdMaskMassRegularityAudit_355 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -998,6 +999,13 @@ Module 353:
   minimal rows from the 65 larger higher-order rows, blocking reduction of all
   fully coupled rows to the same pair-pair coefficient/mask package, and
   selecting NoTwistMaskBudgetFeasibility_354 as the next target.
+
+Module 354:
+  performed NoTwistMaskBudgetFeasibility_354(P_minor^0), extracting
+  M_{0,0}^{U,V}(xi)=D u(xi)v(xi)-o_{U,V}(xi), stating the conditional
+  weighted mass criterion, blocking oscillation-only and coefficient-only
+  no-twist closure, and selecting ThresholdMaskMassRegularityAudit_355 as the
+  next target.
 ```
 
 ## What Is Proved?
@@ -1222,7 +1230,13 @@ Compact status table:
 | Higher-order block coefficient rows from Module 353 | **OPEN** |
 | Same coefficient/mask package for all fully coupled rows from Module 353 | **FALSE / BLOCKED** |
 | Enumeration branch continuation from Module 353 | **FALSE / BLOCKED** |
-| No-twist mask budget feasibility `NoTwistMaskBudgetFeasibility_354` | **OPEN next target** |
+| No-twist mask budget feasibility `NoTwistMaskBudgetFeasibility_354` | **STRUCTURAL / EXTRACTION** |
+| No-twist mass identity from Module 354 | **STRUCTURAL / EXTRACTION** |
+| No-twist weighted mass criterion from Module 354 | **CONDITIONAL** |
+| Current no-twist tools closure from Module 354 | **FALSE / BLOCKED** |
+| Oscillation-only no-twist route from Module 354 | **FALSE / BLOCKED** |
+| Coefficient-only no-twist route from Module 354 | **FALSE / BLOCKED** |
+| Threshold-mask mass regularity audit `ThresholdMaskMassRegularityAudit_355` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1674,7 +1688,11 @@ wins.
 | `FullyCoupledBlockNormalForm_353 / LargerSubsetCoefficientCatalog_353` | STRUCTURAL / EXTRACTION | Exact normal form and 16/40/25 row split only |
 | `HigherOrderBlockCoefficientRows_353` | OPEN | The 65 larger fully coupled rows need same-family higher-order coefficient estimates |
 | `SameCoefficientMaskPackageForAllFullyCoupledRows_353 / EnumerationBranchContinuation_353` | FALSE / BLOCKED | Larger rows do not reduce to the minimal pair-pair package; enumeration should pause |
-| `NoTwistMaskBudgetFeasibility_354(P_minor^0)` | OPEN | Next named target after Module 353 |
+| `NoTwistMaskBudgetFeasibility_354(P_minor^0)` | STRUCTURAL / EXTRACTION | No-twist mask budget audited; no theorem upgraded |
+| `NoTwistMassIdentity_354` | STRUCTURAL / EXTRACTION | Exact identity `M_{0,0}^{U,V}=Duv-o_{U,V}` |
+| `NoTwistWeightedMassCriterion_354` | CONDITIONAL | Needs same-family weighted shift-mass estimates for threshold masks |
+| `NoTwistCurrentToolsClosure_354 / OscillationOnlyNoTwistRoute_354 / CoefficientOnlyNoTwistRoute_354` | FALSE / BLOCKED | Current tools, pure oscillation, and coefficient-only inputs do not close the row |
+| `ThresholdMaskMassRegularityAudit_355(P_minor^0)` | OPEN | Next named target after Module 354 |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

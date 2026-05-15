@@ -102,7 +102,8 @@ flowchart TD
   DefectSplit351["PairRectangleDefectSplit_351<br/>STRUCTURAL; pair and rectangle defects split"]
   TwistMask352["TwistedMaskBudgetAudit_352<br/>STRUCTURAL; mask transform identity extracted"]
   LargeSubset353["LargerFullyCoupledSubsetReductionAudit_353<br/>STRUCTURAL; larger rows do not compress"]
-  NoTwist354["NoTwistMaskBudgetFeasibility_354<br/>OPEN next target"]
+  NoTwist354["NoTwistMaskBudgetFeasibility_354<br/>STRUCTURAL; current tools BLOCKED"]
+  MaskMass355["ThresholdMaskMassRegularityAudit_355<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -240,7 +241,8 @@ flowchart TD
   DefectSplit351 --> TwistMask352
   TwistMask352 --> LargeSubset353
   LargeSubset353 --> NoTwist354
-  NoTwist354 --> SignedIE326
+  NoTwist354 --> MaskMass355
+  MaskMass355 --> SignedIE326
   MinPair348 --> SignedIE326
   SubsetDiscrep347 --> SignedIE326
   SignedInsertion346 --> SignedIE326
@@ -525,3 +527,7 @@ flowchart TD
   coupled rows create d-dependent higher-order block coefficients. They do
   not reduce to the minimal pair-pair coefficient/mask package, so the
   enumeration branch now points to the open no-twist mask feasibility target.
+- `NoTwistMaskBudgetFeasibility_354` identifies
+  `M_{0,0}^{U,V}=Duv-o_{U,V}` and blocks oscillation-only, coefficient-only,
+  and current-tool closure. The next open target is threshold-mask mass
+  regularity in the same `P_minor^0` family.

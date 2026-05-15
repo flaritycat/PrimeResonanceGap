@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 353
-Active phase: Phase K, NoTwistMaskBudgetFeasibility_354 next
+Latest module frontier: Module 354
+Active phase: Phase K, ThresholdMaskMassRegularityAudit_355 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -1019,11 +1019,20 @@ Completed larger fully coupled subset reduction audit:
     next move, and selects NoTwistMaskBudgetFeasibility_354(P_minor^0) as the
     next named target
 
+Completed no-twist mask budget feasibility audit:
+  NoTwistMaskBudgetFeasibility_354(P_minor^0)
+    extracts the exact no-twist mass identity
+    M_{0,0}^{U,V}=D u v-o_{U,V}, states the conditional weighted mass
+    criterion needed for threshold masks, blocks oscillation-only and
+    coefficient-only no-twist routes, records that current tools do not prove
+    the same-family mask-mass estimate, and selects
+    ThresholdMaskMassRegularityAudit_355(P_minor^0) as the next target
+
 Next scheduled module:
-  Module 354 NoTwistMaskBudgetFeasibility_354(P_minor^0)
+  Module 355 ThresholdMaskMassRegularityAudit_355(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed larger fully coupled
-subset reduction audit; `HigherOrderBlockCoefficientRows_353` and
-`NoTwistMaskBudgetFeasibility_354` remain **OPEN**.
+Status: **STRUCTURAL / EXTRACTION** for the completed no-twist mask budget
+feasibility audit; `NoTwistWeightedMassCriterion_354` and
+`ThresholdMaskMassRegularityAudit_355` remain **OPEN**.
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.
