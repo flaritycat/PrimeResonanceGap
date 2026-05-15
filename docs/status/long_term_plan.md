@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 368
-Post-Reflective_1 solving count: 187
-Long-term-plan count: 181
+Latest completed module: 369
+Post-Reflective_1 solving count: 188
+Long-term-plan count: 182
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -6260,4 +6260,63 @@ Module 369:
   off-diagonal shifted-prime covariance object inside
   SameFamilyPairBDHVarianceTarget_368, including the same model convention
   used in Modules 363-368.
+```
+
+Module 369 completed:
+
+```text
+PairResidualCovarianceIsolation_369(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+PairResidualCovarianceDecomposition_369:
+  PROVEN.
+
+NondegenerateRectangleCovarianceObject_369:
+  STRUCTURAL / EXTRACTION.
+
+DegenerateRectangleStrataCatalog_369:
+  STRUCTURAL / EXTRACTION.
+
+WeightedPairResidualCorrelationTarget_369:
+  OPEN.
+
+RectangleDiagonalModelDefectTarget_369:
+  OPEN.
+
+FirstMomentRectangleHLShortcut_369:
+  FALSE / BLOCKED.
+
+SameFamilyPairBDHVarianceTarget_368:
+  OPEN.
+```
+
+Best target selection: Module 369 was the right attack because Module 368
+identified the pair-residual Fourier energy as the missing same-family
+variance input. The proof attack decomposes that energy into a nondegenerate
+same-shift rectangle covariance row, degenerate rectangle strata, a weighted
+pair-residual cross term, and a rectangle-diagonal model-defect row. It also
+blocks the shortcut from generic first-moment rectangle HL to the full
+variance target.
+
+The current cadence records:
+
+```text
+Latest completed module: 369
+Post-Reflective_1 solving count: 188
+Long-term-plan count: 182
+
+182 is not divisible by 9, so no plan update is due in this module.
+182 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 370:
+  perform PairResidualVarianceInputVerdict_370(P_minor^0), deciding whether
+  the covariance rows isolated in Module 369 are smaller than the original
+  pair-residual energy target, or whether they show that the no-twist
+  anti-diagonal route requires a genuinely new same-family pair variance
+  theorem.
 ```
