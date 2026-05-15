@@ -3852,3 +3852,70 @@ Module 329:
   full-cover, and generic singleton partitions, and decide what powers of
   1/p are actually present before any cover-load smallness claim is made.
 ```
+
+Module 329 completed:
+
+```text
+PrimePartitionMobiusAudit_329(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+PrimePartitionDefectFormula_329:
+  STRUCTURAL / EXTRACTION.
+
+MobiusDegreeBound_329:
+  STRUCTURAL / EXTRACTION.
+
+PairBlockWeight_329:
+  STRUCTURAL / EXTRACTION.
+
+SingletonAppendagePenalty_329:
+  STRUCTURAL / EXTRACTION.
+
+OnePrimeFullCoverPowerTable_329:
+  STRUCTURAL / EXTRACTION.
+
+PrimeMobiusSmallness_329:
+  OPEN.
+
+PartitionClassCounting_329:
+  OPEN.
+
+KernelWeightedMobiusCoverRows_329:
+  OPEN.
+
+CurrentPrimeMobiusClosure_329:
+  FALSE / BLOCKED.
+
+PrimePartitionCoverMomentCriterion_330(P_minor^0):
+  OPEN next target.
+```
+
+The audit proves only prime-local pointwise algebra. It gives
+`delta_{p,S}=e_p(S)/(p-|S|)`, records that singleton appendages enter through
+the denominator at extra powers of `1/p`, and bounds
+`mu_p(T)<=C_8 p^{-(1+|T|-b_max(T,p))}` for `p>8`. It does not count partition
+classes, remove finite-prime tails, handle kernel weights, or insert the local
+model into the physical row.
+
+The current cadence records:
+
+```text
+Latest completed module: 329
+Post-Reflective_1 solving count: 148
+Long-term-plan count: 142
+
+142 is not divisible by 9, so no plan update is due in this module.
+142 is not divisible by 15, so no plan challenge is due in this module.
+Next reflective log remains expected around Module 341.
+```
+
+Continue with:
+
+```text
+Module 330:
+  perform PrimePartitionCoverMomentCriterion_330(P_minor^0), combining the
+  pointwise Mobius-degree table with partition-class counting, kernel weights,
+  finite-prime tails, dyadic ranges, and the W-limit order. It should decide
+  whether any current counting/rank inputs can prove a non-endpoint
+  kernel-weighted Mobius-cover moment, or whether the route remains blocked.
+```

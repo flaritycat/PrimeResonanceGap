@@ -98,6 +98,7 @@ modules/
   module_326_signed_inclusion_exclusion_minor_audit.md
   module_327_full_cover_cluster_audit.md
   module_328_full_cover_load_criterion.md
+  module_329_prime_partition_mobius_audit.md
   modules_156_178_summary.md
 
 reviews/

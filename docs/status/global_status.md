@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 328
-Active phase: Phase K, prime-partition Mobius audit next
+Latest module frontier: Module 329
+Active phase: Phase K, prime-partition cover-moment criterion next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -823,10 +823,17 @@ Completed full-cover load criterion:
     blocks crude-cover-as-exact, first-load, energy-only, and rank-only
     closure routes, and leaves SharpCoverSmallness_328 open
 
+Completed prime-partition Mobius audit:
+  PrimePartitionMobiusAudit_329(P_minor^0)
+    derives the prime-local defect formula, singleton-appendage penalty,
+    pointwise Mobius-degree bound, pair-block examples, and one-prime
+    full-cover power table; it leaves partition-class counting,
+    kernel-weighted Mobius-cover rows, and PrimeMobiusSmallness_329 open
+
 Next scheduled module:
-  Module 329 PrimePartitionMobiusAudit_329(P_minor^0)
+  Module 330 PrimePartitionCoverMomentCriterion_330(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed full-cover load
-criterion;
+Status: **STRUCTURAL / EXTRACTION** for the completed prime-partition Mobius
+audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

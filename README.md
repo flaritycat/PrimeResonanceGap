@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: prime-partition Mobius audit after the
-full-cover load criterion**.
+The current active phase is **Phase K: prime-partition cover-moment criterion
+after the prime-partition Mobius audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 328
-Active phase: Phase K, prime-partition Mobius audit next
+Latest module frontier: Module 329
+Active phase: Phase K, prime-partition cover-moment criterion next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -723,14 +723,20 @@ Module 328:
   Mobius coefficients. It blocks reading the crude edge cover load as the
   exact signed coefficient, and it blocks first-load, energy-only, and
   rank-only routes as current closures.
+
+Module 329:
+  audited the prime-local Mobius weights themselves. It derives
+  delta_{p,S}=e_p(S)/(p-|S|), the singleton-appendage penalty, the
+  pointwise Mobius-degree bound, and a one-prime full-cover power table.
+  Partition counting and kernel-weighted Mobius-cover rows remain open.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-328 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-329 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window, the signed minor-kernel row, or the
-generic/collision/full-cover/sharp-cover rows.
+generic/collision/full-cover/sharp-cover/Mobius-cover rows.
 
 The next planned module is:
 
@@ -795,8 +801,13 @@ Module 328:
   load moments can actually supply.
 
 Module 329:
-  perform PrimePartitionMobiusAudit_329(P_minor^0), computing or bounding the
+  performed PrimePartitionMobiusAudit_329(P_minor^0), computing or bounding the
   prime-local Mobius weights that enter the sharp cover functional.
+
+Module 330:
+  perform PrimePartitionCoverMomentCriterion_330(P_minor^0), combining the
+  pointwise Mobius-degree table with partition-counting, kernel weights, and
+  finite-prime tails.
 ```
 
 ## What Is Proved?
@@ -893,7 +904,11 @@ Compact status table:
 | Kernel-weighted sharp cover criterion from Module 328 | **CONDITIONAL** |
 | Sharp cover smallness `SharpCoverSmallness_328` | **OPEN** |
 | Crude cover load as exact coefficient, first-load, energy-only, and rank-only cover routes | **FALSE / BLOCKED** |
-| Prime-partition Mobius audit `PrimePartitionMobiusAudit_329` | **OPEN next target** |
+| Prime-partition Mobius audit `PrimePartitionMobiusAudit_329` | **STRUCTURAL / EXTRACTION** |
+| Prime-partition defect formula, Mobius-degree bound, pair-block weights, singleton penalty, and one-prime power table from Module 329 | **STRUCTURAL / EXTRACTION** |
+| Prime Mobius smallness, partition-class counting, and kernel-weighted Mobius-cover rows from Module 329 | **OPEN** |
+| Current prime-Mobius closure `CurrentPrimeMobiusClosure_329` | **FALSE / BLOCKED** |
+| Prime-partition cover-moment criterion `PrimePartitionCoverMomentCriterion_330` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1230,7 +1245,12 @@ wins.
 | `KernelWeightedSharpCoverCriterion_328` | CONDITIONAL | Usable only if the same-family kernel-weighted sharp cover estimate is proved |
 | `SharpCoverSmallness_328` | OPEN | Needed kernel-weighted sharp-cover smallness remains missing |
 | `CrudeCoverLoadAsExactCoefficient_328 / FirstLoadCoverRoute_328 / EnergyOnlyCoverRoute_328 / RankOnlyCoverRoute_328` | FALSE / BLOCKED | Current crude-load, first-load, energy-only, and rank-only routes do not close the cover row |
-| `PrimePartitionMobiusAudit_329(P_minor^0)` | OPEN | Next target |
+| `PrimePartitionMobiusAudit_329(P_minor^0)` | STRUCTURAL / EXTRACTION | Computes prime-local Mobius weights by partition shape; no averaging follows |
+| `PrimePartitionDefectFormula_329 / MobiusDegreeBound_329` | STRUCTURAL / EXTRACTION | Gives `delta_{p,S}=e_p(S)/(p-|S|)` and `mu_p(T)<=C_8 p^{-(1+|T|-b_max)}` |
+| `PairBlockWeight_329 / SingletonAppendagePenalty_329 / OnePrimeFullCoverPowerTable_329` | STRUCTURAL / EXTRACTION | Pointwise examples and one-prime full-cover power table only |
+| `PrimeMobiusSmallness_329 / PartitionClassCounting_329 / KernelWeightedMobiusCoverRows_329` | OPEN | Counting, kernel-weighted estimates, and tails remain missing |
+| `CurrentPrimeMobiusClosure_329` | FALSE / BLOCKED | Prime-local Mobius algebra does not close the cover row |
+| `PrimePartitionCoverMomentCriterion_330(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
