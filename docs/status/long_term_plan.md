@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 364
-Post-Reflective_1 solving count: 183
-Long-term-plan count: 177
+Latest completed module: 365
+Post-Reflective_1 solving count: 184
+Long-term-plan count: 178
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -5992,4 +5992,60 @@ Module 365:
   can be converted into the minor-frequency top-mass bound needed for
   PairModelMinorTopMassTarget_361, or whether range/spacing losses keep the
   pair-model tail endpoint-strength.
+```
+
+Module 365 completed:
+
+```text
+FiniteCyclicRamanujanLargeSieveAudit_365(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+FiniteDirichletKernelRowSum_365:
+  PROVEN.
+
+RamanujanTailPointwiseBound_365:
+  PROVEN.
+
+RamanujanTailTopMassCriterion_365:
+  CONDITIONAL.
+
+SquareTailAloneClosure_365:
+  FALSE / BLOCKED.
+
+CurrentFiniteCyclicLargeSieveClosure_365:
+  FALSE / BLOCKED.
+
+FiniteCyclicRamanujanLargeSieveTarget_364:
+  OPEN.
+```
+
+The proof attack proves the finite row-sum bound
+`sum_{r mod q}|A_N(t+r/q)| <= C(1+(q/N)log(2N))`, and hence the pointwise
+Ramanujan tail estimate
+`|T_{Q,z,+}(xi)| <= C U_{Q,z}+C(log(2N)/N)V_{Q,z}`. This converts the
+high-denominator branch into an explicit range assembly problem. Square
+coefficient summability alone does not close the tail, because the
+finite-cyclic kernel contributes the `V_{Q,z}` range term and the Module 363
+diagonal row remains to be assembled.
+
+The current cadence records:
+
+```text
+Latest completed module: 365
+Post-Reflective_1 solving count: 184
+Long-term-plan count: 178
+
+178 is not divisible by 9, so no plan update is due in this module.
+178 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 366:
+  perform PairModelRangeAssemblyAudit_366(P_minor^0), testing whether one
+  admissible choice of Q,z and diagonal convention can make the low-denominator
+  leakage, high-denominator Ramanujan tail, and finite diagonal row
+  simultaneously small enough for PairModelMinorTopMassTarget_361.
 ```

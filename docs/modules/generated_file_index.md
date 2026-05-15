@@ -28,7 +28,7 @@
 | `docs\modules\dependency_graph.md` | 32487 |
 | `docs\modules\generated_250_page_index.md` | 16201 |
 | `docs\modules\generated_500_page_index.md` | 31915 |
-| `docs\modules\generated_file_index.md` | 16104 |
+| `docs\modules\generated_file_index.md` | 16190 |
 | `docs\modules\generated_index.md` | 32419 |
 | `docs\modules\module_178_residual_cube.md` | 2671 |
 | `docs\modules\module_179_fourier_major_minor.md` | 8654 |
@@ -213,6 +213,7 @@
 | `docs\modules\module_362_pair_model_minor_topmass_stress.md` | 11333 |
 | `docs\modules\module_363_pair_model_diagonal_convention_audit.md` | 14741 |
 | `docs\modules\module_364_pair_model_offdiagonal_ramanujan_tail_audit.md` | 14380 |
+| `docs\modules\module_365_finite_cyclic_ramanujan_large_sieve_audit.md` | 12989 |
 | `docs\modules\modules_156_178_summary.md` | 34604 |
 | `docs\paper\Prime_Resonance_Gap_500_Page_Paper.txt` | 1285247 |
 | `docs\README.md` | 6435 |
@@ -220,7 +221,7 @@
 | `docs\status\endpoint_status.md` | 849 |
 | `docs\status\forbidden_upgrades.md` | 1574 |
 | `docs\status\global_status.md` | 53123 |
-| `docs\status\long_term_plan.md` | 174518 |
+| `docs\status\long_term_plan.md` | 176068 |
 | `docs\status\selector_taxonomy.md` | 1015 |
 | `docs\status\status_ledger.json` | 878 |
 | `docs\status\theorem_status_index.md` | 83990 |
