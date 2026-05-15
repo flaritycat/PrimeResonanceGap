@@ -93,7 +93,8 @@ flowchart TD
   MinQuad349["MinimalFullyCoupledQuadrupleAudit_349<br/>STRUCTURAL; pair-pair anti-diagonal extracted"]
   PairPair350["AntiDiagonalPairPairDiscrepancyAudit_350<br/>STRUCTURAL; coefficient plus mask budget extracted"]
   DefectSplit351["PairRectangleDefectSplit_351<br/>STRUCTURAL; pair and rectangle defects split"]
-  TwistMask352["TwistedMaskBudgetAudit_352<br/>OPEN next target"]
+  TwistMask352["TwistedMaskBudgetAudit_352<br/>STRUCTURAL; mask transform identity extracted"]
+  LargeSubset353["LargerFullyCoupledSubsetReductionAudit_353<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -229,7 +230,8 @@ flowchart TD
   MinQuad349 --> PairPair350
   PairPair350 --> DefectSplit351
   DefectSplit351 --> TwistMask352
-  TwistMask352 --> SignedIE326
+  TwistMask352 --> LargeSubset353
+  LargeSubset353 --> SignedIE326
   MinPair348 --> SignedIE326
   SubsetDiscrep347 --> SignedIE326
   SignedInsertion346 --> SignedIE326

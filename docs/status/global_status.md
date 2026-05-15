@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 351
-Active phase: Phase K, TwistedMaskBudgetAudit_352 next
+Latest module frontier: Module 352
+Active phase: Phase K, LargerFullyCoupledSubsetReductionAudit_353 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -1001,12 +1001,19 @@ Completed pair-rectangle defect split:
     closure and the split itself as row closure; and leaves
     TwistedMaskBudgetAudit_352 as the next target
 
+Completed twisted mask budget audit:
+  TwistedMaskBudgetAudit_352(P_minor^0)
+    factors the twisted mask coefficient into transform products minus the
+    excluded diagonal, states conditional same-family mask-budget criteria,
+    isolates the no-twist offset barrier, blocks coefficient-only closure and
+    current twisted-mask budget closure, performs PlanChallenge_11_352, and
+    leaves LargerFullyCoupledSubsetReductionAudit_353 as the next target
+
 Next scheduled module:
-  Module 352 TwistedMaskBudgetAudit_352(P_minor^0)
+  Module 353 LargerFullyCoupledSubsetReductionAudit_353(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed pair-rectangle defect
-split; `PairResidualCriteria_351` and
-`RectangleDefectCoefficientCriterion_351` are **CONDITIONAL**, and the
-anti-diagonal rows remain **OPEN**.
+Status: **STRUCTURAL / EXTRACTION** for the completed twisted mask budget
+audit; `MaskBudgetCriteria_352` is **CONDITIONAL**, and the anti-diagonal
+rows remain **OPEN**.
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

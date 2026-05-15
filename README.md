@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: twisted-mask budget audit after the
-pair/rectangle defect split**.
+The current active phase is **Phase K: larger fully coupled subset reduction
+after the twisted-mask budget audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 351
-Active phase: Phase K, TwistedMaskBudgetAudit_352 next
+Latest module frontier: Module 352
+Active phase: Phase K, LargerFullyCoupledSubsetReductionAudit_353 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -992,6 +992,12 @@ Module 351:
   Delta_pairpair^349 into pair-residual quadratic, pair-residual linear, and
   exact rectangle product-defect pieces, blocking pair-only closure, and
   selecting the twisted-mask budget audit as the next target.
+
+Module 352:
+  performed TwistedMaskBudgetAudit_352(P_minor^0), factoring the twisted mask
+  coefficient into d-transform products minus the excluded diagonal, stating
+  conditional mask-budget criteria, isolating the no-twist offset barrier,
+  blocking coefficient-only closure, and completing PlanChallenge_11_352.
 ```
 
 ## What Is Proved?
@@ -1203,7 +1209,14 @@ Compact status table:
 | Rectangle defect coefficient criterion from Module 351 | **CONDITIONAL** |
 | Pair-only closure shortcut from Module 351 | **FALSE / BLOCKED** |
 | Current defect split closes rows from Module 351 | **FALSE / BLOCKED** |
-| Twisted mask budget audit `TwistedMaskBudgetAudit_352` | **OPEN next target** |
+| Twisted mask budget audit `TwistedMaskBudgetAudit_352` | **STRUCTURAL / EXTRACTION** |
+| Exact twisted mask transform identity from Module 352 | **STRUCTURAL / EXTRACTION** |
+| Mask budget criteria from Module 352 | **CONDITIONAL** |
+| No-twist offset barrier from Module 352 | **STRUCTURAL / EXTRACTION** |
+| Coefficient-only closure shortcut from Module 352 | **FALSE / BLOCKED** |
+| Current twisted-mask budget closure from Module 352 | **FALSE / BLOCKED** |
+| Eleventh plan challenge `PlanChallenge_11_352` | **STRUCTURAL / EXTRACTION** |
+| Larger fully coupled subset reduction audit `LargerFullyCoupledSubsetReductionAudit_353` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1646,7 +1659,12 @@ wins.
 | `PairResidualProductIdentity_351 / AntiDiagonalDefectDecomposition_351` | STRUCTURAL / EXTRACTION | Exact physical and anti-diagonal decompositions |
 | `PairResidualCriteria_351 / RectangleDefectCoefficientCriterion_351` | CONDITIONAL | Need same-family pair residual and rectangle-defect estimates |
 | `PairOnlyClosureShortcut_351 / CurrentDefectSplitClosesRows_351` | FALSE / BLOCKED | Pair control alone and the split alone do not close the rows |
-| `TwistedMaskBudgetAudit_352(P_minor^0)` | OPEN | Next target |
+| `TwistedMaskBudgetAudit_352(P_minor^0)` | STRUCTURAL / EXTRACTION | Twisted mask functional factored; no budget proved |
+| `ExactTwistedMaskTransformIdentity_352 / NoTwistOffsetBarrier_352` | STRUCTURAL / EXTRACTION | Exact transform-minus-diagonal identity and no-twist barrier |
+| `MaskBudgetCriteria_352` | CONDITIONAL | Needs same-family mask norms for the data-dependent threshold masks |
+| `CoefficientOnlyClosureShortcut_352 / CurrentTwistedMaskBudgetClosure_352` | FALSE / BLOCKED | Coefficient estimates and current tools do not supply the masked row |
+| `PlanChallenge_11_352` | STRUCTURAL / EXTRACTION | Eleventh challenge: one bounded larger-subset test, then pause if no compression |
+| `LargerFullyCoupledSubsetReductionAudit_353(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

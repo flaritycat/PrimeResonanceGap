@@ -100,7 +100,8 @@ flowchart TD
   MinQuad349["MinimalFullyCoupledQuadrupleAudit_349<br/>STRUCTURAL; pair-pair anti-diagonal extracted"]
   PairPair350["AntiDiagonalPairPairDiscrepancyAudit_350<br/>STRUCTURAL; coefficient plus mask budget extracted"]
   DefectSplit351["PairRectangleDefectSplit_351<br/>STRUCTURAL; pair and rectangle defects split"]
-  TwistMask352["TwistedMaskBudgetAudit_352<br/>OPEN next target"]
+  TwistMask352["TwistedMaskBudgetAudit_352<br/>STRUCTURAL; mask transform identity extracted"]
+  LargeSubset353["LargerFullyCoupledSubsetReductionAudit_353<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -236,7 +237,8 @@ flowchart TD
   MinQuad349 --> PairPair350
   PairPair350 --> DefectSplit351
   DefectSplit351 --> TwistMask352
-  TwistMask352 --> SignedIE326
+  TwistMask352 --> LargeSubset353
+  LargeSubset353 --> SignedIE326
   MinPair348 --> SignedIE326
   SubsetDiscrep347 --> SignedIE326
   SignedInsertion346 --> SignedIE326
@@ -362,6 +364,9 @@ flowchart TD
 - The Module 351 pair-rectangle defect split separates pair-residual
   quadratic/linear pieces from the exact product-vs-rectangle defect. Pair
   control alone still does not close the masked anti-diagonal row.
+- The Module 352 twisted mask budget audit factors the mask functional into
+  twisted d-transform products minus the excluded diagonal. It exposes the
+  no-twist offset and keeps the same-family mask budget open.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still
