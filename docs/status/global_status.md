@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 338
-Active phase: Phase K, exact-zero tail diagonal audit next
+Latest module frontier: Module 339
+Active phase: Phase K, cover-moment route verdict next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -904,10 +904,18 @@ Completed low-high tail coupling audit:
     low-envelope mass and second moments, high-divisor moments, and exact-zero
     tail diagonals open
 
+Completed exact-zero tail diagonal audit:
+  ExactZeroTailDiagonalAudit_339(P_minor^0)
+    catalogs lifted exact-zero internal and cross diagonals, states
+    conditional exact-zero absorption and structural-diagonal transfer
+    criteria, blocks cyclic-lift and diagonal-codimension shortcuts, and
+    leaves exact-zero weighted, internal-zero kernel, and cross-zero kernel
+    rows open
+
 Next scheduled module:
-  Module 339 ExactZeroTailDiagonalAudit_339(P_minor^0)
+  Module 340 CoverMomentRouteVerdict_340(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed low-high tail coupling
-audit;
+Status: **STRUCTURAL / EXTRACTION** for the completed exact-zero tail
+diagonal audit;
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.

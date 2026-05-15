@@ -7,8 +7,8 @@ Project.
 ## Current Frontier
 
 ```text
-Latest module frontier: Module 338
-Active phase: Phase K, exact-zero tail diagonal audit next
+Latest module frontier: Module 339
+Active phase: Phase K, cover-moment route verdict next
 Latest project-wide review: docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
 
@@ -108,6 +108,7 @@ modules/
   module_336_finite_prime_tail_cover_audit.md
   module_337_high_prime_divisor_window_audit.md
   module_338_low_high_tail_coupling_audit.md
+  module_339_exact_zero_tail_diagonal_audit.md
   modules_156_178_summary.md
 
 reviews/

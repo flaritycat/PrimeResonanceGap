@@ -87,7 +87,8 @@ flowchart TD
   Tail336["FinitePrimeTailCoverAudit_336<br/>STRUCTURAL; cutoff window OPEN"]
   DivWindow337["HighPrimeDivisorWindowAudit_337<br/>STRUCTURAL; low-high coupling OPEN"]
   LowHigh338["LowHighTailCouplingAudit_338<br/>STRUCTURAL; exact-zero diagonals OPEN"]
-  ExactZero339["ExactZeroTailDiagonalAudit_339<br/>OPEN next target"]
+  ExactZero339["ExactZeroTailDiagonalAudit_339<br/>STRUCTURAL; route verdict next"]
+  CoverVerdict340["CoverMomentRouteVerdict_340<br/>OPEN next target"]
   PhaseKernel0["PhaseKernelBound_273^0 over P_minor^0<br/>OPEN"]
   SelectorTransfer["Selector transfer packages<br/>OPEN / MIXED"]
   BoundaryTransfer["Boundary, W, prime-power transfer<br/>OPEN / CONDITIONAL"]
@@ -210,7 +211,8 @@ flowchart TD
   Tail336 --> DivWindow337
   DivWindow337 --> LowHigh338
   LowHigh338 --> ExactZero339
-  ExactZero339 --> AntiDiag312
+  ExactZero339 --> CoverVerdict340
+  CoverVerdict340 --> AntiDiag312
   WPair311 --> ThresholdP0
   ColumnPair310 --> ThresholdP0
   ColumnDist309 --> ThresholdP0
@@ -289,6 +291,9 @@ flowchart TD
 - The Module 338 low-high tail coupling audit gives the product envelope and
   conditional absorption, Cauchy, and decorrelation routes only. Weighted
   low-high rows and exact-zero tail diagonals remain open.
+- The Module 339 exact-zero tail diagonal audit is a lifted-zero catalog plus
+  conditional absorption/transfer criteria only. Codimension and cyclic-lift
+  shortcuts do not prove the weighted zero-tail row.
 - `XiDualPhaseExpansion_279` is an identity ledger. It does not transfer
   fixed frequency-set estimates to data-dependent shells.
 - `FixedSetShellAudit_280` blocks automatic transfer; the open routes still

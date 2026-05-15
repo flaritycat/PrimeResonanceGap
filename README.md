@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: exact-zero tail diagonal audit after
-the low-high tail coupling audit**.
+The current active phase is **Phase K: cover-moment route verdict after the
+exact-zero tail diagonal audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 338
-Active phase: Phase K, exact-zero tail diagonal audit next
+Latest module frontier: Module 339
+Active phase: Phase K, cover-moment route verdict next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -790,10 +790,17 @@ Module 338:
   and three conditional routes through absorption, Cauchy, or decorrelation,
   while leaving the actual weighted low-high rows open and blocking the
   independence shortcut.
+
+Module 339:
+  audited exact lifted zero differences in the tail row. It catalogs the
+  internal and cross exact-zero diagonals, states conditional absorption and
+  structural-diagonal transfer criteria, and blocks cyclic-lift and
+  codimension shortcuts because the same low-prime envelope, zero-tail
+  contribution, absolute kernel, masks, and limit order remain in the row.
 ```
 
 The next step should not claim threshold closure. The local low-level tail is
-handled, vacuous removal is only bookkeeping, and Modules 300-338 show that
+handled, vacuous removal is only bookkeeping, and Modules 300-339 show that
 the existing first-energy, row-distribution, row-square, fixed-fiber, column,
 weighted-pair, autocorrelation, centered full-row, and major-correction inputs
 do not prove the threshold window, the signed minor-kernel row, or the
@@ -913,9 +920,14 @@ Module 338:
   envelope under the same absolute kernel and masks.
 
 Module 339:
-  perform ExactZeroTailDiagonalAudit_339(P_minor^0), classifying exact lifted
+  performed ExactZeroTailDiagonalAudit_339(P_minor^0), classifying exact lifted
   zero differences in the high-prime tail row and deciding whether current
   structural diagonal rows actually bound them.
+
+Module 340:
+  perform CoverMomentRouteVerdict_340(P_minor^0), deciding whether the
+  cover-moment route is blocked by the open finite-side, tail, low-high, and
+  exact-zero rows or whether one narrower analytic row remains plausible.
 ```
 
 ## What Is Proved?
@@ -1062,7 +1074,12 @@ Compact status table:
 | Uniform low-mass absorption, Cauchy coupling, and divisor decorrelation criteria from Module 338 | **CONDITIONAL** |
 | Weighted low-high, low-envelope mass/second-moment, and high-divisor moment rows from Module 338 | **OPEN** |
 | Low-high independence shortcut and current low-high tail closure from Module 338 | **FALSE / BLOCKED** |
-| Exact-zero tail diagonal audit `ExactZeroTailDiagonalAudit_339` | **OPEN next target** |
+| Exact-zero tail diagonal audit `ExactZeroTailDiagonalAudit_339` | **STRUCTURAL / EXTRACTION** |
+| Lifted zero, internal diagonal, and cross diagonal catalogs from Module 339 | **STRUCTURAL / EXTRACTION** |
+| Exact-zero absorption and structural-diagonal transfer criteria from Module 339 | **CONDITIONAL** |
+| Exact-zero weighted, internal-zero kernel, and cross-zero kernel rows from Module 339 | **OPEN** |
+| Cyclic-lift and diagonal-codimension shortcuts from Module 339 | **FALSE / BLOCKED** |
+| Cover-moment route verdict `CoverMomentRouteVerdict_340` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1450,7 +1467,12 @@ wins.
 | `UniformLowMassAbsorptionCriterion_338 / CauchyCouplingCriterion_338 / DivisorDecorrelCriterion_338` | CONDITIONAL | Need proved low-mass, second-moment, or decorrelation estimates in the same family |
 | `WeightedLowHighCouplingRows_338 / LowEnvelopeMassRows_338 / LowEnvelopeSecondMomentRows_338 / HighDivisorMomentRows_338` | OPEN | The analytic rows needed by the product routes remain missing |
 | `LowHighIndependenceShortcut_338 / CurrentLowHighTailClosure_338` | FALSE / BLOCKED | Low-prime and high-prime factors share the same tuple, kernel, and masks |
-| `ExactZeroTailDiagonalAudit_339(P_minor^0)` | OPEN | Next target |
+| `ExactZeroTailDiagonalAudit_339(P_minor^0)` | STRUCTURAL / EXTRACTION | Audits exact lifted zero differences in the high-prime tail row |
+| `LiftedZeroCatalog_339 / InternalZeroDiagonalCatalog_339 / CrossZeroDiagonalCatalog_339` | STRUCTURAL / EXTRACTION | Internal and sixteen cross lifted-zero diagonal catalogs only |
+| `ExactZeroTailAbsorptionCriterion_339 / StructuralDiagonalTransferCriterion_339` | CONDITIONAL | Need same-family weighted exact-zero absorption or structural diagonal transfer with all tail weights |
+| `ExactZeroWeightedRows_339 / InternalZeroKernelRows_339 / CrossZeroKernelRows_339` | OPEN | Exact-zero weighted rows remain missing |
+| `CyclicLiftShortcut_339 / DiagonalCodimensionShortcut_339 / CurrentExactZeroTailClosure_339` | FALSE / BLOCKED | Cyclic/lift identification and codimension counting do not prove the weighted zero-tail row |
+| `CoverMomentRouteVerdict_340(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |
