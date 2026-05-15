@@ -33,9 +33,9 @@ future working protocol.
 Current anchor:
 
 ```text
-Latest completed module: 349
-Post-Reflective_1 solving count: 168
-Long-term-plan count: 162
+Latest completed module: 350
+Post-Reflective_1 solving count: 169
+Long-term-plan count: 163
 ```
 
 This adoption document is checkpoint `P0`. The 9- and 15-iteration cadences
@@ -5138,4 +5138,63 @@ Module 353:
   only after the minimal quadruple row is classified, decide whether larger
   fully coupled subsets can be reduced by the same pair-pair mechanism or
   require separate high-order local-model insertion rows.
+```
+
+Module 350 completed:
+
+```text
+AntiDiagonalPairPairDiscrepancyAudit_350(P_minor^0):
+  STRUCTURAL / EXTRACTION.
+
+AntiDiagonalCoefficientIdentity_350:
+  STRUCTURAL / EXTRACTION.
+
+TwistedMaskPairingIdentity_350:
+  STRUCTURAL / EXTRACTION.
+
+CoefficientNormCriteria_350:
+  CONDITIONAL.
+
+UnweightedCoefficientShortcut_350:
+  FALSE / BLOCKED.
+
+CurrentPairRectangleCoefficientClosure_350:
+  FALSE / BLOCKED.
+
+AntiDiagonalPairPairRows_350:
+  OPEN.
+
+PairRectangleDefectSplit_351(P_minor^0):
+  OPEN next target.
+```
+
+The audit identifies
+`widehat{Delta_pairpair^349}(-xi,-xi)=|widehat{nu_0}(xi)|^4-C_w^0(xi)` and
+separates the exact twisted-mask pairing
+`sum_xi M_{alpha,beta}^{U,V}(xi)A_Delta^350(xi)`. It blocks unweighted
+coefficient information and current pair/rectangle inputs as closure routes.
+The next target is to split the coefficient into pair-residual, pair-model
+product, and rectangle-defect pieces without replacing the exact rectangle
+factor by a product of pair factors.
+
+The current cadence records:
+
+```text
+Latest completed module: 350
+Post-Reflective_1 solving count: 169
+Long-term-plan count: 163
+
+163 is not divisible by 9, so no plan update is due in this module.
+163 is not divisible by 15, so no plan challenge is due in this module.
+The next reflective log is expected around Module 381.
+```
+
+Continue with:
+
+```text
+Module 351:
+  perform PairRectangleDefectSplit_351(P_minor^0), splitting
+  `Delta_pairpair^349` into pair-residual, pair-model product, and exact
+  rectangle-defect pieces while preserving the same Fourier anti-diagonal and
+  threshold-mask family.
 ```

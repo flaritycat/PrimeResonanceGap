@@ -411,14 +411,14 @@ open analytic engines and transfer barriers.
 
 ## What Are We Actually Doing Now?
 
-The current active phase is **Phase K: anti-diagonal pair-pair discrepancy
-audit after the minimal fully coupled quadruple audit**.
+The current active phase is **Phase K: pair/rectangle defect split after the
+anti-diagonal pair-pair discrepancy audit**.
 
 Current frontier:
 
 ```text
-Latest module frontier: Module 349
-Active phase: Phase K, AntiDiagonalPairPairDiscrepancyAudit_350 next
+Latest module frontier: Module 350
+Active phase: Phase K, PairRectangleDefectSplit_351 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -979,6 +979,13 @@ Module 349:
   minimal fully coupled quadruple rows to one anti-diagonal pair-pair
   discrepancy function with nine offset/twist types, blocking current
   pair/rectangle tools as closure, and completing PlanUpdate_18_349.
+
+Module 350:
+  performed AntiDiagonalPairPairDiscrepancyAudit_350(P_minor^0), extracting
+  the identity widehat{Delta_pairpair^349}(-xi,-xi)
+  = |widehat{nu_0}(xi)|^4-C_w^0(xi), separating the twisted mask pairing,
+  stating conditional norm criteria, and blocking unweighted coefficient and
+  current pair/rectangle shortcuts.
 ```
 
 ## What Is Proved?
@@ -1176,7 +1183,14 @@ Compact status table:
 | Minimal fully coupled quadruple rows from Module 349 | **OPEN** |
 | Current pair/rectangle tools close Module 349 | **FALSE / BLOCKED** |
 | Eighteenth plan update `PlanUpdate_18_349` | **STRUCTURAL / EXTRACTION** |
-| Anti-diagonal pair-pair discrepancy audit `AntiDiagonalPairPairDiscrepancyAudit_350` | **OPEN next target** |
+| Anti-diagonal pair-pair discrepancy audit `AntiDiagonalPairPairDiscrepancyAudit_350` | **STRUCTURAL / EXTRACTION** |
+| Anti-diagonal coefficient identity from Module 350 | **STRUCTURAL / EXTRACTION** |
+| Twisted mask pairing identity from Module 350 | **STRUCTURAL / EXTRACTION** |
+| Coefficient norm criteria from Module 350 | **CONDITIONAL** |
+| Unweighted coefficient shortcut from Module 350 | **FALSE / BLOCKED** |
+| Current pair/rectangle coefficient closure from Module 350 | **FALSE / BLOCKED** |
+| Anti-diagonal pair-pair rows from Module 350 | **OPEN** |
+| Pair/rectangle defect split `PairRectangleDefectSplit_351` | **OPEN next target** |
 
 For the live object-by-object ledger, read:
 
@@ -1610,7 +1624,12 @@ wins.
 | `MinimalFullyCoupledQuadrupleRows_349` | OPEN | Anti-diagonal pair-pair discrepancy remains unproved |
 | `CurrentPairRectangleToolsClose_349` | FALSE / BLOCKED | Ordinary pair/rectangle inputs do not close the masked anti-diagonal row |
 | `PlanUpdate_18_349` | STRUCTURAL / EXTRACTION | Eighteenth plan update; no theorem upgraded |
-| `AntiDiagonalPairPairDiscrepancyAudit_350(P_minor^0)` | OPEN | Next target |
+| `AntiDiagonalPairPairDiscrepancyAudit_350(P_minor^0)` | STRUCTURAL / EXTRACTION | Anti-diagonal coefficient and twisted mask pairing audited |
+| `AntiDiagonalCoefficientIdentity_350 / TwistedMaskPairingIdentity_350` | STRUCTURAL / EXTRACTION | Exact coefficient identity and exact masked pairing |
+| `CoefficientNormCriteria_350` | CONDITIONAL | Needs both coefficient and twisted-mask norm bounds in the same family |
+| `UnweightedCoefficientShortcut_350 / CurrentPairRectangleCoefficientClosure_350` | FALSE / BLOCKED | Unweighted/current pair-rectangle tools do not close the masked row |
+| `AntiDiagonalPairPairRows_350` | OPEN | Coefficient smallness plus mask budget remains unproved |
+| `PairRectangleDefectSplit_351(P_minor^0)` | OPEN | Next target |
 | Automatic fixed-set theorem `=> PhaseKernelBound_273^0` | FALSE / BLOCKED | Data-dependent shell selection is not automatic |
 | Large sieve for one fixed frequency set `=> Xi_273^0` | FALSE / BLOCKED | Fixed-set-only diagnostic, not the adaptive shell estimate |
 | First-moment HL `=> RBDH` | FALSE / BLOCKED | Mean local density is not endpoint variance control |

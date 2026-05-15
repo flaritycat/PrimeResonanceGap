@@ -12,8 +12,8 @@ docs/modules/dependency_graph.md
 Current frontier:
 
 ```text
-Latest module frontier: Module 349
-Active phase: Phase K, AntiDiagonalPairPairDiscrepancyAudit_350 next
+Latest module frontier: Module 350
+Active phase: Phase K, PairRectangleDefectSplit_351 next
 Latest project-wide review:
   docs/reviews/Prime_Resonance_Gap_1000_Page_Review.md
 ```
@@ -985,11 +985,19 @@ Completed minimal fully coupled quadruple audit:
     PlanUpdate_18_349, and leaves the anti-diagonal pair-pair discrepancy
     audit as the next target
 
+Completed anti-diagonal pair-pair discrepancy audit:
+  AntiDiagonalPairPairDiscrepancyAudit_350(P_minor^0)
+    identifies widehat{Delta_pairpair^349}(-xi,-xi)
+    = |widehat{nu_0}(xi)|^4-C_w^0(xi), separates the exact twisted-mask
+    pairing, states conditional coefficient/mask norm criteria, blocks
+    unweighted coefficient closure and current pair/rectangle coefficient
+    closure, and leaves PairRectangleDefectSplit_351 as the next target
+
 Next scheduled module:
-  Module 350 AntiDiagonalPairPairDiscrepancyAudit_350(P_minor^0)
+  Module 351 PairRectangleDefectSplit_351(P_minor^0)
 ```
 
-Status: **STRUCTURAL / EXTRACTION** for the completed minimal fully coupled
-quadruple audit; `AntiDiagonalPairPairDiscrepancyCriterion_349` is
-**CONDITIONAL**, and `MinimalFullyCoupledQuadrupleRows_349` remain **OPEN**.
+Status: **STRUCTURAL / EXTRACTION** for the completed anti-diagonal pair-pair
+discrepancy audit; `CoefficientNormCriteria_350` is **CONDITIONAL**, and
+`AntiDiagonalPairPairRows_350` remain **OPEN**.
 Phase I and endpoint gates remain **CONDITIONAL** or **OPEN** as listed above.
